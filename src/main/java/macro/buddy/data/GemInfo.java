@@ -14,7 +14,7 @@ public class GemInfo {
 	private boolean isReward;
 	private boolean isSupport;
 	@NotNull
-	private List<NPC> sellers;
+	private List<SellerInfo> sellers;
 	@NotNull
 	private String name;
 	private boolean isVaal;
@@ -22,7 +22,7 @@ public class GemInfo {
 	private List<Tags.GemTag> gemTags;
 	private boolean isActive;
 
-	public GemInfo(int requiredLevel, @NotNull Tags.ColourTag colourName, boolean isReward, boolean isSupport, @NotNull List<NPC> sellers, @NotNull String name, boolean isVaal, @NotNull List<Tags.GemTag> gemTags, boolean isActive) {
+	public GemInfo(int requiredLevel, @NotNull Tags.ColourTag colourName, boolean isReward, boolean isSupport, @NotNull List<SellerInfo> sellers, @NotNull String name, boolean isVaal, @NotNull List<Tags.GemTag> gemTags, boolean isActive) {
 		this.requiredLevel = requiredLevel;
 		this.colourName = colourName;
 		this.isReward = isReward;

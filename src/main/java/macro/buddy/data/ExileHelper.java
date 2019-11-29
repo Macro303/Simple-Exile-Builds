@@ -1,6 +1,7 @@
 package macro.buddy.data;
 
 import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import kong.unirest.JsonNode;
@@ -55,14 +56,33 @@ public class ExileHelper {
 			for (Object obj : array) {
 				JsonObject gemObj = (JsonObject) obj;
 				List<Tags.GemTag> gemTags = new ArrayList<>();
-				for (Object tagObj : gemObj.getAsJsonArray("gemTags"))
-					gemTags.add(Tags.GemTag.fromName(tagObj.toString()));
+				for (JsonElement tagObj : gemObj.getAsJsonArray("gemTags")) {
+					String tag = tagObj.getAsString();
+					gemTags.add(Tags.GemTag.fromName(tag));
+				}
+				List<SellerInfo> sellers = new ArrayList<>();
+				for (JsonElement element : gemObj.getAsJsonArray("buy")) {
+					JsonObject sellerObj = element.getAsJsonObject();
+					List<Tags.ClassTag> available = new ArrayList<>();
+					for (JsonElement subElement : sellerObj.getAsJsonArray("available_to")) {
+						Tags.ClassTag tag = Tags.ClassTag.fromName(subElement.getAsString());
+						available.add(tag);
+					}
+					SellerInfo info = new SellerInfo(
+							Tags.NPCTag.fromName(sellerObj.get("npc").getAsString()),
+							sellerObj.get("act").getAsInt(),
+							Tags.TownTag.fromName(sellerObj.get("town").getAsString()),
+							available,
+							sellerObj.get("quest_name").getAsString()
+					);
+					sellers.add(info);
+				}
 				GemInfo info = new GemInfo(
 						gemObj.get("required_lvl").getAsInt(),
 						Tags.ColourTag.fromName(gemObj.get("color").getAsString()),
 						gemObj.get("isReward").getAsBoolean(),
 						gemObj.get("isSupport").getAsBoolean(),
-						new ArrayList<>(),
+						sellers,
 						gemObj.get("name").getAsString(),
 						gemObj.get("isVaal").getAsBoolean(),
 						gemTags,

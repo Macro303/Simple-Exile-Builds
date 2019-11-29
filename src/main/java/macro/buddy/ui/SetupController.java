@@ -3,7 +3,6 @@ package macro.buddy.ui;
 import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
@@ -36,6 +35,8 @@ public class SetupController implements Initializable {
 	public void initialize(URL location, ResourceBundle resources) {
 		if (Config.CONFIG.getSettings().getClientFile() != null)
 			Platform.runLater(() -> clientPath.setText(Config.CONFIG.getSettings().getClientFile()));
+		if (Config.CONFIG.getSettings().getAccountName() != null)
+			Platform.runLater(() -> accountName.setText(Config.CONFIG.getSettings().getAccountName()));
 	}
 
 	public void setStage(@NotNull Stage stage) {
@@ -54,12 +55,12 @@ public class SetupController implements Initializable {
 	}
 
 	public void saveAndContinue() {
-		if (clientPath.getText() == null || accountName == null)
+		if (clientPath.getText() == null || clientPath.getText().trim().isEmpty() || accountName == null || accountName.getText().trim().isEmpty())
 			return;
-		Config.CONFIG.getSettings().setClientFile(clientPath.getText());
-		LOGGER.info("Client File has been updated to: " + clientPath.getText());
-		Config.CONFIG.getSettings().setAccountName(accountName.getText());
-		LOGGER.info("Account Name has been updated to: " + accountName.getText());
+		Config.CONFIG.getSettings().setClientFile(clientPath.getText().trim());
+		LOGGER.info("Client File has been updated to: " + clientPath.getText().trim());
+		Config.CONFIG.getSettings().setAccountName(accountName.getText().trim());
+		LOGGER.info("Account Name has been updated to: " + accountName.getText().trim());
 		Config.CONFIG.save();
 
 		try {
