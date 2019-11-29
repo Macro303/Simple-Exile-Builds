@@ -1,0 +1,42 @@
+plugins {
+	id 'application'
+	id 'idea'
+	id 'maven'
+	id 'com.github.ben-manes.versions' version '0.27.0'
+}
+
+repositories {
+	mavenCentral()
+	mavenLocal()
+	jcenter()
+}
+
+mainClassName = "macro.buddy.Launcher"
+def loggerVersion = '2.12.1'
+
+dependencies {
+	implementation group: 'org.jetbrains', name: 'annotations', version: "18.0.0"
+	implementation group: 'org.yaml', name: 'snakeyaml', version: "1.25"
+	implementation group: 'com.konghq', name: 'unirest-java', version: "3.2.00"
+	implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: "1.1.1"
+	implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: "$loggerVersion"
+	runtimeOnly group: 'org.apache.logging.log4j', name: 'log4j-core', version: "$loggerVersion"
+}
+
+compileJava {
+	sourceCompatibility = JavaVersion.VERSION_1_8
+	targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+compileTestJava {
+	sourceCompatibility = JavaVersion.VERSION_1_8
+	targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+jar {
+	manifest.attributes provider: 'gradle'
+}
+
+run {
+	standardInput = System.in
+}

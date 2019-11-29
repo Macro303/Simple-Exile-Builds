@@ -1,0 +1,22 @@
+# =====Folders=====
+.gradle/
+.idea/
+.settings/
+.vscode/
+bin/
+build/
+logs/
+out/
+
+# =====Files=====
+*.iml
+.classpath
+.project
+*.db
+*.sqlite
+
+# =====Project=====
+*.yaml
+*.json
+*.csv
+!Gems.json
