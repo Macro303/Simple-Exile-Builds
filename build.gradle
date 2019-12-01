@@ -18,7 +18,6 @@ dependencies {
 	implementation group: 'org.jetbrains', name: 'annotations', version: "18.0.0"
 	implementation group: 'org.yaml', name: 'snakeyaml', version: "1.25"
 	implementation group: 'com.konghq', name: 'unirest-java', version: "3.2.00"
-	implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: "1.1.1"
 	implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: "$loggerVersion"
 	runtimeOnly group: 'org.apache.logging.log4j', name: 'log4j-core', version: "$loggerVersion"
 }

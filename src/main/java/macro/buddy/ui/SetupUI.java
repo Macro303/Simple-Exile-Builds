@@ -27,9 +27,11 @@ public class SetupUI extends Application {
 		Parent root = loader.load();
 		SetupController controller = loader.getController();
 		controller.setStage(stage);
-		stage.initStyle(StageStyle.UNDECORATED);
+		stage.initStyle(StageStyle.DECORATED);
 		stage.setTitle("Exile Buddy");
-		stage.setScene(new Scene(root, 600, 250));
+		Scene scene = new Scene(root, 500, 250);
+		scene.getStylesheets().add(getClass().getResource("Dark-Theme.css").toExternalForm());
+		stage.setScene(scene);
 		stage.show();
 	}
 }
