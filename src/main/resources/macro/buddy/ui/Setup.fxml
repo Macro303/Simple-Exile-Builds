@@ -21,8 +21,8 @@
 			<children>
 				<HBox alignment="CENTER" spacing="5.0">
 					<children>
-						<TextField fx:id="accountName" promptText="Account Name" HBox.hgrow="ALWAYS"/>
-						<ComboBox fx:id="classCombo" promptText="Class" visibleRowCount="5"/>
+						<ComboBox fx:id="buildCombo" promptText="Build" visibleRowCount="5"/>
+						<Button mnemonicParsing="false" onAction="#addBuild" text="Add Build"/>
 					</children>
 				</HBox>
 				<HBox alignment="CENTER" spacing="5.0">

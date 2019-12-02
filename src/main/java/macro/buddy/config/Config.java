@@ -34,8 +34,6 @@ public class Config {
 
 	@NotNull
 	private Connection proxy = new Connection();
-	@NotNull
-	private GameSettings settings = new GameSettings();
 
 	@NotNull
 	public static Config load() {
@@ -58,15 +56,6 @@ public class Config {
 
 	public void setProxy(@NotNull Connection proxy) {
 		this.proxy = proxy;
-	}
-
-	@NotNull
-	public GameSettings getSettings() {
-		return settings;
-	}
-
-	public void setSettings(@NotNull GameSettings settings) {
-		this.settings = settings;
 	}
 
 	@NotNull

@@ -14,9 +14,6 @@ public class Launcher {
 
 	public static void main(String[] args) {
 		Config.CONFIG = Config.load();
-		if (Config.CONFIG.getSettings().isValid())
-			new BuddyUI().init(args);
-		else
-			new SetupUI().init(args);
+		new SetupUI().init(args);
 	}
 }

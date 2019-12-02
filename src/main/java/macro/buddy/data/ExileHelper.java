@@ -23,7 +23,7 @@ import java.util.List;
 public class ExileHelper {
 	private static final Logger LOGGER = LogManager.getLogger(ExileHelper.class);
 
-	@NotNull
+	/*@NotNull
 	public static List<CharacterInfo> getCharacters() {
 		ArrayList<CharacterInfo> characters = new ArrayList<>();
 		if (Config.CONFIG.getSettings().getAccountName() == null)
@@ -46,7 +46,7 @@ public class ExileHelper {
 			characters.add(info);
 		}
 		return characters;
-	}
+	}*/
 
 	@NotNull
 	public static List<GemInfo> getGems() {

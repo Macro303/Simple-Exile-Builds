@@ -81,7 +81,7 @@ public class BuddyController implements Initializable {
 			//Quests
 			List<GemInfo> filteredGems = gems.stream().filter(gem -> gem.getQuests().stream().anyMatch(info -> {
 				boolean validAct = info.getAct() == counter;
-				boolean validClass = info.getClassList().contains(Config.CONFIG.getSettings().getClassTag());
+				boolean validClass = info.getClassList().contains(Util.selectedBuild.getClassTag());
 				return validAct && validClass;
 			})).collect(Collectors.toList());
 			SortedSet<String> quests = new TreeSet<>();
@@ -91,7 +91,7 @@ public class BuddyController implements Initializable {
 				List<GemInfo> questGems = filteredGems.stream().filter(gem -> gem.getQuests().stream().anyMatch(info -> {
 					boolean validAct = info.getAct() == counter;
 					boolean validQuest = info.getName().equals(quest);
-					boolean validClass = info.getClassList().contains(Config.CONFIG.getSettings().getClassTag());
+					boolean validClass = info.getClassList().contains(Util.selectedBuild.getClassTag());
 					return validAct && validQuest && validClass;
 				})).collect(Collectors.toList());
 				if (questGems.size() > 0) {
@@ -102,6 +102,8 @@ public class BuddyController implements Initializable {
 						HBox gemBox = new HBox();
 						gemBox.setSpacing(5.0);
 						CheckBox gemCheck = new CheckBox();
+						if (Util.selectedBuild.getGemList().contains(gem.getName()))
+							gemCheck.setSelected(true);
 						gemCheck.setDisable(true);
 						Label gemLabel = new Label(gem.getName() + " [" + gem.getTags().stream().map(Enum::name).collect(Collectors.joining(", ")) + "]");
 						if (!gem.getColour().equals("White"))
@@ -114,7 +116,7 @@ public class BuddyController implements Initializable {
 			//Vendors
 			filteredGems = gems.stream().filter(gem -> gem.getVendors().stream().anyMatch(info -> {
 				boolean validAct = info.getAct() == counter;
-				boolean validClass = info.getClassList().contains(Config.CONFIG.getSettings().getClassTag());
+				boolean validClass = info.getClassList().contains(Util.selectedBuild.getClassTag());
 				return validAct && validClass;
 			})).collect(Collectors.toList());
 			SortedSet<String> vendors = new TreeSet<>();
@@ -124,7 +126,7 @@ public class BuddyController implements Initializable {
 				List<GemInfo> vendorGems = filteredGems.stream().filter(gem -> gem.getVendors().stream().anyMatch(info -> {
 					boolean validAct = info.getAct() == counter;
 					boolean validQuest = (info.getName() + " - " + info.getNpc()).equals(vendor);
-					boolean validClass = info.getClassList().contains(Config.CONFIG.getSettings().getClassTag());
+					boolean validClass = info.getClassList().contains(Util.selectedBuild.getClassTag());
 					return validAct && validQuest && validClass;
 				})).collect(Collectors.toList());
 				if (vendorGems.size() > 0) {
@@ -135,6 +137,8 @@ public class BuddyController implements Initializable {
 						HBox gemBox = new HBox();
 						gemBox.setSpacing(5.0);
 						CheckBox gemCheck = new CheckBox();
+						if (Util.selectedBuild.getGemList().contains(gem.getName()))
+							gemCheck.setSelected(true);
 						gemCheck.setDisable(true);
 						Label gemLabel = new Label(gem.getName() + " [" + gem.getTags().stream().map(Enum::name).collect(Collectors.joining(", ")) + "]");
 						if (!gem.getColour().equals("White"))
