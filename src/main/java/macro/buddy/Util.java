@@ -2,7 +2,6 @@ package macro.buddy;
 
 import javafx.scene.paint.Color;
 import kong.unirest.*;
-import macro.buddy.build.Build;
 import macro.buddy.config.Config;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
