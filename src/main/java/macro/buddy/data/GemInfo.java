@@ -9,27 +9,16 @@ import java.util.List;
  */
 public class GemInfo {
 	@NotNull
-	private final String colour;
-	@NotNull
 	private final String name;
 	@NotNull
+	private final String colour;
+	@NotNull
 	private final List<Tags.GemTag> tags;
-	@NotNull
-	private final List<QuestInfo> quests;
-	@NotNull
-	private final List<VendorInfo> vendors;
 
-	public GemInfo(@NotNull String colour, @NotNull String name, @NotNull List<Tags.GemTag> tags, @NotNull List<QuestInfo> quests, @NotNull List<VendorInfo> vendors) {
-		this.colour = colour;
+	public GemInfo(@NotNull String name, @NotNull String colour, @NotNull List<Tags.GemTag> tags) {
 		this.name = name;
+		this.colour = colour;
 		this.tags = tags;
-		this.quests = quests;
-		this.vendors = vendors;
-	}
-
-	@NotNull
-	public String getColour() {
-		return colour;
 	}
 
 	@NotNull
@@ -38,18 +27,13 @@ public class GemInfo {
 	}
 
 	@NotNull
+	public String getColour() {
+		return colour;
+	}
+
+	@NotNull
 	public List<Tags.GemTag> getTags() {
 		return tags;
-	}
-
-	@NotNull
-	public List<QuestInfo> getQuests() {
-		return quests;
-	}
-
-	@NotNull
-	public List<VendorInfo> getVendors() {
-		return vendors;
 	}
 
 	@Override
@@ -59,31 +43,25 @@ public class GemInfo {
 
 		GemInfo info = (GemInfo) o;
 
-		if (!colour.equals(info.colour)) return false;
 		if (!name.equals(info.name)) return false;
-		if (!tags.equals(info.tags)) return false;
-		if (!quests.equals(info.quests)) return false;
-		return vendors.equals(info.vendors);
+		if (!colour.equals(info.colour)) return false;
+		return tags.equals(info.tags);
 	}
 
 	@Override
 	public int hashCode() {
-		int result = colour.hashCode();
-		result = 31 * result + name.hashCode();
+		int result = name.hashCode();
+		result = 31 * result + colour.hashCode();
 		result = 31 * result + tags.hashCode();
-		result = 31 * result + quests.hashCode();
-		result = 31 * result + vendors.hashCode();
 		return result;
 	}
 
 	@Override
 	public String toString() {
 		return "GemInfo{" +
-				"colour='" + colour + '\'' +
-				", name='" + name + '\'' +
+				"name='" + name + '\'' +
+				", colour='" + colour + '\'' +
 				", tags=" + tags +
-				", quests=" + quests +
-				", vendors=" + vendors +
 				'}';
 	}
 }

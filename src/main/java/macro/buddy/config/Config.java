@@ -3,7 +3,6 @@ package macro.buddy.config;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 import org.yaml.snakeyaml.DumperOptions;
 import org.yaml.snakeyaml.Yaml;
 
@@ -21,9 +20,9 @@ public class Config {
 	@NotNull
 	private static final Logger LOGGER = LogManager.getLogger(Config.class);
 	@NotNull
-	private static Yaml YAML;
-	@NotNull
 	public static Config CONFIG;
+	@NotNull
+	private static Yaml YAML;
 
 	static {
 		DumperOptions options = new DumperOptions();

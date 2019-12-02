@@ -3,6 +3,7 @@ package macro.buddy.data;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Macro303 on 2019-Dec-02.
@@ -10,14 +11,12 @@ import java.util.List;
 public class QuestInfo {
 	@NotNull
 	private final String name;
-	private final int act;
 	@NotNull
-	private final List<Tags.ClassTag> classList;
+	private final Map<Tags.ClassTag, List<GemInfo>> rewards;
 
-	public QuestInfo(@NotNull String name, int act, @NotNull List<Tags.ClassTag> classList) {
+	public QuestInfo(@NotNull String name, @NotNull Map<Tags.ClassTag, List<GemInfo>> rewards) {
 		this.name = name;
-		this.act = act;
-		this.classList = classList;
+		this.rewards = rewards;
 	}
 
 	@NotNull
@@ -25,13 +24,9 @@ public class QuestInfo {
 		return name;
 	}
 
-	public int getAct() {
-		return act;
-	}
-
 	@NotNull
-	public List<Tags.ClassTag> getClassList() {
-		return classList;
+	public Map<Tags.ClassTag, List<GemInfo>> getRewards() {
+		return rewards;
 	}
 
 	@Override
@@ -41,16 +36,14 @@ public class QuestInfo {
 
 		QuestInfo questInfo = (QuestInfo) o;
 
-		if (act != questInfo.act) return false;
 		if (!name.equals(questInfo.name)) return false;
-		return classList.equals(questInfo.classList);
+		return rewards.equals(questInfo.rewards);
 	}
 
 	@Override
 	public int hashCode() {
 		int result = name.hashCode();
-		result = 31 * result + act;
-		result = 31 * result + classList.hashCode();
+		result = 31 * result + rewards.hashCode();
 		return result;
 	}
 
@@ -58,8 +51,7 @@ public class QuestInfo {
 	public String toString() {
 		return "QuestInfo{" +
 				"name='" + name + '\'' +
-				", act=" + act +
-				", classList=" + classList +
+				", rewards=" + rewards +
 				'}';
 	}
 }

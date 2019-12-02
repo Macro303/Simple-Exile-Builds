@@ -1,7 +1,6 @@
 package macro.buddy;
 
 import macro.buddy.config.Config;
-import macro.buddy.ui.BuddyUI;
 import macro.buddy.ui.SetupUI;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

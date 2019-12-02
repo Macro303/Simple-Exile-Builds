@@ -3,6 +3,7 @@ package macro.buddy.data;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by Macro303 on 2019-Dec-02.
@@ -10,26 +11,20 @@ import java.util.List;
 public class VendorInfo {
 	@NotNull
 	private final String name;
-	private final int act;
 	@NotNull
 	private final String npc;
 	@NotNull
-	private final List<Tags.ClassTag> classList;
+	private final Map<Tags.ClassTag, List<GemInfo>> rewards;
 
-	public VendorInfo(@NotNull String name, int act, @NotNull String npc, @NotNull List<Tags.ClassTag> classList) {
+	public VendorInfo(@NotNull String name, @NotNull String npc, @NotNull Map<Tags.ClassTag, List<GemInfo>> rewards) {
 		this.name = name;
-		this.act = act;
 		this.npc = npc;
-		this.classList = classList;
+		this.rewards = rewards;
 	}
 
 	@NotNull
 	public String getName() {
 		return name;
-	}
-
-	public int getAct() {
-		return act;
 	}
 
 	@NotNull
@@ -38,8 +33,8 @@ public class VendorInfo {
 	}
 
 	@NotNull
-	public List<Tags.ClassTag> getClassList() {
-		return classList;
+	public Map<Tags.ClassTag, List<GemInfo>> getRewards() {
+		return rewards;
 	}
 
 	@Override
@@ -49,18 +44,16 @@ public class VendorInfo {
 
 		VendorInfo that = (VendorInfo) o;
 
-		if (act != that.act) return false;
 		if (!name.equals(that.name)) return false;
 		if (!npc.equals(that.npc)) return false;
-		return classList.equals(that.classList);
+		return rewards.equals(that.rewards);
 	}
 
 	@Override
 	public int hashCode() {
 		int result = name.hashCode();
-		result = 31 * result + act;
 		result = 31 * result + npc.hashCode();
-		result = 31 * result + classList.hashCode();
+		result = 31 * result + rewards.hashCode();
 		return result;
 	}
 
@@ -68,9 +61,8 @@ public class VendorInfo {
 	public String toString() {
 		return "VendorInfo{" +
 				"name='" + name + '\'' +
-				", act=" + act +
 				", npc='" + npc + '\'' +
-				", classList=" + classList +
+				", rewards=" + rewards +
 				'}';
 	}
 }

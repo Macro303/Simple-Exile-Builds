@@ -1,19 +1,16 @@
 package macro.buddy.data;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-import kong.unirest.JsonNode;
-import kong.unirest.json.JSONObject;
-import macro.buddy.Util;
-import macro.buddy.config.Config;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonDeserializer;
+import com.google.gson.reflect.TypeToken;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 
-import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.IOException;
+import java.io.Reader;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -49,60 +46,18 @@ public class ExileHelper {
 	}*/
 
 	@NotNull
-	public static List<GemInfo> getGems() {
-		ArrayList<GemInfo> gems = new ArrayList<>();
-		try {
-			JsonArray array = new JsonParser().parse(new FileReader("Gems.json")).getAsJsonArray();
-			for (Object obj : array) {
-				JsonObject gemObj = (JsonObject) obj;
-				List<Tags.GemTag> tags = new ArrayList<>();
-				for (JsonElement tagObj : gemObj.getAsJsonArray("tags")) {
-					String tag = tagObj.getAsString();
-					tags.add(Tags.GemTag.fromName(tag));
-				}
-				List<QuestInfo> quests = new ArrayList<>();
-				for (JsonElement element : gemObj.getAsJsonArray("quests")) {
-					JsonObject questObj = element.getAsJsonObject();
-					List<Tags.ClassTag> classList = new ArrayList<>();
-					for (JsonElement tagObj : questObj.getAsJsonArray("classes")) {
-						String tag = tagObj.getAsString();
-						classList.add(Tags.ClassTag.fromName(tag));
-					}
-					QuestInfo info = new QuestInfo(
-							questObj.get("name").getAsString(),
-							questObj.get("act").getAsInt(),
-							classList
-					);
-					quests.add(info);
-				}
-				List<VendorInfo> vendors = new ArrayList<>();
-				for (JsonElement element : gemObj.getAsJsonArray("vendors")) {
-					JsonObject vendorObj = element.getAsJsonObject();
-					List<Tags.ClassTag> classList = new ArrayList<>();
-					for (JsonElement tagObj : vendorObj.getAsJsonArray("classes")) {
-						String tag = tagObj.getAsString();
-						classList.add(Tags.ClassTag.fromName(tag));
-					}
-					VendorInfo info = new VendorInfo(
-							vendorObj.get("name").getAsString(),
-							vendorObj.get("act").getAsInt(),
-							vendorObj.get("npc").getAsString(),
-							classList
-					);
-					vendors.add(info);
-				}
-				GemInfo info = new GemInfo(
-						gemObj.get("colour").getAsString(),
-						gemObj.get("name").getAsString(),
-						tags,
-						quests,
-						vendors
-				);
-				gems.add(info);
-			}
-		} catch (FileNotFoundException fnfe) {
-			LOGGER.error("Unable to load Gems: " + fnfe);
+	public static List<ActInfo> getGems() {
+		ArrayList<ActInfo> acts = new ArrayList<>();
+		GsonBuilder builder = new GsonBuilder().serializeNulls();
+		builder.registerTypeAdapter(Tags.ClassTag.class, (JsonDeserializer<Tags.ClassTag>) (json, typeOfT, context) -> Tags.ClassTag.fromName(json.getAsString()));
+		builder.registerTypeAdapter(Tags.GemTag.class, (JsonDeserializer<Tags.GemTag>) (json, typeOfT, context) -> Tags.GemTag.fromName(json.getAsString()));
+		Gson gson = builder.create();
+		try (Reader reader = new FileReader("Gems-v2.json")) {
+			acts = gson.fromJson(reader, new TypeToken<List<ActInfo>>() {
+			}.getType());
+		} catch (IOException ioe) {
+			LOGGER.error("Unable to load Gems: " + ioe);
 		}
-		return gems;
+		return acts;
 	}
 }

@@ -1,6 +1,5 @@
 package macro.buddy;
 
-import javafx.scene.paint.Color;
 import kong.unirest.*;
 import macro.buddy.config.Config;
 import org.apache.logging.log4j.LogManager;
@@ -42,14 +41,14 @@ public abstract class Util {
 	}
 
 	@Nullable
-	public static Color strToColour(@NotNull String value) {
+	public static String strToColour(@NotNull String value) {
 		switch (value) {
 			case "Red":
-				return Color.RED;
-			case "Blue":
-				return Color.BLUE;
+				return "#DD9999";
 			case "Green":
-				return Color.GREEN;
+				return "#99DD99";
+			case "Blue":
+				return "#9999DD";
 			default:
 				return null;
 		}

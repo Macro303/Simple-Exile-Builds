@@ -7,21 +7,18 @@ import javafx.scene.control.Label;
 import javafx.scene.control.Tab;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 import macro.buddy.Util;
-import macro.buddy.config.Config;
-import macro.buddy.data.ExileHelper;
-import macro.buddy.data.GemInfo;
-import macro.buddy.data.QuestInfo;
-import macro.buddy.data.VendorInfo;
+import macro.buddy.data.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
 import java.net.URL;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.ResourceBundle;
 import java.util.stream.Collectors;
 
 /**
@@ -74,78 +71,44 @@ public class BuddyController implements Initializable {
 	}
 
 	private void setupGemTab() {
-		List<GemInfo> gems = ExileHelper.getGems();
-		for (int act = 1; act <= 10; act++) {
-			int counter = act;
-			VBox actTab = act == 1 ? tabI : act == 2 ? tabII : act == 3 ? tabIII : act == 4 ? tabIV : act == 5 ? tabV : act == 6 ? tabVI : act == 7 ? tabVII : tabVIII;
+		for (ActInfo act : ExileHelper.getGems()) {
+			VBox actTab = act.getAct() == 1 ? tabI : act.getAct() == 2 ? tabII : act.getAct() == 3 ? tabIII : act.getAct() == 4 ? tabIV : act.getAct() == 5 ? tabV : act.getAct() == 6 ? tabVI : act.getAct() == 7 ? tabVII : tabVIII;
 			//Quests
-			List<GemInfo> filteredGems = gems.stream().filter(gem -> gem.getQuests().stream().anyMatch(info -> {
-				boolean validAct = info.getAct() == counter;
-				boolean validClass = info.getClassList().contains(Util.selectedBuild.getClassTag());
-				return validAct && validClass;
-			})).collect(Collectors.toList());
-			SortedSet<String> quests = new TreeSet<>();
-			for (GemInfo gem : filteredGems)
-				quests.addAll(gem.getQuests().stream().map(QuestInfo::getName).collect(Collectors.toSet()));
-			for (String quest : quests) {
-				List<GemInfo> questGems = filteredGems.stream().filter(gem -> gem.getQuests().stream().anyMatch(info -> {
-					boolean validAct = info.getAct() == counter;
-					boolean validQuest = info.getName().equals(quest);
-					boolean validClass = info.getClassList().contains(Util.selectedBuild.getClassTag());
-					return validAct && validQuest && validClass;
-				})).collect(Collectors.toList());
-				if (questGems.size() > 0) {
-					Label questLabel = new Label(quest);
-					actTab.getChildren().add(questLabel);
-					questGems.sort(Comparator.comparing(GemInfo::getName));
-					for (GemInfo gem : questGems) {
-						HBox gemBox = new HBox();
-						gemBox.setSpacing(5.0);
-						CheckBox gemCheck = new CheckBox();
-						if (Util.selectedBuild.getGemList().contains(gem.getName()))
-							gemCheck.setSelected(true);
-						gemCheck.setDisable(true);
-						Label gemLabel = new Label(gem.getName() + " [" + gem.getTags().stream().map(Enum::name).collect(Collectors.joining(", ")) + "]");
-						if (!gem.getColour().equals("White"))
-							gemLabel.setStyle("-fx-text-fill: " + gem.getColour());
-						gemBox.getChildren().addAll(gemCheck, gemLabel);
-						actTab.getChildren().add(gemBox);
-					}
+			for (QuestInfo quest : act.getQuests()) {
+				Label questLabel = new Label(quest.getName());
+				actTab.getChildren().add(questLabel);
+				List<GemInfo> rewards = quest.getRewards().getOrDefault(Util.selectedBuild.getClassTag(), new ArrayList<>());
+				for (GemInfo gem : rewards) {
+					HBox gemBox = new HBox();
+					gemBox.setSpacing(5.0);
+					CheckBox gemCheck = new CheckBox();
+					if (Util.selectedBuild.getGemList().contains(gem.getName()))
+						gemCheck.setSelected(true);
+					gemCheck.setDisable(true);
+					Label gemLabel = new Label(gem.getName() + " [" + gem.getTags().stream().map(Enum::name).collect(Collectors.joining(", ")) + "]");
+					if (Util.strToColour(gem.getColour()) != null)
+						gemLabel.setStyle("-fx-text-fill: " + Util.strToColour(gem.getColour()));
+					gemBox.getChildren().addAll(gemCheck, gemLabel);
+					actTab.getChildren().add(gemBox);
 				}
 			}
 			//Vendors
-			filteredGems = gems.stream().filter(gem -> gem.getVendors().stream().anyMatch(info -> {
-				boolean validAct = info.getAct() == counter;
-				boolean validClass = info.getClassList().contains(Util.selectedBuild.getClassTag());
-				return validAct && validClass;
-			})).collect(Collectors.toList());
-			SortedSet<String> vendors = new TreeSet<>();
-			for (GemInfo gem : filteredGems)
-				vendors.addAll(gem.getVendors().stream().map(vendor -> vendor.getName() + " - " + vendor.getNpc()).collect(Collectors.toSet()));
-			for (String vendor : vendors) {
-				List<GemInfo> vendorGems = filteredGems.stream().filter(gem -> gem.getVendors().stream().anyMatch(info -> {
-					boolean validAct = info.getAct() == counter;
-					boolean validQuest = (info.getName() + " - " + info.getNpc()).equals(vendor);
-					boolean validClass = info.getClassList().contains(Util.selectedBuild.getClassTag());
-					return validAct && validQuest && validClass;
-				})).collect(Collectors.toList());
-				if (vendorGems.size() > 0) {
-					Label vendorLabel = new Label(vendor);
-					actTab.getChildren().add(vendorLabel);
-					vendorGems.sort(Comparator.comparing(GemInfo::getName));
-					for (GemInfo gem : vendorGems) {
-						HBox gemBox = new HBox();
-						gemBox.setSpacing(5.0);
-						CheckBox gemCheck = new CheckBox();
-						if (Util.selectedBuild.getGemList().contains(gem.getName()))
-							gemCheck.setSelected(true);
-						gemCheck.setDisable(true);
-						Label gemLabel = new Label(gem.getName() + " [" + gem.getTags().stream().map(Enum::name).collect(Collectors.joining(", ")) + "]");
-						if (!gem.getColour().equals("White"))
-							gemLabel.setStyle("-fx-text-fill: " + gem.getColour());
-						gemBox.getChildren().addAll(gemCheck, gemLabel);
-						actTab.getChildren().add(gemBox);
-					}
+			for (VendorInfo vendor : act.getVendors()) {
+				Label vendorLabel = new Label(vendor.getName() + " - " + vendor.getNpc());
+				actTab.getChildren().add(vendorLabel);
+				List<GemInfo> rewards = vendor.getRewards().getOrDefault(Util.selectedBuild.getClassTag(), new ArrayList<>());
+				for (GemInfo gem : rewards) {
+					HBox gemBox = new HBox();
+					gemBox.setSpacing(5.0);
+					CheckBox gemCheck = new CheckBox();
+					if (Util.selectedBuild.getGemList().contains(gem.getName()))
+						gemCheck.setSelected(true);
+					gemCheck.setDisable(true);
+					Label gemLabel = new Label(gem.getName() + " [" + gem.getTags().stream().map(Enum::name).collect(Collectors.joining(", ")) + "]");
+					if (Util.strToColour(gem.getColour()) != null)
+						gemLabel.setStyle("-fx-text-fill: " + Util.strToColour(gem.getColour()));
+					gemBox.getChildren().addAll(gemCheck, gemLabel);
+					actTab.getChildren().add(gemBox);
 				}
 			}
 		}
