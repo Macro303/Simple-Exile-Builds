@@ -1,5 +1,6 @@
 package macro.buddy;
 
+import javafx.scene.paint.Color;
 import kong.unirest.*;
 import macro.buddy.config.Config;
 import org.apache.logging.log4j.LogManager;
@@ -36,5 +37,19 @@ public abstract class Util {
 		LOGGER.info("GET: " + response.getStatus() + " " + response.getStatusText() + " - " + request.getUrl());
 		LOGGER.debug("Response: " + response.getBody());
 		return response.getStatus() == 200 ? response.getBody() : null;
+	}
+
+	@Nullable
+	public static Color strToColour(@NotNull String value) {
+		switch (value) {
+			case "Red":
+				return Color.RED;
+			case "Blue":
+				return Color.BLUE;
+			case "Green":
+				return Color.GREEN;
+			default:
+				return null;
+		}
 	}
 }

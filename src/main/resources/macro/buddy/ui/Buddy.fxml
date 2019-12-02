@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal"
+            fx:controller="macro.buddy.ui.BuddyController">
+	<top>
+		<Label text="Exile Buddy" BorderPane.alignment="CENTER">
+			<font>
+				<Font name="System Bold" size="24.0"/>
+			</font>
+			<BorderPane.margin>
+				<Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+			</BorderPane.margin>
+		</Label>
+	</top>
+	<center>
+		<TabPane tabClosingPolicy="UNAVAILABLE">
+			<Tab text="Gems">
+				<TabPane tabClosingPolicy="UNAVAILABLE">
+					<Tab text="Act I">
+						<ScrollPane>
+							<VBox fx:id="tabI" spacing="5.0">
+							</VBox>
+						</ScrollPane>
+					</Tab>
+					<Tab text="Act II">
+						<ScrollPane>
+							<VBox fx:id="tabII" spacing="5.0">
+							</VBox>
+						</ScrollPane>
+					</Tab>
+					<Tab text="Act III">
+						<ScrollPane>
+							<VBox fx:id="tabIII" spacing="5.0">
+							</VBox>
+						</ScrollPane>
+					</Tab>
+					<Tab text="Act IV">
+						<ScrollPane>
+							<VBox fx:id="tabIV" spacing="5.0">
+							</VBox>
+						</ScrollPane>
+					</Tab>
+					<Tab text="Act V">
+						<ScrollPane>
+							<VBox fx:id="tabV" spacing="5.0">
+							</VBox>
+						</ScrollPane>
+					</Tab>
+					<Tab text="Act VI">
+						<ScrollPane>
+							<VBox fx:id="tabVI" spacing="5.0">
+							</VBox>
+						</ScrollPane>
+					</Tab>
+					<Tab text="Act VII">
+						<ScrollPane>
+							<VBox fx:id="tabVII" spacing="5.0">
+							</VBox>
+						</ScrollPane>
+					</Tab>
+					<Tab text="Act VIII">
+						<ScrollPane>
+							<VBox fx:id="tabVIII" spacing="5.0">
+							</VBox>
+						</ScrollPane>
+					</Tab>
+					<Tab text="Act IX">
+						<ScrollPane>
+							<VBox fx:id="tabIX" spacing="5.0">
+							</VBox>
+						</ScrollPane>
+					</Tab>
+					<Tab text="Act X">
+						<ScrollPane>
+							<VBox fx:id="tabX" spacing="5.0">
+							</VBox>
+						</ScrollPane>
+					</Tab>
+				</TabPane>
+			</Tab>
+			<Tab fx:id="itemTab" text="Items">
+			</Tab>
+			<Tab fx:id="questTab" text="Quests">
+			</Tab>
+			<Tab fx:id="skillTab" text="Skills">
+			</Tab>
+			<BorderPane.margin>
+				<Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+			</BorderPane.margin>
+		</TabPane>
+	</center>
+	<bottom>
+	</bottom>
+	<padding>
+		<Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+	</padding>
+</BorderPane>

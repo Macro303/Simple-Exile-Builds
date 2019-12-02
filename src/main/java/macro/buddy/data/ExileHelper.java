@@ -52,41 +52,51 @@ public class ExileHelper {
 	public static List<GemInfo> getGems() {
 		ArrayList<GemInfo> gems = new ArrayList<>();
 		try {
-			JsonArray array = new JsonParser().parse(new FileReader("gems/Gems.json")).getAsJsonArray();
+			JsonArray array = new JsonParser().parse(new FileReader("Gems.json")).getAsJsonArray();
 			for (Object obj : array) {
 				JsonObject gemObj = (JsonObject) obj;
-				List<Tags.GemTag> gemTags = new ArrayList<>();
-				for (JsonElement tagObj : gemObj.getAsJsonArray("gemTags")) {
+				List<Tags.GemTag> tags = new ArrayList<>();
+				for (JsonElement tagObj : gemObj.getAsJsonArray("tags")) {
 					String tag = tagObj.getAsString();
-					gemTags.add(Tags.GemTag.fromName(tag));
+					tags.add(Tags.GemTag.fromName(tag));
 				}
-				List<SellerInfo> sellers = new ArrayList<>();
-				for (JsonElement element : gemObj.getAsJsonArray("buy")) {
-					JsonObject sellerObj = element.getAsJsonObject();
-					List<Tags.ClassTag> available = new ArrayList<>();
-					for (JsonElement subElement : sellerObj.getAsJsonArray("available_to")) {
-						Tags.ClassTag tag = Tags.ClassTag.fromName(subElement.getAsString());
-						available.add(tag);
+				List<QuestInfo> quests = new ArrayList<>();
+				for (JsonElement element : gemObj.getAsJsonArray("quests")) {
+					JsonObject questObj = element.getAsJsonObject();
+					List<Tags.ClassTag> classList = new ArrayList<>();
+					for (JsonElement tagObj : questObj.getAsJsonArray("classes")) {
+						String tag = tagObj.getAsString();
+						classList.add(Tags.ClassTag.fromName(tag));
 					}
-					SellerInfo info = new SellerInfo(
-							Tags.NPCTag.fromName(sellerObj.get("npc").getAsString()),
-							sellerObj.get("act").getAsInt(),
-							Tags.TownTag.fromName(sellerObj.get("town").getAsString()),
-							available,
-							sellerObj.get("quest_name").getAsString()
+					QuestInfo info = new QuestInfo(
+							questObj.get("name").getAsString(),
+							questObj.get("act").getAsInt(),
+							classList
 					);
-					sellers.add(info);
+					quests.add(info);
+				}
+				List<VendorInfo> vendors = new ArrayList<>();
+				for (JsonElement element : gemObj.getAsJsonArray("vendors")) {
+					JsonObject vendorObj = element.getAsJsonObject();
+					List<Tags.ClassTag> classList = new ArrayList<>();
+					for (JsonElement tagObj : vendorObj.getAsJsonArray("classes")) {
+						String tag = tagObj.getAsString();
+						classList.add(Tags.ClassTag.fromName(tag));
+					}
+					VendorInfo info = new VendorInfo(
+							vendorObj.get("name").getAsString(),
+							vendorObj.get("act").getAsInt(),
+							vendorObj.get("npc").getAsString(),
+							classList
+					);
+					vendors.add(info);
 				}
 				GemInfo info = new GemInfo(
-						gemObj.get("required_lvl").getAsInt(),
-						Tags.ColourTag.fromName(gemObj.get("color").getAsString()),
-						gemObj.get("isReward").getAsBoolean(),
-						gemObj.get("isSupport").getAsBoolean(),
-						sellers,
+						gemObj.get("colour").getAsString(),
 						gemObj.get("name").getAsString(),
-						gemObj.get("isVaal").getAsBoolean(),
-						gemTags,
-						gemObj.get("isActive").getAsBoolean()
+						tags,
+						quests,
+						vendors
 				);
 				gems.add(info);
 			}

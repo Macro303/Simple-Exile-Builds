@@ -1,0 +1,505 @@
+[
+  {
+	"name": "Blight",
+	"colour": "Blue",
+	"tags": [
+	  "Spell",
+	  "Chaos",
+	  "AoE",
+	  "Channelling",
+	  "Duration"
+	],
+	"quests": [
+	  {
+		"name": "Enemy at the Gate",
+		"act": 1,
+		"classes": [
+		  "Witch",
+		  "Shadow"
+		]
+	  }
+	],
+	"vendors": [
+	  {
+		"name": "Enemy at the Gate",
+		"act": 1,
+		"npc": "Nessa",
+		"classes": [
+		  "Witch",
+		  "Shadow",
+		  "Templar",
+		  "Scion"
+		]
+	  }
+	]
+  },
+  {
+	"name": "Freezing Pulse",
+	"colour": "Blue",
+	"tags": [
+	  "Spell",
+	  "Projectile",
+	  "Cold"
+	],
+	"quests": [
+	  {
+		"name": "Enemy at the Gate",
+		"act": 1,
+		"classes": [
+		  "Witch",
+		  "Shadow"
+		]
+	  }
+	],
+	"vendors": []
+  },
+  {
+	"name": "Lightning Tendrils",
+	"colour": "Blue",
+	"tags": [
+	  "Spell",
+	  "AoE",
+	  "Lightning",
+	  "Channeling"
+	],
+	"quests": [
+	  {
+		"name": "Enemy at the Gate",
+		"act": 1,
+		"classes": [
+		  "Witch",
+		  "Templar",
+		  "Scion"
+		]
+	  }
+	],
+	"vendors": []
+  },
+  {
+	"name": "Magma Orb",
+	"colour": "Blue",
+	"tags": [
+	  "Spell",
+	  "AoE",
+	  "Fire",
+	  "Projectile",
+	  "Chaining"
+	],
+	"quests": [
+	  {
+		"name": "Enemy at the Gate",
+		"act": 1,
+		"classes": [
+		  "Witch",
+		  "Templar"
+		]
+	  }
+	],
+	"vendors": []
+  },
+  {
+	"name": "Raise Zombie",
+	"colour": "Blue",
+	"tags": [
+	  "Spell",
+	  "Minion"
+	],
+	"quests": [
+	  {
+		"name": "Enemy at the Gate",
+		"act": 1,
+		"classes": [
+		  "Witch"
+		]
+	  }
+	],
+	"vendors": []
+  },
+  {
+	"name": "Cobra Lash",
+	"colour": "Green",
+	"tags": [
+	  "Attack",
+	  "Projectile",
+	  "Chaos"
+	],
+	"quests": [
+	  {
+		"name": "Enemy at the Gate",
+		"act": 1,
+		"classes": [
+		  "Shadow"
+		]
+	  }
+	],
+	"vendors": []
+  },
+  {
+	"name": "Ethereal Knives",
+	"colour": "Green",
+	"tags": [
+	  "Spell",
+	  "Projectile",
+	  "Physical"
+	],
+	"quests": [
+	  {
+		"name": "Enemy at the Gate",
+		"act": 1,
+		"classes": [
+		  "Shadow"
+		]
+	  }
+	],
+	"vendors": []
+  },
+  {
+	"name": "Explosive Trap",
+	"colour": "Green",
+	"tags": [
+	  "Trap",
+	  "Spell",
+	  "AoE",
+	  "Fire",
+	  "Physical"
+	],
+	"quests": [
+	  {
+		"name": "Enemy at the Gate",
+		"act": 1,
+		"classes": [
+		  "Shadow"
+		]
+	  }
+	],
+	"vendors": []
+  },
+  {
+	"name": "Stormblast Mine",
+	"colour": "Blue",
+	"tags": [
+	  "Mine",
+	  "Spell",
+	  "AoE",
+	  "Lightning",
+	  "Aura"
+	],
+	"quests": [
+	  {
+		"name": "Enemy at the Gate",
+		"act": 1,
+		"classes": [
+		  "Shadow"
+		]
+	  }
+	],
+	"vendors": []
+  },
+  {
+	"name": "Caustic Arrow",
+	"colour": "Green",
+	"tags": [
+	  "Attack",
+	  "Projectile",
+	  "AoE",
+	  "Duration",
+	  "Chaos",
+	  "Bow"
+	],
+	"quests": [
+	  {
+		"name": "Enemy at the Gate",
+		"act": 1,
+		"classes": [
+		  "Ranger"
+		]
+	  }
+	],
+	"vendors": [
+	  {
+		"name": "Enemy at the Gate",
+		"act": 1,
+		"npc": "Nessa",
+		"classes": [
+		  "Shadow",
+		  "Ranger",
+		  "Duelist",
+		  "Scion"
+		]
+	  }
+	]
+  },
+  {
+	"name": "Frost Blades",
+	"colour": "Green",
+	"tags": [
+	  "Attack",
+	  "Projectile",
+	  "Melee",
+	  "Strike",
+	  "Cold"
+	],
+	"quests": [
+	  {
+		"name": "Enemy at the Gate",
+		"act": 1,
+		"classes": [
+		  "Ranger"
+		]
+	  }
+	],
+	"vendors": []
+  },
+  {
+	"name": "Ice Shot",
+	"colour": "Green",
+	"tags": [
+	  "Attack",
+	  "Projectile",
+	  "AoE",
+	  "Duration",
+	  "Cold",
+	  "Bow"
+	],
+	"quests": [
+	  {
+		"name": "Enemy at the Gate",
+		"act": 1,
+		"classes": [
+		  "Ranger"
+		]
+	  }
+	],
+	"vendors": []
+  },
+  {
+	"name": "Shrapnel Shot",
+	"colour": "Green",
+	"tags": [
+	  "Lightning",
+	  "Attack",
+	  "Projectile",
+	  "AoE",
+	  "Bow"
+	],
+	"quests": [
+	  {
+		"name": "Enemy at the Gate",
+		"act": 1,
+		"classes": [
+		  "Ranger",
+		  "Duelist"
+		]
+	  }
+	],
+	"vendors": []
+  },
+  {
+	"name": "Split Arrow",
+	"colour": "Green",
+	"tags": [
+	  "Attack",
+	  "Projectile",
+	  "Bow"
+	],
+	"quests": [
+	  {
+		"name": "Enemy at the Gate",
+		"act": 1,
+		"classes": [
+		  "Ranger",
+		  "Scion"
+		]
+	  }
+	],
+	"vendors": []
+  },
+  {
+	"name": "Cleave",
+	"colour": "Red",
+	"tags": [
+	  "Attack",
+	  "AoE",
+	  "Physical",
+	  "Melee"
+	],
+	"quests": [
+	  {
+		"name": "Enemy at the Gate",
+		"act": 1,
+		"classes": [
+		  "Duelist"
+		]
+	  }
+	],
+	"vendors": []
+  },
+  {
+	"name": "Molten Strike",
+	"colour": "Red",
+	"tags": [
+	  "Attack",
+	  "Projectile",
+	  "AoE",
+	  "Melee",
+	  "Strike",
+	  "Fire"
+	],
+	"quests": [
+	  {
+		"name": "Enemy at the Gate",
+		"act": 1,
+		"classes": [
+		  "Duelist",
+		  "Marauder",
+		  "Templar",
+		  "Scion"
+		]
+	  }
+	],
+	"vendors": []
+  },
+  {
+	"name": "Perforate",
+	"colour": "Red",
+	"tags": [
+	  "Attack",
+	  "AoE",
+	  "Melee"
+	],
+	"quests": [
+	  {
+		"name": "Enemy at the Gate",
+		"act": 1,
+		"classes": [
+		  "Duelist"
+		]
+	  }
+	],
+	"vendors": []
+  },
+  {
+	"name": "Ground Slam",
+	"colour": "Red",
+	"tags": [
+	  "Attack",
+	  "AoE",
+	  "Physical",
+	  "Melee"
+	],
+	"quests": [
+	  {
+		"name": "Enemy at the Gate",
+		"act": 1,
+		"classes": [
+		  "Marauder"
+		]
+	  }
+	],
+	"vendors": []
+  },
+  {
+	"name": "Frostbolt",
+	"colour": "Blue",
+	"tags": [
+	  "Spell",
+	  "Projectile",
+	  "Cold"
+	],
+	"quests": [
+	  {
+		"name": "Enemy at the Gate",
+		"act": 1,
+		"classes": [
+		  "Templar"
+		]
+	  }
+	],
+	"vendors": []
+  },
+  {
+	"name": "Purifying Flame",
+	"colour": "Blue",
+	"tags": [
+	  "Fire",
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Physical"
+	],
+	"quests": [
+	  {
+		"name": "Enemy at the Gate",
+		"act": 1,
+		"classes": [
+		  "Templar"
+		]
+	  }
+	],
+	"vendors": []
+  },
+  {
+	"name": "Smite",
+	"colour": "Red",
+	"tags": [
+	  "Lightning",
+	  "Attack",
+	  "AoE",
+	  "Duration",
+	  "Melee",
+	  "Strike",
+	  "Aura"
+	],
+	"quests": [
+	  {
+		"name": "Enemy at the Gate",
+		"act": 1,
+		"classes": [
+		  "Templar"
+		]
+	  }
+	],
+	"vendors": []
+  },
+  {
+	"name": "Arcane Surge Support",
+	"colour": "Blue",
+	"tags": [
+	  "Support",
+	  "Spell",
+	  "Duration"
+	],
+	"quests": [],
+	"vendors": [
+	  {
+		"name": "Enemy at the Gate",
+		"act": 1,
+		"npc": "Nessa",
+		"classes": [
+		  "Witch"
+		]
+	  }
+	]
+  },
+  {
+	"name": "Burning Arrow",
+	"colour": "Green",
+	"tags": [
+	  "Attack",
+	  "Projectile",
+	  "Fire",
+	  "Bow"
+	],
+	"quests": [],
+	"vendors": [
+	  {
+		"name": "Enemy at the Gate",
+		"act": 1,
+		"npc": "Nessa",
+		"classes": [
+		  "Witch"
+		]
+	  }
+	]
+  }
+]

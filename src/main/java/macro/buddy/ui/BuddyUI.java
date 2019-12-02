@@ -1,15 +1,18 @@
 package macro.buddy.ui;
 
 import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.stage.Stage;
-import macro.buddy.data.CharacterInfo;
-import macro.buddy.data.ExileHelper;
-import macro.buddy.data.GemInfo;
+import javafx.stage.StageStyle;
+import macro.buddy.data.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Created by Macro303 on 2019-Nov-29.
@@ -23,17 +26,14 @@ public class BuddyUI extends Application {
 
 	@Override
 	public void start(Stage stage) throws IOException {
-		List<GemInfo> gems = ExileHelper.getGems();
-		LOGGER.info("Gems: " + gems);
-		List<CharacterInfo> characters = ExileHelper.getCharacters();
-		LOGGER.info("Characters: " + characters);
-		/*FXMLLoader loader = new FXMLLoader(getClass().getResource("Buddy.fxml"));
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("Buddy.fxml"));
 		Parent root = loader.load();
 		BuddyController controller = loader.getController();
 		controller.setStage(stage);
-		stage.initStyle(StageStyle.DECORATED);
 		stage.setTitle("Exile Buddy");
-		stage.setScene(new Scene(root, 600, 600));
-		stage.show();*/
+		Scene scene = new Scene(root, 600, 600);
+		scene.getStylesheets().add(getClass().getResource("Dark-Theme.css").toExternalForm());
+		stage.setScene(scene);
+		stage.show();
 	}
 }

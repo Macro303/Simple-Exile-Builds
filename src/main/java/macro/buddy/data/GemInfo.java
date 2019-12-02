@@ -8,30 +8,48 @@ import java.util.List;
  * Created by Macro303 on 2019-Nov-29.
  */
 public class GemInfo {
-	private int requiredLevel;
 	@NotNull
-	private Tags.ColourTag colourName;
-	private boolean isReward;
-	private boolean isSupport;
+	private final String colour;
 	@NotNull
-	private List<SellerInfo> sellers;
+	private final String name;
 	@NotNull
-	private String name;
-	private boolean isVaal;
+	private final List<Tags.GemTag> tags;
 	@NotNull
-	private List<Tags.GemTag> gemTags;
-	private boolean isActive;
+	private final List<QuestInfo> quests;
+	@NotNull
+	private final List<VendorInfo> vendors;
 
-	public GemInfo(int requiredLevel, @NotNull Tags.ColourTag colourName, boolean isReward, boolean isSupport, @NotNull List<SellerInfo> sellers, @NotNull String name, boolean isVaal, @NotNull List<Tags.GemTag> gemTags, boolean isActive) {
-		this.requiredLevel = requiredLevel;
-		this.colourName = colourName;
-		this.isReward = isReward;
-		this.isSupport = isSupport;
-		this.sellers = sellers;
+	public GemInfo(@NotNull String colour, @NotNull String name, @NotNull List<Tags.GemTag> tags, @NotNull List<QuestInfo> quests, @NotNull List<VendorInfo> vendors) {
+		this.colour = colour;
 		this.name = name;
-		this.isVaal = isVaal;
-		this.gemTags = gemTags;
-		this.isActive = isActive;
+		this.tags = tags;
+		this.quests = quests;
+		this.vendors = vendors;
+	}
+
+	@NotNull
+	public String getColour() {
+		return colour;
+	}
+
+	@NotNull
+	public String getName() {
+		return name;
+	}
+
+	@NotNull
+	public List<Tags.GemTag> getTags() {
+		return tags;
+	}
+
+	@NotNull
+	public List<QuestInfo> getQuests() {
+		return quests;
+	}
+
+	@NotNull
+	public List<VendorInfo> getVendors() {
+		return vendors;
 	}
 
 	@Override
@@ -41,43 +59,31 @@ public class GemInfo {
 
 		GemInfo info = (GemInfo) o;
 
-		if (requiredLevel != info.requiredLevel) return false;
-		if (isReward != info.isReward) return false;
-		if (isSupport != info.isSupport) return false;
-		if (isVaal != info.isVaal) return false;
-		if (isActive != info.isActive) return false;
-		if (colourName != info.colourName) return false;
-		if (!sellers.equals(info.sellers)) return false;
+		if (!colour.equals(info.colour)) return false;
 		if (!name.equals(info.name)) return false;
-		return gemTags.equals(info.gemTags);
+		if (!tags.equals(info.tags)) return false;
+		if (!quests.equals(info.quests)) return false;
+		return vendors.equals(info.vendors);
 	}
 
 	@Override
 	public int hashCode() {
-		int result = requiredLevel;
-		result = 31 * result + colourName.hashCode();
-		result = 31 * result + (isReward ? 1 : 0);
-		result = 31 * result + (isSupport ? 1 : 0);
-		result = 31 * result + sellers.hashCode();
+		int result = colour.hashCode();
 		result = 31 * result + name.hashCode();
-		result = 31 * result + (isVaal ? 1 : 0);
-		result = 31 * result + gemTags.hashCode();
-		result = 31 * result + (isActive ? 1 : 0);
+		result = 31 * result + tags.hashCode();
+		result = 31 * result + quests.hashCode();
+		result = 31 * result + vendors.hashCode();
 		return result;
 	}
 
 	@Override
 	public String toString() {
 		return "GemInfo{" +
-				"requiredLevel=" + requiredLevel +
-				", colourName=" + colourName +
-				", isReward=" + isReward +
-				", isSupport=" + isSupport +
-				", sellers=" + sellers +
+				"colour='" + colour + '\'' +
 				", name='" + name + '\'' +
-				", isVaal=" + isVaal +
-				", gemTags=" + gemTags +
-				", isActive=" + isActive +
+				", tags=" + tags +
+				", quests=" + quests +
+				", vendors=" + vendors +
 				'}';
 	}
 }

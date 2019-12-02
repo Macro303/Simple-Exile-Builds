@@ -3,6 +3,7 @@ package macro.buddy.data;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 
 import java.util.Arrays;
 
@@ -19,34 +20,20 @@ public abstract class Tags {
 		WITCH,
 		DUELIST,
 		TEMPLAR,
-		SHADOW,
-		UNKNOWN;
+		SHADOW;
 
-		@NotNull
+		@Nullable
 		public static ClassTag fromId(int classId) {
-			return Arrays.stream(values()).filter(tag -> tag.ordinal() == classId).findFirst().orElse(UNKNOWN);
+			return Arrays.stream(values()).filter(tag -> tag.ordinal() == classId).findFirst().orElse(null);
 		}
 
-		@NotNull
+		@Nullable
 		public static ClassTag fromName(@NotNull String name) {
-			return Arrays.stream(values()).filter(tag -> tag.name().equalsIgnoreCase(name)).findFirst().orElse(UNKNOWN);
+			return Arrays.stream(values()).filter(tag -> tag.name().equalsIgnoreCase(name)).findFirst().orElse(null);
 		}
 	}
 
-	public enum ColourTag{
-		RED,
-		GREEN,
-		BLUE,
-		WHITE,
-		UNKNOWN;
-
-		@NotNull
-		public static ColourTag fromName(@NotNull String name) {
-			return Arrays.stream(values()).filter(tag -> tag.name().equalsIgnoreCase(name)).findFirst().orElse(UNKNOWN);
-		}
-	}
-
-	public enum GemTag{
+	public enum GemTag {
 		WARCRY,
 		CHAOS,
 		AOE,
@@ -86,42 +73,6 @@ public abstract class Tags {
 		@NotNull
 		public static GemTag fromName(@NotNull String name) {
 			return Arrays.stream(values()).filter(tag -> tag.name().replaceAll("_", " ").equalsIgnoreCase(name)).findFirst().orElse(UNKNOWN);
-		}
-	}
-
-	public enum NPCTag{
-		PETARUS_AND_VANJA,
-		LILLY_ROTH,
-		NESSA,
-		SIOSA,
-		CLARISSA,
-		YEENA,
-		UNKNOWN;
-
-		@NotNull
-		public static NPCTag fromName(@NotNull String name) {
-			return Arrays.stream(values()).filter(tag -> tag.name().replaceAll("_", " ").equalsIgnoreCase(name)).findFirst().orElse(UNKNOWN);
-		}
-	}
-
-	public enum TownTag {
-		HIGHGATE("Highgate"),
-		LIONEYES_WATCH("Lioneye's Watch"),
-		LIBRARY("Library"),
-		THE_SARN_ENCAMPMENT("The Sarn Encampment"),
-		THE_FOREST_ENCAMPMENT("The Forest Encampment"),
-		UNKNOWN("Unknown");
-
-		@NotNull
-		private String display;
-
-		TownTag(@NotNull String display){
-			this.display = display;
-		}
-
-		@NotNull
-		public static TownTag fromName(@NotNull String name) {
-			return Arrays.stream(values()).filter(tag -> tag.display.equalsIgnoreCase(name)).findFirst().orElse(UNKNOWN);
 		}
 	}
 }
