@@ -41,27 +41,21 @@ public class Build implements Comparable<Build> {
 	@Nullable
 	private String ascendency;
 	@NotNull
-	private Map<String, List<String>> gemList;
-	@NotNull
-	private List<String> itemList;
-	@Nullable
-	private String helpBandit;
+	private List<String> gemList;
 
 	public Build() {
 		this("INVALID");
 	}
 
 	public Build(@NotNull String buildName) {
-		this(buildName, "Scion", null, new HashMap<>(), new ArrayList<>(), null);
+		this(buildName, "Scion", null, new ArrayList<>());
 	}
 
-	public Build(@NotNull String buildName, @NotNull String className, @Nullable String ascendency, @NotNull Map<String, List<String>> gemList, @NotNull List<String> itemList, @Nullable String helpBandit) {
+	public Build(@NotNull String buildName, @NotNull String className, @Nullable String ascendency, @NotNull List<String> gemList) {
 		this.buildName = buildName;
 		this.className = className;
 		this.ascendency = ascendency;
 		this.gemList = gemList;
-		this.itemList = itemList;
-		this.helpBandit = helpBandit;
 	}
 
 	@NotNull
@@ -125,30 +119,12 @@ public class Build implements Comparable<Build> {
 	}
 
 	@NotNull
-	public Map<String, List<String>> getGemList() {
+	public List<String> getGemList() {
 		return gemList;
 	}
 
-	public void setGemList(@NotNull Map<String, List<String>> gemList) {
+	public void setGemList(@NotNull List<String> gemList) {
 		this.gemList = gemList;
-	}
-
-	@NotNull
-	public List<String> getItemList() {
-		return itemList;
-	}
-
-	public void setItemList(@NotNull List<String> itemList) {
-		this.itemList = itemList;
-	}
-
-	@Nullable
-	public String getHelpBandit() {
-		return helpBandit;
-	}
-
-	public void setHelpBandit(@Nullable String helpBandit) {
-		this.helpBandit = helpBandit;
 	}
 
 	@Override
@@ -161,9 +137,7 @@ public class Build implements Comparable<Build> {
 		if (!buildName.equals(build.buildName)) return false;
 		if (!className.equals(build.className)) return false;
 		if (!Objects.equals(ascendency, build.ascendency)) return false;
-		if (!gemList.equals(build.gemList)) return false;
-		if (!itemList.equals(build.itemList)) return false;
-		return Objects.equals(helpBandit, build.helpBandit);
+		return gemList.equals(build.gemList);
 	}
 
 	@Override
@@ -172,8 +146,6 @@ public class Build implements Comparable<Build> {
 		result = 31 * result + className.hashCode();
 		result = 31 * result + (ascendency != null ? ascendency.hashCode() : 0);
 		result = 31 * result + gemList.hashCode();
-		result = 31 * result + itemList.hashCode();
-		result = 31 * result + (helpBandit != null ? helpBandit.hashCode() : 0);
 		return result;
 	}
 
@@ -184,8 +156,6 @@ public class Build implements Comparable<Build> {
 				", className='" + className + '\'' +
 				", ascendency='" + ascendency + '\'' +
 				", gemList=" + gemList +
-				", itemList=" + itemList +
-				", helpBandit='" + helpBandit + '\'' +
 				'}';
 	}
 

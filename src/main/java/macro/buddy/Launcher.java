@@ -1,8 +1,7 @@
 package macro.buddy;
 
 import macro.buddy.config.Config;
-import macro.buddy.data.ExileHelper;
-import macro.buddy.ui.SettingsUI;
+import macro.buddy.ui.GemsUI;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -22,6 +21,6 @@ public class Launcher {
 		String[] filenames = new File("builds").list();
 		List<Build> builds = Arrays.stream(filenames == null ? new String[]{} : filenames).map(file -> file.replaceFirst("[.][^.]+$", "")).map(Build::load).collect(Collectors.toList());
 		Build.builds.addAll(builds);
-		new SettingsUI().init(args);
+		new GemsUI().init(args);
 	}
 }

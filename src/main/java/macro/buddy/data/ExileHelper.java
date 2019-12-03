@@ -74,7 +74,8 @@ public class ExileHelper {
 
 	@Nullable
 	public static Build pasteBinPathOfBuilding(String buildName, String raw) {
-		String replace = raw.replace('-', '+').replace('_', '/').trim();
+		return null;
+		/*String replace = raw.replace('-', '+').replace('_', '/').trim();
 
 		byte[] byteValueBase64Decoded = null;
 		try {
@@ -124,7 +125,7 @@ public class ExileHelper {
 				items.put(item, gems);
 		}
 		LOGGER.info("Items: " + items);
-		return new Build(buildName, className, ascendency, items, new ArrayList<>(), bandit.equals("None") ? null : bandit).save();
+		return new Build(buildName, className, ascendency, items, new ArrayList<>(), bandit.equals("None") ? null : bandit).save();*/
 	}
 
 	private static String inflate(byte[] data) throws DataFormatException, IOException {
