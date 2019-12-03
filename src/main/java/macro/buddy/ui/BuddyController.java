@@ -82,7 +82,7 @@ public class BuddyController implements Initializable {
 					HBox gemBox = new HBox();
 					gemBox.setSpacing(5.0);
 					CheckBox gemCheck = new CheckBox();
-					if (Util.selectedBuild.getGemList().contains(gem.getName()))
+					if (Util.selectedBuild.getGemList().values().stream().anyMatch(values -> values.stream().anyMatch(gemItem -> gem.getName().toLowerCase().contains(gemItem.toLowerCase()))))
 						gemCheck.setSelected(true);
 					gemCheck.setDisable(true);
 					Label gemLabel = new Label(gem.getName() + " [" + gem.getTags().stream().map(Enum::name).collect(Collectors.joining(", ")) + "]");
@@ -101,7 +101,7 @@ public class BuddyController implements Initializable {
 					HBox gemBox = new HBox();
 					gemBox.setSpacing(5.0);
 					CheckBox gemCheck = new CheckBox();
-					if (Util.selectedBuild.getGemList().contains(gem.getName()))
+					if (Util.selectedBuild.getGemList().values().stream().anyMatch(values -> values.stream().anyMatch(gemItem -> gem.getName().toLowerCase().contains(gemItem.toLowerCase()))))
 						gemCheck.setSelected(true);
 					gemCheck.setDisable(true);
 					Label gemLabel = new Label(gem.getName() + " [" + gem.getTags().stream().map(Enum::name).collect(Collectors.joining(", ")) + "]");

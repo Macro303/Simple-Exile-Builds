@@ -41,6 +41,25 @@ public abstract class Util {
 	}
 
 	@Nullable
+	public static String stringRequest(@NotNull String url) {
+		GetRequest request = Unirest.get(url);
+		request.header("Accept", "application/json");
+		request.header("User-Agent", "Exile Buddy");
+		LOGGER.debug("GET: " + request.getUrl() + " - " + request.getHeaders());
+		HttpResponse<String> response;
+		try {
+			response = request.asString();
+		} catch (UnirestException ue) {
+			LOGGER.error("Unable to load URL: " + ue);
+			return null;
+		}
+
+		LOGGER.info("GET: " + response.getStatus() + " " + response.getStatusText() + " - " + request.getUrl());
+		LOGGER.debug("Response: " + response.getBody());
+		return response.getStatus() == 200 ? response.getBody() : null;
+	}
+
+	@Nullable
 	public static String strToColour(@NotNull String value) {
 		switch (value) {
 			case "Red":

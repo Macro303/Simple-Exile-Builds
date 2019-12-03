@@ -273,6 +273,250 @@
 		"rewards": {
 		  "witch": [
 			{
+			  "name": "Dash",
+			  "colour": "Green",
+			  "tags": [
+				"Spell",
+				"Movement",
+				"Travel",
+				"Blink"
+			  ]
+			},
+			{
+			  "name": "Frostblink",
+			  "colour": "Blue",
+			  "tags": [
+				"Spell",
+				"Movement",
+				"Duration",
+				"Cold",
+				"Travel",
+				"Blink",
+				"AoE"
+			  ]
+			},
+			{
+			  "name": "Steelskin",
+			  "colour": "Red",
+			  "tags": [
+				"Spell",
+				"Duration",
+				"Guard"
+			  ]
+			}
+		  ],
+		  "shadow": [
+			{
+			  "name": "Dash",
+			  "colour": "Green",
+			  "tags": [
+				"Spell",
+				"Movement",
+				"Travel",
+				"Blink"
+			  ]
+			},
+			{
+			  "name": "Frostblink",
+			  "colour": "Blue",
+			  "tags": [
+				"Spell",
+				"Movement",
+				"Duration",
+				"Cold",
+				"Travel",
+				"Blink",
+				"AoE"
+			  ]
+			},
+			{
+			  "name": "Steelskin",
+			  "colour": "Red",
+			  "tags": [
+				"Spell",
+				"Duration",
+				"Guard"
+			  ]
+			}
+		  ],
+		  "ranger": [
+			{
+			  "name": "Dash",
+			  "colour": "Green",
+			  "tags": [
+				"Spell",
+				"Movement",
+				"Travel",
+				"Blink"
+			  ]
+			},
+			{
+			  "name": "Frostblink",
+			  "colour": "Blue",
+			  "tags": [
+				"Spell",
+				"Movement",
+				"Duration",
+				"Cold",
+				"Travel",
+				"Blink",
+				"AoE"
+			  ]
+			},
+			{
+			  "name": "Steelskin",
+			  "colour": "Red",
+			  "tags": [
+				"Spell",
+				"Duration",
+				"Guard"
+			  ]
+			}
+		  ],
+		  "duelist": [
+			{
+			  "name": "Dash",
+			  "colour": "Green",
+			  "tags": [
+				"Spell",
+				"Movement",
+				"Travel",
+				"Blink"
+			  ]
+			},
+			{
+			  "name": "Frostblink",
+			  "colour": "Blue",
+			  "tags": [
+				"Spell",
+				"Movement",
+				"Duration",
+				"Cold",
+				"Travel",
+				"Blink",
+				"AoE"
+			  ]
+			},
+			{
+			  "name": "Steelskin",
+			  "colour": "Red",
+			  "tags": [
+				"Spell",
+				"Duration",
+				"Guard"
+			  ]
+			}
+		  ],
+		  "marauder": [
+			{
+			  "name": "Dash",
+			  "colour": "Green",
+			  "tags": [
+				"Spell",
+				"Movement",
+				"Travel",
+				"Blink"
+			  ]
+			},
+			{
+			  "name": "Frostblink",
+			  "colour": "Blue",
+			  "tags": [
+				"Spell",
+				"Movement",
+				"Duration",
+				"Cold",
+				"Travel",
+				"Blink",
+				"AoE"
+			  ]
+			},
+			{
+			  "name": "Steelskin",
+			  "colour": "Red",
+			  "tags": [
+				"Spell",
+				"Duration",
+				"Guard"
+			  ]
+			}
+		  ],
+		  "templar": [
+			{
+			  "name": "Dash",
+			  "colour": "Green",
+			  "tags": [
+				"Spell",
+				"Movement",
+				"Travel",
+				"Blink"
+			  ]
+			},
+			{
+			  "name": "Frostblink",
+			  "colour": "Blue",
+			  "tags": [
+				"Spell",
+				"Movement",
+				"Duration",
+				"Cold",
+				"Travel",
+				"Blink",
+				"AoE"
+			  ]
+			},
+			{
+			  "name": "Steelskin",
+			  "colour": "Red",
+			  "tags": [
+				"Spell",
+				"Duration",
+				"Guard"
+			  ]
+			}
+		  ],
+		  "scion": [
+			{
+			  "name": "Dash",
+			  "colour": "Green",
+			  "tags": [
+				"Spell",
+				"Movement",
+				"Travel",
+				"Blink"
+			  ]
+			},
+			{
+			  "name": "Frostblink",
+			  "colour": "Blue",
+			  "tags": [
+				"Spell",
+				"Movement",
+				"Duration",
+				"Cold",
+				"Travel",
+				"Blink",
+				"AoE"
+			  ]
+			},
+			{
+			  "name": "Steelskin",
+			  "colour": "Red",
+			  "tags": [
+				"Spell",
+				"Duration",
+				"Guard"
+			  ]
+			}
+		  ]
+		}
+	  },
+	  {
+		"name": "Breaking Some Eggs",
+		"npc": "Nessa",
+		"rewards": {
+		  "witch": [
+			{
 			  "name": "Animate Weapon",
 			  "colour": "Green",
 			  "tags": [

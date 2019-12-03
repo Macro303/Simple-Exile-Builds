@@ -14,8 +14,8 @@ import java.io.IOException;
 /**
  * Created by Macro303 on 2019-Nov-29.
  */
-public class SetupUI extends Application {
-	private static final Logger LOGGER = LogManager.getLogger(SetupUI.class);
+public class SettingsUI extends Application {
+	private static final Logger LOGGER = LogManager.getLogger(SettingsUI.class);
 
 	public void init(String[] args) {
 		launch(args);
@@ -23,9 +23,9 @@ public class SetupUI extends Application {
 
 	@Override
 	public void start(Stage stage) throws IOException {
-		FXMLLoader loader = new FXMLLoader(getClass().getResource("Setup.fxml"));
+		FXMLLoader loader = new FXMLLoader(getClass().getResource("Settings.fxml"));
 		Parent root = loader.load();
-		SetupController controller = loader.getController();
+		SettingsController controller = loader.getController();
 		controller.setStage(stage);
 		stage.initStyle(StageStyle.DECORATED);
 		stage.setTitle("Exile Buddy");

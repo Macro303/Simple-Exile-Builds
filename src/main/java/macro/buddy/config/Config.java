@@ -3,6 +3,7 @@ package macro.buddy.config;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.jetbrains.annotations.NotNull;
+import org.jetbrains.annotations.Nullable;
 import org.yaml.snakeyaml.DumperOptions;
 import org.yaml.snakeyaml.Yaml;
 
@@ -33,6 +34,8 @@ public class Config {
 
 	@NotNull
 	private Connection proxy = new Connection();
+	@Nullable
+	private String pastebin = null;
 
 	@NotNull
 	public static Config load() {
@@ -55,6 +58,15 @@ public class Config {
 
 	public void setProxy(@NotNull Connection proxy) {
 		this.proxy = proxy;
+	}
+
+	@Nullable
+	public String getPastebin() {
+		return pastebin;
+	}
+
+	public void setPastebin(@Nullable String pastebin) {
+		this.pastebin = pastebin;
 	}
 
 	@NotNull
