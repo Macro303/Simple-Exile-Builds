@@ -21,6 +21,19 @@ public class Launcher {
 		String[] filenames = new File("builds").list();
 		List<Build> builds = Arrays.stream(filenames == null ? new String[]{} : filenames).map(file -> file.replaceFirst("[.][^.]+$", "")).map(Build::load).collect(Collectors.toList());
 		Build.builds.addAll(builds);
+		/*ArrayList<String> sublink = new ArrayList<>();
+		sublink.add("Caustic Arrow");
+		sublink.add("Void Manipulation");
+		sublink.add("Empower");
+		ArrayList<String> sublink2 = new ArrayList<>();
+		sublink2.add("Portal");
+		ArrayList<List<String>> links = new ArrayList<>();
+		links.add(sublink);
+		links.add(sublink2);
+		HashMap<String, String> updates = new HashMap<>();
+		updates.put("Empower", "Enhance");
+		Build test = new Build("Testing", "Ranger", "Raider", links, updates);
+		test.save();*/
 		new GemsUI().init(args);
 	}
 }

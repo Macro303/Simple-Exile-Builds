@@ -101,7 +101,7 @@ public class SettingsController implements Initializable {
 		try {
 			if (stage != null) {
 				stage.close();
-				new BuddyUI().start(stage);
+				new GemsUI().start(stage);
 			}
 		} catch (IOException ioe) {
 			LOGGER.fatal("Unable to Load Buddy UI from Setup UI => " + ioe);
