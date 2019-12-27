@@ -1,5 +1,7 @@
 package macro.buddy;
 
+import macro.buddy.build.BuildInfo;
+import macro.buddy.build.BuildUtils;
 import macro.buddy.config.Config;
 import macro.buddy.ui.GemsUI;
 import org.apache.logging.log4j.LogManager;
@@ -17,10 +19,8 @@ public class Launcher {
 	private static final Logger LOGGER = LogManager.getLogger(Launcher.class);
 
 	public static void main(String[] args) {
-		Config.CONFIG = Config.load();
-		String[] filenames = new File("builds").list();
-		List<Build> builds = Arrays.stream(filenames == null ? new String[]{} : filenames).map(file -> file.replaceFirst("[.][^.]+$", "")).map(Build::load).collect(Collectors.toList());
-		Build.builds.addAll(builds);
+		BuildUtils.loadBuilds();
+		Config.INSTANCE = Config.load();
 		/*ArrayList<String> sublink = new ArrayList<>();
 		sublink.add("Caustic Arrow");
 		sublink.add("Void Manipulation");

@@ -15,11 +15,12 @@
 			</Label>
 			<Separator HBox.hgrow="ALWAYS" />
 			<VBox alignment="CENTER" spacing="5.0" HBox.hgrow="SOMETIMES">
-				<ComboBox fx:id="buildCombo" maxWidth="1.7976931348623157E308" onAction="#buildComboUpdate"
-				          promptText="Build" visibleRowCount="5"/>
+				<ComboBox fx:id="buildCombo" maxWidth="1.7976931348623157E308" onAction="#buildSelection" promptText="Build" visibleRowCount="5" />
 				<HBox alignment="CENTER" spacing="5.0">
-					<TextField fx:id="buildName" promptText="Build Name" HBox.hgrow="ALWAYS"/>
-					<Button minWidth="100" mnemonicParsing="false" onAction="#addBuild" text="Add Build"/>
+					<TextField fx:id="buildName" promptText="Build Name" HBox.hgrow="ALWAYS" />
+					<ComboBox fx:id="classCombo" onAction="#classSelection" promptText="Build Class" visibleRowCount="5" />
+					<ComboBox fx:id="ascendencyCombo" disable="true" onAction="#ascendencySelection" promptText="Build Ascendency" visibleRowCount="5" />
+					<Button minWidth="100" mnemonicParsing="false" onAction="#addBuild" text="Add Build" />
 				</HBox>
 			</VBox>
 			<BorderPane.margin>

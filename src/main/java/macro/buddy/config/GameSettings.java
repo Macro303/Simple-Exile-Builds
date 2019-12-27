@@ -1,64 +1,40 @@
 package macro.buddy.config;
 
-import macro.buddy.data.Tags;
-import org.jetbrains.annotations.Nullable;
+import java.util.Optional;
 
 /**
  * Created by Macro303 on 2019-Nov-29.
  */
 public class GameSettings {
-	@Nullable
 	private String clientFile;
-	@Nullable
 	private String accountName;
-	@Nullable
-	private String className;
 
 	public GameSettings() {
-		this(null, null, null);
+		this(null, null);
 	}
 
-	public GameSettings(@Nullable String clientFile, @Nullable String accountName, @Nullable String className) {
+	public GameSettings(String clientFile, String accountName) {
 		this.clientFile = clientFile;
 		this.accountName = accountName;
-		this.className = className;
 	}
 
 	public boolean isValid() {
-		return clientFile != null && accountName != null && getClassTag() != null;
+		return clientFile != null && accountName != null;
 	}
 
-	@Nullable
-	public String getClientFile() {
-		return clientFile;
+	public Optional<String> getClientFile() {
+		return Optional.ofNullable(clientFile);
 	}
 
-	public void setClientFile(@Nullable String clientFile) {
+	public void setClientFile(String clientFile) {
 		this.clientFile = clientFile;
 	}
 
-	@Nullable
-	public String getAccountName() {
-		return accountName;
+	public Optional<String> getAccountName() {
+		return Optional.ofNullable(accountName);
 	}
 
-	public void setAccountName(@Nullable String accountName) {
+	public void setAccountName(String accountName) {
 		this.accountName = accountName;
-	}
-
-	@Nullable
-	public Tags.ClassTag getClassTag() {
-		if (className == null)
-			return null;
-		return Tags.ClassTag.fromName(className);
-	}
-
-	@Nullable
-	public String getClassName() {
-		return className;
-	}
-
-	public void setClassName(@Nullable String className) {
-		this.className = className;
 	}
 }

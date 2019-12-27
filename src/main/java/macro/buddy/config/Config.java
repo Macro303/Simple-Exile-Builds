@@ -1,81 +1,60 @@
 package macro.buddy.config;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
+import com.fasterxml.jackson.dataformat.yaml.YAMLGenerator;
+import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
-import org.yaml.snakeyaml.DumperOptions;
-import org.yaml.snakeyaml.Yaml;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
 /**
  * Created by Macro303 on 2019-Nov-29.
  */
 public class Config {
-	@NotNull
+	@JsonIgnore
 	private static final Logger LOGGER = LogManager.getLogger(Config.class);
-	@NotNull
-	public static Config CONFIG;
-	@NotNull
-	private static Yaml YAML;
+	@JsonIgnore
+	public static Config INSTANCE;
 
-	static {
-		DumperOptions options = new DumperOptions();
-		options.setDefaultFlowStyle(DumperOptions.FlowStyle.FLOW);
-		options.setPrettyFlow(true);
-		YAML = new Yaml(options);
-	}
-
-	@NotNull
 	private Connection proxy = new Connection();
-	@Nullable
-	private String pastebin = null;
 
-	@NotNull
 	public static Config load() {
 		LOGGER.info("Loading Config");
 		File temp = new File("config.yaml");
 		if (!temp.exists())
 			new Config().save();
-		try (BufferedReader br = Files.newBufferedReader(Paths.get("config.yaml"))) {
-			return YAML.loadAs(br, Config.class).save();
+		ObjectMapper mapper = new ObjectMapper(new YAMLFactory().disable(YAMLGenerator.Feature.WRITE_DOC_START_MARKER));
+		mapper.findAndRegisterModules();
+		mapper.registerModule(new Jdk8Module());
+		try {
+			return mapper.readValue(new File("config.yaml"), Config.class).save();
 		} catch (IOException ioe) {
-			LOGGER.info("Unable to read File");
+			LOGGER.error("Unable to read Config: {}", ioe.getLocalizedMessage());
 		}
 		return new Config().save();
 	}
 
-	@NotNull
 	public Connection getProxy() {
 		return proxy;
 	}
 
-	public void setProxy(@NotNull Connection proxy) {
+	public void setProxy(Connection proxy) {
 		this.proxy = proxy;
 	}
 
-	@Nullable
-	public String getPastebin() {
-		return pastebin;
-	}
-
-	public void setPastebin(@Nullable String pastebin) {
-		this.pastebin = pastebin;
-	}
-
-	@NotNull
 	public Config save() {
 		LOGGER.info("Saving Config");
-		try (BufferedWriter bw = Files.newBufferedWriter(Paths.get("config.yaml"))) {
-			bw.write(YAML.dumpAsMap(this));
+		ObjectMapper mapper = new ObjectMapper(new YAMLFactory().disable(YAMLGenerator.Feature.WRITE_DOC_START_MARKER));
+		mapper.findAndRegisterModules();
+		mapper.registerModule(new Jdk8Module());
+		try {
+			mapper.writeValue(new File("config.yaml"), this);
 		} catch (IOException ioe) {
-			LOGGER.info("Unable to save File");
+			LOGGER.error("Unable to write Config: {}", ioe.getLocalizedMessage());
 		}
 		return this;
 	}

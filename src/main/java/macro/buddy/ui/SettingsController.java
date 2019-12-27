@@ -1,72 +1,64 @@
 package macro.buddy.ui;
 
-import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
-import javafx.stage.FileChooser;
 import javafx.stage.Stage;
 import javafx.util.StringConverter;
-import macro.buddy.Build;
+import macro.buddy.build.AscendencyTag;
+import macro.buddy.build.BuildInfo;
 import macro.buddy.Util;
-import macro.buddy.data.ExileHelper;
+import macro.buddy.build.BuildUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
-import java.io.File;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.util.Optional;
 import java.util.ResourceBundle;
 
 /**
  * Created by Macro303 on 2019-Nov-29.
  */
 public class SettingsController implements Initializable {
-	@NotNull
 	private static final Logger LOGGER = LogManager.getLogger(SettingsController.class);
 	@FXML
-	private ComboBox<Build> buildCombo;
+	private ComboBox<BuildInfo> buildCombo;
 	@FXML
 	private TextField buildName;
 	@FXML
 	private TextField pastebinCode;
 
-	@Nullable
 	private Stage stage = null;
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
-		buildCombo.getItems().setAll(Build.builds);
-		buildCombo.setConverter(new StringConverter<Build>() {
+		buildCombo.getItems().setAll(BuildUtils.getBuilds());
+		buildCombo.setConverter(new StringConverter<BuildInfo>() {
 			@Override
-			public String toString(Build object) {
-				if (object.getAscendency() == null)
-					return object.getBuildName() + "[" + object.getClassTag() + "]";
-				else
-					return object.getBuildName() + "[" + object.getClassTag() + "/" + object.getAscendency() + "]";
+			public String toString(BuildInfo object) {
+				return object.getName() + " [" + object.getClassTag() + (object.getAscendency() == AscendencyTag.NONE ? "" : "/" + object.getAscendency().name()) + "]";
 			}
 
 			@Override
-			public Build fromString(String string) {
+			public BuildInfo fromString(String string) {
 				return null;
 			}
 		});
 	}
 
-	public void setStage(@NotNull Stage stage) {
+	public void setStage(Stage stage) {
 		this.stage = stage;
 	}
 
 	public void addBuild() {
 		if (buildName.getText() == null || buildName.getText().trim().isEmpty())
 			return;
-		Build.builds.add(Build.load(buildName.getText()));
-		buildCombo.getItems().setAll(Build.builds);
+		/*BuildInfo.builds.add(BuildInfo.load(buildName.getText()));
+		buildCombo.getItems().setAll(BuildInfo.builds);*/
 	}
 
 
@@ -85,24 +77,23 @@ public class SettingsController implements Initializable {
 			}
 		} else
 			URL += pastebinCode.getText();
-		String response = Util.stringRequest(URL);
-		if (response == null)
+		Optional<String> response = Util.stringRequest(URL);
+		if (!response.isPresent())
 			return;
-		Build build = ExileHelper.pasteBinPathOfBuilding(buildName.getText(), response);
-		Build.builds.add(build);
-		buildCombo.getItems().setAll(Build.builds);
+		/*Optional<BuildInfo> build = ExileHelper.pasteBinPathOfBuilding(buildName.getText(), response.get());
+		if (build.isPresent()) {
+			BuildInfo.builds.add(build.get());
+			buildCombo.getItems().setAll(BuildInfo.builds);
+		}*/
 	}
 
 	public void saveAndContinue() {
 		if (buildCombo.getSelectionModel().getSelectedItem() == null)
 			return;
-		Util.selectedBuild = buildCombo.getSelectionModel().getSelectedItem();
 
 		try {
-			if (stage != null) {
-				stage.close();
-				new GemsUI().start(stage);
-			}
+			stage.close();
+			new GemsUI().start(stage);
 		} catch (IOException ioe) {
 			LOGGER.fatal("Unable to Load Buddy UI from Setup UI => " + ioe);
 		}

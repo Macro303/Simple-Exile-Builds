@@ -1,0 +1,463 @@
+[
+  {
+	"name": "Detonate Mines",
+	"stats": [
+	  "None"
+	],
+	"tags": [
+	  "MINE",
+	  "SPELL"
+	]
+  },
+  {
+	"name": "Portal",
+	"stats": [
+	  "None"
+	],
+	"tags": [
+	  "SPELL"
+	]
+  },
+  {
+	"name": "Animate Weapon",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "DURATION",
+	  "MINION",
+	  "SPELL"
+	]
+  },
+  {
+	"name": "Arctic Armour",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "SPELL",
+	  "DURATION",
+	  "COLD"
+	]
+  },
+  {
+	"name": "Artillery Ballista",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "ATTACK",
+	  "TOTEM",
+	  "AOE",
+	  "FIRE",
+	  "PROJECTILE",
+	  "BOW"
+	]
+  },
+  {
+	"name": "Barrage",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "ATTACK",
+	  "PROJECTILE",
+	  "BOW"
+	]
+  },
+  {
+	"name": "Bear Trap",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "TRAP",
+	  "SPELL",
+	  "DURATION",
+	  "PHYSICAL"
+	]
+  },
+  {
+	"name": "Blade Furry",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "ATTACK",
+	  "AOE",
+	  "CHANNELLING",
+	  "PHYSICAL",
+	  "MELEE"
+	]
+  },
+  {
+	"name": "Blade Vortex",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "DURATION",
+	  "PHYSICAL"
+	],
+	"hasVaal": true
+  },
+  {
+	"name": "Bladefall",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "PHYSICAL"
+	]
+  },
+  {
+	"name": "Blast Rain",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "FIRE",
+	  "ATTACK",
+	  "AOE",
+	  "PROJECTILE",
+	  "BOW"
+	]
+  },
+  {
+	"name": "Blink Arrow",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "ATTACK",
+	  "MINION",
+	  "DURATION",
+	  "MOVEMENT",
+	  "TRAVEL",
+	  "BOW"
+	]
+  },
+  {
+	"name": "Blood Rage",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "SPELL",
+	  "DURATION",
+	  "PHYSICAL"
+	]
+  },
+  {
+	"name": "Burning Arrow",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "ATTACK",
+	  "PROJECTILE",
+	  "FIRE",
+	  "DURATION",
+	  "BOW"
+	],
+	"hasVaal": true
+  },
+  {
+	"name": "Caustic Arrow",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "ATTACK",
+	  "PROJECTILE",
+	  "AOE",
+	  "DURATION",
+	  "CHAOS",
+	  "BOW"
+	]
+  },
+  {
+	"name": "Charged Dash",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "MOVEMENT",
+	  "AOE",
+	  "CHANNELLING",
+	  "ATTACK",
+	  "LIGHTNING",
+	  "MELEE"
+	]
+  },
+  {
+	"name": "Cobra Lash",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "ATTACK",
+	  "PROJECTILE",
+	  "CHAOS"
+	]
+  },
+  {
+	"name": "Cremation",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "FIRE",
+	  "DURATION",
+	  "PROJECTILE"
+	]
+  },
+  {
+	"name": "Cyclone",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "ATTACK",
+	  "AOE",
+	  "MOVEMENT",
+	  "CHANNELLING",
+	  "PHYSICAL",
+	  "MELEE"
+	],
+	"hasVaal": true
+  },
+  {
+	"name": "Dash",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "SPELL",
+	  "MOVEMENT",
+	  "TRAVEL",
+	  "BLINK"
+	]
+  },
+  {
+	"name": "Desecrate",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "DURATION",
+	  "CHAOS"
+	]
+  },
+  {
+	"name": "Detonate Dead",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "FIRE"
+	],
+	"hasVaal": true
+  },
+  {
+	"name": "Double Strike",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "ATTACK",
+	  "MELEE",
+	  "STRIKE",
+	  "PHYSICAL"
+	],
+	"hasVaal": true
+  },
+  {
+	"name": "Dual Strike",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "ATTACK",
+	  "MELEE",
+	  "STRIKE"
+	]
+  },
+  {
+	"name": "Elemental Hit",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "ATTACK",
+	  "PROJECTILE",
+	  "MELEE",
+	  "STRIKE",
+	  "FIRE",
+	  "COLD",
+	  "LIGHTNING",
+	  "AOE",
+	  "BOW"
+	]
+  },
+  {
+	"name": "Ensnaring Arrow",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "ATTACK",
+	  "PROJECTILE",
+	  "AOE",
+	  "BOW"
+	]
+  },
+  {
+	"name": "Ethereal Knives",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "SPELL",
+	  "PROJECTILE",
+	  "PHYSICAL"
+	]
+  },
+  {
+	"name": "Explosive Arrow",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "ATTACK",
+	  "PROJECTILE",
+	  "AOE",
+	  "DURATION",
+	  "FIRE",
+	  "BOW"
+	]
+  },
+  {
+	"name": "Explosive Trap",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "TRAP",
+	  "SPELL",
+	  "AOE",
+	  "FIRE",
+	  "PHYSICAL"
+	]
+  },
+  {
+	"name": "Fire Trap",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "TRAP",
+	  "SPELL",
+	  "DURATION",
+	  "AOE",
+	  "FIRE"
+	]
+  },
+  {
+	"name": "Flamethrower Trap",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "TRAP",
+	  "SPELL",
+	  "DURATION",
+	  "AOE",
+	  "FIRE"
+	]
+  },
+  {
+	"name": "Flicker Strike",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "ATTACK",
+	  "MELEE",
+	  "STRIKE",
+	  "MOVEMENT",
+	  "DURATION"
+	]
+  },
+  {
+	"name": "Frenzy",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "ATTACK",
+	  "PROJECTILE",
+	  "MELEE",
+	  "STRIKE",
+	  "BOW"
+	]
+  },
+  {
+	"name": "Frost Blades",
+	"stats": [
+	  "Dexterity"
+	],
+	"tags": [
+	  "ATTACK",
+	  "PROJECTILE",
+	  "MELEE",
+	  "STRIKE",
+	  "COLD"
+	]
+  },
+  {
+	"name": "Clarity",
+	"stats": [
+	  "Intelligence"
+	],
+	"tags": [
+	  "AURA",
+	  "SPELL",
+	  "AOE"
+	],
+	"hasVaal": true
+  },
+  {
+	"name": "Void Manipulation Support",
+	"stats": [
+	  "Dexterity",
+	  "Intelligence"
+	],
+	"tags": [
+	  "CHAOS",
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Spell Totem Support",
+	"stats": [
+	  "Dexterity",
+	  "Strength"
+	],
+	"tags": [
+	  "SUPPORT",
+	  "SPELL",
+	  "TOTEM"
+	]
+  }
+]

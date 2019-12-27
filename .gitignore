@@ -19,4 +19,4 @@ out/
 *.yaml
 *.json
 *.csv
-!Gems.json
+!gems/

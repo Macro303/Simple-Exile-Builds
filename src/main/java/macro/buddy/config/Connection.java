@@ -1,38 +1,36 @@
 package macro.buddy.config;
 
-import org.jetbrains.annotations.Nullable;
+import java.util.Optional;
 
 /**
  * Created by Macro303 on 2019-Nov-29.
  */
 public class Connection {
-	@Nullable
 	private String hostName;
-	private int port;
+	private Integer port;
 
 	public Connection() {
-		this(null, -1);
+		this(null, null);
 	}
 
-	public Connection(@Nullable String hostName, int port) {
+	public Connection(String hostName, Integer port) {
 		this.hostName = hostName;
 		this.port = port;
 	}
 
-	@Nullable
-	public String getHostName() {
-		return hostName;
+	public Optional<String> getHostName() {
+		return Optional.ofNullable(hostName);
 	}
 
-	public void setHostName(@Nullable String hostName) {
+	public void setHostName(String hostName) {
 		this.hostName = hostName;
 	}
 
-	public int getPort() {
-		return port;
+	public Optional<Integer> getPort() {
+		return Optional.ofNullable(port);
 	}
 
-	public void setPort(int port) {
+	public void setPort(Integer port) {
 		this.port = port;
 	}
 }

@@ -4,25 +4,23 @@ import kong.unirest.*;
 import macro.buddy.config.Config;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
+
+import java.util.Optional;
 
 /**
  * Created by Macro303 on 2019-Nov-29.
  */
 public abstract class Util {
 	private static final Logger LOGGER = LogManager.getLogger(Util.class);
-	@Nullable
-	public static Build selectedBuild;
 
 	static {
 		Unirest.config().enableCookieManagement(false);
-		if (Config.CONFIG.getProxy().getHostName() != null && Config.CONFIG.getProxy().getPort() != -1)
-			Unirest.config().proxy(Config.CONFIG.getProxy().getHostName(), Config.CONFIG.getProxy().getPort());
+		if (Config.INSTANCE.getProxy().getHostName().isPresent() && Config.INSTANCE.getProxy().getPort().isPresent())
+			Unirest.config().proxy(Config.INSTANCE.getProxy().getHostName().get(), Config.INSTANCE.getProxy().getPort().get());
+		Unirest.config().setObjectMapper(new JacksonObjectMapper());
 	}
 
-	@Nullable
-	public static JsonNode jsonRequest(@NotNull String url) {
+	public static Optional<JsonNode> jsonRequest(String url) {
 		GetRequest request = Unirest.get(url);
 		request.header("Accept", "application/json");
 		request.header("User-Agent", "Exile Buddy");
@@ -32,16 +30,15 @@ public abstract class Util {
 			response = request.asJson();
 		} catch (UnirestException ue) {
 			LOGGER.error("Unable to load URL: " + ue);
-			return null;
+			return Optional.empty();
 		}
 
 		LOGGER.info("GET: " + response.getStatus() + " " + response.getStatusText() + " - " + request.getUrl());
 		LOGGER.debug("Response: " + response.getBody());
-		return response.getStatus() == 200 ? response.getBody() : null;
+		return response.getStatus() == 200 ? Optional.ofNullable(response.getBody()) : Optional.empty();
 	}
 
-	@Nullable
-	public static String stringRequest(@NotNull String url) {
+	public static Optional<String> stringRequest(String url) {
 		GetRequest request = Unirest.get(url);
 		request.header("Accept", "application/json");
 		request.header("User-Agent", "Exile Buddy");
@@ -51,25 +48,24 @@ public abstract class Util {
 			response = request.asString();
 		} catch (UnirestException ue) {
 			LOGGER.error("Unable to load URL: " + ue);
-			return null;
+			return Optional.empty();
 		}
 
 		LOGGER.info("GET: " + response.getStatus() + " " + response.getStatusText() + " - " + request.getUrl());
 		LOGGER.debug("Response: " + response.getBody());
-		return response.getStatus() == 200 ? response.getBody() : null;
+		return response.getStatus() == 200 ? Optional.ofNullable(response.getBody()) : Optional.empty();
 	}
 
-	@Nullable
-	public static String strToColour(@NotNull String value) {
-		switch (value) {
-			case "Red":
+	public static String statToColour(String stat) {
+		switch (stat) {
+			case "Strength":
 				return "#DD9999";
-			case "Green":
+			case "Dexterity":
 				return "#99DD99";
-			case "Blue":
+			case "Intelligence":
 				return "#9999DD";
 			default:
-				return null;
+				return "#DDDDDD";
 		}
 	}
 }
