@@ -1,6 +1,5 @@
 package macro.buddy.gems;
 
-import java.util.List;
 import java.util.SortedSet;
 
 /**
@@ -8,16 +7,16 @@ import java.util.SortedSet;
  */
 public class GemInfo implements Comparable<GemInfo> {
 	private String name;
-	private List<String> stats;
+	private String slot;
 	private SortedSet<GemTag> tags;
 	private boolean hasVaal;
 
 	public GemInfo() {
 	}
 
-	public GemInfo(String name, List<String> stats, SortedSet<GemTag> tags, boolean hasVaal) {
+	public GemInfo(String name, String slot, SortedSet<GemTag> tags, boolean hasVaal) {
 		this.name = name;
-		this.stats = stats;
+		this.slot = slot;
 		this.tags = tags;
 		this.hasVaal = hasVaal;
 	}
@@ -30,12 +29,12 @@ public class GemInfo implements Comparable<GemInfo> {
 		this.name = name;
 	}
 
-	public List<String> getStats() {
-		return stats;
+	public String getSlot() {
+		return slot;
 	}
 
-	public void setStats(List<String> stats) {
-		this.stats = stats;
+	public void setSlot(String slot) {
+		this.slot = slot;
 	}
 
 	public SortedSet<GemTag> getTags() {
@@ -54,7 +53,7 @@ public class GemInfo implements Comparable<GemInfo> {
 		this.hasVaal = hasVaal;
 	}
 
-	public String getFilename(boolean isVaal){
+	public String getFilename(boolean isVaal) {
 		String filename = getName().replaceAll(" ", "_");
 		if (isVaal)
 			filename += "[Vaal]";
@@ -70,14 +69,14 @@ public class GemInfo implements Comparable<GemInfo> {
 
 		if (hasVaal != gemInfo.hasVaal) return false;
 		if (!name.equals(gemInfo.name)) return false;
-		if (!stats.equals(gemInfo.stats)) return false;
+		if (!slot.equals(gemInfo.slot)) return false;
 		return tags.equals(gemInfo.tags);
 	}
 
 	@Override
 	public int hashCode() {
 		int result = name.hashCode();
-		result = 31 * result + stats.hashCode();
+		result = 31 * result + slot.hashCode();
 		result = 31 * result + tags.hashCode();
 		result = 31 * result + (hasVaal ? 1 : 0);
 		return result;
@@ -87,7 +86,7 @@ public class GemInfo implements Comparable<GemInfo> {
 	public String toString() {
 		return "GemInfo{" +
 				"name='" + name + '\'' +
-				", stats=" + stats +
+				", slot='" + slot + '\'' +
 				", tags=" + tags +
 				", hasVaal=" + hasVaal +
 				'}';

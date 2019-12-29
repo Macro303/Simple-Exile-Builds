@@ -56,16 +56,18 @@ public abstract class Util {
 		return response.getStatus() == 200 ? Optional.ofNullable(response.getBody()) : Optional.empty();
 	}
 
-	public static String statToColour(String stat) {
-		switch (stat) {
-			case "Strength":
+	public static String slotToColour(String slot) {
+		switch (slot) {
+			case "Red":
 				return "#DD9999";
-			case "Dexterity":
+			case "Green":
 				return "#99DD99";
-			case "Intelligence":
+			case "Blue":
 				return "#9999DD";
-			default:
+			case "White":
 				return "#DDDDDD";
+			default:
+				return "#999999";
 		}
 	}
 }

@@ -1,9 +1,7 @@
 [
   {
 	"name": "Detonate Mines",
-	"stats": [
-	  "None"
-	],
+	"slot": "White",
 	"tags": [
 	  "MINE",
 	  "SPELL"
@@ -11,18 +9,14 @@
   },
   {
 	"name": "Portal",
-	"stats": [
-	  "None"
-	],
+	"slot": "White",
 	"tags": [
 	  "SPELL"
 	]
   },
   {
 	"name": "Animate Weapon",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "DURATION",
 	  "MINION",
@@ -31,9 +25,7 @@
   },
   {
 	"name": "Arctic Armour",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "SPELL",
 	  "DURATION",
@@ -42,9 +34,7 @@
   },
   {
 	"name": "Artillery Ballista",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "ATTACK",
 	  "TOTEM",
@@ -56,9 +46,7 @@
   },
   {
 	"name": "Barrage",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "ATTACK",
 	  "PROJECTILE",
@@ -67,9 +55,7 @@
   },
   {
 	"name": "Bear Trap",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "TRAP",
 	  "SPELL",
@@ -79,9 +65,7 @@
   },
   {
 	"name": "Blade Furry",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "ATTACK",
 	  "AOE",
@@ -92,9 +76,7 @@
   },
   {
 	"name": "Blade Vortex",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "SPELL",
 	  "AOE",
@@ -105,9 +87,7 @@
   },
   {
 	"name": "Bladefall",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "SPELL",
 	  "AOE",
@@ -116,9 +96,7 @@
   },
   {
 	"name": "Blast Rain",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "FIRE",
 	  "ATTACK",
@@ -129,9 +107,7 @@
   },
   {
 	"name": "Blink Arrow",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "ATTACK",
 	  "MINION",
@@ -143,9 +119,7 @@
   },
   {
 	"name": "Blood Rage",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "SPELL",
 	  "DURATION",
@@ -154,9 +128,7 @@
   },
   {
 	"name": "Burning Arrow",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "ATTACK",
 	  "PROJECTILE",
@@ -168,9 +140,7 @@
   },
   {
 	"name": "Caustic Arrow",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "ATTACK",
 	  "PROJECTILE",
@@ -182,9 +152,7 @@
   },
   {
 	"name": "Charged Dash",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "MOVEMENT",
 	  "AOE",
@@ -196,9 +164,7 @@
   },
   {
 	"name": "Cobra Lash",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "ATTACK",
 	  "PROJECTILE",
@@ -207,9 +173,7 @@
   },
   {
 	"name": "Cremation",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "SPELL",
 	  "AOE",
@@ -220,9 +184,7 @@
   },
   {
 	"name": "Cyclone",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "ATTACK",
 	  "AOE",
@@ -235,9 +197,7 @@
   },
   {
 	"name": "Dash",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "SPELL",
 	  "MOVEMENT",
@@ -247,9 +207,7 @@
   },
   {
 	"name": "Desecrate",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "SPELL",
 	  "AOE",
@@ -259,9 +217,7 @@
   },
   {
 	"name": "Detonate Dead",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "SPELL",
 	  "AOE",
@@ -271,9 +227,7 @@
   },
   {
 	"name": "Double Strike",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "ATTACK",
 	  "MELEE",
@@ -284,9 +238,7 @@
   },
   {
 	"name": "Dual Strike",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "ATTACK",
 	  "MELEE",
@@ -295,9 +247,7 @@
   },
   {
 	"name": "Elemental Hit",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "ATTACK",
 	  "PROJECTILE",
@@ -312,9 +262,7 @@
   },
   {
 	"name": "Ensnaring Arrow",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "ATTACK",
 	  "PROJECTILE",
@@ -324,9 +272,7 @@
   },
   {
 	"name": "Ethereal Knives",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "SPELL",
 	  "PROJECTILE",
@@ -335,9 +281,7 @@
   },
   {
 	"name": "Explosive Arrow",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "ATTACK",
 	  "PROJECTILE",
@@ -349,9 +293,7 @@
   },
   {
 	"name": "Explosive Trap",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "TRAP",
 	  "SPELL",
@@ -362,9 +304,7 @@
   },
   {
 	"name": "Fire Trap",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "TRAP",
 	  "SPELL",
@@ -375,9 +315,7 @@
   },
   {
 	"name": "Flamethrower Trap",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "TRAP",
 	  "SPELL",
@@ -388,9 +326,7 @@
   },
   {
 	"name": "Flicker Strike",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "ATTACK",
 	  "MELEE",
@@ -401,9 +337,7 @@
   },
   {
 	"name": "Frenzy",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "ATTACK",
 	  "PROJECTILE",
@@ -414,9 +348,7 @@
   },
   {
 	"name": "Frost Blades",
-	"stats": [
-	  "Dexterity"
-	],
+	"slot": "Green",
 	"tags": [
 	  "ATTACK",
 	  "PROJECTILE",
@@ -426,10 +358,473 @@
 	]
   },
   {
-	"name": "Clarity",
-	"stats": [
-	  "Intelligence"
+	"name": "Galvanic Arrow",
+	"slot": "Green",
+	"tags": [
+	  "LIGHTNING",
+	  "ATTACK",
+	  "PROJECTILE",
+	  "AOE",
+	  "BOW"
+	]
+  },
+  {
+	"name": "Grace",
+	"slot": "Green",
+	"tags": [
+	  "AURA",
+	  "SPELL",
+	  "AOE"
 	],
+	"hasVaal": true
+  },
+  {
+	"name": "Haste",
+	"slot": "Green",
+	"tags": [
+	  "AURA",
+	  "SPELL",
+	  "AOE"
+	],
+	"hasVaal": true
+  },
+  {
+	"name": "Hatred",
+	"slot": "Green",
+	"tags": [
+	  "AURA",
+	  "SPELL",
+	  "AOE",
+	  "COLD"
+	]
+  },
+  {
+	"name": "Herald of Agony",
+	"slot": "Green",
+	"tags": [
+	  "SPELL",
+	  "HERALD",
+	  "MINION",
+	  "CHAOS",
+	  "PHYSICAL"
+	]
+  },
+  {
+	"name": "Herald of Ice",
+	"slot": "Green",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "COLD",
+	  "HERALD"
+	]
+  },
+  {
+	"name": "Ice Shot",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "PROJECTILE",
+	  "AOE",
+	  "COLD",
+	  "BOW"
+	]
+  },
+  {
+	"name": "Ice Trap",
+	"slot": "Green",
+	"tags": [
+	  "TRAP",
+	  "SPELL",
+	  "AOE",
+	  "COLD"
+	]
+  },
+  {
+	"name": "Lacerate",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "AOE",
+	  "PHYSICAL",
+	  "MELEE"
+	]
+  },
+  {
+	"name": "Lancing Steel",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "PROJECTILE",
+	  "PHYSICAL"
+	]
+  },
+  {
+	"name": "Lightning Arrow",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "AOE",
+	  "PROJECTILE",
+	  "LIGHTNING",
+	  "BOW"
+	]
+  },
+  {
+	"name": "Lightning Strike",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "PROJECTILE",
+	  "MELEE",
+	  "STRIKE",
+	  "LIGHTNING"
+	],
+	"hasVaal": true
+  },
+  {
+	"name": "Mirror Arrow",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "MINION",
+	  "DURATION",
+	  "MOVEMENT",
+	  "TRAVEL",
+	  "BOW"
+	]
+  },
+  {
+	"name": "Pestilent Strike",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "MELEE",
+	  "STRIKE",
+	  "AOE",
+	  "DURATION",
+	  "CHAOS"
+	]
+  },
+  {
+	"name": "Phase Run",
+	"slot": "Green",
+	"tags": [
+	  "SPELL",
+	  "DURATION",
+	  "MOVEMENT",
+	  "PHYSICAL",
+	  "TRAVEL"
+	]
+  },
+  {
+	"name": "Plague Bearer",
+	"slot": "Green",
+	"tags": [
+	  "SPELL",
+	  "CHAOS",
+	  "AOE"
+	]
+  },
+  {
+	"name": "Poacher's Mark",
+	"slot": "Green",
+	"tags": [
+	  "CURSE",
+	  "SPELL",
+	  "AOE",
+	  "DURATION"
+	]
+  },
+  {
+	"name": "Precision",
+	"slot": "Green",
+	"tags": [
+	  "AURA",
+	  "SPELL",
+	  "AOE"
+	]
+  },
+  {
+	"name": "Projectile Weakness",
+	"slot": "Green",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "DURATION",
+	  "CURSE"
+	]
+  },
+  {
+	"name": "Puncture",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "PROJECTILE",
+	  "DURATION",
+	  "MELEE",
+	  "STRIKE",
+	  "PHYSICAL",
+	  "BOW"
+	]
+  },
+  {
+	"name": "Purity of Ice",
+	"slot": "Green",
+	"tags": [
+	  "AURA",
+	  "SPELL",
+	  "AOE",
+	  "COLD"
+	]
+  },
+  {
+	"name": "Rain of Arrows",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "AOE",
+	  "PROJECTILE",
+	  "BOW"
+	],
+	"hasVaal": true
+  },
+  {
+	"name": "Reave",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "AOE",
+	  "MELEE"
+	],
+	"hasVaal": true
+  },
+  {
+	"name": "Riposte",
+	"slot": "Green",
+	"tags": [
+	  "TRIGGER",
+	  "ATTACK",
+	  "MELEE",
+	  "STRIKE",
+	  "PHYSICAL"
+	]
+  },
+  {
+	"name": "Scourge Arrow",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "PROJECTILE",
+	  "CHANNELLING",
+	  "CHAOS",
+	  "BOW"
+	]
+  },
+  {
+	"name": "Seismic Trap",
+	"slot": "Green",
+	"tags": [
+	  "TRAP",
+	  "SPELL",
+	  "DURATION",
+	  "AOE",
+	  "PHYSICAL"
+	]
+  },
+  {
+	"name": "Shattering Steel",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "PROJECTILE",
+	  "AOE",
+	  "PHYSICAL"
+	]
+  },
+  {
+	"name": "Shrapnel Ballista",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "PROJECTILE",
+	  "TOTEM",
+	  "PHYSICAL",
+	  "BOW"
+	]
+  },
+  {
+	"name": "Siege Ballista",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "PROJECTILE",
+	  "TOTEM",
+	  "BOW"
+	]
+  },
+  {
+	"name": "Smoke Mine",
+	"slot": "Green",
+	"tags": [
+	  "MINE",
+	  "SPELL",
+	  "AOE",
+	  "DURATION",
+	  "MOVEMENT",
+	  "TRAVEL",
+	  "BLINK"
+	]
+  },
+  {
+	"name": "Spectral Shield Throw",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "PROJECTILE",
+	  "PHYSICAL"
+	]
+  },
+  {
+	"name": "Spectral Throw",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "PROJECTILE"
+	],
+	"hasVaal": true
+  },
+  {
+	"name": "Split Arrow",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "PROJECTILE",
+	  "PHYSICAL",
+	  "BOW"
+	]
+  },
+  {
+	"name": "Summon Ice Golem",
+	"slot": "Green",
+	"tags": [
+	  "COLD",
+	  "MINION",
+	  "SPELL",
+	  "GOLEM"
+	]
+  },
+  {
+	"name": "Temporal Chains",
+	"slot": "Green",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "DURATION",
+	  "CURSE"
+	]
+  },
+  {
+	"name": "Tornado Shot",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "PROJECTILE",
+	  "BOW"
+	]
+  },
+  {
+	"name": "Toxic Rain",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "AOE",
+	  "CHAOS",
+	  "DURATION",
+	  "PROJECTILE",
+	  "BOW"
+	]
+  },
+  {
+	"name": "Unearth",
+	"slot": "Green",
+	"tags": [
+	  "SPELL",
+	  "PROJECTILE",
+	  "AOE",
+	  "PHYSICAL"
+	]
+  },
+  {
+	"name": "Venom Gyre",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "PROJECTILE",
+	  "CHAOS"
+	]
+  },
+  {
+	"name": "Viper Strike",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "DURATION",
+	  "MELEE",
+	  "STRIKE",
+	  "CHAOS"
+	]
+  },
+  {
+	"name": "Volatile Dead",
+	"slot": "Green",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "FIRE"
+	]
+  },
+  {
+	"name": "Whirling Blades",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "MOVEMENT",
+	  "TRAVEL",
+	  "MELEE"
+	]
+  },
+  {
+	"name": "Wild Strike",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "MELEE",
+	  "STRIKE",
+	  "LIGHTNING",
+	  "COLD",
+	  "FIRE",
+	  "PROJECTILE",
+	  "AOE",
+	  "CHAINING"
+	]
+  },
+  {
+	"name": "Withering Step",
+	"slot": "Green",
+	"tags": [
+	  "TRAVEL",
+	  "AOE",
+	  "CHAOS",
+	  "MOVEMENT",
+	  "BLINK",
+	  "SPELL",
+	  "DURATION"
+	]
+  },
+  {
+	"name": "Clarity",
+	"slot": "Blue",
 	"tags": [
 	  "AURA",
 	  "SPELL",
@@ -439,10 +834,7 @@
   },
   {
 	"name": "Void Manipulation Support",
-	"stats": [
-	  "Dexterity",
-	  "Intelligence"
-	],
+	"slot": "Green",
 	"tags": [
 	  "CHAOS",
 	  "SUPPORT"
@@ -450,10 +842,7 @@
   },
   {
 	"name": "Spell Totem Support",
-	"stats": [
-	  "Dexterity",
-	  "Strength"
-	],
+	"slot": "Red",
 	"tags": [
 	  "SUPPORT",
 	  "SPELL",

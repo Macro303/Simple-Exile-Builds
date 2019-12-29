@@ -82,12 +82,11 @@ public class GemsController implements Initializable {
 			it.forEach(gem -> {
 				Optional<GemInfo> info = GemUtils.getGem(gem);
 				String imageFile = getClass().getResource("placeholder[80x80].png").toExternalForm();
+				String borderStyle = String.format("-fx-border-color: %s; -fx-border-style: dashed; -fx-border-width: 2;", Util.slotToColour(info.isPresent() ? info.get().getSlot() : "Black"));
 				if (info.isPresent()) {
-					imageFile = String.format("gems\\inventory\\%s", info.get().getFilename(gem.contains("Vaal")));
-					if (!new File(imageFile).exists())
-						imageFile = getClass().getResource("placeholder[64x64].png").toExternalForm();
-					else
-						imageFile = "file:" + imageFile;
+					String temp = String.format("gems\\%s", info.get().getFilename(gem.contains("Vaal")));
+					if (new File(temp).exists())
+						imageFile = "file:" + temp;
 				}
 				ImageView image = new ImageView(new Image(imageFile));
 				image.setFitHeight(80);
@@ -97,6 +96,7 @@ public class GemsController implements Initializable {
 				name.setPrefWidth(80);
 				VBox border = new VBox();
 				border.setAlignment(Pos.TOP_CENTER);
+				border.setStyle(borderStyle);
 				border.getChildren().addAll(image, name);
 				linkBox.getChildren().add(border);
 			});
