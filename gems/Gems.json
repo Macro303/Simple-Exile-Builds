@@ -833,11 +833,395 @@
 	"hasVaal": true
   },
   {
+	"name": "Added Cold Damage Support",
+	"slot": "Green",
+	"tags": [
+	  "COLD",
+	  "SUPPORT"
+	],
+	"hasAwakened": true
+  },
+  {
+	"name": "Additional Accuracy Support",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Advanced Traps Support",
+	"slot": "Green",
+	"tags": [
+	  "TRAP",
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Arrow Nova Support",
+	"slot": "Green",
+	"tags": [
+	  "BOW",
+	  "ATTACK",
+	  "SUPPORT",
+	  "PROJECTILE"
+	],
+	"hasAwakened": true
+  },
+  {
+	"name": "Barrage Support",
+	"slot": "Green",
+	"tags": [
+	  "BOW",
+	  "ATTACK",
+	  "SUPPORT",
+	  "PROJECTILE"
+	]
+  },
+  {
+	"name": "Blind Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Block Chance Reduction Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT",
+	  "DURATION"
+	]
+  },
+  {
+	"name": "Cast on Critical Strike Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT",
+	  "SPELL",
+	  "TRIGGER"
+	],
+	"hasAwakened": true
+  },
+  {
+	"name": "Cast on Death Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT",
+	  "SPELL",
+	  "TRIGGER"
+	]
+  },
+  {
+	"name": "Chain Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT",
+	  "CHAINING",
+	  "PROJECTILE"
+	],
+	"hasAwakened": true
+  },
+  {
+	"name": "Chance to Flee Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Charged Traps Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT",
+	  "TRAP"
+	]
+  },
+  {
+	"name": "Close Combat Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT",
+	  "MELEE",
+	  "ATTACK",
+	  "DURATION"
+	]
+  },
+  {
+	"name": "Cluster Traps Support",
+	"slot": "Green",
+	"tags": [
+	  "TRAP",
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Cold Penetration Support",
+	"slot": "Green",
+	"tags": [
+	  "COLD",
+	  "SUPPORT"
+	],
+	"hasAwakened": true
+  },
+  {
+	"name": "Culling Strike Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Deadly Ailments Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT"
+	],
+	"hasAwakened": true
+  },
+  {
+	"name": "Enhance Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Faster Attacks Support",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Faster Projectiles Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT",
+	  "PROJECTILE"
+	]
+  },
+  {
+	"name": "Fork Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT",
+	  "PROJECTILE"
+	],
+	"hasAwakened": true
+  },
+  {
+	"name": "Greater Multiple Projectiles Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT",
+	  "PROJECTILE"
+	],
+	"hasAwakened": true
+  },
+  {
+	"name": "Greater Volley Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT",
+	  "PROJECTILE"
+	]
+  },
+  {
+	"name": "Hypothermia Support",
+	"slot": "Green",
+	"tags": [
+	  "COLD",
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Ice Bite Support",
+	"slot": "Green",
+	"tags": [
+	  "COLD",
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Impale Support",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "PHYSICAL",
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Lesser Multiple Projectiles Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT",
+	  "PROJECTILE"
+	]
+  },
+  {
+	"name": "Lesser Poison Support",
+	"slot": "Green",
+	"tags": [
+	  "CHAOS",
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Mana Leech Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Mirage Archer Support",
+	"slot": "Green",
+	"tags": [
+	  "BOW",
+	  "ATTACK",
+	  "SUPPORT",
+	  "DURATION"
+	]
+  },
+  {
+	"name": "Multiple Traps Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT",
+	  "TRAP"
+	]
+  },
+  {
+	"name": "Nightblade Support",
+	"slot": "Green",
+	"tags": [
+	  "ATTACK",
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Onslaught Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Pierce Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT",
+	  "PROJECTILE"
+	]
+  },
+  {
+	"name": "Point Blank Support",
+	"slot": "Green",
+	"tags": [
+	  "PROJECTILE",
+	  "ATTACK",
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Poison Support",
+	"slot": "Green",
+	"tags": [
+	  "CHAOS",
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Slower Projectiles Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT",
+	  "PROJECTILE"
+	]
+  },
+  {
+	"name": "Swift Affliction Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT",
+	  "DURATION"
+	],
+	"hasAwakened": true
+  },
+  {
+	"name": "Swift Assembly Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT",
+	  "TRAP",
+	  "MINE"
+	]
+  },
+  {
+	"name": "Trap and Mine Damage Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT",
+	  "TRAP",
+	  "MINE"
+	]
+  },
+  {
+	"name": "Trap Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT",
+	  "TRAP"
+	]
+  },
+  {
+	"name": "Vicious Projectiles Support",
+	"slot": "Green",
+	"tags": [
+	  "PROJECTILE",
+	  "ATTACK",
+	  "PHYSICAL",
+	  "CHAOS",
+	  "SUPPORT"
+	],
+	"hasAwakened": true
+  },
+  {
+	"name": "Vile Toxins Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT"
+	]
+  },
+  {
 	"name": "Void Manipulation Support",
 	"slot": "Green",
 	"tags": [
 	  "CHAOS",
 	  "SUPPORT"
+	],
+	"hasAwakened": true
+  },
+  {
+	"name": "Volley Support",
+	"slot": "Green",
+	"tags": [
+	  "SUPPORT",
+	  "PROJECTILE"
+	]
+  },
+  {
+	"name": "Withering Touch Support",
+	"slot": "Green",
+	"tags": [
+	  "CHAOS",
+	  "PHYSICAL",
+	  "ATTACK",
+	  "SUPPORT",
+	  "DURATION"
 	]
   },
   {

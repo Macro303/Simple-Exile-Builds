@@ -79,19 +79,19 @@ public class GemsController implements Initializable {
 		build.getLinks().forEach(it -> {
 			HBox linkBox = new HBox();
 			linkBox.setSpacing(5.0);
-			it.forEach(gem -> {
-				Optional<GemInfo> info = GemUtils.getGem(gem);
+			it.forEach(gemName -> {
+				Optional<GemInfo> info = GemUtils.getGem(gemName);
 				String imageFile = getClass().getResource("placeholder[80x80].png").toExternalForm();
 				String borderStyle = String.format("-fx-border-color: %s; -fx-border-style: dashed; -fx-border-width: 2;", Util.slotToColour(info.isPresent() ? info.get().getSlot() : "Black"));
 				if (info.isPresent()) {
-					String temp = String.format("gems\\%s", info.get().getFilename(gem.contains("Vaal")));
+					String temp = String.format("gems\\%s", info.get().getFilename(gemName.contains("Vaal"), gemName.contains("Awakened")));
 					if (new File(temp).exists())
 						imageFile = "file:" + temp;
 				}
 				ImageView image = new ImageView(new Image(imageFile));
 				image.setFitHeight(80);
 				image.setFitWidth(80);
-				Label name = new Label(gem);
+				Label name = new Label(info.isPresent() ? info.get().getName() : gemName);
 				name.setWrapText(true);
 				name.setPrefWidth(80);
 				VBox border = new VBox();

@@ -40,8 +40,11 @@ public class GemUtils {
 		return gems.stream().filter(gem -> {
 			if (gem.getName().equalsIgnoreCase(gemName))
 				return true;
-			else
-				return gem.hasVaal() && ("Vaal " + gem.getName()).equalsIgnoreCase(gemName);
+			else if (gem.hasVaal())
+				return ("Vaal " + gem.getName()).equalsIgnoreCase(gemName);
+			else if (gem.hasAwakened())
+				return ("Awakened " + gem.getName()).equalsIgnoreCase(gemName);
+			return false;
 		}).findFirst();
 	}
 }
