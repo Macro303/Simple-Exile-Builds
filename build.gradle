@@ -13,15 +13,16 @@ repositories {
 
 mainClassName = "macro.buddy.Launcher"
 def loggerVersion = '2.13.0'
-def jacksonVersion = '2.10.1'
+def jacksonVersion = '2.10.2'
+def unirestVersion = '3.3.00'
 
 dependencies {
 	implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: "$jacksonVersion"
 	implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: "$jacksonVersion"
 	implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-yaml', version: "$jacksonVersion"
 	implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jdk8', version: "$jacksonVersion"
-	implementation group: 'com.konghq', name: 'unirest-java', version: "3.2.00"
-	implementation group: 'com.konghq', name: 'unirest-objectmapper-jackson', version: "3.2.00"
+	implementation group: 'com.konghq', name: 'unirest-java', version: "$unirestVersion"
+	implementation group: 'com.konghq', name: 'unirest-objectmapper-jackson', version: "$unirestVersion"
 	implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: "$loggerVersion"
 	runtimeOnly group: 'org.apache.logging.log4j', name: 'log4j-core', version: "$loggerVersion"
 }

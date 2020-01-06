@@ -823,6 +823,110 @@
 	]
   },
   {
+	"name": "Arc",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "CHAINING",
+	  "LIGHTNING"
+	],
+	"hasVaal": true
+  },
+  {
+	"name": "Arctic Breath",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "PROJECTILE",
+	  "DURATION",
+	  "AOE",
+	  "COLD"
+	]
+  },
+  {
+	"name": "Armageddon Brand",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "FIRE",
+	  "DURATION",
+	  "BRAND"
+	]
+  },
+  {
+	"name": "Assassin's Mark",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "DURATION",
+	  "CURSE"
+	]
+  },
+  {
+	"name": "Ball Lightning",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "PROJECTILE",
+	  "AOE",
+	  "LIGHTNING"
+	]
+  },
+  {
+	"name": "Bane",
+	"slot": "Blue",
+	"tags": [
+	  "CHAOS",
+	  "TRIGGER",
+	  "SPELL",
+	  "AOE",
+	  "DURATION",
+	  "CURSE"
+	]
+  },
+  {
+	"name": "Blight",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "CHAOS",
+	  "AOE",
+	  "CHANNELLING",
+	  "DURATION"
+	],
+	"hasVaal": true
+  },
+  {
+	"name": "Bodyswap",
+	"slot": "Blue",
+	"tags": [
+	  "MOVEMENT",
+	  "SPELL",
+	  "AOE",
+	  "FIRE",
+	  "TRAVEL"
+	]
+  },
+  {
+	"name": "Bone Offering",
+	"slot": "Blue",
+	"tags": [
+	  "MINION",
+	  "SPELL",
+	  "DURATION"
+	]
+  },
+  {
+	"name": "Brand Recall",
+	"slot": "Blue",
+	"tags": [
+	  "BRAND",
+	  "SPELL"
+	]
+  },
+  {
 	"name": "Clarity",
 	"slot": "Blue",
 	"tags": [
@@ -831,6 +935,371 @@
 	  "AOE"
 	],
 	"hasVaal": true
+  },
+  {
+	"name": "Cold Snap",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "COLD",
+	  "DURATION"
+	],
+	"hasVaal": true
+  },
+  {
+	"name": "Conductivity",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "DURATION",
+	  "CURSE",
+	  "LIGHTNING"
+	]
+  },
+  {
+	"name": "Contagion",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "DURATION",
+	  "CHAOS"
+	]
+  },
+  {
+	"name":"Conversion Trap",
+	"slot": "Blue",
+	"tags": [
+	  "TRAP",
+	  "SPELL",
+	  "DURATION"
+	]
+  },
+  {
+	"name": "Convocation",
+	"slot": "Blue",
+	"tags": [
+	  "MINION",
+	  "SPELL",
+	  "DURATION"
+	]
+  },
+  {
+	"name": "Dark Pact",
+	"slot": "Blue",
+	"tags": [
+	  "MINION",
+	  "SPELL",
+	  "AOE",
+	  "CHAINING",
+	  "CHAOS",
+	  "NOVA"
+	]
+  },
+  {
+	"name": "Despair",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "DURATION",
+	  "CURSE",
+	  "CHAOS"
+	]
+  },
+  {
+	"name": "Discharge",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "FIRE",
+	  "COLD",
+	  "LIGHTNING",
+	  "NOVA"
+	]
+  },
+  {
+	"name": "Discipline",
+	"slot": "Blue",
+	"tags": [
+	  "AURA",
+	  "SPELL",
+	  "AOE"
+	],
+	"hasVaal": true
+  },
+  {
+	"name": "Divine Ire",
+	"slot": "Blue",
+	"tags": [
+	  "LIGHTNING",
+	  "SPELL",
+	  "AOE",
+	  "CHANNELLING",
+	  "PHYSICAL"
+	]
+  },
+  {
+	"name": "Elemental Weakness",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "DURATION",
+	  "CURSE"
+	]
+  },
+  {
+	"name": "Enfeeble",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "DURATION",
+	  "CURSE"
+	]
+  },
+  {
+	"name": "Essence Drain",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "PROJECTILE",
+	  "DURATION",
+	  "CHAOS",
+	  "AOE"
+	]
+  },
+  {
+	"name": "Fireball",
+	"slot": "Blue",
+	"tags": [
+	  "PROJECTILE",
+	  "SPELL",
+	  "AOE",
+	  "FIRE"
+	],
+	"hasVaal": true
+  },
+  {
+	"name": "Firestorm",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "DURATION",
+	  "FIRE"
+	]
+  },
+  {
+	"name": "Flame Dash",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "MOVEMENT",
+	  "DURATION",
+	  "FIRE",
+	  "TRAVEL",
+	  "BLINK"
+	]
+  },
+  {
+	"name": "Flame Surge",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "FIRE"
+	]
+  },
+  {
+	"name": "Flameblast",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "FIRE",
+	  "CHANNELLING"
+	],
+	"hasVaal": true
+  },
+  {
+	"name": "Flammability",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "DURATION",
+	  "CURSE",
+	  "FIRE"
+	]
+  },
+  {
+	"name": "Flesh Offering",
+	"slot": "Blue",
+	"tags": [
+	  "MINION",
+	  "SPELL",
+	  "DURATION"
+	]
+  },
+  {
+	"name": "Freezing Pulse",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "PROJECTILE",
+	  "COLD"
+	]
+  },
+  {
+	"name": "Frost Bomb",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "DURATION",
+	  "COLD"
+	]
+  },
+  {
+	"name": "Frost Wall",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "DURATION",
+	  "COLD"
+	]
+  },
+  {
+	"name": "Frostbite",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "DURATION",
+	  "CURSE",
+	  "COLD"
+	]
+  },
+  {
+	"name": "Frostblink",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "MOVEMENT",
+	  "DURATION",
+	  "COLD",
+	  "TRAVEL",
+	  "BLINK",
+	  "AOE"
+	]
+  },
+  {
+	"name": "Frostbolt",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "PROJECTILE",
+	  "COLD"
+	]
+  },
+  {
+	"name": "Glacial Cascade",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "COLD",
+	  "PHYSICAL"
+	]
+  },
+  {
+	"name": "Herald of Thunder",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "DURATION",
+	  "LIGHTNING",
+	  "HERALD"
+	]
+  },
+  {
+	"name": "Ice Nova",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "COLD",
+	  "NOVA"
+	],
+	"hasVaal": true
+  },
+  {
+	"name": "Ice Spear",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "PROJECTILE",
+	  "COLD"
+	]
+  },
+  {
+	"name": "Icicle Mine",
+	"slot": "Blue",
+	"tags": [
+	  "MINE",
+	  "SPELL",
+	  "PROJECTILE",
+	  "COLD",
+	  "AURA",
+	  "AOE"
+	]
+  },
+  {
+	"name": "Incinerate",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "FIRE",
+	  "CHANNELLING",
+	  "AOE"
+	]
+  },
+  {
+	"name": "Kinetic Blast",
+	"slot": "Blue",
+	"tags": [
+	  "ATTACK",
+	  "PROJECTILE",
+	  "AOE"
+	]
+  },
+  {
+	"name": "Lightning Spire Trap",
+	"slot": "Blue",
+	"tags": [
+	  "TRAP",
+	  "SPELL",
+	  "DURATION",
+	  "AOE",
+	  "LIGHTNING"
+	]
+  },
+  {
+	"name": "Wither",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "DURATION",
+	  "CHAOS",
+	  "CHANNELLING"
+	]
   },
   {
 	"name": "Added Cold Damage Support",

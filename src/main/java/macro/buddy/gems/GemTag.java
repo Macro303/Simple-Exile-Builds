@@ -37,5 +37,5 @@ public enum GemTag {
 	VAAL,
 	PHYSICAL,
 	STRIKE,
-	NEW_GEMS
+	NOVA
 }

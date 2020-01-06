@@ -12,9 +12,14 @@ _TODO Description_
 
  - OpenJDK: 8
  - [Gradle: 6.0.1](https://gradle.org/)
- - [annotations: 17.0.0](https://www.jetbrains.com/)
- - [log4j-api: 2.12.1](https://logging.apache.org/log4j/2.x/)
- - [log4j-core: 2.12.1 (Runtime)](https://logging.apache.org/log4j/2.x/)
+ - [jackson-core: 2.10.2](https://github.com/FasterXML/jackson-core)
+ - [jackson-databind: 2.10.2](https://github.com/FasterXML/jackson)
+ - [jackson-dataformat-yaml: 2.10.2](https://github.com/FasterXML/jackson-dataformats-text)
+ - [jackson-datatype-jdk8: 2.10.2](https://github.com/FasterXML/jackson-modules-java8)
+ - [unirest-java: 3.3.00](https://github.com/Kong/unirest-java/)
+ - [unirest-objectmapper-jackson: 3.3.00](https://github.com/Kong/unirest-java/)
+ - [log4j-api: 2.13.0](https://logging.apache.org/log4j/2.x/)
+ - [log4j-core: 2.13.0 (Runtime)](https://logging.apache.org/log4j/2.x/)
  
 ## Running
 **To run from source:**
