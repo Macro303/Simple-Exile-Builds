@@ -1,4 +1,4 @@
-package macro.buddy.build;
+package macro.buddy.builds;
 
 /**
  * Created by Macro303 on 2019-Dec-27

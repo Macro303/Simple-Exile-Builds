@@ -6,10 +6,10 @@ import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.util.StringConverter;
-import macro.buddy.build.AscendencyTag;
-import macro.buddy.build.BuildInfo;
+import macro.buddy.builds.AscendencyTag;
+import macro.buddy.builds.BuildInfo;
 import macro.buddy.Util;
-import macro.buddy.build.BuildUtils;
+import macro.buddy.builds.BuildUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 

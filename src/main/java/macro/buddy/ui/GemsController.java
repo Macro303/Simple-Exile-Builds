@@ -8,20 +8,17 @@ import javafx.geometry.Pos;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.control.Tooltip;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.layout.FlowPane;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.util.StringConverter;
 import macro.buddy.Util;
-import macro.buddy.build.AscendencyTag;
-import macro.buddy.build.BuildInfo;
-import macro.buddy.build.BuildUtils;
-import macro.buddy.build.ClassTag;
+import macro.buddy.builds.AscendencyTag;
+import macro.buddy.builds.BuildInfo;
+import macro.buddy.builds.BuildUtils;
+import macro.buddy.builds.ClassTag;
 import macro.buddy.gems.GemInfo;
 import macro.buddy.gems.GemUtils;
 import org.apache.logging.log4j.LogManager;
@@ -33,7 +30,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Optional;
 import java.util.ResourceBundle;
-import java.util.stream.Collectors;
 
 /**
  * Created by Macro303 on 2019-Dec-03

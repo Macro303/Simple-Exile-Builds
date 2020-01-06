@@ -1,16 +1,10 @@
 package macro.buddy;
 
-import macro.buddy.build.BuildInfo;
-import macro.buddy.build.BuildUtils;
+import macro.buddy.builds.BuildUtils;
 import macro.buddy.config.Config;
 import macro.buddy.ui.GemsUI;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
-import java.io.File;
-import java.util.Arrays;
-import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * Created by Macro303 on 2019-Nov-29.
