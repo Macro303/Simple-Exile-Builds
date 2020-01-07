@@ -10,7 +10,7 @@ _TODO Description_
 
 ## Built Using
 
- - OpenJDK: 11
+ - [AdoptOpenJDK: 11](https://adoptopenjdk.net/)
  - [Gradle: 6.0.1](https://gradle.org/)
  - [jackson-databind: 2.10.2](http://github.com/FasterXML/jackson)
  - [jackson-dataformat-yaml: 2.10.2](https://github.com/FasterXML/jackson-dataformats-text)
