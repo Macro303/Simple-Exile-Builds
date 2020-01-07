@@ -3,6 +3,7 @@ plugins {
 	id 'idea'
 	id 'maven'
 	id 'com.github.ben-manes.versions' version '0.27.0'
+	id 'org.openjfx.javafxplugin' version '0.0.8'
 }
 
 repositories {
@@ -14,27 +15,23 @@ repositories {
 mainClassName = "macro.buddy.Launcher"
 def loggerVersion = '2.13.0'
 def jacksonVersion = '2.10.2'
-def unirestVersion = '3.3.00'
 
 dependencies {
-	implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: "$jacksonVersion"
 	implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: "$jacksonVersion"
 	implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-yaml', version: "$jacksonVersion"
 	implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jdk8', version: "$jacksonVersion"
-	implementation group: 'com.konghq', name: 'unirest-java', version: "$unirestVersion"
-	implementation group: 'com.konghq', name: 'unirest-objectmapper-jackson', version: "$unirestVersion"
 	implementation group: 'org.apache.logging.log4j', name: 'log4j-api', version: "$loggerVersion"
 	runtimeOnly group: 'org.apache.logging.log4j', name: 'log4j-core', version: "$loggerVersion"
 }
 
 compileJava {
-	sourceCompatibility = JavaVersion.VERSION_1_8
-	targetCompatibility = JavaVersion.VERSION_1_8
+	sourceCompatibility = JavaVersion.VERSION_11
+	targetCompatibility = JavaVersion.VERSION_11
 }
 
 compileTestJava {
-	sourceCompatibility = JavaVersion.VERSION_1_8
-	targetCompatibility = JavaVersion.VERSION_1_8
+	sourceCompatibility = JavaVersion.VERSION_11
+	targetCompatibility = JavaVersion.VERSION_11
 }
 
 jar {
@@ -43,4 +40,40 @@ jar {
 
 run {
 	standardInput = System.in
+}
+
+javafx {
+	version = "11.0.2"
+	modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+def isNonStable = { String version ->
+	def stableKeyword = ['RELEASE', 'FINAL', 'GA'].any { it -> version.toUpperCase().contains(it) }
+	def regex = /^[0-9,.v-]+(-r)?$/
+	return !stableKeyword && !(version ==~ regex)
+}
+
+dependencyUpdates {
+	checkForGradleUpdate = false
+
+	// Example 1: reject all non stable versions
+	rejectVersionIf {
+		isNonStable(candidate.version)
+	}
+
+	// Example 2: disallow release candidates as upgradable versions from stable versions
+	rejectVersionIf {
+		isNonStable(candidate.version) && !isNonStable(currentVersion)
+	}
+
+	// Example 3: using the full syntax
+	resolutionStrategy {
+		componentSelection {
+			all {
+				if (isNonStable(candidate.version) && !isNonStable(currentVersion)) {
+					reject('Release candidate')
+				}
+			}
+		}
+	}
 }

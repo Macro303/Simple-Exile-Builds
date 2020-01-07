@@ -94,7 +94,7 @@ public class GemBox extends GridPane {
 		previous.setOnAction(event -> {
 			LOGGER.info("Previous Selected, Updating {}", gem.isPresent() ? gem.get().getName() : fullName);
 			AtomicReference<String> previousGem = new AtomicReference<>();
-			build.getUpdates().keySet().forEach(temp ->{
+			build.getUpdates().keySet().forEach(temp -> {
 				String entry = build.getUpdates().get(temp).get("gem");
 				if (entry.equalsIgnoreCase(fullName))
 					previousGem.set(temp);

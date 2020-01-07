@@ -6,6 +6,8 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 import com.fasterxml.jackson.dataformat.yaml.YAMLGenerator;
 import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
+import macro.buddy.gems.GemInfo;
+import macro.buddy.gems.GemUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -13,6 +15,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * Created by Macro303 on 2019-Dec-02
@@ -70,6 +73,15 @@ public class BuildInfo implements Comparable<BuildInfo> {
 		this.links = links;
 	}
 
+	@JsonIgnore
+	public List<List<GemInfo>> getGemLinks() {
+		return links.stream()
+				.map(link -> link.stream()
+						.flatMap(gem -> GemUtils.getGem(gem).stream())
+						.collect(Collectors.toList()))
+				.collect(Collectors.toList());
+	}
+
 	public Map<String, Map<String, String>> getUpdates() {
 		return updates;
 	}
@@ -118,14 +130,14 @@ public class BuildInfo implements Comparable<BuildInfo> {
 		return name.compareToIgnoreCase(other.name);
 	}
 
-	public void save(){
+	public void save() {
 		try {
 			ObjectMapper mapper = new ObjectMapper(new YAMLFactory().disable(YAMLGenerator.Feature.WRITE_DOC_START_MARKER));
 			mapper.findAndRegisterModules();
 			mapper.registerModule(new Jdk8Module());
 			File buildFile = new File("builds", name.replaceAll(" ", "_") + ".yaml");
 			mapper.writeValue(buildFile, this);
-		}catch (IOException ioe){
+		} catch (IOException ioe) {
 			LOGGER.error("Unable to save build: " + ioe);
 		}
 	}

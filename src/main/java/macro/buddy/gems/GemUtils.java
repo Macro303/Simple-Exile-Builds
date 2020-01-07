@@ -8,7 +8,6 @@ import org.apache.logging.log4j.Logger;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.Optional;
 import java.util.SortedSet;
 import java.util.TreeSet;
@@ -28,7 +27,7 @@ public class GemUtils {
 		try {
 			ObjectMapper mapper = new ObjectMapper();
 			mapper.registerModule(new Jdk8Module());
-			return mapper.readValue(new File("gems", "Gems.json"), new TypeReference<SortedSet<GemInfo>>() {
+			return mapper.readValue(new File("gems", "Gems.json"), new TypeReference<>() {
 			});
 		} catch (IOException ioe) {
 			LOGGER.error("Unable to load Gems: " + ioe);

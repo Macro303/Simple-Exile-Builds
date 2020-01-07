@@ -10,16 +10,17 @@ _TODO Description_
 
 ## Built Using
 
- - OpenJDK: 8
+ - OpenJDK: 11
  - [Gradle: 6.0.1](https://gradle.org/)
- - [jackson-core: 2.10.2](https://github.com/FasterXML/jackson-core)
- - [jackson-databind: 2.10.2](https://github.com/FasterXML/jackson)
+ - [jackson-databind: 2.10.2](http://github.com/FasterXML/jackson)
  - [jackson-dataformat-yaml: 2.10.2](https://github.com/FasterXML/jackson-dataformats-text)
  - [jackson-datatype-jdk8: 2.10.2](https://github.com/FasterXML/jackson-modules-java8)
- - [unirest-java: 3.3.00](https://github.com/Kong/unirest-java/)
- - [unirest-objectmapper-jackson: 3.3.00](https://github.com/Kong/unirest-java/)
  - [log4j-api: 2.13.0](https://logging.apache.org/log4j/2.x/)
  - [log4j-core: 2.13.0 (Runtime)](https://logging.apache.org/log4j/2.x/)
+ - [javafx-base: 11.0.2](https://openjdk.java.net/projects/openjfx/)
+ - [javafx-controls: 11.0.2](https://openjdk.java.net/projects/openjfx/)
+ - [javafx-fxml: 11.0.2](https://openjdk.java.net/projects/openjfx/)
+ - [javafx-graphics: 11.0.2](https://openjdk.java.net/projects/openjfx/)
  
 ## Running
 **To run from source:**

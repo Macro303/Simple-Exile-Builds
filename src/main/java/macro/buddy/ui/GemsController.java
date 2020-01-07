@@ -3,17 +3,12 @@ package macro.buddy.ui;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.geometry.HPos;
-import javafx.geometry.Insets;
-import javafx.geometry.Orientation;
-import javafx.geometry.Pos;
-import javafx.scene.control.*;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.layout.*;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import javafx.util.StringConverter;
-import macro.buddy.Util;
 import macro.buddy.builds.AscendencyTag;
 import macro.buddy.builds.BuildInfo;
 import macro.buddy.builds.BuildUtils;
@@ -23,7 +18,6 @@ import macro.buddy.gems.GemUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.File;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -72,58 +66,17 @@ public class GemsController implements Initializable {
 	public void setBuild(BuildInfo build) {
 		buildGems.getChildren().clear();
 		buildGems.setFillWidth(true);
-		build.getLinks().forEach(link ->{
+		build.getLinks().forEach(link -> {
 			HBox linkBox = new HBox();
 			linkBox.setSpacing(5.0);
 			link.forEach(gemName -> {
 				Optional<GemInfo> info = GemUtils.getGem(gemName);
-				GemBox grid  = new GemBox(build, info, gemName);
-				/*String borderStyle = String.format("-fx-border-color: %s; -fx-border-style: dashed; -fx-border-width: 2;", Util.slotToColour(info.isPresent() ? info.get().getSlot() : "Black"));
-
-				GridPane grid = new GridPane();
-				grid.setPadding(new Insets(5.0, 5.0, 5.0, 5.0));
-				grid.setStyle(borderStyle);
-
-				ImageView image = getImage(info, gemName);
-				grid.add(image, 0, 0, 3, 1);
-				GridPane.setHalignment(image, HPos.CENTER);
-
-				Label name = new Label(info.isPresent() ? info.get().getName() : gemName);
-				name.setWrapText(true);
-				name.setPrefWidth(90);
-				grid.add(name, 0, 1, 3, 1);
-				GridPane.setVgrow(name, Priority.ALWAYS);
-
-				Button previous = new Button("<<");
-				grid.add(previous, 0, 2, 1, 1);
-
-				Separator separator = new Separator(Orientation.HORIZONTAL);
-				separator.setVisible(false);
-				grid.add(separator, 1, 2, 1, 1);
-				GridPane.setHgrow(separator, Priority.ALWAYS);
-
-				Button next = new Button(">>");
-				boolean hasNext = build.getUpdates().containsKey(gemName);
-				next.setDisable(!hasNext);
-				grid.add(next, 2, 2, 1, 1);*/
+				GemBox grid = new GemBox(build, info, gemName);
 
 				linkBox.getChildren().add(grid);
 			});
 			buildGems.getChildren().add(linkBox);
 		});
-	}
-
-	private ImageView getImage(Optional<GemInfo> gem, String gemName){
-		String imageFile = getClass().getResource("placeholder[80x80].png").toExternalForm();
-		if (gem.isPresent()) {
-			String temp = String.format("gems\\%s", gem.get().getFilename(gemName.contains("Vaal"), gemName.contains("Awakened")));
-			if (new File(temp).exists())
-				imageFile = "file:" + temp;
-		}
-		ImageView image = new ImageView(new Image(imageFile));
-		image.setFitHeight(80);
-		image.setFitWidth(80);
-		return image;
 	}
 
 	public void addBuild() {
