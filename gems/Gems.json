@@ -969,7 +969,7 @@
 	]
   },
   {
-	"name":"Conversion Trap",
+	"name": "Conversion Trap",
 	"slot": "Blue",
 	"tags": [
 	  "TRAP",
@@ -1291,6 +1291,376 @@
 	]
   },
   {
+	"name": "Lightning Tendrils",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "LIGHTNING",
+	  "CHANNELLING"
+	]
+  },
+  {
+	"name": "Lightning Trap",
+	"slot": "Blue",
+	"tags": [
+	  "TRAP",
+	  "SPELL",
+	  "PROJECTILE",
+	  "LIGHTNING"
+	],
+	"hasVaal": true
+  },
+  {
+	"name": "Lightning Warp",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "DURATION",
+	  "MOVEMENT",
+	  "LIGHTNING",
+	  "TRAVEL"
+	],
+	"hasVaal": true
+  },
+  {
+	"name": "Magma Orb",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "FIRE",
+	  "PROJECTILE",
+	  "CHAINING"
+	]
+  },
+  {
+	"name": "Malevolence",
+	"slot": "Blue",
+	"tags": [
+	  "AURA",
+	  "SPELL",
+	  "AOE"
+	]
+  },
+  {
+	"name": "Orb of Storms",
+	"slot": "Blue",
+	"tags": [
+	  "LIGHTNING",
+	  "SPELL",
+	  "DURATION",
+	  "AOE",
+	  "CHAINING"
+	]
+  },
+  {
+	"name": "Power Siphon",
+	"slot": "Blue",
+	"tags": [
+	  "ATTACK",
+	  "PROJECTILE"
+	],
+	"hasVaal": true
+  },
+  {
+	"name": "Purifying Flame",
+	"slot": "Blue",
+	"tags": [
+	  "FIRE",
+	  "SPELL",
+	  "AOE",
+	  "DURATION",
+	  "PHYSICAL"
+	]
+  },
+  {
+	"name": "Purity of Elements",
+	"slot": "Blue",
+	"tags": [
+	  "AURA",
+	  "SPELL",
+	  "AOE"
+	]
+  },
+  {
+	"name": "Purity of Lightning",
+	"slot": "Blue",
+	"tags": [
+	  "AURA",
+	  "SPELL",
+	  "AOE",
+	  "LIGHTNING"
+	]
+  },
+  {
+	"name": "Pyroclast Mine",
+	"slot": "Blue",
+	"tags": [
+	  "MINE",
+	  "SPELL",
+	  "PROJECTILE",
+	  "FIRE",
+	  "AOE",
+	  "AURA",
+	  "NOVA"
+	]
+  },
+  {
+	"name": "Raise Spectre",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "MINION"
+	]
+  },
+  {
+	"name": "Raise Zombie",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "MINION"
+	]
+  },
+  {
+	"name": "Righteous Fire",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "FIRE"
+	],
+	"hasVaal": true
+  },
+  {
+	"name": "Scorching Ray",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "FIRE",
+	  "DURATION",
+	  "CHANNELLING"
+	]
+  },
+  {
+	"name": "Shock Nova",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "LIGHTNING",
+	  "AOE",
+	  "NOVA"
+	]
+  },
+  {
+	"name": "Siphoning Trap",
+	"slot": "Blue",
+	"tags": [
+	  "TRAP",
+	  "SPELL",
+	  "DURATION",
+	  "AOE",
+	  "COLD"
+	]
+  },
+  {
+	"name": "Soulrend",
+	"slot": "Blue",
+	"tags": [
+	  "CHAOS",
+	  "SPELL",
+	  "AOE",
+	  "DURATION",
+	  "PROJECTILE"
+	]
+  },
+  {
+	"name": "Spark",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "PROJECTILE",
+	  "DURATION",
+	  "LIGHTNING"
+	],
+	"hasVaal": true
+  },
+  {
+	"name": "Spirit Offering",
+	"slot": "Blue",
+	"tags": [
+	  "MINION",
+	  "SPELL",
+	  "DURATION",
+	  "CHAOS"
+	]
+  },
+  {
+	"name": "Storm Brand",
+	"slot": "Blue",
+	"tags": [
+	  "LIGHTNING",
+	  "SPELL",
+	  "AOE",
+	  "CHAINING",
+	  "DURATION",
+	  "BRAND"
+	]
+  },
+  {
+	"name": "Storm Burst",
+	"slot": "Blue",
+	"tags": [
+	  "AOE",
+	  "SPELL",
+	  "LIGHTNING",
+	  "CHANNELLING",
+	  "DURATION",
+	  "PHYSICAL"
+	]
+  },
+  {
+	"name": "Storm Call",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "DURATION",
+	  "LIGHTNING"
+	],
+	"hasVaal": true
+  },
+  {
+	"name": "Stormblast Mine",
+	"slot": "Blue",
+	"tags": [
+	  "MINE",
+	  "SPELL",
+	  "AOE",
+	  "LIGHTNING",
+	  "AURA",
+	  "NOVA"
+	]
+  },
+  {
+	"name": "Summon Carrion Golem",
+	"slot": "Blue",
+	"tags": [
+	  "PHYSICAL",
+	  "MINION",
+	  "SPELL",
+	  "GOLEM"
+	]
+  },
+  {
+	"name": "Summon Chaos Golem",
+	"slot": "Blue",
+	"tags": [
+	  "CHAOS",
+	  "MINION",
+	  "SPELL",
+	  "GOLEM"
+	]
+  },
+  {
+	"name": "Summon Holy Relic",
+	"slot": "Blue",
+	"tags": [
+	  "MINION",
+	  "SPELL"
+	]
+  },
+  {
+	"name": "Summon Lightning Golem",
+	"slot": "Blue",
+	"tags": [
+	  "LIGHTNING",
+	  "MINION",
+	  "SPELL",
+	  "GOLEM"
+	]
+  },
+  {
+	"name": "Summon Raging Spirit",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "MINION",
+	  "DURATION",
+	  "FIRE"
+	]
+  },
+  {
+	"name": "Summon Skeletons",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "MINION",
+	  "DURATION"
+	],
+	"hasVaal": true
+  },
+  {
+	"name": "Summon Skitterbots",
+	"slot": "Blue",
+	"tags": [
+	  "TRAP",
+	  "MINE",
+	  "SPELL",
+	  "MINION",
+	  "COLD",
+	  "LIGHTNING",
+	  "AOE",
+	  "AURA"
+	]
+  },
+  {
+	"name": "Tempest Shield",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "LIGHTNING",
+	  "CHAINING",
+	  "DURATION"
+	]
+  },
+  {
+	"name": "Vortex",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "AOE",
+	  "COLD",
+	  "DURATION",
+	  "NOVA"
+	]
+  },
+  {
+	"name": "Wave of Conviction",
+	"slot": "Blue",
+	"tags": [
+	  "FIRE",
+	  "LIGHTNING",
+	  "SPELL",
+	  "AOE",
+	  "DURATION",
+	  "PHYSICAL"
+	]
+  },
+  {
+	"name": "Winter Orb",
+	"slot": "Blue",
+	"tags": [
+	  "COLD",
+	  "SPELL",
+	  "CHANNELLING",
+	  "AOE",
+	  "DURATION",
+	  "PROJECTILE"
+	]
+  },
+  {
 	"name": "Wither",
 	"slot": "Blue",
 	"tags": [
@@ -1299,6 +1669,25 @@
 	  "DURATION",
 	  "CHAOS",
 	  "CHANNELLING"
+	]
+  },
+  {
+	"name": "Wrath",
+	"slot": "Blue",
+	"tags": [
+	  "AURA",
+	  "SPELL",
+	  "AOE",
+	  "LIGHTNING"
+	]
+  },
+  {
+	"name": "Zealotry",
+	"slot": "Blue",
+	"tags": [
+	  "AURA",
+	  "SPELL",
+	  "AOE"
 	]
   },
   {
@@ -1691,6 +2080,139 @@
 	  "ATTACK",
 	  "SUPPORT",
 	  "DURATION"
+	]
+  },
+  {
+	"name": "Added Chaos Damage Support",
+	"slot": "Blue",
+	"tags": [
+	  "CHAOS",
+	  "SUPPORT"
+	],
+	"hasAwakened": true
+  },
+  {
+	"name": "Added Lightning Damage Support",
+	"slot": "Blue",
+	"tags": [
+	  "LIGHTNING",
+	  "SUPPORT"
+	],
+	"hasAwakened": true
+  },
+  {
+	"name": "Arcane Surge Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT",
+	  "SPELL",
+	  "DURATION"
+	]
+  },
+  {
+	"name": "Blasphemy Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT",
+	  "AURA"
+	],
+	"hasAwakened": true
+  },
+  {
+	"name": "Blastchain Mine Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT",
+	  "MINE"
+	]
+  },
+  {
+	"name": "Bonechill Support",
+	"slot": "Blue",
+	"tags": [
+	  "COLD",
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Cast When Stunned Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT",
+	  "SPELL",
+	  "TRIGGER"
+	]
+  },
+  {
+	"name": "Cast While Channelling Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT",
+	  "CHANNELLING",
+	  "SPELL",
+	  "TRIGGER"
+	],
+	"hasAwakened": true
+  },
+  {
+	"name": "Charged Mines Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT",
+	  "MINE"
+	]
+  },
+  {
+	"name": "Combustion Support",
+	"slot": "Blue",
+	"tags": [
+	  "FIRE",
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Concentrated Effect Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT",
+	  "AOE"
+	]
+  },
+  {
+	"name": "Controlled Destruction Support",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "SUPPORT"
+	],
+	"hasAwakened": true
+  },
+  {
+	"name": "Curse On Hit Support",
+	"slot": "Blue",
+	"tags": [
+	  "CURSE",
+	  "TRIGGER",
+	  "SUPPORT"
+	],
+	"hasAwakened": true
+  },
+  {
+	"name": "Deathmark Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT",
+	  "MINION",
+	  "SPELL",
+	  "DURATION"
+	]
+  },
+  {
+	"name": "Decay Support",
+	"slot": "Blue",
+	"tags": [
+	  "CHAOS",
+	  "SUPPORT"
 	]
   },
   {
