@@ -1,7 +1,5 @@
 package macro.buddy.gems;
 
-import com.fasterxml.jackson.annotation.JsonProperty;
-
 import java.util.SortedSet;
 
 /**
@@ -11,20 +9,18 @@ public class GemInfo implements Comparable<GemInfo> {
 	private String name;
 	private String slot;
 	private SortedSet<GemTag> tags;
-	@JsonProperty("hasVaal")
-	private boolean vaal;
-	@JsonProperty("hasAwakened")
-	private boolean awakened;
+	private boolean hasVaal;
+	private boolean hasAwakened;
 
 	public GemInfo() {
 	}
 
-	public GemInfo(String name, String slot, SortedSet<GemTag> tags, boolean vaal, boolean awakened) {
+	public GemInfo(String name, String slot, SortedSet<GemTag> tags, boolean hasVaal, boolean hasAwakened) {
 		this.name = name;
 		this.slot = slot;
 		this.tags = tags;
-		this.vaal = vaal;
-		this.awakened = awakened;
+		this.hasVaal = hasVaal;
+		this.hasAwakened = hasAwakened;
 	}
 
 	public String getName() {
@@ -52,52 +48,28 @@ public class GemInfo implements Comparable<GemInfo> {
 	}
 
 	public boolean hasVaal() {
-		return vaal;
+		return hasVaal;
 	}
 
-	public void setVaal(boolean vaal) {
-		this.vaal = vaal;
+	public void setHasVaal(boolean hasVaal) {
+		this.hasVaal = hasVaal;
 	}
 
 	public boolean hasAwakened() {
-		return awakened;
+		return hasAwakened;
 	}
 
-	public void setAwakened(boolean awakened) {
-		this.awakened = awakened;
+	public void setHasAwakened(boolean hasAwakened) {
+		this.hasAwakened = hasAwakened;
 	}
 
 	public String getFilename(boolean isVaal, boolean isAwakened) {
 		String filename = getName().replaceAll(" ", "_");
-		if (isVaal)
+		if (isVaal && hasVaal)
 			filename += "[Vaal]";
-		if (isAwakened)
+		if (isAwakened && hasAwakened)
 			filename += "[Awakened]";
 		return filename + ".png";
-	}
-
-	@Override
-	public boolean equals(Object o) {
-		if (this == o) return true;
-		if (!(o instanceof GemInfo)) return false;
-
-		GemInfo gemInfo = (GemInfo) o;
-
-		if (vaal != gemInfo.vaal) return false;
-		if (awakened != gemInfo.awakened) return false;
-		if (!name.equals(gemInfo.name)) return false;
-		if (!slot.equals(gemInfo.slot)) return false;
-		return tags.equals(gemInfo.tags);
-	}
-
-	@Override
-	public int hashCode() {
-		int result = name.hashCode();
-		result = 31 * result + slot.hashCode();
-		result = 31 * result + tags.hashCode();
-		result = 31 * result + (vaal ? 1 : 0);
-		result = 31 * result + (awakened ? 1 : 0);
-		return result;
 	}
 
 	@Override
@@ -106,8 +78,8 @@ public class GemInfo implements Comparable<GemInfo> {
 				"name='" + name + '\'' +
 				", slot='" + slot + '\'' +
 				", tags=" + tags +
-				", vaal=" + vaal +
-				", awakened=" + awakened +
+				", hasVaal=" + hasVaal +
+				", hasAwakened=" + hasAwakened +
 				'}';
 	}
 

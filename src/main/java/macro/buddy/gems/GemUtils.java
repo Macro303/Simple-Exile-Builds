@@ -1,8 +1,7 @@
 package macro.buddy.gems;
 
 import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
+import macro.buddy.Util;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -21,13 +20,12 @@ public class GemUtils {
 
 	static {
 		gems = loadGems();
+//		save();
 	}
 
 	private static SortedSet<GemInfo> loadGems() {
 		try {
-			ObjectMapper mapper = new ObjectMapper();
-			mapper.registerModule(new Jdk8Module());
-			return mapper.readValue(new File("gems", "Gems.json"), new TypeReference<>() {
+			return Util.JSON_MAPPER.readValue(new File("gems", "Gems.json"), new TypeReference<>() {
 			});
 		} catch (IOException ioe) {
 			LOGGER.error("Unable to load Gems: " + ioe);
@@ -45,5 +43,13 @@ public class GemUtils {
 				return ("Awakened " + gem.getName()).equalsIgnoreCase(gemName);
 			return false;
 		}).findFirst();
+	}
+
+	public static void save() {
+		try {
+			Util.JSON_MAPPER.writeValue(new File("gems", "Gems.json"), gems);
+		} catch (IOException ioe) {
+			LOGGER.error("Unable to save Gems: " + ioe);
+		}
 	}
 }

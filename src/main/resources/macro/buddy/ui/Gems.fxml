@@ -13,7 +13,7 @@
 					<Font name="System Bold" size="24.0"/>
 				</font>
 			</Label>
-			<Separator HBox.hgrow="ALWAYS"/>
+			<Separator HBox.hgrow="ALWAYS" visible="false"/>
 			<VBox alignment="CENTER" spacing="5.0" HBox.hgrow="SOMETIMES">
 				<ComboBox fx:id="buildCombo" maxWidth="1.7976931348623157E308" onAction="#buildSelection"
 				          promptText="Build" visibleRowCount="5"/>

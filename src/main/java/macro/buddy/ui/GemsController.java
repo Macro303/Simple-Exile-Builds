@@ -69,9 +69,8 @@ public class GemsController implements Initializable {
 		build.getLinks().forEach(link -> {
 			HBox linkBox = new HBox();
 			linkBox.setSpacing(5.0);
-			link.forEach(gemName -> {
-				Optional<GemInfo> info = GemUtils.getGem(gemName);
-				GemBox grid = new GemBox(build, info, gemName);
+			link.forEach(gem -> {
+				GemBox grid = new GemBox(build, BuildUtils.getGem(gem));
 
 				linkBox.getChildren().add(grid);
 			});
@@ -82,7 +81,7 @@ public class GemsController implements Initializable {
 	public void addBuild() {
 		if (buildName.getText() == null || buildName.getText().trim().isEmpty())
 			return;
-		BuildInfo newInfo = new BuildInfo(buildName.getText(), classCombo.getValue(), ascendencyCombo.getValue(), new ArrayList<>(), new HashMap<>());
+		BuildInfo newInfo = new BuildInfo(buildName.getText(), classCombo.getValue(), ascendencyCombo.getValue(), new ArrayList<>(), new ArrayList<>());
 		newInfo.save();
 		BuildUtils.loadBuilds();
 		buildCombo.getItems().setAll(BuildUtils.getBuilds());

@@ -11,15 +11,14 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.Priority;
 import macro.buddy.Util;
+import macro.buddy.builds.BuildGem;
 import macro.buddy.builds.BuildInfo;
-import macro.buddy.gems.GemInfo;
-import macro.buddy.gems.GemUtils;
+import macro.buddy.builds.BuildUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.File;
 import java.util.Optional;
-import java.util.concurrent.atomic.AtomicReference;
 
 /**
  * Created by Macro303 on 2020-Jan-07
@@ -27,13 +26,11 @@ import java.util.concurrent.atomic.AtomicReference;
 public class GemBox extends GridPane {
 	private static final Logger LOGGER = LogManager.getLogger(GemBox.class);
 	private BuildInfo build;
-	private Optional<GemInfo> gem;
-	private String fullName;
+	private Optional<BuildGem> gem;
 
-	public GemBox(BuildInfo build, Optional<GemInfo> gem, String fullName) {
+	public GemBox(BuildInfo build, Optional<BuildGem> gem) {
 		this.build = build;
 		this.gem = gem;
-		this.fullName = fullName;
 		initialize();
 	}
 
@@ -52,25 +49,28 @@ public class GemBox extends GridPane {
 		setVgrow(nameLabel, Priority.ALWAYS);
 
 		Button previousButton = getPreviousButton();
-		add(previousButton, 0, 2);
+		if (previousButton.isVisible())
+			add(previousButton, 0, 2);
+
+		Button nextButton = getNextButton();
+		if (nextButton.isVisible())
+			add(nextButton, 2, 2);
 
 		Separator separator = new Separator(Orientation.HORIZONTAL);
 		separator.setVisible(false);
-		add(separator, 1, 2);
 		setHgrow(separator, Priority.ALWAYS);
-
-		Button nextButton = getNextButton();
-		add(nextButton, 2, 2);
+		if (previousButton.isVisible() || nextButton.isVisible())
+			add(separator, 1, 2);
 	}
 
 	public String getBorderStyle() {
-		return String.format("-fx-border-color: %s; -fx-border-style: dashed; -fx-border-width: 2;", Util.slotToColour(gem.isPresent() ? gem.get().getSlot() : "Black"));
+		return String.format("-fx-border-color: %s; -fx-border-style: dashed; -fx-border-width: 2;", Util.slotToColour(gem.isPresent() ? gem.get().getInfo().getSlot() : "Black"));
 	}
 
 	public ImageView getGemImage() {
 		String imageFile = getClass().getResource("placeholder[80x80].png").toExternalForm();
 		if (gem.isPresent()) {
-			String temp = String.format("gems\\%s", gem.get().getFilename(fullName.contains("Vaal"), fullName.contains("Awakened")));
+			String temp = String.format("gems\\%s", gem.get().getFilename());
 			if (new File(temp).exists())
 				imageFile = "file:" + temp;
 		}
@@ -81,7 +81,7 @@ public class GemBox extends GridPane {
 	}
 
 	public Label getNameLabel() {
-		Label nameLabel = new Label(gem.isPresent() ? gem.get().getName() : fullName);
+		Label nameLabel = new Label(gem.isPresent() ? gem.get().getInfo().getName() : "Missing Gem");
 		nameLabel.setWrapText(true);
 		nameLabel.setPrefWidth(90);
 		return nameLabel;
@@ -89,32 +89,38 @@ public class GemBox extends GridPane {
 
 	public Button getPreviousButton() {
 		Button previous = new Button("<<");
-		boolean valid = build.getUpdates().values().stream().anyMatch(entry -> entry.get("gem").equalsIgnoreCase(fullName));
-		previous.setVisible(valid);
+		var previousGem = build.getUpdates().stream().filter(update -> {
+			var newGem = BuildUtils.getGem(update.getNewGem());
+			if (newGem.isEmpty())
+				return false;
+			return newGem.get().getFullname().equalsIgnoreCase(gem.isPresent() ? gem.get().getFullname() : "Missing Gem");
+		}).map(update -> BuildUtils.getGem(update.getOldGem())).flatMap(Optional::stream).findFirst();
+		previous.setVisible(previousGem.isPresent());
 		previous.setOnAction(event -> {
-			LOGGER.info("Previous Selected, Updating {}", gem.isPresent() ? gem.get().getName() : fullName);
-			AtomicReference<String> previousGem = new AtomicReference<>();
-			build.getUpdates().keySet().forEach(temp -> {
-				String entry = build.getUpdates().get(temp).get("gem");
-				if (entry.equalsIgnoreCase(fullName))
-					previousGem.set(temp);
-			});
-			fullName = previousGem.get();
-			gem = GemUtils.getGem(fullName);
-			initialize();
+			if (previousGem.isPresent()) {
+				LOGGER.info("Previous Selected, Updating {} to {}", gem.isPresent() ? gem.get().getFullname() : "Missing Gem", previousGem.get().getFullname());
+				gem = previousGem;
+				initialize();
+			}
 		});
 		return previous;
 	}
 
 	public Button getNextButton() {
 		Button next = new Button(">>");
-		boolean valid = build.getUpdates().containsKey(fullName);
-		next.setVisible(valid);
+		var nextGem = build.getUpdates().stream().filter(update -> {
+			var oldGem = BuildUtils.getGem(update.getOldGem());
+			if (oldGem.isEmpty())
+				return false;
+			return oldGem.get().getFullname().equalsIgnoreCase(gem.isPresent() ? gem.get().getFullname() : "Missing Gem");
+		}).map(update -> BuildUtils.getGem(update.getNewGem())).flatMap(Optional::stream).findFirst();
+		next.setVisible(nextGem.isPresent());
 		next.setOnAction(event -> {
-			LOGGER.info("Next Selected, Updating {}", gem.isPresent() ? gem.get().getName() : fullName);
-			gem = GemUtils.getGem(build.getUpdates().get(fullName).get("gem"));
-			fullName = build.getUpdates().get(fullName).get("gem");
-			initialize();
+			if (nextGem.isPresent()) {
+				LOGGER.info("Next Selected, Updating {} to {}", gem.isPresent() ? gem.get().getFullname() : "Missing Gem", nextGem.get().getFullname());
+				gem = nextGem;
+				initialize();
+			}
 		});
 		return next;
 	}

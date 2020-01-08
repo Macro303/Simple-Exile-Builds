@@ -3,18 +3,18 @@ package macro.buddy.builds;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory;
 import com.fasterxml.jackson.dataformat.yaml.YAMLGenerator;
 import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
-import macro.buddy.gems.GemInfo;
-import macro.buddy.gems.GemUtils;
+import macro.buddy.Util;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
-import java.util.Map;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 /**
@@ -27,12 +27,12 @@ public class BuildInfo implements Comparable<BuildInfo> {
 	private ClassTag classTag;
 	private AscendencyTag ascendency;
 	private List<List<String>> links;
-	private Map<String, Map<String, String>> updates;
+	private List<UpdateGem> updates;
 
 	public BuildInfo() {
 	}
 
-	public BuildInfo(String name, ClassTag classTag, AscendencyTag ascendency, List<List<String>> links, Map<String, Map<String, String>> updates) {
+	public BuildInfo(String name, ClassTag classTag, AscendencyTag ascendency, List<List<String>> links, List<UpdateGem> updates) {
 		this.name = name;
 		this.classTag = classTag;
 		this.ascendency = ascendency;
@@ -73,45 +73,12 @@ public class BuildInfo implements Comparable<BuildInfo> {
 		this.links = links;
 	}
 
-	@JsonIgnore
-	public List<List<GemInfo>> getGemLinks() {
-		return links.stream()
-				.map(link -> link.stream()
-						.flatMap(gem -> GemUtils.getGem(gem).stream())
-						.collect(Collectors.toList()))
-				.collect(Collectors.toList());
-	}
-
-	public Map<String, Map<String, String>> getUpdates() {
+	public List<UpdateGem> getUpdates() {
 		return updates;
 	}
 
-	public void setUpdates(Map<String, Map<String, String>> updates) {
+	public void setUpdates(List<UpdateGem> updates) {
 		this.updates = updates;
-	}
-
-	@Override
-	public boolean equals(Object o) {
-		if (this == o) return true;
-		if (!(o instanceof BuildInfo)) return false;
-
-		BuildInfo info = (BuildInfo) o;
-
-		if (!name.equals(info.name)) return false;
-		if (classTag != info.classTag) return false;
-		if (ascendency != info.ascendency) return false;
-		if (!links.equals(info.links)) return false;
-		return updates.equals(info.updates);
-	}
-
-	@Override
-	public int hashCode() {
-		int result = name.hashCode();
-		result = 31 * result + classTag.hashCode();
-		result = 31 * result + ascendency.hashCode();
-		result = 31 * result + links.hashCode();
-		result = 31 * result + updates.hashCode();
-		return result;
 	}
 
 	@Override
@@ -132,11 +99,8 @@ public class BuildInfo implements Comparable<BuildInfo> {
 
 	public void save() {
 		try {
-			ObjectMapper mapper = new ObjectMapper(new YAMLFactory().disable(YAMLGenerator.Feature.WRITE_DOC_START_MARKER));
-			mapper.findAndRegisterModules();
-			mapper.registerModule(new Jdk8Module());
 			File buildFile = new File("builds", name.replaceAll(" ", "_") + ".yaml");
-			mapper.writeValue(buildFile, this);
+			Util.YAML_MAPPER.writeValue(buildFile, this);
 		} catch (IOException ioe) {
 			LOGGER.error("Unable to save build: " + ioe);
 		}
