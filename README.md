@@ -1,4 +1,4 @@
-<img src="https://github.com/Macro303/Exile-Buddy/blob/master/logo.png" align="left" width="120" height="115" alt="Exile Buddy Logo"/>
+<img src="https://github.com/Macro303/Exile-Buddy/blob/master/logo.png" align="left" width="156" height="112" alt="Exile Buddy Logo"/>
 
 # Exile Buddy
 [![Version](https://img.shields.io/github/tag-pre/Macro303/Exile-Buddy.svg?label=version)](https://github.com/Macro303/Exile-Buddy/releases)
