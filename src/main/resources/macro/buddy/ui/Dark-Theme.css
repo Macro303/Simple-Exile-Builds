@@ -4,6 +4,12 @@
 	-fx-base: #111;
 	-fx-control-inner-background: derive(-fx-base, 50%);
 	-fx-control-inner-background-alt: derive(-fx-control-inner-background, 30%);
+	-fx-font-size: 10pt;
+}
+
+#title{
+	-fx-font-size: 35;
+	-fx-font-weight: bold;
 }
 
 .label {
