@@ -1691,6 +1691,26 @@
 	]
   },
   {
+	"name": "Abyssal Cry",
+	"slot": "Red",
+	"tags": [
+	  "WARCRY",
+	  "AOE",
+	  "DURATION",
+	  "CHAOS"
+	]
+  },
+  {
+	"name": "Ancestral Protector",
+	"slot": "Red",
+	"tags": [
+	  "ATTACK",
+	  "TOTEM",
+	  "MELEE",
+	  "STRIKE"
+	]
+  },
+  {
 	"name": "Added Cold Damage Support",
 	"slot": "Green",
 	"tags": [
@@ -2214,6 +2234,277 @@
 	  "CHAOS",
 	  "SUPPORT"
 	]
+  },
+  {
+	"name": "Efficacy Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT",
+	  "DURATION"
+	]
+  },
+  {
+	"name": "Elemental Army Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT",
+	  "MINION"
+	]
+  },
+  {
+	"name": "Elemental Focus Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT"
+	],
+	"hasAwakened": true
+  },
+  {
+	"name": "Elemental Proliferation Support",
+	"slot": "Blue",
+	"tags": [
+	  "COLD",
+	  "FIRE",
+	  "LIGHTNING",
+	  "SUPPORT",
+	  "AOE"
+	]
+  },
+  {
+	"name": "Energy Leech Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Enlighten Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Faster Casting Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT",
+	  "SPELL"
+	]
+  },
+  {
+	"name": "Feeding Frenzy Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT",
+	  "MINION",
+	  "DURATION"
+	]
+  },
+  {
+	"name": "High-Impact Mine Support",
+	"slot": "Blue",
+	"tags": [
+	  "MINE",
+	  "SUPPORT",
+	  "AOE",
+	  "AURA"
+	]
+  },
+  {
+	"name": "Ignite Proliferation Support",
+	"slot": "Blue",
+	"tags": [
+	  "FIRE",
+	  "SUPPORT",
+	  "AOE"
+	]
+  },
+  {
+	"name": "Immolate Support",
+	"slot": "Blue",
+	"tags": [
+	  "FIRE",
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Increased Area of Effect Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT",
+	  "AOE"
+	],
+	"hasAwakened": true
+  },
+  {
+	"name": "Increased Critical Damage Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Increased Critical Strikes Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Infernal Legion Support",
+	"slot": "Blue",
+	"tags": [
+	  "FIRE",
+	  "AOE",
+	  "SUPPORT",
+	  "MINION"
+	]
+  },
+  {
+	"name": "Infused Channelling Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT",
+	  "CHANNELLING",
+	  "DURATION"
+	]
+  },
+  {
+	"name": "Innervate Support",
+	"slot": "Blue",
+	"tags": [
+	  "LIGHTNING",
+	  "SUPPORT",
+	  "DURATION"
+	]
+  },
+  {
+	"name": "Intensify Support",
+	"slot": "Blue",
+	"tags": [
+	  "AOE",
+	  "SPELL",
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Item Rarity Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Lightning Penetration Support",
+	"slot": "Blue",
+	"tags": [
+	  "LIGHTNING",
+	  "SUPPORT"
+	],
+	"hasAwakened": true
+  },
+  {
+	"name": "Meat Shield Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT",
+	  "MINION"
+	]
+  },
+  {
+	"name": "Minefield Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT",
+	  "MINE"
+	]
+  },
+  {
+	"name": "Minion Damage Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT",
+	  "MINION"
+	],
+	"hasAwakened": true
+  },
+  {
+	"name": "Minion Life Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT",
+	  "MINION"
+	]
+  },
+  {
+	"name": "Minion Speed Support",
+	"slot": "Blue",
+	"tags": [
+	  "MOVEMENT",
+	  "SUPPORT",
+	  "MINION"
+	]
+  },
+  {
+	"name": "Physical to Lightning Support",
+	"slot": "Blue",
+	"tags": [
+	  "LIGHTNING",
+	  "PHYSICAL",
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Power Charge On Critical Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT"
+	]
+  },
+  {
+	"name": "Spell Cascade Support",
+	"slot": "Blue",
+	"tags": [
+	  "AOE",
+	  "SPELL",
+	  "SUPPORT"
+	],
+	"hasAwakened": true
+  },
+  {
+	"name": "Spell Echo Support",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "SUPPORT"
+	],
+	"hasAwakened": true
+  },
+  {
+	"name": "Summon Phantasm Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT",
+	  "MINION"
+	]
+  },
+  {
+	"name": "Unbound Ailments Support",
+	"slot": "Blue",
+	"tags": [
+	  "SUPPORT"
+	],
+	"hasAwakened": true
+  },
+  {
+	"name": "Unleash Support",
+	"slot": "Blue",
+	"tags": [
+	  "SPELL",
+	  "SUPPORT"
+	],
+	"hasAwakened": true
   },
   {
 	"name": "Spell Totem Support",
