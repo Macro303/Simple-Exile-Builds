@@ -1,7 +1,6 @@
 package github.macro.ui.selector
 
 import github.macro.Util
-import github.macro.build_info.Ascendency
 import github.macro.build_info.BuildInfo
 import github.macro.build_info.ClassTag
 import github.macro.ui.UIModel
@@ -32,11 +31,9 @@ class Selector : View() {
 	}
 
 	override val root = borderpane {
-		prefWidth = 800.0
-		prefHeight = 500.0
 		paddingAll = 10.0
 		top {
-			hbox(spacing = 5.0, alignment = Pos.TOP_CENTER) {
+			hbox(spacing = 5.0, alignment = Pos.CENTER) {
 				separator {
 					isVisible = false
 					hgrow = Priority.ALWAYS
@@ -51,12 +48,11 @@ class Selector : View() {
 			}
 		}
 		center {
-			vbox(spacing = 5.0) {
-				hbox(spacing = 5.0) {
+			vbox(spacing = 5.0, alignment = Pos.CENTER) {
+				hbox(spacing = 5.0, alignment = Pos.CENTER) {
 					val buildCombobox = combobox<BuildInfo>(values = builds) {
 						promptText = "Build"
 						hgrow = Priority.ALWAYS
-						maxWidth = Double.MAX_VALUE
 						cellFormat {
 							text = it.display()
 						}
@@ -79,14 +75,15 @@ class Selector : View() {
 								UIModel(SimpleObjectProperty<BuildInfo>(buildCombobox.selectedItem)),
 								scope
 							)
-							replaceWith(find<Viewer>(scope))
+							find<Viewer>(scope).openWindow(owner = null, resizable = false)
+							close()
 						}
 						disableWhen {
 							buildCombobox.valueProperty().isNull
 						}
 					}
 				}
-				hbox(spacing = 5.0) {
+				hbox(spacing = 5.0, alignment = Pos.CENTER) {
 					val nameTextfield = textfield {
 						promptText = "Build Name"
 						hgrow = Priority.ALWAYS
@@ -94,21 +91,14 @@ class Selector : View() {
 					val classCombobox = combobox(values = ClassTag.values().asList()) {
 						promptText = "Class"
 					}
-					val ascendancyCombobox = combobox(values = Ascendency.values().asList()) {
-						promptText = "Ascendancy"
-						disableWhen {
-							classCombobox.valueProperty().isNull
-						}
-					}
 					button(text = "Create") {
 						minWidth = 100.0
 						action {
-							LOGGER.info("Creating Build: ${nameTextfield.text} | ${classCombobox.selectedItem} | ${ascendancyCombobox.selectedItem}")
+							LOGGER.info("Creating Build: ${nameTextfield.text} | ${classCombobox.selectedItem}")
 						}
 						disableWhen {
 							nameTextfield.textProperty().length().lessThanOrEqualTo(3)
 								.or(classCombobox.valueProperty().isNull)
-//								.or(!Ascendency.values(classCombobox.selectedItem).contains(ascendancyCombobox.selectedItem))
 						}
 					}
 				}
