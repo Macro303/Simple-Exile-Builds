@@ -22,11 +22,11 @@ class GemInfo() : JsonModelAuto {
 	val tagsProperty = SimpleListProperty<GemTag>()
 	var tags by tagsProperty
 
-	val vaalProperty = SimpleBooleanProperty()
-	var hasVaal by vaalProperty
+	val hasVaalProperty = SimpleBooleanProperty()
+	var hasVaal by hasVaalProperty
 
-	val awakenedProperty = SimpleBooleanProperty()
-	var hasAwakened by awakenedProperty
+	val hasAwakenedProperty = SimpleBooleanProperty()
+	var hasAwakened by hasAwakenedProperty
 
 	val acquisitionProperty = SimpleObjectProperty<Acquisition>()
 	var acquisition by acquisitionProperty
@@ -48,7 +48,7 @@ class GemInfo() : JsonModelAuto {
 	}
 
 	fun getFilename(isVaal: Boolean, isAwakened: Boolean): String {
-		var output = name
+		var output = name.replace(" ", "_")
 		if (isVaal && hasVaal)
 			output += "[Vaal]"
 		if (isAwakened && hasAwakened)
@@ -57,6 +57,6 @@ class GemInfo() : JsonModelAuto {
 	}
 
 	override fun toString(): String {
-		return "GemInfo(nameProperty=$nameProperty, slotProperty=$slotProperty, tagsProperty=$tagsProperty, vaalProperty=$vaalProperty, awakenedProperty=$awakenedProperty, acquisitionProperty=$acquisitionProperty)"
+		return "GemInfo(nameProperty=$nameProperty, slotProperty=$slotProperty, tagsProperty=$tagsProperty, hasVaalProperty=$hasVaalProperty, hasAwakenedProperty=$hasAwakenedProperty, acquisitionProperty=$acquisitionProperty)"
 	}
 }

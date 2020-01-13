@@ -6,6 +6,7 @@ import com.fasterxml.jackson.databind.SerializationFeature
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory
 import com.fasterxml.jackson.dataformat.yaml.YAMLGenerator
 import com.fasterxml.jackson.datatype.jdk8.Jdk8Module
+import github.macro.build_info.gems.BuildGem
 import github.macro.build_info.gems.GemInfo
 import org.apache.logging.log4j.LogManager
 import java.io.File
@@ -46,13 +47,15 @@ object Util {
 		}
 	}
 
-	fun textToGem(name: String): GemInfo? {
-		return gems.firstOrNull {
+	fun textToGem(name: String): BuildGem {
+		val info = gems.firstOrNull {
 			when {
-				it.hasVaal -> "Vaal ${it.name}".equals(name, ignoreCase = true)
-				it.hasAwakened -> "Awakened ${it.name}".equals(name, ignoreCase = true)
-				else -> it.name.equals(name, ignoreCase = true)
+				it.hasVaal && "Vaal ${it.name}".equals(name, ignoreCase = true) -> return@firstOrNull true
+				it.hasAwakened && "Awakened ${it.name}".equals(name, ignoreCase = true) -> return@firstOrNull true
+				it.name.equals(name, ignoreCase = true) -> return@firstOrNull true
+				else -> return@firstOrNull false
 			}
 		}
+		return BuildGem(info, name.startsWith("Vaal"), name.startsWith("Awakened"))
 	}
 }

@@ -1,6 +1,7 @@
 package github.macro.build_info
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize
+import github.macro.build_info.gems.BuildGem
 import github.macro.build_info.gems.GemInfo
 import github.macro.build_info.gems.UpdateGem
 import javafx.beans.property.SimpleListProperty
@@ -23,7 +24,7 @@ class BuildInfo() : JsonModelAuto {
 	val ascendencyProperty = SimpleObjectProperty<Ascendency>()
 	var ascendency by ascendencyProperty
 
-	val linksProperty = SimpleListProperty<List<GemInfo?>>()
+	val linksProperty = SimpleListProperty<List<BuildGem>>()
 	var links by linksProperty
 
 	val updatesProperty = SimpleListProperty<UpdateGem>()
@@ -33,7 +34,7 @@ class BuildInfo() : JsonModelAuto {
 		name: String,
 		classTag: ClassTag,
 		ascendency: Ascendency?,
-		links: List<List<GemInfo?>>,
+		links: List<List<BuildGem>>,
 		updates: List<UpdateGem>
 	) : this() {
 		this.name = name
