@@ -1,0 +1,62 @@
+package github.macro.build_info.gems
+
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize
+import javafx.beans.property.SimpleBooleanProperty
+import javafx.beans.property.SimpleListProperty
+import javafx.beans.property.SimpleObjectProperty
+import javafx.beans.property.SimpleStringProperty
+import javafx.collections.FXCollections
+import tornadofx.*
+
+/**
+ * Created by Macro303 on 2020-Jan-13.
+ */
+@JsonDeserialize(using = GemDeserializer::class)
+class GemInfo() : JsonModelAuto {
+	val nameProperty = SimpleStringProperty()
+	var name by nameProperty
+
+	val slotProperty = SimpleStringProperty()
+	var slot by slotProperty
+
+	val tagsProperty = SimpleListProperty<GemTag>()
+	var tags by tagsProperty
+
+	val vaalProperty = SimpleBooleanProperty()
+	var hasVaal by vaalProperty
+
+	val awakenedProperty = SimpleBooleanProperty()
+	var hasAwakened by awakenedProperty
+
+	val acquisitionProperty = SimpleObjectProperty<Acquisition>()
+	var acquisition by acquisitionProperty
+
+	constructor(
+		name: String,
+		slot: String,
+		tags: List<GemTag>,
+		hasVaal: Boolean,
+		hasAwakened: Boolean,
+		acquisition: Acquisition
+	) : this() {
+		this.name = name
+		this.slot = slot
+		this.tags = FXCollections.observableList(tags)
+		this.hasVaal = hasVaal
+		this.hasAwakened = hasAwakened
+		this.acquisition = acquisition
+	}
+
+	fun getFilename(isVaal: Boolean, isAwakened: Boolean): String {
+		var output = name
+		if (isVaal && hasVaal)
+			output += "[Vaal]"
+		if (isAwakened && hasAwakened)
+			output += "[Awakened]"
+		return "$output.png"
+	}
+
+	override fun toString(): String {
+		return "GemInfo(nameProperty=$nameProperty, slotProperty=$slotProperty, tagsProperty=$tagsProperty, vaalProperty=$vaalProperty, awakenedProperty=$awakenedProperty, acquisitionProperty=$acquisitionProperty)"
+	}
+}
