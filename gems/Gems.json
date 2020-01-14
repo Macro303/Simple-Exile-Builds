@@ -3629,6 +3629,84 @@
 	}
   },
   {
+	"name": "Dead Banner",
+	"slot": "Red",
+	"tags": [
+	  "AOE",
+	  "SPELL",
+	  "DURATION",
+	  "AURA",
+	  "PHYSICAL"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [
+		{
+		  "act": 3,
+		  "quest": "Lost in Love",
+		  "classes": [
+			"DUELIST"
+		  ]
+		}
+	  ],
+	  "vendors": [
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"WITCH",
+			"SHADOW",
+			"RANGER",
+			"DUELIST",
+			"MARAUDER",
+			"TEMPLAR",
+			"SCION"
+		  ]
+		},
+		{
+		  "vendor": "Clarissa",
+		  "act": 3,
+		  "quest": "Lost in Love",
+		  "classes": [
+			"RANGER",
+			"DUELIST",
+			"MARAUDER",
+			"TEMPLAR",
+			"SCION"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"WITCH",
+			"SHADOW",
+			"RANGER",
+			"DUELIST",
+			"MARAUDER",
+			"TEMPLAR",
+			"SCION"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
 	"name": "Portal",
 	"slot": "White",
 	"tags": [
@@ -3639,6 +3717,28 @@
 		{
 		  "amount": 5,
 		  "ingredient": "The Realm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Vaal Breach",
+	"slot": "White",
+	"tags": [
+	  "VAAL",
+	  "SPELL"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
 		},
 		{
 		  "amount": 3,
