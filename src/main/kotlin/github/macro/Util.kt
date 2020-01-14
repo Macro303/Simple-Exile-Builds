@@ -6,6 +6,8 @@ import com.fasterxml.jackson.databind.SerializationFeature
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory
 import com.fasterxml.jackson.dataformat.yaml.YAMLGenerator
 import com.fasterxml.jackson.datatype.jdk8.Jdk8Module
+import github.macro.build_info.ClassTag
+import github.macro.build_info.ClassTag.*
 import github.macro.build_info.gems.BuildGem
 import github.macro.build_info.gems.GemInfo
 import javafx.animation.KeyFrame
@@ -78,4 +80,14 @@ object Util {
 			e.printStackTrace()
 		}
 	}
+
+	internal fun getClassGems(classTag: ClassTag): List<BuildGem> = when (classTag) {
+		SCION -> listOf(textToGem("Spectral Throw"), textToGem("Onslaught Support"))
+		MARAUDER -> listOf(textToGem("Heavy Strike"), textToGem("Ruthless Support"))
+		RANGER -> listOf(textToGem("Burning Arrow"), textToGem("Pierce Support"))
+		WITCH -> listOf(textToGem("Fireball"), textToGem("Arcane Surge Support"))
+		DUELIST -> listOf(textToGem("Double Strike"), textToGem("Chance to Bleed Support"))
+		TEMPLAR -> listOf(textToGem("Glacial Hammer"), textToGem("Elemental Proliferation Support"))
+		SHADOW -> listOf(textToGem("Viper Strike"), textToGem("Lesser Poison Support"))
+	}.plus(textToGem("Empower Support"))
 }

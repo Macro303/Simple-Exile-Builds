@@ -25,7 +25,13 @@ class BuildDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDes
 			null
 		else
 			Ascendency.valueOf(node["ascendency"].asText().toUpperCase())
-		val links = node["links"].toList().map { link -> link.toList().map { Util.textToGem(it.asText()) } }
+		val links = ArrayList<LinkInfo>()
+		node["links"].fieldNames().forEach { linkName ->
+			val gems = node["links"][linkName].map {
+				Util.textToGem(it.asText())
+			}
+			links.add(LinkInfo(linkName, gems))
+		}
 		val updates = node["updates"].map {
 			val oldGem = it["oldGem"].asText()
 			val newGem = it["newGem"].asText()

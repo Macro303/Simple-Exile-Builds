@@ -1,8 +1,11 @@
 package github.macro.ui.selector
 
 import github.macro.Util
+import github.macro.build_info.Ascendency
 import github.macro.build_info.BuildInfo
 import github.macro.build_info.ClassTag
+import github.macro.build_info.LinkInfo
+import github.macro.build_info.gems.UpdateGem
 import github.macro.ui.UIModel
 import github.macro.ui.viewer.Viewer
 import javafx.beans.property.SimpleObjectProperty
@@ -19,6 +22,7 @@ import java.io.IOException
  */
 class Selector : View() {
 	private val builds = FXCollections.observableArrayList<BuildInfo>()
+	private val ascendencyList = FXCollections.observableArrayList<Ascendency>()
 
 	init {
 		File("builds").listFiles().forEach {
@@ -53,17 +57,9 @@ class Selector : View() {
 					val buildCombobox = combobox<BuildInfo>(values = builds) {
 						promptText = "Build"
 						hgrow = Priority.ALWAYS
+						maxWidth = Double.MAX_VALUE
 						cellFormat {
 							text = it.display()
-						}
-					}
-					button(text = "Edit") {
-						minWidth = 100.0
-						action {
-							LOGGER.info("Editing Build: ${buildCombobox.selectedItem?.display()}")
-						}
-						disableWhen {
-							buildCombobox.valueProperty().isNull
 						}
 					}
 					button(text = "Select") {
@@ -71,10 +67,7 @@ class Selector : View() {
 						action {
 							LOGGER.info("Viewing Build: ${buildCombobox.selectedItem?.display()}")
 							val scope = Scope()
-							setInScope(
-								UIModel(SimpleObjectProperty<BuildInfo>(buildCombobox.selectedItem)),
-								scope
-							)
+							setInScope(UIModel(SimpleObjectProperty(buildCombobox.selectedItem)), scope)
 							find<Viewer>(scope).openWindow(owner = null, resizable = false)
 							close()
 						}
@@ -91,14 +84,49 @@ class Selector : View() {
 					val classCombobox = combobox(values = ClassTag.values().asList()) {
 						promptText = "Class"
 					}
+					val ascendencyCombobox = combobox(values = ascendencyList) {
+						promptText = "Ascendency"
+						disableWhen {
+							classCombobox.valueProperty().isNull
+						}
+					}
+					classCombobox.setOnAction {
+						ascendencyCombobox.selectionModel.clearSelection()
+						if (classCombobox.value != null)
+							ascendencyList.setAll(Ascendency.values(classCombobox.value))
+					}
 					button(text = "Create") {
 						minWidth = 100.0
 						action {
-							LOGGER.info("Creating Build: ${nameTextfield.text} | ${classCombobox.selectedItem}")
+							val info = BuildInfo(
+								name = nameTextfield.text,
+								classTag = classCombobox.selectedItem!!,
+								ascendency = ascendencyCombobox.selectedItem!!,
+								links = listOf(
+									LinkInfo(
+										group = "Weapon",
+										gems = Util.getClassGems(classTag = classCombobox.selectedItem!!)
+									)
+								),
+								updates = listOf(
+									UpdateGem(
+										oldGem = "Empower Support",
+										newGem = "Enhance Support",
+										reason = "Gems are all Max Level"
+									)
+								)
+							)
+							LOGGER.info("Creating Build: ${info.display()}")
+							info.save()
+							val scope = Scope()
+							setInScope(UIModel(SimpleObjectProperty(info)), scope)
+							find<Viewer>(scope).openWindow(owner = null, resizable = false)
+							close()
 						}
 						disableWhen {
 							nameTextfield.textProperty().length().lessThanOrEqualTo(3)
 								.or(classCombobox.valueProperty().isNull)
+								.or(ascendencyCombobox.valueProperty().isNull)
 						}
 					}
 				}

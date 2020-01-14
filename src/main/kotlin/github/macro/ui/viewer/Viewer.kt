@@ -33,7 +33,7 @@ class Viewer : View() {
 					isVisible = false
 					hgrow = Priority.ALWAYS
 				}
-				label(text = selected.buildProperty.value.display())
+				label(text = selected.buildProperty.value!!.display())
 				separator {
 					isVisible = false
 					hgrow = Priority.ALWAYS
@@ -42,14 +42,13 @@ class Viewer : View() {
 		}
 		center {
 			paddingAll = 5.0
-			scrollpane {
+			scrollpane(fitToWidth = true) {
 				hbarPolicy = ScrollPane.ScrollBarPolicy.NEVER
-				isFitToWidth = true
 				vbox(spacing = 5.0, alignment = Pos.TOP_CENTER) {
-					selected.buildProperty.value.links.forEach { link ->
+					selected.buildProperty.value!!.links!!.forEach { link ->
 						hbox(spacing = 5.0, alignment = Pos.CENTER_LEFT) {
-							link.forEach { gem ->
-								add(GemPane(selected.buildProperty.value, gem))
+							link.gems.forEach { gem ->
+								add(GemPane(selected.buildProperty.value!!, gem))
 							}
 						}
 					}
@@ -60,7 +59,7 @@ class Viewer : View() {
 
 	override fun onDock() {
 		currentWindow?.setOnCloseRequest {
-			LOGGER.info("Closing Build: ${selected.buildProperty.value.display()}")
+			LOGGER.info("Closing Build: ${selected.buildProperty.value!!.display()}")
 			find<Selector>().openWindow(owner = null, resizable = false)
 		}
 	}
