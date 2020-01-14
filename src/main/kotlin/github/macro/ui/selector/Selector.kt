@@ -4,7 +4,6 @@ import github.macro.Util
 import github.macro.build_info.Ascendency
 import github.macro.build_info.BuildInfo
 import github.macro.build_info.ClassTag
-import github.macro.build_info.LinkInfo
 import github.macro.build_info.gems.UpdateGem
 import github.macro.ui.UIModel
 import github.macro.ui.viewer.Viewer
@@ -103,10 +102,8 @@ class Selector : View() {
 								classTag = classCombobox.selectedItem!!,
 								ascendency = ascendencyCombobox.selectedItem!!,
 								links = listOf(
-									LinkInfo(
-										group = "Weapon",
-										gems = Util.getClassGems(classTag = classCombobox.selectedItem!!)
-									)
+									Util.getClassGems(classTag = classCombobox.selectedItem!!),
+									listOf(Util.textToGem(name = "Portal"))
 								),
 								updates = listOf(
 									UpdateGem(

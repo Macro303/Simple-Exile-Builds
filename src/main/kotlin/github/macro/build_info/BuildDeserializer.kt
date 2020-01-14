@@ -20,18 +20,9 @@ class BuildDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDes
 		val node: JsonNode = parser.codec.readTree(parser)
 
 		val name = node["name"].asText()
-		val classTag = ClassTag.valueOf(node["class"].asText().toUpperCase())
-		val ascendency = if (node["ascendency"].isNull)
-			null
-		else
-			Ascendency.valueOf(node["ascendency"].asText().toUpperCase())
-		val links = ArrayList<LinkInfo>()
-		node["links"].fieldNames().forEach { linkName ->
-			val gems = node["links"][linkName].map {
-				Util.textToGem(it.asText())
-			}
-			links.add(LinkInfo(linkName, gems))
-		}
+		val classTag = ClassTag.value(node["class"].asText()) ?: return null
+		val ascendency = Ascendency.value(node["ascendency"].asText()) ?: return null
+		val links = node["links"].map { link -> link.map { Util.textToGem(it.asText()) } }
 		val updates = node["updates"].map {
 			val oldGem = it["oldGem"].asText()
 			val newGem = it["newGem"].asText()

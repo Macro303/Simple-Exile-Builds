@@ -18,17 +18,7 @@ class BuildSerializer @JvmOverloads constructor(t: Class<BuildInfo>? = null) : S
 		parser.writeStringField("name", value.name)
 		parser.writeStringField("class", value.classTag.name)
 		parser.writeStringField("ascendency", value.ascendency.name)
-		parser.writeArrayFieldStart("links")
-		value.links.forEach { link ->
-			parser.writeStartObject()
-			parser.writeArrayFieldStart(link.group)
-			link.gems.forEach {
-				parser.writeString(it.getFullname())
-			}
-			parser.writeEndArray()
-			parser.writeEndObject()
-		}
-		parser.writeEndArray()
+		parser.writeObjectField("links", value.links.map { link -> link.map { it.getFullname() } })
 		parser.writeArrayFieldStart("updates")
 		value.updates.forEach { update ->
 			parser.writeStartObject()

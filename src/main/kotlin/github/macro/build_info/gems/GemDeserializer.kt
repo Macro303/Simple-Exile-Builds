@@ -19,14 +19,27 @@ class GemDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeser
 
 		val name = node["name"].asText()
 		val slot = node["slot"].asText()
-		val tags = node["tags"].toSet().map { GemTag.valueOf(it.asText().toUpperCase()) }.sorted()
+		val tags = node["tags"].mapNotNull { GemTag.value(it.asText()) }.sorted()
 		val hasVaal = if (node.has("hasVaal")) node["hasVaal"].asBoolean(false) else false
 		val hasAwakened = if (node.has("hasAwakened")) node["hasAwakened"].asBoolean(false) else false
 
 		val acquisitionNode = node["acquisition"]
-		val recipes = acquisitionNode["recipes"].toSet().map { Recipe(it["amount"].asInt(), it["ingredient"].asText()) }
-		val quests = acquisitionNode["quests"].toSet().map { Quest(it["act"].asInt(), it["quest"].asText(), it["classes"].toSet().map { tag -> ClassTag.valueOf(tag.asText().toUpperCase()) }) }
-		val vendors = acquisitionNode["vendors"].toSet().map { Vendor(it["vendor"].asText(), it["act"].asInt(), it["quest"].asText(), it["classes"].toSet().map { tag -> ClassTag.valueOf(tag.asText().toUpperCase()) }) }
+		val recipes = acquisitionNode["recipes"].map { Recipe(it["amount"].asInt(), it["ingredient"].asText()) }
+		val quests = acquisitionNode["quests"].map {
+			Quest(
+				act = it["act"].asInt(),
+				quest = it["quest"].asText(),
+				classes = it["classes"].mapNotNull { tag -> ClassTag.value(tag.asText()) }.sorted()
+			)
+		}
+		val vendors = acquisitionNode["vendors"].map {
+			Vendor(
+				vendor = it["vendor"].asText(),
+				act = it["act"].asInt(),
+				quest = it["quest"].asText(),
+				classes = it["classes"].mapNotNull { tag -> ClassTag.value(tag.asText()) }.sorted()
+			)
+		}
 
 		return GemInfo(name, slot, tags, hasVaal, hasAwakened, Acquisition(recipes, quests, vendors))
 	}

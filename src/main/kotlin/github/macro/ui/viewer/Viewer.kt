@@ -47,7 +47,7 @@ class Viewer : View() {
 				vbox(spacing = 5.0, alignment = Pos.TOP_CENTER) {
 					selected.buildProperty.value!!.links!!.forEach { link ->
 						hbox(spacing = 5.0, alignment = Pos.CENTER_LEFT) {
-							link.gems.forEach { gem ->
+							link.forEach { gem ->
 								add(GemPane(selected.buildProperty.value!!, gem))
 							}
 						}
