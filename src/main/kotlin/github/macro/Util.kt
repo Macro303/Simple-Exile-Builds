@@ -8,9 +8,14 @@ import com.fasterxml.jackson.dataformat.yaml.YAMLGenerator
 import com.fasterxml.jackson.datatype.jdk8.Jdk8Module
 import github.macro.build_info.gems.BuildGem
 import github.macro.build_info.gems.GemInfo
+import javafx.animation.KeyFrame
+import javafx.animation.Timeline
+import javafx.scene.control.Tooltip
+import javafx.util.Duration
 import org.apache.logging.log4j.LogManager
 import java.io.File
 import java.io.IOException
+import java.lang.reflect.Field
 
 /**
  * Created by Macro303 on 2020-Jan-13.
@@ -57,5 +62,20 @@ object Util {
 			}
 		}
 		return BuildGem(info, name.startsWith("Vaal"), name.startsWith("Awakened"))
+	}
+
+	internal fun hackTooltipStartTiming(tooltip: Tooltip) {
+		try {
+			val fieldBehavior: Field = tooltip.javaClass.getDeclaredField("BEHAVIOR")
+			fieldBehavior.isAccessible = true
+			val objBehavior: Any = fieldBehavior.get(tooltip)
+			val fieldTimer: Field = objBehavior.javaClass.getDeclaredField("activationTimer")
+			fieldTimer.isAccessible = true
+			val objTimer = fieldTimer.get(objBehavior) as Timeline
+			objTimer.keyFrames.clear()
+			objTimer.keyFrames.add(KeyFrame(Duration(250.0)))
+		} catch (e: Exception) {
+			e.printStackTrace()
+		}
 	}
 }

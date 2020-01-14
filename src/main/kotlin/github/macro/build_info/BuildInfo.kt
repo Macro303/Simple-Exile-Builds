@@ -2,7 +2,6 @@ package github.macro.build_info
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import github.macro.build_info.gems.BuildGem
-import github.macro.build_info.gems.GemInfo
 import github.macro.build_info.gems.UpdateGem
 import javafx.beans.property.SimpleListProperty
 import javafx.beans.property.SimpleObjectProperty

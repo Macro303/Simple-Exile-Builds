@@ -20,9 +20,6 @@ class BuddyApp : App(Selector::class, Styles::class) {
 
 class Styles : Stylesheet() {
 	init {
-		/*root{
-			fontSize = 10.pt
-		}*/
 		title {
 			fontSize = 35.pt
 			fontWeight = FontWeight.BOLD

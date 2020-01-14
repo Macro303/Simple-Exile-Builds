@@ -7,4 +7,4 @@ import tornadofx.*
 /**
  * Created by Macro303 on 2020-Jan-13
  */
-class UIModel(val buildProperty : SimpleObjectProperty<BuildInfo>) : ViewModel()
+class UIModel(val buildProperty: SimpleObjectProperty<BuildInfo>) : ViewModel()

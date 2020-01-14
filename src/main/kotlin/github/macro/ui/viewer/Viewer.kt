@@ -1,19 +1,12 @@
 package github.macro.ui.viewer
 
-import github.macro.Util
 import github.macro.ui.GemPane
 import github.macro.ui.UIModel
 import javafx.geometry.Pos
 import javafx.scene.control.ScrollPane
-import javafx.scene.image.Image
-import javafx.scene.layout.BorderStrokeStyle
 import javafx.scene.layout.Priority
-import javafx.scene.shape.StrokeLineCap
-import javafx.scene.shape.StrokeLineJoin
-import javafx.scene.shape.StrokeType
 import org.apache.logging.log4j.LogManager
 import tornadofx.*
-import java.io.File
 
 /**
  * Created by Macro303 on 2020-Jan-13.
@@ -22,8 +15,8 @@ class Viewer : View() {
 	private val selected: UIModel by inject()
 
 	override val root = borderpane {
-		prefWidth = 800.0
-		prefHeight = 500.0
+		prefWidth = 700.0
+		prefHeight = 750.0
 		paddingAll = 10.0
 		top {
 			paddingAll = 5.0

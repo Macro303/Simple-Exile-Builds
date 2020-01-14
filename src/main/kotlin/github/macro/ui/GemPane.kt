@@ -100,6 +100,7 @@ class GemPane(val build: BuildInfo, var gem: BuildGem?) : BorderPane() {
 							fontSize = 10.pt
 						}
 					}
+					Util.hackTooltipStartTiming(tooltip)
 				}
 			}
 		}
