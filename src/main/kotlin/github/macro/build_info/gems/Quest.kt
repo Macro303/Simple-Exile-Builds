@@ -2,8 +2,9 @@ package github.macro.build_info.gems
 
 import github.macro.build_info.ClassTag
 import javafx.beans.property.SimpleIntegerProperty
-import javafx.beans.property.SimpleObjectProperty
+import javafx.beans.property.SimpleListProperty
 import javafx.beans.property.SimpleStringProperty
+import javafx.collections.FXCollections
 import tornadofx.*
 
 /**
@@ -16,13 +17,13 @@ class Quest() : JsonModelAuto {
 	val questProperty = SimpleStringProperty()
 	var quest by questProperty
 
-	val classesProperty = SimpleObjectProperty<ClassTag>()
+	val classesProperty = SimpleListProperty<ClassTag>()
 	var classes by classesProperty
 
-	constructor(act: Int, quest: String, classes: ClassTag) : this() {
+	constructor(act: Int, quest: String, classes: List<ClassTag>) : this() {
 		this.act = act
 		this.quest = quest
-		this.classes = classes
+		this.classes = FXCollections.observableList(classes)
 	}
 
 	override fun toString(): String {

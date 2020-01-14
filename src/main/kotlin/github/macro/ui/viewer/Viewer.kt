@@ -2,6 +2,7 @@ package github.macro.ui.viewer
 
 import github.macro.ui.GemPane
 import github.macro.ui.UIModel
+import github.macro.ui.selector.Selector
 import javafx.geometry.Pos
 import javafx.scene.control.ScrollPane
 import javafx.scene.layout.Priority
@@ -54,6 +55,13 @@ class Viewer : View() {
 					}
 				}
 			}
+		}
+	}
+
+	override fun onDock() {
+		currentWindow?.setOnCloseRequest {
+			LOGGER.info("Closing Build: ${selected.buildProperty.value.display()}")
+			find<Selector>().openWindow(owner = null, resizable = false)
 		}
 	}
 

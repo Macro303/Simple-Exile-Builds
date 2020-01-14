@@ -23,7 +23,18 @@ class BuildGem() : JsonModelAuto {
 		this.isAwakened = isAwakened
 	}
 
-	fun getFilename(): String = info?.getFilename(isVaal, isAwakened) ?: "INVALID.png"
+	fun getFullname(): String? {
+		return info?.let {
+			var name = ""
+			if (it.hasVaal && isVaal)
+				name += "Vaal "
+			if (it.hasAwakened && isAwakened)
+				name += "Awakened "
+			return@let name + it.name
+		}
+	}
+
+	fun getFilename(): String? = info?.getFilename(isVaal, isAwakened)
 
 	override fun toString(): String {
 		return "BuildGem(infoProperty=$infoProperty, isVaalProperty=$isVaalProperty, isAwakenedProperty=$isAwakenedProperty)"

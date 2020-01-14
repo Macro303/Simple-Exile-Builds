@@ -1,5 +1,6 @@
 package github.macro.ui
 
+import com.sun.xml.internal.ws.spi.db.BindingContextFactory
 import github.macro.Util
 import github.macro.build_info.BuildInfo
 import github.macro.build_info.gems.BuildGem
@@ -13,6 +14,7 @@ import javafx.scene.shape.StrokeType
 import org.apache.logging.log4j.LogManager
 import tornadofx.*
 import java.io.File
+
 
 /**
  * Created by Macro303 on 2020-Jan-14.
@@ -44,7 +46,7 @@ class GemPane(val build: BuildInfo, var gem: BuildGem?) : BorderPane() {
 
 		top {
 			hbox {
-				val imageFile = File("gems", gem?.getFilename() ?: "INVALID.png")
+				val imageFile = File("gems", gem?.getFilename() ?: "Missing Gem")
 				if (imageFile.exists())
 					imageview("file:${imageFile.path}") {
 						fitHeight = 80.0
@@ -60,7 +62,7 @@ class GemPane(val build: BuildInfo, var gem: BuildGem?) : BorderPane() {
 			}
 		}
 		center {
-			label(text = gem?.info?.name ?: "Missing Gem Data") {
+			label(text = gem?.info?.name ?: "Missing Gem") {
 				isWrapText = true
 				prefWidth = 90.0
 				alignment = Pos.CENTER
@@ -69,14 +71,16 @@ class GemPane(val build: BuildInfo, var gem: BuildGem?) : BorderPane() {
 		bottom {
 			hbox(spacing = 5.0) {
 				button(text = "<<") {
-					isVisible = build.updates.any { it.newGem.endsWith(gem?.info?.name ?: "INVALID") }
+					isVisible = build.updates.any { it.newGem.endsWith(gem?.info?.name ?: "Missing Gem") }
 					hgrow = Priority.SOMETIMES
 					isFocusTraversable = false
 					action {
-						gem = build.updates.firstOrNull { it.newGem.endsWith(gem?.info?.name ?: "INVALID") }
+						val oldGem = gem
+						gem = build.updates.firstOrNull { it.newGem.endsWith(gem?.info?.name ?: "Missing Gem") }
 							?.oldGem?.let {
 							Util.textToGem(it)
 						}
+						LOGGER.info("Previous Selected, Updated ${oldGem?.getFullname() ?: "Missing Gem"} to ${gem?.getFullname() ?: "Missing Gem"}")
 						initialize()
 					}
 				}
@@ -85,17 +89,19 @@ class GemPane(val build: BuildInfo, var gem: BuildGem?) : BorderPane() {
 					hgrow = Priority.ALWAYS
 				}
 				button(text = ">>") {
-					isVisible = build.updates.any { it.oldGem.endsWith(gem?.info?.name ?: "INVALID") }
+					isVisible = build.updates.any { it.oldGem.endsWith(gem?.info?.name ?: "Missing Gem") }
 					hgrow = Priority.SOMETIMES
 					isFocusTraversable = false
 					action {
-						gem = build.updates.firstOrNull { it.oldGem.endsWith(gem?.info?.name ?: "INVALID") }
+						val oldGem = gem
+						gem = build.updates.firstOrNull { it.oldGem.endsWith(gem?.info?.name ?: "Missing Gem") }
 							?.newGem?.let {
 							Util.textToGem(it)
 						}
+						LOGGER.info("Next Selected, Updated ${oldGem?.getFullname() ?: "Missing Gem"} to ${gem?.getFullname() ?: "Missing Gem"}")
 						initialize()
 					}
-					tooltip(build.updates.firstOrNull { it.oldGem.endsWith(gem?.info?.name ?: "INVALID") }?.reason) {
+					tooltip(build.updates.firstOrNull { it.oldGem.endsWith(gem?.info?.name ?: "Missing Gem") }?.reason) {
 						style {
 							fontSize = 10.pt
 						}

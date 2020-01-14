@@ -5,6 +5,7 @@ import com.fasterxml.jackson.core.JsonProcessingException
 import com.fasterxml.jackson.databind.DeserializationContext
 import com.fasterxml.jackson.databind.JsonNode
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer
+import github.macro.build_info.ClassTag
 import org.apache.logging.log4j.LogManager
 import java.io.IOException
 
@@ -22,7 +23,12 @@ class GemDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeser
 		val hasVaal = if (node.has("hasVaal")) node["hasVaal"].asBoolean(false) else false
 		val hasAwakened = if (node.has("hasAwakened")) node["hasAwakened"].asBoolean(false) else false
 
-		return GemInfo(name, slot, tags, hasVaal, hasAwakened, Acquisition())
+		val acquisitionNode = node["acquisition"]
+		val recipes = acquisitionNode["recipes"].toSet().map { Recipe(it["amount"].asInt(), it["ingredient"].asText()) }
+		val quests = acquisitionNode["quests"].toSet().map { Quest(it["act"].asInt(), it["quest"].asText(), it["classes"].toSet().map { tag -> ClassTag.valueOf(tag.asText().toUpperCase()) }) }
+		val vendors = acquisitionNode["vendors"].toSet().map { Vendor(it["vendor"].asText(), it["act"].asInt(), it["quest"].asText(), it["classes"].toSet().map { tag -> ClassTag.valueOf(tag.asText().toUpperCase()) }) }
+
+		return GemInfo(name, slot, tags, hasVaal, hasAwakened, Acquisition(recipes, quests, vendors))
 	}
 
 	companion object {
