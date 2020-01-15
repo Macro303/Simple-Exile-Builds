@@ -3707,6 +3707,79 @@
 	}
   },
   {
+	"name": "Earthquake",
+	"slot": "Red",
+	"tags": [
+	  "ATTACK",
+	  "AOE",
+	  "DURATION",
+	  "MELEE"
+	],
+	"hasVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [
+		{
+		  "act": 3,
+		  "quest": "Sever the Right Hand",
+		  "classes": [
+			"MARAUDER"
+		  ]
+		}
+	  ],
+	  "vendors": [
+		{
+		  "vendor": "Clarissa",
+		  "act": 3,
+		  "quest": "Sever the Right Hand",
+		  "classes": [
+			"DUELIST",
+			"MARAUDER",
+			"TEMPLAR",
+			"SCION"
+		  ]
+		},
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"WITCH",
+			"SHADOW",
+			"RANGER",
+			"DUELIST",
+			"MARAUDER",
+			"TEMPLAR",
+			"SCION"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"WITCH",
+			"SHADOW",
+			"RANGER",
+			"DUELIST",
+			"MARAUDER",
+			"TEMPLAR",
+			"SCION"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
 	"name": "Portal",
 	"slot": "White",
 	"tags": [
