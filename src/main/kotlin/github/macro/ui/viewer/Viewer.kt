@@ -1,10 +1,12 @@
 package github.macro.ui.viewer
 
+import github.macro.Util
 import github.macro.ui.GemPane
 import github.macro.ui.UIModel
 import github.macro.ui.selector.Selector
 import javafx.geometry.Pos
 import javafx.scene.control.ScrollPane
+import javafx.scene.control.TabPane
 import javafx.scene.layout.Priority
 import org.apache.logging.log4j.LogManager
 import tornadofx.*
@@ -42,13 +44,46 @@ class Viewer : View() {
 		}
 		center {
 			paddingAll = 5.0
-			scrollpane(fitToWidth = true) {
-				hbarPolicy = ScrollPane.ScrollBarPolicy.NEVER
-				vbox(spacing = 5.0, alignment = Pos.TOP_CENTER) {
-					selected.buildProperty.value!!.links!!.forEach { link ->
-						hbox(spacing = 5.0, alignment = Pos.CENTER_LEFT) {
-							link.forEach { gem ->
-								add(GemPane(selected.buildProperty.value!!, gem))
+			tabpane {
+				tabClosingPolicy = TabPane.TabClosingPolicy.UNAVAILABLE
+				tab(text = "Gems") {
+					scrollpane(fitToWidth = true) {
+						hbarPolicy = ScrollPane.ScrollBarPolicy.NEVER
+						vbox(spacing = 5.0, alignment = Pos.TOP_CENTER) {
+							selected.buildProperty.value!!.links!!.forEach { link ->
+								hbox(spacing = 5.0, alignment = Pos.CENTER_LEFT) {
+									link.forEach { gem ->
+										add(GemPane(selected.buildProperty.value!!, gem))
+									}
+								}
+							}
+						}
+					}
+				}
+				tab(text = "Equipment") {
+					isDisable = selected.buildProperty.value!!.equipment.isEmpty()
+					scrollpane(fitToWidth = true) {
+						hbarPolicy = ScrollPane.ScrollBarPolicy.NEVER
+						vbox(spacing = 5.0, alignment = Pos.TOP_CENTER) {
+							selected.buildProperty.value!!.equipmentProperty.forEach { equipment ->
+								gridpane {
+									row{
+										label(text = equipment.name){
+											alignment = Pos.CENTER
+											gridpaneConstraints {
+												columnSpan = 3
+											}
+										}
+									}
+									row{
+										label(text = equipment.damageRange.display())
+										separator {
+											hgrow = Priority.ALWAYS
+											isVisible = false
+										}
+										label(text = equipment.damagePerSecond.display())
+									}
+								}
 							}
 						}
 					}

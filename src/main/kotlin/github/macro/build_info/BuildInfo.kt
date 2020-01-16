@@ -3,6 +3,7 @@ package github.macro.build_info
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.fasterxml.jackson.databind.annotation.JsonSerialize
 import github.macro.Util
+import github.macro.build_info.equipment.EquipmentInfo
 import github.macro.build_info.gems.BuildGem
 import github.macro.build_info.gems.UpdateGem
 import javafx.beans.property.SimpleListProperty
@@ -14,13 +15,19 @@ import tornadofx.*
 import java.io.File
 import java.io.IOException
 
-
 /**
  * Created by Macro303 on 2020-Jan-13.
  */
 @JsonDeserialize(using = BuildDeserializer::class)
 @JsonSerialize(using = BuildSerializer::class)
-class BuildInfo() : JsonModelAuto {
+class BuildInfo(
+	name: String,
+	classTag: ClassTag,
+	ascendency: Ascendency,
+	links: List<List<BuildGem>>,
+	updates: List<UpdateGem>,
+	equipment: List<EquipmentInfo>
+) {
 	val nameProperty = SimpleStringProperty()
 	var name by nameProperty
 
@@ -36,22 +43,20 @@ class BuildInfo() : JsonModelAuto {
 	val updatesProperty = SimpleListProperty<UpdateGem>()
 	var updates by updatesProperty
 
-	constructor(
-		name: String,
-		classTag: ClassTag,
-		ascendency: Ascendency,
-		links: List<List<BuildGem>>,
-		updates: List<UpdateGem>
-	) : this() {
+	val equipmentProperty = SimpleListProperty<EquipmentInfo>()
+	var equipment by equipmentProperty
+
+	init {
 		this.name = name
 		this.classTag = classTag
 		this.ascendency = ascendency
 		this.links = FXCollections.observableList(links)
 		this.updates = FXCollections.observableList(updates)
+		this.equipment = FXCollections.observableList(equipment)
 	}
 
 	override fun toString(): String {
-		return "BuildInfo(nameProperty=$nameProperty, classProperty=$classProperty, ascendencyProperty=$ascendencyProperty, linksProperty=$linksProperty, updatesProperty=$updatesProperty)"
+		return "BuildInfo(name=$name, class=$classTag, ascendency=$ascendency, links=$links, updates=$updates, equipment=$equipment)"
 	}
 
 	fun display(): String = "$name [$classTag${if (ascendency == null) "" else "/" + ascendency.name}]"

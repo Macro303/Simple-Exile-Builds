@@ -7,7 +7,11 @@ import tornadofx.*
 /**
  * Created by Macro303 on 2020-Jan-13
  */
-class BuildGem() : JsonModelAuto {
+class BuildGem(
+	info: GemInfo?,
+	isVaal: Boolean,
+	isAwakened: Boolean
+) {
 	val infoProperty = SimpleObjectProperty<GemInfo?>()
 	var info by infoProperty
 
@@ -17,7 +21,7 @@ class BuildGem() : JsonModelAuto {
 	val isAwakenedProperty = SimpleBooleanProperty()
 	var isAwakened by isAwakenedProperty
 
-	constructor(info: GemInfo?, isVaal: Boolean, isAwakened: Boolean) : this() {
+	init {
 		this.info = info
 		this.isVaal = isVaal
 		this.isAwakened = isAwakened
@@ -37,6 +41,6 @@ class BuildGem() : JsonModelAuto {
 	fun getFilename(): String? = info?.getFilename(isVaal, isAwakened)
 
 	override fun toString(): String {
-		return "BuildGem(infoProperty=$infoProperty, isVaalProperty=$isVaalProperty, isAwakenedProperty=$isAwakenedProperty)"
+		return "BuildGem(info=$info, isVaal=$isVaal, isAwakened=$isAwakened)"
 	}
 }

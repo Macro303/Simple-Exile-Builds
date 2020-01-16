@@ -12,7 +12,14 @@ import tornadofx.*
  * Created by Macro303 on 2020-Jan-13.
  */
 @JsonDeserialize(using = GemDeserializer::class)
-class GemInfo() : JsonModelAuto {
+class GemInfo(
+	name: String,
+	slot: String,
+	tags: List<GemTag>,
+	hasVaal: Boolean,
+	hasAwakened: Boolean,
+	acquisition: Acquisition
+) {
 	val nameProperty = SimpleStringProperty()
 	var name by nameProperty
 
@@ -31,14 +38,7 @@ class GemInfo() : JsonModelAuto {
 	val acquisitionProperty = SimpleObjectProperty<Acquisition>()
 	var acquisition by acquisitionProperty
 
-	constructor(
-		name: String,
-		slot: String,
-		tags: List<GemTag>,
-		hasVaal: Boolean,
-		hasAwakened: Boolean,
-		acquisition: Acquisition
-	) : this() {
+	init {
 		this.name = name
 		this.slot = slot
 		this.tags = FXCollections.observableList(tags)
@@ -57,6 +57,6 @@ class GemInfo() : JsonModelAuto {
 	}
 
 	override fun toString(): String {
-		return "GemInfo(nameProperty=$nameProperty, slotProperty=$slotProperty, tagsProperty=$tagsProperty, hasVaalProperty=$hasVaalProperty, hasAwakenedProperty=$hasAwakenedProperty, acquisitionProperty=$acquisitionProperty)"
+		return "GemInfo(name=$name, slot=$slot, tags=$tags, hasVaal=$hasVaal, hasAwakened=$hasAwakened, acquisition=$acquisition)"
 	}
 }

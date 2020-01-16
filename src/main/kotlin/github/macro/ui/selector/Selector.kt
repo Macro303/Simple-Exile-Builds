@@ -103,7 +103,7 @@ class Selector : View() {
 								ascendency = ascendencyCombobox.selectedItem!!,
 								links = listOf(
 									Util.getClassGems(classTag = classCombobox.selectedItem!!),
-									listOf(Util.textToGem(name = "Portal"))
+									listOf(Util.gemByName(name = "Portal"))
 								),
 								updates = listOf(
 									UpdateGem(
@@ -111,7 +111,8 @@ class Selector : View() {
 										newGem = "Enhance Support",
 										reason = "Gems are all Max Level"
 									)
-								)
+								),
+								equipment = emptyList()
 							)
 							LOGGER.info("Creating Build: ${info.display()}")
 							info.save()

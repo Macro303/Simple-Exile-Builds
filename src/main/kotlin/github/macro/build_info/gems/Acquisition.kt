@@ -7,7 +7,11 @@ import tornadofx.*
 /**
  * Created by Macro303 on 2020-Jan-13.
  */
-class Acquisition() : JsonModelAuto {
+class Acquisition(
+	recipes: List<Recipe>,
+	quests: List<Quest>,
+	vendors: List<Vendor>
+) {
 	val recipesProperty = SimpleListProperty<Recipe>()
 	var recipes by recipesProperty
 
@@ -17,13 +21,13 @@ class Acquisition() : JsonModelAuto {
 	val vendorsProperty = SimpleListProperty<Vendor>()
 	var vendors by vendorsProperty
 
-	constructor(recipes: List<Recipe>, quests: List<Quest>, vendors: List<Vendor>) : this() {
+	init {
 		this.recipes = FXCollections.observableList(recipes)
 		this.quests = FXCollections.observableList(quests)
 		this.vendors = FXCollections.observableList(vendors)
 	}
 
 	override fun toString(): String {
-		return "Acquisition(recipesProperty=$recipesProperty, questsProperty=$questsProperty, vendorsProperty=$vendorsProperty)"
+		return "Acquisition(recipes=$recipes, quests=$quests, vendors=$vendors)"
 	}
 }

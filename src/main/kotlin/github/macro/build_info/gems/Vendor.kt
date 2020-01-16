@@ -10,7 +10,12 @@ import tornadofx.*
 /**
  * Created by Macro303 on 2020-Jan-13.
  */
-class Vendor() : JsonModelAuto {
+class Vendor(
+	vendor: String,
+	act: Int,
+	quest: String,
+	classes: List<ClassTag>
+) {
 	val vendorProperty = SimpleStringProperty()
 	var vendor by vendorProperty
 
@@ -23,7 +28,7 @@ class Vendor() : JsonModelAuto {
 	val classesProperty = SimpleListProperty<ClassTag>()
 	var classes by classesProperty
 
-	constructor(vendor: String, act: Int, quest: String, classes: List<ClassTag>) : this() {
+	init {
 		this.vendor = vendor
 		this.act = act
 		this.quest = quest
@@ -31,6 +36,6 @@ class Vendor() : JsonModelAuto {
 	}
 
 	override fun toString(): String {
-		return "Vendor(vendorProperty=$vendorProperty, actProperty=$actProperty, questProperty=$questProperty, classesProperty=$classesProperty)"
+		return "Vendor(vendor=$vendor, act=$act, quest=$quest, classes=$classes)"
 	}
 }

@@ -1,6 +1,5 @@
 package github.macro.ui
 
-import com.sun.xml.internal.ws.spi.db.BindingContextFactory
 import github.macro.Util
 import github.macro.build_info.BuildInfo
 import github.macro.build_info.gems.BuildGem
@@ -78,7 +77,7 @@ class GemPane(val build: BuildInfo, var gem: BuildGem?) : BorderPane() {
 						val oldGem = gem
 						gem = build.updates.firstOrNull { it.newGem.endsWith(gem?.info?.name ?: "Missing Gem") }
 							?.oldGem?.let {
-							Util.textToGem(it)
+							Util.gemByName(it)
 						}
 						LOGGER.info("Previous Selected, Updated ${oldGem?.getFullname() ?: "Missing Gem"} to ${gem?.getFullname() ?: "Missing Gem"}")
 						initialize()
@@ -96,7 +95,7 @@ class GemPane(val build: BuildInfo, var gem: BuildGem?) : BorderPane() {
 						val oldGem = gem
 						gem = build.updates.firstOrNull { it.oldGem.endsWith(gem?.info?.name ?: "Missing Gem") }
 							?.newGem?.let {
-							Util.textToGem(it)
+							Util.gemByName(it)
 						}
 						LOGGER.info("Next Selected, Updated ${oldGem?.getFullname() ?: "Missing Gem"} to ${gem?.getFullname() ?: "Missing Gem"}")
 						initialize()

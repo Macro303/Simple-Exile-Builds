@@ -6,7 +6,11 @@ import tornadofx.*
 /**
  * Created by Macro303 on 2020-Jan-13.
  */
-class UpdateGem() : JsonModelAuto {
+class UpdateGem(
+	oldGem: String,
+	newGem: String,
+	reason: String
+) {
 	val oldGemProperty = SimpleStringProperty()
 	var oldGem by oldGemProperty
 
@@ -16,13 +20,13 @@ class UpdateGem() : JsonModelAuto {
 	val reasonProperty = SimpleStringProperty()
 	var reason by reasonProperty
 
-	constructor(oldGem: String, newGem: String, reason: String) : this() {
+	init {
 		this.oldGem = oldGem
 		this.newGem = newGem
 		this.reason = reason
 	}
 
 	override fun toString(): String {
-		return "UpdateGem(oldGemProperty=$oldGemProperty, newGemProperty=$newGemProperty, reasonProperty=$reasonProperty)"
+		return "UpdateGem(oldGem=$oldGem, newGem=$newGem, reason=$reason)"
 	}
 }

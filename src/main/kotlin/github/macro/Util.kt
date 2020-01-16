@@ -8,6 +8,7 @@ import com.fasterxml.jackson.dataformat.yaml.YAMLGenerator
 import com.fasterxml.jackson.datatype.jdk8.Jdk8Module
 import github.macro.build_info.ClassTag
 import github.macro.build_info.ClassTag.*
+import github.macro.build_info.equipment.EquipmentInfo
 import github.macro.build_info.gems.BuildGem
 import github.macro.build_info.gems.GemInfo
 import javafx.animation.KeyFrame
@@ -34,6 +35,14 @@ object Util {
 			emptyList<GemInfo>()
 		}
 	}
+	val equipment by lazy {
+		try {
+			JSON_MAPPER.readValue(File("equipment", "Equipment.json"), object : TypeReference<List<EquipmentInfo>>() {})
+		} catch (ioe: IOException) {
+			LOGGER.error("Unable to Load Equipment: $ioe")
+			emptyList<EquipmentInfo>()
+		}
+	}
 
 	init {
 		JSON_MAPPER.enable(SerializationFeature.INDENT_OUTPUT)
@@ -54,7 +63,7 @@ object Util {
 		}
 	}
 
-	fun textToGem(name: String): BuildGem {
+	fun gemByName(name: String): BuildGem {
 		val info = gems.firstOrNull {
 			when {
 				it.hasVaal && "Vaal ${it.name}".equals(name, ignoreCase = true) -> return@firstOrNull true
@@ -64,6 +73,12 @@ object Util {
 			}
 		}
 		return BuildGem(info, name.startsWith("Vaal"), name.startsWith("Awakened"))
+	}
+
+	fun equipmentByName(name: String): EquipmentInfo? {
+		return equipment.firstOrNull {
+			it.name.equals(name, ignoreCase = true)
+		}
 	}
 
 	internal fun hackTooltipStartTiming(tooltip: Tooltip) {
@@ -82,12 +97,12 @@ object Util {
 	}
 
 	internal fun getClassGems(classTag: ClassTag): List<BuildGem> = when (classTag) {
-		SCION -> listOf(textToGem("Spectral Throw"), textToGem("Onslaught Support"))
-		MARAUDER -> listOf(textToGem("Heavy Strike"), textToGem("Ruthless Support"))
-		RANGER -> listOf(textToGem("Burning Arrow"), textToGem("Pierce Support"))
-		WITCH -> listOf(textToGem("Fireball"), textToGem("Arcane Surge Support"))
-		DUELIST -> listOf(textToGem("Double Strike"), textToGem("Chance to Bleed Support"))
-		TEMPLAR -> listOf(textToGem("Glacial Hammer"), textToGem("Elemental Proliferation Support"))
-		SHADOW -> listOf(textToGem("Viper Strike"), textToGem("Lesser Poison Support"))
-	}.plus(textToGem("Empower Support"))
+		SCION -> listOf(gemByName("Spectral Throw"), gemByName("Onslaught Support"))
+		MARAUDER -> listOf(gemByName("Heavy Strike"), gemByName("Ruthless Support"))
+		RANGER -> listOf(gemByName("Burning Arrow"), gemByName("Pierce Support"))
+		WITCH -> listOf(gemByName("Fireball"), gemByName("Arcane Surge Support"))
+		DUELIST -> listOf(gemByName("Double Strike"), gemByName("Chance to Bleed Support"))
+		TEMPLAR -> listOf(gemByName("Glacial Hammer"), gemByName("Elemental Proliferation Support"))
+		SHADOW -> listOf(gemByName("Viper Strike"), gemByName("Lesser Poison Support"))
+	}.plus(gemByName("Empower Support"))
 }

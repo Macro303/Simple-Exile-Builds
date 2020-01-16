@@ -10,7 +10,11 @@ import tornadofx.*
 /**
  * Created by Macro303 on 2020-Jan-13.
  */
-class Quest() : JsonModelAuto {
+class Quest(
+	act: Int,
+	quest: String,
+	classes: List<ClassTag>
+) {
 	val actProperty = SimpleIntegerProperty()
 	var act by actProperty
 
@@ -20,13 +24,13 @@ class Quest() : JsonModelAuto {
 	val classesProperty = SimpleListProperty<ClassTag>()
 	var classes by classesProperty
 
-	constructor(act: Int, quest: String, classes: List<ClassTag>) : this() {
+	init {
 		this.act = act
 		this.quest = quest
 		this.classes = FXCollections.observableList(classes)
 	}
 
 	override fun toString(): String {
-		return "Quest(actProperty=$actProperty, questProperty=$questProperty, classesProperty=$classesProperty)"
+		return "Quest(act=$act, quest=$quest, classes=$classes)"
 	}
 }

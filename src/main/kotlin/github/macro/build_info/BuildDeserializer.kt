@@ -22,15 +22,16 @@ class BuildDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDes
 		val name = node["name"].asText()
 		val classTag = ClassTag.value(node["class"].asText()) ?: return null
 		val ascendency = Ascendency.value(node["ascendency"].asText()) ?: return null
-		val links = node["links"].map { link -> link.map { Util.textToGem(it.asText()) } }
-		val updates = node["updates"].map {
+		val links = node["gems"]["links"].map { link -> link.map { Util.gemByName(it.asText()) } }
+		val updates = node["gems"]["updates"].map {
 			val oldGem = it["oldGem"].asText()
 			val newGem = it["newGem"].asText()
 			val reason = it["reason"].asText()
 			UpdateGem(oldGem, newGem, reason)
 		}
+		val equipment = node["equipment"].mapNotNull { Util.equipmentByName(it.asText()) }
 
-		return BuildInfo(name, classTag, ascendency, links, updates)
+		return BuildInfo(name, classTag, ascendency, links, updates, equipment)
 	}
 
 	companion object {

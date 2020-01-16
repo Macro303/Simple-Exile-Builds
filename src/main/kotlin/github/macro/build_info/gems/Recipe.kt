@@ -7,19 +7,22 @@ import tornadofx.*
 /**
  * Created by Macro303 on 2020-Jan-13.
  */
-class Recipe() : JsonModelAuto {
+class Recipe(
+	amount: Int,
+	ingredient: String
+) {
 	val amountProperty = SimpleIntegerProperty()
 	var amount by amountProperty
 
 	val ingredientProperty = SimpleStringProperty()
 	var ingredient by ingredientProperty
 
-	constructor(amount: Int, ingredient: String) : this() {
+	init {
 		this.amount = amount
 		this.ingredient = ingredient
 	}
 
 	override fun toString(): String {
-		return "Recipe(amountProperty=$amountProperty, ingredientProperty=$ingredientProperty)"
+		return "Recipe(amount=$amount, ingredient=$ingredient)"
 	}
 }
