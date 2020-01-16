@@ -3780,6 +3780,219 @@
 	}
   },
   {
+	"name": "Enduring Cry",
+	"slot": "Red",
+	"tags": [
+	  "WARCRY",
+	  "AOE",
+	  "DURATION"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [
+		{
+		  "act": 2,
+		  "quest": "Intruders in Black",
+		  "classes": [
+			"DUELIST",
+			"MARAUDER",
+			"TEMPLAR",
+			"SCION"
+		  ]
+		}
+	  ],
+	  "vendors": [
+		{
+		  "vendor": "Yeena",
+		  "act": 2,
+		  "quest": "The Root of the Problem",
+		  "classes": [
+			"RANGER",
+			"DUELIST",
+			"MARAUDER",
+			"TEMPLAR",
+			"SCION"
+		  ]
+		},
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"WITCH",
+			"SHADOW",
+			"RANGER",
+			"DUELIST",
+			"MARAUDER",
+			"TEMPLAR",
+			"SCION"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"WITCH",
+			"SHADOW",
+			"RANGER",
+			"DUELIST",
+			"MARAUDER",
+			"TEMPLAR",
+			"SCION"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
+	"name": "Flesh and Stone",
+	"slot": "Red",
+	"tags": [
+	  "SPELL",
+	  "AURA",
+	  "AOE"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [
+		{
+		  "act": 2,
+		  "quest": "Intruders in Black",
+		  "classes": [
+			"DUELIST"
+		  ]
+		}
+	  ],
+	  "vendors": [
+		{
+		  "vendor": "Yeena",
+		  "act": 2,
+		  "quest": "The Root of the Problem",
+		  "classes": [
+			"DUELIST",
+			"MARAUDER",
+			"SCION"
+		  ]
+		},
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"WITCH",
+			"SHADOW",
+			"RANGER",
+			"DUELIST",
+			"MARAUDER",
+			"TEMPLAR",
+			"SCION"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"WITCH",
+			"SHAODW",
+			"RANGER",
+			"DUELIST",
+			"MARAUDER",
+			"TEMPLAR",
+			"SCION"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
+	"name": "Glacial Hammer",
+	"slot": "Red",
+	"tags": [
+	  "ATTACK",
+	  "MELEE",
+	  "STRIKE",
+	  "COLD"
+	],
+	"hasVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": [
+		{
+		  "vendor": "Nessa",
+		  "act": 1,
+		  "quest": "Enemy at the Gate",
+		  "classes": [
+			"DUELIST",
+			"MARAUDER",
+			"TEMPLAR"
+		  ]
+		},
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"WITCH",
+			"SHADOW",
+			"RANGER",
+			"DUELIST",
+			"MARAUDER",
+			"TEMPLAR",
+			"SCION"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"WITCH",
+			"SHAODW",
+			"RANGER",
+			"DUELIST",
+			"MARAUDER",
+			"TEMPLAR",
+			"SCION"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
 	"name": "Portal",
 	"slot": "White",
 	"tags": [
@@ -5079,6 +5292,31 @@
 	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Empower Support",
+	"slot": "Red",
+	"tags": [
+	  "SUPPORT"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 11,
+		  "ingredient": "The Dragon's Heart"
+		},
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
 	  "quests": [],
 	  "vendors": []
 	}
