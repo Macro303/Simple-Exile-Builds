@@ -2,7 +2,7 @@ package github.macro.ui
 
 import github.macro.Util
 import github.macro.build_info.BuildInfo
-import github.macro.build_info.gems.BuildGem
+import github.macro.build_info.gems.GemInfo
 import javafx.geometry.Pos
 import javafx.scene.layout.BorderPane
 import javafx.scene.layout.BorderStrokeStyle
@@ -14,11 +14,10 @@ import org.apache.logging.log4j.LogManager
 import tornadofx.*
 import java.io.File
 
-
 /**
  * Created by Macro303 on 2020-Jan-14.
  */
-class GemPane(val build: BuildInfo, var gem: BuildGem?) : BorderPane() {
+class GemPane(val build: BuildInfo, var gem: GemInfo?) : BorderPane() {
 
 	init {
 		initialize()
@@ -31,7 +30,7 @@ class GemPane(val build: BuildInfo, var gem: BuildGem?) : BorderPane() {
 	private fun initialize() {
 		paddingAll = 5.0
 		style(append = true) {
-			borderColor += box(c(Util.slotToColour(gem?.info?.slot ?: "Black")))
+			borderColor += box(c(Util.slotToColour(gem?.slot)))
 			borderStyle += BorderStrokeStyle(
 				StrokeType.CENTERED,
 				StrokeLineJoin.ROUND,
@@ -61,25 +60,33 @@ class GemPane(val build: BuildInfo, var gem: BuildGem?) : BorderPane() {
 			}
 		}
 		center {
-			label(text = gem?.info?.name ?: "Missing Gem") {
+			label(text = gem?.name ?: "Missing Gem") {
 				isWrapText = true
 				prefWidth = 90.0
 				alignment = Pos.CENTER
+				if(gem?.isVaal == true || gem?.isAwakened == true) {
+					tooltip(text = gem!!.getDisplay()) {
+						style {
+							fontSize = 10.pt
+						}
+					}
+					Util.hackTooltipStartTiming(tooltip)
+				}
 			}
 		}
 		bottom {
 			hbox(spacing = 5.0) {
 				button(text = "<<") {
-					isVisible = build.updates.any { it.newGem.endsWith(gem?.info?.name ?: "Missing Gem") }
+					isVisible = build.updates.any { it.newGem?.equals(gem) ?: false }
 					hgrow = Priority.SOMETIMES
 					isFocusTraversable = false
 					action {
 						val oldGem = gem
-						gem = build.updates.firstOrNull { it.newGem.endsWith(gem?.info?.name ?: "Missing Gem") }
-							?.oldGem?.let {
-							Util.gemByName(it)
-						}
-						LOGGER.info("Previous Selected, Updated ${oldGem?.getFullname() ?: "Missing Gem"} to ${gem?.getFullname() ?: "Missing Gem"}")
+						gem = build.updates.firstOrNull { it.newGem?.equals(gem) ?: false }?.oldGem
+						LOGGER.info(
+							"Previous Selected, Updated ${oldGem?.getFullname()
+								?: "Missing Gem"} to ${gem?.getFullname() ?: "Missing Gem"}"
+						)
 						initialize()
 					}
 				}
@@ -88,19 +95,20 @@ class GemPane(val build: BuildInfo, var gem: BuildGem?) : BorderPane() {
 					hgrow = Priority.ALWAYS
 				}
 				button(text = ">>") {
-					isVisible = build.updates.any { it.oldGem.endsWith(gem?.info?.name ?: "Missing Gem") }
+					isVisible = build.updates.any { it.oldGem?.equals(gem) ?: false }
 					hgrow = Priority.SOMETIMES
 					isFocusTraversable = false
 					action {
 						val oldGem = gem
-						gem = build.updates.firstOrNull { it.oldGem.endsWith(gem?.info?.name ?: "Missing Gem") }
-							?.newGem?.let {
-							Util.gemByName(it)
-						}
-						LOGGER.info("Next Selected, Updated ${oldGem?.getFullname() ?: "Missing Gem"} to ${gem?.getFullname() ?: "Missing Gem"}")
+						gem = build.updates.firstOrNull { it.oldGem?.equals(gem) ?: false }?.newGem
+						LOGGER.info(
+							"Next Selected, Updated {} to {}",
+							oldGem?.getFullname() ?: "Missing Gem",
+							gem?.getFullname() ?: "Missing Gem"
+						)
 						initialize()
 					}
-					tooltip(build.updates.firstOrNull { it.oldGem.endsWith(gem?.info?.name ?: "Missing Gem") }?.reason) {
+					tooltip(build.updates.firstOrNull { it.oldGem?.equals(gem) ?: false }?.reason) {
 						style {
 							fontSize = 10.pt
 						}

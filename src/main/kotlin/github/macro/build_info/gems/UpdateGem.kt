@@ -1,5 +1,6 @@
 package github.macro.build_info.gems
 
+import javafx.beans.property.SimpleObjectProperty
 import javafx.beans.property.SimpleStringProperty
 import tornadofx.*
 
@@ -7,14 +8,14 @@ import tornadofx.*
  * Created by Macro303 on 2020-Jan-13.
  */
 class UpdateGem(
-	oldGem: String,
-	newGem: String,
+	oldGem: GemInfo?,
+	newGem: GemInfo?,
 	reason: String
 ) {
-	val oldGemProperty = SimpleStringProperty()
+	val oldGemProperty = SimpleObjectProperty<GemInfo?>()
 	var oldGem by oldGemProperty
 
-	val newGemProperty = SimpleStringProperty()
+	val newGemProperty = SimpleObjectProperty<GemInfo?>()
 	var newGem by newGemProperty
 
 	val reasonProperty = SimpleStringProperty()

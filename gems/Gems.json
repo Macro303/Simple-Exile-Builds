@@ -3,9 +3,9 @@
 	"name": "Animate Weapon",
 	"slot": "Green",
 	"tags": [
-	  "DURATION",
-	  "MINION",
-	  "SPELL"
+	  "Duration",
+	  "Minion",
+	  "Spell"
 	],
 	"acquisition": {
 	  "recipes": [
@@ -33,9 +33,9 @@
 		  "act": 1,
 		  "quest": "Breaking Some Eggs",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Scion"
 		  ]
 		},
 		{
@@ -43,13 +43,13 @@
 		  "act": 3,
 		  "quest": "A Fixture of Fate",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -57,13 +57,13 @@
 		  "act": 6,
 		  "quest": "Fallen from Grace",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		}
 	  ]
@@ -73,9 +73,9 @@
 	"name": "Arctic Armour",
 	"slot": "Green",
 	"tags": [
-	  "SPELL",
-	  "DURATION",
-	  "COLD"
+	  "Spell",
+	  "Duration",
+	  "Cold"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -87,12 +87,12 @@
 	"name": "Artillery Ballista",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "TOTEM",
-	  "AOE",
-	  "FIRE",
-	  "PROJECTILE",
-	  "BOW"
+	  "Attack",
+	  "Totem",
+	  "AoE",
+	  "Fire",
+	  "Projectile",
+	  "Bow"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -104,9 +104,9 @@
 	"name": "Barrage",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "PROJECTILE",
-	  "BOW"
+	  "Attack",
+	  "Projectile",
+	  "Bow"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -118,10 +118,10 @@
 	"name": "Bear Trap",
 	"slot": "Green",
 	"tags": [
-	  "TRAP",
-	  "SPELL",
-	  "DURATION",
-	  "PHYSICAL"
+	  "Trap",
+	  "Spell",
+	  "Duration",
+	  "Physical"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -133,11 +133,11 @@
 	"name": "Blade Furry",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "AOE",
-	  "CHANNELLING",
-	  "PHYSICAL",
-	  "MELEE"
+	  "Attack",
+	  "AoE",
+	  "Channelling",
+	  "Physical",
+	  "Melee"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -149,12 +149,11 @@
 	"name": "Blade Vortex",
 	"slot": "Green",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "DURATION",
-	  "PHYSICAL"
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Physical"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -165,9 +164,9 @@
 	"name": "Bladefall",
 	"slot": "Green",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "PHYSICAL"
+	  "Spell",
+	  "AoE",
+	  "Physical"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -179,11 +178,11 @@
 	"name": "Blast Rain",
 	"slot": "Green",
 	"tags": [
-	  "FIRE",
-	  "ATTACK",
-	  "AOE",
-	  "PROJECTILE",
-	  "BOW"
+	  "Fire",
+	  "Attack",
+	  "AoE",
+	  "Projectile",
+	  "Bow"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -195,12 +194,12 @@
 	"name": "Blink Arrow",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "MINION",
-	  "DURATION",
-	  "MOVEMENT",
-	  "TRAVEL",
-	  "BOW"
+	  "Attack",
+	  "Minion",
+	  "Duration",
+	  "Movement",
+	  "Travel",
+	  "Bow"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -212,9 +211,9 @@
 	"name": "Blood Rage",
 	"slot": "Green",
 	"tags": [
-	  "SPELL",
-	  "DURATION",
-	  "PHYSICAL"
+	  "Spell",
+	  "Duration",
+	  "Physical"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -226,13 +225,12 @@
 	"name": "Burning Arrow",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "PROJECTILE",
-	  "FIRE",
-	  "DURATION",
-	  "BOW"
+	  "Attack",
+	  "Projectile",
+	  "Fire",
+	  "Duration",
+	  "Bow"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [
 		{
@@ -251,10 +249,10 @@
 		  "act": 1,
 		  "quest": "Breaking Some Eggs",
 		  "classes": [
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"SCION"
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Scion"
 		  ]
 		},
 		{
@@ -262,13 +260,13 @@
 		  "act": 3,
 		  "quest": "A Fixture of Fate",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -276,13 +274,13 @@
 		  "act": 6,
 		  "quest": "Fallen from Grace",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		}
 	  ]
@@ -292,12 +290,12 @@
 	"name": "Caustic Arrow",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "PROJECTILE",
-	  "AOE",
-	  "DURATION",
-	  "CHAOS",
-	  "BOW"
+	  "Attack",
+	  "Projectile",
+	  "AoE",
+	  "Duration",
+	  "Chaos",
+	  "Bow"
 	],
 	"acquisition": {
 	  "recipes": [
@@ -315,7 +313,7 @@
 		  "act": 1,
 		  "quest": "Enemy at the Gate",
 		  "classes": [
-			"RANGER"
+			"Ranger"
 		  ]
 		}
 	  ],
@@ -325,10 +323,10 @@
 		  "act": 1,
 		  "quest": "Breaking Some Eggs",
 		  "classes": [
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"SCION"
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Scion"
 		  ]
 		},
 		{
@@ -336,13 +334,13 @@
 		  "act": 3,
 		  "quest": "A Fixture of Fate",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -350,13 +348,13 @@
 		  "act": 6,
 		  "quest": "Fallen from Grace",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		}
 	  ]
@@ -366,12 +364,12 @@
 	"name": "Charged Dash",
 	"slot": "Green",
 	"tags": [
-	  "MOVEMENT",
-	  "AOE",
-	  "CHANNELLING",
-	  "ATTACK",
-	  "LIGHTNING",
-	  "MELEE"
+	  "Movement",
+	  "AoE",
+	  "Channelling",
+	  "Attack",
+	  "Lightning",
+	  "Melee"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -383,9 +381,9 @@
 	"name": "Cobra Lash",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "PROJECTILE",
-	  "CHAOS"
+	  "Attack",
+	  "Projectile",
+	  "Chaos"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -397,11 +395,11 @@
 	"name": "Cremation",
 	"slot": "Green",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "FIRE",
-	  "DURATION",
-	  "PROJECTILE"
+	  "Spell",
+	  "AoE",
+	  "Fire",
+	  "Duration",
+	  "Projectile"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -413,14 +411,13 @@
 	"name": "Cyclone",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "AOE",
-	  "MOVEMENT",
-	  "CHANNELLING",
-	  "PHYSICAL",
-	  "MELEE"
+	  "Attack",
+	  "AoE",
+	  "Movement",
+	  "Channelling",
+	  "Physical",
+	  "Melee"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -431,10 +428,10 @@
 	"name": "Dash",
 	"slot": "Green",
 	"tags": [
-	  "SPELL",
-	  "MOVEMENT",
-	  "TRAVEL",
-	  "BLINK"
+	  "Spell",
+	  "Movement",
+	  "Travel",
+	  "Blink"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -446,10 +443,10 @@
 	"name": "Desecrate",
 	"slot": "Green",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "DURATION",
-	  "CHAOS"
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Chaos"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -461,11 +458,10 @@
 	"name": "Detonate Dead",
 	"slot": "Green",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "FIRE"
+	  "Spell",
+	  "AoE",
+	  "Fire"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -476,12 +472,11 @@
 	"name": "Double Strike",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "MELEE",
-	  "STRIKE",
-	  "PHYSICAL"
+	  "Attack",
+	  "Melee",
+	  "Strike",
+	  "Physical"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -492,9 +487,9 @@
 	"name": "Dual Strike",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "MELEE",
-	  "STRIKE"
+	  "Attack",
+	  "Melee",
+	  "Strike"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -506,15 +501,15 @@
 	"name": "Elemental Hit",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "PROJECTILE",
-	  "MELEE",
-	  "STRIKE",
-	  "FIRE",
-	  "COLD",
-	  "LIGHTNING",
-	  "AOE",
-	  "BOW"
+	  "Attack",
+	  "Projectile",
+	  "Melee",
+	  "Strike",
+	  "Fire",
+	  "Cold",
+	  "Lightning",
+	  "AoE",
+	  "Bow"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -526,10 +521,10 @@
 	"name": "Ensnaring Arrow",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "PROJECTILE",
-	  "AOE",
-	  "BOW"
+	  "Attack",
+	  "Projectile",
+	  "AoE",
+	  "Bow"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -541,9 +536,9 @@
 	"name": "Ethereal Knives",
 	"slot": "Green",
 	"tags": [
-	  "SPELL",
-	  "PROJECTILE",
-	  "PHYSICAL"
+	  "Spell",
+	  "Projectile",
+	  "Physical"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -555,12 +550,12 @@
 	"name": "Explosive Arrow",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "PROJECTILE",
-	  "AOE",
-	  "DURATION",
-	  "FIRE",
-	  "BOW"
+	  "Attack",
+	  "Projectile",
+	  "AoE",
+	  "Duration",
+	  "Fire",
+	  "Bow"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -572,11 +567,11 @@
 	"name": "Explosive Trap",
 	"slot": "Green",
 	"tags": [
-	  "TRAP",
-	  "SPELL",
-	  "AOE",
-	  "FIRE",
-	  "PHYSICAL"
+	  "Trap",
+	  "Spell",
+	  "AoE",
+	  "Fire",
+	  "Physical"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -588,11 +583,11 @@
 	"name": "Fire Trap",
 	"slot": "Green",
 	"tags": [
-	  "TRAP",
-	  "SPELL",
-	  "DURATION",
-	  "AOE",
-	  "FIRE"
+	  "Trap",
+	  "Spell",
+	  "Duration",
+	  "AoE",
+	  "Fire"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -604,11 +599,11 @@
 	"name": "Flamethrower Trap",
 	"slot": "Green",
 	"tags": [
-	  "TRAP",
-	  "SPELL",
-	  "DURATION",
-	  "AOE",
-	  "FIRE"
+	  "Trap",
+	  "Spell",
+	  "Duration",
+	  "AoE",
+	  "Fire"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -620,11 +615,11 @@
 	"name": "Flicker Strike",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "MELEE",
-	  "STRIKE",
-	  "MOVEMENT",
-	  "DURATION"
+	  "Attack",
+	  "Melee",
+	  "Strike",
+	  "Movement",
+	  "Duration"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -636,11 +631,11 @@
 	"name": "Frenzy",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "PROJECTILE",
-	  "MELEE",
-	  "STRIKE",
-	  "BOW"
+	  "Attack",
+	  "Projectile",
+	  "Melee",
+	  "Strike",
+	  "Bow"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -652,11 +647,11 @@
 	"name": "Frost Blades",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "PROJECTILE",
-	  "MELEE",
-	  "STRIKE",
-	  "COLD"
+	  "Attack",
+	  "Projectile",
+	  "Melee",
+	  "Strike",
+	  "Cold"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -668,11 +663,11 @@
 	"name": "Galvanic Arrow",
 	"slot": "Green",
 	"tags": [
-	  "LIGHTNING",
-	  "ATTACK",
-	  "PROJECTILE",
-	  "AOE",
-	  "BOW"
+	  "Lightning",
+	  "Attack",
+	  "Projectile",
+	  "AoE",
+	  "Bow"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -684,11 +679,10 @@
 	"name": "Grace",
 	"slot": "Green",
 	"tags": [
-	  "AURA",
-	  "SPELL",
-	  "AOE"
+	  "Aura",
+	  "Spell",
+	  "AoE"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -699,11 +693,10 @@
 	"name": "Haste",
 	"slot": "Green",
 	"tags": [
-	  "AURA",
-	  "SPELL",
-	  "AOE"
+	  "Aura",
+	  "Spell",
+	  "AoE"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -714,10 +707,10 @@
 	"name": "Hatred",
 	"slot": "Green",
 	"tags": [
-	  "AURA",
-	  "SPELL",
-	  "AOE",
-	  "COLD"
+	  "Aura",
+	  "Spell",
+	  "AoE",
+	  "Cold"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -729,11 +722,11 @@
 	"name": "Herald of Agony",
 	"slot": "Green",
 	"tags": [
-	  "SPELL",
-	  "HERALD",
-	  "MINION",
-	  "CHAOS",
-	  "PHYSICAL"
+	  "Spell",
+	  "Herald",
+	  "Minion",
+	  "Chaos",
+	  "Physical"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -745,10 +738,10 @@
 	"name": "Herald of Ice",
 	"slot": "Green",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "COLD",
-	  "HERALD"
+	  "Spell",
+	  "AoE",
+	  "Cold",
+	  "Herald"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -760,11 +753,11 @@
 	"name": "Ice Shot",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "PROJECTILE",
-	  "AOE",
-	  "COLD",
-	  "BOW"
+	  "Attack",
+	  "Projectile",
+	  "AoE",
+	  "Cold",
+	  "Bow"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -776,10 +769,10 @@
 	"name": "Ice Trap",
 	"slot": "Green",
 	"tags": [
-	  "TRAP",
-	  "SPELL",
-	  "AOE",
-	  "COLD"
+	  "Trap",
+	  "Spell",
+	  "AoE",
+	  "Cold"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -791,10 +784,10 @@
 	"name": "Lacerate",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "AOE",
-	  "PHYSICAL",
-	  "MELEE"
+	  "Attack",
+	  "AoE",
+	  "Physical",
+	  "Melee"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -806,9 +799,9 @@
 	"name": "Lancing Steel",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "PROJECTILE",
-	  "PHYSICAL"
+	  "Attack",
+	  "Projectile",
+	  "Physical"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -820,11 +813,11 @@
 	"name": "Lightning Arrow",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "AOE",
-	  "PROJECTILE",
-	  "LIGHTNING",
-	  "BOW"
+	  "Attack",
+	  "AoE",
+	  "Projectile",
+	  "Lightning",
+	  "Bow"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -836,13 +829,12 @@
 	"name": "Lightning Strike",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "PROJECTILE",
-	  "MELEE",
-	  "STRIKE",
-	  "LIGHTNING"
+	  "Attack",
+	  "Projectile",
+	  "Melee",
+	  "Strike",
+	  "Lightning"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -853,12 +845,12 @@
 	"name": "Mirror Arrow",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "MINION",
-	  "DURATION",
-	  "MOVEMENT",
-	  "TRAVEL",
-	  "BOW"
+	  "Attack",
+	  "Minion",
+	  "Duration",
+	  "Movement",
+	  "Travel",
+	  "Bow"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -870,12 +862,12 @@
 	"name": "Pestilent Strike",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "MELEE",
-	  "STRIKE",
-	  "AOE",
-	  "DURATION",
-	  "CHAOS"
+	  "Attack",
+	  "Melee",
+	  "Strike",
+	  "AoE",
+	  "Duration",
+	  "Chaos"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -887,11 +879,11 @@
 	"name": "Phase Run",
 	"slot": "Green",
 	"tags": [
-	  "SPELL",
-	  "DURATION",
-	  "MOVEMENT",
-	  "PHYSICAL",
-	  "TRAVEL"
+	  "Spell",
+	  "Duration",
+	  "Movement",
+	  "Physical",
+	  "Travel"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -903,9 +895,9 @@
 	"name": "Plague Bearer",
 	"slot": "Green",
 	"tags": [
-	  "SPELL",
-	  "CHAOS",
-	  "AOE"
+	  "Spell",
+	  "Chaos",
+	  "AoE"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -917,10 +909,10 @@
 	"name": "Poacher's Mark",
 	"slot": "Green",
 	"tags": [
-	  "CURSE",
-	  "SPELL",
-	  "AOE",
-	  "DURATION"
+	  "Curse",
+	  "Spell",
+	  "AoE",
+	  "Duration"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -932,9 +924,9 @@
 	"name": "Precision",
 	"slot": "Green",
 	"tags": [
-	  "AURA",
-	  "SPELL",
-	  "AOE"
+	  "Aura",
+	  "Spell",
+	  "AoE"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -946,10 +938,10 @@
 	"name": "Projectile Weakness",
 	"slot": "Green",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "DURATION",
-	  "CURSE"
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Curse"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -961,13 +953,13 @@
 	"name": "Puncture",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "PROJECTILE",
-	  "DURATION",
-	  "MELEE",
-	  "STRIKE",
-	  "PHYSICAL",
-	  "BOW"
+	  "Attack",
+	  "Projectile",
+	  "Duration",
+	  "Melee",
+	  "Strike",
+	  "Physical",
+	  "Bow"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -979,10 +971,10 @@
 	"name": "Purity of Ice",
 	"slot": "Green",
 	"tags": [
-	  "AURA",
-	  "SPELL",
-	  "AOE",
-	  "COLD"
+	  "Aura",
+	  "Spell",
+	  "AoE",
+	  "Cold"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -994,12 +986,11 @@
 	"name": "Rain of Arrows",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "AOE",
-	  "PROJECTILE",
-	  "BOW"
+	  "Attack",
+	  "AoE",
+	  "Projectile",
+	  "Bow"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -1010,11 +1001,10 @@
 	"name": "Reave",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "AOE",
-	  "MELEE"
+	  "Attack",
+	  "AoE",
+	  "Melee"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -1025,11 +1015,11 @@
 	"name": "Riposte",
 	"slot": "Green",
 	"tags": [
-	  "TRIGGER",
-	  "ATTACK",
-	  "MELEE",
-	  "STRIKE",
-	  "PHYSICAL"
+	  "Trigger",
+	  "Attack",
+	  "Melee",
+	  "Strike",
+	  "Physical"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1041,11 +1031,11 @@
 	"name": "Scourge Arrow",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "PROJECTILE",
-	  "CHANNELLING",
-	  "CHAOS",
-	  "BOW"
+	  "Attack",
+	  "Projectile",
+	  "Channelling",
+	  "Chaos",
+	  "Bow"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1057,11 +1047,11 @@
 	"name": "Seismic Trap",
 	"slot": "Green",
 	"tags": [
-	  "TRAP",
-	  "SPELL",
-	  "DURATION",
-	  "AOE",
-	  "PHYSICAL"
+	  "Trap",
+	  "Spell",
+	  "Duration",
+	  "AoE",
+	  "Physical"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1073,10 +1063,10 @@
 	"name": "Shattering Steel",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "PROJECTILE",
-	  "AOE",
-	  "PHYSICAL"
+	  "Attack",
+	  "Projectile",
+	  "AoE",
+	  "Physical"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1088,11 +1078,11 @@
 	"name": "Shrapnel Ballista",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "PROJECTILE",
-	  "TOTEM",
-	  "PHYSICAL",
-	  "BOW"
+	  "Attack",
+	  "Projectile",
+	  "Totem",
+	  "Physical",
+	  "Bow"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1104,10 +1094,10 @@
 	"name": "Siege Ballista",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "PROJECTILE",
-	  "TOTEM",
-	  "BOW"
+	  "Attack",
+	  "Projectile",
+	  "Totem",
+	  "Bow"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1119,13 +1109,13 @@
 	"name": "Smoke Mine",
 	"slot": "Green",
 	"tags": [
-	  "MINE",
-	  "SPELL",
-	  "AOE",
-	  "DURATION",
-	  "MOVEMENT",
-	  "TRAVEL",
-	  "BLINK"
+	  "Mine",
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Movement",
+	  "Travel",
+	  "Blink"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1137,9 +1127,9 @@
 	"name": "Spectral Shield Throw",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "PROJECTILE",
-	  "PHYSICAL"
+	  "Attack",
+	  "Projectile",
+	  "Physical"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1151,10 +1141,9 @@
 	"name": "Spectral Throw",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "PROJECTILE"
+	  "Attack",
+	  "Projectile"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -1165,10 +1154,10 @@
 	"name": "Split Arrow",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "PROJECTILE",
-	  "PHYSICAL",
-	  "BOW"
+	  "Attack",
+	  "Projectile",
+	  "Physical",
+	  "Bow"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1180,10 +1169,10 @@
 	"name": "Summon Ice Golem",
 	"slot": "Green",
 	"tags": [
-	  "COLD",
-	  "MINION",
-	  "SPELL",
-	  "GOLEM"
+	  "Cold",
+	  "Minion",
+	  "Spell",
+	  "Golem"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1195,10 +1184,10 @@
 	"name": "Temporal Chains",
 	"slot": "Green",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "DURATION",
-	  "CURSE"
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Curse"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1210,9 +1199,9 @@
 	"name": "Tornado Shot",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "PROJECTILE",
-	  "BOW"
+	  "Attack",
+	  "Projectile",
+	  "Bow"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1224,12 +1213,12 @@
 	"name": "Toxic Rain",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "AOE",
-	  "CHAOS",
-	  "DURATION",
-	  "PROJECTILE",
-	  "BOW"
+	  "Attack",
+	  "AoE",
+	  "Chaos",
+	  "Duration",
+	  "Projectile",
+	  "Bow"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1241,10 +1230,10 @@
 	"name": "Unearth",
 	"slot": "Green",
 	"tags": [
-	  "SPELL",
-	  "PROJECTILE",
-	  "AOE",
-	  "PHYSICAL"
+	  "Spell",
+	  "Projectile",
+	  "AoE",
+	  "Physical"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1256,9 +1245,9 @@
 	"name": "Venom Gyre",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "PROJECTILE",
-	  "CHAOS"
+	  "Attack",
+	  "Projectile",
+	  "Chaos"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1270,11 +1259,11 @@
 	"name": "Viper Strike",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "DURATION",
-	  "MELEE",
-	  "STRIKE",
-	  "CHAOS"
+	  "Attack",
+	  "Duration",
+	  "Melee",
+	  "Strike",
+	  "Chaos"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1286,9 +1275,9 @@
 	"name": "Volatile Dead",
 	"slot": "Green",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "FIRE"
+	  "Spell",
+	  "AoE",
+	  "Fire"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1300,10 +1289,10 @@
 	"name": "Whirling Blades",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "MOVEMENT",
-	  "TRAVEL",
-	  "MELEE"
+	  "Attack",
+	  "Movement",
+	  "Travel",
+	  "Melee"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1315,15 +1304,15 @@
 	"name": "Wild Strike",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "MELEE",
-	  "STRIKE",
-	  "LIGHTNING",
-	  "COLD",
-	  "FIRE",
-	  "PROJECTILE",
-	  "AOE",
-	  "CHAINING"
+	  "Attack",
+	  "Melee",
+	  "Strike",
+	  "Lightning",
+	  "Cold",
+	  "Fire",
+	  "Projectile",
+	  "AoE",
+	  "Chaining"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1335,13 +1324,13 @@
 	"name": "Withering Step",
 	"slot": "Green",
 	"tags": [
-	  "TRAVEL",
-	  "AOE",
-	  "CHAOS",
-	  "MOVEMENT",
-	  "BLINK",
-	  "SPELL",
-	  "DURATION"
+	  "Travel",
+	  "AoE",
+	  "Chaos",
+	  "Movement",
+	  "Blink",
+	  "Spell",
+	  "Duration"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1353,11 +1342,10 @@
 	"name": "Arc",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "CHAINING",
-	  "LIGHTNING"
+	  "Spell",
+	  "Chaining",
+	  "Lightning"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -1368,11 +1356,11 @@
 	"name": "Arctic Breath",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "PROJECTILE",
-	  "DURATION",
-	  "AOE",
-	  "COLD"
+	  "Spell",
+	  "Projectile",
+	  "Duration",
+	  "AoE",
+	  "Cold"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1384,11 +1372,11 @@
 	"name": "Armageddon Brand",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "FIRE",
-	  "DURATION",
-	  "BRAND"
+	  "Spell",
+	  "AoE",
+	  "Fire",
+	  "Duration",
+	  "Brand"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1400,10 +1388,10 @@
 	"name": "Assassin's Mark",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "DURATION",
-	  "CURSE"
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Curse"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1415,10 +1403,10 @@
 	"name": "Ball Lightning",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "PROJECTILE",
-	  "AOE",
-	  "LIGHTNING"
+	  "Spell",
+	  "Projectile",
+	  "AoE",
+	  "Lightning"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1430,12 +1418,12 @@
 	"name": "Bane",
 	"slot": "Blue",
 	"tags": [
-	  "CHAOS",
-	  "TRIGGER",
-	  "SPELL",
-	  "AOE",
-	  "DURATION",
-	  "CURSE"
+	  "Chaos",
+	  "Trigger",
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Curse"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1447,13 +1435,12 @@
 	"name": "Blight",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "CHAOS",
-	  "AOE",
-	  "CHANNELLING",
-	  "DURATION"
+	  "Spell",
+	  "Chaos",
+	  "AoE",
+	  "Channelling",
+	  "Duration"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -1464,11 +1451,11 @@
 	"name": "Bodyswap",
 	"slot": "Blue",
 	"tags": [
-	  "MOVEMENT",
-	  "SPELL",
-	  "AOE",
-	  "FIRE",
-	  "TRAVEL"
+	  "Movement",
+	  "Spell",
+	  "AoE",
+	  "Fire",
+	  "Travel"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1480,9 +1467,9 @@
 	"name": "Bone Offering",
 	"slot": "Blue",
 	"tags": [
-	  "MINION",
-	  "SPELL",
-	  "DURATION"
+	  "Minion",
+	  "Spell",
+	  "Duration"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1494,8 +1481,8 @@
 	"name": "Brand Recall",
 	"slot": "Blue",
 	"tags": [
-	  "BRAND",
-	  "SPELL"
+	  "Brand",
+	  "Spell"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1507,11 +1494,10 @@
 	"name": "Clarity",
 	"slot": "Blue",
 	"tags": [
-	  "AURA",
-	  "SPELL",
-	  "AOE"
+	  "Aura",
+	  "Spell",
+	  "AoE"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -1522,12 +1508,11 @@
 	"name": "Cold Snap",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "COLD",
-	  "DURATION"
+	  "Spell",
+	  "AoE",
+	  "Cold",
+	  "Duration"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -1538,11 +1523,11 @@
 	"name": "Conductivity",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "DURATION",
-	  "CURSE",
-	  "LIGHTNING"
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Curse",
+	  "Lightning"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1554,10 +1539,10 @@
 	"name": "Contagion",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "DURATION",
-	  "CHAOS"
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Chaos"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1569,9 +1554,9 @@
 	"name": "Conversion Trap",
 	"slot": "Blue",
 	"tags": [
-	  "TRAP",
-	  "SPELL",
-	  "DURATION"
+	  "Trap",
+	  "Spell",
+	  "Duration"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1583,9 +1568,9 @@
 	"name": "Convocation",
 	"slot": "Blue",
 	"tags": [
-	  "MINION",
-	  "SPELL",
-	  "DURATION"
+	  "Minion",
+	  "Spell",
+	  "Duration"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1597,12 +1582,12 @@
 	"name": "Dark Pact",
 	"slot": "Blue",
 	"tags": [
-	  "MINION",
-	  "SPELL",
-	  "AOE",
-	  "CHAINING",
-	  "CHAOS",
-	  "NOVA"
+	  "Minion",
+	  "Spell",
+	  "AoE",
+	  "Chaining",
+	  "Chaos",
+	  "Nova"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1614,11 +1599,11 @@
 	"name": "Despair",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "DURATION",
-	  "CURSE",
-	  "CHAOS"
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Curse",
+	  "Chaos"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1630,12 +1615,12 @@
 	"name": "Discharge",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "FIRE",
-	  "COLD",
-	  "LIGHTNING",
-	  "NOVA"
+	  "Spell",
+	  "AoE",
+	  "Fire",
+	  "Cold",
+	  "Lightning",
+	  "Nova"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1647,11 +1632,10 @@
 	"name": "Discipline",
 	"slot": "Blue",
 	"tags": [
-	  "AURA",
-	  "SPELL",
-	  "AOE"
+	  "Aura",
+	  "Spell",
+	  "AoE"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -1662,11 +1646,11 @@
 	"name": "Divine Ire",
 	"slot": "Blue",
 	"tags": [
-	  "LIGHTNING",
-	  "SPELL",
-	  "AOE",
-	  "CHANNELLING",
-	  "PHYSICAL"
+	  "Lightning",
+	  "Spell",
+	  "AoE",
+	  "Channelling",
+	  "Physical"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1678,10 +1662,10 @@
 	"name": "Elemental Weakness",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "DURATION",
-	  "CURSE"
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Curse"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1693,10 +1677,10 @@
 	"name": "Enfeeble",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "DURATION",
-	  "CURSE"
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Curse"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1708,11 +1692,11 @@
 	"name": "Essence Drain",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "PROJECTILE",
-	  "DURATION",
-	  "CHAOS",
-	  "AOE"
+	  "Spell",
+	  "Projectile",
+	  "Duration",
+	  "Chaos",
+	  "AoE"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1724,12 +1708,11 @@
 	"name": "Fireball",
 	"slot": "Blue",
 	"tags": [
-	  "PROJECTILE",
-	  "SPELL",
-	  "AOE",
-	  "FIRE"
+	  "Projectile",
+	  "Spell",
+	  "AoE",
+	  "Fire"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -1740,10 +1723,10 @@
 	"name": "Firestorm",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "DURATION",
-	  "FIRE"
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Fire"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1755,12 +1738,12 @@
 	"name": "Flame Dash",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "MOVEMENT",
-	  "DURATION",
-	  "FIRE",
-	  "TRAVEL",
-	  "BLINK"
+	  "Spell",
+	  "Movement",
+	  "Duration",
+	  "Fire",
+	  "Travel",
+	  "Blink"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1772,9 +1755,9 @@
 	"name": "Flame Surge",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "FIRE"
+	  "Spell",
+	  "AoE",
+	  "Fire"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1786,12 +1769,11 @@
 	"name": "Flameblast",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "FIRE",
-	  "CHANNELLING"
+	  "Spell",
+	  "AoE",
+	  "Fire",
+	  "Channelling"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -1802,11 +1784,11 @@
 	"name": "Flammability",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "DURATION",
-	  "CURSE",
-	  "FIRE"
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Curse",
+	  "Fire"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1818,9 +1800,9 @@
 	"name": "Flesh Offering",
 	"slot": "Blue",
 	"tags": [
-	  "MINION",
-	  "SPELL",
-	  "DURATION"
+	  "Minion",
+	  "Spell",
+	  "Duration"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1832,9 +1814,9 @@
 	"name": "Freezing Pulse",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "PROJECTILE",
-	  "COLD"
+	  "Spell",
+	  "Projectile",
+	  "Cold"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1846,10 +1828,10 @@
 	"name": "Frost Bomb",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "DURATION",
-	  "COLD"
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Cold"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1861,9 +1843,9 @@
 	"name": "Frost Wall",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "DURATION",
-	  "COLD"
+	  "Spell",
+	  "Duration",
+	  "Cold"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1875,11 +1857,11 @@
 	"name": "Frostbite",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "DURATION",
-	  "CURSE",
-	  "COLD"
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Curse",
+	  "Cold"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1891,13 +1873,13 @@
 	"name": "Frostblink",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "MOVEMENT",
-	  "DURATION",
-	  "COLD",
-	  "TRAVEL",
-	  "BLINK",
-	  "AOE"
+	  "Spell",
+	  "Movement",
+	  "Duration",
+	  "Cold",
+	  "Travel",
+	  "Blink",
+	  "AoE"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1909,9 +1891,9 @@
 	"name": "Frostbolt",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "PROJECTILE",
-	  "COLD"
+	  "Spell",
+	  "Projectile",
+	  "Cold"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1923,10 +1905,10 @@
 	"name": "Glacial Cascade",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "COLD",
-	  "PHYSICAL"
+	  "Spell",
+	  "AoE",
+	  "Cold",
+	  "Physical"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1938,11 +1920,11 @@
 	"name": "Herald of Thunder",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "DURATION",
-	  "LIGHTNING",
-	  "HERALD"
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Lightning",
+	  "Herald"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1954,12 +1936,11 @@
 	"name": "Ice Nova",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "COLD",
-	  "NOVA"
+	  "Spell",
+	  "AoE",
+	  "Cold",
+	  "Nova"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -1970,9 +1951,9 @@
 	"name": "Ice Spear",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "PROJECTILE",
-	  "COLD"
+	  "Spell",
+	  "Projectile",
+	  "Cold"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -1984,12 +1965,12 @@
 	"name": "Icicle Mine",
 	"slot": "Blue",
 	"tags": [
-	  "MINE",
-	  "SPELL",
-	  "PROJECTILE",
-	  "COLD",
-	  "AURA",
-	  "AOE"
+	  "Mine",
+	  "Spell",
+	  "Projectile",
+	  "Cold",
+	  "Aura",
+	  "AoE"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2001,10 +1982,10 @@
 	"name": "Incinerate",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "FIRE",
-	  "CHANNELLING",
-	  "AOE"
+	  "Spell",
+	  "Fire",
+	  "Channelling",
+	  "AoE"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2016,9 +1997,9 @@
 	"name": "Kinetic Blast",
 	"slot": "Blue",
 	"tags": [
-	  "ATTACK",
-	  "PROJECTILE",
-	  "AOE"
+	  "Attack",
+	  "Projectile",
+	  "AoE"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2030,11 +2011,11 @@
 	"name": "Lightning Spire Trap",
 	"slot": "Blue",
 	"tags": [
-	  "TRAP",
-	  "SPELL",
-	  "DURATION",
-	  "AOE",
-	  "LIGHTNING"
+	  "Trap",
+	  "Spell",
+	  "Duration",
+	  "AoE",
+	  "Lightning"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2046,10 +2027,10 @@
 	"name": "Lightning Tendrils",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "LIGHTNING",
-	  "CHANNELLING"
+	  "Spell",
+	  "AoE",
+	  "Lightning",
+	  "Channelling"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2061,12 +2042,11 @@
 	"name": "Lightning Trap",
 	"slot": "Blue",
 	"tags": [
-	  "TRAP",
-	  "SPELL",
-	  "PROJECTILE",
-	  "LIGHTNING"
+	  "Trap",
+	  "Spell",
+	  "Projectile",
+	  "Lightning"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -2077,14 +2057,13 @@
 	"name": "Lightning Warp",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "DURATION",
-	  "MOVEMENT",
-	  "LIGHTNING",
-	  "TRAVEL"
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Movement",
+	  "Lightning",
+	  "Travel"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -2095,11 +2074,11 @@
 	"name": "Magma Orb",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "FIRE",
-	  "PROJECTILE",
-	  "CHAINING"
+	  "Spell",
+	  "AoE",
+	  "Fire",
+	  "Projectile",
+	  "Chaining"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2111,9 +2090,9 @@
 	"name": "Malevolence",
 	"slot": "Blue",
 	"tags": [
-	  "AURA",
-	  "SPELL",
-	  "AOE"
+	  "Aura",
+	  "Spell",
+	  "AoE"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2125,11 +2104,11 @@
 	"name": "Orb of Storms",
 	"slot": "Blue",
 	"tags": [
-	  "LIGHTNING",
-	  "SPELL",
-	  "DURATION",
-	  "AOE",
-	  "CHAINING"
+	  "Lightning",
+	  "Spell",
+	  "Duration",
+	  "AoE",
+	  "Chaining"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2141,10 +2120,9 @@
 	"name": "Power Siphon",
 	"slot": "Blue",
 	"tags": [
-	  "ATTACK",
-	  "PROJECTILE"
+	  "Attack",
+	  "Projectile"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -2155,11 +2133,11 @@
 	"name": "Purifying Flame",
 	"slot": "Blue",
 	"tags": [
-	  "FIRE",
-	  "SPELL",
-	  "AOE",
-	  "DURATION",
-	  "PHYSICAL"
+	  "Fire",
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Physical"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2171,9 +2149,9 @@
 	"name": "Purity of Elements",
 	"slot": "Blue",
 	"tags": [
-	  "AURA",
-	  "SPELL",
-	  "AOE"
+	  "Aura",
+	  "Spell",
+	  "AoE"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2185,10 +2163,10 @@
 	"name": "Purity of Lightning",
 	"slot": "Blue",
 	"tags": [
-	  "AURA",
-	  "SPELL",
-	  "AOE",
-	  "LIGHTNING"
+	  "Aura",
+	  "Spell",
+	  "AoE",
+	  "Lightning"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2200,13 +2178,13 @@
 	"name": "Pyroclast Mine",
 	"slot": "Blue",
 	"tags": [
-	  "MINE",
-	  "SPELL",
-	  "PROJECTILE",
-	  "FIRE",
-	  "AOE",
-	  "AURA",
-	  "NOVA"
+	  "Mine",
+	  "Spell",
+	  "Projectile",
+	  "Fire",
+	  "AoE",
+	  "Aura",
+	  "Nova"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2218,8 +2196,8 @@
 	"name": "Raise Spectre",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "MINION"
+	  "Spell",
+	  "Minion"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2231,8 +2209,8 @@
 	"name": "Raise Zombie",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "MINION"
+	  "Spell",
+	  "Minion"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2244,11 +2222,10 @@
 	"name": "Righteous Fire",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "FIRE"
+	  "Spell",
+	  "AoE",
+	  "Fire"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -2259,10 +2236,10 @@
 	"name": "Scorching Ray",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "FIRE",
-	  "DURATION",
-	  "CHANNELLING"
+	  "Spell",
+	  "Fire",
+	  "Duration",
+	  "Channelling"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2274,10 +2251,10 @@
 	"name": "Shock Nova",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "LIGHTNING",
-	  "AOE",
-	  "NOVA"
+	  "Spell",
+	  "Lightning",
+	  "AoE",
+	  "Nova"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2289,11 +2266,11 @@
 	"name": "Siphoning Trap",
 	"slot": "Blue",
 	"tags": [
-	  "TRAP",
-	  "SPELL",
-	  "DURATION",
-	  "AOE",
-	  "COLD"
+	  "Trap",
+	  "Spell",
+	  "Duration",
+	  "AoE",
+	  "Cold"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2305,11 +2282,11 @@
 	"name": "Soulrend",
 	"slot": "Blue",
 	"tags": [
-	  "CHAOS",
-	  "SPELL",
-	  "AOE",
-	  "DURATION",
-	  "PROJECTILE"
+	  "Chaos",
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Projectile"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2321,12 +2298,11 @@
 	"name": "Spark",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "PROJECTILE",
-	  "DURATION",
-	  "LIGHTNING"
+	  "Spell",
+	  "Projectile",
+	  "Duration",
+	  "Lightning"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -2337,10 +2313,10 @@
 	"name": "Spirit Offering",
 	"slot": "Blue",
 	"tags": [
-	  "MINION",
-	  "SPELL",
-	  "DURATION",
-	  "CHAOS"
+	  "Minion",
+	  "Spell",
+	  "Duration",
+	  "Chaos"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2352,12 +2328,12 @@
 	"name": "Storm Brand",
 	"slot": "Blue",
 	"tags": [
-	  "LIGHTNING",
-	  "SPELL",
-	  "AOE",
-	  "CHAINING",
-	  "DURATION",
-	  "BRAND"
+	  "Lightning",
+	  "Spell",
+	  "AoE",
+	  "Chaining",
+	  "Duration",
+	  "Brand"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2369,12 +2345,12 @@
 	"name": "Storm Burst",
 	"slot": "Blue",
 	"tags": [
-	  "AOE",
-	  "SPELL",
-	  "LIGHTNING",
-	  "CHANNELLING",
-	  "DURATION",
-	  "PHYSICAL"
+	  "AoE",
+	  "Spell",
+	  "Lightning",
+	  "Channelling",
+	  "Duration",
+	  "Physical"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2386,12 +2362,11 @@
 	"name": "Storm Call",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "DURATION",
-	  "LIGHTNING"
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Lightning"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -2402,12 +2377,12 @@
 	"name": "Stormblast Mine",
 	"slot": "Blue",
 	"tags": [
-	  "MINE",
-	  "SPELL",
-	  "AOE",
-	  "LIGHTNING",
-	  "AURA",
-	  "NOVA"
+	  "Mine",
+	  "Spell",
+	  "AoE",
+	  "Lightning",
+	  "Aura",
+	  "Nova"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2419,10 +2394,10 @@
 	"name": "Summon Carrion Golem",
 	"slot": "Blue",
 	"tags": [
-	  "PHYSICAL",
-	  "MINION",
-	  "SPELL",
-	  "GOLEM"
+	  "Physical",
+	  "Minion",
+	  "Spell",
+	  "Golem"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2434,10 +2409,10 @@
 	"name": "Summon Chaos Golem",
 	"slot": "Blue",
 	"tags": [
-	  "CHAOS",
-	  "MINION",
-	  "SPELL",
-	  "GOLEM"
+	  "Chaos",
+	  "Minion",
+	  "Spell",
+	  "Golem"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2449,8 +2424,8 @@
 	"name": "Summon Holy Relic",
 	"slot": "Blue",
 	"tags": [
-	  "MINION",
-	  "SPELL"
+	  "Minion",
+	  "Spell"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2462,10 +2437,10 @@
 	"name": "Summon Lightning Golem",
 	"slot": "Blue",
 	"tags": [
-	  "LIGHTNING",
-	  "MINION",
-	  "SPELL",
-	  "GOLEM"
+	  "Lightning",
+	  "Minion",
+	  "Spell",
+	  "Golem"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2477,10 +2452,10 @@
 	"name": "Summon Raging Spirit",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "MINION",
-	  "DURATION",
-	  "FIRE"
+	  "Spell",
+	  "Minion",
+	  "Duration",
+	  "Fire"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2492,11 +2467,10 @@
 	"name": "Summon Skeletons",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "MINION",
-	  "DURATION"
+	  "Spell",
+	  "Minion",
+	  "Duration"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -2507,14 +2481,14 @@
 	"name": "Summon Skitterbots",
 	"slot": "Blue",
 	"tags": [
-	  "TRAP",
-	  "MINE",
-	  "SPELL",
-	  "MINION",
-	  "COLD",
-	  "LIGHTNING",
-	  "AOE",
-	  "AURA"
+	  "Trap",
+	  "Mine",
+	  "Spell",
+	  "Minion",
+	  "Cold",
+	  "Lightning",
+	  "AoE",
+	  "Aura"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2526,10 +2500,10 @@
 	"name": "Tempest Shield",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "LIGHTNING",
-	  "CHAINING",
-	  "DURATION"
+	  "Spell",
+	  "Lightning",
+	  "Chaining",
+	  "Duration"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2541,11 +2515,11 @@
 	"name": "Vortex",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "COLD",
-	  "DURATION",
-	  "NOVA"
+	  "Spell",
+	  "AoE",
+	  "Cold",
+	  "Duration",
+	  "Nova"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2557,12 +2531,12 @@
 	"name": "Wave of Conviction",
 	"slot": "Blue",
 	"tags": [
-	  "FIRE",
-	  "LIGHTNING",
-	  "SPELL",
-	  "AOE",
-	  "DURATION",
-	  "PHYSICAL"
+	  "Fire",
+	  "Lightning",
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Physical"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2574,12 +2548,12 @@
 	"name": "Winter Orb",
 	"slot": "Blue",
 	"tags": [
-	  "COLD",
-	  "SPELL",
-	  "CHANNELLING",
-	  "AOE",
-	  "DURATION",
-	  "PROJECTILE"
+	  "Cold",
+	  "Spell",
+	  "Channelling",
+	  "AoE",
+	  "Duration",
+	  "Projectile"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2591,11 +2565,11 @@
 	"name": "Wither",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "AOE",
-	  "DURATION",
-	  "CHAOS",
-	  "CHANNELLING"
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Chaos",
+	  "Channelling"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2607,10 +2581,10 @@
 	"name": "Wrath",
 	"slot": "Blue",
 	"tags": [
-	  "AURA",
-	  "SPELL",
-	  "AOE",
-	  "LIGHTNING"
+	  "Aura",
+	  "Spell",
+	  "AoE",
+	  "Lightning"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2622,9 +2596,9 @@
 	"name": "Zealotry",
 	"slot": "Blue",
 	"tags": [
-	  "AURA",
-	  "SPELL",
-	  "AOE"
+	  "Aura",
+	  "Spell",
+	  "AoE"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2636,10 +2610,10 @@
 	"name": "Abyssal Cry",
 	"slot": "Red",
 	"tags": [
-	  "WARCRY",
-	  "AOE",
-	  "DURATION",
-	  "CHAOS"
+	  "Warcry",
+	  "AoE",
+	  "Duration",
+	  "Chaos"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2651,10 +2625,10 @@
 	"name": "Ancestral Protector",
 	"slot": "Red",
 	"tags": [
-	  "ATTACK",
-	  "TOTEM",
-	  "MELEE",
-	  "STRIKE"
+	  "Attack",
+	  "Totem",
+	  "Melee",
+	  "Strike"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -2666,12 +2640,11 @@
 	"name": "Ancestral Warchief",
 	"slot": "Red",
 	"tags": [
-	  "ATTACK",
-	  "TOTEM",
-	  "AOE",
-	  "MELEE"
+	  "Attack",
+	  "Totem",
+	  "AoE",
+	  "Melee"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [
 		{
@@ -2688,7 +2661,7 @@
 		  "act": 3,
 		  "quest": "Sever the Right Hand",
 		  "classes": [
-			"MARAUDER"
+			"Marauder"
 		  ]
 		}
 	  ],
@@ -2698,13 +2671,13 @@
 		  "act": 3,
 		  "quest": "A Fixture of Fate",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -2712,10 +2685,10 @@
 		  "act": 3,
 		  "quest": "Sever the Right Hand",
 		  "classes": [
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -2723,13 +2696,13 @@
 		  "act": 6,
 		  "quest": "Fallen from Grace",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		}
 	  ]
@@ -2739,10 +2712,10 @@
 	"name": "Anger",
 	"slot": "Red",
 	"tags": [
-	  "AURA",
-	  "SPELL",
-	  "AOE",
-	  "FIRE"
+	  "Aura",
+	  "Spell",
+	  "AoE",
+	  "Fire"
 	],
 	"acquisition": {
 	  "recipes": [
@@ -2764,8 +2737,8 @@
 		  "act": 3,
 		  "quest": "Lost in Love",
 		  "classes": [
-			"MARAUDER",
-			"SCION"
+			"Marauder",
+			"Scion"
 		  ]
 		}
 	  ],
@@ -2775,13 +2748,13 @@
 		  "act": 3,
 		  "quest": "A Fixture of Fate",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -2789,11 +2762,11 @@
 		  "act": 3,
 		  "quest": "Lost in Love",
 		  "classes": [
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -2801,13 +2774,13 @@
 		  "act": 6,
 		  "quest": "Fallen from Grace",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		}
 	  ]
@@ -2817,8 +2790,8 @@
 	"name": "Animate Guardian",
 	"slot": "Red",
 	"tags": [
-	  "SPELL",
-	  "MINION"
+	  "Spell",
+	  "Minion"
 	],
 	"acquisition": {
 	  "recipes": [
@@ -2846,13 +2819,13 @@
 		  "act": 3,
 		  "quest": "A Fixture of Fate",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -2860,13 +2833,13 @@
 		  "act": 3,
 		  "quest": "Sever the Right Hand",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -2874,13 +2847,13 @@
 		  "act": 6,
 		  "quest": "Fallen from Grace",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		}
 	  ]
@@ -2890,7 +2863,7 @@
 	"name": "Berserk",
 	"slot": "Red",
 	"tags": [
-	  "SPELL"
+	  "Spell"
 	],
 	"acquisition": {
 	  "recipes": [
@@ -2912,7 +2885,7 @@
 		  "act": 4,
 		  "quest": "Breaking the Seal",
 		  "classes": [
-			"MARAUDER"
+			"Marauder"
 		  ]
 		}
 	  ],
@@ -2922,10 +2895,10 @@
 		  "act": 4,
 		  "quest": "Breaking the Seal",
 		  "classes": [
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -2933,13 +2906,13 @@
 		  "act": 6,
 		  "quest": "Fallen from Grace",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		}
 	  ]
@@ -2949,10 +2922,10 @@
 	"name": "Bladestorm",
 	"slot": "Red",
 	"tags": [
-	  "ATTACK",
-	  "AOE",
-	  "DURATION",
-	  "MELEE"
+	  "Attack",
+	  "AoE",
+	  "Duration",
+	  "Melee"
 	],
 	"acquisition": {
 	  "recipes": [
@@ -2970,7 +2943,7 @@
 		  "act": 3,
 		  "quest": "Sever the Right Hand",
 		  "classes": [
-			"DUELIST"
+			"Duelist"
 		  ]
 		}
 	  ],
@@ -2980,13 +2953,13 @@
 		  "act": 3,
 		  "quest": "A Fixture of Fate",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -2994,9 +2967,9 @@
 		  "act": 3,
 		  "quest": "Sever the Right Hand",
 		  "classes": [
-			"DUELIST",
-			"MARAUDER",
-			"SCION"
+			"Duelist",
+			"Marauder",
+			"Scion"
 		  ]
 		},
 		{
@@ -3004,13 +2977,13 @@
 		  "act": 6,
 		  "quest": "Fallen from Grace",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		}
 	  ]
@@ -3020,7 +2993,7 @@
 	"name": "Blood and Sand",
 	"slot": "Red",
 	"tags": [
-	  "SPELL"
+	  "Spell"
 	],
 	"acquisition": {
 	  "recipes": [
@@ -3034,7 +3007,7 @@
 		  "act": 1,
 		  "quest": "Breaking Some Eggs",
 		  "classes": [
-			"DUELIST"
+			"Duelist"
 		  ]
 		}
 	  ],
@@ -3044,10 +3017,10 @@
 		  "act": 1,
 		  "quest": "Breaking Some Eggs",
 		  "classes": [
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"SCION"
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Scion"
 		  ]
 		},
 		{
@@ -3055,13 +3028,13 @@
 		  "act": 3,
 		  "quest": "A Fixture of Fate",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -3069,13 +3042,13 @@
 		  "act": 6,
 		  "quest": "Fallen from Grace",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		}
 	  ]
@@ -3085,10 +3058,10 @@
 	"name": "Chain Hook",
 	"slot": "Red",
 	"tags": [
-	  "ATTACK",
-	  "AOE",
-	  "MOVEMENT",
-	  "MELEE"
+	  "Attack",
+	  "AoE",
+	  "Movement",
+	  "Melee"
 	],
 	"acquisition": {
 	  "recipes": [
@@ -3106,7 +3079,7 @@
 		  "act": 1,
 		  "quest": "The Siren's Cadence",
 		  "classes": [
-			"MARAUDER"
+			"Marauder"
 		  ]
 		}
 	  ],
@@ -3116,9 +3089,9 @@
 		  "act": 1,
 		  "quest": "The Siren's Cadence",
 		  "classes": [
-			"DUELIST",
-			"MARAUDER",
-			"SCION"
+			"Duelist",
+			"Marauder",
+			"Scion"
 		  ]
 		},
 		{
@@ -3126,13 +3099,13 @@
 		  "act": 3,
 		  "quest": "A Fixture of Fate",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -3140,13 +3113,13 @@
 		  "act": 6,
 		  "quest": "Fallen from Grace",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		}
 	  ]
@@ -3156,10 +3129,10 @@
 	"name": "Cleave",
 	"slot": "Red",
 	"tags": [
-	  "ATTACK",
-	  "AOE",
-	  "PHYSICAL",
-	  "MELEE"
+	  "Attack",
+	  "AoE",
+	  "Physical",
+	  "Melee"
 	],
 	"acquisition": {
 	  "recipes": [
@@ -3177,7 +3150,7 @@
 		  "act": 1,
 		  "quest": "Enemy at the Gate",
 		  "classes": [
-			"DUELIST"
+			"Duelist"
 		  ]
 		}
 	  ],
@@ -3187,10 +3160,10 @@
 		  "act": 1,
 		  "quest": "Enemy at the Gate",
 		  "classes": [
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"SCION"
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Scion"
 		  ]
 		},
 		{
@@ -3198,13 +3171,13 @@
 		  "act": 3,
 		  "quest": "A Fixture of Fate",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -3212,13 +3185,13 @@
 		  "act": 6,
 		  "quest": "Fallen from Grace",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		}
 	  ]
@@ -3228,12 +3201,12 @@
 	"name": "Consecrated Path",
 	"slot": "Red",
 	"tags": [
-	  "FIRE",
-	  "ATTACK",
-	  "AOE",
-	  "MOVEMENT",
-	  "DURATION",
-	  "MELEE"
+	  "Fire",
+	  "Attack",
+	  "AoE",
+	  "Movement",
+	  "Duration",
+	  "Melee"
 	],
 	"acquisition": {
 	  "recipes": [
@@ -3251,7 +3224,7 @@
 		  "act": 3,
 		  "quest": "Sever the Right Hand",
 		  "classes": [
-			"TEMPLAR"
+			"Templar"
 		  ]
 		}
 	  ],
@@ -3261,9 +3234,9 @@
 		  "act": 3,
 		  "quest": "Sever the Right Hand",
 		  "classes": [
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -3271,13 +3244,13 @@
 		  "act": 3,
 		  "quest": "A Fixture of Fate",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -3285,13 +3258,13 @@
 		  "act": 6,
 		  "quest": "Fallen from Grace",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		}
 	  ]
@@ -3301,8 +3274,8 @@
 	"name": "Detonate Mines",
 	"slot": "White",
 	"tags": [
-	  "MINE",
-	  "SPELL"
+	  "Mine",
+	  "Spell"
 	],
 	"acquisition": {
 	  "recipes": [
@@ -3318,13 +3291,13 @@
 		  "act": 6,
 		  "quest": "Fallen from Grace",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		}
 	  ]
@@ -3334,9 +3307,9 @@
 	"name": "Decoy Totem",
 	"slot": "Red",
 	"tags": [
-	  "TOTEM",
-	  "SPELL",
-	  "AOE"
+	  "Totem",
+	  "Spell",
+	  "AoE"
 	],
 	"acquisition": {
 	  "recipes": [
@@ -3358,9 +3331,9 @@
 		  "act": 1,
 		  "quest": "Breaking Some Eggs",
 		  "classes": [
-			"DUELIST",
-			"MARAUDER",
-			"SCION"
+			"Duelist",
+			"Marauder",
+			"Scion"
 		  ]
 		}
 	  ],
@@ -3370,11 +3343,11 @@
 		  "act": 1,
 		  "quest": "Breaking Some Eggs",
 		  "classes": [
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -3382,13 +3355,13 @@
 		  "act": 3,
 		  "quest": "A Fixture of Fate",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -3396,13 +3369,13 @@
 		  "act": 6,
 		  "quest": "Fallen from Grace",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		}
 	  ]
@@ -3412,10 +3385,10 @@
 	"name": "Determination",
 	"slot": "Red",
 	"tags": [
-	  "AURA",
-	  "SPELL",
-	  "AOE",
-	  "PHYSICAL"
+	  "Aura",
+	  "Spell",
+	  "AoE",
+	  "Physical"
 	],
 	"acquisition": {
 	  "recipes": [
@@ -3437,7 +3410,7 @@
 		  "act": 3,
 		  "quest": "Lost in Love",
 		  "classes": [
-			"MARAUDER"
+			"Marauder"
 		  ]
 		}
 	  ],
@@ -3447,13 +3420,13 @@
 		  "act": 3,
 		  "quest": "A Fixture of Fate",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -3461,9 +3434,9 @@
 		  "act": 3,
 		  "quest": "Lost in Love",
 		  "classes": [
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR"
+			"Duelist",
+			"Marauder",
+			"Templar"
 		  ]
 		},
 		{
@@ -3471,13 +3444,13 @@
 		  "act": 6,
 		  "quest": "Fallen from Grace",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		}
 	  ]
@@ -3487,8 +3460,8 @@
 	"name": "Devouring Totem",
 	"slot": "Red",
 	"tags": [
-	  "TOTEM",
-	  "SPELL"
+	  "Totem",
+	  "Spell"
 	],
 	"acquisition": {
 	  "recipes": [
@@ -3512,12 +3485,12 @@
 		  "act": 1,
 		  "quest": "Breaking Some Eggs",
 		  "classes": [
-			"WITCH",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -3525,13 +3498,13 @@
 		  "act": 3,
 		  "quest": "A Fixture of Fate",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -3539,13 +3512,13 @@
 		  "act": 6,
 		  "quest": "Fallen from Grace",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		}
 	  ]
@@ -3555,11 +3528,11 @@
 	"name": "Dominating Blow",
 	"slot": "Red",
 	"tags": [
-	  "ATTACK",
-	  "MINION",
-	  "DURATION",
-	  "MELEE",
-	  "STRIKE"
+	  "Attack",
+	  "Minion",
+	  "Duration",
+	  "Melee",
+	  "Strike"
 	],
 	"acquisition": {
 	  "recipes": [
@@ -3581,7 +3554,7 @@
 		  "act": 3,
 		  "quest": "Sever the Right Hand",
 		  "classes": [
-			"TEMPLAR"
+			"Templar"
 		  ]
 		}
 	  ],
@@ -3591,10 +3564,10 @@
 		  "act": 3,
 		  "quest": "Sever the Right Hand",
 		  "classes": [
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -3602,13 +3575,13 @@
 		  "act": 3,
 		  "quest": "A Fixture of Fate",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -3616,13 +3589,13 @@
 		  "act": 6,
 		  "quest": "Fallen from Grace",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		}
 	  ]
@@ -3632,11 +3605,11 @@
 	"name": "Dread Banner",
 	"slot": "Red",
 	"tags": [
-	  "AOE",
-	  "SPELL",
-	  "DURATION",
-	  "AURA",
-	  "PHYSICAL"
+	  "AoE",
+	  "Spell",
+	  "Duration",
+	  "Aura",
+	  "Physical"
 	],
 	"acquisition": {
 	  "recipes": [
@@ -3658,7 +3631,7 @@
 		  "act": 3,
 		  "quest": "Lost in Love",
 		  "classes": [
-			"DUELIST"
+			"Duelist"
 		  ]
 		}
 	  ],
@@ -3668,13 +3641,13 @@
 		  "act": 3,
 		  "quest": "A Fixture of Fate",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -3682,11 +3655,11 @@
 		  "act": 3,
 		  "quest": "Lost in Love",
 		  "classes": [
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -3694,13 +3667,13 @@
 		  "act": 6,
 		  "quest": "Fallen from Grace",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		}
 	  ]
@@ -3710,12 +3683,11 @@
 	"name": "Earthquake",
 	"slot": "Red",
 	"tags": [
-	  "ATTACK",
-	  "AOE",
-	  "DURATION",
-	  "MELEE"
+	  "Attack",
+	  "AoE",
+	  "Duration",
+	  "Melee"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [
 		{
@@ -3732,7 +3704,7 @@
 		  "act": 3,
 		  "quest": "Sever the Right Hand",
 		  "classes": [
-			"MARAUDER"
+			"Marauder"
 		  ]
 		}
 	  ],
@@ -3742,10 +3714,10 @@
 		  "act": 3,
 		  "quest": "Sever the Right Hand",
 		  "classes": [
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -3753,13 +3725,13 @@
 		  "act": 3,
 		  "quest": "A Fixture of Fate",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -3767,13 +3739,13 @@
 		  "act": 6,
 		  "quest": "Fallen from Grace",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		}
 	  ]
@@ -3783,9 +3755,9 @@
 	"name": "Enduring Cry",
 	"slot": "Red",
 	"tags": [
-	  "WARCRY",
-	  "AOE",
-	  "DURATION"
+	  "Warcry",
+	  "AoE",
+	  "Duration"
 	],
 	"acquisition": {
 	  "recipes": [
@@ -3803,10 +3775,10 @@
 		  "act": 2,
 		  "quest": "Intruders in Black",
 		  "classes": [
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		}
 	  ],
@@ -3816,11 +3788,11 @@
 		  "act": 2,
 		  "quest": "The Root of the Problem",
 		  "classes": [
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -3828,13 +3800,13 @@
 		  "act": 3,
 		  "quest": "A Fixture of Fate",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -3842,13 +3814,13 @@
 		  "act": 6,
 		  "quest": "Fallen from Grace",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		}
 	  ]
@@ -3858,9 +3830,9 @@
 	"name": "Flesh and Stone",
 	"slot": "Red",
 	"tags": [
-	  "SPELL",
-	  "AURA",
-	  "AOE"
+	  "Spell",
+	  "Aura",
+	  "AoE"
 	],
 	"acquisition": {
 	  "recipes": [
@@ -3882,7 +3854,7 @@
 		  "act": 2,
 		  "quest": "Intruders in Black",
 		  "classes": [
-			"DUELIST"
+			"Duelist"
 		  ]
 		}
 	  ],
@@ -3892,9 +3864,9 @@
 		  "act": 2,
 		  "quest": "The Root of the Problem",
 		  "classes": [
-			"DUELIST",
-			"MARAUDER",
-			"SCION"
+			"Duelist",
+			"Marauder",
+			"Scion"
 		  ]
 		},
 		{
@@ -3902,13 +3874,13 @@
 		  "act": 3,
 		  "quest": "A Fixture of Fate",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -3916,13 +3888,13 @@
 		  "act": 6,
 		  "quest": "Fallen from Grace",
 		  "classes": [
-			"WITCH",
+			"Witch",
 			"SHAODW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		}
 	  ]
@@ -3932,12 +3904,11 @@
 	"name": "Glacial Hammer",
 	"slot": "Red",
 	"tags": [
-	  "ATTACK",
-	  "MELEE",
-	  "STRIKE",
-	  "COLD"
+	  "Attack",
+	  "Melee",
+	  "Strike",
+	  "Cold"
 	],
-	"hasVaal": true,
 	"acquisition": {
 	  "recipes": [
 		{
@@ -3956,9 +3927,9 @@
 		  "act": 1,
 		  "quest": "Enemy at the Gate",
 		  "classes": [
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR"
+			"Duelist",
+			"Marauder",
+			"Templar"
 		  ]
 		},
 		{
@@ -3966,13 +3937,13 @@
 		  "act": 3,
 		  "quest": "A Fixture of Fate",
 		  "classes": [
-			"WITCH",
-			"SHADOW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		},
 		{
@@ -3980,13 +3951,315 @@
 		  "act": 6,
 		  "quest": "Fallen from Grace",
 		  "classes": [
-			"WITCH",
+			"Witch",
 			"SHAODW",
-			"RANGER",
-			"DUELIST",
-			"MARAUDER",
-			"TEMPLAR",
-			"SCION"
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
+	"name": "Ground Slam",
+	"slot": "Red",
+	"tags": [
+	  "Attack",
+	  "AoE",
+	  "Physical",
+	  "Melee"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [
+		{
+		  "act": 1,
+		  "quest": "Enemy at the Gate",
+		  "classes": [
+			"Marauder"
+		  ]
+		}
+	  ],
+	  "vendors": [
+		{
+		  "vendor": "Nessa",
+		  "act": 1,
+		  "quest": "Enemy at the Gate",
+		  "classes": [
+			"Duelist",
+			"Marauder",
+			"Templar"
+		  ]
+		},
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
+	"name": "Heavy Strike",
+	"slot": "Red",
+	"tags": [
+	  "Attack",
+	  "Melee",
+	  "Strike"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": [
+		{
+		  "vendor": "Nessa",
+		  "act": 1,
+		  "quest": "Enemy at the Gate",
+		  "classes": [
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
+	"name": "Herald of Ash",
+	"slot": "Red",
+	"tags": [
+	  "Spell",
+	  "AoE",
+	  "Fire",
+	  "Herald",
+	  "Duration"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [
+		{
+		  "act": 2,
+		  "quest": "Intruders in Black",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ],
+	  "vendors": [
+		{
+		  "vendor": "Yeena",
+		  "act": 2,
+		  "quest": "The Root of the Problem",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
+	"name": "Herald of Purity",
+	"slot": "Red",
+	"tags": [
+	  "Spell",
+	  "Herald",
+	  "Minion",
+	  "Duration",
+	  "Physical"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Summoner"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [
+		{
+		  "act": 2,
+		  "quest": "Intruders in Black",
+		  "classes": [
+			"Templar"
+		  ]
+		}
+	  ],
+	  "vendors": [
+		{
+		  "vendor": "Yeena",
+		  "act": 2,
+		  "quest": "The Root of the Problem",
+		  "classes": [
+			"Witch",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
 		  ]
 		}
 	  ]
@@ -3996,7 +4269,7 @@
 	"name": "Portal",
 	"slot": "White",
 	"tags": [
-	  "SPELL"
+	  "Spell"
 	],
 	"acquisition": {
 	  "recipes": [
@@ -4014,12 +4287,398 @@
 	}
   },
   {
-	"name": "Vaal Breach",
+	"name": "Blade Vortex",
+	"slot": "Green",
+	"tags": [
+	  "Vaal",
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Physical"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Burning Arrow",
+	"slot": "Green",
+	"tags": [
+	  "Vaal",
+	  "Attack",
+	  "Projectile",
+	  "AoE",
+	  "Fire",
+	  "Bow",
+	  "Duration"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Cyclone",
+	"slot": "Green",
+	"tags": [
+	  "Vaal",
+	  "Attack",
+	  "AoE",
+	  "Duration",
+	  "Melee",
+	  "Movement",
+	  "Channelling",
+	  "Physical"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Detonate Dead",
+	"slot": "Green",
+	"tags": [
+	  "Vaal",
+	  "Spell",
+	  "AoE",
+	  "Fire"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Double Strike",
+	"slot": "Green",
+	"tags": [
+	  "Vaal",
+	  "Attack",
+	  "Melee",
+	  "Strike",
+	  "Duration",
+	  "Physical"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Grace",
+	"slot": "Green",
+	"tags": [
+	  "Aura",
+	  "Vaal",
+	  "Spell",
+	  "AoE",
+	  "Duration"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Haste",
+	"slot": "Green",
+	"tags": [
+	  "Aura",
+	  "Vaal",
+	  "Spell",
+	  "AoE",
+	  "Duration"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Impurity of Ice",
+	"slot": "Green",
+	"tags": [
+	  "Aura",
+	  "Vaal",
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Cold"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Lightning Strike",
+	"slot": "Green",
+	"tags": [
+	  "Vaal",
+	  "Attack",
+	  "Melee",
+	  "Strike",
+	  "Duration",
+	  "Lightning",
+	  "Projectile"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Rain of Arrows",
+	"slot": "Green",
+	"tags": [
+	  "Vaal",
+	  "Attack",
+	  "AoE",
+	  "Projectile",
+	  "Bow"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Reave",
+	"slot": "Green",
+	"tags": [
+	  "Vaal",
+	  "Attack",
+	  "AoE",
+	  "Melee"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Spectral Throw",
+	"slot": "Green",
+	"tags": [
+	  "Vaal",
+	  "Attack",
+	  "Projectile"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Breach",
 	"slot": "White",
 	"tags": [
-	  "VAAL",
-	  "SPELL"
+	  "Vaal",
+	  "Spell"
 	],
+	"isVaal": true,
 	"acquisition": {
 	  "recipes": [
 		{
@@ -4039,10 +4698,9 @@
 	"name": "Added Cold Damage Support",
 	"slot": "Green",
 	"tags": [
-	  "COLD",
-	  "SUPPORT"
+	  "Cold",
+	  "Support"
 	],
-	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -4053,8 +4711,8 @@
 	"name": "Additional Accuracy Support",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "SUPPORT"
+	  "Attack",
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4066,8 +4724,8 @@
 	"name": "Advanced Traps Support",
 	"slot": "Green",
 	"tags": [
-	  "TRAP",
-	  "SUPPORT"
+	  "Trap",
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4079,12 +4737,11 @@
 	"name": "Arrow Nova Support",
 	"slot": "Green",
 	"tags": [
-	  "BOW",
-	  "ATTACK",
-	  "SUPPORT",
-	  "PROJECTILE"
+	  "Bow",
+	  "Attack",
+	  "Support",
+	  "Projectile"
 	],
-	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -4095,10 +4752,10 @@
 	"name": "Barrage Support",
 	"slot": "Green",
 	"tags": [
-	  "BOW",
-	  "ATTACK",
-	  "SUPPORT",
-	  "PROJECTILE"
+	  "Bow",
+	  "Attack",
+	  "Support",
+	  "Projectile"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4110,7 +4767,7 @@
 	"name": "Blind Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT"
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4122,8 +4779,8 @@
 	"name": "Block Chance Reduction Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT",
-	  "DURATION"
+	  "Support",
+	  "Duration"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4135,11 +4792,10 @@
 	"name": "Cast on Critical Strike Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT",
-	  "SPELL",
-	  "TRIGGER"
+	  "Support",
+	  "Spell",
+	  "Trigger"
 	],
-	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -4150,9 +4806,9 @@
 	"name": "Cast on Death Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT",
-	  "SPELL",
-	  "TRIGGER"
+	  "Support",
+	  "Spell",
+	  "Trigger"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4164,11 +4820,10 @@
 	"name": "Chain Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT",
-	  "CHAINING",
-	  "PROJECTILE"
+	  "Support",
+	  "Chaining",
+	  "Projectile"
 	],
-	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -4179,7 +4834,7 @@
 	"name": "Chance to Flee Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT"
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4191,8 +4846,8 @@
 	"name": "Charged Traps Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT",
-	  "TRAP"
+	  "Support",
+	  "Trap"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4204,10 +4859,10 @@
 	"name": "Close Combat Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT",
-	  "MELEE",
-	  "ATTACK",
-	  "DURATION"
+	  "Support",
+	  "Melee",
+	  "Attack",
+	  "Duration"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4219,8 +4874,8 @@
 	"name": "Cluster Traps Support",
 	"slot": "Green",
 	"tags": [
-	  "TRAP",
-	  "SUPPORT"
+	  "Trap",
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4232,10 +4887,9 @@
 	"name": "Cold Penetration Support",
 	"slot": "Green",
 	"tags": [
-	  "COLD",
-	  "SUPPORT"
+	  "Cold",
+	  "Support"
 	],
-	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -4246,7 +4900,7 @@
 	"name": "Culling Strike Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT"
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4258,9 +4912,8 @@
 	"name": "Deadly Ailments Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT"
+	  "Support"
 	],
-	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -4271,7 +4924,7 @@
 	"name": "Enhance Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT"
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4283,8 +4936,8 @@
 	"name": "Faster Attacks Support",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "SUPPORT"
+	  "Attack",
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4296,8 +4949,8 @@
 	"name": "Faster Projectiles Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT",
-	  "PROJECTILE"
+	  "Support",
+	  "Projectile"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4309,10 +4962,9 @@
 	"name": "Fork Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT",
-	  "PROJECTILE"
+	  "Support",
+	  "Projectile"
 	],
-	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -4323,10 +4975,9 @@
 	"name": "Greater Multiple Projectiles Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT",
-	  "PROJECTILE"
+	  "Support",
+	  "Projectile"
 	],
-	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -4337,8 +4988,8 @@
 	"name": "Greater Volley Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT",
-	  "PROJECTILE"
+	  "Support",
+	  "Projectile"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4350,8 +5001,8 @@
 	"name": "Hypothermia Support",
 	"slot": "Green",
 	"tags": [
-	  "COLD",
-	  "SUPPORT"
+	  "Cold",
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4363,8 +5014,8 @@
 	"name": "Ice Bite Support",
 	"slot": "Green",
 	"tags": [
-	  "COLD",
-	  "SUPPORT"
+	  "Cold",
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4376,9 +5027,9 @@
 	"name": "Impale Support",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "PHYSICAL",
-	  "SUPPORT"
+	  "Attack",
+	  "Physical",
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4390,8 +5041,8 @@
 	"name": "Lesser Multiple Projectiles Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT",
-	  "PROJECTILE"
+	  "Support",
+	  "Projectile"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4403,8 +5054,8 @@
 	"name": "Lesser Poison Support",
 	"slot": "Green",
 	"tags": [
-	  "CHAOS",
-	  "SUPPORT"
+	  "Chaos",
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4416,7 +5067,7 @@
 	"name": "Mana Leech Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT"
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4428,10 +5079,10 @@
 	"name": "Mirage Archer Support",
 	"slot": "Green",
 	"tags": [
-	  "BOW",
-	  "ATTACK",
-	  "SUPPORT",
-	  "DURATION"
+	  "Bow",
+	  "Attack",
+	  "Support",
+	  "Duration"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4443,8 +5094,8 @@
 	"name": "Multiple Traps Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT",
-	  "TRAP"
+	  "Support",
+	  "Trap"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4456,8 +5107,8 @@
 	"name": "Nightblade Support",
 	"slot": "Green",
 	"tags": [
-	  "ATTACK",
-	  "SUPPORT"
+	  "Attack",
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4469,7 +5120,7 @@
 	"name": "Onslaught Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT"
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4481,8 +5132,8 @@
 	"name": "Pierce Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT",
-	  "PROJECTILE"
+	  "Support",
+	  "Projectile"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4494,9 +5145,9 @@
 	"name": "Point Blank Support",
 	"slot": "Green",
 	"tags": [
-	  "PROJECTILE",
-	  "ATTACK",
-	  "SUPPORT"
+	  "Projectile",
+	  "Attack",
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4508,8 +5159,8 @@
 	"name": "Poison Support",
 	"slot": "Green",
 	"tags": [
-	  "CHAOS",
-	  "SUPPORT"
+	  "Chaos",
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4521,8 +5172,8 @@
 	"name": "Slower Projectiles Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT",
-	  "PROJECTILE"
+	  "Support",
+	  "Projectile"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4534,10 +5185,9 @@
 	"name": "Swift Affliction Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT",
-	  "DURATION"
+	  "Support",
+	  "Duration"
 	],
-	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -4548,9 +5198,9 @@
 	"name": "Swift Assembly Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT",
-	  "TRAP",
-	  "MINE"
+	  "Support",
+	  "Trap",
+	  "Mine"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4562,9 +5212,9 @@
 	"name": "Trap and Mine Damage Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT",
-	  "TRAP",
-	  "MINE"
+	  "Support",
+	  "Trap",
+	  "Mine"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4576,8 +5226,8 @@
 	"name": "Trap Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT",
-	  "TRAP"
+	  "Support",
+	  "Trap"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4589,13 +5239,12 @@
 	"name": "Vicious Projectiles Support",
 	"slot": "Green",
 	"tags": [
-	  "PROJECTILE",
-	  "ATTACK",
-	  "PHYSICAL",
-	  "CHAOS",
-	  "SUPPORT"
+	  "Projectile",
+	  "Attack",
+	  "Physical",
+	  "Chaos",
+	  "Support"
 	],
-	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -4606,7 +5255,7 @@
 	"name": "Vile Toxins Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT"
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4618,10 +5267,9 @@
 	"name": "Void Manipulation Support",
 	"slot": "Green",
 	"tags": [
-	  "CHAOS",
-	  "SUPPORT"
+	  "Chaos",
+	  "Support"
 	],
-	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -4632,8 +5280,8 @@
 	"name": "Volley Support",
 	"slot": "Green",
 	"tags": [
-	  "SUPPORT",
-	  "PROJECTILE"
+	  "Support",
+	  "Projectile"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4645,11 +5293,11 @@
 	"name": "Withering Touch Support",
 	"slot": "Green",
 	"tags": [
-	  "CHAOS",
-	  "PHYSICAL",
-	  "ATTACK",
-	  "SUPPORT",
-	  "DURATION"
+	  "Chaos",
+	  "Physical",
+	  "Attack",
+	  "Support",
+	  "Duration"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4661,10 +5309,9 @@
 	"name": "Added Chaos Damage Support",
 	"slot": "Blue",
 	"tags": [
-	  "CHAOS",
-	  "SUPPORT"
+	  "Chaos",
+	  "Support"
 	],
-	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -4675,10 +5322,9 @@
 	"name": "Added Lightning Damage Support",
 	"slot": "Blue",
 	"tags": [
-	  "LIGHTNING",
-	  "SUPPORT"
+	  "Lightning",
+	  "Support"
 	],
-	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -4689,9 +5335,9 @@
 	"name": "Arcane Surge Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT",
-	  "SPELL",
-	  "DURATION"
+	  "Support",
+	  "Spell",
+	  "Duration"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4703,10 +5349,9 @@
 	"name": "Blasphemy Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT",
-	  "AURA"
+	  "Support",
+	  "Aura"
 	],
-	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -4717,8 +5362,8 @@
 	"name": "Blastchain Mine Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT",
-	  "MINE"
+	  "Support",
+	  "Mine"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4730,8 +5375,8 @@
 	"name": "Bonechill Support",
 	"slot": "Blue",
 	"tags": [
-	  "COLD",
-	  "SUPPORT"
+	  "Cold",
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4743,9 +5388,9 @@
 	"name": "Cast When Stunned Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT",
-	  "SPELL",
-	  "TRIGGER"
+	  "Support",
+	  "Spell",
+	  "Trigger"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4757,12 +5402,11 @@
 	"name": "Cast While Channelling Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT",
-	  "CHANNELLING",
-	  "SPELL",
-	  "TRIGGER"
+	  "Support",
+	  "Channelling",
+	  "Spell",
+	  "Trigger"
 	],
-	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -4773,8 +5417,8 @@
 	"name": "Charged Mines Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT",
-	  "MINE"
+	  "Support",
+	  "Mine"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4786,8 +5430,8 @@
 	"name": "Combustion Support",
 	"slot": "Blue",
 	"tags": [
-	  "FIRE",
-	  "SUPPORT"
+	  "Fire",
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4799,8 +5443,8 @@
 	"name": "Concentrated Effect Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT",
-	  "AOE"
+	  "Support",
+	  "AoE"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4812,10 +5456,9 @@
 	"name": "Controlled Destruction Support",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "SUPPORT"
+	  "Spell",
+	  "Support"
 	],
-	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -4826,11 +5469,10 @@
 	"name": "Curse On Hit Support",
 	"slot": "Blue",
 	"tags": [
-	  "CURSE",
-	  "TRIGGER",
-	  "SUPPORT"
+	  "Curse",
+	  "Trigger",
+	  "Support"
 	],
-	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -4841,10 +5483,10 @@
 	"name": "Deathmark Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT",
-	  "MINION",
-	  "SPELL",
-	  "DURATION"
+	  "Support",
+	  "Minion",
+	  "Spell",
+	  "Duration"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4856,8 +5498,8 @@
 	"name": "Decay Support",
 	"slot": "Blue",
 	"tags": [
-	  "CHAOS",
-	  "SUPPORT"
+	  "Chaos",
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4869,8 +5511,8 @@
 	"name": "Efficacy Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT",
-	  "DURATION"
+	  "Support",
+	  "Duration"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4882,8 +5524,8 @@
 	"name": "Elemental Army Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT",
-	  "MINION"
+	  "Support",
+	  "Minion"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4895,9 +5537,8 @@
 	"name": "Elemental Focus Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT"
+	  "Support"
 	],
-	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -4908,11 +5549,11 @@
 	"name": "Elemental Proliferation Support",
 	"slot": "Blue",
 	"tags": [
-	  "COLD",
-	  "FIRE",
-	  "LIGHTNING",
-	  "SUPPORT",
-	  "AOE"
+	  "Cold",
+	  "Fire",
+	  "Lightning",
+	  "Support",
+	  "AoE"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4924,7 +5565,7 @@
 	"name": "Energy Leech Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT"
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4936,7 +5577,7 @@
 	"name": "Enlighten Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT"
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4948,8 +5589,8 @@
 	"name": "Faster Casting Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT",
-	  "SPELL"
+	  "Support",
+	  "Spell"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4961,9 +5602,9 @@
 	"name": "Feeding Frenzy Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT",
-	  "MINION",
-	  "DURATION"
+	  "Support",
+	  "Minion",
+	  "Duration"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4975,10 +5616,10 @@
 	"name": "High-Impact Mine Support",
 	"slot": "Blue",
 	"tags": [
-	  "MINE",
-	  "SUPPORT",
-	  "AOE",
-	  "AURA"
+	  "Mine",
+	  "Support",
+	  "AoE",
+	  "Aura"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -4990,9 +5631,9 @@
 	"name": "Ignite Proliferation Support",
 	"slot": "Blue",
 	"tags": [
-	  "FIRE",
-	  "SUPPORT",
-	  "AOE"
+	  "Fire",
+	  "Support",
+	  "AoE"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -5004,8 +5645,8 @@
 	"name": "Immolate Support",
 	"slot": "Blue",
 	"tags": [
-	  "FIRE",
-	  "SUPPORT"
+	  "Fire",
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -5017,10 +5658,9 @@
 	"name": "Increased Area of Effect Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT",
-	  "AOE"
+	  "Support",
+	  "AoE"
 	],
-	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -5031,7 +5671,7 @@
 	"name": "Increased Critical Damage Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT"
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -5043,7 +5683,7 @@
 	"name": "Increased Critical Strikes Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT"
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -5055,10 +5695,10 @@
 	"name": "Infernal Legion Support",
 	"slot": "Blue",
 	"tags": [
-	  "FIRE",
-	  "AOE",
-	  "SUPPORT",
-	  "MINION"
+	  "Fire",
+	  "AoE",
+	  "Support",
+	  "Minion"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -5070,9 +5710,9 @@
 	"name": "Infused Channelling Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT",
-	  "CHANNELLING",
-	  "DURATION"
+	  "Support",
+	  "Channelling",
+	  "Duration"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -5084,9 +5724,9 @@
 	"name": "Innervate Support",
 	"slot": "Blue",
 	"tags": [
-	  "LIGHTNING",
-	  "SUPPORT",
-	  "DURATION"
+	  "Lightning",
+	  "Support",
+	  "Duration"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -5098,9 +5738,9 @@
 	"name": "Intensify Support",
 	"slot": "Blue",
 	"tags": [
-	  "AOE",
-	  "SPELL",
-	  "SUPPORT"
+	  "AoE",
+	  "Spell",
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -5112,7 +5752,7 @@
 	"name": "Item Rarity Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT"
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -5124,10 +5764,9 @@
 	"name": "Lightning Penetration Support",
 	"slot": "Blue",
 	"tags": [
-	  "LIGHTNING",
-	  "SUPPORT"
+	  "Lightning",
+	  "Support"
 	],
-	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -5138,8 +5777,8 @@
 	"name": "Meat Shield Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT",
-	  "MINION"
+	  "Support",
+	  "Minion"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -5151,8 +5790,8 @@
 	"name": "Minefield Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT",
-	  "MINE"
+	  "Support",
+	  "Mine"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -5164,10 +5803,9 @@
 	"name": "Minion Damage Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT",
-	  "MINION"
+	  "Support",
+	  "Minion"
 	],
-	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -5178,8 +5816,8 @@
 	"name": "Minion Life Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT",
-	  "MINION"
+	  "Support",
+	  "Minion"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -5191,9 +5829,9 @@
 	"name": "Minion Speed Support",
 	"slot": "Blue",
 	"tags": [
-	  "MOVEMENT",
-	  "SUPPORT",
-	  "MINION"
+	  "Movement",
+	  "Support",
+	  "Minion"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -5205,9 +5843,9 @@
 	"name": "Physical to Lightning Support",
 	"slot": "Blue",
 	"tags": [
-	  "LIGHTNING",
-	  "PHYSICAL",
-	  "SUPPORT"
+	  "Lightning",
+	  "Physical",
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -5219,7 +5857,7 @@
 	"name": "Power Charge On Critical Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT"
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -5231,11 +5869,10 @@
 	"name": "Spell Cascade Support",
 	"slot": "Blue",
 	"tags": [
-	  "AOE",
-	  "SPELL",
-	  "SUPPORT"
+	  "AoE",
+	  "Spell",
+	  "Support"
 	],
-	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -5246,10 +5883,9 @@
 	"name": "Spell Echo Support",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "SUPPORT"
+	  "Spell",
+	  "Support"
 	],
-	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -5260,8 +5896,8 @@
 	"name": "Summon Phantasm Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT",
-	  "MINION"
+	  "Support",
+	  "Minion"
 	],
 	"acquisition": {
 	  "recipes": [],
@@ -5273,9 +5909,8 @@
 	"name": "Unbound Ailments Support",
 	"slot": "Blue",
 	"tags": [
-	  "SUPPORT"
+	  "Support"
 	],
-	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -5286,10 +5921,9 @@
 	"name": "Unleash Support",
 	"slot": "Blue",
 	"tags": [
-	  "SPELL",
-	  "SUPPORT"
+	  "Spell",
+	  "Support"
 	],
-	"hasAwakened": true,
 	"acquisition": {
 	  "recipes": [],
 	  "quests": [],
@@ -5300,7 +5934,7 @@
 	"name": "Empower Support",
 	"slot": "Red",
 	"tags": [
-	  "SUPPORT"
+	  "Support"
 	],
 	"acquisition": {
 	  "recipes": [
@@ -5325,9 +5959,9 @@
 	"name": "Spell Totem Support",
 	"slot": "Red",
 	"tags": [
-	  "SUPPORT",
-	  "SPELL",
-	  "TOTEM"
+	  "Support",
+	  "Spell",
+	  "Totem"
 	],
 	"acquisition": {
 	  "recipes": [],

@@ -107,8 +107,8 @@ class Selector : View() {
 								),
 								updates = listOf(
 									UpdateGem(
-										oldGem = "Empower Support",
-										newGem = "Enhance Support",
+										oldGem = Util.gemByName("Empower Support"),
+										newGem = Util.gemByName("Enhance Support"),
 										reason = "Gems are all Max Level"
 									)
 								),

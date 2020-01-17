@@ -4,7 +4,7 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.fasterxml.jackson.databind.annotation.JsonSerialize
 import github.macro.Util
 import github.macro.build_info.equipment.EquipmentInfo
-import github.macro.build_info.gems.BuildGem
+import github.macro.build_info.gems.GemInfo
 import github.macro.build_info.gems.UpdateGem
 import javafx.beans.property.SimpleListProperty
 import javafx.beans.property.SimpleObjectProperty
@@ -24,7 +24,7 @@ class BuildInfo(
 	name: String,
 	classTag: ClassTag,
 	ascendency: Ascendency,
-	links: List<List<BuildGem>>,
+	links: List<List<GemInfo?>>,
 	updates: List<UpdateGem>,
 	equipment: List<EquipmentInfo>
 ) {
@@ -37,7 +37,7 @@ class BuildInfo(
 	val ascendencyProperty = SimpleObjectProperty<Ascendency>()
 	var ascendency by ascendencyProperty
 
-	val linksProperty = SimpleListProperty<List<BuildGem>>()
+	val linksProperty = SimpleListProperty<List<GemInfo?>>()
 	var links by linksProperty
 
 	val updatesProperty = SimpleListProperty<UpdateGem>()

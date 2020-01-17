@@ -18,10 +18,10 @@ class GemDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeser
 		val node: JsonNode = jp.codec.readTree(jp)
 
 		val name = node["name"].asText()
-		val slot = node["slot"].asText()
+		val slot = Slot.value(node["slot"].asText()) ?: return null
 		val tags = node["tags"].mapNotNull { GemTag.value(it.asText()) }.sorted()
-		val hasVaal = if (node.has("hasVaal")) node["hasVaal"].asBoolean(false) else false
-		val hasAwakened = if (node.has("hasAwakened")) node["hasAwakened"].asBoolean(false) else false
+		val isVaal = if (node.has("isVaal")) node["isVaal"].asBoolean(false) else false
+		val isAwakened = if (node.has("isAwakened")) node["isAwakened"].asBoolean(false) else false
 
 		val acquisitionNode = node["acquisition"]
 		val recipes = acquisitionNode["recipes"].map { Recipe(it["amount"].asInt(), it["ingredient"].asText()) }
@@ -41,7 +41,7 @@ class GemDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeser
 			)
 		}
 
-		return GemInfo(name, slot, tags, hasVaal, hasAwakened, Acquisition(recipes, quests, vendors))
+		return GemInfo(name, slot, tags, isVaal, isAwakened, Acquisition(recipes, quests, vendors))
 	}
 
 	companion object {

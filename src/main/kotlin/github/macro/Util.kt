@@ -9,8 +9,9 @@ import com.fasterxml.jackson.datatype.jdk8.Jdk8Module
 import github.macro.build_info.ClassTag
 import github.macro.build_info.ClassTag.*
 import github.macro.build_info.equipment.EquipmentInfo
-import github.macro.build_info.gems.BuildGem
 import github.macro.build_info.gems.GemInfo
+import github.macro.build_info.gems.Slot
+import github.macro.build_info.gems.Slot.*
 import javafx.animation.KeyFrame
 import javafx.animation.Timeline
 import javafx.scene.control.Tooltip
@@ -53,26 +54,18 @@ object Util {
 		YAML_MAPPER.registerModule(Jdk8Module())
 	}
 
-	fun slotToColour(slot: String?): String {
+	fun slotToColour(slot: Slot?): String {
 		return when (slot) {
-			"Red" -> "#DD9999"
-			"Green" -> "#99DD99"
-			"Blue" -> "#9999DD"
-			"White" -> "#DDDDDD"
+			RED -> "#DD9999"
+			GREEN -> "#99DD99"
+			BLUE -> "#9999DD"
+			WHITE -> "#DDDDDD"
 			else -> "#999999"
 		}
 	}
 
-	fun gemByName(name: String): BuildGem {
-		val info = gems.firstOrNull {
-			when {
-				it.hasVaal && "Vaal ${it.name}".equals(name, ignoreCase = true) -> return@firstOrNull true
-				it.hasAwakened && "Awakened ${it.name}".equals(name, ignoreCase = true) -> return@firstOrNull true
-				it.name.equals(name, ignoreCase = true) -> return@firstOrNull true
-				else -> return@firstOrNull false
-			}
-		}
-		return BuildGem(info, name.startsWith("Vaal"), name.startsWith("Awakened"))
+	fun gemByName(name: String): GemInfo? = gems.firstOrNull {
+		it.getFullname().equals(name, ignoreCase = true)
 	}
 
 	fun equipmentByName(name: String): EquipmentInfo? {
@@ -90,13 +83,13 @@ object Util {
 			fieldTimer.isAccessible = true
 			val objTimer = fieldTimer.get(objBehavior) as Timeline
 			objTimer.keyFrames.clear()
-			objTimer.keyFrames.add(KeyFrame(Duration(250.0)))
+			objTimer.keyFrames.add(KeyFrame(Duration(0.0)))
 		} catch (e: Exception) {
 			e.printStackTrace()
 		}
 	}
 
-	internal fun getClassGems(classTag: ClassTag): List<BuildGem> = when (classTag) {
+	internal fun getClassGems(classTag: ClassTag): List<GemInfo?> = when (classTag) {
 		SCION -> listOf(gemByName("Spectral Throw"), gemByName("Onslaught Support"))
 		MARAUDER -> listOf(gemByName("Heavy Strike"), gemByName("Ruthless Support"))
 		RANGER -> listOf(gemByName("Burning Arrow"), gemByName("Pierce Support"))

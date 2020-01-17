@@ -14,26 +14,26 @@ import tornadofx.*
 @JsonDeserialize(using = GemDeserializer::class)
 class GemInfo(
 	name: String,
-	slot: String,
+	slot: Slot,
 	tags: List<GemTag>,
-	hasVaal: Boolean,
-	hasAwakened: Boolean,
+	isVaal: Boolean,
+	isAwakened: Boolean,
 	acquisition: Acquisition
 ) {
 	val nameProperty = SimpleStringProperty()
 	var name by nameProperty
 
-	val slotProperty = SimpleStringProperty()
+	val slotProperty = SimpleObjectProperty<Slot>()
 	var slot by slotProperty
 
 	val tagsProperty = SimpleListProperty<GemTag>()
 	var tags by tagsProperty
 
-	val hasVaalProperty = SimpleBooleanProperty()
-	var hasVaal by hasVaalProperty
+	val isVaalProperty = SimpleBooleanProperty()
+	var isVaal by isVaalProperty
 
-	val hasAwakenedProperty = SimpleBooleanProperty()
-	var hasAwakened by hasAwakenedProperty
+	val isAwakenedProperty = SimpleBooleanProperty()
+	var isAwakened by isAwakenedProperty
 
 	val acquisitionProperty = SimpleObjectProperty<Acquisition>()
 	var acquisition by acquisitionProperty
@@ -42,21 +42,39 @@ class GemInfo(
 		this.name = name
 		this.slot = slot
 		this.tags = FXCollections.observableList(tags)
-		this.hasVaal = hasVaal
-		this.hasAwakened = hasAwakened
+		this.isVaal = isVaal
+		this.isAwakened = isAwakened
 		this.acquisition = acquisition
 	}
 
-	fun getFilename(isVaal: Boolean, isAwakened: Boolean): String {
+	fun getFilename(): String {
 		var output = name.replace(" ", "_")
-		if (isVaal && hasVaal)
+		if (isVaal)
 			output += "[Vaal]"
-		if (isAwakened && hasAwakened)
+		if (isAwakened)
 			output += "[Awakened]"
 		return "$output.png"
 	}
 
+	fun getFullname(): String {
+		var output = ""
+		if (isVaal)
+			output += "Vaal "
+		if (isAwakened)
+			output += "Awakened "
+		return output + name
+	}
+
+	fun getDisplay(): String {
+		var output = name
+		if (isVaal)
+			output += " [Vaal]"
+		if (isAwakened)
+			output += " [Awakened]"
+		return output
+	}
+
 	override fun toString(): String {
-		return "GemInfo(name=$name, slot=$slot, tags=$tags, hasVaal=$hasVaal, hasAwakened=$hasAwakened, acquisition=$acquisition)"
+		return "GemInfo(name=$name, slot=$slot, tags=$tags, isVaal=$isVaal, isAwakened=$isAwakened, acquisition=$acquisition)"
 	}
 }
