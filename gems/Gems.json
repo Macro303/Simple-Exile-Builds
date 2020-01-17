@@ -4266,6 +4266,1029 @@
 	}
   },
   {
+	"name": "Holy Flame Totem",
+	"slot": "Red",
+	"tags": [
+	  "Totem",
+	  "Spell",
+	  "Projectile",
+	  "Fire",
+	  "Channelling",
+	  "Physical"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [
+		{
+		  "act": 1,
+		  "quest": "Breaking Some Eggs",
+		  "classes": [
+			"Templar"
+		  ]
+		}
+	  ],
+	  "vendors": [
+		{
+		  "vendor": "Nessa",
+		  "act": 1,
+		  "quest": "Breaking Some Eggs",
+		  "classes": [
+			"Witch",
+			"Marauder",
+			"Templar"
+		  ]
+		},
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
+	"name": "Ice Crash",
+	"slot": "Red",
+	"tags": [
+	  "Attack",
+	  "AoE",
+	  "Cold",
+	  "Melee"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [
+		{
+		  "act": 3,
+		  "quest": "Sever the Right Hand",
+		  "classes": [
+			"Duelist",
+			"Marauder",
+			"Templar"
+		  ]
+		}
+	  ],
+	  "vendors": [
+		{
+		  "vendor": "Clarissa",
+		  "act": 3,
+		  "quest": "Sever the Right Hand",
+		  "classes": [
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
+	"name": "Immortal Call",
+	"slot": "Red",
+	"tags": [
+	  "Spell",
+	  "Duration",
+	  "Guard"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": [
+		{
+		  "vendor": "Petarus and Vanja",
+		  "act": 4,
+		  "quest": "Breaking the Seal",
+		  "classes": [
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
+	"name": "Infernal Blow",
+	"slot": "Red",
+	"tags": [
+	  "Attack",
+	  "AoE",
+	  "Melee",
+	  "Strike",
+	  "Fire",
+	  "Duration"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [
+		{
+		  "act": 1,
+		  "quest": "The Siren's Cadence",
+		  "classes": [
+			"Marauder"
+		  ]
+		}
+	  ],
+	  "vendors": [
+		{
+		  "vendor": "Nessa",
+		  "act": 1,
+		  "quest": "The Siren's Cadence",
+		  "classes": [
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
+	"name": "Leap Slam",
+	"slot": "Red",
+	"tags": [
+	  "Attack",
+	  "AoE",
+	  "Movement",
+	  "Travel",
+	  "Melee"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [
+		{
+		  "act": 1,
+		  "quest": "The Caged Brute",
+		  "classes": [
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ],
+	  "vendors": [
+		{
+		  "vendor": "Nessa",
+		  "act": 1,
+		  "quest": "The Caged Brute",
+		  "classes": [
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
+	"name": "Molten Shell",
+	"slot": "Red",
+	"tags": [
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Fire",
+	  "Physical",
+	  "Guard"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [
+		{
+		  "act": 1,
+		  "quest": "Breaking Some Eggs",
+		  "classes": [
+			"Marauder"
+		  ]
+		}
+	  ],
+	  "vendors": [
+		{
+		  "vendor": "Nessa",
+		  "act": 1,
+		  "quest": "Breaking Some Eggs",
+		  "classes": [
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
+	"name": "Molten Strike",
+	"slot": "Red",
+	"tags": [
+	  "Attack",
+	  "Projectile",
+	  "AoE",
+	  "Melee",
+	  "Strike",
+	  "Fire"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [
+		{
+		  "act": 1,
+		  "quest": "Enemy at the Gate",
+		  "classes": [
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ],
+	  "vendors": [
+		{
+		  "vendor": "Nessa",
+		  "act": 1,
+		  "quest": "Enemy at the Gate",
+		  "classes": [
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
+	"name": "Perforate",
+	"slot": "Red",
+	"tags": [
+	  "Attack",
+	  "AoE",
+	  "Melee"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [
+		{
+		  "act": 1,
+		  "quest": "Enemy at the Gate",
+		  "classes": [
+			"Duelist"
+		  ]
+		}
+	  ],
+	  "vendors": [
+		{
+		  "vendor": "Nessa",
+		  "act": 1,
+		  "quest": "Enemy at the Gate",
+		  "classes": [
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
+	"name": "Pride",
+	"slot": "Red",
+	"tags": [
+	  "Spell",
+	  "AoE",
+	  "Aura",
+	  "Physical"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [
+		{
+		  "act": 3,
+		  "quest": "Lost in Love",
+		  "classes": [
+			"Duelist",
+			"Marauder"
+		  ]
+		}
+	  ],
+	  "vendors": [
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Clarissa",
+		  "act": 3,
+		  "quest": "Lost in Love",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
+	"name": "Punishment",
+	"slot": "Red",
+	"tags": [
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Curse",
+	  "Physical"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [
+		{
+		  "act": 3,
+		  "quest": "Lost in Love",
+		  "classes": [
+			"Duelist",
+			"Marauder"
+		  ]
+		}
+	  ],
+	  "vendors": [
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Clarissa",
+		  "act": 3,
+		  "quest": "Lost in Love",
+		  "classes": [
+			"Witch",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
+	"name": "Rallying Cry",
+	"slot": "Red",
+	"tags": [
+	  "Warcry",
+	  "AoE",
+	  "Duration"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [
+		{
+		  "act": 1,
+		  "quest": "The Caged Brute",
+		  "classes": [
+			"Duelist",
+			"Marauder",
+			"Templar"
+		  ]
+		}
+	  ],
+	  "vendors": [
+		{
+		  "vendor": "Nessa",
+		  "act": 1,
+		  "quest": "The Caged Brute",
+		  "classes": [
+			"Witch",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar"
+		  ]
+		},
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
+	"name": "Reckoning",
+	"slot": "Red",
+	"tags": [
+	  "Trigger",
+	  "Attack",
+	  "AoE",
+	  "Physical",
+	  "Melee"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": [
+		{
+		  "vendor": "Nessa",
+		  "act": 1,
+		  "quest": "Breaking Some Eggs",
+		  "classes": [
+			"Duelist",
+			"Marauder",
+			"Templar"
+		  ]
+		},
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
+	"name": "Rejuvenation Totem",
+	"slot": "Red",
+	"tags": [
+	  "Totem",
+	  "Aura",
+	  "Spell",
+	  "AoE"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": [
+		{
+		  "vendor": "Nessa",
+		  "act": 1,
+		  "quest": "Breaking Some Eggs",
+		  "classes": [
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
+	"name": "Searing Blood",
+	"slot": "Red",
+	"tags": [
+	  "Spell",
+	  "Totem",
+	  "Fire"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [
+		{
+		  "act": 1,
+		  "quest": "The Siren's Cadence",
+		  "classes": [
+			"Templar"
+		  ]
+		}
+	  ],
+	  "vendors": [
+		{
+		  "vendor": "Nessa",
+		  "act": 1,
+		  "quest": "The Siren's Cadence",
+		  "classes": [
+			"Witch",
+			"Marauder",
+			"Templar"
+		  ]
+		},
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
 	"name": "Portal",
 	"slot": "White",
 	"tags": [
@@ -6498,6 +7521,575 @@
 	],
 	"acquisition": {
 	  "recipes": [],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Added Cold Damage Support",
+	"slot": "Green",
+	"tags": [
+	  "Cold",
+	  "Support"
+	],
+	"isAwakened": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Arrow Nova Support",
+	"slot": "Green",
+	"tags": [
+	  "Bow",
+	  "Attack",
+	  "Support",
+	  "Projectile"
+	],
+	"isAwakened": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Cast on Critical Strike Support",
+	"slot": "Green",
+	"tags": [
+	  "Support",
+	  "Spell",
+	  "Trigger"
+	],
+	"isAwakened": true,
+	"acquisition": {
+	  "recipes": [],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Chain Support",
+	"slot": "Green",
+	"tags": [
+	  "Support",
+	  "Chaining",
+	  "Projectile"
+	],
+	"isAwakened": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Cold Penetration Support",
+	"slot": "Green",
+	"tags": [
+	  "Cold",
+	  "Support"
+	],
+	"isAwakened": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Deadly Ailments Support",
+	"slot": "Green",
+	"tags": [
+	  "Support"
+	],
+	"isAwakened": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Fork Support",
+	"slot": "Green",
+	"tags": [
+	  "Support",
+	  "Projectile"
+	],
+	"isAwakened": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Greater Multiple Projectiles Support",
+	"slot": "Green",
+	"tags": [
+	  "Support",
+	  "Projectile"
+	],
+	"isAwakened": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Swift Affliction Support",
+	"slot": "Green",
+	"tags": [
+	  "Support",
+	  "Duration"
+	],
+	"isAwakened": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Vicious Projectiles Support",
+	"slot": "Green",
+	"tags": [
+	  "Projectile",
+	  "Attack",
+	  "Physical",
+	  "Chaos",
+	  "Support"
+	],
+	"isAwakened": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Void Manipulation Support",
+	"slot": "Green",
+	"tags": [
+	  "Chaos",
+	  "Support"
+	],
+	"isAwakened": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Added Chaos Damage Support",
+	"slot": "Blue",
+	"tags": [
+	  "Chaos",
+	  "Support"
+	],
+	"isAwakened": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Added Lightning Damage Support",
+	"slot": "Blue",
+	"tags": [
+	  "Lightning",
+	  "Support"
+	],
+	"isAwakened": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Blasphemy Support",
+	"slot": "Blue",
+	"tags": [
+	  "Support",
+	  "Aura"
+	],
+	"isAwakened": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Cast While Channelling Support",
+	"slot": "Blue",
+	"tags": [
+	  "Support",
+	  "Channelling",
+	  "Spell",
+	  "Trigger"
+	],
+	"isAwakened": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Controlled Destruction Support",
+	"slot": "Blue",
+	"tags": [
+	  "Spell",
+	  "Support"
+	],
+	"isAwakened": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Curse On Hit Support",
+	"slot": "Blue",
+	"tags": [
+	  "Curse",
+	  "Trigger",
+	  "Support"
+	],
+	"isAwakened": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Elemental Focus Support",
+	"slot": "Blue",
+	"tags": [
+	  "Support"
+	],
+	"isAwakened": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Increased Area of Effect Support",
+	"slot": "Blue",
+	"tags": [
+	  "Support",
+	  "AoE"
+	],
+	"isAwakened": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Lightning Penetration Support",
+	"slot": "Blue",
+	"tags": [
+	  "Lightning",
+	  "Support"
+	],
+	"isAwakened": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Minion Damage Support",
+	"slot": "Blue",
+	"tags": [
+	  "Support",
+	  "Minion"
+	],
+	"isAwakened": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Summoner"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Spell Cascade Support",
+	"slot": "Blue",
+	"tags": [
+	  "AoE",
+	  "Spell",
+	  "Support"
+	],
+	"isAwakened": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Spell Echo Support",
+	"slot": "Blue",
+	"tags": [
+	  "Spell",
+	  "Support"
+	],
+	"isAwakened": true,
+	"acquisition": {
+	  "recipes": [],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Unbound Ailments Support",
+	"slot": "Blue",
+	"tags": [
+	  "Support"
+	],
+	"isAwakened": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Unleash Support",
+	"slot": "Blue",
+	"tags": [
+	  "Spell",
+	  "Support"
+	],
+	"isAwakened": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
 	  "quests": [],
 	  "vendors": []
 	}
