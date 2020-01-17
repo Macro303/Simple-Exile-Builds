@@ -4672,6 +4672,539 @@
 	}
   },
   {
+	"name": "Arc",
+	"slot": "Blue",
+	"tags": [
+	  "Vaal",
+	  "Spell",
+	  "Chaining",
+	  "Lightning",
+	  "Duration"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Blight",
+	"slot": "Blue",
+	"tags": [
+	  "Vaal",
+	  "Spell",
+	  "Chaos",
+	  "AoE",
+	  "Duration",
+	  "Nova",
+	  "Channelling"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Clarity",
+	"slot": "Blue",
+	"tags": [
+	  "Aura",
+	  "Vaal",
+	  "Spell",
+	  "AoE",
+	  "Duration"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Cold Snap",
+	"slot": "Blue",
+	"tags": [
+	  "Vaal",
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Cold"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Discipline",
+	"slot": "Blue",
+	"tags": [
+	  "Aura",
+	  "Vaal",
+	  "Spell",
+	  "AoE",
+	  "Duration"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Fireball",
+	"slot": "Blue",
+	"tags": [
+	  "Vaal",
+	  "Projectile",
+	  "Spell",
+	  "AoE",
+	  "Fire"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Flameblast",
+	"slot": "Blue",
+	"tags": [
+	  "Vaal",
+	  "Spell",
+	  "AoE",
+	  "Fire",
+	  "Channelling"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Ice Nova",
+	"slot": "Blue",
+	"tags": [
+	  "Vaal",
+	  "Spell",
+	  "AoE",
+	  "Cold",
+	  "Nova"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Impurity of Lightning",
+	"slot": "Blue",
+	"tags": [
+	  "Aura",
+	  "Vaal",
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Lightning"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Lightning Trap",
+	"slot": "Blue",
+	"tags": [
+	  "Trap",
+	  "Vaal",
+	  "Spell",
+	  "Projectile",
+	  "Duration",
+	  "Lightning"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Lightning Warp",
+	"slot": "Blue",
+	"tags": [
+	  "Vaal",
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Lightning",
+	  "Movement",
+	  "Travel"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Power Siphon",
+	"slot": "Blue",
+	"tags": [
+	  "Vaal",
+	  "Attack",
+	  "Projectile"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Righteous Fire",
+	"slot": "Blue",
+	"tags": [
+	  "Vaal",
+	  "Spell",
+	  "AoE",
+	  "Fire",
+	  "Duration"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Spark",
+	"slot": "Blue",
+	"tags": [
+	  "Vaal",
+	  "Spell",
+	  "Projectile",
+	  "Duration",
+	  "Lightning"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Storm Call",
+	"slot": "Blue",
+	"tags": [
+	  "Vaal",
+	  "Spell",
+	  "AoE",
+	  "Duration",
+	  "Lightning"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
+	"name": "Summon Skeletons",
+	"slot": "Blue",
+	"tags": [
+	  "Vaal",
+	  "Spell",
+	  "Minion",
+	  "Duration"
+	],
+	"isVaal": true,
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 6,
+		  "ingredient": "The Bones"
+		},
+		{
+		  "amount": 9,
+		  "ingredient": "Volatile Power"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Summoner"
+		},
+		{
+		  "amount": 13,
+		  "ingredient": "The Cataclysm"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": []
+	}
+  },
+  {
 	"name": "Breach",
 	"slot": "White",
 	"tags": [
