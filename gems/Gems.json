@@ -8960,6 +8960,525 @@
 	}
   },
   {
+	"name": "Added Fire Damage Support",
+	"slot": "Red",
+	"tags": [
+	  "Fire",
+	  "Physical",
+	  "Support"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Gift of the Gemling Queen"
+		},
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [
+		{
+		  "act": 1,
+		  "quest": "The Caged Brute",
+		  "classes": [
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ],
+	  "vendors": [
+		{
+		  "vendor": "Nessa",
+		  "act": 1,
+		  "quest": "The Caged Brute",
+		  "classes": [
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
+	"name": "Ancestral Call Support",
+	"slot": "Red",
+	"tags": [
+	  "Support",
+	  "Melee",
+	  "Attack",
+	  "Strike"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Gift of the Gemling Queen"
+		},
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [
+		{
+		  "act": 1,
+		  "quest": "Mercy Mission",
+		  "classes": [
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ],
+	  "vendors": [
+		{
+		  "vendor": "Nessa",
+		  "act": 1,
+		  "quest": "Mercy Mission",
+		  "classes": [
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
+	"name": "Ballista Totem Support",
+	"slot": "Red",
+	"tags": [
+	  "Bow",
+	  "Projectile",
+	  "Support",
+	  "Totem"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Gift of the Gemling Queen"
+		},
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": [
+		{
+		  "vendor": "Nessa",
+		  "act": 1,
+		  "quest": "The Caged Brute",
+		  "classes": [
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
+	"name": "Blood Magic Support",
+	"slot": "Red",
+	"tags": [
+	  "Support"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Gift of the Gemling Queen"
+		},
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [
+		{
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"Duelist",
+			"Marauder"
+		  ]
+		}
+	  ],
+	  "vendors": [
+		{
+		  "vendor": "Clarissa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
+	"name": "Bloodlust Support",
+	"slot": "Red",
+	"tags": [
+	  "Attack",
+	  "Physical",
+	  "Support",
+	  "Melee"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Gift of the Gemling Queen"
+		},
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [],
+	  "vendors": [
+		{
+		  "vendor": "Yeena",
+		  "act": 2,
+		  "quest": "Sharp and Cruel",
+		  "classes": [
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Yeena",
+		  "act": 2,
+		  "quest": "The Root of the Problem",
+		  "classes": [
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Siosa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
+	"name": "Brutality Support",
+	"slot": "Red",
+	"tags": [
+	  "Physical",
+	  "Support"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Gift of the Gemling Queen"
+		},
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [
+		{
+		  "act": 4,
+		  "quest": "The Eternal Nightmare",
+		  "classes": [
+			"Marauder"
+		  ]
+		}
+	  ],
+	  "vendors": [
+		{
+		  "vendor": "Petarus and Vanja",
+		  "act": 4,
+		  "quest": "The Eternal Nightmare",
+		  "classes": [
+			"Duelist",
+			"Marauder",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
+	"name": "Burning Damage Support",
+	"slot": "Red",
+	"tags": [
+	  "Fire",
+	  "Support"
+	],
+	"acquisition": {
+	  "recipes": [
+		{
+		  "amount": 9,
+		  "ingredient": "Gift of the Gemling Queen"
+		},
+		{
+		  "amount": 7,
+		  "ingredient": "Dialla's Subjugation"
+		},
+		{
+		  "amount": 6,
+		  "ingredient": "The Fox"
+		},
+		{
+		  "amount": 3,
+		  "ingredient": "Gemcutter's Promise"
+		}
+	  ],
+	  "quests": [
+		{
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"Witch",
+			"Templar"
+		  ]
+		}
+	  ],
+	  "vendors": [
+		{
+		  "vendor": "Clarissa",
+		  "act": 3,
+		  "quest": "A Fixture of Fate",
+		  "classes": [
+			"Witch",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		},
+		{
+		  "vendor": "Lilly Roth",
+		  "act": 6,
+		  "quest": "Fallen from Grace",
+		  "classes": [
+			"Witch",
+			"Shadow",
+			"Ranger",
+			"Duelist",
+			"Marauder",
+			"Templar",
+			"Scion"
+		  ]
+		}
+	  ]
+	}
+  },
+  {
 	"name": "Empower Support",
 	"slot": "Red",
 	"tags": [
