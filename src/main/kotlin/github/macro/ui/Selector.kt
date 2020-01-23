@@ -2,7 +2,7 @@ package github.macro.ui.selector
 
 import github.macro.Util
 import github.macro.build_info.Ascendency
-import github.macro.build_info.BuildInfo
+import github.macro.build_info.Build
 import github.macro.build_info.ClassTag
 import github.macro.build_info.gems.UpdateGem
 import github.macro.ui.UIModel
@@ -20,13 +20,13 @@ import java.io.IOException
  * Created by Macro303 on 2020-Jan-13.
  */
 class Selector : View() {
-	private val builds = FXCollections.observableArrayList<BuildInfo>()
+	private val builds = FXCollections.observableArrayList<Build>()
 	private val ascendencyList = FXCollections.observableArrayList<Ascendency>()
 
 	init {
 		File("builds").listFiles().forEach {
 			try {
-				builds.add(Util.YAML_MAPPER.readValue(it, BuildInfo::class.java))
+				builds.add(Util.YAML_MAPPER.readValue(it, Build::class.java))
 			} catch (ioe: IOException) {
 				LOGGER.error("Unable to Load Build: ${it.nameWithoutExtension} | $ioe")
 			}
@@ -53,7 +53,7 @@ class Selector : View() {
 		center {
 			vbox(spacing = 5.0, alignment = Pos.CENTER) {
 				hbox(spacing = 5.0, alignment = Pos.CENTER) {
-					val buildCombobox = combobox<BuildInfo>(values = builds) {
+					val buildCombobox = combobox<Build>(values = builds) {
 						promptText = "Build"
 						hgrow = Priority.ALWAYS
 						maxWidth = Double.MAX_VALUE
@@ -97,7 +97,7 @@ class Selector : View() {
 					button(text = "Create") {
 						minWidth = 100.0
 						action {
-							val info = BuildInfo(
+							val info = Build(
 								name = nameTextfield.text,
 								classTag = classCombobox.selectedItem!!,
 								ascendency = ascendencyCombobox.selectedItem!!,

@@ -1,6 +1,5 @@
 package github.macro.ui.viewer
 
-import github.macro.Util
 import github.macro.ui.GemPane
 import github.macro.ui.UIModel
 import github.macro.ui.selector.Selector
@@ -67,15 +66,15 @@ class Viewer : View() {
 						vbox(spacing = 5.0, alignment = Pos.TOP_CENTER) {
 							selected.buildProperty.value!!.equipmentProperty.forEach { equipment ->
 								gridpane {
-									row{
-										label(text = equipment.name){
+									row {
+										label(text = equipment.name) {
 											alignment = Pos.CENTER
 											gridpaneConstraints {
 												columnSpan = 3
 											}
 										}
 									}
-									row{
+									row {
 										label(text = equipment.damageRange.display())
 										separator {
 											hgrow = Priority.ALWAYS
