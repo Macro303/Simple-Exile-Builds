@@ -1,5 +1,7 @@
-package github.macro.build_info.gems
+package github.macro.build_info
 
+import github.macro.build_info.gems.Gem
+import github.macro.build_info.gems.UpdateGem
 import javafx.beans.property.SimpleListProperty
 import javafx.collections.FXCollections
 import tornadofx.*

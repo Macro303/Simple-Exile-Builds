@@ -12,7 +12,7 @@ import tornadofx.*
  * Created by Macro303 on 2020-Jan-13.
  */
 @JsonDeserialize(using = GemDeserializer::class)
-class GemInfo(
+class Gem(
 	name: String,
 	slot: Slot,
 	tags: List<GemTag>,

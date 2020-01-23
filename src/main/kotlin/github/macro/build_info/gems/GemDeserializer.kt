@@ -12,10 +12,11 @@ import java.io.IOException
 /**
  * Created by Macro303 on 2020-Jan-13.
  */
-class GemDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<GemInfo?>(vc) {
+class GemDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<Gem?>(vc) {
+
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(jp: JsonParser, ctxt: DeserializationContext?): GemInfo? {
-		val node: JsonNode = jp.codec.readTree(jp)
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Gem? {
+		val node: JsonNode = parser.readValueAsTree()
 
 		val name = node["name"].asText()
 		val slot = Slot.value(node["slot"].asText()) ?: return null
@@ -24,15 +25,20 @@ class GemDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeser
 		val isAwakened = if (node.has("isAwakened")) node["isAwakened"].asBoolean(false) else false
 
 		val acquisitionNode = node["acquisition"]
-		val recipes = acquisitionNode["recipes"].map { Recipe(it["amount"].asInt(), it["ingredient"].asText()) }
-		val quests = acquisitionNode["quests"].map {
+		val recipes = acquisitionNode["recipes"].mapNotNull {
+			Recipe(
+				amount = it["amount"].asInt(),
+				ingredient = it["ingredient"].asText()
+			)
+		}
+		val quests = acquisitionNode["quests"].mapNotNull {
 			Quest(
 				act = it["act"].asInt(),
 				quest = it["quest"].asText(),
 				classes = it["classes"].mapNotNull { tag -> ClassTag.value(tag.asText()) }.sorted()
 			)
 		}
-		val vendors = acquisitionNode["vendors"].map {
+		val vendors = acquisitionNode["vendors"].mapNotNull {
 			Vendor(
 				vendor = it["vendor"].asText(),
 				act = it["act"].asInt(),
@@ -41,7 +47,7 @@ class GemDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeser
 			)
 		}
 
-		return GemInfo(name, slot, tags, isVaal, isAwakened, Acquisition(recipes, quests, vendors))
+		return Gem(name, slot, tags, isVaal, isAwakened, Acquisition(recipes, quests, vendors))
 	}
 
 	companion object {

@@ -4,8 +4,6 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.fasterxml.jackson.databind.annotation.JsonSerialize
 import github.macro.Util
 import github.macro.build_info.equipment.EquipmentInfo
-import github.macro.build_info.gems.GemInfo
-import github.macro.build_info.gems.UpdateGem
 import javafx.beans.property.SimpleListProperty
 import javafx.beans.property.SimpleObjectProperty
 import javafx.beans.property.SimpleStringProperty
@@ -20,12 +18,11 @@ import java.io.IOException
  */
 @JsonDeserialize(using = BuildDeserializer::class)
 @JsonSerialize(using = BuildSerializer::class)
-class BuildInfo(
+class Build(
 	name: String,
 	classTag: ClassTag,
 	ascendency: Ascendency,
-	links: List<List<GemInfo?>>,
-	updates: List<UpdateGem>,
+	gemBuild: GemBuild,
 	equipment: List<EquipmentInfo>
 ) {
 	val nameProperty = SimpleStringProperty()
@@ -37,11 +34,8 @@ class BuildInfo(
 	val ascendencyProperty = SimpleObjectProperty<Ascendency>()
 	var ascendency by ascendencyProperty
 
-	val linksProperty = SimpleListProperty<List<GemInfo?>>()
-	var links by linksProperty
-
-	val updatesProperty = SimpleListProperty<UpdateGem>()
-	var updates by updatesProperty
+	val gemBuildProperty = SimpleObjectProperty<GemBuild>()
+	var gemBuild by gemBuildProperty
 
 	val equipmentProperty = SimpleListProperty<EquipmentInfo>()
 	var equipment by equipmentProperty
@@ -50,16 +44,15 @@ class BuildInfo(
 		this.name = name
 		this.classTag = classTag
 		this.ascendency = ascendency
-		this.links = FXCollections.observableList(links)
-		this.updates = FXCollections.observableList(updates)
+		this.gemBuild = gemBuild
 		this.equipment = FXCollections.observableList(equipment)
 	}
 
 	override fun toString(): String {
-		return "BuildInfo(name=$name, class=$classTag, ascendency=$ascendency, links=$links, updates=$updates, equipment=$equipment)"
+		return "BuildInfo(name=$name, class=$classTag, ascendency=$ascendency, gemBuild=$gemBuild, equipment=$equipment)"
 	}
 
-	fun display(): String = "$name [$classTag${if (ascendency == null) "" else "/" + ascendency.name}]"
+	fun display(): String = "$name [$classTag/$ascendency]"
 
 	fun save() {
 		try {
@@ -71,6 +64,6 @@ class BuildInfo(
 	}
 
 	companion object {
-		private val LOGGER = LogManager.getLogger(BuildInfo::class.java)
+		private val LOGGER = LogManager.getLogger(Build::class.java)
 	}
 }

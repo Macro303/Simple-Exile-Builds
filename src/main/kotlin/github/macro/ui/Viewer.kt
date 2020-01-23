@@ -1,8 +1,5 @@
-package github.macro.ui.viewer
+package github.macro.ui
 
-import github.macro.ui.GemPane
-import github.macro.ui.UIModel
-import github.macro.ui.selector.Selector
 import javafx.geometry.Pos
 import javafx.scene.control.ScrollPane
 import javafx.scene.control.TabPane
@@ -49,7 +46,7 @@ class Viewer : View() {
 					scrollpane(fitToWidth = true) {
 						hbarPolicy = ScrollPane.ScrollBarPolicy.NEVER
 						vbox(spacing = 5.0, alignment = Pos.TOP_CENTER) {
-							selected.buildProperty.value!!.links!!.forEach { link ->
+							selected.buildProperty.value!!.gemBuild.links.forEach { link ->
 								hbox(spacing = 5.0, alignment = Pos.CENTER_LEFT) {
 									link.forEach { gem ->
 										add(GemPane(selected.buildProperty.value!!, gem))

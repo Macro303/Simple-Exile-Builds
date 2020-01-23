@@ -8,14 +8,14 @@ import tornadofx.*
  * Created by Macro303 on 2020-Jan-13.
  */
 class UpdateGem(
-	oldGem: GemInfo?,
-	newGem: GemInfo?,
+	oldGem: Gem?,
+	newGem: Gem?,
 	reason: String
 ) {
-	val oldGemProperty = SimpleObjectProperty<GemInfo?>()
+	val oldGemProperty = SimpleObjectProperty<Gem?>()
 	var oldGem by oldGemProperty
 
-	val newGemProperty = SimpleObjectProperty<GemInfo?>()
+	val newGemProperty = SimpleObjectProperty<Gem?>()
 	var newGem by newGemProperty
 
 	val reasonProperty = SimpleStringProperty()

@@ -1,8 +1,8 @@
 package github.macro.ui
 
 import github.macro.Util
-import github.macro.build_info.BuildInfo
-import github.macro.build_info.gems.GemInfo
+import github.macro.build_info.Build
+import github.macro.build_info.gems.Gem
 import javafx.geometry.Pos
 import javafx.scene.layout.BorderPane
 import javafx.scene.layout.BorderStrokeStyle
@@ -17,7 +17,7 @@ import java.io.File
 /**
  * Created by Macro303 on 2020-Jan-14.
  */
-class GemPane(val build: BuildInfo, var gem: GemInfo?) : BorderPane() {
+class GemPane(val build: Build, var gem: Gem?) : BorderPane() {
 
 	init {
 		initialize()
@@ -64,7 +64,7 @@ class GemPane(val build: BuildInfo, var gem: GemInfo?) : BorderPane() {
 				isWrapText = true
 				prefWidth = 90.0
 				alignment = Pos.CENTER
-				if(gem?.isVaal == true || gem?.isAwakened == true) {
+				if (gem?.isVaal == true || gem?.isAwakened == true) {
 					tooltip(text = gem!!.getDisplay()) {
 						style {
 							fontSize = 10.pt
@@ -77,12 +77,12 @@ class GemPane(val build: BuildInfo, var gem: GemInfo?) : BorderPane() {
 		bottom {
 			hbox(spacing = 5.0) {
 				button(text = "<<") {
-					isVisible = build.updates.any { it.newGem?.equals(gem) ?: false }
+					isVisible = build.gemBuild.updates.any { it.newGem?.equals(gem) ?: false }
 					hgrow = Priority.SOMETIMES
 					isFocusTraversable = false
 					action {
 						val oldGem = gem
-						gem = build.updates.firstOrNull { it.newGem?.equals(gem) ?: false }?.oldGem
+						gem = build.gemBuild.updates.firstOrNull { it.newGem?.equals(gem) ?: false }?.oldGem
 						LOGGER.info(
 							"Previous Selected, Updated ${oldGem?.getFullname()
 								?: "Missing Gem"} to ${gem?.getFullname() ?: "Missing Gem"}"
@@ -95,12 +95,12 @@ class GemPane(val build: BuildInfo, var gem: GemInfo?) : BorderPane() {
 					hgrow = Priority.ALWAYS
 				}
 				button(text = ">>") {
-					isVisible = build.updates.any { it.oldGem?.equals(gem) ?: false }
+					isVisible = build.gemBuild.updates.any { it.oldGem?.equals(gem) ?: false }
 					hgrow = Priority.SOMETIMES
 					isFocusTraversable = false
 					action {
 						val oldGem = gem
-						gem = build.updates.firstOrNull { it.oldGem?.equals(gem) ?: false }?.newGem
+						gem = build.gemBuild.updates.firstOrNull { it.oldGem?.equals(gem) ?: false }?.newGem
 						LOGGER.info(
 							"Next Selected, Updated {} to {}",
 							oldGem?.getFullname() ?: "Missing Gem",
@@ -108,7 +108,7 @@ class GemPane(val build: BuildInfo, var gem: GemInfo?) : BorderPane() {
 						)
 						initialize()
 					}
-					tooltip(build.updates.firstOrNull { it.oldGem?.equals(gem) ?: false }?.reason) {
+					tooltip(build.gemBuild.updates.firstOrNull { it.oldGem?.equals(gem) ?: false }?.reason) {
 						style {
 							fontSize = 10.pt
 						}

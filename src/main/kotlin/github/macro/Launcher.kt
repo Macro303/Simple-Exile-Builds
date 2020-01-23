@@ -1,6 +1,6 @@
 package github.macro
 
-import github.macro.ui.selector.Selector
+import github.macro.ui.Selector
 import javafx.scene.text.FontWeight
 import org.apache.logging.log4j.LogManager
 import tornadofx.*
@@ -8,13 +8,13 @@ import tornadofx.*
 /**
  * Created by Macro303 on 2020-Jan-13.
  */
-class BuddyApp : App(Selector::class, Styles::class) {
+class Launcher : App(Selector::class, Styles::class) {
 	init {
-		importStylesheet(BuddyApp::class.java.getResource("Dark-Theme.css").toExternalForm())
+		importStylesheet(Launcher::class.java.getResource("Dark-Theme.css").toExternalForm())
 	}
 
 	companion object {
-		private val LOGGER = LogManager.getLogger(BuddyApp::class.java)
+		private val LOGGER = LogManager.getLogger(Launcher::class.java)
 	}
 }
 

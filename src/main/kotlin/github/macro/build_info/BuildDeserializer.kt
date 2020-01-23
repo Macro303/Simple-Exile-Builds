@@ -14,9 +14,9 @@ import java.io.IOException
 /**
  * Created by Macro303 on 2020-Jan-13.
  */
-class BuildDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<BuildInfo?>(vc) {
+class BuildDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<Build?>(vc) {
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildInfo? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): Build? {
 		val node: JsonNode = parser.codec.readTree(parser)
 
 		val name = node["name"].asText()
@@ -31,7 +31,8 @@ class BuildDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDes
 		}
 		val equipment = node["equipment"].mapNotNull { Util.equipmentByName(it.asText()) }
 
-		return BuildInfo(name, classTag, ascendency, links, updates, equipment)
+		return Build(name, classTag, ascendency,
+			GemBuild(links, updates), equipment)
 	}
 
 	companion object {

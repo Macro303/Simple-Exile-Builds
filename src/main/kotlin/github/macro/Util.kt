@@ -9,7 +9,7 @@ import com.fasterxml.jackson.datatype.jdk8.Jdk8Module
 import github.macro.build_info.ClassTag
 import github.macro.build_info.ClassTag.*
 import github.macro.build_info.equipment.EquipmentInfo
-import github.macro.build_info.gems.GemInfo
+import github.macro.build_info.gems.Gem
 import github.macro.build_info.gems.Slot
 import github.macro.build_info.gems.Slot.*
 import javafx.animation.KeyFrame
@@ -30,10 +30,10 @@ object Util {
 	internal val YAML_MAPPER = ObjectMapper(YAMLFactory().disable(YAMLGenerator.Feature.WRITE_DOC_START_MARKER))
 	val gems by lazy {
 		try {
-			JSON_MAPPER.readValue(File("gems", "Gems.json"), object : TypeReference<List<GemInfo>>() {})
+			JSON_MAPPER.readValue(File("gems", "Gems.json"), object : TypeReference<List<Gem>>() {})
 		} catch (ioe: IOException) {
 			LOGGER.error("Unable to Load Gems: $ioe")
-			emptyList<GemInfo>()
+			emptyList<Gem>()
 		}
 	}
 	val equipment by lazy {
@@ -54,24 +54,20 @@ object Util {
 		YAML_MAPPER.registerModule(Jdk8Module())
 	}
 
-	fun slotToColour(slot: Slot?): String {
-		return when (slot) {
-			RED -> "#DD9999"
-			GREEN -> "#99DD99"
-			BLUE -> "#9999DD"
-			WHITE -> "#DDDDDD"
-			else -> "#999999"
-		}
+	fun slotToColour(slot: Slot?): String = when (slot) {
+		RED -> "#DD9999"
+		GREEN -> "#99DD99"
+		BLUE -> "#9999DD"
+		WHITE -> "#DDDDDD"
+		else -> "#999999"
 	}
 
-	fun gemByName(name: String): GemInfo? = gems.firstOrNull {
+	fun gemByName(name: String): Gem? = gems.firstOrNull {
 		it.getFullname().equals(name, ignoreCase = true)
 	}
 
-	fun equipmentByName(name: String): EquipmentInfo? {
-		return equipment.firstOrNull {
-			it.name.equals(name, ignoreCase = true)
-		}
+	fun equipmentByName(name: String): EquipmentInfo? = equipment.firstOrNull {
+		it.name.equals(name, ignoreCase = true)
 	}
 
 	internal fun hackTooltipStartTiming(tooltip: Tooltip) {
@@ -89,13 +85,13 @@ object Util {
 		}
 	}
 
-	internal fun getClassGems(classTag: ClassTag): List<GemInfo?> = when (classTag) {
-		SCION -> listOf(gemByName("Spectral Throw"), gemByName("Onslaught Support"))
-		MARAUDER -> listOf(gemByName("Heavy Strike"), gemByName("Ruthless Support"))
-		RANGER -> listOf(gemByName("Burning Arrow"), gemByName("Pierce Support"))
-		WITCH -> listOf(gemByName("Fireball"), gemByName("Arcane Surge Support"))
-		DUELIST -> listOf(gemByName("Double Strike"), gemByName("Chance to Bleed Support"))
-		TEMPLAR -> listOf(gemByName("Glacial Hammer"), gemByName("Elemental Proliferation Support"))
-		SHADOW -> listOf(gemByName("Viper Strike"), gemByName("Lesser Poison Support"))
-	}.plus(gemByName("Empower Support"))
+	internal fun getClassGems(classTag: ClassTag): List<Gem?> = when (classTag) {
+		SCION -> listOf("Spectral Throw", "Onslaught Support")
+		MARAUDER -> listOf("Heavy Strike", "Ruthless Support")
+		RANGER -> listOf("Burning Arrow", "Pierce Support")
+		WITCH -> listOf("Fireball", "Arcane Surge Support")
+		DUELIST -> listOf("Double Strike", "Chance to Bleed Support")
+		TEMPLAR -> listOf("Glacial Hammer", "Elemental Proliferation Support")
+		SHADOW -> listOf("Viper Strike", "Lesser Poison Support")
+	}.plus("Empower Support").map { gemByName(it) }
 }

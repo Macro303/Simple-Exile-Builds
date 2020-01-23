@@ -10,25 +10,27 @@ import java.io.IOException
 /**
  * Created by Macro303 on 2020-Jan-13.
  */
-class BuildSerializer @JvmOverloads constructor(t: Class<BuildInfo>? = null) : StdSerializer<BuildInfo>(t) {
+class BuildSerializer @JvmOverloads constructor(t: Class<Build>? = null) : StdSerializer<Build>(t) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun serialize(value: BuildInfo, parser: JsonGenerator, provider: SerializerProvider?) {
+	override fun serialize(value: Build, parser: JsonGenerator, provider: SerializerProvider?) {
 		parser.writeStartObject()
 		parser.writeStringField("name", value.name)
 		parser.writeStringField("class", value.classTag.name)
 		parser.writeStringField("ascendency", value.ascendency.name)
 		parser.writeObjectFieldStart("gems")
-		parser.writeObjectField("links", value.links.map { link -> link.map { it?.getFullname() } })
-		parser.writeArrayFieldStart("updates")
-		value.updates.forEach { update ->
-			parser.writeStartObject()
-			parser.writeStringField("oldGem", update.oldGem?.getFullname())
-			parser.writeStringField("newGem", update.newGem?.getFullname())
-			parser.writeStringField("reason", update.reason)
-			parser.writeEndObject()
+		value.gemBuild.let {
+			parser.writeObjectField("links", it.links.map { link -> link.map { it?.getFullname() } })
+			parser.writeArrayFieldStart("updates")
+			it.updates.forEach { update ->
+				parser.writeStartObject()
+				parser.writeStringField("oldGem", update.oldGem?.getFullname())
+				parser.writeStringField("newGem", update.newGem?.getFullname())
+				parser.writeStringField("reason", update.reason)
+				parser.writeEndObject()
+			}
+			parser.writeEndArray()
 		}
-		parser.writeEndArray()
 		parser.writeEndObject()
 		parser.writeObjectField("equipment", value.equipment.map { it.name })
 		parser.writeEndObject()

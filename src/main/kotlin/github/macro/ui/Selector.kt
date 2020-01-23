@@ -1,13 +1,11 @@
-package github.macro.ui.selector
+package github.macro.ui
 
 import github.macro.Util
 import github.macro.build_info.Ascendency
 import github.macro.build_info.Build
 import github.macro.build_info.ClassTag
+import github.macro.build_info.GemBuild
 import github.macro.build_info.gems.UpdateGem
-import github.macro.ui.UIModel
-import github.macro.ui.viewer.Viewer
-import javafx.beans.property.SimpleObjectProperty
 import javafx.collections.FXCollections
 import javafx.geometry.Pos
 import javafx.scene.layout.Priority
@@ -66,7 +64,7 @@ class Selector : View() {
 						action {
 							LOGGER.info("Viewing Build: ${buildCombobox.selectedItem?.display()}")
 							val scope = Scope()
-							setInScope(UIModel(SimpleObjectProperty(buildCombobox.selectedItem)), scope)
+							setInScope(UIModel(buildCombobox.selectedItem), scope)
 							find<Viewer>(scope).openWindow(owner = null, resizable = false)
 							close()
 						}
@@ -101,15 +99,17 @@ class Selector : View() {
 								name = nameTextfield.text,
 								classTag = classCombobox.selectedItem!!,
 								ascendency = ascendencyCombobox.selectedItem!!,
-								links = listOf(
-									Util.getClassGems(classTag = classCombobox.selectedItem!!),
-									listOf(Util.gemByName(name = "Portal"))
-								),
-								updates = listOf(
-									UpdateGem(
-										oldGem = Util.gemByName("Empower Support"),
-										newGem = Util.gemByName("Enhance Support"),
-										reason = "Gems are all Max Level"
+								gemBuild = GemBuild(
+									links = listOf(
+										Util.getClassGems(classTag = classCombobox.selectedItem!!),
+										listOf(Util.gemByName(name = "Portal"))
+									),
+									updates = listOf(
+										UpdateGem(
+											oldGem = Util.gemByName("Empower Support"),
+											newGem = Util.gemByName("Enhance Support"),
+											reason = "Gems are all Max Level"
+										)
 									)
 								),
 								equipment = emptyList()
@@ -117,7 +117,7 @@ class Selector : View() {
 							LOGGER.info("Creating Build: ${info.display()}")
 							info.save()
 							val scope = Scope()
-							setInScope(UIModel(SimpleObjectProperty(info)), scope)
+							setInScope(UIModel(info), scope)
 							find<Viewer>(scope).openWindow(owner = null, resizable = false)
 							close()
 						}
