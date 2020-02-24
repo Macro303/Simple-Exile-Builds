@@ -14,43 +14,43 @@ import java.io.IOException
  */
 class GemDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<Gem?>(vc) {
 
-	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Gem? {
-		val node: JsonNode = parser.readValueAsTree()
+    @Throws(IOException::class, JsonProcessingException::class)
+    override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Gem? {
+        val node: JsonNode = parser.readValueAsTree()
 
-		val name = node["name"].asText()
-		val slot = Slot.value(node["slot"].asText()) ?: return null
-		val tags = node["tags"].mapNotNull { GemTag.value(it.asText()) }.sorted()
-		val isVaal = if (node.has("isVaal")) node["isVaal"].asBoolean(false) else false
-		val isAwakened = if (node.has("isAwakened")) node["isAwakened"].asBoolean(false) else false
+        val name = node["name"].asText()
+        val slot = Slot.value(node["slot"].asText()) ?: return null
+        val tags = node["tags"].mapNotNull { GemTag.value(it.asText()) }.sorted()
+        val isVaal = if (node.has("isVaal")) node["isVaal"].asBoolean(false) else false
+        val isAwakened = if (node.has("isAwakened")) node["isAwakened"].asBoolean(false) else false
 
-		val acquisitionNode = node["acquisition"]
-		val recipes = acquisitionNode["recipes"].mapNotNull {
-			Recipe(
-				amount = it["amount"].asInt(),
-				ingredient = it["ingredient"].asText()
-			)
-		}
-		val quests = acquisitionNode["quests"].mapNotNull {
-			Quest(
-				act = it["act"].asInt(),
-				quest = it["quest"].asText(),
-				classes = it["classes"].mapNotNull { tag -> ClassTag.value(tag.asText()) }.sorted()
-			)
-		}
-		val vendors = acquisitionNode["vendors"].mapNotNull {
-			Vendor(
-				vendor = it["vendor"].asText(),
-				act = it["act"].asInt(),
-				quest = it["quest"].asText(),
-				classes = it["classes"].mapNotNull { tag -> ClassTag.value(tag.asText()) }.sorted()
-			)
-		}
+        val acquisitionNode = node["acquisition"]
+        val recipes = acquisitionNode["recipes"].mapNotNull {
+            Recipe(
+                amount = it["amount"].asInt(),
+                ingredient = it["ingredient"].asText()
+            )
+        }
+        val quests = acquisitionNode["quests"].mapNotNull {
+            Quest(
+                act = it["act"].asInt(),
+                quest = it["quest"].asText(),
+                classes = it["classes"].mapNotNull { tag -> ClassTag.value(tag.asText()) }.sorted()
+            )
+        }
+        val vendors = acquisitionNode["vendors"].mapNotNull {
+            Vendor(
+                vendor = it["vendor"].asText(),
+                act = it["act"].asInt(),
+                quest = it["quest"].asText(),
+                classes = it["classes"].mapNotNull { tag -> ClassTag.value(tag.asText()) }.sorted()
+            )
+        }
 
-		return Gem(name, slot, tags, isVaal, isAwakened, Acquisition(recipes, quests, vendors))
-	}
+        return Gem(name, slot, tags, isVaal, isAwakened, Acquisition(recipes, quests, vendors))
+    }
 
-	companion object {
-		private val LOGGER = LogManager.getLogger(GemDeserializer::class.java)
-	}
+    companion object {
+        private val LOGGER = LogManager.getLogger(GemDeserializer::class.java)
+    }
 }
