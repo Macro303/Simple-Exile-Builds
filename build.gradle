@@ -2,7 +2,7 @@ plugins {
 	id 'application'
 	id 'idea'
 	id 'maven'
-	id 'com.github.ben-manes.versions' version '0.27.0'
+	id 'com.github.ben-manes.versions' version '0.28.0'
 	id 'org.openjfx.javafxplugin' version '0.0.8'
 }
 
