@@ -18,8 +18,8 @@ Show what Gems to link and update as you progress as well as include how to get 
  - [log4j-api: 2.13.0](https://logging.apache.org/log4j/2.x/)
  - [log4j-core: 2.13.0 (Runtime)](https://logging.apache.org/log4j/2.x/)
  
-## Running
-**To run from source:**
+## Execution
+### Running from source:
 ```bash
 $ gradle clean run
 ```
