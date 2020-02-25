@@ -22,7 +22,12 @@ class Selector : View() {
     private val ascendencyList = FXCollections.observableArrayList<Ascendency>()
 
     init {
-        File("builds").listFiles().forEach {
+        val folder = File("builds")
+        if(!folder.exists())
+            folder.mkdirs()
+        folder.walkTopDown().forEach {
+            if(it.isDirectory)
+                return@forEach
             try {
                 builds.add(Util.YAML_MAPPER.readValue(it, Build::class.java))
             } catch (ioe: IOException) {

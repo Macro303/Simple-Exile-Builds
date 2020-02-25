@@ -14,10 +14,11 @@ out/
 .project
 *.db
 *.sqlite
-
-# =====Project=====
 *.yaml
 *.json
 *.csv
+
+# =====Project=====
 !gems/
 !Gems.json
+!versions.json

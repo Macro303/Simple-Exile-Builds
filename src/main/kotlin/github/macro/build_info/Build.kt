@@ -10,8 +10,7 @@ import javafx.beans.property.SimpleObjectProperty
 import javafx.beans.property.SimpleStringProperty
 import javafx.collections.FXCollections
 import org.apache.logging.log4j.LogManager
-import tornadofx.getValue
-import tornadofx.setValue
+import tornadofx.*
 import java.io.File
 import java.io.IOException
 
@@ -57,8 +56,11 @@ class Build(
     fun display(): String = "$name [$classTag/$ascendency]"
 
     fun save() {
+        val folder = File("builds")
+        if (!folder.exists())
+            folder.mkdirs()
         try {
-            val buildFile = File("builds", name.replace(" ", "_") + ".yaml")
+            val buildFile = File(folder, name.replace(" ", "_") + ".yaml")
             Util.YAML_MAPPER.writeValue(buildFile, this)
         } catch (ioe: IOException) {
             LOGGER.error("Unable to save build: $ioe")

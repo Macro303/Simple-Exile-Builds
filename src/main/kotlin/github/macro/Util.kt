@@ -12,10 +12,16 @@ import github.macro.build_info.equipment.EquipmentInfo
 import github.macro.build_info.gems.Gem
 import github.macro.build_info.gems.Slot
 import github.macro.build_info.gems.Slot.*
+import github.macro.config.Config
 import javafx.animation.KeyFrame
 import javafx.animation.Timeline
 import javafx.scene.control.Tooltip
 import javafx.util.Duration
+import kong.unirest.GenericType
+import kong.unirest.HttpResponse
+import kong.unirest.Unirest
+import kong.unirest.UnirestException
+import org.apache.logging.log4j.Level
 import org.apache.logging.log4j.LogManager
 import java.io.File
 import java.io.IOException
@@ -26,9 +32,26 @@ import java.lang.reflect.Field
  */
 object Util {
     private val LOGGER = LogManager.getLogger(Util::class.java)
-    internal val JSON_MAPPER = ObjectMapper()
-    internal val YAML_MAPPER = ObjectMapper(YAMLFactory().disable(YAMLGenerator.Feature.WRITE_DOC_START_MARKER))
-    val gems by lazy {
+    private val HEADERS = mapOf(
+        "Accept" to "application/json",
+        "Content-Type" to "application/json",
+        "User-Agent" to "Exile Buddy"
+    )
+    internal val JSON_MAPPER: ObjectMapper by lazy {
+        val mapper = ObjectMapper()
+        mapper.enable(SerializationFeature.INDENT_OUTPUT)
+        mapper.findAndRegisterModules()
+        mapper.registerModule(Jdk8Module())
+        mapper
+    }
+    internal val YAML_MAPPER: ObjectMapper by lazy {
+        val mapper = ObjectMapper(YAMLFactory().disable(YAMLGenerator.Feature.WRITE_DOC_START_MARKER))
+        mapper.enable(SerializationFeature.INDENT_OUTPUT)
+        mapper.findAndRegisterModules()
+        mapper.registerModule(Jdk8Module())
+        mapper
+    }
+    val gems: List<Gem> by lazy {
         try {
             JSON_MAPPER.readValue(File("gems", "Gems.json"), object : TypeReference<List<Gem>>() {})
         } catch (ioe: IOException) {
@@ -36,7 +59,7 @@ object Util {
             emptyList<Gem>()
         }
     }
-    val equipment by lazy {
+    val equipment: List<EquipmentInfo> by lazy {
         try {
             JSON_MAPPER.readValue(File("equipment", "Equipment.json"), object : TypeReference<List<EquipmentInfo>>() {})
         } catch (ioe: IOException) {
@@ -46,12 +69,18 @@ object Util {
     }
 
     init {
-        JSON_MAPPER.enable(SerializationFeature.INDENT_OUTPUT)
-        JSON_MAPPER.findAndRegisterModules()
-        JSON_MAPPER.registerModule(Jdk8Module())
-        YAML_MAPPER.enable(SerializationFeature.INDENT_OUTPUT)
-        YAML_MAPPER.findAndRegisterModules()
-        YAML_MAPPER.registerModule(Jdk8Module())
+        Unirest.config().enableCookieManagement(false)
+        if (Config.INSTANCE.proxy.hostName != null && Config.INSTANCE.proxy.port != null)
+            Unirest.config().proxy(Config.INSTANCE.proxy.hostName, Config.INSTANCE.proxy.port!!)
+        Unirest.config().objectMapper = object : kong.unirest.ObjectMapper {
+            override fun writeValue(value: Any?): String {
+                return JSON_MAPPER.writeValueAsString(value)
+            }
+
+            override fun <T : Any?> readValue(value: String?, valueType: Class<T>?): T {
+                return JSON_MAPPER.readValue(value, valueType)
+            }
+        }
     }
 
     fun slotToColour(slot: Slot?): String = when (slot) {
@@ -94,4 +123,29 @@ object Util {
         TEMPLAR -> listOf("Glacial Hammer", "Elemental Proliferation Support")
         SHADOW -> listOf("Viper Strike", "Lesser Poison Support")
     }.plus("Empower Support").map { gemByName(it) }
+
+    fun <T> httpRequest(url: String, headers: Map<String, String> = HEADERS, klass: GenericType<T>): T? {
+        val request = Unirest.get(url)
+        request.headers(headers)
+        LOGGER.debug("GET : >>> - ${request.url} - $headers")
+        val response: HttpResponse<T>
+        try {
+            response = request.asObject(klass)
+        } catch (ue: UnirestException) {
+            LOGGER.error("Unable to load URL: $ue")
+            return null
+        }
+
+        val level = when {
+            response.status < 100 -> Level.ERROR
+            response.status < 200 -> Level.INFO
+            response.status < 300 -> Level.INFO
+            response.status < 400 -> Level.WARN
+            response.status < 500 -> Level.WARN
+            else -> Level.ERROR
+        }
+        LOGGER.log(level, "GET: ${response.status} ${response.statusText} - ${request.url}")
+        LOGGER.debug("Response: ${response.body}")
+        return if (response.status != 200) null else response.body
+    }
 }
