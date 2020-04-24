@@ -14,7 +14,7 @@ repositories {
 }
 
 mainClassName = "github.macro.Launcher"
-def loggerVersion = '2.13.1'
+def loggerVersion = '2.13.2'
 def jacksonVersion = '2.10.3'
 
 dependencies {
