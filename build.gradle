@@ -14,7 +14,7 @@ repositories {
 
 mainClassName = "github.macro.Launcher"
 def loggerVersion = '2.13.3'
-def jacksonVersion = '2.11.0'
+def jacksonVersion = '2.11.1'
 
 dependencies {
 	implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
