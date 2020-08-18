@@ -1,5 +1,6 @@
 .root {
-	-fx-accent: #1a6ee4;
+	/*-fx-accent: #1a6ee4;*/
+	-fx-accent: #4682B4;
 	-fx-focus-color: -fx-accent;
 	-fx-base: #111;
 	-fx-control-inner-background: derive(-fx-base, 50%);
@@ -34,8 +35,7 @@
 	-fx-font-weight: none;
 }
 
-.combo-table-view { /*optional */
-	/*i only use this style when a table-view has to emulate a combo-box or auto-complete look, by making the non focused color same as the focused one*/
+.combo-table-view {
 	-fx-selection-bar: -fx-accent;
 	-fx-selection-bar-non-focused: -fx-accent;
 }

@@ -14,6 +14,7 @@ import javafx.beans.property.SimpleStringProperty
 import javafx.collections.FXCollections
 import org.apache.logging.log4j.LogManager
 import tornadofx.*
+import java.io.File
 import java.io.IOException
 
 /**
@@ -22,23 +23,27 @@ import java.io.IOException
 @JsonDeserialize(using = GemDeserializer::class)
 class Gem(
 	name: String,
-	slot: Slot,
-	tags: List<GemTag>,
+	colour: Colour,
+	tags: List<Tag>,
 	isVaal: Boolean,
+	isSupport: Boolean,
 	isAwakened: Boolean,
 	acquisition: Acquisition
 ) {
 	val nameProperty = SimpleStringProperty()
 	var name by nameProperty
 
-	val slotProperty = SimpleObjectProperty<Slot>()
-	var slot by slotProperty
+	val colourProperty = SimpleObjectProperty<Colour>()
+	var colour by colourProperty
 
-	val tagsProperty = SimpleListProperty<GemTag>()
+	val tagsProperty = SimpleListProperty<Tag>()
 	var tags by tagsProperty
 
 	val isVaalProperty = SimpleBooleanProperty()
 	var isVaal by isVaalProperty
+
+	val isSupportProperty = SimpleBooleanProperty()
+	var isSupport by isSupportProperty
 
 	val isAwakenedProperty = SimpleBooleanProperty()
 	var isAwakened by isAwakenedProperty
@@ -48,25 +53,41 @@ class Gem(
 
 	init {
 		this.name = name
-		this.slot = slot
+		this.colour = colour
 		this.tags = FXCollections.observableList(tags)
 		this.isVaal = isVaal
+		this.isSupport = isSupport
 		this.isAwakened = isAwakened
 		this.acquisition = acquisition
 	}
 
-	fun getFilename(): String {
-		val output = getFullname().replace(" ", "_")
-		return "$output.png"
+	fun getFile(): File {
+		var baseFolder = File("resources", "Gems")
+		if (isSupport) {
+			baseFolder = File(baseFolder, "Support")
+			if(isAwakened)
+				baseFolder = File(baseFolder, "Awakened")
+		}else {
+			baseFolder = File(baseFolder, "Active")
+			if(isVaal)
+				baseFolder = File(baseFolder, "Vaal")
+		}
+		return File(baseFolder, name.replace(" ", "_") + ".png")
 	}
 
-	fun getFullname(): String {
+	fun getFullname(): String{
+		val prefix = if (isVaal) "Vaal " else if (isAwakened) "Awakened " else ""
+		val suffix = if (isSupport) " Support" else ""
+		return prefix + name + suffix
+	}
+
+	fun getTagname(): String {
 		val suffix = if (isVaal) " [Vaal]" else if (isAwakened) " [Awakened]" else ""
-		return name + suffix
+		return name + (if (isSupport) " Support" else "") + suffix
 	}
 
 	override fun toString(): String {
-		return "GemInfo(name='$name', slot=$slot, tags=$tags, isVaal=$isVaal, isAwakened=$isAwakened, acquisition=$acquisition)"
+		return "Gem(nameProperty=$nameProperty, colourProperty=$colourProperty, tagsProperty=$tagsProperty, isVaalProperty=$isVaalProperty, isSupportProperty=$isSupportProperty, isAwakenedProperty=$isAwakenedProperty, acquisitionProperty=$acquisitionProperty)"
 	}
 }
 
@@ -77,23 +98,32 @@ class GemDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeser
 		val node: JsonNode = parser.readValueAsTree()
 
 		val name = node["name"].asText()
-		val slot = Slot.value(node["slot"].asText())
-		if (slot == null) {
-			LOGGER.info("Invalid Slot: ${node["slot"].asText()}")
+		val colour = Colour.value(node["colour"].asText())
+		if (colour == null) {
+			LOGGER.info("Invalid Colour: ${node["colour"].asText()}")
 			return null
 		}
 		val tags = node["tags"].mapNotNull {
-			val temp = GemTag.value(it.asText())
+			val temp = Tag.value(it.asText())
 			if (temp == null)
 				LOGGER.info("Invalid Gem Tag: ${it.asText()}")
 			temp
 		}.sorted()
-		val isVaal = if (node.has("isVaal")) node["isVaal"].asBoolean(false) else false
-		val isAwakened = if (node.has("isAwakened")) node["isAwakened"].asBoolean(false) else false
+		val isVaal = node["isVaal"]?.asBoolean(false) ?: false
+		val isSupport = node["isSupport"]?.asBoolean(false) ?: false
+		val isAwakened = node["isAwakened"]?.asBoolean(false) ?: false
 
 		val acquisition = Util.JSON_MAPPER.treeToValue(node["acquisition"], Acquisition::class.java)
 
-		return Gem(name, slot, tags, isVaal, isAwakened, acquisition = acquisition)
+		return Gem(
+			name = name,
+			colour = colour,
+			tags = tags,
+			isVaal = isVaal,
+			isSupport = isSupport,
+			isAwakened = isAwakened,
+			acquisition = acquisition
+		)
 	}
 
 	companion object {

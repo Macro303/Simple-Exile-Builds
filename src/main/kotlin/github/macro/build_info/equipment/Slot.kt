@@ -4,9 +4,7 @@ package github.macro.build_info.equipment
  * Created by Macro303 on 2020-Jan-16.
  */
 enum class Slot {
-	MAIN_HAND,
-	OFF_HAND,
-	BOTH_HANDS,
+	WEAPON,
 	CHEST,
 	BOOTS,
 	GLOVES,
@@ -14,7 +12,8 @@ enum class Slot {
 	AMULET,
 	BELT,
 	RING,
-	FLASK;
+	FLASK,
+	ERROR;
 
 	companion object {
 		fun value(name: String): Slot? = values().firstOrNull { it.name.equals(name, ignoreCase = true) }

@@ -52,7 +52,7 @@ class Reward(
 	}
 
 	override fun toString(): String {
-		return "Reward(act=$act, classes=$classes, quest='$quest', type=$rewardType, vendor='$vendor')"
+		return "Reward(actProperty=$actProperty, classesProperty=$classesProperty, questProperty=$questProperty, rewardTypeProperty=$rewardTypeProperty, vendorProperty=$vendorProperty)"
 	}
 }
 
@@ -66,7 +66,7 @@ class RewardDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDe
 		val classes = node["classes"].mapNotNull { tag -> ClassTag.value(tag.asText()) }.sorted()
 		val quest = node["quest"].asText()
 		val rewardType = RewardType.value(node["type"].asText())
-		if(rewardType == null){
+		if (rewardType == null) {
 			LOGGER.warn("Invalid Reward Type: ${node["type"].asText()}")
 			return null
 		}

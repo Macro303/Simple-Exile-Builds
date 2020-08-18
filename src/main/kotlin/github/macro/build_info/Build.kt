@@ -11,11 +11,9 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer
 import com.fasterxml.jackson.databind.ser.std.StdSerializer
 import github.macro.Util
-import github.macro.build_info.equipment.EquipmentInfo
-import javafx.beans.property.SimpleListProperty
+import github.macro.Util.cleanName
 import javafx.beans.property.SimpleObjectProperty
 import javafx.beans.property.SimpleStringProperty
-import javafx.collections.FXCollections
 import org.apache.logging.log4j.LogManager
 import tornadofx.*
 import java.io.File
@@ -31,8 +29,8 @@ class Build(
 	name: String,
 	classTag: ClassTag,
 	ascendency: Ascendency,
-	buildGems: BuildGems,
-	equipment: List<EquipmentInfo>
+	gems: BuildGems,
+	equipment: BuildEquipment
 ) {
 	val versionProperty = SimpleStringProperty()
 	var version by versionProperty
@@ -46,10 +44,10 @@ class Build(
 	val ascendencyProperty = SimpleObjectProperty<Ascendency>()
 	var ascendency by ascendencyProperty
 
-	val buildGemsProperty = SimpleObjectProperty<BuildGems>()
-	var buildGems by buildGemsProperty
+	val gemsProperty = SimpleObjectProperty<BuildGems>()
+	var gems by gemsProperty
 
-	val equipmentProperty = SimpleListProperty<EquipmentInfo>()
+	val equipmentProperty = SimpleObjectProperty<BuildEquipment>()
 	var equipment by equipmentProperty
 
 	init {
@@ -57,36 +55,23 @@ class Build(
 		this.name = name
 		this.classTag = classTag
 		this.ascendency = ascendency
-		this.buildGems = buildGems
-		this.equipment = FXCollections.observableList(equipment)
+		this.gems = gems
+		this.equipment = equipment
 	}
 
 	val filename: String
 		get() = "{$version}_${name.replace(" ", "_")}.yaml"
 
-	override fun toString(): String {
-		return "BuildInfo(version='$version', name='$name', class=$classTag, ascendency=$ascendency, gemBuild=$buildGems, equipment=$equipment)"
-	}
-
-	fun display(): String = "{$version} $name [$classTag/$ascendency]"
+	val display: String
+		get() = "{$version} $name [${classTag.cleanName()}/${ascendency.cleanName()}]"
 
 	fun save() {
-		val folder = File("builds")
-		if (!folder.exists())
-			folder.mkdirs()
 		try {
-			val buildFile = File(folder, filename)
+			val buildFile = File("builds", filename)
 			Util.YAML_MAPPER.writeValue(buildFile, this)
 		} catch (ioe: IOException) {
 			LOGGER.error("Unable to save build: $ioe")
 		}
-	}
-
-	fun rename(oldName: String) {
-		val oldFile = File("builds", oldName)
-		val newFile = File("builds", filename)
-		oldFile.renameTo(newFile)
-		save()
 	}
 
 	fun delete() {
@@ -96,6 +81,10 @@ class Build(
 		} catch (ioe: IOException) {
 			LOGGER.error("Unable to delete build: $ioe")
 		}
+	}
+
+	override fun toString(): String {
+		return "Build(versionProperty=$versionProperty, nameProperty=$nameProperty, classProperty=$classProperty, ascendencyProperty=$ascendencyProperty, gemsProperty=$gemsProperty, equipmentProperty=$equipmentProperty)"
 	}
 
 	companion object {
@@ -121,14 +110,14 @@ class BuildDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDes
 			return null
 		}
 		val buildGems = Util.YAML_MAPPER.treeToValue(node["Gems"], BuildGems::class.java)
-		val equipment = node["Equipment"].mapNotNull { Util.equipmentByName(it.asText()) }
+		val equipment = Util.YAML_MAPPER.treeToValue(node["Equipment"], BuildEquipment::class.java)
 
 		return Build(
 			version = version,
 			name = name,
 			classTag = classTag,
 			ascendency = ascendency,
-			buildGems = buildGems,
+			gems = buildGems,
 			equipment = equipment
 		)
 	}
@@ -147,8 +136,8 @@ class BuildSerializer @JvmOverloads constructor(t: Class<Build>? = null) : StdSe
 		parser.writeStringField("Name", value.name)
 		parser.writeStringField("Class", value.classTag.name)
 		parser.writeStringField("Ascendency", value.ascendency.name)
-		parser.writeObjectField("Gems", value.buildGems)
-		parser.writeObjectField("Equipment", value.equipment.map { it.name })
+		parser.writeObjectField("Gems", value.gems)
+		parser.writeObjectField("Equipment", value.equipment)
 		parser.writeEndObject()
 	}
 }

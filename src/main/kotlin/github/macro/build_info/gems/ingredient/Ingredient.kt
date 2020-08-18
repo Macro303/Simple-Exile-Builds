@@ -50,7 +50,7 @@ class Ingredient(
 	}
 
 	override fun toString(): String {
-		return "Ingredient(name=$name, count=$count, level=$level, quality=$quality, type=$ingredientType)"
+		return "Ingredient(nameProperty=$nameProperty, countProperty=$countProperty, levelProperty=$levelProperty, qualityProperty=$qualityProperty, ingredientTypeProperty=$ingredientTypeProperty)"
 	}
 }
 
@@ -65,7 +65,7 @@ class IngredientDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : S
 		val level = node["level"]?.asInt()
 		val quality = node["quality"]?.asDouble()
 		val ingredientType = IngredientType.value(node["type"].asText())
-		if (ingredientType == null){
+		if (ingredientType == null) {
 			LOGGER.warn("Invalid Ingredient Type: ${node["type"].asText()}")
 			return null
 		}

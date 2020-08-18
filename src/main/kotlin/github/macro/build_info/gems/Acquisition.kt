@@ -11,6 +11,7 @@ import github.macro.build_info.gems.ingredient.Ingredient
 import github.macro.build_info.gems.reward.Reward
 import javafx.beans.property.SimpleListProperty
 import javafx.collections.FXCollections
+import org.apache.logging.log4j.LogManager
 import tornadofx.*
 import java.io.IOException
 
@@ -34,7 +35,7 @@ class Acquisition(
 	}
 
 	override fun toString(): String {
-		return "Acquisition(rewards=$rewards, crafting=$crafting)"
+		return "Acquisition(rewardsProperty=$rewardsProperty, craftingProperty=$craftingProperty)"
 	}
 }
 
@@ -44,17 +45,19 @@ class AcquisitionDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : 
 	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Acquisition? {
 		val node: JsonNode = parser.readValueAsTree()
 
-		val rewards = ArrayList<Reward>()
-		node["rewards"].mapTo(rewards) { Util.JSON_MAPPER.treeToValue(it, Reward::class.java) }
-		val crafting = ArrayList<List<Ingredient>>()
-		node["crafting"].mapTo(crafting) { ingredients ->
-			val ingredientList = ArrayList<Ingredient>()
-			ingredients.mapTo(ingredientList) {
+		val rewards = node["rewards"].mapNotNull {
+			Util.JSON_MAPPER.treeToValue(it, Reward::class.java)
+		}
+		val crafting = node["crafting"].map { ingredients ->
+			ingredients.mapNotNull {
 				Util.JSON_MAPPER.treeToValue(it, Ingredient::class.java)
 			}
-			ingredientList
 		}
 
 		return Acquisition(rewards = rewards, crafting = crafting)
+	}
+
+	companion object {
+		private val LOGGER = LogManager.getLogger(AcquisitionDeserializer::class.java)
 	}
 }
