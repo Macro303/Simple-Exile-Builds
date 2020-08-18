@@ -76,16 +76,19 @@ clean {
 
 task copyApplication(type: Copy) {
 	from 'resources/Scripts'
+	include '**/*'
 	into "$buildDir/libs"
 }
 
 task copyResources(type: Copy) {
 	from 'resources'
+	exclude 'docs'
 	exclude 'Scripts'
+	include '**/*'
 	into "$buildDir/libs/resources"
 }
 
-task fullRelease(type: Zip) {
+task releaseAll(type: Zip) {
 	dependsOn 'shadowJar', 'copyApplication', 'copyResources'
 
 	from "$buildDir/libs"
@@ -94,28 +97,28 @@ task fullRelease(type: Zip) {
 	destinationDir(file('release'))
 }
 
-task applicationRelease(type: Zip) {
+task releaseApplication(type: Zip) {
 	dependsOn 'shadowJar', 'copyApplication'
 
 	from "$buildDir/libs"
-	include '*.jar'
-	include '*.sh'
-	include '*.bat'
-	archiveFileName = 'Exile-Buddy-Application.zip'
+	include '*.jar', '*.sh', '*.bat'
+	archiveFileName = 'Exile-Buddy_Application.zip'
 	destinationDir(file('release'))
 }
 
-task resourcesRelease(type: Zip) {
+task releaseResources(type: Zip) {
 	dependsOn 'copyResources'
 
 	from "$buildDir/libs/resources"
 	include '**/*'
-	archiveFileName = 'Exile-Buddy-Resources.zip'
+	archiveFileName = 'Exile-Buddy_Resources.zip'
 	destinationDir(file('release'))
 }
 
 task release {
-	dependsOn 'fullRelease', 'applicationRelease', 'resourcesRelease'
+	dependsOn 'releaseResources', 'releaseApplication', 'releaseAll'
+	releaseAll.shouldRunAfter(releaseApplication)
+	releaseApplication.shouldRunAfter(releaseResources)
 }
 
 def isNonStable = { String version ->

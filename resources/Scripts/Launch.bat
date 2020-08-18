@@ -4,7 +4,7 @@ SET BUDDY_JAR=Exile-Buddy.jar
 SET JAVA_PARAMETERS=
 
 :: these you can edit
-SET JAVA_PATH="C:\Program Files\Java\jre1.8.0_231\bin\java.exe"
+SET JAVA_PATH="C:\Program Files\Java\jre1.8.0_251\bin\java.exe"
 SET MIN_RAM=1G
 SET MAX_RAM=1G
 

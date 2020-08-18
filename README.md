@@ -24,6 +24,9 @@ Show what Gems to link and update as you progress as well as include how to get 
 ```bash
 $ gradlew clean run
 ```
+**From Release:**  
+1. Validate `Launch.bat` or `Launch.sh` is pointing to your **OracleJRE**
+2. Run the file `Launch.bat` or `Launch.sh`
 
 ## Screenshots
 <details>
