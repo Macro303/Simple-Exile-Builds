@@ -2,9 +2,9 @@ plugins {
 	id 'application'
 	id 'idea'
 	id 'maven'
-	id 'org.jetbrains.kotlin.jvm' version '1.4.0'
+	id 'org.jetbrains.kotlin.jvm' version '1.4.10'
 	id 'com.github.johnrengelman.shadow' version '6.0.0'
-	id 'com.github.ben-manes.versions' version '0.29.0'
+	id 'com.github.ben-manes.versions' version '0.33.0'
 }
 
 repositories {
@@ -102,7 +102,7 @@ task releaseApplication(type: Zip) {
 
 	from "$buildDir/libs"
 	include '*.jar', '*.sh', '*.bat'
-	archiveFileName = 'Exile-Buddy_Application.zip'
+	archiveFileName = 'Exile-Buddy_application.zip'
 	destinationDir(file('release'))
 }
 
@@ -111,7 +111,7 @@ task releaseResources(type: Zip) {
 
 	from "$buildDir/libs/resources"
 	include '**/*'
-	archiveFileName = 'Exile-Buddy_Resources.zip'
+	archiveFileName = 'Exile-Buddy_resources.zip'
 	destinationDir(file('release'))
 }
 
