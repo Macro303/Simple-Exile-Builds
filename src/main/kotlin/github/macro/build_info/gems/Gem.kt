@@ -24,7 +24,7 @@ import java.io.IOException
 class Gem(
 	name: String,
 	colour: Colour,
-	tags: List<Tag>,
+	tags: List<String>,
 	isVaal: Boolean,
 	isSupport: Boolean,
 	isAwakened: Boolean,
@@ -36,7 +36,7 @@ class Gem(
 	val colourProperty = SimpleObjectProperty<Colour>()
 	var colour by colourProperty
 
-	val tagsProperty = SimpleListProperty<Tag>()
+	val tagsProperty = SimpleListProperty<String>()
 	var tags by tagsProperty
 
 	val isVaalProperty = SimpleBooleanProperty()
@@ -103,12 +103,7 @@ class GemDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeser
 			LOGGER.info("Invalid Colour: ${node["colour"].asText()}")
 			return null
 		}
-		val tags = node["tags"].mapNotNull {
-			val temp = Tag.value(it.asText())
-			if (temp == null)
-				LOGGER.info("Invalid Gem Tag: ${it.asText()}")
-			temp
-		}.sorted()
+		val tags = node["tags"].mapNotNull { it.asText() }.sorted()
 		val isVaal = node["isVaal"]?.asBoolean(false) ?: false
 		val isSupport = node["isSupport"]?.asBoolean(false) ?: false
 		val isAwakened = node["isAwakened"]?.asBoolean(false) ?: false

@@ -3,8 +3,10 @@ package github.macro.ui.editor
 import github.macro.Util
 import github.macro.build_info.Update
 import github.macro.build_info.gems.Gem
+import github.macro.build_info.gems.reward.RewardType
 import github.macro.ui.GemSelector
 import github.macro.ui.UIModel
+import github.macro.ui.viewer.GemViewerPane
 import javafx.beans.property.SimpleBooleanProperty
 import javafx.beans.property.SimpleObjectProperty
 import javafx.beans.property.SimpleStringProperty
@@ -34,6 +36,9 @@ class GemEditorPane(val model: UIModel, gem: Gem, val index: Int? = null, val li
 
 	val nameProperty = SimpleStringProperty()
 	var name by nameProperty
+
+	val rewardsProperty = SimpleStringProperty()
+	var rewards by rewardsProperty
 
 	val colourProperty = SimpleObjectProperty<Paint>()
 	var colour by colourProperty
@@ -75,6 +80,16 @@ class GemEditorPane(val model: UIModel, gem: Gem, val index: Int? = null, val li
 
 		nameProperty.value = gem.getTagname()
 
+		var temp = gem.acquisition.rewards.joinToString(separator = "\n") {
+			var text = "Act ${it.act} - ${it.quest}"
+			if(it.rewardType == RewardType.VENDOR)
+				text += " (${it.vendor})"
+			text
+		}.trim()
+		if (temp.isBlank())
+			temp = "Not available as a reward"
+		rewardsProperty.value = temp
+
 		colourProperty.value = Paint.valueOf(Util.slotToColour(gem.colour))
 
 		previousProperty.value = model.selectedBuild.gems.updates.any {
@@ -111,6 +126,13 @@ class GemEditorPane(val model: UIModel, gem: Gem, val index: Int? = null, val li
 				alignment = Pos.CENTER
 				textAlignment = TextAlignment.CENTER
 				textFillProperty().bind(colourProperty)
+				tooltip(rewards) {
+					style {
+						fontSize = 14.px
+					}
+					textProperty().bind(rewardsProperty)
+				}
+				Util.hackTooltipStartTiming(tooltip)
 			}
 		}
 		bottom {
