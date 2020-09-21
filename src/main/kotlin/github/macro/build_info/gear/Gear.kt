@@ -1,4 +1,4 @@
-package github.macro.build_info.equipment
+package github.macro.build_info.gear
 
 import javafx.beans.property.SimpleObjectProperty
 import javafx.beans.property.SimpleStringProperty
@@ -7,7 +7,7 @@ import tornadofx.*
 /**
  * Created by Macro303 on 2020-Jan-16.
  */
-class Equipment(
+class Gear(
 	name: String,
 	slot: Slot,
 	level: Int?,
@@ -33,6 +33,6 @@ class Equipment(
 	}
 
 	override fun toString(): String {
-		return "Equipment(nameProperty=$nameProperty, slotProperty=$slotProperty, levelProperty=$levelProperty, qualityProperty=$qualityProperty)"
+		return "Gear(nameProperty=$nameProperty, slotProperty=$slotProperty, levelProperty=$levelProperty, qualityProperty=$qualityProperty)"
 	}
 }

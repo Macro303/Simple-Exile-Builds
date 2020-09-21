@@ -10,6 +10,7 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.fasterxml.jackson.databind.annotation.JsonSerialize
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer
 import com.fasterxml.jackson.databind.ser.std.StdSerializer
+import github.macro.Data
 import github.macro.Util
 import github.macro.build_info.gems.Gem
 import javafx.beans.property.SimpleObjectProperty
@@ -53,8 +54,8 @@ class UpdateDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDe
 	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): Update? {
 		val node: JsonNode = parser.codec.readTree(parser)
 
-		val old = Util.gemByName(node["Old Gem"]?.asText())
-		val new = Util.gemByName(node["New Gem"]?.asText())
+		val old = Data.gemByName(node["Old Gem"]?.asText())
+		val new = Data.gemByName(node["New Gem"]?.asText())
 		val reason = node["Reason"].asText()
 		return Update(old = old, new = new, reason = reason)
 	}

@@ -10,6 +10,7 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.fasterxml.jackson.databind.annotation.JsonSerialize
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer
 import com.fasterxml.jackson.databind.ser.std.StdSerializer
+import github.macro.Data
 import github.macro.Util
 import github.macro.build_info.gems.Gem
 import javafx.beans.property.SimpleListProperty
@@ -50,24 +51,24 @@ class BuildGems(
 
 	init {
 		var weaponsTemp = weapons
-		while (weaponsTemp.size < Util.WEAPONS_SIZE)
-			weaponsTemp = weaponsTemp.plus(Util.MISSING_GEM)
+		while (weaponsTemp.size < Util.WEAPONS_MAX_LINKS)
+			weaponsTemp = weaponsTemp.plus(Data.MISSING_GEM)
 		this.weapons = FXCollections.observableList(weaponsTemp)
 		var armourTemp = armour
-		while (armourTemp.size < Util.ARMOUR_SIZE)
-			armourTemp = armourTemp.plus(Util.MISSING_GEM)
+		while (armourTemp.size < Util.ARMOUR_MAX_LINKS)
+			armourTemp = armourTemp.plus(Data.MISSING_GEM)
 		this.armour = FXCollections.observableList(armourTemp)
 		var helmetTemp = helmet
-		while (helmetTemp.size < Util.HELMET_SIZE)
-			helmetTemp = helmetTemp.plus(Util.MISSING_GEM)
+		while (helmetTemp.size < Util.HELMET_MAX_LINKS)
+			helmetTemp = helmetTemp.plus(Data.MISSING_GEM)
 		this.helmet = FXCollections.observableList(helmetTemp)
 		var glovesTemp = gloves
-		while (glovesTemp.size < Util.GLOVES_SIZE)
-			glovesTemp = glovesTemp.plus(Util.MISSING_GEM)
+		while (glovesTemp.size < Util.GLOVES_MAX_LINKS)
+			glovesTemp = glovesTemp.plus(Data.MISSING_GEM)
 		this.gloves = FXCollections.observableList(glovesTemp)
 		var bootsTemp = boots
-		while (bootsTemp.size < Util.BOOTS_SIZE)
-			bootsTemp = bootsTemp.plus(Util.MISSING_GEM)
+		while (bootsTemp.size < Util.BOOTS_MAX_LINKS)
+			bootsTemp = bootsTemp.plus(Data.MISSING_GEM)
 		this.boots = FXCollections.observableList(bootsTemp)
 		this.updates = FXCollections.observableList(updates)
 	}
@@ -82,15 +83,15 @@ class BuildGemsDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : St
 	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildGems? {
 		val node: JsonNode = parser.codec.readTree(parser)
 
-		val weapons = node["Weapons"]?.map { Util.gemByName(it.asText()) }?.chunked(Util.WEAPONS_SIZE)?.firstOrNull()
+		val weapons = node["Weapons"]?.map { Data.gemByName(it.asText()) }?.chunked(Util.WEAPONS_MAX_LINKS)?.firstOrNull()
 			?: emptyList()
-		val armour = node["Armour"]?.map { Util.gemByName(it.asText()) }?.chunked(Util.ARMOUR_SIZE)?.firstOrNull()
+		val armour = node["Armour"]?.map { Data.gemByName(it.asText()) }?.chunked(Util.ARMOUR_MAX_LINKS)?.firstOrNull()
 			?: emptyList()
-		val helmet = node["Helmet"]?.map { Util.gemByName(it.asText()) }?.chunked(Util.HELMET_SIZE)?.firstOrNull()
+		val helmet = node["Helmet"]?.map { Data.gemByName(it.asText()) }?.chunked(Util.HELMET_MAX_LINKS)?.firstOrNull()
 			?: emptyList()
-		val gloves = node["Gloves"]?.map { Util.gemByName(it.asText()) }?.chunked(Util.GLOVES_SIZE)?.firstOrNull()
+		val gloves = node["Gloves"]?.map { Data.gemByName(it.asText()) }?.chunked(Util.GLOVES_MAX_LINKS)?.firstOrNull()
 			?: emptyList()
-		val boots = node["Boots"]?.map { Util.gemByName(it.asText()) }?.chunked(Util.BOOTS_SIZE)?.firstOrNull()
+		val boots = node["Boots"]?.map { Data.gemByName(it.asText()) }?.chunked(Util.BOOTS_MAX_LINKS)?.firstOrNull()
 			?: emptyList()
 		val updates = node["Updates"]?.map { Util.YAML_MAPPER.treeToValue(it, Update::class.java) } ?: emptyList()
 

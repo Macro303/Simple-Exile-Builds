@@ -1,25 +1,25 @@
 package github.macro.ui.editor
 
+import github.macro.Data
+import github.macro.Styles
 import github.macro.Util
 import github.macro.build_info.Update
 import github.macro.build_info.gems.Gem
 import github.macro.build_info.gems.reward.RewardType
 import github.macro.ui.GemSelector
 import github.macro.ui.UIModel
-import github.macro.ui.viewer.GemViewerPane
 import javafx.beans.property.SimpleBooleanProperty
 import javafx.beans.property.SimpleObjectProperty
 import javafx.beans.property.SimpleStringProperty
+import javafx.geometry.Insets
 import javafx.geometry.Pos
 import javafx.scene.layout.BorderPane
 import javafx.scene.layout.BorderStrokeStyle
-import javafx.scene.layout.Priority
 import javafx.scene.paint.Paint
 import javafx.scene.shape.StrokeLineCap
 import javafx.scene.shape.StrokeLineJoin
 import javafx.scene.shape.StrokeType
 import javafx.scene.text.TextAlignment
-import javafx.util.Duration
 import org.apache.logging.log4j.LogManager
 import tornadofx.*
 import java.io.File
@@ -53,15 +53,15 @@ class GemEditorPane(val model: UIModel, gem: Gem, val index: Int? = null, val li
 	var reason by reasonProperty
 
 	init {
-		setNewGem(gem)
+		assignGem(gem)
 		initialize()
 	}
 
-	fun setNewGem(newGem: Gem) {
-		gemProperty.value = newGem
+	fun assignGem(newGem: Gem) {
+		gem = newGem
 
 		style {
-			borderColor += box(c(Util.slotToColour(gem.colour)))
+			borderColor += box(c(Util.colourToHex(gem.colour)))
 			borderStyle += BorderStrokeStyle(
 				StrokeType.CENTERED,
 				StrokeLineJoin.ROUND,
@@ -75,33 +75,33 @@ class GemEditorPane(val model: UIModel, gem: Gem, val index: Int? = null, val li
 
 		var imageFile = gem.getFile()
 		if (!imageFile.exists())
-			imageFile = File("resources/Gems", "Missing.png")
-		imageUrlProperty.value = "file:${imageFile.path}"
+			imageFile = File(File("resources", "Gems"), "placeholder.png")
+		imageUrl = "file:${imageFile.path}"
 
-		nameProperty.value = gem.getTagname()
+		name = gem.getTagname()
 
 		var temp = gem.acquisition.rewards.joinToString(separator = "\n") {
 			var text = "Act ${it.act} - ${it.quest}"
-			if(it.rewardType == RewardType.VENDOR)
+			if (it.rewardType == RewardType.VENDOR)
 				text += " (${it.vendor})"
 			text
 		}.trim()
 		if (temp.isBlank())
 			temp = "Not available as a reward"
-		rewardsProperty.value = temp
+		rewards = temp
 
-		colourProperty.value = Paint.valueOf(Util.slotToColour(gem.colour))
+		colour = Paint.valueOf(Util.colourToHex(gem.colour))
 
-		previousProperty.value = model.selectedBuild.gems.updates.any {
-			(it.new == gem) && it.new != Util.MISSING_GEM
+		previous = model.selectedBuild.gems.updates.any {
+			(it.new == gem) && it.new != Data.MISSING_GEM
 		}
 
-		nextProperty.value = model.selectedBuild.gems.updates.any {
-			it.old == gem && it.old != Util.MISSING_GEM
+		next = model.selectedBuild.gems.updates.any {
+			it.old == gem && it.old != Data.MISSING_GEM
 		}
 
-		reasonProperty.value = model.selectedBuild.gems.updates.firstOrNull {
-			it.old == gem && it.old != Util.MISSING_GEM
+		reason = model.selectedBuild.gems.updates.firstOrNull {
+			it.old == gem && it.old != Data.MISSING_GEM
 		}?.reason
 	}
 
@@ -114,83 +114,95 @@ class GemEditorPane(val model: UIModel, gem: Gem, val index: Int? = null, val li
 		top {
 			hbox(spacing = 5.0, alignment = Pos.CENTER) {
 				imageview(imageUrlProperty, lazyload = true) {
-					fitHeight = 80.0
-					fitWidth = 80.0
+					fitHeight = 78.0
+					fitWidth = 78.0
 				}
 			}
 		}
 		center {
 			label(nameProperty) {
 				isWrapText = true
-				prefWidth = 90.0
+				prefWidth = (Util.UI_PREF_WIDTH - 60) / 6
+				prefHeight = 45.0
 				alignment = Pos.CENTER
 				textAlignment = TextAlignment.CENTER
 				textFillProperty().bind(colourProperty)
 				tooltip(rewards) {
-					style {
-						fontSize = 14.px
-					}
+					addClass(Styles.tooltip)
 					textProperty().bind(rewardsProperty)
 				}
 				Util.hackTooltipStartTiming(tooltip)
 			}
 		}
 		bottom {
-			vbox(spacing = 5.0, alignment = Pos.CENTER) {
-				hbox(spacing = 5.0, alignment = Pos.CENTER) {
-					button(text = "<<") {
+			gridpane {
+				row {
+					button(text = "⬅") {
+						useMaxWidth = true
 						visibleWhen(previousProperty)
 						isFocusTraversable = false
 						action {
-							setNewGem(
+							assignGem(
 								model.selectedBuild.gems.updates.firstOrNull { it.new?.equals(gem) ?: false }?.old
-									?: Util.MISSING_GEM
+									?: Data.MISSING_GEM
 							)
+						}
+						gridpaneConstraints {
+							margin = Insets(2.5)
 						}
 					}
 					separator {
 						isVisible = false
-						hgrow = Priority.ALWAYS
+						gridpaneConstraints {
+							margin = Insets(2.5)
+						}
 					}
-					button(text = ">>") {
+					button(text = "➡") {
+						useMaxWidth = true
 						visibleWhen(nextProperty)
 						isFocusTraversable = false
 						action {
-							setNewGem(
+							assignGem(
 								model.selectedBuild.gems.updates.firstOrNull { it.old?.equals(gem) ?: false }?.new
-									?: Util.MISSING_GEM
+									?: Data.MISSING_GEM
 							)
 						}
 						tooltip(reason) {
-							style {
-								fontSize = 14.px
-							}
+							addClass(Styles.tooltip)
 							textProperty().bind(reasonProperty)
 						}
 						Util.hackTooltipStartTiming(tooltip)
+						gridpaneConstraints {
+							margin = Insets(2.5)
+						}
 					}
 				}
-				hbox(spacing = 5.0, alignment = Pos.CENTER) {
-					button("Add") {
-						visibleWhen(nextProperty.not().and(gemProperty.isEqualTo(Util.MISSING_GEM).not()))
+				row {
+					button("➕") {
+						useMaxWidth = true
+						visibleWhen((nextProperty.or(gemProperty.isEqualTo(Data.MISSING_GEM)).not()))
 						action {
 							val scope = Scope()
 							setInScope(model, scope)
 							find<GemSelector>(scope).openModal(block = true, resizable = false)
-							if (model.selectedGem != Util.MISSING_GEM) {
+							if (model.selectedGem != Data.MISSING_GEM) {
 								model.selectedBuild.gems.updates.add(
 									Update(gem, model.selectedGem, "Reason not Implemented")
 								)
-								setNewGem(model.selectedGem)
+								assignGem(model.selectedGem)
 							}
 						}
+						gridpaneConstraints {
+							margin = Insets(2.5)
+						}
 					}
-					button("Edit") {
+					button("⚙") {
+						useMaxWidth = true
 						action {
 							val scope = Scope()
 							setInScope(model, scope)
 							find<GemSelector>(scope).openModal(block = true, resizable = false)
-							if (model.selectedGem != Util.MISSING_GEM) {
+							if (model.selectedGem != Data.MISSING_GEM) {
 								if (index != null) {
 									when (listName) {
 										"Weapons" -> model.selectedBuild.gems.weapons[index] = model.selectedGem
@@ -204,11 +216,15 @@ class GemEditorPane(val model: UIModel, gem: Gem, val index: Int? = null, val li
 									.forEach { it.old = model.selectedGem }
 								model.selectedBuild.gems.updates.filter { it.new == gem }
 									.forEach { it.new = model.selectedGem }
-								setNewGem(model.selectedGem)
+								assignGem(model.selectedGem)
 							}
 						}
+						gridpaneConstraints {
+							margin = Insets(2.5)
+						}
 					}
-					button("Del") {
+					button("✖") {
+						useMaxWidth = true
 						visibleWhen(previousProperty.or(nextProperty))
 						action {
 							var update = model.selectedBuild.gems.updates.firstOrNull { it.new == gem }
@@ -217,7 +233,7 @@ class GemEditorPane(val model: UIModel, gem: Gem, val index: Int? = null, val li
 								val refresh = model.selectedBuild.gems.updates.firstOrNull { it.old == gem }
 								if (refresh != null)
 									refresh.old = update.old
-								setNewGem(update.old)
+								assignGem(update.old)
 							} else {
 								update = model.selectedBuild.gems.updates.firstOrNull { it.old == gem }
 								if (update != null) {
@@ -254,12 +270,18 @@ class GemEditorPane(val model: UIModel, gem: Gem, val index: Int? = null, val li
 											}
 										}
 									}
-									setNewGem(update.new)
+									assignGem(update.new)
 								}
 							}
 						}
+						gridpaneConstraints {
+							margin = Insets(2.5)
+						}
 					}
 				}
+				constraintsForColumn(0).percentWidth = 100.0/3.0
+				constraintsForColumn(1).percentWidth = 100.0/3.0
+				constraintsForColumn(2).percentWidth = 100.0/3.0
 			}
 		}
 	}

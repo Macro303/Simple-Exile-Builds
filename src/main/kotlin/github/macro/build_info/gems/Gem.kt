@@ -22,6 +22,7 @@ import java.io.IOException
  */
 @JsonDeserialize(using = GemDeserializer::class)
 class Gem(
+	id: String,
 	name: String,
 	colour: Colour,
 	tags: List<String>,
@@ -30,6 +31,9 @@ class Gem(
 	isAwakened: Boolean,
 	acquisition: Acquisition
 ) {
+	val idProperty = SimpleStringProperty()
+	var id by idProperty
+
 	val nameProperty = SimpleStringProperty()
 	var name by nameProperty
 
@@ -52,6 +56,7 @@ class Gem(
 	var acquisition by acquisitionProperty
 
 	init {
+		this.id = id
 		this.name = name
 		this.colour = colour
 		this.tags = FXCollections.observableList(tags)
@@ -72,7 +77,7 @@ class Gem(
 			if(isVaal)
 				baseFolder = File(baseFolder, "Vaal")
 		}
-		return File(baseFolder, name.replace(" ", "_") + ".png")
+		return File(baseFolder, id.substringAfterLast("/") + ".png")
 	}
 
 	fun getFullname(): String{
@@ -85,10 +90,6 @@ class Gem(
 		val suffix = if (isVaal) " [Vaal]" else if (isAwakened) " [Awakened]" else ""
 		return name + (if (isSupport) " Support" else "") + suffix
 	}
-
-	override fun toString(): String {
-		return "Gem(nameProperty=$nameProperty, colourProperty=$colourProperty, tagsProperty=$tagsProperty, isVaalProperty=$isVaalProperty, isSupportProperty=$isSupportProperty, isAwakenedProperty=$isAwakenedProperty, acquisitionProperty=$acquisitionProperty)"
-	}
 }
 
 class GemDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<Gem?>(vc) {
@@ -97,6 +98,7 @@ class GemDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeser
 	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Gem? {
 		val node: JsonNode = parser.readValueAsTree()
 
+		val id = node["id"].asText()
 		val name = node["name"].asText()
 		val colour = Colour.value(node["colour"].asText())
 		if (colour == null) {
@@ -111,6 +113,7 @@ class GemDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeser
 		val acquisition = Util.JSON_MAPPER.treeToValue(node["acquisition"], Acquisition::class.java)
 
 		return Gem(
+			id = id,
 			name = name,
 			colour = colour,
 			tags = tags,

@@ -30,7 +30,7 @@ class Build(
 	classTag: ClassTag,
 	ascendency: Ascendency,
 	gems: BuildGems,
-	equipment: BuildEquipment
+	gear: BuildGear
 ) {
 	val versionProperty = SimpleStringProperty()
 	var version by versionProperty
@@ -47,8 +47,8 @@ class Build(
 	val gemsProperty = SimpleObjectProperty<BuildGems>()
 	var gems by gemsProperty
 
-	val equipmentProperty = SimpleObjectProperty<BuildEquipment>()
-	var equipment by equipmentProperty
+	val gearProperty = SimpleObjectProperty<BuildGear>()
+	var gear by gearProperty
 
 	init {
 		this.version = version
@@ -56,7 +56,7 @@ class Build(
 		this.classTag = classTag
 		this.ascendency = ascendency
 		this.gems = gems
-		this.equipment = equipment
+		this.gear = gear
 	}
 
 	val filename: String
@@ -84,7 +84,7 @@ class Build(
 	}
 
 	override fun toString(): String {
-		return "Build(versionProperty=$versionProperty, nameProperty=$nameProperty, classProperty=$classProperty, ascendencyProperty=$ascendencyProperty, gemsProperty=$gemsProperty, equipmentProperty=$equipmentProperty)"
+		return "Build(versionProperty=$versionProperty, nameProperty=$nameProperty, classProperty=$classProperty, ascendencyProperty=$ascendencyProperty, gemsProperty=$gemsProperty, equipmentProperty=$gearProperty)"
 	}
 
 	companion object {
@@ -110,7 +110,7 @@ class BuildDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDes
 			return null
 		}
 		val buildGems = Util.YAML_MAPPER.treeToValue(node["Gems"], BuildGems::class.java)
-		val equipment = Util.YAML_MAPPER.treeToValue(node["Equipment"], BuildEquipment::class.java)
+		val gear = Util.YAML_MAPPER.treeToValue(node["Gear"], BuildGear::class.java)
 
 		return Build(
 			version = version,
@@ -118,7 +118,7 @@ class BuildDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDes
 			classTag = classTag,
 			ascendency = ascendency,
 			gems = buildGems,
-			equipment = equipment
+			gear = gear
 		)
 	}
 
@@ -137,7 +137,7 @@ class BuildSerializer @JvmOverloads constructor(t: Class<Build>? = null) : StdSe
 		parser.writeStringField("Class", value.classTag.name)
 		parser.writeStringField("Ascendency", value.ascendency.name)
 		parser.writeObjectField("Gems", value.gems)
-		parser.writeObjectField("Equipment", value.equipment)
+		parser.writeObjectField("Gear", value.gear)
 		parser.writeEndObject()
 	}
 }

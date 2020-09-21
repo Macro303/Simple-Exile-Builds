@@ -1,5 +1,6 @@
 package github.macro.ui
 
+import github.macro.Data
 import github.macro.Util
 import github.macro.build_info.Ascendency
 import github.macro.build_info.Build
@@ -40,7 +41,7 @@ class UIModel : ViewModel() {
 		this.classes = FXCollections.observableList(ClassTag.values().toList())
 		this.ascendencies = FXCollections.observableArrayList()
 		this.selectedBuild = null
-		this.gems = FXCollections.observableArrayList(Util.GEM_LIST)
+		this.gems = FXCollections.observableArrayList(Data.GEM_LIST)
 		this.selectedGem = null
 		LOGGER.info("Initialize Model")
 	}

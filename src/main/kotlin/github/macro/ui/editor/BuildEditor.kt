@@ -1,12 +1,14 @@
 package github.macro.ui.editor
 
 import github.macro.Styles
+import github.macro.Util
 import github.macro.Util.cleanName
 import github.macro.build_info.Ascendency
 import github.macro.build_info.ClassTag
 import github.macro.ui.UIController
 import github.macro.ui.UIModel
-import github.macro.ui.viewer.GemViewerPane
+import javafx.geometry.HPos
+import javafx.geometry.Insets
 import javafx.geometry.Pos
 import javafx.scene.control.ComboBox
 import javafx.scene.control.ScrollPane
@@ -29,8 +31,8 @@ class BuildEditor : View("Exile Buddy") {
 	private var nameTextField by singleAssign<TextField>()
 
 	override val root = borderpane {
-		prefWidth = 1000.0
-		prefHeight = 750.0
+		prefWidth = Util.UI_PREF_WIDTH
+		prefHeight = Util.UI_PREF_HEIGHT
 		paddingAll = 10.0
 		top {
 			paddingAll = 5.0
@@ -102,115 +104,260 @@ class BuildEditor : View("Exile Buddy") {
 				tab(text = "Gems") {
 					scrollpane(fitToWidth = true) {
 						hbarPolicy = ScrollPane.ScrollBarPolicy.NEVER
-						vbox(spacing = 5.0, alignment = Pos.TOP_CENTER) {
-							paddingAll = 5.0
-							label("Weapons") {
-								addClass(Styles.subtitle)
+						gridpane {
+							row {
+								label("Weapon/s") {
+									addClass(Styles.subtitle)
+									gridpaneConstraints {
+										columnSpan = 6
+										hAlignment = HPos.CENTER
+										margin = Insets(2.5)
+									}
+								}
 							}
-							hbox(spacing = 5.0, alignment = Pos.CENTER_LEFT) {
-								paddingAll = 5.0
+							row {
 								model.selectedBuild.gems.weapons.forEachIndexed { index, gem ->
-									if (index == 6)
-										return@forEachIndexed
-									if (index == 3)
-										add(separator())
-									add(GemEditorPane(model, gem, index, "Weapons"))
+									add(GemEditorPane(model, gem, index, "Weapons")
+										.gridpaneConstraints {
+											margin = Insets(2.5)
+										})
 								}
 							}
-							label("Armour") {
-								addClass(Styles.subtitle)
+							row {
+								label("Armour") {
+									addClass(Styles.subtitle)
+									gridpaneConstraints {
+										columnSpan = 6
+										hAlignment = HPos.CENTER
+										margin = Insets(2.5)
+									}
+								}
 							}
-							hbox(spacing = 5.0, alignment = Pos.CENTER_LEFT) {
-								paddingAll = 5.0
+							row {
 								model.selectedBuild.gems.armour.forEachIndexed { index, gem ->
-									if (index == 6)
-										return@forEachIndexed
-									add(GemEditorPane(model, gem, index, "Armour"))
+									add(GemEditorPane(model, gem, index, "Armour")
+										.gridpaneConstraints {
+											margin = Insets(2.5)
+										})
 								}
 							}
-							label("Helmet") {
-								addClass(Styles.subtitle)
+							row {
+								label("Helmet") {
+									addClass(Styles.subtitle)
+									gridpaneConstraints {
+										columnSpan = 6
+										hAlignment = HPos.CENTER
+										margin = Insets(2.5)
+									}
+								}
 							}
-							hbox(spacing = 5.0, alignment = Pos.CENTER_LEFT) {
-								paddingAll = 5.0
+							row {
 								model.selectedBuild.gems.helmet.forEachIndexed { index, gem ->
-									if (index == 4)
-										return@forEachIndexed
-									add(GemEditorPane(model, gem, index, "Helmet"))
+									add(GemEditorPane(model, gem, index, "Helmet")
+										.gridpaneConstraints {
+											margin = Insets(2.5)
+										})
 								}
 							}
-							label("Gloves") {
-								addClass(Styles.subtitle)
+							row {
+								label("Gloves") {
+									addClass(Styles.subtitle)
+									gridpaneConstraints {
+										columnSpan = 6
+										hAlignment = HPos.CENTER
+										margin = Insets(2.5)
+									}
+								}
 							}
-							hbox(spacing = 5.0, alignment = Pos.CENTER_LEFT) {
-								paddingAll = 5.0
+							row {
 								model.selectedBuild.gems.gloves.forEachIndexed { index, gem ->
-									if (index == 4)
-										return@forEachIndexed
-									add(GemEditorPane(model, gem, index, "Gloves"))
+									add(GemEditorPane(model, gem, index, "Gloves")
+										.gridpaneConstraints {
+											margin = Insets(2.5)
+										})
 								}
 							}
-							label("Boots") {
-								addClass(Styles.subtitle)
+							row {
+								label("Boots") {
+									addClass(Styles.subtitle)
+									gridpaneConstraints {
+										columnSpan = 6
+										hAlignment = HPos.CENTER
+										margin = Insets(2.5)
+									}
+								}
 							}
-							hbox(spacing = 5.0, alignment = Pos.CENTER_LEFT) {
-								paddingAll = 5.0
+							row {
 								model.selectedBuild.gems.boots.forEachIndexed { index, gem ->
-									if (index == 4)
-										return@forEachIndexed
-									add(GemEditorPane(model, gem, index, "Boots"))
+									add(GemEditorPane(model, gem, index, "Boots")
+										.gridpaneConstraints {
+											margin = Insets(2.5)
+										})
 								}
 							}
+							val ratio = 100.0 / 6.0
+							constraintsForColumn(0).percentWidth = ratio
+							constraintsForColumn(1).percentWidth = ratio
+							constraintsForColumn(2).percentWidth = ratio
+							constraintsForColumn(3).percentWidth = ratio
+							constraintsForColumn(4).percentWidth = ratio
+							constraintsForColumn(5).percentWidth = ratio
 						}
 					}
 				}
-				tab(text = "Equipment") {
+				tab(text = "Gear") {
 					scrollpane(fitToWidth = true) {
 						hbarPolicy = ScrollPane.ScrollBarPolicy.NEVER
-						vbox(spacing = 5.0, alignment = Pos.TOP_CENTER) {
-							paddingAll = 5.0
-							hbox(spacing = 5.0, alignment = Pos.CENTER_LEFT) {
-								paddingAll = 5.0
-								model.selectedBuild.equipment.weapons.forEach {
-									label(it.name)
+						gridpane {
+							row {
+								label("Weapon/s") {
+									addClass(Styles.subtitle)
+									gridpaneConstraints {
+										columnSpan = 5
+										hAlignment = HPos.CENTER
+										margin = Insets(2.5)
+									}
 								}
 							}
-							hbox(spacing = 5.0, alignment = Pos.CENTER_LEFT) {
-								paddingAll = 5.0
-								label(model.selectedBuild.equipment.armour.name)
-							}
-							hbox(spacing = 5.0, alignment = Pos.CENTER_LEFT) {
-								paddingAll = 5.0
-								label(model.selectedBuild.equipment.helmet.name)
-							}
-							hbox(spacing = 5.0, alignment = Pos.CENTER_LEFT) {
-								paddingAll = 5.0
-								label(model.selectedBuild.equipment.gloves.name)
-							}
-							hbox(spacing = 5.0, alignment = Pos.CENTER_LEFT) {
-								paddingAll = 5.0
-								label(model.selectedBuild.equipment.boots.name)
-							}
-							hbox(spacing = 5.0, alignment = Pos.CENTER_LEFT) {
-								paddingAll = 5.0
-								label(model.selectedBuild.equipment.belt.name)
-							}
-							hbox(spacing = 5.0, alignment = Pos.CENTER_LEFT) {
-								paddingAll = 5.0
-								label(model.selectedBuild.equipment.amulet.name)
-							}
-							hbox(spacing = 5.0, alignment = Pos.CENTER_LEFT) {
-								paddingAll = 5.0
-								model.selectedBuild.equipment.rings.forEach {
-									label(it.name)
+							row {
+								model.selectedBuild.gear.weapons.forEach {
+									label(it.name).gridpaneConstraints {
+										margin = Insets(2.5)
+									}
 								}
 							}
-							hbox(spacing = 5.0, alignment = Pos.CENTER_LEFT) {
-								paddingAll = 5.0
-								model.selectedBuild.equipment.flasks.forEach {
-									label(it.name)
+							row {
+								label("Armour") {
+									addClass(Styles.subtitle)
+									gridpaneConstraints {
+										columnSpan = 5
+										hAlignment = HPos.CENTER
+										margin = Insets(2.5)
+									}
 								}
 							}
+							row {
+								label(model.selectedBuild.gear.armour.name).gridpaneConstraints {
+									margin = Insets(2.5)
+								}
+							}
+							row {
+								label("Helmet") {
+									addClass(Styles.subtitle)
+									gridpaneConstraints {
+										columnSpan = 5
+										hAlignment = HPos.CENTER
+										margin = Insets(2.5)
+									}
+								}
+							}
+							row {
+								label(model.selectedBuild.gear.helmet.name).gridpaneConstraints {
+									margin = Insets(2.5)
+								}
+							}
+							row {
+								label("Gloves") {
+									addClass(Styles.subtitle)
+									gridpaneConstraints {
+										columnSpan = 5
+										hAlignment = HPos.CENTER
+										margin = Insets(2.5)
+									}
+								}
+							}
+							row {
+								label(model.selectedBuild.gear.gloves.name).gridpaneConstraints {
+									margin = Insets(2.5)
+								}
+							}
+							row {
+								label("Boots") {
+									addClass(Styles.subtitle)
+									gridpaneConstraints {
+										columnSpan = 5
+										hAlignment = HPos.CENTER
+										margin = Insets(2.5)
+									}
+								}
+							}
+							row {
+								label(model.selectedBuild.gear.boots.name).gridpaneConstraints {
+									margin = Insets(2.5)
+								}
+							}
+							row {
+								label("Belt") {
+									addClass(Styles.subtitle)
+									gridpaneConstraints {
+										columnSpan = 5
+										hAlignment = HPos.CENTER
+										margin = Insets(2.5)
+									}
+								}
+							}
+							row {
+								label(model.selectedBuild.gear.belt.name).gridpaneConstraints {
+									margin = Insets(2.5)
+								}
+							}
+							row {
+								label("Amulet") {
+									addClass(Styles.subtitle)
+									gridpaneConstraints {
+										columnSpan = 5
+										hAlignment = HPos.CENTER
+										margin = Insets(2.5)
+									}
+								}
+							}
+							row {
+								label(model.selectedBuild.gear.amulet.name).gridpaneConstraints {
+									margin = Insets(2.5)
+								}
+							}
+							row {
+								label("Rings") {
+									addClass(Styles.subtitle)
+									gridpaneConstraints {
+										columnSpan = 5
+										hAlignment = HPos.CENTER
+										margin = Insets(2.5)
+									}
+								}
+							}
+							row {
+								model.selectedBuild.gear.rings.forEachIndexed { index, ring ->
+									add(RingEditorPane(model, ring, index)
+										.gridpaneConstraints {
+											margin = Insets(2.5)
+										})
+								}
+							}
+							row {
+								label("Flasks") {
+									addClass(Styles.subtitle)
+									gridpaneConstraints {
+										columnSpan = 5
+										hAlignment = HPos.CENTER
+										margin = Insets(2.5)
+									}
+								}
+							}
+							row {
+								model.selectedBuild.gear.flasks.forEachIndexed { index, flask ->
+									add(FlaskEditorPane(model, flask, index)
+										.gridpaneConstraints {
+											margin = Insets(2.5)
+										})
+								}
+							}
+							val ratio = 100.0 / 5.0
+							constraintsForColumn(0).percentWidth = ratio
+							constraintsForColumn(1).percentWidth = ratio
+							constraintsForColumn(2).percentWidth = ratio
+							constraintsForColumn(3).percentWidth = ratio
+							constraintsForColumn(4).percentWidth = ratio
 						}
 					}
 				}

@@ -1,4 +1,4 @@
-package github.macro.build_info.equipment
+package github.macro.build_info.gear
 
 /**
  * Created by Macro303 on 2020-Jan-16.

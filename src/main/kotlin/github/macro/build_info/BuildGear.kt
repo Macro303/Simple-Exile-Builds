@@ -10,8 +10,10 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.fasterxml.jackson.databind.annotation.JsonSerialize
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer
 import com.fasterxml.jackson.databind.ser.std.StdSerializer
-import github.macro.Util
-import github.macro.build_info.equipment.Equipment
+import github.macro.Data
+import github.macro.build_info.flasks.Flask
+import github.macro.build_info.gear.Gear
+import github.macro.build_info.rings.Ring
 import javafx.beans.property.SimpleListProperty
 import javafx.beans.property.SimpleObjectProperty
 import javafx.collections.FXCollections
@@ -21,44 +23,44 @@ import java.io.IOException
 /**
  * Created by Macro303 on 2020-Aug-18
  */
-@JsonDeserialize(using = BuildEquipmentDeserializer::class)
-@JsonSerialize(using = BuildEquipmentSerializer::class)
-class BuildEquipment(
-	weapons: List<Equipment>,
-	armour: Equipment,
-	helmet: Equipment,
-	gloves: Equipment,
-	boots: Equipment,
-	belt: Equipment,
-	amulet: Equipment,
-	rings: List<Equipment>,
-	flasks: List<Equipment>
+@JsonDeserialize(using = BuildGearDeserializer::class)
+@JsonSerialize(using = BuildGearSerializer::class)
+class BuildGear(
+	weapons: List<Gear>,
+	armour: Gear,
+	helmet: Gear,
+	gloves: Gear,
+	boots: Gear,
+	belt: Gear,
+	amulet: Gear,
+	rings: List<Ring>,
+	flasks: List<Flask>
 ) {
-	val weaponsProperty = SimpleListProperty<Equipment>()
+	val weaponsProperty = SimpleListProperty<Gear>()
 	var weapons by weaponsProperty
 
-	val armourProperty = SimpleObjectProperty<Equipment>()
+	val armourProperty = SimpleObjectProperty<Gear>()
 	var armour by armourProperty
 
-	val helmetProperty = SimpleObjectProperty<Equipment>()
+	val helmetProperty = SimpleObjectProperty<Gear>()
 	var helmet by helmetProperty
 
-	val glovesProperty = SimpleObjectProperty<Equipment>()
+	val glovesProperty = SimpleObjectProperty<Gear>()
 	var gloves by glovesProperty
 
-	val bootsProperty = SimpleObjectProperty<Equipment>()
+	val bootsProperty = SimpleObjectProperty<Gear>()
 	var boots by bootsProperty
 
-	val beltProperty = SimpleObjectProperty<Equipment>()
+	val beltProperty = SimpleObjectProperty<Gear>()
 	var belt by beltProperty
 
-	val amuletProperty = SimpleObjectProperty<Equipment>()
+	val amuletProperty = SimpleObjectProperty<Gear>()
 	var amulet by amuletProperty
 
-	val ringsProperty = SimpleListProperty<Equipment>()
+	val ringsProperty = SimpleListProperty<Ring>()
 	var rings by ringsProperty
 
-	val flasksProperty = SimpleListProperty<Equipment>()
+	val flasksProperty = SimpleListProperty<Flask>()
 	var flasks by flasksProperty
 
 	init {
@@ -72,32 +74,28 @@ class BuildEquipment(
 		this.rings = FXCollections.observableList(rings)
 		this.flasks = FXCollections.observableList(flasks)
 	}
-
-	override fun toString(): String {
-		return "BuildEquipment(weaponsProperty=$weaponsProperty, armourProperty=$armourProperty, helmetProperty=$helmetProperty, glovesProperty=$glovesProperty, bootsProperty=$bootsProperty, beltProperty=$beltProperty, amuletProperty=$amuletProperty, ringsProperty=$ringsProperty, flasksProperty=$flasksProperty)"
-	}
 }
 
-class BuildEquipmentDeserializer @JvmOverloads constructor(vc: Class<*>? = null) :
-	StdDeserializer<BuildEquipment?>(vc) {
+class BuildGearDeserializer @JvmOverloads constructor(vc: Class<*>? = null) :
+	StdDeserializer<BuildGear?>(vc) {
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildEquipment? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildGear? {
 		val node: JsonNode = parser.codec.readTree(parser)
 
-		val weapons = node["Weapons"]?.map { Util.equipmentByName(it.asText()) }?.chunked(2)?.firstOrNull()
+		val weapons = node["Weapons"]?.map { Data.gearByName(it.asText()) }?.chunked(2)?.firstOrNull()
 			?: emptyList()
-		val armour = Util.equipmentByName(node["Armour"]?.asText())
-		val helmet = Util.equipmentByName(node["Helmet"]?.asText())
-		val gloves = Util.equipmentByName(node["Gloves"]?.asText())
-		val boots = Util.equipmentByName(node["Boots"]?.asText())
-		val belt = Util.equipmentByName(node["Belt"]?.asText())
-		val amulet = Util.equipmentByName(node["Amulet"]?.asText())
-		val rings = node["Rings"]?.map { Util.equipmentByName(it.asText()) }?.chunked(2)?.firstOrNull()
+		val armour = Data.gearByName(node["Armour"]?.asText())
+		val helmet = Data.gearByName(node["Helmet"]?.asText())
+		val gloves = Data.gearByName(node["Gloves"]?.asText())
+		val boots = Data.gearByName(node["Boots"]?.asText())
+		val belt = Data.gearByName(node["Belt"]?.asText())
+		val amulet = Data.gearByName(node["Amulet"]?.asText())
+		val rings = node["Rings"]?.map { Data.ringByName(it.asText()) }?.chunked(2)?.firstOrNull()
 			?: emptyList()
-		val flasks = node["Flasks"]?.map { Util.equipmentByName(it.asText()) }?.chunked(5)?.firstOrNull()
+		val flasks = node["Flasks"]?.map { Data.flaskByName(it.asText()) }?.chunked(5)?.firstOrNull()
 			?: emptyList()
 
-		return BuildEquipment(
+		return BuildGear(
 			weapons = weapons,
 			armour = armour,
 			helmet = helmet,
@@ -111,11 +109,11 @@ class BuildEquipmentDeserializer @JvmOverloads constructor(vc: Class<*>? = null)
 	}
 }
 
-class BuildEquipmentSerializer @JvmOverloads constructor(t: Class<BuildEquipment>? = null) :
-	StdSerializer<BuildEquipment>(t) {
+class BuildGearSerializer @JvmOverloads constructor(t: Class<BuildGear>? = null) :
+	StdSerializer<BuildGear>(t) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun serialize(value: BuildEquipment, parser: JsonGenerator, provider: SerializerProvider?) {
+	override fun serialize(value: BuildGear, parser: JsonGenerator, provider: SerializerProvider?) {
 		parser.writeStartObject()
 		parser.writeObjectField("Weapons", value.weapons.map { it.name })
 		parser.writeObjectField("Armour", value.armour.name)

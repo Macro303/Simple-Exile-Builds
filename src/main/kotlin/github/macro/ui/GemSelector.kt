@@ -1,5 +1,6 @@
 package github.macro.ui
 
+import github.macro.Data
 import github.macro.Styles
 import github.macro.Util
 import github.macro.build_info.gems.Gem
@@ -19,16 +20,16 @@ class GemSelector : View() {
 	private val model by inject<UIModel>()
 
 	private var gemCombobox: ComboBox<Gem> by singleAssign()
-	private var selectedGem = Util.MISSING_GEM
+	private var selectedGem = Data.MISSING_GEM
 	val imageUrlProperty = SimpleStringProperty()
 	var imageUrl by imageUrlProperty
 
 	init {
-		model.selectedGem = Util.MISSING_GEM
+		model.selectedGem = Data.MISSING_GEM
 		updateSelection()
 	}
 
-	private fun updateSelection(selected: Gem = Util.MISSING_GEM) {
+	private fun updateSelection(selected: Gem = Data.MISSING_GEM) {
 		selectedGem = selected
 		var imageFile = selectedGem.getFile()
 		if (!imageFile.exists())
@@ -61,7 +62,7 @@ class GemSelector : View() {
 						text = it.getTagname()
 					}
 					setOnAction {
-						updateSelection(gemCombobox.selectedItem ?: Util.MISSING_GEM)
+						updateSelection(gemCombobox.selectedItem ?: Data.MISSING_GEM)
 					}
 				}/*.makeAutoCompletable()*/
 				button("Select") {

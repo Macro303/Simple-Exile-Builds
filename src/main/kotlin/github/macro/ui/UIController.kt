@@ -1,5 +1,6 @@
 package github.macro.ui
 
+import github.macro.Data
 import github.macro.Util
 import github.macro.build_info.*
 import github.macro.ui.editor.BuildEditor
@@ -50,21 +51,21 @@ class UIController : Controller() {
 			classTag = classTag,
 			ascendency = ascendency,
 			gems = BuildGems(
-				weapons = Util.getClassGems(classTag),
+				weapons = Util.getStartingGems(classTag),
 				armour = emptyList(),
 				helmet = emptyList(),
 				gloves = emptyList(),
 				boots = emptyList(),
 				updates = emptyList()
 			),
-			equipment = BuildEquipment(
+			gear = BuildGear(
 				weapons = emptyList(),
-				armour = Util.MISSING_EQUIPMENT,
-				helmet = Util.MISSING_EQUIPMENT,
-				gloves = Util.MISSING_EQUIPMENT,
-				boots = Util.MISSING_EQUIPMENT,
-				belt = Util.MISSING_EQUIPMENT,
-				amulet = Util.MISSING_EQUIPMENT,
+				armour = Data.MISSING_EQUIPMENT,
+				helmet = Data.MISSING_EQUIPMENT,
+				gloves = Data.MISSING_EQUIPMENT,
+				boots = Data.MISSING_EQUIPMENT,
+				belt = Data.MISSING_EQUIPMENT,
+				amulet = Data.MISSING_EQUIPMENT,
 				rings = emptyList(),
 				flasks = emptyList()
 			)
@@ -81,7 +82,7 @@ class UIController : Controller() {
 			classTag = model.selectedBuild.classTag,
 			ascendency = model.selectedBuild.ascendency,
 			gems = model.selectedBuild.gems,
-			equipment = model.selectedBuild.equipment
+			gear = model.selectedBuild.gear
 		)
 		copiedBuild.save()
 		LOGGER.info("Changing Build: ${model.selectedBuild.display} => ${copiedBuild.display}")

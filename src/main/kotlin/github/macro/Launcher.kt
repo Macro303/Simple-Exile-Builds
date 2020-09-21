@@ -50,30 +50,36 @@ class Styles : Stylesheet() {
 	init {
 		root {
 			fontFamily = fontRegular.family
-			fontSize = 14.px
+			fontSize = 13.px
+		}
+		tooltip {
+			fontFamily = fontRegular.family
+			fontSize = 13.px
 		}
 		button {
 			fontFamily = fontSmallCaps.family
 			fontSize = 13.px
+			minWidth = 20.px
 		}
 		title {
 			fontFamily = fontBold.family
-			fontSize = 36.px
+			fontSize = 28.px
 			fontWeight = FontWeight.BOLD
 		}
 		subtitle {
 			fontFamily = fontBold.family
-			fontSize = 21.px
+			fontSize = 18.px
 			fontWeight = FontWeight.BOLD
 		}
 		sizedButton {
-			prefWidth = 100.px
+			prefWidth = 75.px
 		}
 	}
 
 	companion object {
 		private val LOGGER = LogManager.getLogger(Styles::class.java)
 
+		val tooltip by cssclass()
 		val title by cssclass()
 		val subtitle by cssclass()
 		val sizedButton by cssclass()

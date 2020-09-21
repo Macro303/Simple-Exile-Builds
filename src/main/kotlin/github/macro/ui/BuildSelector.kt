@@ -8,6 +8,7 @@ import github.macro.build_info.Ascendency
 import github.macro.build_info.Build
 import github.macro.build_info.BuildGems
 import github.macro.build_info.ClassTag
+import github.macro.ui.config.ConfigEditor
 import javafx.collections.FXCollections
 import javafx.geometry.Pos
 import javafx.scene.control.ComboBox
@@ -32,9 +33,25 @@ class BuildSelector : View("Exile Buddy") {
 
 	override val root = borderpane {
 		prefWidth = 500.0
-		prefHeight = 550.0
+		prefHeight = 450.0
 		paddingAll = 10.0
 		top {
+			paddingAll = 5.0
+			hbox(spacing = 5.0, alignment = Pos.TOP_RIGHT){
+				button(text = "⚙"){
+					action{
+						find<ConfigEditor>().openWindow(owner = null, resizable = false)
+						this@BuildSelector.close()
+					}
+				}
+				button(text = "\uD83D\uDCA1"){
+					action{
+						hostServices.showDocument("https://github.com/Macro303/Exile-Buddy")
+					}
+				}
+			}
+		}
+		center {
 			paddingAll = 5.0
 			vbox(spacing = 5.0, alignment = Pos.TOP_CENTER) {
 				paddingAll = 5.0
@@ -47,7 +64,7 @@ class BuildSelector : View("Exile Buddy") {
 				}
 			}
 		}
-		center {
+		bottom {
 			paddingAll = 5.0
 			vbox(spacing = 5.0, alignment = Pos.CENTER) {
 				paddingAll = 5.0
