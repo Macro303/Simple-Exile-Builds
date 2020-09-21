@@ -11,6 +11,7 @@ import com.fasterxml.jackson.databind.annotation.JsonSerialize
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer
 import com.fasterxml.jackson.databind.ser.std.StdSerializer
 import github.macro.Data
+import github.macro.Util
 import github.macro.build_info.flasks.Flask
 import github.macro.build_info.gear.Gear
 import github.macro.build_info.rings.Ring
@@ -71,8 +72,14 @@ class BuildGear(
 		this.boots = boots
 		this.belt = belt
 		this.amulet = amulet
-		this.rings = FXCollections.observableList(rings)
-		this.flasks = FXCollections.observableList(flasks)
+		var ringsTemp = rings
+		while (ringsTemp.size < 2)
+			ringsTemp = ringsTemp.plus(Data.MISSING_RING)
+		this.rings = FXCollections.observableList(ringsTemp)
+		var flasksTemp = flasks
+		while (flasksTemp.size < 5)
+			flasksTemp = flasksTemp.plus(Data.MISSING_FLASK)
+		this.flasks = FXCollections.observableList(flasksTemp)
 	}
 }
 
@@ -83,7 +90,7 @@ class BuildGearDeserializer @JvmOverloads constructor(vc: Class<*>? = null) :
 		val node: JsonNode = parser.codec.readTree(parser)
 
 		val weapons = node["Weapons"]?.map { Data.gearByName(it.asText()) }?.chunked(2)?.firstOrNull()
-			?: emptyList()
+			?: mutableListOf()
 		val armour = Data.gearByName(node["Armour"]?.asText())
 		val helmet = Data.gearByName(node["Helmet"]?.asText())
 		val gloves = Data.gearByName(node["Gloves"]?.asText())
@@ -91,9 +98,9 @@ class BuildGearDeserializer @JvmOverloads constructor(vc: Class<*>? = null) :
 		val belt = Data.gearByName(node["Belt"]?.asText())
 		val amulet = Data.gearByName(node["Amulet"]?.asText())
 		val rings = node["Rings"]?.map { Data.ringByName(it.asText()) }?.chunked(2)?.firstOrNull()
-			?: emptyList()
+			?: mutableListOf()
 		val flasks = node["Flasks"]?.map { Data.flaskByName(it.asText()) }?.chunked(5)?.firstOrNull()
-			?: emptyList()
+			?: mutableListOf()
 
 		return BuildGear(
 			weapons = weapons,

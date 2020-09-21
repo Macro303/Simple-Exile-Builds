@@ -1,34 +1,25 @@
-package github.macro.ui.editor
+package github.macro.ui
 
 import github.macro.Styles
 import github.macro.Util
 import github.macro.Util.cleanName
-import github.macro.build_info.Ascendency
-import github.macro.build_info.ClassTag
-import github.macro.ui.UIController
-import github.macro.ui.UIModel
+import github.macro.ui.flasks.FlaskViewerPane
+import github.macro.ui.gems.GemViewerPane
+import github.macro.ui.rings.RingViewerPane
 import javafx.geometry.HPos
 import javafx.geometry.Insets
 import javafx.geometry.Pos
-import javafx.scene.control.ComboBox
 import javafx.scene.control.ScrollPane
 import javafx.scene.control.TabPane
-import javafx.scene.control.TextField
-import javafx.scene.layout.Priority
 import org.apache.logging.log4j.LogManager
 import tornadofx.*
 
 /**
  * Created by Macro303 on 2020-Jan-13.
  */
-class BuildEditor : View("Exile Buddy") {
+class BuildViewer : View("Exile Buddy") {
 	private val controller by inject<UIController>()
 	private val model by inject<UIModel>()
-
-	private var versionTextField by singleAssign<TextField>()
-	private var classComboBox by singleAssign<ComboBox<ClassTag>>()
-	private var ascendencyComboBox by singleAssign<ComboBox<Ascendency>>()
-	private var nameTextField by singleAssign<TextField>()
 
 	override val root = borderpane {
 		prefWidth = Util.UI_PREF_WIDTH
@@ -36,64 +27,44 @@ class BuildEditor : View("Exile Buddy") {
 		paddingAll = 10.0
 		top {
 			paddingAll = 5.0
-			hbox(spacing = 5.0, alignment = Pos.CENTER) {
+			vbox(spacing = 5.0, alignment = Pos.CENTER) {
 				paddingAll = 5.0
-				separator {
-					isVisible = false
-					hgrow = Priority.ALWAYS
+				label(text = model.selectedBuild.name) {
+					addClass(Styles.title)
 				}
-				versionTextField = textfield {
-					promptText = "PoE Version"
-					text = model.selectedBuild.version
-				}
-				classComboBox = combobox(values = model.classes) {
-					promptText = "Class"
-					cellFormat {
-						text = it.cleanName()
+				hbox(spacing = 5.0, alignment = Pos.CENTER) {
+					paddingAll = 5.0
+					separator {
+						isVisible = false
 					}
-					selectionModel.select(model.selectedBuild.classTag)
-				}
-				model.selectedClass(model.selectedBuild.classTag)
-				ascendencyComboBox = combobox(values = model.ascendencies) {
-					promptText = "Ascendency"
-					cellFormat {
-						text = it.cleanName()
+					label(text = model.selectedBuild.version) {
+						addClass(Styles.subtitle)
 					}
-					disableWhen {
-						classComboBox.valueProperty().isNull
+					separator()
+					label(text = "${model.selectedBuild.classTag.cleanName()}/${model.selectedBuild.ascendency.cleanName()}") {
+						addClass(Styles.subtitle)
 					}
-					selectionModel.select(model.selectedBuild.ascendency)
-				}
-				classComboBox.setOnAction {
-					ascendencyComboBox.selectionModel.clearSelection()
-					controller.updateClass(classComboBox.selectedItem!!)
-				}
-				nameTextField = textfield {
-					promptText = "Build Name"
-					hgrow = Priority.ALWAYS
-					text = model.selectedBuild.name
-				}
-				button(text = "Save") {
-					addClass(Styles.sizedButton)
-					action {
-						controller.saveBuild(
-							oldView = this@BuildEditor,
-							version = versionTextField.text,
-							name = nameTextField.text,
-							classTag = classComboBox.selectedItem!!,
-							ascendency = ascendencyComboBox.selectedItem!!
-						)
+					separator {
+						isVisible = false
 					}
-					disableWhen {
-						versionTextField.textProperty().isEmpty
-							.or(nameTextField.textProperty().length().lessThanOrEqualTo(3))
-							.or(classComboBox.valueProperty().isNull)
-							.or(ascendencyComboBox.valueProperty().isNull)
+					button(text = "Copy") {
+						addClass(Styles.sizedButton)
+						action {
+							controller.copyBuild(oldView = this@BuildViewer)
+						}
 					}
-				}
-				separator {
-					isVisible = false
-					hgrow = Priority.ALWAYS
+					button(text = "Edit") {
+						addClass(Styles.sizedButton)
+						action {
+							controller.editBuild(oldView = this@BuildViewer)
+						}
+					}
+					button(text = "Delete") {
+						addClass(Styles.sizedButton)
+						action {
+							controller.deleteBuild(oldView = this@BuildViewer)
+						}
+					}
 				}
 			}
 		}
@@ -117,7 +88,7 @@ class BuildEditor : View("Exile Buddy") {
 							}
 							row {
 								model.selectedBuild.gems.weapons.forEachIndexed { index, gem ->
-									add(GemEditorPane(model, gem, index, "Weapons")
+									add(GemViewerPane(model, gem)
 										.gridpaneConstraints {
 											margin = Insets(2.5)
 										})
@@ -134,8 +105,8 @@ class BuildEditor : View("Exile Buddy") {
 								}
 							}
 							row {
-								model.selectedBuild.gems.armour.forEachIndexed { index, gem ->
-									add(GemEditorPane(model, gem, index, "Armour")
+								model.selectedBuild.gems.armour.forEach {
+									add(GemViewerPane(model, it)
 										.gridpaneConstraints {
 											margin = Insets(2.5)
 										})
@@ -152,8 +123,8 @@ class BuildEditor : View("Exile Buddy") {
 								}
 							}
 							row {
-								model.selectedBuild.gems.helmet.forEachIndexed { index, gem ->
-									add(GemEditorPane(model, gem, index, "Helmet")
+								model.selectedBuild.gems.helmet.forEach {
+									add(GemViewerPane(model, it)
 										.gridpaneConstraints {
 											margin = Insets(2.5)
 										})
@@ -170,8 +141,8 @@ class BuildEditor : View("Exile Buddy") {
 								}
 							}
 							row {
-								model.selectedBuild.gems.gloves.forEachIndexed { index, gem ->
-									add(GemEditorPane(model, gem, index, "Gloves")
+								model.selectedBuild.gems.gloves.forEach {
+									add(GemViewerPane(model, it)
 										.gridpaneConstraints {
 											margin = Insets(2.5)
 										})
@@ -188,8 +159,8 @@ class BuildEditor : View("Exile Buddy") {
 								}
 							}
 							row {
-								model.selectedBuild.gems.boots.forEachIndexed { index, gem ->
-									add(GemEditorPane(model, gem, index, "Boots")
+								model.selectedBuild.gems.boots.forEach {
+									add(GemViewerPane(model, it)
 										.gridpaneConstraints {
 											margin = Insets(2.5)
 										})
@@ -327,8 +298,8 @@ class BuildEditor : View("Exile Buddy") {
 								}
 							}
 							row {
-								model.selectedBuild.gear.rings.forEachIndexed { index, ring ->
-									add(RingEditorPane(model, ring, index)
+								model.selectedBuild.gear.rings.forEach {
+									add(RingViewerPane(model, it)
 										.gridpaneConstraints {
 											margin = Insets(2.5)
 										})
@@ -345,8 +316,8 @@ class BuildEditor : View("Exile Buddy") {
 								}
 							}
 							row {
-								model.selectedBuild.gear.flasks.forEachIndexed { index, flask ->
-									add(FlaskEditorPane(model, flask, index)
+								model.selectedBuild.gear.flasks.forEach {
+									add(FlaskViewerPane(model, it)
 										.gridpaneConstraints {
 											margin = Insets(2.5)
 										})
@@ -367,12 +338,11 @@ class BuildEditor : View("Exile Buddy") {
 
 	override fun onDock() {
 		currentWindow?.setOnCloseRequest {
-			LOGGER.info("Closing Build: ${model.selectedBuild.display}")
-			controller.viewBuild(this@BuildEditor)
+			controller.selectBuild(this@BuildViewer)
 		}
 	}
 
 	companion object {
-		private val LOGGER = LogManager.getLogger(BuildEditor::class.java)
+		private val LOGGER = LogManager.getLogger(BuildViewer::class.java)
 	}
 }

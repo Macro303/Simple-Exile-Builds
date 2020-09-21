@@ -1,4 +1,4 @@
-package github.macro.ui.editor
+package github.macro.ui.gems
 
 import github.macro.Data
 import github.macro.Styles
@@ -6,7 +6,6 @@ import github.macro.Util
 import github.macro.build_info.Update
 import github.macro.build_info.gems.Gem
 import github.macro.build_info.gems.reward.RewardType
-import github.macro.ui.GemSelector
 import github.macro.ui.UIModel
 import javafx.beans.property.SimpleBooleanProperty
 import javafx.beans.property.SimpleObjectProperty
@@ -123,7 +122,7 @@ class GemEditorPane(val model: UIModel, gem: Gem, val index: Int? = null, val li
 			label(nameProperty) {
 				isWrapText = true
 				prefWidth = (Util.UI_PREF_WIDTH - 60) / 6
-				prefHeight = 45.0
+				prefHeight = 75.0
 				alignment = Pos.CENTER
 				textAlignment = TextAlignment.CENTER
 				textFillProperty().bind(colourProperty)

@@ -51,23 +51,23 @@ class BuildGems(
 
 	init {
 		var weaponsTemp = weapons
-		while (weaponsTemp.size < Util.WEAPONS_MAX_LINKS)
+		while (weaponsTemp.size < 6)
 			weaponsTemp = weaponsTemp.plus(Data.MISSING_GEM)
 		this.weapons = FXCollections.observableList(weaponsTemp)
 		var armourTemp = armour
-		while (armourTemp.size < Util.ARMOUR_MAX_LINKS)
+		while (armourTemp.size < 6)
 			armourTemp = armourTemp.plus(Data.MISSING_GEM)
 		this.armour = FXCollections.observableList(armourTemp)
 		var helmetTemp = helmet
-		while (helmetTemp.size < Util.HELMET_MAX_LINKS)
+		while (helmetTemp.size < 4)
 			helmetTemp = helmetTemp.plus(Data.MISSING_GEM)
 		this.helmet = FXCollections.observableList(helmetTemp)
 		var glovesTemp = gloves
-		while (glovesTemp.size < Util.GLOVES_MAX_LINKS)
+		while (glovesTemp.size < 4)
 			glovesTemp = glovesTemp.plus(Data.MISSING_GEM)
 		this.gloves = FXCollections.observableList(glovesTemp)
 		var bootsTemp = boots
-		while (bootsTemp.size < Util.BOOTS_MAX_LINKS)
+		while (bootsTemp.size < 4)
 			bootsTemp = bootsTemp.plus(Data.MISSING_GEM)
 		this.boots = FXCollections.observableList(bootsTemp)
 		this.updates = FXCollections.observableList(updates)
@@ -83,17 +83,17 @@ class BuildGemsDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : St
 	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildGems? {
 		val node: JsonNode = parser.codec.readTree(parser)
 
-		val weapons = node["Weapons"]?.map { Data.gemByName(it.asText()) }?.chunked(Util.WEAPONS_MAX_LINKS)?.firstOrNull()
-			?: emptyList()
-		val armour = node["Armour"]?.map { Data.gemByName(it.asText()) }?.chunked(Util.ARMOUR_MAX_LINKS)?.firstOrNull()
-			?: emptyList()
-		val helmet = node["Helmet"]?.map { Data.gemByName(it.asText()) }?.chunked(Util.HELMET_MAX_LINKS)?.firstOrNull()
-			?: emptyList()
-		val gloves = node["Gloves"]?.map { Data.gemByName(it.asText()) }?.chunked(Util.GLOVES_MAX_LINKS)?.firstOrNull()
-			?: emptyList()
-		val boots = node["Boots"]?.map { Data.gemByName(it.asText()) }?.chunked(Util.BOOTS_MAX_LINKS)?.firstOrNull()
-			?: emptyList()
-		val updates = node["Updates"]?.map { Util.YAML_MAPPER.treeToValue(it, Update::class.java) } ?: emptyList()
+		val weapons = node["Weapons"]?.map { Data.gemByName(it.asText()) }?.chunked(6)?.firstOrNull()
+			?: mutableListOf()
+		val armour = node["Armour"]?.map { Data.gemByName(it.asText()) }?.chunked(6)?.firstOrNull()
+			?: mutableListOf()
+		val helmet = node["Helmet"]?.map { Data.gemByName(it.asText()) }?.chunked(4)?.firstOrNull()
+			?: mutableListOf()
+		val gloves = node["Gloves"]?.map { Data.gemByName(it.asText()) }?.chunked(4)?.firstOrNull()
+			?: mutableListOf()
+		val boots = node["Boots"]?.map { Data.gemByName(it.asText()) }?.chunked(4)?.firstOrNull()
+			?: mutableListOf()
+		val updates = node["Updates"]?.map { Util.YAML_MAPPER.treeToValue(it, Update::class.java) } ?: mutableListOf()
 
 		return BuildGems(
 			weapons = weapons,

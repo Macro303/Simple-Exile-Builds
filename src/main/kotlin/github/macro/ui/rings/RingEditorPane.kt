@@ -1,4 +1,4 @@
-package github.macro.ui.editor
+package github.macro.ui.rings
 
 import github.macro.Data
 import github.macro.Styles
@@ -105,7 +105,7 @@ class RingEditorPane(val model: UIModel, ring: Ring, val index: Int? = null) : B
 			label(nameProperty) {
 				isWrapText = true
 				prefWidth = (Util.UI_PREF_WIDTH - 50) / 5
-				prefHeight = 45.0
+				prefHeight = 30.0
 				alignment = Pos.CENTER
 				textAlignment = TextAlignment.CENTER
 			}

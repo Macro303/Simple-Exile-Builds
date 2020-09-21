@@ -27,11 +27,6 @@ object Util {
 	private val LOGGER = LogManager.getLogger(Util::class.java)
 	internal const val UI_PREF_WIDTH = 800.0
 	internal const val UI_PREF_HEIGHT = 750.0
-	internal const val WEAPONS_MAX_LINKS = 6
-	internal const val ARMOUR_MAX_LINKS = 6
-	internal const val HELMET_MAX_LINKS = 4
-	internal const val GLOVES_MAX_LINKS = 4
-	internal const val BOOTS_MAX_LINKS = 4
 	internal val JSON_MAPPER: ObjectMapper by lazy {
 		val mapper = ObjectMapper()
 		mapper.enable(SerializationFeature.INDENT_OUTPUT)
@@ -63,7 +58,7 @@ object Util {
 		DUELIST -> listOf("Double Strike", "Chance to Bleed Support")
 		TEMPLAR -> listOf("Glacial Hammer", "Elemental Proliferation Support")
 		SHADOW -> listOf("Viper Strike", "Lesser Poison Support")
-	}.plus(arrayOf("Empower Support", "Vaal Haste", "Awakened Cast on Critical Strike Support")).map { gemByName(it) }
+	}.map { gemByName(it) }
 
 	internal fun getStartingFlasks(): List<Flask> =
 		listOf("Small Life Flask", "Small Life Flask", "Small Mana Life Flask").map { flaskByName(it) }

@@ -1,4 +1,4 @@
-package github.macro.ui.viewer
+package github.macro.ui.gems
 
 import github.macro.Data
 import github.macro.Styles
@@ -121,7 +121,7 @@ class GemViewerPane(val model: UIModel, gem: Gem) : BorderPane() {
 			label(nameProperty) {
 				isWrapText = true
 				prefWidth = (Util.UI_PREF_WIDTH - 60) / 6
-				prefHeight = 45.0
+				prefHeight = 75.0
 				alignment = Pos.CENTER
 				textAlignment = TextAlignment.CENTER
 				textFillProperty().bind(colourProperty)

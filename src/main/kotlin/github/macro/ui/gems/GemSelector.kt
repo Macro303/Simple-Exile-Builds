@@ -1,9 +1,10 @@
-package github.macro.ui
+package github.macro.ui.gems
 
 import github.macro.Data
 import github.macro.Styles
-import github.macro.Util
 import github.macro.build_info.gems.Gem
+import github.macro.ui.UIController
+import github.macro.ui.UIModel
 import javafx.beans.property.SimpleStringProperty
 import javafx.geometry.Pos
 import javafx.scene.control.ComboBox

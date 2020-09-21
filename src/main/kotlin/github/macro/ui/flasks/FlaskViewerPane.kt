@@ -1,4 +1,4 @@
-package github.macro.ui.viewer
+package github.macro.ui.flasks
 
 import github.macro.Styles
 import github.macro.Util
@@ -104,7 +104,7 @@ class FlaskViewerPane(val model: UIModel, flask: Flask) : BorderPane() {
 			label(nameProperty) {
 				isWrapText = true
 				prefWidth = (Util.UI_PREF_WIDTH - 50) / 5
-				prefHeight = 45.0
+				prefHeight = 30.0
 				alignment = Pos.CENTER
 				textAlignment = TextAlignment.CENTER
 			}

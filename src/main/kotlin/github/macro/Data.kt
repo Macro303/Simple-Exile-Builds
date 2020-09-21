@@ -26,18 +26,18 @@ object Data {
 			)
 		} catch (ioe: IOException) {
 			LOGGER.warn("Unable to Load Gems: $ioe")
-			emptyList<Gem>()
+			mutableListOf<Gem>()
 		}
 	}
 	val MISSING_GEM = Gem(
 		id = "Missing",
 		name = "Missing",
 		colour = Colour.ERROR,
-		tags = emptyList(),
+		tags = mutableListOf(),
 		isVaal = false,
 		isSupport = false,
 		isAwakened = false,
-		acquisition = Acquisition(emptyList(), emptyList())
+		acquisition = Acquisition(mutableListOf(), mutableListOf())
 	)
 	val FLASK_LIST: List<Flask> by lazy {
 		try {
@@ -47,7 +47,7 @@ object Data {
 			)
 		} catch (ioe: IOException) {
 			LOGGER.warn("Unable to Load Flasks: $ioe")
-			emptyList<Flask>()
+			mutableListOf<Flask>()
 		}
 	}
 	val MISSING_FLASK = Flask(
@@ -64,7 +64,7 @@ object Data {
 			)
 		} catch (ioe: IOException) {
 			LOGGER.warn("Unable to Load Rings: $ioe")
-			emptyList<Ring>()
+			mutableListOf<Ring>()
 		}
 	}
 	val MISSING_RING = Ring(
@@ -81,7 +81,7 @@ object Data {
 			)
 		} catch (ioe: IOException) {
 			LOGGER.warn("Unable to Load Gear: $ioe")
-			emptyList<Gear>()
+			mutableListOf<Gear>()
 		}
 	}
 	val MISSING_EQUIPMENT = Gear(

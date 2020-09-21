@@ -3,8 +3,6 @@ package github.macro.ui
 import github.macro.Data
 import github.macro.Util
 import github.macro.build_info.*
-import github.macro.ui.editor.BuildEditor
-import github.macro.ui.viewer.BuildViewer
 import org.apache.logging.log4j.LogManager
 import tornadofx.*
 
@@ -52,22 +50,22 @@ class UIController : Controller() {
 			ascendency = ascendency,
 			gems = BuildGems(
 				weapons = Util.getStartingGems(classTag),
-				armour = emptyList(),
-				helmet = emptyList(),
-				gloves = emptyList(),
-				boots = emptyList(),
-				updates = emptyList()
+				armour = mutableListOf(),
+				helmet = mutableListOf(),
+				gloves = mutableListOf(),
+				boots = mutableListOf(),
+				updates = mutableListOf()
 			),
 			gear = BuildGear(
-				weapons = emptyList(),
+				weapons = mutableListOf(),
 				armour = Data.MISSING_EQUIPMENT,
 				helmet = Data.MISSING_EQUIPMENT,
 				gloves = Data.MISSING_EQUIPMENT,
 				boots = Data.MISSING_EQUIPMENT,
 				belt = Data.MISSING_EQUIPMENT,
 				amulet = Data.MISSING_EQUIPMENT,
-				rings = emptyList(),
-				flasks = emptyList()
+				rings = mutableListOf(),
+				flasks = mutableListOf()
 			)
 		)
 		LOGGER.info("Creating Build: ${model.selectedBuild.display}")

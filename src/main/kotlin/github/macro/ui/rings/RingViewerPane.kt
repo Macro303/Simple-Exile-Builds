@@ -1,9 +1,8 @@
-package github.macro.ui.editor
+package github.macro.ui.rings
 
-import github.macro.Data
 import github.macro.Styles
 import github.macro.Util
-import github.macro.build_info.flasks.Flask
+import github.macro.build_info.rings.Ring
 import github.macro.ui.UIModel
 import javafx.beans.property.SimpleBooleanProperty
 import javafx.beans.property.SimpleObjectProperty
@@ -23,9 +22,9 @@ import java.io.File
 /**
  * Created by Macro303 on 2020-Jan-14.
  */
-class FlaskEditorPane(val model: UIModel, flask: Flask, val index: Int? = null) : BorderPane() {
-	val flaskProperty = SimpleObjectProperty<Flask>()
-	var flask by flaskProperty
+class RingViewerPane(val model: UIModel, ring: Ring) : BorderPane() {
+	val ringProperty = SimpleObjectProperty<Ring>()
+	var ring by ringProperty
 
 	val imageUrlProperty = SimpleStringProperty()
 	var imageUrl by imageUrlProperty
@@ -43,12 +42,12 @@ class FlaskEditorPane(val model: UIModel, flask: Flask, val index: Int? = null) 
 	var reason by reasonProperty
 
 	init {
-		assignFlask(flask)
+		assignRing(ring)
 		initialize()
 	}
 
-	fun assignFlask(newFlask: Flask) {
-		flask = newFlask
+	fun assignRing(newRing: Ring) {
+		ring = newRing
 
 		style {
 			borderColor += box(c(Util.colourToHex(null)))
@@ -63,12 +62,12 @@ class FlaskEditorPane(val model: UIModel, flask: Flask, val index: Int? = null) 
 			borderWidth += box(2.px)
 		}
 
-		var imageFile = flask.getFile()
+		var imageFile = ring.getFile()
 		if (!imageFile.exists())
-			imageFile = File(File("resources", "Flasks"), "placeholder.png")
+			imageFile = File(File("resources", "Rings"), "placeholder.png")
 		imageUrl = "file:${imageFile.path}"
 
-		name = flask.name
+		name = ring.name
 
 		previous = false
 		next = false
@@ -88,7 +87,7 @@ class FlaskEditorPane(val model: UIModel, flask: Flask, val index: Int? = null) 
 	}
 
 	companion object {
-		private val LOGGER = LogManager.getLogger(FlaskEditorPane::class.java)
+		private val LOGGER = LogManager.getLogger(RingViewerPane::class.java)
 	}
 
 	private fun initialize() {
@@ -96,8 +95,8 @@ class FlaskEditorPane(val model: UIModel, flask: Flask, val index: Int? = null) 
 		top {
 			hbox(spacing = 5.0, alignment = Pos.CENTER) {
 				imageview(imageUrlProperty, lazyload = true) {
-					fitHeight = 94.0
-					fitWidth = 47.0
+					fitHeight = 78.0
+					fitWidth = 78.0
 				}
 			}
 		}
@@ -105,7 +104,7 @@ class FlaskEditorPane(val model: UIModel, flask: Flask, val index: Int? = null) 
 			label(nameProperty) {
 				isWrapText = true
 				prefWidth = (Util.UI_PREF_WIDTH - 50) / 5
-				prefHeight = 45.0
+				prefHeight = 30.0
 				alignment = Pos.CENTER
 				textAlignment = TextAlignment.CENTER
 			}
@@ -118,8 +117,8 @@ class FlaskEditorPane(val model: UIModel, flask: Flask, val index: Int? = null) 
 						visibleWhen(previousProperty)
 						isFocusTraversable = false
 						action {
-							LOGGER.info("Selected Previous Flask")
-//							assignFlask(//TODO)
+							LOGGER.info("Selected Previous Ring")
+//							assignRing(//TODO)
 						}
 						gridpaneConstraints {
 							margin = Insets(2.5)
@@ -136,45 +135,14 @@ class FlaskEditorPane(val model: UIModel, flask: Flask, val index: Int? = null) 
 						visibleWhen(nextProperty)
 						isFocusTraversable = false
 						action {
-							LOGGER.info("Selected Next Flask")
-//							assignFlask(//TODO)
+							LOGGER.info("Selected Next Ring")
+//							assignRing(//TODO)
 						}
 						tooltip(reason) {
 							addClass(Styles.tooltip)
 							textProperty().bind(reasonProperty)
 						}
 						Util.hackTooltipStartTiming(tooltip)
-						gridpaneConstraints {
-							margin = Insets(2.5)
-						}
-					}
-				}
-				row {
-					button("➕") {
-						useMaxWidth = true
-						visibleWhen((nextProperty.or(flaskProperty.isEqualTo(Data.MISSING_FLASK)).not()))
-						action {
-							LOGGER.info("Selected Add Flask")
-						}
-						gridpaneConstraints {
-							margin = Insets(2.5)
-						}
-					}
-					button("⚙") {
-						useMaxWidth = true
-						action {
-							LOGGER.info("Selected Edit Flask")
-						}
-						gridpaneConstraints {
-							margin = Insets(2.5)
-						}
-					}
-					button("✖") {
-						useMaxWidth = true
-						visibleWhen(previousProperty.or(nextProperty))
-						action {
-							LOGGER.info("Selected Delete Flask")
-						}
 						gridpaneConstraints {
 							margin = Insets(2.5)
 						}
