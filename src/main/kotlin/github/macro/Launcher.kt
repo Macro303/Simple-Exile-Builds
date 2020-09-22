@@ -1,7 +1,7 @@
 package github.macro
 
 import github.macro.config.Config
-import github.macro.ui.BuildSelector
+import github.macro.ui.build_info.BuildSelector
 import javafx.scene.image.Image
 import javafx.scene.text.Font
 import javafx.scene.text.FontWeight

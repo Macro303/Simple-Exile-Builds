@@ -2,7 +2,7 @@ package github.macro.ui.config
 
 import github.macro.Styles
 import github.macro.config.Config
-import github.macro.ui.BuildSelector
+import github.macro.ui.build_info.BuildSelector
 import javafx.geometry.Pos
 import javafx.scene.text.FontPosture
 import tornadofx.*
@@ -51,13 +51,6 @@ class ConfigEditor : View("Exile Buddy") {
 					}
 				}
 			}
-		}
-	}
-
-	override fun onDock() {
-		currentWindow?.setOnCloseRequest {
-			find<BuildSelector>().openWindow(owner = null, resizable = false)
-			this@ConfigEditor.close()
 		}
 	}
 }

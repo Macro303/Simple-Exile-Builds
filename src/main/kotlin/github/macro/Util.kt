@@ -5,14 +5,13 @@ import com.fasterxml.jackson.databind.SerializationFeature
 import com.fasterxml.jackson.dataformat.yaml.YAMLFactory
 import com.fasterxml.jackson.dataformat.yaml.YAMLGenerator
 import com.fasterxml.jackson.datatype.jdk8.Jdk8Module
-import github.macro.Data.flaskByName
-import github.macro.Data.gemByName
-import github.macro.build_info.ClassTag
-import github.macro.build_info.ClassTag.*
-import github.macro.build_info.flasks.Flask
-import github.macro.build_info.gems.Colour
-import github.macro.build_info.gems.Gem
+import github.macro.core.build_info.ClassTag
+import github.macro.core.build_info.ClassTag.*
+import github.macro.core.items.flasks.ItemFlask
+import github.macro.core.gems.Colour
+import github.macro.core.gems.ItemGem
 import github.macro.config.Config
+import github.macro.core.Data
 import javafx.animation.KeyFrame
 import javafx.animation.Timeline
 import javafx.scene.control.Tooltip
@@ -50,7 +49,7 @@ object Util {
 		else -> if (Config.INSTANCE.useDarkMode) "#4C4C4C" else "#C4C4C4"
 	}
 
-	internal fun getStartingGems(classTag: ClassTag): List<Gem> = when (classTag) {
+	internal fun getStartingGems(classTag: ClassTag): List<ItemGem> = when (classTag) {
 		SCION -> listOf("Spectral Throw", "Onslaught Support")
 		MARAUDER -> listOf("Heavy Strike", "Ruthless Support")
 		RANGER -> listOf("Burning Arrow", "Pierce Support")
@@ -58,10 +57,10 @@ object Util {
 		DUELIST -> listOf("Double Strike", "Chance to Bleed Support")
 		TEMPLAR -> listOf("Glacial Hammer", "Elemental Proliferation Support")
 		SHADOW -> listOf("Viper Strike", "Lesser Poison Support")
-	}.map { gemByName(it) }
+	}.map { Data.getGem(it) }
 
-	internal fun getStartingFlasks(): List<Flask> =
-		listOf("Small Life Flask", "Small Life Flask", "Small Mana Life Flask").map { flaskByName(it) }
+	internal fun getStartingFlasks(): List<ItemFlask> =
+		listOf("Small Life Flask", "Small Life Flask", "Small Mana Flask").map { Data.getFlask(it) }
 
 	fun Enum<*>.cleanName(): String = this.name.split("_").joinToString(" ") { it.toLowerCase().capitalize() }
 
