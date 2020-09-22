@@ -85,7 +85,7 @@ class GemEditorPane(build: Build, buildItem: BuildGem, index: Int, private val e
 			borderWidth += box(2.px)
 		}
 
-		name = (buildItem.item as ItemGem).getFullname()
+		name = (buildItem.item as ItemGem).getDisplayName()
 		var temp = (buildItem.item as ItemGem).acquisition.rewards.joinToString(separator = "\n") {
 			var text = "Act ${it.act} - ${it.quest}"
 			if (it.rewardType == RewardType.VENDOR)

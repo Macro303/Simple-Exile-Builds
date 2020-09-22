@@ -46,11 +46,11 @@ abstract class AbstractItemSelector<T : IBuildItem, S : IItem> : View() {
 					fitHeight = model.imageHeight
 					fitWidth = model.imageWidth
 				}
-				itemCombobox = combobox<S>(values = model.items.sortedBy { it.name }) {
+				itemCombobox = combobox<S>(values = model.items.filterNot { it.name == "None" }.sortedBy { it.name }) {
 					promptText = "Select Item"
 					hgrow = Priority.ALWAYS
 					cellFormat {
-						text = it.name
+						text = it.getDisplayName()
 					}
 					setOnAction {
 						updateSelection(itemCombobox.selectedItem)
@@ -70,6 +70,13 @@ abstract class AbstractItemSelector<T : IBuildItem, S : IItem> : View() {
 					}
 				}
 			}
+		}
+	}
+
+	override fun onDock() {
+		currentWindow?.setOnCloseRequest {
+			updateSelection(null)
+			model.selected = selectedItem
 		}
 	}
 

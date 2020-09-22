@@ -53,7 +53,6 @@ class GemViewerPane(build: Build, buildGem: BuildGem, index: Int, private val eq
 			borderWidth += box(2.px)
 		}
 
-		name = (buildItem.item as ItemGem).getFullname()
 		var temp = (buildItem.item as ItemGem).acquisition.rewards.joinToString(separator = "\n") {
 			var text = "Act ${it.act} - ${it.quest}"
 			if (it.rewardType == RewardType.VENDOR)

@@ -10,5 +10,7 @@ interface IItem {
 	var name: String
 	var isReleased: Boolean
 
+	fun getDisplayName(): String
+
 	fun getFile(): File
 }

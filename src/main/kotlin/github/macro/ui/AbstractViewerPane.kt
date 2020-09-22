@@ -77,7 +77,7 @@ abstract class AbstractViewerPane<T : IBuildItem>(
 			image = File(image.parent, "placeholder.png")
 		imageUrl = "file:${image.path}"
 
-		name = buildItem.item.name
+		name = buildItem.item.getDisplayName()
 		rewards = "Not available as a reward"
 		colour = Paint.valueOf(Util.colourToHex(Colour.WHITE))
 

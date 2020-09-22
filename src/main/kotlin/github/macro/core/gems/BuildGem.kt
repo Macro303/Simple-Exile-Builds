@@ -75,7 +75,7 @@ private class BuildGemSerializer @JvmOverloads constructor(t: Class<BuildGem>? =
 	@Throws(IOException::class, JsonProcessingException::class)
 	override fun serialize(value: BuildGem, parser: JsonGenerator, provider: SerializerProvider?) {
 		parser.writeStartObject()
-		parser.writeStringField("Item", (value.item as ItemGem).getFullname())
+		parser.writeStringField("Item", (value.item as ItemGem).getDisplayName())
 		parser.writeObjectField("Next Item", (value.nextItem as BuildGem?))
 		parser.writeStringField("Reason", value.reason)
 		parser.writeEndObject()

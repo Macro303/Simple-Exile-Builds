@@ -86,15 +86,10 @@ class ItemGem(
 		return File(baseFolder, id.substringAfterLast("/") + ".png")
 	}
 
-	fun getFullname(): String {
+	override fun getDisplayName(): String {
 		val prefix = if (isVaal) "Vaal " else if (isAwakened) "Awakened " else ""
 		val suffix = if (isSupport) " Support" else ""
 		return prefix + name + suffix
-	}
-
-	fun getTagname(): String {
-		val suffix = if (isVaal) " [Vaal]" else if (isAwakened) " [Awakened]" else ""
-		return name + (if (isSupport) " Support" else "") + suffix
 	}
 }
 

@@ -51,7 +51,7 @@ object Data {
 
 	fun getGem(name: String?): ItemGem {
 		return GEM_LIST.firstOrNull {
-			it.getFullname().equals(name, ignoreCase = true)
+			it.getDisplayName().equals(name, ignoreCase = true)
 		} ?: ItemGem(
 			id = "Missing",
 			name = "Missing",
@@ -87,7 +87,7 @@ object Data {
 
 	fun getWeapon(name: String?): ItemWeapon {
 		return WEAPON_LIST.firstOrNull {
-			it.name.equals(name, ignoreCase = true)
+			it.getDisplayName().equals(name, ignoreCase = true)
 		} ?: ItemWeapon(
 			id = "Missing",
 			name = "Missing",
@@ -118,7 +118,7 @@ object Data {
 
 	fun getBodyArmour(name: String?): ItemBodyArmour {
 		return BODY_ARMOUR_LIST.firstOrNull {
-			it.name.equals(name, ignoreCase = true)
+			it.getDisplayName().equals(name, ignoreCase = true)
 		} ?: ItemBodyArmour(
 			id = "Missing",
 			name = "Missing",
@@ -149,7 +149,7 @@ object Data {
 
 	fun getHelmet(name: String?): ItemHelmet {
 		return HELMET_LIST.firstOrNull {
-			it.name.equals(name, ignoreCase = true)
+			it.getDisplayName().equals(name, ignoreCase = true)
 		} ?: ItemHelmet(
 			id = "Missing",
 			name = "Missing",
@@ -180,7 +180,7 @@ object Data {
 
 	fun getGloves(name: String?): ItemGloves {
 		return GLOVES_LIST.firstOrNull {
-			it.name.equals(name, ignoreCase = true)
+			it.getDisplayName().equals(name, ignoreCase = true)
 		} ?: ItemGloves(
 			id = "Missing",
 			name = "Missing",
@@ -211,7 +211,7 @@ object Data {
 
 	fun getBoots(name: String?): ItemBoots {
 		return BOOTS_LIST.firstOrNull {
-			it.name.equals(name, ignoreCase = true)
+			it.getDisplayName().equals(name, ignoreCase = true)
 		} ?: ItemBoots(
 			id = "Missing",
 			name = "Missing",
@@ -242,7 +242,7 @@ object Data {
 
 	fun getBelt(name: String?): ItemBelt {
 		return BELT_LIST.firstOrNull {
-			it.name.equals(name, ignoreCase = true)
+			it.getDisplayName().equals(name, ignoreCase = true)
 		} ?: ItemBelt(
 			id = "Missing",
 			name = "Missing",
@@ -273,7 +273,7 @@ object Data {
 
 	fun getAmulet(name: String?): ItemAmulet {
 		return AMULET_LIST.firstOrNull {
-			it.name.equals(name, ignoreCase = true)
+			it.getDisplayName().equals(name, ignoreCase = true)
 		} ?: ItemAmulet(
 			id = "Missing",
 			name = "Missing",
@@ -304,7 +304,7 @@ object Data {
 
 	fun getRing(name: String?): ItemRing {
 		return RING_LIST.firstOrNull {
-			it.name.equals(name, ignoreCase = true)
+			it.getDisplayName().equals(name, ignoreCase = true)
 		} ?: ItemRing(
 			id = "Missing",
 			name = "Missing",
@@ -335,7 +335,7 @@ object Data {
 
 	fun getFlask(name: String?): ItemFlask {
 		return FLASK_LIST.firstOrNull {
-			it.name.equals(name, ignoreCase = true)
+			it.getDisplayName().equals(name, ignoreCase = true)
 		} ?: ItemFlask(
 			id = "Missing",
 			name = "Missing",
