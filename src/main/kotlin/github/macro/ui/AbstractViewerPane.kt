@@ -83,7 +83,7 @@ abstract class AbstractViewerPane<T : IBuildItem>(
 
 		previous = getPrevious() != null
 		next = getNext() != null
-		reason = buildItem.reason
+		reason = buildItem.nextItem?.reason
 	}
 
 	protected abstract fun getPrevious(): T?

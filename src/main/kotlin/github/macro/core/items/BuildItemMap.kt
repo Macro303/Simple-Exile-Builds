@@ -47,8 +47,8 @@ class BuildItemMap(
 	val weaponsProperty = SimpleListProperty<BuildWeapon>()
 	var weapons by weaponsProperty
 
-	val armourProperty = SimpleObjectProperty<BuildBodyArmour>()
-	var armour by armourProperty
+	val bodyArmourProperty = SimpleObjectProperty<BuildBodyArmour>()
+	var bodyArmour by bodyArmourProperty
 
 	val helmetProperty = SimpleObjectProperty<BuildHelmet>()
 	var helmet by helmetProperty
@@ -76,7 +76,7 @@ class BuildItemMap(
 		while (weaponsTemp.size < 2)
 			weaponsTemp = weaponsTemp.plus(BuildWeapon(Data.getWeapon("None")))
 		this.weapons = FXCollections.observableList(weaponsTemp)
-		this.armour = bodyArmour
+		this.bodyArmour = bodyArmour
 		this.helmet = helmet
 		this.gloves = gloves
 		this.boots = boots
@@ -102,7 +102,7 @@ private class BuildGearMapDeserializer @JvmOverloads constructor(vc: Class<*>? =
 
 		val weapons = node["Weapons"]?.map { Util.YAML_MAPPER.treeToValue(it, BuildWeapon::class.java) }
 			?.chunked(2)?.firstOrNull() ?: mutableListOf()
-		val armour = Util.YAML_MAPPER.treeToValue(node["Armour"], BuildBodyArmour::class.java)
+		val bodyArmour = Util.YAML_MAPPER.treeToValue(node["Body Armour"], BuildBodyArmour::class.java)
 		val helmet = Util.YAML_MAPPER.treeToValue(node["Helmet"], BuildHelmet::class.java)
 		val gloves = Util.YAML_MAPPER.treeToValue(node["Gloves"], BuildGloves::class.java)
 		val boots = Util.YAML_MAPPER.treeToValue(node["Boots"], BuildBoots::class.java)
@@ -115,7 +115,7 @@ private class BuildGearMapDeserializer @JvmOverloads constructor(vc: Class<*>? =
 
 		return BuildItemMap(
 			weapons = weapons,
-			bodyArmour = armour,
+			bodyArmour = bodyArmour,
 			helmet = helmet,
 			gloves = gloves,
 			boots = boots,
@@ -138,7 +138,7 @@ private class BuildGearMapSerializer @JvmOverloads constructor(t: Class<BuildIte
 	override fun serialize(value: BuildItemMap, parser: JsonGenerator, provider: SerializerProvider?) {
 		parser.writeStartObject()
 		parser.writeObjectField("Weapons", value.weapons)
-		parser.writeObjectField("Armour", value.armour)
+		parser.writeObjectField("Body Armour", value.bodyArmour)
 		parser.writeObjectField("Helmet", value.helmet)
 		parser.writeObjectField("Gloves", value.gloves)
 		parser.writeObjectField("Boots", value.boots)

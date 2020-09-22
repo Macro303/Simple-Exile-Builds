@@ -125,7 +125,7 @@ class BuildEditor : View("Exile Buddy") {
 							}
 							row {
 								model.selectedBuild.buildGems.weapons.forEachIndexed { index, gem ->
-									add(GemEditorPane(model.selectedBuild, gem, index)
+									add(GemEditorPane(model.selectedBuild, gem, index, "Weapons")
 										.gridpaneConstraints {
 											margin = Insets(2.5)
 										})
@@ -142,8 +142,8 @@ class BuildEditor : View("Exile Buddy") {
 								}
 							}
 							row {
-								model.selectedBuild.buildGems.armour.forEachIndexed { index, gem ->
-									add(GemEditorPane(model.selectedBuild, gem, index)
+								model.selectedBuild.buildGems.bodyArmour.forEachIndexed { index, gem ->
+									add(GemEditorPane(model.selectedBuild, gem, index, "Body Armour")
 										.gridpaneConstraints {
 											margin = Insets(2.5)
 										})
@@ -161,7 +161,7 @@ class BuildEditor : View("Exile Buddy") {
 							}
 							row {
 								model.selectedBuild.buildGems.helmet.forEachIndexed { index, gem ->
-									add(GemEditorPane(model.selectedBuild, gem, index)
+									add(GemEditorPane(model.selectedBuild, gem, index, "Helmet")
 										.gridpaneConstraints {
 											margin = Insets(2.5)
 										})
@@ -179,7 +179,7 @@ class BuildEditor : View("Exile Buddy") {
 							}
 							row {
 								model.selectedBuild.buildGems.gloves.forEachIndexed { index, gem ->
-									add(GemEditorPane(model.selectedBuild, gem, index)
+									add(GemEditorPane(model.selectedBuild, gem, index, "Gloves")
 										.gridpaneConstraints {
 											margin = Insets(2.5)
 										})
@@ -197,7 +197,7 @@ class BuildEditor : View("Exile Buddy") {
 							}
 							row {
 								model.selectedBuild.buildGems.boots.forEachIndexed { index, gem ->
-									add(GemEditorPane(model.selectedBuild, gem, index)
+									add(GemEditorPane(model.selectedBuild, gem, index, "Boots")
 										.gridpaneConstraints {
 											margin = Insets(2.5)
 										})

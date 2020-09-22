@@ -19,19 +19,46 @@ import tornadofx.*
 /**
  * Created by Macro303 on 2020-Jan-14.
  */
-class GemEditorPane(build: Build, buildItem: BuildGem, index: Int) : AbstractEditorPane<BuildGem, ItemGem>(
-	build = build,
-	buildItem = buildItem,
-	index = index,
-	columnCount = 6
-) {
+class GemEditorPane(build: Build, buildItem: BuildGem, index: Int, private val equipment: String?) :
+	AbstractEditorPane<BuildGem, ItemGem>(build = build, buildItem = buildItem, index = index, columnCount = 6) {
+
 	override val selectionModel = SelectionModel<BuildGem, ItemGem>(Data.GEM_LIST)
 
 	override fun addItem(item: BuildGem?) {
-		TODO("Not yet implemented")
+		when (equipment) {
+			"Weapons" -> build.buildGems.weapons
+			"Body Armour" -> build.buildGems.bodyArmour
+			"Helmet" -> build.buildGems.helmet
+			"Gloves" -> build.buildGems.gloves
+			"Boots" -> build.buildGems.boots
+			else -> build.buildGems.weapons
+		}[index] = item ?: BuildGem(Data.getGem("None"))
+		assignItem(
+			when (equipment) {
+				"Weapons" -> build.buildGems.weapons
+				"Body Armour" -> build.buildGems.bodyArmour
+				"Helmet" -> build.buildGems.helmet
+				"Gloves" -> build.buildGems.gloves
+				"Boots" -> build.buildGems.boots
+				else -> build.buildGems.weapons
+			}[index]
+		)
 	}
 
 	override fun getPrevious(): BuildGem? {
+		var temp = when (equipment) {
+			"Weapons" -> build.buildGems.weapons
+			"Body Armour" -> build.buildGems.bodyArmour
+			"Helmet" -> build.buildGems.helmet
+			"Gloves" -> build.buildGems.gloves
+			"Boots" -> build.buildGems.boots
+			else -> build.buildGems.weapons
+		}[index]
+		while (temp.nextItem != null) {
+			if (temp.nextItem == buildItem)
+				return temp
+			temp = temp.nextItem as BuildGem?
+		}
 		return null
 	}
 

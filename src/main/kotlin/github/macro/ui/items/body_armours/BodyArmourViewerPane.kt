@@ -10,11 +10,11 @@ import org.apache.logging.log4j.LogManager
  */
 class BodyArmourViewerPane(build: Build) : AbstractViewerPane<BuildBodyArmour>(
 	build = build,
-	buildItem = build.buildItems.armour,
+	buildItem = build.buildItems.bodyArmour,
 	index = 0
 ) {
 	override fun getPrevious(): BuildBodyArmour? {
-		var temp = build.buildItems.armour
+		var temp = build.buildItems.bodyArmour
 		while (temp.nextItem != null) {
 			if (temp.nextItem == buildItem)
 				return temp

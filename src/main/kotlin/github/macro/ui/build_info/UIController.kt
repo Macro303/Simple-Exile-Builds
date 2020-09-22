@@ -59,7 +59,7 @@ class UIController : Controller() {
 			ascendency = ascendency,
 			buildGems = BuildGemMap(
 				weapons = Util.getStartingGems(classTag).map { BuildGem(it) },
-				armour = mutableListOf(),
+				bodyArmour = mutableListOf(),
 				helmet = mutableListOf(),
 				gloves = mutableListOf(),
 				boots = mutableListOf()

@@ -14,19 +14,19 @@ import tornadofx.*
  */
 class BodyArmourEditorPane(build: Build) : AbstractEditorPane<BuildBodyArmour, ItemBodyArmour>(
 	build = build,
-	buildItem = build.buildItems.armour,
+	buildItem = build.buildItems.bodyArmour,
 	index = 0,
 	columnCount = 1
 ) {
 	override val selectionModel = SelectionModel<BuildBodyArmour, ItemBodyArmour>(Data.BODY_ARMOUR_LIST)
 
 	override fun addItem(item: BuildBodyArmour?) {
-		build.buildItems.armour = item ?: BuildBodyArmour(Data.getBodyArmour("None"))
-		assignItem(build.buildItems.armour)
+		build.buildItems.bodyArmour = item ?: BuildBodyArmour(Data.getBodyArmour("None"))
+		assignItem(build.buildItems.bodyArmour)
 	}
 
 	override fun getPrevious(): BuildBodyArmour? {
-		var temp = build.buildItems.armour
+		var temp = build.buildItems.bodyArmour
 		while (temp.nextItem != null) {
 			if (temp.nextItem == buildItem)
 				return temp
