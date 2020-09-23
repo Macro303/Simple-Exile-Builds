@@ -17,6 +17,7 @@ import javafx.scene.shape.StrokeLineCap
 import javafx.scene.shape.StrokeLineJoin
 import javafx.scene.shape.StrokeType
 import javafx.scene.text.TextAlignment
+import org.apache.logging.log4j.LogManager
 import tornadofx.*
 import java.io.File
 
@@ -72,9 +73,9 @@ abstract class AbstractViewerPane<T : IBuildItem>(
 			borderWidth += box(2.px)
 		}
 
-		var image = buildItem.item.getFile()
+		var image = File(File("resources", "Images"), buildItem.item.id.substringAfterLast("/") + ".png")
 		if (buildItem.item.name != "None" && !image.exists())
-			image = File(image.parent, "placeholder.png")
+			image = File(image.parentFile, "placeholder.png")
 		imageUrl = "file:${image.path}"
 
 		name = buildItem.item.getDisplayName()
@@ -96,8 +97,12 @@ abstract class AbstractViewerPane<T : IBuildItem>(
 		top {
 			hbox(spacing = 5.0, alignment = Pos.CENTER) {
 				imageview(imageUrlProperty, lazyload = true) {
-					fitHeight = imageHeight
-					fitWidth = imageWidth
+					if (!imageUrl.contains("placeholder")) {
+						fitWidth = if (imageWidth >= 78.0) 78.0 else imageWidth
+						if (imageWidth < 78.0 && imageHeight >= 78)
+							fitHeight = 78.0
+						isPreserveRatio = true
+					}
 				}
 			}
 		}
@@ -158,5 +163,9 @@ abstract class AbstractViewerPane<T : IBuildItem>(
 				constraintsForColumn(2).percentWidth = 100.0 / 3.0
 			}
 		}
+	}
+
+	companion object{
+		private val LOGGER = LogManager.getLogger()
 	}
 }

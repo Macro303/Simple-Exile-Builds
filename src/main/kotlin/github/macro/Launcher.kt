@@ -72,7 +72,7 @@ class Styles : Stylesheet() {
 			fontWeight = FontWeight.BOLD
 		}
 		sizedButton {
-			prefWidth = 75.px
+			minWidth = 75.px
 		}
 	}
 

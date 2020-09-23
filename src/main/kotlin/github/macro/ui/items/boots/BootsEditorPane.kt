@@ -16,13 +16,19 @@ class BootsEditorPane(build: Build) : AbstractEditorPane<BuildBoots, ItemBoots>(
 	build = build,
 	buildItem = build.buildItems.boots,
 	index = 0,
-	columnCount = 1
+	columnCount = 1,
+	imageWidth = 156.0,
+	imageHeight = 156.0
 ) {
-	override val selectionModel = SelectionModel<BuildBoots, ItemBoots>(Data.BOOTS_LIST)
+	override val selectionModel = SelectionModel<BuildBoots, ItemBoots>(
+		items = Data.BOOTS_LIST,
+		imageWidth = imageWidth,
+		imageHeight = imageHeight
+	)
 
 	override fun addItem(item: BuildBoots?) {
 		item?.reason = null
-		build.buildItems.boots = item ?: BuildBoots(Data.getBoots("None"))
+		build.buildItems.boots = item ?: BuildBoots(Data.getBootsByName("None"))
 		assignItem(build.buildItems.boots)
 	}
 
@@ -40,7 +46,7 @@ class BootsEditorPane(build: Build) : AbstractEditorPane<BuildBoots, ItemBoots>(
 		val scope = Scope()
 		setInScope(selectionModel, scope)
 		find<BootsSelector>(scope).openModal(block = true, resizable = false)
-		return selectionModel.selected ?: BuildBoots(Data.getBoots("None"))
+		return selectionModel.selected ?: BuildBoots(Data.getBootsByName("None"))
 	}
 
 	companion object {

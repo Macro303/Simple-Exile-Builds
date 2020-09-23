@@ -8,7 +8,6 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer
 import github.macro.core.IItem
 import github.macro.core.items.ItemBase
-import java.io.File
 import java.io.IOException
 
 /**
@@ -20,17 +19,7 @@ class ItemBoots(
 	name: String,
 	isReleased: Boolean,
 	isUnique: Boolean
-) : ItemBase(id = id, name = name, isReleased = isReleased, isUnique = isUnique, level = 0, quality = 0.0), IItem {
-
-	override fun getFile(): File {
-		var baseFolder = File(File("resources", "Items"), "Boots")
-		if (isUnique)
-			baseFolder = File(baseFolder, "Unique")
-		else
-			baseFolder = File(baseFolder, "Basic")
-		return File(baseFolder, id.substringAfterLast("/") + ".png")
-	}
-}
+) : ItemBase(id = id, name = name, isReleased = isReleased, isUnique = isUnique, level = 0, quality = 0.0), IItem
 
 private class ItemBootsDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<ItemBoots?>(vc) {
 

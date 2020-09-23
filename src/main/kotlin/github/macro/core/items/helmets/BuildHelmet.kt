@@ -53,7 +53,7 @@ private class BuildHelmetDeserializer @JvmOverloads constructor(vc: Class<*>? = 
 	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildHelmet? {
 		val node: JsonNode = parser.codec.readTree(parser)
 
-		val helmet = Data.getHelmet(node["Item"].asText())
+		val helmet = Data.getHelmetById(node["Item"].asText())
 		val nextHelmet = if (node["Next Item"].isNull)
 			null
 		else
@@ -78,7 +78,7 @@ private class BuildHelmetSerializer @JvmOverloads constructor(t: Class<BuildHelm
 	@Throws(IOException::class, JsonProcessingException::class)
 	override fun serialize(value: BuildHelmet, parser: JsonGenerator, provider: SerializerProvider?) {
 		parser.writeStartObject()
-		parser.writeStringField("Item", (value.item as ItemHelmet).name)
+		parser.writeStringField("Item", value.item.id)
 		parser.writeObjectField("Next Item", (value.nextItem as BuildHelmet?))
 		parser.writeStringField("Reason", value.reason)
 		parser.writeEndObject()

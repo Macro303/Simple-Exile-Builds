@@ -1,9 +1,7 @@
 package github.macro.ui.items.helmets
 
-import github.macro.core.Data
 import github.macro.core.build_info.Build
 import github.macro.core.items.helmets.BuildHelmet
-import github.macro.core.items.rings.BuildRing
 import github.macro.ui.AbstractViewerPane
 import org.apache.logging.log4j.LogManager
 
@@ -13,7 +11,9 @@ import org.apache.logging.log4j.LogManager
 class HelmetViewerPane(build: Build) : AbstractViewerPane<BuildHelmet>(
 	build = build,
 	buildItem = build.buildItems.helmet,
-	index = 0
+	index = 0,
+	imageWidth = 156.0,
+	imageHeight = 156.0
 ) {
 	override fun getPrevious(): BuildHelmet? {
 		var temp = build.buildItems.helmet

@@ -22,7 +22,7 @@ class RingEditorPane(build: Build, buildItem: BuildRing, index: Int) : AbstractE
 
 	override fun addItem(item: BuildRing?) {
 		item?.reason = null
-		build.buildItems.rings[index] = item ?: BuildRing(Data.getRing("None"))
+		build.buildItems.rings[index] = item ?: BuildRing(Data.getRingByName("None"))
 		assignItem(build.buildItems.rings[index])
 	}
 
@@ -40,7 +40,7 @@ class RingEditorPane(build: Build, buildItem: BuildRing, index: Int) : AbstractE
 		val scope = Scope()
 		setInScope(selectionModel, scope)
 		find<RingSelector>(scope).openModal(block = true, resizable = false)
-		return selectionModel.selected ?: BuildRing(Data.getRing("None"))
+		return selectionModel.selected ?: BuildRing(Data.getRingByName("None"))
 	}
 
 	companion object {

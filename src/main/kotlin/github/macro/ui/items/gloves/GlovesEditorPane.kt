@@ -16,13 +16,19 @@ class GlovesEditorPane(build: Build) : AbstractEditorPane<BuildGloves, ItemGlove
 	build = build,
 	buildItem = build.buildItems.gloves,
 	index = 0,
-	columnCount = 1
+	columnCount = 1,
+	imageWidth = 156.0,
+	imageHeight = 156.0
 ) {
-	override val selectionModel = SelectionModel<BuildGloves, ItemGloves>(Data.GLOVES_LIST)
+	override val selectionModel = SelectionModel<BuildGloves, ItemGloves>(
+		items = Data.GLOVES_LIST,
+		imageWidth = imageWidth,
+		imageHeight = imageHeight
+	)
 
 	override fun addItem(item: BuildGloves?) {
 		item?.reason = null
-		build.buildItems.gloves = item ?: BuildGloves(Data.getGloves("None"))
+		build.buildItems.gloves = item ?: BuildGloves(Data.getGlovesByName("None"))
 		assignItem(build.buildItems.gloves)
 	}
 
@@ -40,7 +46,7 @@ class GlovesEditorPane(build: Build) : AbstractEditorPane<BuildGloves, ItemGlove
 		val scope = Scope()
 		setInScope(selectionModel, scope)
 		find<GlovesSelector>(scope).openModal(block = true, resizable = false)
-		return selectionModel.selected ?: BuildGloves(Data.getGloves("None"))
+		return selectionModel.selected ?: BuildGloves(Data.getGlovesByName("None"))
 	}
 
 	companion object {

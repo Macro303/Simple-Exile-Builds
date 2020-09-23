@@ -53,7 +53,7 @@ private class BuildGlovesDeserializer @JvmOverloads constructor(vc: Class<*>? = 
 	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildGloves? {
 		val node: JsonNode = parser.codec.readTree(parser)
 
-		val gloves = Data.getGloves(node["Item"].asText())
+		val gloves = Data.getGlovesById(node["Item"].asText())
 		val nextGloves = if (node["Next Item"].isNull)
 			null
 		else
@@ -78,7 +78,7 @@ private class BuildGlovesSerializer @JvmOverloads constructor(t: Class<BuildGlov
 	@Throws(IOException::class, JsonProcessingException::class)
 	override fun serialize(value: BuildGloves, parser: JsonGenerator, provider: SerializerProvider?) {
 		parser.writeStartObject()
-		parser.writeStringField("Item", (value.item as ItemGloves).name)
+		parser.writeStringField("Item", value.item.id)
 		parser.writeObjectField("Next Item", (value.nextItem as BuildGloves?))
 		parser.writeStringField("Reason", value.reason)
 		parser.writeEndObject()

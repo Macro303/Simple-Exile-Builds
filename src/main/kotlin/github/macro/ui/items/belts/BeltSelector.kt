@@ -12,10 +12,10 @@ import java.io.File
 class BeltSelector : AbstractItemSelector<BuildBelt, ItemBelt>() {
 
 	override fun updateSelection(selected: ItemBelt?) {
-		selectedItem = BuildBelt(selected ?: Data.getBelt(null))
-		var image = selectedItem!!.item.getFile()
+		selectedItem = BuildBelt(selected ?: Data.getBeltByName(null))
+		var image = File(File("resources", "Images"), selectedItem!!.item.id.substringAfterLast("/") + ".png")
 		if (selectedItem!!.item.name != "None" && !image.exists())
-			image = File(image.parent, "placeholder.png")
+			image = File(image.parentFile, "placeholder.png")
 		imageUrl = "file:${image.path}"
 	}
 }

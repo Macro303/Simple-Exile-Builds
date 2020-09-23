@@ -1,6 +1,7 @@
 package github.macro.ui
 
 import github.macro.Styles
+import github.macro.Util
 import github.macro.core.IBuildItem
 import github.macro.core.IItem
 import javafx.beans.property.SimpleStringProperty
@@ -29,6 +30,8 @@ abstract class AbstractItemSelector<T : IBuildItem, S : IItem> : View() {
 	protected abstract fun updateSelection(selected: S?)
 
 	override val root = borderpane {
+		prefWidth = 500.0
+		prefHeight = 150.0
 		paddingAll = 10.0
 		top {
 			paddingAll = 5.0
@@ -43,8 +46,12 @@ abstract class AbstractItemSelector<T : IBuildItem, S : IItem> : View() {
 			hbox(spacing = 5.0, alignment = Pos.CENTER) {
 				paddingAll = 5.0
 				imageview(imageUrlProperty, lazyload = true) {
-					fitHeight = model.imageHeight
-					fitWidth = model.imageWidth
+					if (!imageUrl.contains("placeholder")) {
+						fitWidth = if (model.imageWidth >= 78.0) 78.0 else model.imageWidth
+						if (model.imageWidth < 78.0 && model.imageHeight >= 78)
+							fitHeight = 78.0
+						isPreserveRatio = true
+					}
 				}
 				itemCombobox = combobox<S>(values = model.items.filterNot { it.name == "None" }.sortedBy { it.name }) {
 					promptText = "Select Item"
@@ -57,6 +64,7 @@ abstract class AbstractItemSelector<T : IBuildItem, S : IItem> : View() {
 					}
 				}
 				button("Select") {
+					addClass(Styles.sizedButton)
 					isDefaultButton = true
 					action {
 						model.selected = selectedItem
@@ -64,6 +72,7 @@ abstract class AbstractItemSelector<T : IBuildItem, S : IItem> : View() {
 					}
 				}
 				button("None") {
+					addClass(Styles.sizedButton)
 					action {
 						model.selected = null
 						close()

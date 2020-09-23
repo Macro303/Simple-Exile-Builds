@@ -44,7 +44,5 @@ abstract class ItemBase(
 		this.quality = quality
 	}
 
-	override fun getDisplayName(): String {
-		return name
-	}
+	override fun getDisplayName(): String = name
 }

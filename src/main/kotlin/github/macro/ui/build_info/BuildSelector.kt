@@ -36,7 +36,6 @@ class BuildSelector : View("Exile Buddy") {
 				button(text = "⚙") {
 					action {
 						find<ConfigEditor>().openModal(block = true, resizable = false)
-						this@BuildSelector.close()
 					}
 				}
 				button(text = "\uD83D\uDCA1") {

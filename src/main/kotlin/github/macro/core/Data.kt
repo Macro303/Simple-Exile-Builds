@@ -14,6 +14,7 @@ import github.macro.core.items.gloves.ItemGloves
 import github.macro.core.items.helmets.ItemHelmet
 import github.macro.core.items.rings.ItemRing
 import github.macro.core.items.weapons.ItemWeapon
+import github.macro.core.items.weapons.WeaponType
 import org.apache.logging.log4j.LogManager
 import java.io.File
 import java.io.IOException
@@ -23,12 +24,13 @@ import java.io.IOException
  */
 object Data {
 	private val LOGGER = LogManager.getLogger()
+	private val DATA_DIR = File("resources", "Data")
 
 	// Gems
 	val GEM_LIST: List<ItemGem> by lazy {
 		try {
 			Util.JSON_MAPPER.readValue(
-				File(File("resources", "Gems"), "Gems.json"),
+				File(DATA_DIR, "Gems.json"),
 				object : TypeReference<List<ItemGem>>() {}
 			).plus(
 				ItemGem(
@@ -49,12 +51,18 @@ object Data {
 		}
 	}
 
-	fun getGem(name: String?): ItemGem {
+	fun getGemById(id: String?): ItemGem {
+		return GEM_LIST.firstOrNull {
+			it.id.equals(id, ignoreCase = true)
+		} ?: getGemByName(name = id)
+	}
+
+	fun getGemByName(name: String?): ItemGem {
 		return GEM_LIST.firstOrNull {
 			it.getDisplayName().equals(name, ignoreCase = true)
 		} ?: ItemGem(
 			id = "Missing",
-			name = "Missing",
+			name = name ?: "Missing",
 			isReleased = false,
 			colour = Colour.ERROR,
 			tags = mutableListOf(),
@@ -69,14 +77,15 @@ object Data {
 	val WEAPON_LIST: List<ItemWeapon> by lazy {
 		try {
 			Util.JSON_MAPPER.readValue(
-				File(File(File("resources", "Items"), "Weapons"), "Weapons.json"),
+				File(DATA_DIR, "Weapons.json"),
 				object : TypeReference<List<ItemWeapon>>() {}
 			).plus(
 				ItemWeapon(
 					id = "None",
 					name = "None",
 					isReleased = false,
-					isUnique = false
+					isUnique = false,
+					type = WeaponType.ONE_HAND_SWORD
 				)
 			)
 		} catch (ioe: IOException) {
@@ -85,14 +94,21 @@ object Data {
 		}
 	}
 
-	fun getWeapon(name: String?): ItemWeapon {
+	fun getWeaponById(id: String?): ItemWeapon {
+		return WEAPON_LIST.firstOrNull {
+			it.id.equals(id, ignoreCase = true)
+		} ?: getWeaponByName(name = id)
+	}
+
+	fun getWeaponByName(name: String?): ItemWeapon {
 		return WEAPON_LIST.firstOrNull {
 			it.getDisplayName().equals(name, ignoreCase = true)
 		} ?: ItemWeapon(
 			id = "Missing",
-			name = "Missing",
+			name = name ?: "Missing",
 			isReleased = false,
-			isUnique = false
+			isUnique = false,
+			type = WeaponType.ONE_HAND_SWORD
 		)
 	}
 
@@ -100,7 +116,7 @@ object Data {
 	val BODY_ARMOUR_LIST: List<ItemBodyArmour> by lazy {
 		try {
 			Util.JSON_MAPPER.readValue(
-				File(File(File("resources", "Items"), "Body_Armours"), "Body_Armours.json"),
+				File(DATA_DIR, "Body_Armours.json"),
 				object : TypeReference<List<ItemBodyArmour>>() {}
 			).plus(
 				ItemBodyArmour(
@@ -116,12 +132,18 @@ object Data {
 		}
 	}
 
-	fun getBodyArmour(name: String?): ItemBodyArmour {
+	fun getBodyArmourById(id: String?): ItemBodyArmour {
+		return BODY_ARMOUR_LIST.firstOrNull {
+			it.id.equals(id, ignoreCase = true)
+		} ?: getBodyArmourByName(name = id)
+	}
+
+	fun getBodyArmourByName(name: String?): ItemBodyArmour {
 		return BODY_ARMOUR_LIST.firstOrNull {
 			it.getDisplayName().equals(name, ignoreCase = true)
 		} ?: ItemBodyArmour(
 			id = "Missing",
-			name = "Missing",
+			name = name ?: "Missing",
 			isReleased = false,
 			isUnique = false
 		)
@@ -131,7 +153,7 @@ object Data {
 	val HELMET_LIST: List<ItemHelmet> by lazy {
 		try {
 			Util.JSON_MAPPER.readValue(
-				File(File(File("resources", "Items"), "Helmets"), "Helmets.json"),
+				File(DATA_DIR, "Helmets.json"),
 				object : TypeReference<List<ItemHelmet>>() {}
 			).plus(
 				ItemHelmet(
@@ -147,12 +169,18 @@ object Data {
 		}
 	}
 
-	fun getHelmet(name: String?): ItemHelmet {
+	fun getHelmetById(id: String?): ItemHelmet {
+		return HELMET_LIST.firstOrNull {
+			it.id.equals(id, ignoreCase = true)
+		} ?: getHelmetByName(name = id)
+	}
+
+	fun getHelmetByName(name: String?): ItemHelmet {
 		return HELMET_LIST.firstOrNull {
 			it.getDisplayName().equals(name, ignoreCase = true)
 		} ?: ItemHelmet(
 			id = "Missing",
-			name = "Missing",
+			name = name ?: "Missing",
 			isReleased = false,
 			isUnique = false
 		)
@@ -162,7 +190,7 @@ object Data {
 	val GLOVES_LIST: List<ItemGloves> by lazy {
 		try {
 			Util.JSON_MAPPER.readValue(
-				File(File(File("resources", "Items"), "Gloves"), "Gloves.json"),
+				File(DATA_DIR, "Gloves.json"),
 				object : TypeReference<List<ItemGloves>>() {}
 			).plus(
 				ItemGloves(
@@ -178,12 +206,18 @@ object Data {
 		}
 	}
 
-	fun getGloves(name: String?): ItemGloves {
+	fun getGlovesById(id: String?): ItemGloves {
+		return GLOVES_LIST.firstOrNull {
+			it.id.equals(id, ignoreCase = true)
+		} ?: getGlovesByName(name = id)
+	}
+
+	fun getGlovesByName(name: String?): ItemGloves {
 		return GLOVES_LIST.firstOrNull {
 			it.getDisplayName().equals(name, ignoreCase = true)
 		} ?: ItemGloves(
 			id = "Missing",
-			name = "Missing",
+			name = name ?: "Missing",
 			isReleased = false,
 			isUnique = false
 		)
@@ -193,7 +227,7 @@ object Data {
 	val BOOTS_LIST: List<ItemBoots> by lazy {
 		try {
 			Util.JSON_MAPPER.readValue(
-				File(File(File("resources", "Items"), "Boots"), "Boots.json"),
+				File(DATA_DIR, "Boots.json"),
 				object : TypeReference<List<ItemBoots>>() {}
 			).plus(
 				ItemBoots(
@@ -209,12 +243,18 @@ object Data {
 		}
 	}
 
-	fun getBoots(name: String?): ItemBoots {
+	fun getBootsById(id: String?): ItemBoots {
+		return BOOTS_LIST.firstOrNull {
+			it.id.equals(id, ignoreCase = true)
+		} ?: getBootsByName(name = id)
+	}
+
+	fun getBootsByName(name: String?): ItemBoots {
 		return BOOTS_LIST.firstOrNull {
 			it.getDisplayName().equals(name, ignoreCase = true)
 		} ?: ItemBoots(
 			id = "Missing",
-			name = "Missing",
+			name = name ?: "Missing",
 			isReleased = false,
 			isUnique = false
 		)
@@ -224,7 +264,7 @@ object Data {
 	val BELT_LIST: List<ItemBelt> by lazy {
 		try {
 			Util.JSON_MAPPER.readValue(
-				File(File(File("resources", "Items"), "Belts"), "Belts.json"),
+				File(DATA_DIR, "Belts.json"),
 				object : TypeReference<List<ItemBelt>>() {}
 			).plus(
 				ItemBelt(
@@ -240,12 +280,18 @@ object Data {
 		}
 	}
 
-	fun getBelt(name: String?): ItemBelt {
+	fun getBeltById(id: String?): ItemBelt {
+		return BELT_LIST.firstOrNull {
+			it.id.equals(id, ignoreCase = true)
+		} ?: getBeltByName(name = id)
+	}
+
+	fun getBeltByName(name: String?): ItemBelt {
 		return BELT_LIST.firstOrNull {
 			it.getDisplayName().equals(name, ignoreCase = true)
 		} ?: ItemBelt(
 			id = "Missing",
-			name = "Missing",
+			name = name ?: "Missing",
 			isReleased = false,
 			isUnique = false
 		)
@@ -255,7 +301,7 @@ object Data {
 	val AMULET_LIST: List<ItemAmulet> by lazy {
 		try {
 			Util.JSON_MAPPER.readValue(
-				File(File(File("resources", "Items"), "Amulets"), "Amulets.json"),
+				File(DATA_DIR, "Amulets.json"),
 				object : TypeReference<List<ItemAmulet>>() {}
 			).plus(
 				ItemAmulet(
@@ -271,12 +317,18 @@ object Data {
 		}
 	}
 
-	fun getAmulet(name: String?): ItemAmulet {
+	fun getAmuletById(id: String?): ItemAmulet {
+		return AMULET_LIST.firstOrNull {
+			it.id.equals(id, ignoreCase = true)
+		} ?: getAmuletByName(name = id)
+	}
+
+	fun getAmuletByName(name: String?): ItemAmulet {
 		return AMULET_LIST.firstOrNull {
 			it.getDisplayName().equals(name, ignoreCase = true)
 		} ?: ItemAmulet(
 			id = "Missing",
-			name = "Missing",
+			name = name ?: "Missing",
 			isReleased = false,
 			isUnique = false
 		)
@@ -286,7 +338,7 @@ object Data {
 	val RING_LIST: List<ItemRing> by lazy {
 		try {
 			Util.JSON_MAPPER.readValue(
-				File(File(File("resources", "Items"), "Rings"), "Rings.json"),
+				File(DATA_DIR, "Rings.json"),
 				object : TypeReference<List<ItemRing>>() {}
 			).plus(
 				ItemRing(
@@ -302,12 +354,18 @@ object Data {
 		}
 	}
 
-	fun getRing(name: String?): ItemRing {
+	fun getRingById(id: String?): ItemRing {
+		return RING_LIST.firstOrNull {
+			it.id.equals(id, ignoreCase = true)
+		} ?: getRingByName(name = id)
+	}
+
+	fun getRingByName(name: String?): ItemRing {
 		return RING_LIST.firstOrNull {
 			it.getDisplayName().equals(name, ignoreCase = true)
 		} ?: ItemRing(
 			id = "Missing",
-			name = "Missing",
+			name = name ?: "Missing",
 			isReleased = false,
 			isUnique = false
 		)
@@ -317,7 +375,7 @@ object Data {
 	val FLASK_LIST: List<ItemFlask> by lazy {
 		try {
 			Util.JSON_MAPPER.readValue(
-				File(File(File("resources", "Items"), "Flasks"), "Flasks.json"),
+				File(DATA_DIR, "Flasks.json"),
 				object : TypeReference<List<ItemFlask>>() {}
 			).plus(
 				ItemFlask(
@@ -333,12 +391,18 @@ object Data {
 		}
 	}
 
-	fun getFlask(name: String?): ItemFlask {
+	fun getFlaskById(id: String?): ItemFlask {
+		return FLASK_LIST.firstOrNull {
+			it.id.equals(id, ignoreCase = true)
+		} ?: getFlaskByName(name = id)
+	}
+
+	fun getFlaskByName(name: String?): ItemFlask {
 		return FLASK_LIST.firstOrNull {
 			it.getDisplayName().equals(name, ignoreCase = true)
 		} ?: ItemFlask(
 			id = "Missing",
-			name = "Missing",
+			name = name ?: "Missing",
 			isReleased = false,
 			isUnique = false
 		)

@@ -35,8 +35,8 @@ import java.io.IOException
 @JsonSerialize(using = BuildGearMapSerializer::class)
 class BuildItemMap(
 	weapons: List<BuildWeapon>,
-	bodyArmour: BuildBodyArmour,
 	helmet: BuildHelmet,
+	bodyArmour: BuildBodyArmour,
 	gloves: BuildGloves,
 	boots: BuildBoots,
 	belt: BuildBelt,
@@ -47,11 +47,11 @@ class BuildItemMap(
 	val weaponsProperty = SimpleListProperty<BuildWeapon>()
 	var weapons by weaponsProperty
 
-	val bodyArmourProperty = SimpleObjectProperty<BuildBodyArmour>()
-	var bodyArmour by bodyArmourProperty
-
 	val helmetProperty = SimpleObjectProperty<BuildHelmet>()
 	var helmet by helmetProperty
+
+	val bodyArmourProperty = SimpleObjectProperty<BuildBodyArmour>()
+	var bodyArmour by bodyArmourProperty
 
 	val glovesProperty = SimpleObjectProperty<BuildGloves>()
 	var gloves by glovesProperty
@@ -74,21 +74,21 @@ class BuildItemMap(
 	init {
 		var weaponsTemp = weapons
 		while (weaponsTemp.size < 2)
-			weaponsTemp = weaponsTemp.plus(BuildWeapon(Data.getWeapon("None")))
+			weaponsTemp = weaponsTemp.plus(BuildWeapon(Data.getWeaponByName("None")))
 		this.weapons = FXCollections.observableList(weaponsTemp)
-		this.bodyArmour = bodyArmour
 		this.helmet = helmet
+		this.bodyArmour = bodyArmour
 		this.gloves = gloves
 		this.boots = boots
 		this.belt = belt
 		this.amulet = amulet
 		var ringsTemp = rings
 		while (ringsTemp.size < 2)
-			ringsTemp = ringsTemp.plus(BuildRing(Data.getRing("None")))
+			ringsTemp = ringsTemp.plus(BuildRing(Data.getRingByName("None")))
 		this.rings = FXCollections.observableList(ringsTemp)
 		var flasksTemp = flasks
 		while (flasksTemp.size < 5)
-			flasksTemp = flasksTemp.plus(BuildFlask(Data.getFlask("None")))
+			flasksTemp = flasksTemp.plus(BuildFlask(Data.getFlaskByName("None")))
 		this.flasks = FXCollections.observableList(flasksTemp)
 	}
 }
@@ -102,8 +102,8 @@ private class BuildGearMapDeserializer @JvmOverloads constructor(vc: Class<*>? =
 
 		val weapons = node["Weapons"]?.map { Util.YAML_MAPPER.treeToValue(it, BuildWeapon::class.java) }
 			?.chunked(2)?.firstOrNull() ?: mutableListOf()
-		val bodyArmour = Util.YAML_MAPPER.treeToValue(node["Body Armour"], BuildBodyArmour::class.java)
 		val helmet = Util.YAML_MAPPER.treeToValue(node["Helmet"], BuildHelmet::class.java)
+		val bodyArmour = Util.YAML_MAPPER.treeToValue(node["Body Armour"], BuildBodyArmour::class.java)
 		val gloves = Util.YAML_MAPPER.treeToValue(node["Gloves"], BuildGloves::class.java)
 		val boots = Util.YAML_MAPPER.treeToValue(node["Boots"], BuildBoots::class.java)
 		val belt = Util.YAML_MAPPER.treeToValue(node["Belt"], BuildBelt::class.java)
@@ -115,8 +115,8 @@ private class BuildGearMapDeserializer @JvmOverloads constructor(vc: Class<*>? =
 
 		return BuildItemMap(
 			weapons = weapons,
-			bodyArmour = bodyArmour,
 			helmet = helmet,
+			bodyArmour = bodyArmour,
 			gloves = gloves,
 			boots = boots,
 			belt = belt,
@@ -138,8 +138,8 @@ private class BuildGearMapSerializer @JvmOverloads constructor(t: Class<BuildIte
 	override fun serialize(value: BuildItemMap, parser: JsonGenerator, provider: SerializerProvider?) {
 		parser.writeStartObject()
 		parser.writeObjectField("Weapons", value.weapons)
-		parser.writeObjectField("Body Armour", value.bodyArmour)
 		parser.writeObjectField("Helmet", value.helmet)
+		parser.writeObjectField("Body Armour", value.bodyArmour)
 		parser.writeObjectField("Gloves", value.gloves)
 		parser.writeObjectField("Boots", value.boots)
 		parser.writeObjectField("Belt", value.belt)

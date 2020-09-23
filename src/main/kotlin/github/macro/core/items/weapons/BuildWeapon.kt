@@ -53,7 +53,7 @@ private class BuildWeaponDeserializer @JvmOverloads constructor(vc: Class<*>? = 
 	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildWeapon? {
 		val node: JsonNode = parser.codec.readTree(parser)
 
-		val weapon = Data.getWeapon(node["Item"].asText())
+		val weapon = Data.getWeaponById(node["Item"].asText())
 		val nextWeapon = if (node["Next Item"].isNull)
 			null
 		else
@@ -78,7 +78,7 @@ private class BuildWeaponSerializer @JvmOverloads constructor(t: Class<BuildWeap
 	@Throws(IOException::class, JsonProcessingException::class)
 	override fun serialize(value: BuildWeapon, parser: JsonGenerator, provider: SerializerProvider?) {
 		parser.writeStartObject()
-		parser.writeStringField("Item", (value.item as ItemWeapon).name)
+		parser.writeStringField("Item", value.item.id)
 		parser.writeObjectField("Next Item", (value.nextItem as BuildWeapon?))
 		parser.writeStringField("Reason", value.reason)
 		parser.writeEndObject()

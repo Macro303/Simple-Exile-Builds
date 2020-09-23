@@ -102,24 +102,6 @@ class BuildViewer : View("Exile Buddy") {
 								}
 							}
 							row {
-								label("Body Armour") {
-									addClass(Styles.subtitle)
-									gridpaneConstraints {
-										columnSpan = 6
-										hAlignment = HPos.CENTER
-										margin = Insets(2.5)
-									}
-								}
-							}
-							row {
-								model.selectedBuild.buildGems.bodyArmour.forEachIndexed { index, gem ->
-									add(GemViewerPane(model.selectedBuild, gem, index, "Body Armour")
-										.gridpaneConstraints {
-											margin = Insets(2.5)
-										})
-								}
-							}
-							row {
 								label("Helmet") {
 									addClass(Styles.subtitle)
 									gridpaneConstraints {
@@ -132,6 +114,24 @@ class BuildViewer : View("Exile Buddy") {
 							row {
 								model.selectedBuild.buildGems.helmet.forEachIndexed { index, gem ->
 									add(GemViewerPane(model.selectedBuild, gem, index, "Helmet")
+										.gridpaneConstraints {
+											margin = Insets(2.5)
+										})
+								}
+							}
+							row {
+								label("Body Armour") {
+									addClass(Styles.subtitle)
+									gridpaneConstraints {
+										columnSpan = 6
+										hAlignment = HPos.CENTER
+										margin = Insets(2.5)
+									}
+								}
+							}
+							row {
+								model.selectedBuild.buildGems.bodyArmour.forEachIndexed { index, gem ->
+									add(GemViewerPane(model.selectedBuild, gem, index, "Body Armour")
 										.gridpaneConstraints {
 											margin = Insets(2.5)
 										})
@@ -216,11 +216,11 @@ class BuildViewer : View("Exile Buddy") {
 								}
 							}
 							row {
-								add(BodyArmourViewerPane(model.selectedBuild)
+								add(HelmetViewerPane(model.selectedBuild)
 									.gridpaneConstraints {
 										margin = Insets(2.5)
 									})
-								add(HelmetViewerPane(model.selectedBuild)
+								add(BodyArmourViewerPane(model.selectedBuild)
 									.gridpaneConstraints {
 										margin = Insets(2.5)
 									})

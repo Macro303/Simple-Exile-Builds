@@ -12,10 +12,10 @@ import java.io.File
 class RingSelector : AbstractItemSelector<BuildRing, ItemRing>() {
 
 	override fun updateSelection(selected: ItemRing?) {
-		selectedItem = BuildRing(selected ?: Data.getRing(null))
-		var image = selectedItem!!.item.getFile()
+		selectedItem = BuildRing(selected ?: Data.getRingByName(null))
+		var image = File(File("resources", "Images"), selectedItem!!.item.id.substringAfterLast("/") + ".png")
 		if (selectedItem!!.item.name != "None" && !image.exists())
-			image = File(image.parent, "placeholder.png")
+			image = File(image.parentFile, "placeholder.png")
 		imageUrl = "file:${image.path}"
 	}
 }

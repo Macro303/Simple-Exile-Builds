@@ -53,7 +53,7 @@ private class BuildRingDeserializer @JvmOverloads constructor(vc: Class<*>? = nu
 	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildRing? {
 		val node: JsonNode = parser.codec.readTree(parser)
 
-		val ring = Data.getRing(node["Item"].asText())
+		val ring = Data.getRingById(node["Item"].asText())
 		val nextRing = if (node["Next Item"].isNull)
 			null
 		else
@@ -78,7 +78,7 @@ private class BuildRingSerializer @JvmOverloads constructor(t: Class<BuildRing>?
 	@Throws(IOException::class, JsonProcessingException::class)
 	override fun serialize(value: BuildRing, parser: JsonGenerator, provider: SerializerProvider?) {
 		parser.writeStartObject()
-		parser.writeStringField("Item", (value.item as ItemRing).name)
+		parser.writeStringField("Item", value.item.id)
 		parser.writeObjectField("Next Item", (value.nextItem as BuildRing?))
 		parser.writeStringField("Reason", value.reason)
 		parser.writeEndObject()

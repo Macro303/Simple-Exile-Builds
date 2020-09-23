@@ -53,7 +53,7 @@ private class BuildFlaskDeserializer @JvmOverloads constructor(vc: Class<*>? = n
 	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildFlask? {
 		val node: JsonNode = parser.codec.readTree(parser)
 
-		val flask = Data.getFlask(node["Item"].asText())
+		val flask = Data.getFlaskById(node["Item"].asText())
 		val nextFlask = if (node["Next Item"].isNull)
 			null
 		else
@@ -78,7 +78,7 @@ private class BuildFlaskSerializer @JvmOverloads constructor(t: Class<BuildFlask
 	@Throws(IOException::class, JsonProcessingException::class)
 	override fun serialize(value: BuildFlask, parser: JsonGenerator, provider: SerializerProvider?) {
 		parser.writeStartObject()
-		parser.writeStringField("Item", (value.item as ItemFlask).name)
+		parser.writeStringField("Item", value.item.id)
 		parser.writeObjectField("Next Item", (value.nextItem as BuildFlask?))
 		parser.writeStringField("Reason", value.reason)
 		parser.writeEndObject()

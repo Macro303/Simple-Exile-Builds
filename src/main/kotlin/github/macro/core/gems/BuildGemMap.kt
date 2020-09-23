@@ -48,23 +48,23 @@ class BuildGemMap(
 	init {
 		var weaponsTemp = weapons
 		while (weaponsTemp.size < 6)
-			weaponsTemp = weaponsTemp.plus(BuildGem(Data.getGem("None")))
+			weaponsTemp = weaponsTemp.plus(BuildGem(Data.getGemByName("None")))
 		this.weapons = FXCollections.observableList(weaponsTemp)
 		var bodyArmourTemp = bodyArmour
 		while (bodyArmourTemp.size < 6)
-			bodyArmourTemp = bodyArmourTemp.plus(BuildGem(Data.getGem("None")))
+			bodyArmourTemp = bodyArmourTemp.plus(BuildGem(Data.getGemByName("None")))
 		this.bodyArmour = FXCollections.observableList(bodyArmourTemp)
 		var helmetTemp = helmet
 		while (helmetTemp.size < 4)
-			helmetTemp = helmetTemp.plus(BuildGem(Data.getGem("None")))
+			helmetTemp = helmetTemp.plus(BuildGem(Data.getGemByName("None")))
 		this.helmet = FXCollections.observableList(helmetTemp)
 		var glovesTemp = gloves
 		while (glovesTemp.size < 4)
-			glovesTemp = glovesTemp.plus(BuildGem(Data.getGem("None")))
+			glovesTemp = glovesTemp.plus(BuildGem(Data.getGemByName("None")))
 		this.gloves = FXCollections.observableList(glovesTemp)
 		var bootsTemp = boots
 		while (bootsTemp.size < 4)
-			bootsTemp = bootsTemp.plus(BuildGem(Data.getGem("None")))
+			bootsTemp = bootsTemp.plus(BuildGem(Data.getGemByName("None")))
 		this.boots = FXCollections.observableList(bootsTemp)
 	}
 }

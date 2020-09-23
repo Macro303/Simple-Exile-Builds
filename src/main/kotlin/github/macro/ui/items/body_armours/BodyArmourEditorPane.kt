@@ -16,13 +16,19 @@ class BodyArmourEditorPane(build: Build) : AbstractEditorPane<BuildBodyArmour, I
 	build = build,
 	buildItem = build.buildItems.bodyArmour,
 	index = 0,
-	columnCount = 1
+	columnCount = 1,
+	imageWidth = 156.0,
+	imageHeight = 234.0
 ) {
-	override val selectionModel = SelectionModel<BuildBodyArmour, ItemBodyArmour>(Data.BODY_ARMOUR_LIST)
+	override val selectionModel = SelectionModel<BuildBodyArmour, ItemBodyArmour>(
+		items = Data.BODY_ARMOUR_LIST,
+		imageWidth = imageWidth,
+		imageHeight = imageHeight
+	)
 
 	override fun addItem(item: BuildBodyArmour?) {
 		item?.reason = null
-		build.buildItems.bodyArmour = item ?: BuildBodyArmour(Data.getBodyArmour("None"))
+		build.buildItems.bodyArmour = item ?: BuildBodyArmour(Data.getBodyArmourByName("None"))
 		assignItem(build.buildItems.bodyArmour)
 	}
 
@@ -40,7 +46,7 @@ class BodyArmourEditorPane(build: Build) : AbstractEditorPane<BuildBodyArmour, I
 		val scope = Scope()
 		setInScope(selectionModel, scope)
 		find<BodyArmourSelector>(scope).openModal(block = true, resizable = false)
-		return selectionModel.selected ?: BuildBodyArmour(Data.getBodyArmour("None"))
+		return selectionModel.selected ?: BuildBodyArmour(Data.getBodyArmourByName("None"))
 	}
 
 	companion object {

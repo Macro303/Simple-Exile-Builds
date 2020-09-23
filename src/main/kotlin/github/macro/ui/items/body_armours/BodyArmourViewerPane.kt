@@ -11,7 +11,9 @@ import org.apache.logging.log4j.LogManager
 class BodyArmourViewerPane(build: Build) : AbstractViewerPane<BuildBodyArmour>(
 	build = build,
 	buildItem = build.buildItems.bodyArmour,
-	index = 0
+	index = 0,
+	imageWidth = 156.0,
+	imageHeight = 234.0
 ) {
 	override fun getPrevious(): BuildBodyArmour? {
 		var temp = build.buildItems.bodyArmour

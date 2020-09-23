@@ -12,10 +12,10 @@ import java.io.File
 class BootsSelector : AbstractItemSelector<BuildBoots, ItemBoots>() {
 
 	override fun updateSelection(selected: ItemBoots?) {
-		selectedItem = BuildBoots(selected ?: Data.getBoots(null))
-		var image = selectedItem!!.item.getFile()
+		selectedItem = BuildBoots(selected ?: Data.getBootsByName(null))
+		var image = File(File("resources", "Images"), selectedItem!!.item.id.substringAfterLast("/") + ".png")
 		if (selectedItem!!.item.name != "None" && !image.exists())
-			image = File(image.parent, "placeholder.png")
+			image = File(image.parentFile, "placeholder.png")
 		imageUrl = "file:${image.path}"
 	}
 }

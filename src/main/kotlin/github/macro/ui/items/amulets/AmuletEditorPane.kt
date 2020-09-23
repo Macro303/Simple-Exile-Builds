@@ -22,7 +22,7 @@ class AmuletEditorPane(build: Build) : AbstractEditorPane<BuildAmulet, ItemAmule
 
 	override fun addItem(item: BuildAmulet?) {
 		item?.reason = null
-		build.buildItems.amulet = item ?: BuildAmulet(Data.getAmulet("None"))
+		build.buildItems.amulet = item ?: BuildAmulet(Data.getAmuletByName("None"))
 		assignItem(build.buildItems.amulet)
 	}
 
@@ -40,7 +40,7 @@ class AmuletEditorPane(build: Build) : AbstractEditorPane<BuildAmulet, ItemAmule
 		val scope = Scope()
 		setInScope(selectionModel, scope)
 		find<AmuletSelector>(scope).openModal(block = true, resizable = false)
-		return selectionModel.selected ?: BuildAmulet(Data.getAmulet("None"))
+		return selectionModel.selected ?: BuildAmulet(Data.getAmuletByName("None"))
 	}
 
 	companion object {

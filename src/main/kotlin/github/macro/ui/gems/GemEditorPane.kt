@@ -33,7 +33,7 @@ class GemEditorPane(build: Build, buildItem: BuildGem, index: Int, private val e
 			"Gloves" -> build.buildGems.gloves
 			"Boots" -> build.buildGems.boots
 			else -> build.buildGems.weapons
-		}[index] = item ?: BuildGem(Data.getGem("None"))
+		}[index] = item ?: BuildGem(Data.getGemByName("None"))
 		assignItem(
 			when (equipment) {
 				"Weapons" -> build.buildGems.weapons
@@ -67,7 +67,7 @@ class GemEditorPane(build: Build, buildItem: BuildGem, index: Int, private val e
 		val scope = Scope()
 		setInScope(selectionModel, scope)
 		find<GemSelector>(scope).openModal(block = true, resizable = false)
-		return selectionModel.selected ?: BuildGem(Data.getGem("None"))
+		return selectionModel.selected ?: BuildGem(Data.getGemByName("None"))
 	}
 
 	override fun assignItem(newItem: BuildGem) {

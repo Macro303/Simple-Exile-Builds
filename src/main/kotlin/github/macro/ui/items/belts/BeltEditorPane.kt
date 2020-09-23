@@ -16,13 +16,14 @@ class BeltEditorPane(build: Build) : AbstractEditorPane<BuildBelt, ItemBelt>(
 	build = build,
 	buildItem = build.buildItems.belt,
 	index = 0,
-	columnCount = 1
+	columnCount = 1,
+	imageWidth = 156.0
 ) {
-	override val selectionModel = SelectionModel<BuildBelt, ItemBelt>(Data.BELT_LIST)
+	override val selectionModel = SelectionModel<BuildBelt, ItemBelt>(Data.BELT_LIST, imageWidth = imageWidth)
 
 	override fun addItem(item: BuildBelt?) {
 		item?.reason = null
-		build.buildItems.belt = item ?: BuildBelt(Data.getBelt("None"))
+		build.buildItems.belt = item ?: BuildBelt(Data.getBeltByName("None"))
 		assignItem(build.buildItems.belt)
 	}
 
@@ -40,7 +41,7 @@ class BeltEditorPane(build: Build) : AbstractEditorPane<BuildBelt, ItemBelt>(
 		val scope = Scope()
 		setInScope(selectionModel, scope)
 		find<BeltSelector>(scope).openModal(block = true, resizable = false)
-		return selectionModel.selected ?: BuildBelt(Data.getBelt("None"))
+		return selectionModel.selected ?: BuildBelt(Data.getBeltByName("None"))
 	}
 
 	companion object {

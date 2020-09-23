@@ -53,7 +53,7 @@ private class BuildBodyArmourDeserializer @JvmOverloads constructor(vc: Class<*>
 	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildBodyArmour? {
 		val node: JsonNode = parser.codec.readTree(parser)
 
-		val armour = Data.getBodyArmour(node["Item"].asText())
+		val armour = Data.getBodyArmourById(node["Item"].asText())
 		val nextArmour = if (node["Next Item"].isNull)
 			null
 		else
@@ -78,7 +78,7 @@ private class BuildBodyArmourSerializer @JvmOverloads constructor(t: Class<Build
 	@Throws(IOException::class, JsonProcessingException::class)
 	override fun serialize(value: BuildBodyArmour, parser: JsonGenerator, provider: SerializerProvider?) {
 		parser.writeStartObject()
-		parser.writeStringField("Item", (value.item as ItemBodyArmour).name)
+		parser.writeStringField("Item", value.item.id)
 		parser.writeObjectField("Next Item", (value.nextItem as BuildBodyArmour?))
 		parser.writeStringField("Reason", value.reason)
 		parser.writeEndObject()

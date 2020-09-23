@@ -12,10 +12,10 @@ import java.io.File
 class HelmetSelector : AbstractItemSelector<BuildHelmet, ItemHelmet>() {
 
 	override fun updateSelection(selected: ItemHelmet?) {
-		selectedItem = BuildHelmet(selected ?: Data.getHelmet(null))
-		var image = selectedItem!!.item.getFile()
+		selectedItem = BuildHelmet(selected ?: Data.getHelmetByName(null))
+		var image = File(File("resources", "Images"), selectedItem!!.item.id.substringAfterLast("/") + ".png")
 		if (selectedItem!!.item.name != "None" && !image.exists())
-			image = File(image.parent, "placeholder.png")
+			image = File(image.parentFile, "placeholder.png")
 		imageUrl = "file:${image.path}"
 	}
 }

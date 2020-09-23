@@ -51,7 +51,7 @@ private class BuildGemDeserializer @JvmOverloads constructor(vc: Class<*>? = nul
 	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildGem? {
 		val node: JsonNode = parser.codec.readTree(parser)
 
-		val gem = Data.getGem(node["Item"].asText())
+		val gem = Data.getGemById(node["Item"].asText())
 		val nextGem = if (node["Next Item"].isNull)
 			null
 		else
@@ -75,7 +75,7 @@ private class BuildGemSerializer @JvmOverloads constructor(t: Class<BuildGem>? =
 	@Throws(IOException::class, JsonProcessingException::class)
 	override fun serialize(value: BuildGem, parser: JsonGenerator, provider: SerializerProvider?) {
 		parser.writeStartObject()
-		parser.writeStringField("Item", (value.item as ItemGem).getDisplayName())
+		parser.writeStringField("Item", value.item.id)
 		parser.writeObjectField("Next Item", (value.nextItem as BuildGem?))
 		parser.writeStringField("Reason", value.reason)
 		parser.writeEndObject()

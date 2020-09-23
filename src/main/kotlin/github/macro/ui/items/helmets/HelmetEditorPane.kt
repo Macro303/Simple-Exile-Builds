@@ -16,13 +16,19 @@ class HelmetEditorPane(build: Build) : AbstractEditorPane<BuildHelmet, ItemHelme
 	build = build,
 	buildItem = build.buildItems.helmet,
 	index = 0,
-	columnCount = 1
+	columnCount = 1,
+	imageWidth = 156.0,
+	imageHeight = 156.0
 ) {
-	override val selectionModel = SelectionModel<BuildHelmet, ItemHelmet>(Data.HELMET_LIST)
+	override val selectionModel = SelectionModel<BuildHelmet, ItemHelmet>(
+		items = Data.HELMET_LIST,
+		imageWidth = imageWidth,
+		imageHeight = imageHeight
+	)
 
 	override fun addItem(item: BuildHelmet?) {
 		item?.reason = null
-		build.buildItems.helmet = item ?: BuildHelmet(Data.getHelmet("None"))
+		build.buildItems.helmet = item ?: BuildHelmet(Data.getHelmetByName("None"))
 		assignItem(build.buildItems.helmet)
 	}
 
@@ -40,7 +46,7 @@ class HelmetEditorPane(build: Build) : AbstractEditorPane<BuildHelmet, ItemHelme
 		val scope = Scope()
 		setInScope(selectionModel, scope)
 		find<HelmetSelector>(scope).openModal(block = true, resizable = false)
-		return selectionModel.selected ?: BuildHelmet(Data.getHelmet("None"))
+		return selectionModel.selected ?: BuildHelmet(Data.getHelmetByName("None"))
 	}
 
 	companion object {

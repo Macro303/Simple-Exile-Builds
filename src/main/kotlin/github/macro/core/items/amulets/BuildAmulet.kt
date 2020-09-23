@@ -53,7 +53,7 @@ private class BuildAmuletDeserializer @JvmOverloads constructor(vc: Class<*>? = 
 	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildAmulet? {
 		val node: JsonNode = parser.codec.readTree(parser)
 
-		val amulet = Data.getAmulet(node["Item"].asText())
+		val amulet = Data.getAmuletById(node["Item"].asText())
 		val nextAmulet = if (node["Next Item"].isNull)
 			null
 		else
@@ -78,7 +78,7 @@ private class BuildAmuletSerializer @JvmOverloads constructor(t: Class<BuildAmul
 	@Throws(IOException::class, JsonProcessingException::class)
 	override fun serialize(value: BuildAmulet, parser: JsonGenerator, provider: SerializerProvider?) {
 		parser.writeStartObject()
-		parser.writeStringField("Item", (value.item as ItemAmulet).name)
+		parser.writeStringField("Item", value.item.id)
 		parser.writeObjectField("Next Item", (value.nextItem as BuildAmulet?))
 		parser.writeStringField("Reason", value.reason)
 		parser.writeEndObject()

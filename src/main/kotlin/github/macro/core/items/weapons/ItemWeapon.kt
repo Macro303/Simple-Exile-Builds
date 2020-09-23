@@ -8,7 +8,9 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer
 import github.macro.core.IItem
 import github.macro.core.items.ItemBase
-import java.io.File
+import javafx.beans.property.SimpleObjectProperty
+import org.apache.logging.log4j.LogManager
+import tornadofx.*
 import java.io.IOException
 
 /**
@@ -19,20 +21,19 @@ class ItemWeapon(
 	id: String,
 	name: String,
 	isReleased: Boolean,
-	isUnique: Boolean
+	isUnique: Boolean,
+	type: WeaponType
 ) : ItemBase(id = id, name = name, isReleased = isReleased, isUnique = isUnique, level = 0, quality = 0.0), IItem {
+	val typeProperty = SimpleObjectProperty<WeaponType>()
+	var type by typeProperty
 
-	override fun getFile(): File {
-		var baseFolder = File(File("resources", "Items"), "Weapons")
-		if (isUnique)
-			baseFolder = File(baseFolder, "Unique")
-		else
-			baseFolder = File(baseFolder, "Basic")
-		return File(baseFolder, id.substringAfterLast("/") + ".png")
+	init {
+		this.type = type
 	}
 }
 
-private class ItemWeaponDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<ItemWeapon?>(vc) {
+private class ItemWeaponDeserializer @JvmOverloads constructor(vc: Class<*>? = null) :
+	StdDeserializer<ItemWeapon?>(vc) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
 	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): ItemWeapon? {
@@ -42,12 +43,22 @@ private class ItemWeaponDeserializer @JvmOverloads constructor(vc: Class<*>? = n
 		val name = node["name"].asText()
 		val isReleased = node["isReleased"]?.asBoolean(false) ?: false
 		val isUnique = node["isUnique"]?.asBoolean(false) ?: false
+		val type = WeaponType.value(node["type"]?.asText())
+		if (type == null) {
+			LOGGER.info("Invalid Weapon Type: ${node["type"]?.asText()}")
+			return null
+		}
 
 		return ItemWeapon(
 			id = id,
 			name = name,
 			isReleased = isReleased,
-			isUnique = isUnique
+			isUnique = isUnique,
+			type = type
 		)
+	}
+
+	companion object {
+		private val LOGGER = LogManager.getLogger()
 	}
 }

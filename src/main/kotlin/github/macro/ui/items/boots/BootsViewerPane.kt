@@ -11,7 +11,9 @@ import org.apache.logging.log4j.LogManager
 class BootsViewerPane(build: Build) : AbstractViewerPane<BuildBoots>(
 	build = build,
 	buildItem = build.buildItems.boots,
-	index = 0
+	index = 0,
+	imageWidth = 156.0,
+	imageHeight = 156.0
 ) {
 	override fun getPrevious(): BuildBoots? {
 		var temp = build.buildItems.boots

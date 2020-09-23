@@ -16,13 +16,19 @@ class WeaponEditorPane(build: Build, buildItem: BuildWeapon, index: Int) : Abstr
 	build = build,
 	buildItem = buildItem,
 	index = index,
-	columnCount = 2
+	columnCount = 2,
+	imageWidth = (buildItem.item as ItemWeapon).type.imageWidth,
+	imageHeight = (buildItem.item as ItemWeapon).type.imageHeight
 ) {
-	override val selectionModel = SelectionModel<BuildWeapon, ItemWeapon>(Data.WEAPON_LIST)
+	override val selectionModel = SelectionModel<BuildWeapon, ItemWeapon>(
+		items = Data.WEAPON_LIST,
+		imageWidth = imageWidth,
+		imageHeight = imageHeight
+	)
 
 	override fun addItem(item: BuildWeapon?) {
 		item?.reason = null
-		build.buildItems.weapons[index] = item ?: BuildWeapon(Data.getWeapon("None"))
+		build.buildItems.weapons[index] = item ?: BuildWeapon(Data.getWeaponByName("None"))
 		assignItem(build.buildItems.weapons[index])
 	}
 
@@ -40,7 +46,7 @@ class WeaponEditorPane(build: Build, buildItem: BuildWeapon, index: Int) : Abstr
 		val scope = Scope()
 		setInScope(selectionModel, scope)
 		find<WeaponSelector>(scope).openModal(block = true, resizable = false)
-		return selectionModel.selected ?: BuildWeapon(Data.getWeapon("None"))
+		return selectionModel.selected ?: BuildWeapon(Data.getWeaponByName("None"))
 	}
 
 	companion object {

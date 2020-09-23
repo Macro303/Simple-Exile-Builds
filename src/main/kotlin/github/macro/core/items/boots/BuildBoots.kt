@@ -53,7 +53,7 @@ private class BuildBootsDeserializer @JvmOverloads constructor(vc: Class<*>? = n
 	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildBoots? {
 		val node: JsonNode = parser.codec.readTree(parser)
 
-		val boots = Data.getBoots(node["Item"].asText())
+		val boots = Data.getBootsById(node["Item"].asText())
 		val nextBoots = if (node["Next Item"].isNull)
 			null
 		else
@@ -78,7 +78,7 @@ private class BuildBootsSerializer @JvmOverloads constructor(t: Class<BuildBoots
 	@Throws(IOException::class, JsonProcessingException::class)
 	override fun serialize(value: BuildBoots, parser: JsonGenerator, provider: SerializerProvider?) {
 		parser.writeStartObject()
-		parser.writeStringField("Item", (value.item as ItemBoots).name)
+		parser.writeStringField("Item", value.item.id)
 		parser.writeObjectField("Next Item", (value.nextItem as BuildBoots?))
 		parser.writeStringField("Reason", value.reason)
 		parser.writeEndObject()

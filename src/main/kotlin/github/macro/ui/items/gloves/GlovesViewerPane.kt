@@ -11,7 +11,9 @@ import org.apache.logging.log4j.LogManager
 class GlovesViewerPane(build: Build) : AbstractViewerPane<BuildGloves>(
 	build = build,
 	buildItem = build.buildItems.gloves,
-	index = 0
+	index = 0,
+	imageWidth = 156.0,
+	imageHeight = 156.0
 ) {
 	override fun getPrevious(): BuildGloves? {
 		var temp = build.buildItems.gloves

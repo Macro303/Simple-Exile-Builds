@@ -12,10 +12,10 @@ import java.io.File
 class GlovesSelector : AbstractItemSelector<BuildGloves, ItemGloves>() {
 
 	override fun updateSelection(selected: ItemGloves?) {
-		selectedItem = BuildGloves(selected ?: Data.getGloves(null))
-		var image = selectedItem!!.item.getFile()
+		selectedItem = BuildGloves(selected ?: Data.getGlovesByName(null))
+		var image = File(File("resources", "Images"), selectedItem!!.item.id.substringAfterLast("/") + ".png")
 		if (selectedItem!!.item.name != "None" && !image.exists())
-			image = File(image.parent, "placeholder.png")
+			image = File(image.parentFile, "placeholder.png")
 		imageUrl = "file:${image.path}"
 	}
 }

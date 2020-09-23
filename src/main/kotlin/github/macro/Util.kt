@@ -57,10 +57,10 @@ object Util {
 		DUELIST -> listOf("Double Strike", "Chance to Bleed Support")
 		TEMPLAR -> listOf("Glacial Hammer", "Elemental Proliferation Support")
 		SHADOW -> listOf("Viper Strike", "Lesser Poison Support")
-	}.map { Data.getGem(it) }
+	}.map { Data.getGemByName(it) }
 
 	internal fun getStartingFlasks(): List<ItemFlask> =
-		listOf("Small Life Flask", "Small Life Flask", "Small Mana Flask").map { Data.getFlask(it) }
+		listOf("Small Life Flask", "Small Life Flask", "Small Mana Flask").map { Data.getFlaskByName(it) }
 
 	fun Enum<*>.cleanName(): String = this.name.split("_").joinToString(" ") { it.toLowerCase().capitalize() }
 

@@ -12,10 +12,10 @@ import java.io.File
 class BodyArmourSelector : AbstractItemSelector<BuildBodyArmour, ItemBodyArmour>() {
 
 	override fun updateSelection(selected: ItemBodyArmour?) {
-		selectedItem = BuildBodyArmour(selected ?: Data.getBodyArmour(null))
-		var image = selectedItem!!.item.getFile()
+		selectedItem = BuildBodyArmour(selected ?: Data.getBodyArmourByName(null))
+		var image = File(File("resources", "Images"), selectedItem!!.item.id.substringAfterLast("/") + ".png")
 		if (selectedItem!!.item.name != "None" && !image.exists())
-			image = File(image.parent, "placeholder.png")
+			image = File(image.parentFile, "placeholder.png")
 		imageUrl = "file:${image.path}"
 	}
 }

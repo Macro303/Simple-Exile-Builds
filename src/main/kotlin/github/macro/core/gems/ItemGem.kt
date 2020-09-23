@@ -72,20 +72,6 @@ class ItemGem(
 		this.acquisition = acquisition
 	}
 
-	override fun getFile(): File {
-		var baseFolder = File("resources", "Gems")
-		if (isSupport) {
-			baseFolder = File(baseFolder, "Support")
-			if (isAwakened)
-				baseFolder = File(baseFolder, "Awakened")
-		} else {
-			baseFolder = File(baseFolder, "Active")
-			if (isVaal)
-				baseFolder = File(baseFolder, "Vaal")
-		}
-		return File(baseFolder, id.substringAfterLast("/") + ".png")
-	}
-
 	override fun getDisplayName(): String {
 		val prefix = if (isVaal) "Vaal " else if (isAwakened) "Awakened " else ""
 		val suffix = if (isSupport) " Support" else ""

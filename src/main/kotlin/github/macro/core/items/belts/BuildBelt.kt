@@ -53,7 +53,7 @@ private class BuildBeltDeserializer @JvmOverloads constructor(vc: Class<*>? = nu
 	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildBelt? {
 		val node: JsonNode = parser.codec.readTree(parser)
 
-		val belt = Data.getBelt(node["Item"].asText())
+		val belt = Data.getBeltById(node["Item"].asText())
 		val nextBelt = if (node["Next Item"].isNull)
 			null
 		else
@@ -78,7 +78,7 @@ private class BuildBeltSerializer @JvmOverloads constructor(t: Class<BuildBelt>?
 	@Throws(IOException::class, JsonProcessingException::class)
 	override fun serialize(value: BuildBelt, parser: JsonGenerator, provider: SerializerProvider?) {
 		parser.writeStartObject()
-		parser.writeStringField("Item", (value.item as ItemBelt).name)
+		parser.writeStringField("Item", value.item.id)
 		parser.writeObjectField("Next Item", (value.nextItem as BuildBelt?))
 		parser.writeStringField("Reason", value.reason)
 		parser.writeEndObject()

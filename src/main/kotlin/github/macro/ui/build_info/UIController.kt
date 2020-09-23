@@ -66,12 +66,12 @@ class UIController : Controller() {
 			),
 			buildItems = BuildItemMap(
 				weapons = mutableListOf(),
-				bodyArmour = BuildBodyArmour(Data.getBodyArmour("None")),
-				helmet = BuildHelmet(Data.getHelmet("None")),
-				gloves = BuildGloves(Data.getGloves("None")),
-				boots = BuildBoots(Data.getBoots("None")),
-				belt = BuildBelt(Data.getBelt("None")),
-				amulet = BuildAmulet(Data.getAmulet("None")),
+				bodyArmour = BuildBodyArmour(Data.getBodyArmourByName("None")),
+				helmet = BuildHelmet(Data.getHelmetByName("None")),
+				gloves = BuildGloves(Data.getGlovesByName("None")),
+				boots = BuildBoots(Data.getBootsByName("None")),
+				belt = BuildBelt(Data.getBeltByName("None")),
+				amulet = BuildAmulet(Data.getAmuletByName("None")),
 				rings = mutableListOf(),
 				flasks = Util.getStartingFlasks().map { BuildFlask(it) }
 			)

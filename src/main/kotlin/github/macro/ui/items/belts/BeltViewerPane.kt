@@ -11,7 +11,8 @@ import org.apache.logging.log4j.LogManager
 class BeltViewerPane(build: Build) : AbstractViewerPane<BuildBelt>(
 	build = build,
 	buildItem = build.buildItems.belt,
-	index = 0
+	index = 0,
+	imageWidth = 156.0
 ) {
 	override fun getPrevious(): BuildBelt? {
 		var temp = build.buildItems.belt

@@ -28,7 +28,7 @@ class FlaskEditorPane(build: Build, buildItem: BuildFlask, index: Int) : Abstrac
 
 	override fun addItem(item: BuildFlask?) {
 		item?.reason = null
-		build.buildItems.flasks[index] = item ?: BuildFlask(Data.getFlask("None"))
+		build.buildItems.flasks[index] = item ?: BuildFlask(Data.getFlaskByName("None"))
 		assignItem(build.buildItems.flasks[index])
 	}
 
@@ -46,7 +46,7 @@ class FlaskEditorPane(build: Build, buildItem: BuildFlask, index: Int) : Abstrac
 		val scope = Scope()
 		setInScope(selectionModel, scope)
 		find<FlaskSelector>(scope).openModal(block = true, resizable = false)
-		return selectionModel.selected ?: BuildFlask(Data.getFlask("None"))
+		return selectionModel.selected ?: BuildFlask(Data.getFlaskByName("None"))
 	}
 
 	companion object {
