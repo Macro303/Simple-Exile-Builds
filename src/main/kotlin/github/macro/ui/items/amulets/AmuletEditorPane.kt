@@ -21,6 +21,7 @@ class AmuletEditorPane(build: Build) : AbstractEditorPane<BuildAmulet, ItemAmule
 	override val selectionModel = SelectionModel<BuildAmulet, ItemAmulet>(Data.AMULET_LIST)
 
 	override fun addItem(item: BuildAmulet?) {
+		item?.reason = null
 		build.buildItems.amulet = item ?: BuildAmulet(Data.getAmulet("None"))
 		assignItem(build.buildItems.amulet)
 	}

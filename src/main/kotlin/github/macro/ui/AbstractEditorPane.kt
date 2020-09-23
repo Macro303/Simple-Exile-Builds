@@ -186,7 +186,7 @@ abstract class AbstractEditorPane<T : IBuildItem, S : IItem>(
 								else
 									addItem(selected)
 								selected.nextItem = buildItem.nextItem
-								selected.reason = "Reason not Implemented"
+								selected.reason = buildItem.reason
 								assignItem(selected)
 							}
 						}

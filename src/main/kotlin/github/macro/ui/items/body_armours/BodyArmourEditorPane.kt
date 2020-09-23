@@ -21,6 +21,7 @@ class BodyArmourEditorPane(build: Build) : AbstractEditorPane<BuildBodyArmour, I
 	override val selectionModel = SelectionModel<BuildBodyArmour, ItemBodyArmour>(Data.BODY_ARMOUR_LIST)
 
 	override fun addItem(item: BuildBodyArmour?) {
+		item?.reason = null
 		build.buildItems.bodyArmour = item ?: BuildBodyArmour(Data.getBodyArmour("None"))
 		assignItem(build.buildItems.bodyArmour)
 	}

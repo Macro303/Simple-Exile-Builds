@@ -21,6 +21,7 @@ class BeltEditorPane(build: Build) : AbstractEditorPane<BuildBelt, ItemBelt>(
 	override val selectionModel = SelectionModel<BuildBelt, ItemBelt>(Data.BELT_LIST)
 
 	override fun addItem(item: BuildBelt?) {
+		item?.reason = null
 		build.buildItems.belt = item ?: BuildBelt(Data.getBelt("None"))
 		assignItem(build.buildItems.belt)
 	}

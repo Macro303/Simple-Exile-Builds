@@ -27,6 +27,7 @@ class FlaskEditorPane(build: Build, buildItem: BuildFlask, index: Int) : Abstrac
 	)
 
 	override fun addItem(item: BuildFlask?) {
+		item?.reason = null
 		build.buildItems.flasks[index] = item ?: BuildFlask(Data.getFlask("None"))
 		assignItem(build.buildItems.flasks[index])
 	}

@@ -21,6 +21,7 @@ class WeaponEditorPane(build: Build, buildItem: BuildWeapon, index: Int) : Abstr
 	override val selectionModel = SelectionModel<BuildWeapon, ItemWeapon>(Data.WEAPON_LIST)
 
 	override fun addItem(item: BuildWeapon?) {
+		item?.reason = null
 		build.buildItems.weapons[index] = item ?: BuildWeapon(Data.getWeapon("None"))
 		assignItem(build.buildItems.weapons[index])
 	}

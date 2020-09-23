@@ -21,6 +21,7 @@ class BootsEditorPane(build: Build) : AbstractEditorPane<BuildBoots, ItemBoots>(
 	override val selectionModel = SelectionModel<BuildBoots, ItemBoots>(Data.BOOTS_LIST)
 
 	override fun addItem(item: BuildBoots?) {
+		item?.reason = null
 		build.buildItems.boots = item ?: BuildBoots(Data.getBoots("None"))
 		assignItem(build.buildItems.boots)
 	}

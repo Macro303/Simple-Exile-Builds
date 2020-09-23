@@ -25,6 +25,7 @@ class GemEditorPane(build: Build, buildItem: BuildGem, index: Int, private val e
 	override val selectionModel = SelectionModel<BuildGem, ItemGem>(Data.GEM_LIST)
 
 	override fun addItem(item: BuildGem?) {
+		item?.reason = null
 		when (equipment) {
 			"Weapons" -> build.buildGems.weapons
 			"Body Armour" -> build.buildGems.bodyArmour

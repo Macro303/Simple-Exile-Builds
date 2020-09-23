@@ -21,6 +21,7 @@ class GlovesEditorPane(build: Build) : AbstractEditorPane<BuildGloves, ItemGlove
 	override val selectionModel = SelectionModel<BuildGloves, ItemGloves>(Data.GLOVES_LIST)
 
 	override fun addItem(item: BuildGloves?) {
+		item?.reason = null
 		build.buildItems.gloves = item ?: BuildGloves(Data.getGloves("None"))
 		assignItem(build.buildItems.gloves)
 	}

@@ -21,6 +21,7 @@ class HelmetEditorPane(build: Build) : AbstractEditorPane<BuildHelmet, ItemHelme
 	override val selectionModel = SelectionModel<BuildHelmet, ItemHelmet>(Data.HELMET_LIST)
 
 	override fun addItem(item: BuildHelmet?) {
+		item?.reason = null
 		build.buildItems.helmet = item ?: BuildHelmet(Data.getHelmet("None"))
 		assignItem(build.buildItems.helmet)
 	}
