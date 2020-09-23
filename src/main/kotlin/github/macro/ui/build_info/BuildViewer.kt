@@ -232,10 +232,6 @@ class BuildViewer : View("Exile Buddy") {
 									.gridpaneConstraints {
 										margin = Insets(2.5)
 									})
-								add(BeltViewerPane(model.selectedBuild)
-									.gridpaneConstraints {
-										margin = Insets(2.5)
-									})
 							}
 							row {
 								label("Jewellery") {
@@ -248,13 +244,14 @@ class BuildViewer : View("Exile Buddy") {
 								}
 							}
 							row {
+								add(BeltViewerPane(model.selectedBuild)
+									.gridpaneConstraints {
+										margin = Insets(2.5)
+									})
 								add(AmuletViewerPane(model.selectedBuild)
 									.gridpaneConstraints {
 										margin = Insets(2.5)
 									})
-								separator {
-									isVisible = false
-								}
 								model.selectedBuild.buildItems.rings.forEachIndexed { index, ring ->
 									add(RingViewerPane(model.selectedBuild, ring, index)
 										.gridpaneConstraints {

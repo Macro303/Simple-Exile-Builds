@@ -262,10 +262,6 @@ class BuildEditor : View("Exile Buddy") {
 									.gridpaneConstraints {
 										margin = Insets(2.5)
 									})
-								add(BeltEditorPane(model.selectedBuild)
-									.gridpaneConstraints {
-										margin = Insets(2.5)
-									})
 							}
 							row {
 								label("Jewellery") {
@@ -278,13 +274,14 @@ class BuildEditor : View("Exile Buddy") {
 								}
 							}
 							row {
+								add(BeltEditorPane(model.selectedBuild)
+									.gridpaneConstraints {
+										margin = Insets(2.5)
+									})
 								add(AmuletEditorPane(model.selectedBuild)
 									.gridpaneConstraints {
 										margin = Insets(2.5)
 									})
-								separator {
-									isVisible = false
-								}
 								model.selectedBuild.buildItems.rings.forEachIndexed { index, ring ->
 									add(RingEditorPane(model.selectedBuild, ring, index)
 										.gridpaneConstraints {
