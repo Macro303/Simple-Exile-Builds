@@ -88,21 +88,12 @@ task copyResources(type: Copy) {
 	into "$buildDir/libs/resources"
 }
 
-task releaseAll(type: Zip) {
+task releaseApplication(type: Zip) {
 	dependsOn 'shadowJar', 'copyApplication', 'copyResources'
 
 	from "$buildDir/libs"
 	include '**/*'
 	archiveFileName = 'Exile-Buddy.zip'
-	destinationDir(file('release'))
-}
-
-task releaseApplication(type: Zip) {
-	dependsOn 'shadowJar', 'copyApplication'
-
-	from "$buildDir/libs"
-	include '*.jar', '*.sh', '*.bat'
-	archiveFileName = 'Exile-Buddy_application.zip'
 	destinationDir(file('release'))
 }
 
@@ -116,8 +107,7 @@ task releaseResources(type: Zip) {
 }
 
 task release {
-	dependsOn 'releaseResources', 'releaseApplication', 'releaseAll'
-	releaseAll.shouldRunAfter(releaseApplication)
+	dependsOn 'releaseResources', 'releaseApplication'
 	releaseApplication.shouldRunAfter(releaseResources)
 }
 
