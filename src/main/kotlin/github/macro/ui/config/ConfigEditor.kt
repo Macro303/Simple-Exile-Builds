@@ -2,7 +2,7 @@ package github.macro.ui.config
 
 import github.macro.Styles
 import github.macro.config.Config
-import github.macro.ui.build_info.BuildSelector
+import javafx.geometry.Orientation
 import javafx.geometry.Pos
 import javafx.scene.text.FontPosture
 import tornadofx.*
@@ -10,19 +10,10 @@ import tornadofx.*
 /**
  * Created by Macro303 on 2020-Sep-21
  */
-class ConfigEditor : View("Exile Buddy") {
+class ConfigEditor : View("Settings") {
 
 	override val root = borderpane {
 		paddingAll = 10.0
-		top {
-			paddingAll = 5.0
-			vbox(spacing = 5.0, alignment = Pos.CENTER) {
-				paddingAll = 5.0
-				label(text = "Exile Buddy Config") {
-					addClass(Styles.title)
-				}
-			}
-		}
 		center {
 			paddingAll = 5.0
 			gridpane {
@@ -34,7 +25,6 @@ class ConfigEditor : View("Exile Buddy") {
 						isSelected = Config.INSTANCE.useDarkMode
 						action {
 							Config.INSTANCE.useDarkMode = this.isSelected
-							Config.INSTANCE.save()
 						}
 					}
 				}
@@ -44,11 +34,15 @@ class ConfigEditor : View("Exile Buddy") {
 		}
 		bottom {
 			paddingAll = 5.0
-			hbox(spacing = 5.0, alignment = Pos.CENTER) {
+			vbox(spacing = 5.0, alignment = Pos.CENTER) {
+				separator(orientation = Orientation.HORIZONTAL)
 				label(text = "Requires restart to apply") {
 					style {
 						fontStyle = FontPosture.ITALIC
 					}
+				}
+				button(text = "Submit") {
+					Config.INSTANCE.save()
 				}
 			}
 		}

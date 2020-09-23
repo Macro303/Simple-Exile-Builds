@@ -10,6 +10,9 @@ import java.io.File
  * Created by Macro303 on 2020-Sep-22
  */
 class FlaskSelector : AbstractItemSelector<BuildFlask, ItemFlask>() {
+	init {
+		title = "Flask Selector"
+	}
 
 	override fun updateSelection(selected: ItemFlask?) {
 		selectedItem = BuildFlask(selected ?: Data.getFlaskByName(null))

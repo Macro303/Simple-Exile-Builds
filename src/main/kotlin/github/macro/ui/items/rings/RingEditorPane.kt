@@ -18,7 +18,9 @@ class RingEditorPane(build: Build, buildItem: BuildRing, index: Int) : AbstractE
 	index = index,
 	columnCount = 2
 ) {
-	override val selectionModel = SelectionModel<BuildRing, ItemRing>(Data.RING_LIST)
+	override val selectionModel = SelectionModel<BuildRing, ItemRing>(
+		items = Data.RING_LIST
+	)
 
 	override fun addItem(item: BuildRing?) {
 		item?.reason = null

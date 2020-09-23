@@ -10,14 +10,18 @@ import tornadofx.*
 /**
  * Created by Macro303 on 2020-Sep-22
  */
-class SelectionModel<T : IBuildItem?, S : IItem>(items: List<S>, val imageHeight: Double = 78.0, val imageWidth: Double = 78.0) : ViewModel() {
+class SelectionModel<T : IBuildItem?, S : IItem>(
+	items: List<S>,
+	val imageHeight: Double = 78.0,
+	val imageWidth: Double = 78.0
+) : ViewModel() {
 	val itemsProperty = SimpleListProperty<S>()
 	var items by itemsProperty
 
 	val selectedProperty = SimpleObjectProperty<T>()
 	var selected by selectedProperty
 
-	init{
+	init {
 		this.items = FXCollections.observableList(items)
 	}
 }

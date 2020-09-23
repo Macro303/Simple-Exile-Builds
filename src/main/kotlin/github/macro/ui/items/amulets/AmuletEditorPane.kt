@@ -18,7 +18,9 @@ class AmuletEditorPane(build: Build) : AbstractEditorPane<BuildAmulet, ItemAmule
 	index = 0,
 	columnCount = 1
 ) {
-	override val selectionModel = SelectionModel<BuildAmulet, ItemAmulet>(Data.AMULET_LIST)
+	override val selectionModel = SelectionModel<BuildAmulet, ItemAmulet>(
+		items = Data.AMULET_LIST
+	)
 
 	override fun addItem(item: BuildAmulet?) {
 		item?.reason = null

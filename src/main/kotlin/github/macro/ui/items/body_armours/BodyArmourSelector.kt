@@ -10,6 +10,9 @@ import java.io.File
  * Created by Macro303 on 2020-Sep-22
  */
 class BodyArmourSelector : AbstractItemSelector<BuildBodyArmour, ItemBodyArmour>() {
+	init {
+		title = "Body Armour Selector"
+	}
 
 	override fun updateSelection(selected: ItemBodyArmour?) {
 		selectedItem = BuildBodyArmour(selected ?: Data.getBodyArmourByName(null))

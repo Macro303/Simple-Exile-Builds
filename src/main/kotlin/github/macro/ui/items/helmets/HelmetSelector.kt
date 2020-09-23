@@ -10,6 +10,9 @@ import java.io.File
  * Created by Macro303 on 2020-Sep-22
  */
 class HelmetSelector : AbstractItemSelector<BuildHelmet, ItemHelmet>() {
+	init {
+		title = "Helmet Selector"
+	}
 
 	override fun updateSelection(selected: ItemHelmet?) {
 		selectedItem = BuildHelmet(selected ?: Data.getHelmetByName(null))

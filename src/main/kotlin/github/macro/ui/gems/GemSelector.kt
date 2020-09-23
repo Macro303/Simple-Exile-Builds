@@ -10,6 +10,9 @@ import java.io.File
  * Created by Macro303 on 2020-Aug-18
  */
 class GemSelector : AbstractItemSelector<BuildGem, ItemGem>() {
+	init {
+		title = "Gem Selector"
+	}
 
 	override fun updateSelection(selected: ItemGem?) {
 		selectedItem = BuildGem(selected ?: Data.getGemByName(null))

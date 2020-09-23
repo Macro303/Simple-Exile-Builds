@@ -10,6 +10,9 @@ import java.io.File
  * Created by Macro303 on 2020-Sep-22
  */
 class AmuletSelector : AbstractItemSelector<BuildAmulet, ItemAmulet>() {
+	init {
+		title = "Amulet Selector"
+	}
 
 	override fun updateSelection(selected: ItemAmulet?) {
 		selectedItem = BuildAmulet(selected ?: Data.getAmuletByName(null))

@@ -10,6 +10,9 @@ import java.io.File
  * Created by Macro303 on 2020-Sep-22
  */
 class GlovesSelector : AbstractItemSelector<BuildGloves, ItemGloves>() {
+	init {
+		title = "Gloves Selector"
+	}
 
 	override fun updateSelection(selected: ItemGloves?) {
 		selectedItem = BuildGloves(selected ?: Data.getGlovesByName(null))

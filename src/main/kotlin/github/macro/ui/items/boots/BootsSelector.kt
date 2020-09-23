@@ -10,6 +10,9 @@ import java.io.File
  * Created by Macro303 on 2020-Sep-22
  */
 class BootsSelector : AbstractItemSelector<BuildBoots, ItemBoots>() {
+	init {
+		title = "Boot Selector"
+	}
 
 	override fun updateSelection(selected: ItemBoots?) {
 		selectedItem = BuildBoots(selected ?: Data.getBootsByName(null))

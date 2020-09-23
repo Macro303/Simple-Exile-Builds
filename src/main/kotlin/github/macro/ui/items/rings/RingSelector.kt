@@ -10,6 +10,9 @@ import java.io.File
  * Created by Macro303 on 2020-Sep-22
  */
 class RingSelector : AbstractItemSelector<BuildRing, ItemRing>() {
+	init {
+		title = "Ring Selector"
+	}
 
 	override fun updateSelection(selected: ItemRing?) {
 		selectedItem = BuildRing(selected ?: Data.getRingByName(null))

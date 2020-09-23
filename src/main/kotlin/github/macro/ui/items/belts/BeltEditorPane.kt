@@ -19,7 +19,10 @@ class BeltEditorPane(build: Build) : AbstractEditorPane<BuildBelt, ItemBelt>(
 	columnCount = 1,
 	imageWidth = 156.0
 ) {
-	override val selectionModel = SelectionModel<BuildBelt, ItemBelt>(Data.BELT_LIST, imageWidth = imageWidth)
+	override val selectionModel = SelectionModel<BuildBelt, ItemBelt>(
+		items = Data.BELT_LIST,
+		imageWidth = imageWidth
+	)
 
 	override fun addItem(item: BuildBelt?) {
 		item?.reason = null

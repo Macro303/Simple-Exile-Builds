@@ -10,6 +10,9 @@ import java.io.File
  * Created by Macro303 on 2020-Sep-22
  */
 class BeltSelector : AbstractItemSelector<BuildBelt, ItemBelt>() {
+	init {
+		title = "Belt Selector"
+	}
 
 	override fun updateSelection(selected: ItemBelt?) {
 		selectedItem = BuildBelt(selected ?: Data.getBeltByName(null))

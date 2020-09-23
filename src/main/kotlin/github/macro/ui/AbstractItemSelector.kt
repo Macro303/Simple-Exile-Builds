@@ -1,7 +1,6 @@
 package github.macro.ui
 
 import github.macro.Styles
-import github.macro.Util
 import github.macro.core.IBuildItem
 import github.macro.core.IItem
 import javafx.beans.property.SimpleStringProperty
@@ -33,24 +32,19 @@ abstract class AbstractItemSelector<T : IBuildItem, S : IItem> : View() {
 		prefWidth = 500.0
 		prefHeight = 150.0
 		paddingAll = 10.0
-		top {
-			paddingAll = 5.0
-			vbox(spacing = 5.0, alignment = Pos.TOP_CENTER) {
-				paddingAll = 5.0
-				label(text = "Exile Buddy") {
-					addClass(Styles.title)
-				}
-			}
-		}
 		center {
+			paddingAll = 5.0
 			hbox(spacing = 5.0, alignment = Pos.CENTER) {
 				paddingAll = 5.0
 				imageview(imageUrlProperty, lazyload = true) {
 					if (!imageUrl.contains("placeholder")) {
-						fitWidth = if (model.imageWidth >= 78.0) 78.0 else model.imageWidth
-						if (model.imageWidth < 78.0 && model.imageHeight >= 78)
+						if (model.imageWidth >= 78.0) {
+							fitWidth = 78.0
+							isPreserveRatio = true
+						} else if (model.imageHeight >= 78.0) {
 							fitHeight = 78.0
-						isPreserveRatio = true
+							isPreserveRatio = true
+						}
 					}
 				}
 				itemCombobox = combobox<S>(values = model.items.filterNot { it.name == "None" }.sortedBy { it.name }) {
@@ -63,6 +57,12 @@ abstract class AbstractItemSelector<T : IBuildItem, S : IItem> : View() {
 						updateSelection(itemCombobox.selectedItem)
 					}
 				}
+			}
+		}
+		bottom {
+			paddingAll = 5.0
+			hbox(spacing = 5.0, alignment = Pos.CENTER) {
+				paddingAll = 5.0
 				button("Select") {
 					addClass(Styles.sizedButton)
 					isDefaultButton = true

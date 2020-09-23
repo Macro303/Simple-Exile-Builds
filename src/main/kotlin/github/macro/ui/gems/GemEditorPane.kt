@@ -22,7 +22,9 @@ import tornadofx.*
 class GemEditorPane(build: Build, buildItem: BuildGem, index: Int, private val equipment: String?) :
 	AbstractEditorPane<BuildGem, ItemGem>(build = build, buildItem = buildItem, index = index, columnCount = 6) {
 
-	override val selectionModel = SelectionModel<BuildGem, ItemGem>(Data.GEM_LIST)
+	override val selectionModel = SelectionModel<BuildGem, ItemGem>(
+		items = Data.GEM_LIST
+	)
 
 	override fun addItem(item: BuildGem?) {
 		item?.reason = null

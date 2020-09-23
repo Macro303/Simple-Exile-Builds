@@ -104,10 +104,13 @@ abstract class AbstractEditorPane<T : IBuildItem, S : IItem>(
 			hbox(spacing = 5.0, alignment = Pos.CENTER) {
 				imageview(imageUrlProperty, lazyload = true) {
 					if (!imageUrl.contains("placeholder")) {
-						fitWidth = if (imageWidth >= 78.0) 78.0 else imageWidth
-						if (imageWidth < 78.0 && imageHeight >= 78)
+						if (imageWidth >= 78.0) {
+							fitWidth = 78.0
+							isPreserveRatio = true
+						} else if (imageHeight >= 78.0) {
 							fitHeight = 78.0
-						isPreserveRatio = true
+							isPreserveRatio = true
+						}
 					}
 				}
 			}
