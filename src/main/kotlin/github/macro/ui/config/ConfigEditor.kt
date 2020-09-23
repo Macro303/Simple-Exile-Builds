@@ -2,6 +2,7 @@ package github.macro.ui.config
 
 import github.macro.Styles
 import github.macro.config.Config
+import javafx.geometry.Insets
 import javafx.geometry.Orientation
 import javafx.geometry.Pos
 import javafx.scene.text.FontPosture
@@ -20,11 +21,17 @@ class ConfigEditor : View("Settings") {
 				row {
 					label(text = "Use Dark Mode") {
 						addClass(Styles.subtitle)
+						gridpaneConstraints {
+							margin = Insets(2.5)
+						}
 					}
 					checkbox {
 						isSelected = Config.INSTANCE.useDarkMode
 						action {
 							Config.INSTANCE.useDarkMode = this.isSelected
+						}
+						gridpaneConstraints {
+							margin = Insets(2.5)
 						}
 					}
 				}
