@@ -1,0 +1,2900 @@
+[
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Abyssal Axe",
+    "type": "Two Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre15",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Abyssal Sceptre",
+    "type": "Sceptre"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDexInt10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Alder Spiked Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDexInt3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Alloyed Spiked Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger18",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ambusher",
+    "type": "Dagger"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace16",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ancestral Club",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldInt9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ancient Spirit Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSword6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ancient Sword",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrInt9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Angelic Kite Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Antique Rapier",
+    "type": "Thrusting One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier15",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Apex Rapier",
+    "type": "Thrusting One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrInt13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Archon Kite Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Arming Axe",
+    "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow19",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Assassin Bow",
+    "type": "Bow"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace21",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Auric Mace",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Awl",
+    "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Barbed Club",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrDex9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Baroque Round Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSword11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Baselard",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Basket Rapier",
+    "type": "Thrusting One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Bastard Sword",
+    "type": "Two Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Battered Foil",
+    "type": "Thrusting One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDex10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Battle Buckler",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Battle Hammer",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSword12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Battle Sword",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMaceM3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Behemoth Mace",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Bladed Mace",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Blinder",
+    "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Blood Sceptre",
+    "type": "Sceptre"
+  },
+  {
+    "id": "Metadata/Items/Quivers/Quiver9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Blunt Arrow Quiver",
+    "type": "Quiver"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Boarding Axe",
+    "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Bone Bow",
+    "type": "Bow"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldInt3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Bone Spirit Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Boot Blade",
+    "type": "Rune Dagger"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Boot Knife",
+    "type": "Rune Dagger"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrInt10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Branded Kite Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Brass Maul",
+    "type": "Two Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldInt6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Brass Spirit Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Broad Axe",
+    "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSword4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Broad Sword",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Quivers/Quiver11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Broadhead Arrow Quiver",
+    "type": "Quiver"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Bronze Sceptre",
+    "type": "Sceptre"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStr10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Bronze Tower Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStr8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Buckskin Tower Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Burnished Foil",
+    "type": "Thrusting One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDexInt4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Burnished Spiked Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe19",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Butcher Axe",
+    "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Butcher Knife",
+    "type": "Rune Dagger"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Butcher Sword",
+    "type": "Two Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrDex12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Cardinal Round Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre21",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Carnal Sceptre",
+    "type": "Sceptre"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/Wand3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Carved Wand",
+    "type": "Wand"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Carving Knife",
+    "type": "Rune Dagger"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Cat's Paw",
+    "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStr4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Cedar Tower Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe14",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ceremonial Axe",
+    "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrInt5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ceremonial Kite Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ceremonial Mace",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrInt11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Champion Kite Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/items/Weapons/OneHandWeapons/OneHandSwords/OneHandSwordC",
+    "isReleased": false,
+    "isUnique": false,
+    "name": "Charan's Sword",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Chest Splitter",
+    "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldInt10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Chiming Spirit Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow17",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Citadel Bow",
+    "type": "Bow"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Cleaver",
+    "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Coiled Staff",
+    "type": "Warstaff"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStr16",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Colossal Tower Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace15",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Colossus Mallet",
+    "type": "Two Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Composite Bow",
+    "type": "Bow"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Compound Bow",
+    "type": "Bow"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDexInt7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Compound Spiked Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Quivers/Quiver3",
+    "isReleased": false,
+    "isUnique": false,
+    "name": "Conductive Quiver",
+    "type": "Quiver"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/WandAtlas1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Convoking Wand",
+    "type": "Wand"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Copper Kris",
+    "type": "Rune Dagger"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSword2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Copper Sword",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStr5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Copper Tower Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMaceM3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Coronal Maul",
+    "type": "Two Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Corroded Blade",
+    "type": "Two Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStr2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Corroded Tower Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDex9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Corrugated Buckler",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSword17",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Corsair Sword",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/RapierM2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Courtesan Sword",
+    "type": "Thrusting One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/StaffM1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Crescent Staff",
+    "type": "Staff"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStr12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Crested Tower Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrDex8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Crimson Round Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Crude Bow",
+    "type": "Bow"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDex15",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Crusader Buckler",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Crystal Sceptre",
+    "type": "Sceptre"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/Wand9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Crystal Wand",
+    "type": "Wand"
+  },
+  {
+    "id": "Metadata/Items/Quivers/Quiver1",
+    "isReleased": false,
+    "isUnique": false,
+    "name": "Cured Quiver",
+    "type": "Quiver"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSwordM1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Curved Blade",
+    "type": "Two Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSword10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Cutlass",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxeM1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Dagger Axe",
+    "type": "Two Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Darkwood Sceptre",
+    "type": "Sceptre"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Death Bow",
+    "type": "Bow"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow15",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Decimation Bow",
+    "type": "Bow"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Decorative Axe",
+    "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Decurve Bow",
+    "type": "Bow"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger22",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Demon Dagger",
+    "type": "Rune Dagger"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/Wand12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Demon's Horn",
+    "type": "Wand"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe18",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Despot Axe",
+    "type": "Two Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Double Axe",
+    "type": "Two Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/ClawM1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Double Claw",
+    "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMaceM2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Dragon Mace",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier16",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Dragonbone Rapier",
+    "type": "Thrusting One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/RapierM3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Dragoon Sword",
+    "type": "Thrusting One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Dread Maul",
+    "type": "Two Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Dream Mace",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Driftwood Club",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Driftwood Maul",
+    "type": "Two Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Driftwood Sceptre",
+    "type": "Sceptre"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDexInt2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Driftwood Spiked Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/Wand1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Driftwood Wand",
+    "type": "Wand"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSword8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Dusk Blade",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw15",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Eagle Claw",
+    "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStr14",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ebony Tower Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/StaffM3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Eclipse Staff",
+    "type": "Staff"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSword13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Elder Sword",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Elegant Foil",
+    "type": "Thrusting One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrDex13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Elegant Round Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSword7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Elegant Sword",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDex8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Enameled Buckler",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Engraved Greatsword",
+    "type": "Two Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxeM2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Engraved Hatchet",
+    "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/Wand8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Engraved Wand",
+    "type": "Wand"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Estoc",
+    "type": "Thrusting One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Etched Greatsword",
+    "type": "Two Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxeM1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Etched Hatchet",
+    "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrInt6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Etched Kite Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSword21",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Eternal Sword",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSwordM3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Exquisite Blade",
+    "type": "Two Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw19",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Eye Gouger",
+    "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe16",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ezomyte Axe",
+    "type": "Two Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword16",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ezomyte Blade",
+    "type": "Two Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger19",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ezomyte Dagger",
+    "type": "Rune Dagger"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDexInt11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ezomyte Spiked Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff16",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ezomyte Staff",
+    "type": "Warstaff"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStr15",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ezomyte Tower Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier14",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Fancy Foil",
+    "type": "Thrusting One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/Wand7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Faun's Horn",
+    "type": "Wand"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger15",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Fiend Dagger",
+    "type": "Rune Dagger"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrDex2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Fir Round Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Quivers/Quiver10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Fire Arrow Quiver",
+    "type": "Quiver"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapon/FishingRods/FishingRod1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Fishing Rod",
+    "type": "Fishing Rod"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Flanged Mace",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Flaying Knife",
+    "type": "Dagger"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxeM3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Fleshripper",
+    "type": "Two Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Footman Sword",
+    "type": "Two Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldInt13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Fossilised Spirit Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Foul Staff",
+    "type": "Warstaff"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Fright Claw",
+    "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Fright Maul",
+    "type": "Two Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace18",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Gavel",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/ClawM3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Gemini Claw",
+    "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSword16",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Gemstone Sword",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Gilded Axe",
+    "type": "Two Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDex6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Gilded Buckler",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStr11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Girded Tower Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSword18",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Gladius",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Glass Shank",
+    "type": "Dagger"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Gnarled Branch",
+    "type": "Staff"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/Wand2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Goat's Horn",
+    "type": "Wand"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDex1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Goathide Buckler",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDex11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Golden Buckler",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDemigods",
+    "isReleased": false,
+    "isUnique": false,
+    "name": "Golden Flame",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Golden Kris",
+    "type": "Rune Dagger"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Gouger",
+    "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSword14",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Graceful Sword",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSwordM2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Grappler",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Great Mallet",
+    "type": "Two Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw16",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Great White Claw",
+    "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Grinning Fetish",
+    "type": "Sceptre"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Grove Bow",
+    "type": "Bow"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Gut Ripper",
+    "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger16",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Gutting Knife",
+    "type": "Dagger"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDex4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Hammered Buckler",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow22",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Harbinger Bow",
+    "type": "Bow"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldInt15",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Harmonic Spirit Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier22",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Harpy Rapier",
+    "type": "Thrusting One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword14",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Headman's Sword",
+    "type": "Two Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Headsman Axe",
+    "type": "Two Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/WandM2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Heathen Wand",
+    "type": "Wand"
+  },
+  {
+    "id": "Metadata/Items/Quivers/Quiver4",
+    "isReleased": false,
+    "isUnique": false,
+    "name": "Heavy Quiver",
+    "type": "Quiver"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw18",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Hellion's Paw",
+    "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow14",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Highborn Bow",
+    "type": "Bow"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Highborn Staff",
+    "type": "Staff"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Highland Blade",
+    "type": "Two Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSwordM1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Hook Sword",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/SceptreM1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Horned Sceptre",
+    "type": "Sceptre"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/Wand13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Imbued Wand",
+    "type": "Wand"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Imp Dagger",
+    "type": "Rune Dagger"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow21",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Imperial Bow",
+    "type": "Bow"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDex16",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Imperial Buckler",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw21",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Imperial Claw",
+    "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace18",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Imperial Maul",
+    "type": "Two Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger21",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Imperial Skean",
+    "type": "Rune Dagger"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff18",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Imperial Staff",
+    "type": "Staff"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe22",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Infernal Axe",
+    "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword19",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Infernal Sword",
+    "type": "Two Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Iron Sceptre",
+    "type": "Sceptre"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Iron Staff",
+    "type": "Warstaff"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDex12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ironwood Buckler",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ivory Bow",
+    "type": "Bow"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldInt8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ivory Spirit Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Jade Chopper",
+    "type": "Two Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Jade Hatchet",
+    "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Jagged Foil",
+    "type": "Thrusting One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Jagged Maul",
+    "type": "Two Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Jasper Axe",
+    "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Jasper Chopper",
+    "type": "Two Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier21",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Jewelled Foil",
+    "type": "Thrusting One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldInt5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Jingling Spirit Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff19",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Judgement Staff",
+    "type": "Warstaff"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe16",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Karui Axe",
+    "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe14",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Karui Chopper",
+    "type": "Two Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace14",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Karui Maul",
+    "type": "Two Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre16",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Karui Sceptre",
+    "type": "Sceptre"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Labrys",
+    "type": "Two Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldInt12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Lacewood Spirit Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDex13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Lacquered Buckler",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrInt8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Laminated Kite Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff15",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Lathi",
+    "type": "Staff"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrInt4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Layered Kite Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Lead Sceptre",
+    "type": "Sceptre"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace19",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Legion Hammer",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSword19",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Legion Sword",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Quivers/Quiver5",
+    "isReleased": false,
+    "isUnique": false,
+    "name": "Light Quiver",
+    "type": "Quiver"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrInt2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Linden Kite Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword18",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Lion Sword",
+    "type": "Two Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSwordM2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Lithe Blade",
+    "type": "Two Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Long Bow",
+    "type": "Bow"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Long Staff",
+    "type": "Staff"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Longsword",
+    "type": "Two Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff17",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Maelstr\u00f6m Staff",
+    "type": "Warstaff"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStr9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Mahogany Tower Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Mallet",
+    "type": "Two Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrDex6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Maple Round Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/BowM3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Maraketh Bow",
+    "type": "Bow"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace17",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Meatgrinder",
+    "type": "Two Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSword22",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Midnight Blade",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Military Staff",
+    "type": "Warstaff"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDexInt12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Mirrored Spiked Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/StaffM2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Moon Staff",
+    "type": "Staff"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMaceM1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Morning Star",
+    "type": "Two Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrInt12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Mosaic Kite Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Nailed Fist",
+    "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace22",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Nightmare Mace",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Noble Axe",
+    "type": "Two Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw14",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Noble Claw",
+    "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDex7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Oak Buckler",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ochre Sceptre",
+    "type": "Sceptre"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/Wand11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Omen Wand",
+    "type": "Wand"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre18",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Opal Sceptre",
+    "type": "Sceptre"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/Wand14",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Opal Wand",
+    "type": "Wand"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace14",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ornate Mace",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Quivers/Quiver14",
+    "isReleased": false,
+    "isUnique": false,
+    "name": "Ornate Quiver",
+    "type": "Quiver"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDexInt5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ornate Spiked Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ornate Sword",
+    "type": "Two Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/WandM1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Pagan Wand",
+    "type": "Wand"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDex3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Painted Buckler",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStr7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Painted Tower Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier18",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Pecoraro",
+    "type": "Thrusting One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Quivers/Quiver12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Penetrating Arrow Quiver",
+    "type": "Quiver"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace20",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Pernarch",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Petrified Club",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace15",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Phantom Mace",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace16",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Piledriver",
+    "type": "Two Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDex2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Pine Buckler",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStr17",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Pinnacle Tower Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrInt1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Plank Kite Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Plated Maul",
+    "type": "Two Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger20",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Platinum Kris",
+    "type": "Rune Dagger"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre19",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Platinum Sceptre",
+    "type": "Sceptre"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Poignard",
+    "type": "Dagger"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Poleaxe",
+    "type": "Two Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDexInt8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Polished Spiked Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Prehistoric Claw",
+    "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Primeval Rapier",
+    "type": "Thrusting One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Primitive Staff",
+    "type": "Staff"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff14",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Primordial Staff",
+    "type": "Staff"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/WandM3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Profane Wand",
+    "type": "Wand"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/DaggerM1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Prong Dagger",
+    "type": "Dagger"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/Wand16",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Prophecy Wand",
+    "type": "Wand"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Quarterstaff",
+    "type": "Staff"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Quartz Sceptre",
+    "type": "Sceptre"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/Wand4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Quartz Wand",
+    "type": "Wand"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow18",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ranger Bow",
+    "type": "Bow"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStr3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Rawhide Tower Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe18",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Reaver Axe",
+    "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword15",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Reaver Sword",
+    "type": "Two Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Recurve Bow",
+    "type": "Bow"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDexInt6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Redwood Spiked Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/BowM1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Reflex Bow",
+    "type": "Bow"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrInt3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Reinforced Kite Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStr6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Reinforced Tower Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ritual Sceptre",
+    "type": "Sceptre"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Rock Breaker",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrDex1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Rotted Round Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe21",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Royal Axe",
+    "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Royal Bow",
+    "type": "Bow"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre14",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Royal Sceptre",
+    "type": "Sceptre"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger14",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Royal Skean",
+    "type": "Rune Dagger"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Royal Staff",
+    "type": "Staff"
+  },
+  {
+    "id": "Metadata/Items/Quivers/Quiver2",
+    "isReleased": false,
+    "isUnique": false,
+    "name": "Rugged Quiver",
+    "type": "Quiver"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxeM3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Runic Hatchet",
+    "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Rusted Hatchet",
+    "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Rusted Spike",
+    "type": "Thrusting One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSword1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Rusted Sword",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSword3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sabre",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/Wand6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sage Wand",
+    "type": "Wand"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/DaggerM3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sai",
+    "type": "Dagger"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/SceptreM3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sambar Sceptre",
+    "type": "Sceptre"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrDex4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Scarlet Round Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sekhem",
+    "type": "Sceptre"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/Wand10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Serpent Wand",
+    "type": "Wand"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Serpentine Staff",
+    "type": "Warstaff"
+  },
+  {
+    "id": "Metadata/Items/Quivers/Quiver6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Serrated Arrow Quiver",
+    "type": "Quiver"
+  },
+  {
+    "id": "Metadata/Items/Quivers/QuiverDescent",
+    "isReleased": false,
+    "isUnique": false,
+    "name": "Serrated Arrow Quiver",
+    "type": "Quiver"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Serrated Foil",
+    "type": "Thrusting One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Shadow Axe",
+    "type": "Two Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Shadow Sceptre",
+    "type": "Sceptre"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStr13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Shagreen Tower Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Quivers/Quiver8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sharktooth Arrow Quiver",
+    "type": "Quiver"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sharktooth Claw",
+    "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Short Bow",
+    "type": "Bow"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe17",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Siege Axe",
+    "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Skean",
+    "type": "Rune Dagger"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Skinning Knife",
+    "type": "Dagger"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger17",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Slaughter Knife",
+    "type": "Rune Dagger"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sledgehammer",
+    "type": "Two Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/RapierM1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Smallsword",
+    "type": "Thrusting One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sniper Bow",
+    "type": "Bow"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMaceM2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Solar Maul",
+    "type": "Two Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDexInt9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sovereign Spiked Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sparkling Claw",
+    "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Spectral Axe",
+    "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Spectral Sword",
+    "type": "Two Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Quivers/Quiver13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Spike-Point Arrow Quiver",
+    "type": "Quiver"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDexInt1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Spiked Bundle",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Spiked Club",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrDex7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Spiked Round Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow20",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Spine Bow",
+    "type": "Bow"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Spiny Maul",
+    "type": "Two Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrDex11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Spiny Round Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier19",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Spiraled Foil",
+    "type": "Thrusting One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/Wand5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Spiraled Wand",
+    "type": "Wand"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrDex5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Splendid Round Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStr1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Splintered Tower Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/SceptreM2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Stag Sceptre",
+    "type": "Sceptre"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrInt7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Steel Kite Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Steelhead",
+    "type": "Two Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/BowM2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Steelwood Bow",
+    "type": "Bow"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Stiletto",
+    "type": "Dagger"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Stone Axe",
+    "type": "Two Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Stone Hammer",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrDex3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Studded Round Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe15",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sundering Axe",
+    "type": "Two Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDexInt13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Supreme Spiked Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxeM2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Talon Axe",
+    "type": "Two Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldInt4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Tarnished Spirit Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrDex10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Teak Round Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier17",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Tempered Foil",
+    "type": "Thrusting One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace17",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Tenderizer",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw22",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Terror Claw",
+    "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace19",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Terror Maul",
+    "type": "Two Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow16",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Thicket Bow",
+    "type": "Bow"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldInt11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Thorium Spirit Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Thorn Rapier",
+    "type": "Thrusting One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Thresher Claw",
+    "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw17",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Throat Stabber",
+    "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSwordM3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Tiger Hook",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Tiger Sword",
+    "type": "Two Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Tiger's Paw",
+    "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Timber Axe",
+    "type": "Two Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Timeworn Claw",
+    "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldInt16",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Titanium Spirit Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Tomahawk",
+    "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/Wand15",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Tornado Wand",
+    "type": "Wand"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Totemic Maul",
+    "type": "Two Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Tribal Club",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Tribal Maul",
+    "type": "Two Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/DaggerM2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Trisula",
+    "type": "Dagger"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldInt1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Twig Spirit Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSword15",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Twilight Blade",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/ClawM2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Twin Claw",
+    "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Two-Handed Sword",
+    "type": "Two Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Quivers/Quiver7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Two-Point Arrow Quiver",
+    "type": "Quiver"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre17",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Tyrant's Sekhem",
+    "type": "Sceptre"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe17",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Vaal Axe",
+    "type": "Two Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSword20",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Vaal Blade",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDex14",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Vaal Buckler",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw20",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Vaal Claw",
+    "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword17",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Vaal Greatsword",
+    "type": "Two Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe20",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Vaal Hatchet",
+    "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier20",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Vaal Rapier",
+    "type": "Thrusting One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre20",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Vaal Sceptre",
+    "type": "Sceptre"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldInt14",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Vaal Spirit Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSword9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Variscite Blade",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Vile Staff",
+    "type": "Warstaff"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe19",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Void Axe",
+    "type": "Two Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre22",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Void Sceptre",
+    "type": "Sceptre"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldInt7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Walnut Spirit Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "War Axe",
+    "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDex5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "War Buckler",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "War Hammer",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSword5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "War Sword",
+    "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Whalebone Rapier",
+    "type": "Thrusting One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Woodful Staff",
+    "type": "Staff"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Woodsplitter",
+    "type": "Two Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe15",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Wraith Axe",
+    "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Wraith Sword",
+    "type": "Two Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Wrist Chopper",
+    "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMaceM1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Wyrm Mace",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Wyrmbone Rapier",
+    "type": "Thrusting One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldInt2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Yew Spirit Shield",
+    "type": "Shield"
+  }
+]

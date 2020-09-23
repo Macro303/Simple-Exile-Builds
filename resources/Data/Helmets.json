@@ -1,0 +1,398 @@
+[
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStrInt5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Aventail Helmet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStr3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Barbute Helmet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStrDex1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Battered Helm"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetInt5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Bone Circlet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetAtlas1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Bone Helmet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetDexInt7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Callous Mask"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStr4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Close Helmet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStr2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Cone Helmet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStrInt4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Crusader Helmet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetDexInt11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Deicide Mask"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStr11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Eternal Burgonet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStr9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ezomyte Burgonet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStrDex6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Fencer Helm"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetDexInt4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Festival Mask"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStrDex8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Fluted Bascinet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStrDex4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Gilded Sallet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStr5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Gladiator Helmet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetDexInt5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Golden Mask"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetDemigods1",
+    "isReleased": false,
+    "isUnique": false,
+    "name": "Golden Visage"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetWreath1",
+    "isReleased": false,
+    "isUnique": false,
+    "name": "Golden Wreath"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStrInt7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Great Crown"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStrInt3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Great Helmet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetDexInt9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Harlequin Mask"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetInt11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Hubris Circlet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetDex5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Hunter Hood"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetInt2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Iron Circlet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStr1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Iron Hat"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetDexInt3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Iron Mask"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStrDex7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Lacquered Helmet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetDex1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Leather Cap"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetDex3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Leather Hood"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetDex10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Lion Pelt"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetInt6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Lunaris Circlet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStrInt8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Magistrate Crown"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetInt10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Mind Cage"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetInt8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Necromancer Circlet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStrDex10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Nightmare Bascinet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetDex6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Noble Tricorne"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStrDex9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Pig-Faced Bascinet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetDexInt2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Plague Mask"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStrInt10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Praetor Crown"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStrInt9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Prophet Crown"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetDexInt6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Raven Mask"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStr6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Reaver Helmet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetDexInt8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Regicide Mask"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStr10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Royal Burgonet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStrInt1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Rusted Coif"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStrDex2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sallet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStr8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Samite Helmet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetDexInt1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Scare Mask"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStrDex5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Secutor Helm"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStr7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Siege Helmet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetDex8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Silken Hood"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetDex9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sinner Tricorne"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetInt9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Solaris Circlet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStrInt2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Soldier Helmet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetInt7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Steel Circlet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetInt3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Torture Cage"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetInt4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Tribal Circlet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetDex2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Tricorne"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetDex7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ursine Pelt"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetDexInt10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Vaal Mask"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetInt1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Vine Circlet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStrDex3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Visored Sallet"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetDex4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Wolf Pelt"
+  },
+  {
+    "id": "Metadata/Items/Armours/Helmets/HelmetStrInt6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Zealot Helmet"
+  }
+]

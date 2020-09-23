@@ -1,0 +1,272 @@
+[
+  {
+    "id": "Metadata/Items/Flasks/FlaskUtility7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Amethyst Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskUtility11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Aquamarine Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskUtility10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Basalt Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskUtility15",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Bismuth Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskHybrid4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Colossal Hybrid Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskLife7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Colossal Life Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskMana7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Colossal Mana Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskUtility1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Diamond Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskLife11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Divine Life Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskMana11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Divine Mana Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskLife12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Eternal Life Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskMana12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Eternal Mana Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskLife6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Giant Life Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskMana6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Giant Mana Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskLife5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Grand Life Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskMana5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Grand Mana Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskUtility5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Granite Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskLife4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Greater Life Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskMana4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Greater Mana Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskHybrid6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Hallowed Hybrid Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskLife9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Hallowed Life Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskMana9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Hallowed Mana Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskUtility9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Jade Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskHybrid3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Large Hybrid Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskLife3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Large Life Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskMana3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Large Mana Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskHybrid2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Medium Hybrid Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskLife2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Medium Life Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskMana2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Medium Mana Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskUtility8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Quartz Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskUtility6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Quicksilver Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskUtility2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ruby Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskHybrid5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sacred Hybrid Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskLife8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sacred Life Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskMana8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sacred Mana Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskLife10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sanctified Life Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskMana10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sanctified Mana Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskUtility3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sapphire Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskUtility14",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Silver Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskHybrid1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Small Hybrid Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskLife1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Small Life Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskMana1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Small Mana Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskUtility12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Stibnite Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskUtility13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sulphur Flask"
+  },
+  {
+    "id": "Metadata/Items/Flasks/FlaskUtility4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Topaz Flask"
+  }
+]

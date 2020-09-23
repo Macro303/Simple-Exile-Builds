@@ -1,0 +1,350 @@
+[
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsDexInt6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ambush Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStr6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ancient Greaves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStr5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Antique Greaves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsInt8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Arcanist Slippers"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsDexInt8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Assassin's Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsDescent1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Avian Slippers"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStrDex3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Bronzescale Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsDexInt7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Carnal Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStrInt1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Chain Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsDexInt3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Clasped Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsInt7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Conjurer Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStrInt8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Crusader Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsDex3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Deerskin Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStrDex8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Dragonscale Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsDex5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Eelskin Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsDex2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Goathide Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsDemigods1",
+    "isReleased": false,
+    "isUnique": false,
+    "name": "Golden Caligae"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStr7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Goliath Greaves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStrDex7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Hydrascale Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStr1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Iron Greaves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStrDex2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ironscale Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStrTemp",
+    "isReleased": false,
+    "isUnique": false,
+    "name": "Kaom's Greaves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStrDex1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Leatherscale Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStrInt7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Legion Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStrInt3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Mesh Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsDexInt9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Murder Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsDex4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Nubuck Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStr3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Plated Greaves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsDex1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Rawhide Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStr4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Reinforced Greaves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStrInt2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ringmail Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStrInt4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Riveted Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsInt6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Samite Slippers"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsInt5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Satin Slippers"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsInt4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Scholar Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStrDex5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Serpentscale Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsDexInt4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Shackled Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsDex7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Shagreen Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsDex6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sharkskin Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsInt3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Silk Slippers"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsDex9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Slink Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStrInt6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Soldier Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsInt9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sorcerer Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsDex8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Stealth Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStr2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Steel Greaves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStrDex4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Steelscale Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsDexInt2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Strapped Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStr9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Titan Greaves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsDexInt5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Trapper Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsAtlas1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Two-Toned Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsAtlas2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Two-Toned Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsAtlas3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Two-Toned Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStr8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Vaal Greaves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsInt2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Velvet Slippers"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsInt1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Wool Shoes"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsDexInt1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Wrapped Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStrDex6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Wyrmscale Boots"
+  },
+  {
+    "id": "Metadata/Items/Armours/Boots/BootsStrInt5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Zealot Boots"
+  }
+]

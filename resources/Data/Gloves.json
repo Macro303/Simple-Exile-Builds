@@ -1,0 +1,332 @@
+[
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesDexInt5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ambush Mitts"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesStr6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ancient Gauntlets"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesStr5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Antique Gauntlets"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesInt8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Arcanist Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesDexInt7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Assassin's Mitts"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesStr3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Bronze Gauntlets"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesStrDex3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Bronzescale Gauntlets"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesDexInt6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Carnal Mitts"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesStrInt1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Chain Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesDexInt3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Clasped Mitts"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesInt7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Conjurer Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesStrInt8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Crusader Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesDex3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Deerskin Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesStrDex8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Dragonscale Gauntlets"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesDex5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Eelskin Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesInt4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Embroidered Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesAtlasInt",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Fingerless Silk Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesStrDex1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Fishscale Gauntlets"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesDex2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Goathide Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesDemigods1",
+    "isReleased": false,
+    "isUnique": false,
+    "name": "Golden Bracers"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesStr7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Goliath Gauntlets"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesAtlasDex",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Gripped Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesStrDex7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Hydrascale Gauntlets"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesStr1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Iron Gauntlets"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesStrDex2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ironscale Gauntlets"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesStrInt7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Legion Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesStrInt3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Mesh Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesDexInt8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Murder Mitts"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesDex4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Nubuck Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesStr2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Plated Gauntlets"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesDex1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Rawhide Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesStrInt2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ringmail Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesStrInt4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Riveted Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesInt6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Samite Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesInt5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Satin Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesStrDex5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Serpentscale Gauntlets"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesDex7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Shagreen Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesDex6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sharkskin Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesInt3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Silk Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesDex9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Slink Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesStrInt6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Soldier Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesInt9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sorcerer Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesAtlasStr",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Spiked Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesDex8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Stealth Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesStr4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Steel Gauntlets"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesStrDex4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Steelscale Gauntlets"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesDexInt2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Strapped Mitts"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesStr9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Titan Gauntlets"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesDexInt4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Trapper Mitts"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesStr8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Vaal Gauntlets"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesInt2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Velvet Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesInt1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Wool Gloves"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesDexInt1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Wrapped Mitts"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesStrDex6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Wyrmscale Gauntlets"
+  },
+  {
+    "id": "Metadata/Items/Armours/Gloves/GlovesStrInt5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Zealot Gloves"
+  }
+]

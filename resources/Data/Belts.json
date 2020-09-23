@@ -1,0 +1,62 @@
+[
+  {
+    "id": "Metadata/Items/Belts/Belt2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Chain Belt"
+  },
+  {
+    "id": "Metadata/Items/Belts/Belt5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Cloth Belt"
+  },
+  {
+    "id": "Metadata/Items/Belts/BeltAtlas2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Crystal Belt"
+  },
+  {
+    "id": "Metadata/Items/Belts/BeltDemigods1",
+    "isReleased": false,
+    "isUnique": false,
+    "name": "Golden Obi"
+  },
+  {
+    "id": "Metadata/Items/Belts/Belt4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Heavy Belt"
+  },
+  {
+    "id": "Metadata/Items/Belts/Belt3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Leather Belt"
+  },
+  {
+    "id": "Metadata/Items/Belts/Belt1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Rustic Sash"
+  },
+  {
+    "id": "Metadata/Items/Belts/Belt6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Studded Belt"
+  },
+  {
+    "id": "Metadata/Items/Belts/BeltAbyss",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Stygian Vise"
+  },
+  {
+    "id": "Metadata/Items/Belts/BeltAtlas1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Vanguard Belt"
+  }
+]

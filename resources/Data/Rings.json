@@ -1,0 +1,134 @@
+[
+  {
+    "id": "Metadata/Items/Rings/Ring10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Amethyst Ring"
+  },
+  {
+    "id": "Metadata/Items/Rings/BreachRing",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Breach Ring"
+  },
+  {
+    "id": "Metadata/Items/Rings/RingAtlas4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Cerulean Ring"
+  },
+  {
+    "id": "Metadata/Items/Rings/Ring2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Coral Ring"
+  },
+  {
+    "id": "Metadata/Items/Rings/Ring11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Diamond Ring"
+  },
+  {
+    "id": "Metadata/Items/Rings/Ring4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Gold Ring"
+  },
+  {
+    "id": "Metadata/Items/Rings/RingDemigods1",
+    "isReleased": false,
+    "isUnique": false,
+    "name": "Golden Hoop"
+  },
+  {
+    "id": "Metadata/Items/Rings/Ring1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Iron Ring"
+  },
+  {
+    "id": "Metadata/Items/Rings/RingVictor1",
+    "isReleased": false,
+    "isUnique": false,
+    "name": "Jet Ring"
+  },
+  {
+    "id": "Metadata/Items/Rings/Ring9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Moonstone Ring"
+  },
+  {
+    "id": "Metadata/Items/Rings/RingAtlas2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Opal Ring"
+  },
+  {
+    "id": "Metadata/Items/Rings/Ring3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Paua Ring"
+  },
+  {
+    "id": "Metadata/Items/Rings/Ring8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Prismatic Ring"
+  },
+  {
+    "id": "Metadata/Items/Rings/Ring7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ruby Ring"
+  },
+  {
+    "id": "Metadata/Items/Rings/Ring6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sapphire Ring"
+  },
+  {
+    "id": "Metadata/Items/Rings/RingAtlas1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Steel Ring"
+  },
+  {
+    "id": "Metadata/Items/Rings/Ring5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Topaz Ring"
+  },
+  {
+    "id": "Metadata/Items/Rings/Ring12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Two-Stone Ring"
+  },
+  {
+    "id": "Metadata/Items/Rings/Ring13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Two-Stone Ring"
+  },
+  {
+    "id": "Metadata/Items/Rings/Ring14",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Two-Stone Ring"
+  },
+  {
+    "id": "Metadata/Items/Rings/Ring15",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Unset Ring"
+  },
+  {
+    "id": "Metadata/Items/Rings/RingAtlas3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Vermillion Ring"
+  }
+]

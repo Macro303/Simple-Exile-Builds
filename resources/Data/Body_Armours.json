@@ -1,0 +1,632 @@
+[
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStr6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Arena Plate"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDex17",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Assassin's Garb"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStr15",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Astral Plate"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrDex12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Battle Lamellar"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStr9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Battle Plate"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDexInt15",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Blood Raiment"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDexInt7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Bone Armour"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStr8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Bronze Plate"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDex3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Buckskin Tunic"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyInt7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Cabalist Regalia"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDexInt17",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Carnal Armour"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrInt11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Chain Hauberk"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrInt4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Chainmail Doublet"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrInt2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Chainmail Tunic"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrInt1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Chainmail Vest"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStr2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Chestplate"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStr11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Colosseum Plate"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrDex11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Commander's Brigandine"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyInt10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Conjurer's Vestment"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrInt14",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Conquest Chainmail"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStr3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Copper Plate"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDex11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Coronal Leather"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDexInt10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Crimson Raiment"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrInt9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Crusader Chainmail"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStr14",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Crusader Plate"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDexInt12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Crypt Armour"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDex12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Cutthroat's Garb"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrDex14",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Desert Brigandine"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDex14",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Destiny Leather"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyInt12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Destroyer Regalia"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrInt12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Devout Chainmail"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrDex13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Dragonscale Doublet"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDex8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Eelskin Tunic"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrInt15",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Elegant Ringmail"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDex15",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Exquisite Leather"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrDex7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Field Lamellar"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDex9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Frontier Leather"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrInt6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Full Chainmail"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrDex15",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Full Dragonscale"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDex5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Full Leather"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStr5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Full Plate"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrInt5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Full Ringmail"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrDex5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Full Scale Armour"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrDex10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Full Wyrmscale"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrDex16",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "General's Brigandine"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStr16",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Gladiator Plate"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDex10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Glorious Leather"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStr17",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Glorious Plate"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDemigods1",
+    "isReleased": false,
+    "isUnique": false,
+    "name": "Golden Mantle"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStr13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Golden Plate"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrInt7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Holy Chainmail"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrDex9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Hussar Brigandine"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrDex4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Infantry Brigandine"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrTemp",
+    "isReleased": false,
+    "isUnique": false,
+    "name": "Kaom's Plate"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDexInt11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Lacquered Garb"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrInt8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Latticed Ringmail"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrDex2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Light Brigandine"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStr7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Lordly Plate"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrInt13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Loricated Ringmail"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyInt5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Mage's Vestment"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStr12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Majestic Plate"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyInt14",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Necromancer Silks"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyInt15",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Occultist's Vestment"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDexInt4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Oiled Coat"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDexInt2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Oiled Vest"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrInt10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ornate Ringmail"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDexInt3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Padded Jacket"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDexInt1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Padded Vest"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStr1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Plate Vest"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDexInt8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Quilted Jacket"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrInt3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ringmail Coat"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrDexInt1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sacrificial Garb"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDexInt16",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sadist Garb"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyInt8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sage's Robe"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrInt16",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Saint's Hauberk"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrInt17",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Saintly Chainmail"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyInt13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Savant's Robe"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrDex3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Scale Doublet"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrDex1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Scale Vest"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDexInt5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Scarlet Raiment"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyInt3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Scholar's Robe"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDexInt13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sentinel Jacket"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDex1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Shabby Jerkin"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDex13",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sharkskin Tunic"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyInt6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Silk Robe"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyInt4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Silken Garb"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyInt2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Silken Vest"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyInt9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Silken Wrap"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyInt1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Simple Robe"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDexInt9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sleek Coat"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrDex6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Soldier's Brigandine"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyInt11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Spidersilk Robe"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDex2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Strapped Leather"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDex6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sun Leather"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStr10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Sun Plate"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDex7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Thief's Garb"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrDex17",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Triumphant Lamellar"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyInt17",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Vaal Regalia"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDexInt14",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Varnished Coat"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStr4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "War Plate"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDexInt6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Waxed Garb"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyInt16",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Widowsilk Robe"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDex4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Wild Leather"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyStrDex8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Wyrmscale Doublet"
+  },
+  {
+    "id": "Metadata/Items/Armours/BodyArmours/BodyDex16",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Zodiac Leather"
+  }
+]

@@ -1,0 +1,296 @@
+[
+  {
+    "id": "Metadata/Items/Amulets/Amulet9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Agate Amulet"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Amulet3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Amber Amulet"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman1_3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Ashscale Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman2_6_1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Avian Twins Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman2_6_2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Avian Twins Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman2_6_3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Avian Twins Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman2_6_4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Avian Twins Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman2_6_5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Avian Twins Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman2_6_6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Avian Twins Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman1_1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Black Maw Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulet/AmuletAtlas1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Blue Pearl Amulet"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman1_2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Bonespire Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman1_6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Breakrib Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman1_11",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Chrysalis Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Amulet10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Citrine Amulet"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman2_5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Clutching Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Amulet2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Coral Amulet"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman1_7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Deadhand Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman1_5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Deep One Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman2_7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Fangjaw Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Amulet6",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Gold Amulet"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Greatwolf Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman2_1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Hexclaw Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman2_8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Horned Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Amulet4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Jade Amulet"
+  },
+  {
+    "id": "Metadata/Items/Amulet/AmuletVictor1",
+    "isReleased": false,
+    "isUnique": false,
+    "name": "Jet Amulet"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Amulet5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Lapis Amulet"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman1_4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Lone Antler Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman3_4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Longtooth Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman1_10",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Mandible Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulet/AmuletAtlas2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Marble Amulet"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman3_6_1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Monkey Paw Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman3_6_2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Monkey Paw Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman3_6_3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Monkey Paw Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman3_3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Monkey Twins Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Amulet7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Onyx Amulet"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Amulet1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Paua Amulet"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman2_2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Primal Skull Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman1_9",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Rot Head Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman3_5",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Rotfeather Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Amulet11",
+    "isReleased": false,
+    "isUnique": false,
+    "name": "Ruby Amulet"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman3_1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Spinefuse Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman2_4",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Splitnewt Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman3_7",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Three Hands Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman3_2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Three Rat Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Amulet8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Turquoise Amulet"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman1_8",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Undying Flesh Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman2_3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Wereclaw Talisman"
+  },
+  {
+    "id": "Metadata/Items/Amulets/Talismans/Talisman1_12",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Writhing Talisman"
+  }
+]
