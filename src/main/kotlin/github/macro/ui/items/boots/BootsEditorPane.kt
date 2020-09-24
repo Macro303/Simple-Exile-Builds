@@ -3,7 +3,7 @@ package github.macro.ui.items.boots
 import github.macro.core.Data
 import github.macro.core.build_info.Build
 import github.macro.core.items.boots.BuildBoots
-import github.macro.core.items.boots.ItemBoots
+import github.macro.core.items.boots.Boots
 import github.macro.ui.AbstractEditorPane
 import github.macro.ui.SelectionModel
 import org.apache.logging.log4j.LogManager
@@ -12,7 +12,7 @@ import tornadofx.*
 /**
  * Created by Macro303 on 2020-Sep-22
  */
-class BootsEditorPane(build: Build) : AbstractEditorPane<BuildBoots, ItemBoots>(
+class BootsEditorPane(build: Build) : AbstractEditorPane<BuildBoots, Boots>(
 	build = build,
 	buildItem = build.buildItems.boots,
 	index = 0,
@@ -20,7 +20,7 @@ class BootsEditorPane(build: Build) : AbstractEditorPane<BuildBoots, ItemBoots>(
 	imageWidth = 156.0,
 	imageHeight = 156.0
 ) {
-	override val selectionModel = SelectionModel<BuildBoots, ItemBoots>(
+	override val selectionModel = SelectionModel<BuildBoots, Boots>(
 		items = Data.BOOTS_LIST,
 		imageWidth = imageWidth,
 		imageHeight = imageHeight

@@ -3,7 +3,7 @@ package github.macro.ui.items.weapons
 import github.macro.core.Data
 import github.macro.core.build_info.Build
 import github.macro.core.items.weapons.BuildWeapon
-import github.macro.core.items.weapons.ItemWeapon
+import github.macro.core.items.weapons.Weapon
 import github.macro.ui.AbstractEditorPane
 import github.macro.ui.SelectionModel
 import org.apache.logging.log4j.LogManager
@@ -12,15 +12,15 @@ import tornadofx.*
 /**
  * Created by Macro303 on 2020-Sep-22
  */
-class WeaponEditorPane(build: Build, buildItem: BuildWeapon, index: Int) : AbstractEditorPane<BuildWeapon, ItemWeapon>(
+class WeaponEditorPane(build: Build, buildItem: BuildWeapon, index: Int) : AbstractEditorPane<BuildWeapon, Weapon>(
 	build = build,
 	buildItem = buildItem,
 	index = index,
 	columnCount = 2,
-	imageWidth = (buildItem.item as ItemWeapon).type.imageWidth,
-	imageHeight = (buildItem.item as ItemWeapon).type.imageHeight
+	imageWidth = (buildItem.item as Weapon).type.imageWidth,
+	imageHeight = (buildItem.item as Weapon).type.imageHeight
 ) {
-	override val selectionModel = SelectionModel<BuildWeapon, ItemWeapon>(
+	override val selectionModel = SelectionModel<BuildWeapon, Weapon>(
 		items = Data.WEAPON_LIST,
 		imageWidth = imageWidth,
 		imageHeight = imageHeight

@@ -3,7 +3,7 @@ package github.macro.ui.gems
 import github.macro.Util
 import github.macro.core.build_info.Build
 import github.macro.core.gems.BuildGem
-import github.macro.core.gems.ItemGem
+import github.macro.core.gems.Gem
 import github.macro.core.gems.reward.RewardType
 import github.macro.ui.AbstractViewerPane
 import javafx.scene.layout.BorderStrokeStyle
@@ -41,7 +41,7 @@ class GemViewerPane(build: Build, buildGem: BuildGem, index: Int, private val eq
 		super.assignItem(newItem)
 
 		style {
-			borderColor += box(c(Util.colourToHex((buildItem.item as ItemGem).colour)))
+			borderColor += box(c(Util.colourToHex((buildItem.item as Gem).colour)))
 			borderStyle += BorderStrokeStyle(
 				StrokeType.CENTERED,
 				StrokeLineJoin.ROUND,
@@ -53,7 +53,7 @@ class GemViewerPane(build: Build, buildGem: BuildGem, index: Int, private val eq
 			borderWidth += box(2.px)
 		}
 
-		var temp = (buildItem.item as ItemGem).acquisition.rewards.joinToString(separator = "\n") {
+		var temp = (buildItem.item as Gem).acquisition.rewards.joinToString(separator = "\n") {
 			var text = "Act ${it.act} - ${it.quest}"
 			if (it.rewardType == RewardType.VENDOR)
 				text += " (${it.vendor})"
@@ -62,7 +62,7 @@ class GemViewerPane(build: Build, buildGem: BuildGem, index: Int, private val eq
 		if (temp.isBlank())
 			temp = "Not available as a reward"
 		rewards = temp
-		colour = Paint.valueOf(Util.colourToHex((buildItem.item as ItemGem).colour))
+		colour = Paint.valueOf(Util.colourToHex((buildItem.item as Gem).colour))
 	}
 
 	companion object {

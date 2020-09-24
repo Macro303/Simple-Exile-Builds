@@ -3,7 +3,7 @@ package github.macro.ui.items.helmets
 import github.macro.core.Data
 import github.macro.core.build_info.Build
 import github.macro.core.items.helmets.BuildHelmet
-import github.macro.core.items.helmets.ItemHelmet
+import github.macro.core.items.helmets.Helmet
 import github.macro.ui.AbstractEditorPane
 import github.macro.ui.SelectionModel
 import org.apache.logging.log4j.LogManager
@@ -12,7 +12,7 @@ import tornadofx.*
 /**
  * Created by Macro303 on 2020-Sep-22
  */
-class HelmetEditorPane(build: Build) : AbstractEditorPane<BuildHelmet, ItemHelmet>(
+class HelmetEditorPane(build: Build) : AbstractEditorPane<BuildHelmet, Helmet>(
 	build = build,
 	buildItem = build.buildItems.helmet,
 	index = 0,
@@ -20,7 +20,7 @@ class HelmetEditorPane(build: Build) : AbstractEditorPane<BuildHelmet, ItemHelme
 	imageWidth = 156.0,
 	imageHeight = 156.0
 ) {
-	override val selectionModel = SelectionModel<BuildHelmet, ItemHelmet>(
+	override val selectionModel = SelectionModel<BuildHelmet, Helmet>(
 		items = Data.HELMET_LIST,
 		imageWidth = imageWidth,
 		imageHeight = imageHeight

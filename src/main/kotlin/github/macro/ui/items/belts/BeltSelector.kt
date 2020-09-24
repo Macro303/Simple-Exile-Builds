@@ -2,19 +2,19 @@ package github.macro.ui.items.belts
 
 import github.macro.core.Data
 import github.macro.core.items.belts.BuildBelt
-import github.macro.core.items.belts.ItemBelt
+import github.macro.core.items.belts.Belt
 import github.macro.ui.AbstractItemSelector
 import java.io.File
 
 /**
  * Created by Macro303 on 2020-Sep-22
  */
-class BeltSelector : AbstractItemSelector<BuildBelt, ItemBelt>() {
+class BeltSelector : AbstractItemSelector<BuildBelt, Belt>() {
 	init {
 		title = "Belt Selector"
 	}
 
-	override fun updateSelection(selected: ItemBelt?) {
+	override fun updateSelection(selected: Belt?) {
 		selectedItem = BuildBelt(selected ?: Data.getBeltByName(null))
 		var image = File(File("resources", "Images"), selectedItem!!.item.id.substringAfterLast("/") + ".png")
 		if (selectedItem!!.item.name != "None" && !image.exists())

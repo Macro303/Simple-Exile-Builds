@@ -3,7 +3,7 @@ package github.macro.ui.items.gloves
 import github.macro.core.Data
 import github.macro.core.build_info.Build
 import github.macro.core.items.gloves.BuildGloves
-import github.macro.core.items.gloves.ItemGloves
+import github.macro.core.items.gloves.Gloves
 import github.macro.ui.AbstractEditorPane
 import github.macro.ui.SelectionModel
 import org.apache.logging.log4j.LogManager
@@ -12,7 +12,7 @@ import tornadofx.*
 /**
  * Created by Macro303 on 2020-Sep-22
  */
-class GlovesEditorPane(build: Build) : AbstractEditorPane<BuildGloves, ItemGloves>(
+class GlovesEditorPane(build: Build) : AbstractEditorPane<BuildGloves, Gloves>(
 	build = build,
 	buildItem = build.buildItems.gloves,
 	index = 0,
@@ -20,7 +20,7 @@ class GlovesEditorPane(build: Build) : AbstractEditorPane<BuildGloves, ItemGlove
 	imageWidth = 156.0,
 	imageHeight = 156.0
 ) {
-	override val selectionModel = SelectionModel<BuildGloves, ItemGloves>(
+	override val selectionModel = SelectionModel<BuildGloves, Gloves>(
 		items = Data.GLOVES_LIST,
 		imageWidth = imageWidth,
 		imageHeight = imageHeight

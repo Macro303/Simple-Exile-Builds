@@ -5,7 +5,7 @@ import github.macro.core.Data
 import github.macro.core.build_info.Ascendency
 import github.macro.core.build_info.Build
 import github.macro.core.build_info.ClassTag
-import github.macro.core.gems.ItemGem
+import github.macro.core.gems.Gem
 import javafx.beans.property.SimpleListProperty
 import javafx.beans.property.SimpleObjectProperty
 import javafx.collections.FXCollections
@@ -30,10 +30,10 @@ class UIModel : ViewModel() {
 	val selectedBuildProperty = SimpleObjectProperty<Build>()
 	var selectedBuild by selectedBuildProperty
 
-	val gemsProperty = SimpleListProperty<ItemGem>()
+	val gemsProperty = SimpleListProperty<Gem>()
 	var gems by gemsProperty
 
-	val selectedGemProperty = SimpleObjectProperty<ItemGem>()
+	val selectedGemProperty = SimpleObjectProperty<Gem>()
 	var selectedGem by selectedGemProperty
 
 	init {

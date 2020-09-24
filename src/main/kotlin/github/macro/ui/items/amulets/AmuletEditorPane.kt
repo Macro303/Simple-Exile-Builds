@@ -3,7 +3,7 @@ package github.macro.ui.items.amulets
 import github.macro.core.Data
 import github.macro.core.build_info.Build
 import github.macro.core.items.amulets.BuildAmulet
-import github.macro.core.items.amulets.ItemAmulet
+import github.macro.core.items.amulets.Amulet
 import github.macro.ui.AbstractEditorPane
 import github.macro.ui.SelectionModel
 import org.apache.logging.log4j.LogManager
@@ -12,13 +12,13 @@ import tornadofx.*
 /**
  * Created by Macro303 on 2020-Sep-22
  */
-class AmuletEditorPane(build: Build) : AbstractEditorPane<BuildAmulet, ItemAmulet>(
+class AmuletEditorPane(build: Build) : AbstractEditorPane<BuildAmulet, Amulet>(
 	build = build,
 	buildItem = build.buildItems.amulet,
 	index = 0,
 	columnCount = 1
 ) {
-	override val selectionModel = SelectionModel<BuildAmulet, ItemAmulet>(
+	override val selectionModel = SelectionModel<BuildAmulet, Amulet>(
 		items = Data.AMULET_LIST
 	)
 

@@ -3,7 +3,7 @@ package github.macro.ui.items.rings
 import github.macro.core.Data
 import github.macro.core.build_info.Build
 import github.macro.core.items.rings.BuildRing
-import github.macro.core.items.rings.ItemRing
+import github.macro.core.items.rings.Ring
 import github.macro.ui.AbstractEditorPane
 import github.macro.ui.SelectionModel
 import org.apache.logging.log4j.LogManager
@@ -12,13 +12,13 @@ import tornadofx.*
 /**
  * Created by Macro303 on 2020-Sep-22
  */
-class RingEditorPane(build: Build, buildItem: BuildRing, index: Int) : AbstractEditorPane<BuildRing, ItemRing>(
+class RingEditorPane(build: Build, buildItem: BuildRing, index: Int) : AbstractEditorPane<BuildRing, Ring>(
 	build = build,
 	buildItem = buildItem,
 	index = index,
 	columnCount = 2
 ) {
-	override val selectionModel = SelectionModel<BuildRing, ItemRing>(
+	override val selectionModel = SelectionModel<BuildRing, Ring>(
 		items = Data.RING_LIST
 	)
 

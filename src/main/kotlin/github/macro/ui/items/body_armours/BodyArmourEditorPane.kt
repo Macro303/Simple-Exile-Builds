@@ -3,7 +3,7 @@ package github.macro.ui.items.body_armours
 import github.macro.core.Data
 import github.macro.core.build_info.Build
 import github.macro.core.items.body_armours.BuildBodyArmour
-import github.macro.core.items.body_armours.ItemBodyArmour
+import github.macro.core.items.body_armours.BodyArmour
 import github.macro.ui.AbstractEditorPane
 import github.macro.ui.SelectionModel
 import org.apache.logging.log4j.LogManager
@@ -12,7 +12,7 @@ import tornadofx.*
 /**
  * Created by Macro303 on 2020-Sep-22
  */
-class BodyArmourEditorPane(build: Build) : AbstractEditorPane<BuildBodyArmour, ItemBodyArmour>(
+class BodyArmourEditorPane(build: Build) : AbstractEditorPane<BuildBodyArmour, BodyArmour>(
 	build = build,
 	buildItem = build.buildItems.bodyArmour,
 	index = 0,
@@ -20,7 +20,7 @@ class BodyArmourEditorPane(build: Build) : AbstractEditorPane<BuildBodyArmour, I
 	imageWidth = 156.0,
 	imageHeight = 234.0
 ) {
-	override val selectionModel = SelectionModel<BuildBodyArmour, ItemBodyArmour>(
+	override val selectionModel = SelectionModel<BuildBodyArmour, BodyArmour>(
 		items = Data.BODY_ARMOUR_LIST,
 		imageWidth = imageWidth,
 		imageHeight = imageHeight

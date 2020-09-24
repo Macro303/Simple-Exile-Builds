@@ -18,13 +18,13 @@ abstract class ItemBase(
 	quality: Double?
 ) : IItem {
 	val idProperty = SimpleStringProperty()
-	override var id by idProperty
+	final override var id by idProperty
 
 	val nameProperty = SimpleStringProperty()
-	override var name by nameProperty
+	final override var name by nameProperty
 
 	val isReleasedProperty = SimpleBooleanProperty()
-	override var isReleased by isReleasedProperty
+	final override var isReleased by isReleasedProperty
 
 	val isUniqueProperty = SimpleBooleanProperty()
 	var isUnique by isUniqueProperty

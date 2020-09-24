@@ -26,7 +26,7 @@ import java.io.IOException
 @JsonDeserialize(using = BuildGemDeserializer::class)
 @JsonSerialize(using = BuildGemSerializer::class)
 class BuildGem(
-	item: ItemGem,
+	item: Gem,
 	nextItem: BuildGem? = null,
 	reason: String? = null
 ): IBuildItem {

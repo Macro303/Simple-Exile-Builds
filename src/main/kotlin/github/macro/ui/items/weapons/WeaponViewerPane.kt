@@ -2,7 +2,7 @@ package github.macro.ui.items.weapons
 
 import github.macro.core.build_info.Build
 import github.macro.core.items.weapons.BuildWeapon
-import github.macro.core.items.weapons.ItemWeapon
+import github.macro.core.items.weapons.Weapon
 import github.macro.ui.AbstractViewerPane
 import org.apache.logging.log4j.LogManager
 
@@ -14,8 +14,8 @@ class WeaponViewerPane(build: Build, buildItem: BuildWeapon, index: Int) : Abstr
 	buildItem = buildItem,
 	index = index,
 	columnCount = 2,
-	imageWidth = (buildItem.item as ItemWeapon).type.imageWidth,
-	imageHeight = (buildItem.item as ItemWeapon).type.imageHeight
+	imageWidth = (buildItem.item as Weapon).type.imageWidth,
+	imageHeight = (buildItem.item as Weapon).type.imageHeight
 ) {
 	override fun getPrevious(): BuildWeapon? {
 		var temp = build.buildItems.weapons[index]

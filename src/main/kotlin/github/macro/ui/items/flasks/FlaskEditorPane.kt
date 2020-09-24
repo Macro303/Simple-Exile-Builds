@@ -3,7 +3,7 @@ package github.macro.ui.items.flasks
 import github.macro.core.Data
 import github.macro.core.build_info.Build
 import github.macro.core.items.flasks.BuildFlask
-import github.macro.core.items.flasks.ItemFlask
+import github.macro.core.items.flasks.Flask
 import github.macro.ui.AbstractEditorPane
 import github.macro.ui.SelectionModel
 import org.apache.logging.log4j.LogManager
@@ -12,7 +12,7 @@ import tornadofx.*
 /**
  * Created by Macro303 on 2020-Sep-22
  */
-class FlaskEditorPane(build: Build, buildItem: BuildFlask, index: Int) : AbstractEditorPane<BuildFlask, ItemFlask>(
+class FlaskEditorPane(build: Build, buildItem: BuildFlask, index: Int) : AbstractEditorPane<BuildFlask, Flask>(
 	build = build,
 	buildItem = buildItem,
 	index = index,
@@ -20,7 +20,7 @@ class FlaskEditorPane(build: Build, buildItem: BuildFlask, index: Int) : Abstrac
 	imageHeight = 94.0,
 	columnCount = 5
 ) {
-	override val selectionModel = SelectionModel<BuildFlask, ItemFlask>(
+	override val selectionModel = SelectionModel<BuildFlask, Flask>(
 		items = Data.FLASK_LIST,
 		imageWidth = imageWidth,
 		imageHeight = imageHeight

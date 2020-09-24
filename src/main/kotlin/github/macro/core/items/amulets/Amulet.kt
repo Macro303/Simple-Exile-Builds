@@ -13,19 +13,19 @@ import java.io.IOException
 /**
  * Created by Macro303 on 2020-Sep-21
  */
-@JsonDeserialize(using = ItemAmuletDeserializer::class)
-class ItemAmulet(
+@JsonDeserialize(using = AmuletDeserializer::class)
+class Amulet(
 	id: String,
 	name: String,
 	isReleased: Boolean,
 	isUnique: Boolean
 ) : ItemBase(id = id, name = name, isReleased = isReleased, isUnique = isUnique, level = 0, quality = 0.0), IItem
 
-private class ItemAmuletDeserializer @JvmOverloads constructor(vc: Class<*>? = null) :
-	StdDeserializer<ItemAmulet?>(vc) {
+private class AmuletDeserializer @JvmOverloads constructor(vc: Class<*>? = null) :
+	StdDeserializer<Amulet?>(vc) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): ItemAmulet? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Amulet? {
 		val node: JsonNode = parser.readValueAsTree()
 
 		val id = node["id"].asText()
@@ -33,7 +33,7 @@ private class ItemAmuletDeserializer @JvmOverloads constructor(vc: Class<*>? = n
 		val isReleased = node["isReleased"]?.asBoolean(false) ?: false
 		val isUnique = node["isUnique"]?.asBoolean(false) ?: false
 
-		return ItemAmulet(
+		return Amulet(
 			id = id,
 			name = name,
 			isReleased = isReleased,

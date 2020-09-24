@@ -1,4 +1,4 @@
-package github.macro.core.items.belts
+package github.macro.core.items.body_armours
 
 import com.fasterxml.jackson.core.JsonParser
 import com.fasterxml.jackson.core.JsonProcessingException
@@ -13,18 +13,19 @@ import java.io.IOException
 /**
  * Created by Macro303 on 2020-Sep-21
  */
-@JsonDeserialize(using = ItemBeltDeserializer::class)
-class ItemBelt(
+@JsonDeserialize(using = BodyArmourDeserializer::class)
+class BodyArmour(
 	id: String,
 	name: String,
 	isReleased: Boolean,
 	isUnique: Boolean
 ) : ItemBase(id = id, name = name, isReleased = isReleased, isUnique = isUnique, level = 0, quality = 0.0), IItem
 
-private class ItemBeltDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<ItemBelt?>(vc) {
+private class BodyArmourDeserializer @JvmOverloads constructor(vc: Class<*>? = null) :
+	StdDeserializer<BodyArmour?>(vc) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): ItemBelt? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): BodyArmour? {
 		val node: JsonNode = parser.readValueAsTree()
 
 		val id = node["id"].asText()
@@ -32,7 +33,7 @@ private class ItemBeltDeserializer @JvmOverloads constructor(vc: Class<*>? = nul
 		val isReleased = node["isReleased"]?.asBoolean(false) ?: false
 		val isUnique = node["isUnique"]?.asBoolean(false) ?: false
 
-		return ItemBelt(
+		return BodyArmour(
 			id = id,
 			name = name,
 			isReleased = isReleased,

@@ -4,7 +4,7 @@ import github.macro.Util
 import github.macro.core.Data
 import github.macro.core.build_info.Build
 import github.macro.core.gems.BuildGem
-import github.macro.core.gems.ItemGem
+import github.macro.core.gems.Gem
 import github.macro.core.gems.reward.RewardType
 import github.macro.ui.AbstractEditorPane
 import github.macro.ui.SelectionModel
@@ -20,9 +20,9 @@ import tornadofx.*
  * Created by Macro303 on 2020-Jan-14.
  */
 class GemEditorPane(build: Build, buildItem: BuildGem, index: Int, private val equipment: String?) :
-	AbstractEditorPane<BuildGem, ItemGem>(build = build, buildItem = buildItem, index = index, columnCount = 6) {
+	AbstractEditorPane<BuildGem, Gem>(build = build, buildItem = buildItem, index = index, columnCount = 6) {
 
-	override val selectionModel = SelectionModel<BuildGem, ItemGem>(
+	override val selectionModel = SelectionModel<BuildGem, Gem>(
 		items = Data.GEM_LIST
 	)
 
@@ -76,7 +76,7 @@ class GemEditorPane(build: Build, buildItem: BuildGem, index: Int, private val e
 		super.assignItem(newItem)
 
 		style {
-			borderColor += box(c(Util.colourToHex((buildItem.item as ItemGem).colour)))
+			borderColor += box(c(Util.colourToHex((buildItem.item as Gem).colour)))
 			borderStyle += BorderStrokeStyle(
 				StrokeType.CENTERED,
 				StrokeLineJoin.ROUND,
@@ -88,8 +88,8 @@ class GemEditorPane(build: Build, buildItem: BuildGem, index: Int, private val e
 			borderWidth += box(2.px)
 		}
 
-		name = (buildItem.item as ItemGem).getDisplayName()
-		var temp = (buildItem.item as ItemGem).acquisition.rewards.joinToString(separator = "\n") {
+		name = (buildItem.item as Gem).getDisplayName()
+		var temp = (buildItem.item as Gem).acquisition.rewards.joinToString(separator = "\n") {
 			var text = "Act ${it.act} - ${it.quest}"
 			if (it.rewardType == RewardType.VENDOR)
 				text += " (${it.vendor})"
@@ -98,7 +98,7 @@ class GemEditorPane(build: Build, buildItem: BuildGem, index: Int, private val e
 		if (temp.isBlank())
 			temp = "Not available as a reward"
 		rewards = temp
-		colour = Paint.valueOf(Util.colourToHex((buildItem.item as ItemGem).colour))
+		colour = Paint.valueOf(Util.colourToHex((buildItem.item as Gem).colour))
 	}
 
 	companion object {

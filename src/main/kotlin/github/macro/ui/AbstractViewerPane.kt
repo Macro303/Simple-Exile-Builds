@@ -5,6 +5,7 @@ import github.macro.Util
 import github.macro.core.IBuildItem
 import github.macro.core.build_info.Build
 import github.macro.core.gems.Colour
+import github.macro.core.items.BuildItemBase
 import javafx.beans.property.SimpleBooleanProperty
 import javafx.beans.property.SimpleObjectProperty
 import javafx.beans.property.SimpleStringProperty
@@ -158,6 +159,38 @@ abstract class AbstractViewerPane<T : IBuildItem>(
 						Util.hackTooltipStartTiming(tooltip)
 						gridpaneConstraints {
 							margin = Insets(2.5)
+						}
+					}
+				}
+				if (buildItem is BuildItemBase) {
+					if ((buildItem as BuildItemBase).preferences.size >= 1 && (buildItem as BuildItemBase).preferences[0] != null) {
+						row(title = "1") {
+							label((buildItem as BuildItemBase).preferences[0]!!) {
+								gridpaneConstraints {
+									columnSpan = 3
+									margin = Insets(2.5)
+								}
+							}
+						}
+						if ((buildItem as BuildItemBase).preferences.size >= 2 && (buildItem as BuildItemBase).preferences[1] != null) {
+							row(title = "2") {
+								label((buildItem as BuildItemBase).preferences[1]!!) {
+									gridpaneConstraints {
+										columnSpan = 3
+										margin = Insets(2.5)
+									}
+								}
+							}
+							if ((buildItem as BuildItemBase).preferences.size >= 3 && (buildItem as BuildItemBase).preferences[2] != null) {
+								row(title = "3") {
+									label((buildItem as BuildItemBase).preferences[2]!!) {
+										gridpaneConstraints {
+											columnSpan = 3
+											margin = Insets(2.5)
+										}
+									}
+								}
+							}
 						}
 					}
 				}

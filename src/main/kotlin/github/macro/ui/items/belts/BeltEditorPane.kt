@@ -3,7 +3,7 @@ package github.macro.ui.items.belts
 import github.macro.core.Data
 import github.macro.core.build_info.Build
 import github.macro.core.items.belts.BuildBelt
-import github.macro.core.items.belts.ItemBelt
+import github.macro.core.items.belts.Belt
 import github.macro.ui.AbstractEditorPane
 import github.macro.ui.SelectionModel
 import org.apache.logging.log4j.LogManager
@@ -12,14 +12,14 @@ import tornadofx.*
 /**
  * Created by Macro303 on 2020-Sep-22
  */
-class BeltEditorPane(build: Build) : AbstractEditorPane<BuildBelt, ItemBelt>(
+class BeltEditorPane(build: Build) : AbstractEditorPane<BuildBelt, Belt>(
 	build = build,
 	buildItem = build.buildItems.belt,
 	index = 0,
 	columnCount = 1,
 	imageWidth = 156.0
 ) {
-	override val selectionModel = SelectionModel<BuildBelt, ItemBelt>(
+	override val selectionModel = SelectionModel<BuildBelt, Belt>(
 		items = Data.BELT_LIST,
 		imageWidth = imageWidth
 	)

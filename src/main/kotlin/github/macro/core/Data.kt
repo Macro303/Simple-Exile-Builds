@@ -4,16 +4,16 @@ import com.fasterxml.jackson.core.type.TypeReference
 import github.macro.Util
 import github.macro.core.gems.Acquisition
 import github.macro.core.gems.Colour
-import github.macro.core.gems.ItemGem
-import github.macro.core.items.amulets.ItemAmulet
-import github.macro.core.items.body_armours.ItemBodyArmour
-import github.macro.core.items.belts.ItemBelt
-import github.macro.core.items.boots.ItemBoots
-import github.macro.core.items.flasks.ItemFlask
-import github.macro.core.items.gloves.ItemGloves
-import github.macro.core.items.helmets.ItemHelmet
-import github.macro.core.items.rings.ItemRing
-import github.macro.core.items.weapons.ItemWeapon
+import github.macro.core.gems.Gem
+import github.macro.core.items.amulets.Amulet
+import github.macro.core.items.body_armours.BodyArmour
+import github.macro.core.items.belts.Belt
+import github.macro.core.items.boots.Boots
+import github.macro.core.items.flasks.Flask
+import github.macro.core.items.gloves.Gloves
+import github.macro.core.items.helmets.Helmet
+import github.macro.core.items.rings.Ring
+import github.macro.core.items.weapons.Weapon
 import github.macro.core.items.weapons.WeaponType
 import org.apache.logging.log4j.LogManager
 import java.io.File
@@ -27,13 +27,13 @@ object Data {
 	private val DATA_DIR = File("resources", "Data")
 
 	// Gems
-	val GEM_LIST: List<ItemGem> by lazy {
+	val GEM_LIST: List<Gem> by lazy {
 		try {
 			Util.JSON_MAPPER.readValue(
 				File(DATA_DIR, "Gems.json"),
-				object : TypeReference<List<ItemGem>>() {}
+				object : TypeReference<List<Gem>>() {}
 			).plus(
-				ItemGem(
+				Gem(
 					id = "None",
 					name = "None",
 					isReleased = false,
@@ -47,20 +47,20 @@ object Data {
 			)
 		} catch (ioe: IOException) {
 			LOGGER.warn("Unable to Load Gems: $ioe")
-			mutableListOf<ItemGem>()
+			mutableListOf<Gem>()
 		}
 	}
 
-	fun getGemById(id: String?): ItemGem {
+	fun getGemById(id: String?): Gem {
 		return GEM_LIST.firstOrNull {
 			it.id.equals(id, ignoreCase = true)
 		} ?: getGemByName(name = id)
 	}
 
-	fun getGemByName(name: String?): ItemGem {
+	fun getGemByName(name: String?): Gem {
 		return GEM_LIST.firstOrNull {
 			it.getDisplayName().equals(name, ignoreCase = true)
-		} ?: ItemGem(
+		} ?: Gem(
 			id = "Missing",
 			name = name ?: "Missing",
 			isReleased = false,
@@ -74,13 +74,13 @@ object Data {
 	}
 
 	// Weapons
-	val WEAPON_LIST: List<ItemWeapon> by lazy {
+	val WEAPON_LIST: List<Weapon> by lazy {
 		try {
 			Util.JSON_MAPPER.readValue(
 				File(DATA_DIR, "Weapons.json"),
-				object : TypeReference<List<ItemWeapon>>() {}
+				object : TypeReference<List<Weapon>>() {}
 			).plus(
-				ItemWeapon(
+				Weapon(
 					id = "None",
 					name = "None",
 					isReleased = false,
@@ -90,20 +90,20 @@ object Data {
 			)
 		} catch (ioe: IOException) {
 			LOGGER.warn("Unable to Load Weapons: $ioe")
-			mutableListOf<ItemWeapon>()
+			mutableListOf<Weapon>()
 		}
 	}
 
-	fun getWeaponById(id: String?): ItemWeapon {
+	fun getWeaponById(id: String?): Weapon {
 		return WEAPON_LIST.firstOrNull {
 			it.id.equals(id, ignoreCase = true)
 		} ?: getWeaponByName(name = id)
 	}
 
-	fun getWeaponByName(name: String?): ItemWeapon {
+	fun getWeaponByName(name: String?): Weapon {
 		return WEAPON_LIST.firstOrNull {
 			it.getDisplayName().equals(name, ignoreCase = true)
-		} ?: ItemWeapon(
+		} ?: Weapon(
 			id = "Missing",
 			name = name ?: "Missing",
 			isReleased = false,
@@ -113,13 +113,13 @@ object Data {
 	}
 
 	// Armours
-	val BODY_ARMOUR_LIST: List<ItemBodyArmour> by lazy {
+	val BODY_ARMOUR_LIST: List<BodyArmour> by lazy {
 		try {
 			Util.JSON_MAPPER.readValue(
 				File(DATA_DIR, "Body_Armours.json"),
-				object : TypeReference<List<ItemBodyArmour>>() {}
+				object : TypeReference<List<BodyArmour>>() {}
 			).plus(
-				ItemBodyArmour(
+				BodyArmour(
 					id = "None",
 					name = "None",
 					isReleased = false,
@@ -128,20 +128,20 @@ object Data {
 			)
 		} catch (ioe: IOException) {
 			LOGGER.warn("Unable to Load Armour: $ioe")
-			mutableListOf<ItemBodyArmour>()
+			mutableListOf<BodyArmour>()
 		}
 	}
 
-	fun getBodyArmourById(id: String?): ItemBodyArmour {
+	fun getBodyArmourById(id: String?): BodyArmour {
 		return BODY_ARMOUR_LIST.firstOrNull {
 			it.id.equals(id, ignoreCase = true)
 		} ?: getBodyArmourByName(name = id)
 	}
 
-	fun getBodyArmourByName(name: String?): ItemBodyArmour {
+	fun getBodyArmourByName(name: String?): BodyArmour {
 		return BODY_ARMOUR_LIST.firstOrNull {
 			it.getDisplayName().equals(name, ignoreCase = true)
-		} ?: ItemBodyArmour(
+		} ?: BodyArmour(
 			id = "Missing",
 			name = name ?: "Missing",
 			isReleased = false,
@@ -150,13 +150,13 @@ object Data {
 	}
 
 	// Helmets
-	val HELMET_LIST: List<ItemHelmet> by lazy {
+	val HELMET_LIST: List<Helmet> by lazy {
 		try {
 			Util.JSON_MAPPER.readValue(
 				File(DATA_DIR, "Helmets.json"),
-				object : TypeReference<List<ItemHelmet>>() {}
+				object : TypeReference<List<Helmet>>() {}
 			).plus(
-				ItemHelmet(
+				Helmet(
 					id = "None",
 					name = "None",
 					isReleased = false,
@@ -165,20 +165,20 @@ object Data {
 			)
 		} catch (ioe: IOException) {
 			LOGGER.warn("Unable to Load Helmet: $ioe")
-			mutableListOf<ItemHelmet>()
+			mutableListOf<Helmet>()
 		}
 	}
 
-	fun getHelmetById(id: String?): ItemHelmet {
+	fun getHelmetById(id: String?): Helmet {
 		return HELMET_LIST.firstOrNull {
 			it.id.equals(id, ignoreCase = true)
 		} ?: getHelmetByName(name = id)
 	}
 
-	fun getHelmetByName(name: String?): ItemHelmet {
+	fun getHelmetByName(name: String?): Helmet {
 		return HELMET_LIST.firstOrNull {
 			it.getDisplayName().equals(name, ignoreCase = true)
-		} ?: ItemHelmet(
+		} ?: Helmet(
 			id = "Missing",
 			name = name ?: "Missing",
 			isReleased = false,
@@ -187,13 +187,13 @@ object Data {
 	}
 
 	// Gloves
-	val GLOVES_LIST: List<ItemGloves> by lazy {
+	val GLOVES_LIST: List<Gloves> by lazy {
 		try {
 			Util.JSON_MAPPER.readValue(
 				File(DATA_DIR, "Gloves.json"),
-				object : TypeReference<List<ItemGloves>>() {}
+				object : TypeReference<List<Gloves>>() {}
 			).plus(
-				ItemGloves(
+				Gloves(
 					id = "None",
 					name = "None",
 					isReleased = false,
@@ -202,20 +202,20 @@ object Data {
 			)
 		} catch (ioe: IOException) {
 			LOGGER.warn("Unable to Load Gloves: $ioe")
-			mutableListOf<ItemGloves>()
+			mutableListOf<Gloves>()
 		}
 	}
 
-	fun getGlovesById(id: String?): ItemGloves {
+	fun getGlovesById(id: String?): Gloves {
 		return GLOVES_LIST.firstOrNull {
 			it.id.equals(id, ignoreCase = true)
 		} ?: getGlovesByName(name = id)
 	}
 
-	fun getGlovesByName(name: String?): ItemGloves {
+	fun getGlovesByName(name: String?): Gloves {
 		return GLOVES_LIST.firstOrNull {
 			it.getDisplayName().equals(name, ignoreCase = true)
-		} ?: ItemGloves(
+		} ?: Gloves(
 			id = "Missing",
 			name = name ?: "Missing",
 			isReleased = false,
@@ -224,13 +224,13 @@ object Data {
 	}
 
 	// Boots
-	val BOOTS_LIST: List<ItemBoots> by lazy {
+	val BOOTS_LIST: List<Boots> by lazy {
 		try {
 			Util.JSON_MAPPER.readValue(
 				File(DATA_DIR, "Boots.json"),
-				object : TypeReference<List<ItemBoots>>() {}
+				object : TypeReference<List<Boots>>() {}
 			).plus(
-				ItemBoots(
+				Boots(
 					id = "None",
 					name = "None",
 					isReleased = false,
@@ -239,20 +239,20 @@ object Data {
 			)
 		} catch (ioe: IOException) {
 			LOGGER.warn("Unable to Load Boots: $ioe")
-			mutableListOf<ItemBoots>()
+			mutableListOf<Boots>()
 		}
 	}
 
-	fun getBootsById(id: String?): ItemBoots {
+	fun getBootsById(id: String?): Boots {
 		return BOOTS_LIST.firstOrNull {
 			it.id.equals(id, ignoreCase = true)
 		} ?: getBootsByName(name = id)
 	}
 
-	fun getBootsByName(name: String?): ItemBoots {
+	fun getBootsByName(name: String?): Boots {
 		return BOOTS_LIST.firstOrNull {
 			it.getDisplayName().equals(name, ignoreCase = true)
-		} ?: ItemBoots(
+		} ?: Boots(
 			id = "Missing",
 			name = name ?: "Missing",
 			isReleased = false,
@@ -261,13 +261,13 @@ object Data {
 	}
 
 	// Belt
-	val BELT_LIST: List<ItemBelt> by lazy {
+	val BELT_LIST: List<Belt> by lazy {
 		try {
 			Util.JSON_MAPPER.readValue(
 				File(DATA_DIR, "Belts.json"),
-				object : TypeReference<List<ItemBelt>>() {}
+				object : TypeReference<List<Belt>>() {}
 			).plus(
-				ItemBelt(
+				Belt(
 					id = "None",
 					name = "None",
 					isReleased = false,
@@ -276,20 +276,20 @@ object Data {
 			)
 		} catch (ioe: IOException) {
 			LOGGER.warn("Unable to Load Belt: $ioe")
-			mutableListOf<ItemBelt>()
+			mutableListOf<Belt>()
 		}
 	}
 
-	fun getBeltById(id: String?): ItemBelt {
+	fun getBeltById(id: String?): Belt {
 		return BELT_LIST.firstOrNull {
 			it.id.equals(id, ignoreCase = true)
 		} ?: getBeltByName(name = id)
 	}
 
-	fun getBeltByName(name: String?): ItemBelt {
+	fun getBeltByName(name: String?): Belt {
 		return BELT_LIST.firstOrNull {
 			it.getDisplayName().equals(name, ignoreCase = true)
-		} ?: ItemBelt(
+		} ?: Belt(
 			id = "Missing",
 			name = name ?: "Missing",
 			isReleased = false,
@@ -298,13 +298,13 @@ object Data {
 	}
 
 	// Amulet
-	val AMULET_LIST: List<ItemAmulet> by lazy {
+	val AMULET_LIST: List<Amulet> by lazy {
 		try {
 			Util.JSON_MAPPER.readValue(
 				File(DATA_DIR, "Amulets.json"),
-				object : TypeReference<List<ItemAmulet>>() {}
+				object : TypeReference<List<Amulet>>() {}
 			).plus(
-				ItemAmulet(
+				Amulet(
 					id = "None",
 					name = "None",
 					isReleased = false,
@@ -313,20 +313,20 @@ object Data {
 			)
 		} catch (ioe: IOException) {
 			LOGGER.warn("Unable to Load Amulet: $ioe")
-			mutableListOf<ItemAmulet>()
+			mutableListOf<Amulet>()
 		}
 	}
 
-	fun getAmuletById(id: String?): ItemAmulet {
+	fun getAmuletById(id: String?): Amulet {
 		return AMULET_LIST.firstOrNull {
 			it.id.equals(id, ignoreCase = true)
 		} ?: getAmuletByName(name = id)
 	}
 
-	fun getAmuletByName(name: String?): ItemAmulet {
+	fun getAmuletByName(name: String?): Amulet {
 		return AMULET_LIST.firstOrNull {
 			it.getDisplayName().equals(name, ignoreCase = true)
-		} ?: ItemAmulet(
+		} ?: Amulet(
 			id = "Missing",
 			name = name ?: "Missing",
 			isReleased = false,
@@ -335,13 +335,13 @@ object Data {
 	}
 
 	// Rings
-	val RING_LIST: List<ItemRing> by lazy {
+	val RING_LIST: List<Ring> by lazy {
 		try {
 			Util.JSON_MAPPER.readValue(
 				File(DATA_DIR, "Rings.json"),
-				object : TypeReference<List<ItemRing>>() {}
+				object : TypeReference<List<Ring>>() {}
 			).plus(
-				ItemRing(
+				Ring(
 					id = "None",
 					name = "None",
 					isReleased = false,
@@ -350,20 +350,20 @@ object Data {
 			)
 		} catch (ioe: IOException) {
 			LOGGER.warn("Unable to Load Rings: $ioe")
-			mutableListOf<ItemRing>()
+			mutableListOf<Ring>()
 		}
 	}
 
-	fun getRingById(id: String?): ItemRing {
+	fun getRingById(id: String?): Ring {
 		return RING_LIST.firstOrNull {
 			it.id.equals(id, ignoreCase = true)
 		} ?: getRingByName(name = id)
 	}
 
-	fun getRingByName(name: String?): ItemRing {
+	fun getRingByName(name: String?): Ring {
 		return RING_LIST.firstOrNull {
 			it.getDisplayName().equals(name, ignoreCase = true)
-		} ?: ItemRing(
+		} ?: Ring(
 			id = "Missing",
 			name = name ?: "Missing",
 			isReleased = false,
@@ -372,13 +372,13 @@ object Data {
 	}
 
 	// Flasks
-	val FLASK_LIST: List<ItemFlask> by lazy {
+	val FLASK_LIST: List<Flask> by lazy {
 		try {
 			Util.JSON_MAPPER.readValue(
 				File(DATA_DIR, "Flasks.json"),
-				object : TypeReference<List<ItemFlask>>() {}
+				object : TypeReference<List<Flask>>() {}
 			).plus(
-				ItemFlask(
+				Flask(
 					id = "None",
 					name = "None",
 					isReleased = false,
@@ -387,20 +387,20 @@ object Data {
 			)
 		} catch (ioe: IOException) {
 			LOGGER.warn("Unable to Load Flasks: $ioe")
-			mutableListOf<ItemFlask>()
+			mutableListOf<Flask>()
 		}
 	}
 
-	fun getFlaskById(id: String?): ItemFlask {
+	fun getFlaskById(id: String?): Flask {
 		return FLASK_LIST.firstOrNull {
 			it.id.equals(id, ignoreCase = true)
 		} ?: getFlaskByName(name = id)
 	}
 
-	fun getFlaskByName(name: String?): ItemFlask {
+	fun getFlaskByName(name: String?): Flask {
 		return FLASK_LIST.firstOrNull {
 			it.getDisplayName().equals(name, ignoreCase = true)
-		} ?: ItemFlask(
+		} ?: Flask(
 			id = "Missing",
 			name = name ?: "Missing",
 			isReleased = false,

@@ -13,11 +13,8 @@ import com.fasterxml.jackson.databind.ser.std.StdSerializer
 import github.macro.Util
 import github.macro.core.Data
 import github.macro.core.IBuildItem
-import github.macro.core.IItem
-import javafx.beans.property.SimpleObjectProperty
-import javafx.beans.property.SimpleStringProperty
+import github.macro.core.items.BuildItemBase
 import org.apache.logging.log4j.LogManager
-import tornadofx.*
 import java.io.IOException
 
 /**
@@ -26,25 +23,11 @@ import java.io.IOException
 @JsonDeserialize(using = BuildWeaponDeserializer::class)
 @JsonSerialize(using = BuildWeaponSerializer::class)
 class BuildWeapon(
-	item: ItemWeapon,
+	item: Weapon,
 	nextItem: BuildWeapon? = null,
-	reason: String? = null
-) : IBuildItem {
-	val itemProperty = SimpleObjectProperty<IItem>()
-	override var item by itemProperty
-
-	val nextItemProperty = SimpleObjectProperty<IBuildItem?>()
-	override var nextItem by nextItemProperty
-
-	val reasonProperty = SimpleStringProperty()
-	override var reason by reasonProperty
-
-	init {
-		this.item = item
-		this.nextItem = nextItem
-		this.reason = reason
-	}
-}
+	reason: String? = null,
+	preferences: List<String?> = mutableListOf()
+) : BuildItemBase(item = item, nextItem = nextItem, reason = reason, preferences = preferences), IBuildItem
 
 private class BuildWeaponDeserializer @JvmOverloads constructor(vc: Class<*>? = null) :
 	StdDeserializer<BuildWeapon?>(vc) {
@@ -59,11 +42,13 @@ private class BuildWeaponDeserializer @JvmOverloads constructor(vc: Class<*>? = 
 		else
 			Util.YAML_MAPPER.treeToValue(node["Next Item"], BuildWeapon::class.java)
 		val reason = node["Reason"]?.asText()
+		val preferences = node["Preferences"]?.map { it?.asText() }?.chunked(3)?.firstOrNull() ?: mutableListOf()
 
 		return BuildWeapon(
 			item = weapon,
 			nextItem = nextWeapon,
-			reason = reason
+			reason = reason,
+			preferences = preferences
 		)
 	}
 
@@ -81,6 +66,7 @@ private class BuildWeaponSerializer @JvmOverloads constructor(t: Class<BuildWeap
 		parser.writeStringField("Item", value.item.id)
 		parser.writeObjectField("Next Item", (value.nextItem as BuildWeapon?))
 		parser.writeStringField("Reason", value.reason)
+		parser.writeObjectField("Preferences", value.preferences)
 		parser.writeEndObject()
 	}
 }

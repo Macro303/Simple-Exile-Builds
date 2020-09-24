@@ -2,19 +2,19 @@ package github.macro.ui.items.weapons
 
 import github.macro.core.Data
 import github.macro.core.items.weapons.BuildWeapon
-import github.macro.core.items.weapons.ItemWeapon
+import github.macro.core.items.weapons.Weapon
 import github.macro.ui.AbstractItemSelector
 import java.io.File
 
 /**
  * Created by Macro303 on 2020-Sep-22
  */
-class WeaponSelector : AbstractItemSelector<BuildWeapon, ItemWeapon>() {
+class WeaponSelector : AbstractItemSelector<BuildWeapon, Weapon>() {
 	init {
 		title = "Weapon Selector"
 	}
 
-	override fun updateSelection(selected: ItemWeapon?) {
+	override fun updateSelection(selected: Weapon?) {
 		selectedItem = BuildWeapon(selected ?: Data.getWeaponByName(null))
 		var image = File(File("resources", "Images"), selectedItem!!.item.id.substringAfterLast("/") + ".png")
 		if (selectedItem!!.item.name != "None" && !image.exists())

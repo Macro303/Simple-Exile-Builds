@@ -15,14 +15,13 @@ import javafx.beans.property.SimpleStringProperty
 import javafx.collections.FXCollections
 import org.apache.logging.log4j.LogManager
 import tornadofx.*
-import java.io.File
 import java.io.IOException
 
 /**
  * Created by Macro303 on 2020-Jan-13.
  */
 @JsonDeserialize(using = GemDeserializer::class)
-class ItemGem(
+class Gem(
 	id: String,
 	name: String,
 	isReleased: Boolean,
@@ -79,10 +78,10 @@ class ItemGem(
 	}
 }
 
-private class GemDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<ItemGem?>(vc) {
+private class GemDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<Gem?>(vc) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): ItemGem? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Gem? {
 		val node: JsonNode = parser.readValueAsTree()
 
 		val id = node["id"].asText()
@@ -100,7 +99,7 @@ private class GemDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : 
 
 		val acquisition = Util.JSON_MAPPER.treeToValue(node["acquisition"], Acquisition::class.java)
 
-		return ItemGem(
+		return Gem(
 			id = id,
 			name = name,
 			isReleased = isReleased,

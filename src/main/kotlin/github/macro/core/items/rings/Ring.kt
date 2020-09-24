@@ -1,4 +1,4 @@
-package github.macro.core.items.helmets
+package github.macro.core.items.rings
 
 import com.fasterxml.jackson.core.JsonParser
 import com.fasterxml.jackson.core.JsonProcessingException
@@ -13,19 +13,18 @@ import java.io.IOException
 /**
  * Created by Macro303 on 2020-Sep-21
  */
-@JsonDeserialize(using = ItemHelmetDeserializer::class)
-class ItemHelmet(
+@JsonDeserialize(using = RingDeserializer::class)
+class Ring(
 	id: String,
 	name: String,
 	isReleased: Boolean,
 	isUnique: Boolean
 ) : ItemBase(id = id, name = name, isReleased = isReleased, isUnique = isUnique, level = 0, quality = 0.0), IItem
 
-private class ItemHelmetDeserializer @JvmOverloads constructor(vc: Class<*>? = null) :
-	StdDeserializer<ItemHelmet?>(vc) {
+private class RingDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<Ring?>(vc) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): ItemHelmet? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Ring? {
 		val node: JsonNode = parser.readValueAsTree()
 
 		val id = node["id"].asText()
@@ -33,7 +32,7 @@ private class ItemHelmetDeserializer @JvmOverloads constructor(vc: Class<*>? = n
 		val isReleased = node["isReleased"]?.asBoolean(false) ?: false
 		val isUnique = node["isUnique"]?.asBoolean(false) ?: false
 
-		return ItemHelmet(
+		return Ring(
 			id = id,
 			name = name,
 			isReleased = isReleased,

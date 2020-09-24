@@ -1,4 +1,4 @@
-package github.macro.core.items.rings
+package github.macro.core.items.flasks
 
 import com.fasterxml.jackson.core.JsonParser
 import com.fasterxml.jackson.core.JsonProcessingException
@@ -13,18 +13,18 @@ import java.io.IOException
 /**
  * Created by Macro303 on 2020-Sep-21
  */
-@JsonDeserialize(using = ItemRingDeserializer::class)
-class ItemRing(
+@JsonDeserialize(using = FlaskDeserializer::class)
+class Flask(
 	id: String,
 	name: String,
 	isReleased: Boolean,
 	isUnique: Boolean
 ) : ItemBase(id = id, name = name, isReleased = isReleased, isUnique = isUnique, level = 0, quality = 0.0), IItem
 
-private class ItemRingDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<ItemRing?>(vc) {
+private class FlaskDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<Flask?>(vc) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): ItemRing? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Flask? {
 		val node: JsonNode = parser.readValueAsTree()
 
 		val id = node["id"].asText()
@@ -32,7 +32,7 @@ private class ItemRingDeserializer @JvmOverloads constructor(vc: Class<*>? = nul
 		val isReleased = node["isReleased"]?.asBoolean(false) ?: false
 		val isUnique = node["isUnique"]?.asBoolean(false) ?: false
 
-		return ItemRing(
+		return Flask(
 			id = id,
 			name = name,
 			isReleased = isReleased,

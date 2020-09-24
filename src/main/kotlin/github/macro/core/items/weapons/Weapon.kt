@@ -16,8 +16,8 @@ import java.io.IOException
 /**
  * Created by Macro303 on 2020-Sep-21
  */
-@JsonDeserialize(using = ItemWeaponDeserializer::class)
-class ItemWeapon(
+@JsonDeserialize(using = WeaponDeserializer::class)
+class Weapon(
 	id: String,
 	name: String,
 	isReleased: Boolean,
@@ -32,11 +32,10 @@ class ItemWeapon(
 	}
 }
 
-private class ItemWeaponDeserializer @JvmOverloads constructor(vc: Class<*>? = null) :
-	StdDeserializer<ItemWeapon?>(vc) {
+private class WeaponDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<Weapon?>(vc) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): ItemWeapon? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Weapon? {
 		val node: JsonNode = parser.readValueAsTree()
 
 		val id = node["id"].asText()
@@ -49,7 +48,7 @@ private class ItemWeaponDeserializer @JvmOverloads constructor(vc: Class<*>? = n
 			return null
 		}
 
-		return ItemWeapon(
+		return Weapon(
 			id = id,
 			name = name,
 			isReleased = isReleased,
