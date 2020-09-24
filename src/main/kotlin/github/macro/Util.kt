@@ -12,6 +12,7 @@ import github.macro.core.gems.Colour
 import github.macro.core.gems.ItemGem
 import github.macro.config.Config
 import github.macro.core.Data
+import github.macro.core.items.weapons.ItemWeapon
 import javafx.animation.KeyFrame
 import javafx.animation.Timeline
 import javafx.scene.control.Tooltip
@@ -58,6 +59,16 @@ object Util {
 		TEMPLAR -> listOf("Glacial Hammer", "Elemental Proliferation Support")
 		SHADOW -> listOf("Viper Strike", "Lesser Poison Support")
 	}.map { Data.getGemByName(it) }
+
+	internal fun getStartingWeapons(classTag: ClassTag): List<ItemWeapon> = when (classTag) {
+		SCION -> listOf("Rusted Sword")
+		MARAUDER -> listOf("Driftwood Club")
+		RANGER -> listOf("Crude Bow")
+		WITCH -> listOf("Driftwood Wand")
+		DUELIST -> listOf("Rusted Sword")
+		TEMPLAR -> listOf("Driftwood Sceptre")
+		SHADOW -> listOf("Glass Shank")
+	}.map { Data.getWeaponByName(it) }
 
 	internal fun getStartingFlasks(): List<ItemFlask> =
 		listOf("Small Life Flask", "Small Life Flask", "Small Mana Flask").map { Data.getFlaskByName(it) }

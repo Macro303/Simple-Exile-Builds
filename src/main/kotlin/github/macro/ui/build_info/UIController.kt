@@ -15,6 +15,7 @@ import github.macro.core.items.boots.BuildBoots
 import github.macro.core.items.flasks.BuildFlask
 import github.macro.core.items.gloves.BuildGloves
 import github.macro.core.items.helmets.BuildHelmet
+import github.macro.core.items.weapons.BuildWeapon
 import org.apache.logging.log4j.LogManager
 import tornadofx.*
 
@@ -65,7 +66,7 @@ class UIController : Controller() {
 				boots = mutableListOf()
 			),
 			buildItems = BuildItemMap(
-				weapons = mutableListOf(),
+				weapons = Util.getStartingWeapons(classTag).map { BuildWeapon(it) },
 				bodyArmour = BuildBodyArmour(Data.getBodyArmourByName("None")),
 				helmet = BuildHelmet(Data.getHelmetByName("None")),
 				gloves = BuildGloves(Data.getGlovesByName("None")),
@@ -74,7 +75,8 @@ class UIController : Controller() {
 				amulet = BuildAmulet(Data.getAmuletByName("None")),
 				rings = mutableListOf(),
 				flasks = Util.getStartingFlasks().map { BuildFlask(it) }
-			)
+			),
+			details = null
 		)
 		LOGGER.info("Creating Build: ${model.selectedBuild.display}")
 		model.selectedBuild.save()
@@ -88,7 +90,8 @@ class UIController : Controller() {
 			classTag = model.selectedBuild.classTag,
 			ascendency = model.selectedBuild.ascendency,
 			buildGems = model.selectedBuild.buildGems,
-			buildItems = model.selectedBuild.buildItems
+			buildItems = model.selectedBuild.buildItems,
+			details = model.selectedBuild.details
 		)
 		copiedBuild.save()
 		LOGGER.info("Changing Build: ${model.selectedBuild.display} => ${copiedBuild.display}")

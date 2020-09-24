@@ -5,8 +5,8 @@ import github.macro.Util
 import github.macro.Util.cleanName
 import github.macro.ui.gems.GemViewerPane
 import github.macro.ui.items.amulets.AmuletViewerPane
-import github.macro.ui.items.body_armours.BodyArmourViewerPane
 import github.macro.ui.items.belts.BeltViewerPane
+import github.macro.ui.items.body_armours.BodyArmourViewerPane
 import github.macro.ui.items.boots.BootsViewerPane
 import github.macro.ui.items.flasks.FlaskViewerPane
 import github.macro.ui.items.gloves.GlovesViewerPane
@@ -283,6 +283,19 @@ class BuildViewer : View("Exile Buddy") {
 							constraintsForColumn(2).percentWidth = ratio
 							constraintsForColumn(3).percentWidth = ratio
 							constraintsForColumn(4).percentWidth = ratio
+						}
+					}
+				}
+				tab(text = "Other") {
+					scrollpane(fitToWidth = true) {
+						hbarPolicy = ScrollPane.ScrollBarPolicy.NEVER
+						vbox(spacing = 5.0, alignment = Pos.CENTER) {
+							label(text = "Other Details"){
+								addClass(Styles.subtitle)
+							}
+							textarea(property = model.selectedBuild.detailsProperty) {
+								isEditable = false
+							}
 						}
 					}
 				}

@@ -32,7 +32,8 @@ class Build(
 	classTag: ClassTag,
 	ascendency: Ascendency,
 	buildGems: BuildGemMap,
-	buildItems: BuildItemMap
+	buildItems: BuildItemMap,
+	details: String?
 ) {
 	val versionProperty = SimpleStringProperty()
 	var version by versionProperty
@@ -52,6 +53,9 @@ class Build(
 	val buildItemsProperty = SimpleObjectProperty<BuildItemMap>()
 	var buildItems by buildItemsProperty
 
+	val detailsProperty = SimpleStringProperty()
+	var details by detailsProperty
+
 	init {
 		this.version = version
 		this.name = name
@@ -59,6 +63,7 @@ class Build(
 		this.ascendency = ascendency
 		this.buildGems = buildGems
 		this.buildItems = buildItems
+		this.details = details
 	}
 
 	val filename: String
@@ -109,6 +114,7 @@ private class BuildDeserializer @JvmOverloads constructor(vc: Class<*>? = null) 
 		}
 		val buildGems = Util.YAML_MAPPER.treeToValue(node["Gems"], BuildGemMap::class.java)
 		val buildItems = Util.YAML_MAPPER.treeToValue(node["Items"], BuildItemMap::class.java)
+		val details = node["Details"]?.asText()
 
 		return Build(
 			version = version,
@@ -116,7 +122,8 @@ private class BuildDeserializer @JvmOverloads constructor(vc: Class<*>? = null) 
 			classTag = classTag,
 			ascendency = ascendency,
 			buildGems = buildGems,
-			buildItems = buildItems
+			buildItems = buildItems,
+			details = details
 		)
 	}
 
@@ -136,6 +143,7 @@ private class BuildSerializer @JvmOverloads constructor(t: Class<Build>? = null)
 		parser.writeStringField("Ascendency", value.ascendency.name)
 		parser.writeObjectField("Gems", value.buildGems)
 		parser.writeObjectField("Items", value.buildItems)
+		parser.writeStringField("Details", value.details)
 		parser.writeEndObject()
 	}
 }

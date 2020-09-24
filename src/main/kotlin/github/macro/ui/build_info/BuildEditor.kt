@@ -316,6 +316,17 @@ class BuildEditor : View("Exile Buddy") {
 						}
 					}
 				}
+				tab(text = "Other") {
+					scrollpane(fitToWidth = true) {
+						hbarPolicy = ScrollPane.ScrollBarPolicy.NEVER
+						vbox(spacing = 5.0, alignment = Pos.CENTER) {
+							label(text = "Other Details")
+							textarea(property = model.selectedBuild.detailsProperty) {
+								isEditable = true
+							}
+						}
+					}
+				}
 			}
 		}
 	}
