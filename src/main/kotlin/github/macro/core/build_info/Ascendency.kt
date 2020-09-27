@@ -27,7 +27,7 @@ enum class Ascendency {
 	ASCENDANT;
 
 	companion object {
-		fun value(name: String): Ascendency? = values().firstOrNull {
+		fun value(name: String?): Ascendency? = values().firstOrNull {
 			it.name.replace("_", " ").equals(name, ignoreCase = true)
 		}
 

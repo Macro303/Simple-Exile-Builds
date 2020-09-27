@@ -1,16 +1,17 @@
 plugins {
 	id 'application'
-	id 'idea'
-	id 'maven'
 	id 'org.jetbrains.kotlin.jvm' version '1.4.10'
-	id 'com.github.johnrengelman.shadow' version '6.0.0'
 	id 'com.github.ben-manes.versions' version '0.33.0'
+	id 'org.openjfx.javafxplugin' version '0.0.9'
+	id 'org.beryx.runtime' version '1.11.4'
+	id 'com.github.johnrengelman.shadow' version '6.0.0'
 }
 
 repositories {
 	mavenCentral()
 	mavenLocal()
 	jcenter()
+	maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
 }
 
 application {
@@ -23,7 +24,7 @@ def jacksonVersion = '2.11.2'
 
 dependencies {
 	implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8'
-	implementation group: 'no.tornado', name: 'tornadofx', version: "1.7.20"
+	implementation group: 'no.tornado', name: 'tornadofx', version: "2.0.0-SNAPSHOT"
 	implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: "$jacksonVersion"
 	implementation group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-yaml', version: "$jacksonVersion"
 	implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jdk8', version: "$jacksonVersion"
@@ -32,8 +33,8 @@ dependencies {
 }
 
 compileKotlin {
-	sourceCompatibility = JavaVersion.VERSION_1_8
-	targetCompatibility = JavaVersion.VERSION_1_8
+	sourceCompatibility = JavaVersion.VERSION_11
+	targetCompatibility = JavaVersion.VERSION_11
 
 	kotlinOptions {
 		jvmTarget = "1.8"
@@ -44,8 +45,8 @@ compileKotlin {
 }
 
 compileTestKotlin {
-	sourceCompatibility = JavaVersion.VERSION_1_8
-	targetCompatibility = JavaVersion.VERSION_1_8
+	sourceCompatibility = JavaVersion.VERSION_11
+	targetCompatibility = JavaVersion.VERSION_11
 
 	kotlinOptions {
 		jvmTarget = "1.8"
@@ -55,15 +56,22 @@ compileTestKotlin {
 	}
 }
 
+javafx {
+	version = "11.0.2"
+	modules = ['javafx.controls']
+}
+
 jar {
 	manifest.attributes provider: 'gradle'
+	manifest.attributes 'Main-Class': mainClassName
 	from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
 }
 
-shadowJar {
-	archiveBaseName.set('Exile-Buddy')
-	archiveClassifier.set(null)
-	archiveVersion.set(null)
+runtime {
+	options = ['--strip-debug', '--compress', '2', '--no-header-files', '--no-man-pages']
+	launcher {
+		noConsole = false
+	}
 }
 
 run {
@@ -75,23 +83,24 @@ clean {
 }
 
 task copyApplication(type: Copy) {
-	from 'resources/Scripts'
+	dependsOn 'runtime'
+
+	from "$buildDir/image"
 	include '**/*'
-	into "$buildDir/libs"
+	into "$buildDir/release"
 }
 
 task copyResources(type: Copy) {
 	from 'resources'
 	exclude 'docs'
-	exclude 'Scripts'
 	include '**/*'
-	into "$buildDir/libs/resources"
+	into "$buildDir/release/bin/resources"
 }
 
 task releaseApplication(type: Zip) {
-	dependsOn 'shadowJar', 'copyApplication', 'copyResources'
+	dependsOn 'copyApplication', 'copyResources'
 
-	from "$buildDir/libs"
+	from "$buildDir/release"
 	include '**/*'
 	archiveFileName = 'Exile-Buddy.zip'
 	destinationDir(file('release'))
@@ -100,7 +109,7 @@ task releaseApplication(type: Zip) {
 task releaseResources(type: Zip) {
 	dependsOn 'copyResources'
 
-	from "$buildDir/libs/resources"
+	from "$buildDir/release/bin/resources"
 	include '**/*'
 	archiveFileName = 'Exile-Buddy_resources.zip'
 	destinationDir(file('release'))

@@ -12,12 +12,7 @@ import com.fasterxml.jackson.databind.deser.std.StdDeserializer
 import com.fasterxml.jackson.databind.ser.std.StdSerializer
 import github.macro.Util
 import github.macro.Util.cleanName
-import github.macro.core.gems.BuildGemMap
-import github.macro.core.items.BuildItemMap
-import javafx.beans.property.SimpleObjectProperty
-import javafx.beans.property.SimpleStringProperty
 import org.apache.logging.log4j.LogManager
-import tornadofx.*
 import java.io.File
 import java.io.IOException
 
@@ -27,45 +22,14 @@ import java.io.IOException
 @JsonDeserialize(using = BuildDeserializer::class)
 @JsonSerialize(using = BuildSerializer::class)
 class Build(
-	version: String,
-	name: String,
-	classTag: ClassTag,
-	ascendency: Ascendency,
-	buildGems: BuildGemMap,
-	buildItems: BuildItemMap,
-	details: String?
+	var version: String,
+	var name: String,
+	var classTag: ClassTag,
+	var ascendency: Ascendency,
+	val buildGems: BuildGemMap,
+	val buildGear: BuildGearMap,
+	var details: String?
 ) {
-	val versionProperty = SimpleStringProperty()
-	var version by versionProperty
-
-	val nameProperty = SimpleStringProperty()
-	var name by nameProperty
-
-	val classProperty = SimpleObjectProperty<ClassTag>()
-	var classTag by classProperty
-
-	val ascendencyProperty = SimpleObjectProperty<Ascendency>()
-	var ascendency by ascendencyProperty
-
-	val buildGemsProperty = SimpleObjectProperty<BuildGemMap>()
-	var buildGems by buildGemsProperty
-
-	val buildItemsProperty = SimpleObjectProperty<BuildItemMap>()
-	var buildItems by buildItemsProperty
-
-	val detailsProperty = SimpleStringProperty()
-	var details by detailsProperty
-
-	init {
-		this.version = version
-		this.name = name
-		this.classTag = classTag
-		this.ascendency = ascendency
-		this.buildGems = buildGems
-		this.buildItems = buildItems
-		this.details = details
-	}
-
 	val filename: String
 		get() = "{$version}_${name.replace(" ", "_")}.yaml"
 
@@ -100,21 +64,21 @@ private class BuildDeserializer @JvmOverloads constructor(vc: Class<*>? = null) 
 	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): Build? {
 		val node: JsonNode = parser.codec.readTree(parser)
 
-		val version = node["Version"].asText()
-		val name = node["Name"].asText()
-		val classTag = ClassTag.value(node["Class"].asText())
+		val version = node["Version"]?.asText() ?: "0.0.0"
+		val name = node["Name"]?.asText() ?: "Build Error"
+		val classTag = ClassTag.value(node["Class"]?.asText())
 		if (classTag == null) {
-			LOGGER.info("Invalid Class: ${node["Class"].asText()}")
+			LOGGER.info("Invalid Class: ${node["Class"]?.asText()}")
 			return null
 		}
-		val ascendency = Ascendency.value(node["Ascendency"].asText())
+		val ascendency = Ascendency.value(node["Ascendency"]?.asText())
 		if (ascendency == null) {
-			LOGGER.info("Invalid Ascendency: ${node["Ascendency"].asText()}")
+			LOGGER.info("Invalid Ascendency: ${node["Ascendency"]?.asText()}")
 			return null
 		}
 		val buildGems = Util.YAML_MAPPER.treeToValue(node["Gems"], BuildGemMap::class.java)
-		val buildItems = Util.YAML_MAPPER.treeToValue(node["Items"], BuildItemMap::class.java)
-		val details = node["Details"]?.asText()
+		val buildGear = Util.YAML_MAPPER.treeToValue(node["Gear"], BuildGearMap::class.java)
+		val details = if (node["Details"]?.isNull != false) null else node["Details"]?.asText()
 
 		return Build(
 			version = version,
@@ -122,7 +86,7 @@ private class BuildDeserializer @JvmOverloads constructor(vc: Class<*>? = null) 
 			classTag = classTag,
 			ascendency = ascendency,
 			buildGems = buildGems,
-			buildItems = buildItems,
+			buildGear = buildGear,
 			details = details
 		)
 	}
@@ -142,8 +106,8 @@ private class BuildSerializer @JvmOverloads constructor(t: Class<Build>? = null)
 		parser.writeStringField("Class", value.classTag.name)
 		parser.writeStringField("Ascendency", value.ascendency.name)
 		parser.writeObjectField("Gems", value.buildGems)
-		parser.writeObjectField("Items", value.buildItems)
-		parser.writeStringField("Details", value.details)
+		parser.writeObjectField("Gear", value.buildGear)
+		parser.writeObjectField("Details", value.details)
 		parser.writeEndObject()
 	}
 }

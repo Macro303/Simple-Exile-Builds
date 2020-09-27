@@ -1,6 +1,6 @@
 package github.macro
 
-import github.macro.config.Config
+import github.macro.settings.Settings
 import github.macro.ui.build_info.BuildSelector
 import javafx.scene.image.Image
 import javafx.scene.text.Font
@@ -17,7 +17,7 @@ class Launcher : App(BuildSelector::class, Styles::class) {
 	init {
 		checkLogLevels()
 		LOGGER.info("Welcome to Exile Buddy")
-		if (Config.INSTANCE.useDarkMode) {
+		if (Settings.INSTANCE.useDarkMode) {
 //			importStylesheet(Launcher::class.java.getResource("Modena-Dark.css").toExternalForm())
 			importStylesheet(Launcher::class.java.getResource("Custom-Dark.css").toExternalForm())
 		}

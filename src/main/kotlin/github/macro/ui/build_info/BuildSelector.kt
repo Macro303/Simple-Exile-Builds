@@ -6,11 +6,12 @@ import github.macro.Util.cleanName
 import github.macro.core.build_info.Ascendency
 import github.macro.core.build_info.Build
 import github.macro.core.build_info.ClassTag
-import github.macro.ui.config.ConfigEditor
+import github.macro.ui.settings.Settings
 import javafx.geometry.Pos
 import javafx.scene.control.ComboBox
 import javafx.scene.control.TextField
 import javafx.scene.layout.Priority
+import javafx.util.StringConverter
 import org.apache.logging.log4j.LogManager
 import tornadofx.*
 
@@ -35,7 +36,7 @@ class BuildSelector : View("Exile Buddy") {
 			hbox(spacing = 5.0, alignment = Pos.TOP_RIGHT) {
 				button(text = "⚙") {
 					action {
-						find<ConfigEditor>().openModal(block = true, resizable = false)
+						find<Settings>().openModal(block = true, resizable = false)
 					}
 				}
 				button(text = "\uD83D\uDCA1") {
@@ -68,10 +69,12 @@ class BuildSelector : View("Exile Buddy") {
 					val buildCombobox = combobox<Build>(property = model.selectedBuildProperty, values = model.builds) {
 						promptText = "Build"
 						hgrow = Priority.ALWAYS
-						cellFormat {
-							text = it.display
+						converter = object : StringConverter<Build?>() {
+							override fun toString(build: Build?): String = build?.display ?: ""
+							override fun fromString(string: String): Build? = null
 						}
 					}
+					buildCombobox.converter
 					button(text = "Select") {
 						addClass(Styles.sizedButton)
 						action {

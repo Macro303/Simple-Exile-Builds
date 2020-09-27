@@ -1,21 +1,21 @@
 package github.macro.ui.build_info
 
 import github.macro.Util
-import github.macro.core.Data
 import github.macro.core.build_info.Ascendency
 import github.macro.core.build_info.Build
 import github.macro.core.build_info.ClassTag
-import github.macro.core.gems.BuildGem
-import github.macro.core.gems.BuildGemMap
-import github.macro.core.items.BuildItemMap
-import github.macro.core.items.amulets.BuildAmulet
-import github.macro.core.items.body_armours.BuildBodyArmour
-import github.macro.core.items.belts.BuildBelt
-import github.macro.core.items.boots.BuildBoots
-import github.macro.core.items.flasks.BuildFlask
-import github.macro.core.items.gloves.BuildGloves
-import github.macro.core.items.helmets.BuildHelmet
-import github.macro.core.items.weapons.BuildWeapon
+import github.macro.core.item.gem.BuildGem
+import github.macro.core.build_info.BuildGemMap
+import github.macro.core.build_info.BuildGearMap
+import github.macro.core.item.Items
+import github.macro.core.item.gear.amulet.BuildAmulet
+import github.macro.core.item.gear.body_armour.BuildBodyArmour
+import github.macro.core.item.gear.belt.BuildBelt
+import github.macro.core.item.gear.boots.BuildBoots
+import github.macro.core.item.gear.flask.BuildFlask
+import github.macro.core.item.gear.gloves.BuildGloves
+import github.macro.core.item.gear.helmets.BuildHelmet
+import github.macro.core.item.gear.weapons.BuildWeapon
 import org.apache.logging.log4j.LogManager
 import tornadofx.*
 
@@ -65,16 +65,16 @@ class UIController : Controller() {
 				gloves = mutableListOf(),
 				boots = mutableListOf()
 			),
-			buildItems = BuildItemMap(
-				weapons = Util.getStartingWeapons(classTag).map { BuildWeapon(it) },
-				bodyArmour = BuildBodyArmour(Data.getBodyArmourByName("None")),
-				helmet = BuildHelmet(Data.getHelmetByName("None")),
-				gloves = BuildGloves(Data.getGlovesByName("None")),
-				boots = BuildBoots(Data.getBootsByName("None")),
-				belt = BuildBelt(Data.getBeltByName("None")),
-				amulet = BuildAmulet(Data.getAmuletByName("None")),
-				rings = mutableListOf(),
-				flasks = Util.getStartingFlasks().map { BuildFlask(it) }
+			buildGear = BuildGearMap(
+				weapons = Util.getStartingWeapons(classTag).map { BuildWeapon(it) } as ArrayList<BuildWeapon>,
+				bodyArmour = BuildBodyArmour(Items.getBodyArmourByName("None")),
+				helmet = BuildHelmet(Items.getHelmetByName("None")),
+				gloves = BuildGloves(Items.getGlovesByName("None")),
+				boots = BuildBoots(Items.getBootsByName("None")),
+				belt = BuildBelt(Items.getBeltByName("None")),
+				amulet = BuildAmulet(Items.getAmuletByName("None")),
+				rings = arrayListOf(),
+				flasks = Util.getStartingFlasks().map { BuildFlask(it) } as ArrayList<BuildFlask>
 			),
 			details = null
 		)
@@ -90,7 +90,7 @@ class UIController : Controller() {
 			classTag = model.selectedBuild.classTag,
 			ascendency = model.selectedBuild.ascendency,
 			buildGems = model.selectedBuild.buildGems,
-			buildItems = model.selectedBuild.buildItems,
+			buildGear = model.selectedBuild.buildGear,
 			details = model.selectedBuild.details
 		)
 		copiedBuild.save()

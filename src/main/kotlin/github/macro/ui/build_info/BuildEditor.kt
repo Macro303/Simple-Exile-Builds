@@ -5,16 +5,16 @@ import github.macro.Util
 import github.macro.Util.cleanName
 import github.macro.core.build_info.Ascendency
 import github.macro.core.build_info.ClassTag
-import github.macro.ui.gems.GemEditorPane
-import github.macro.ui.items.amulets.AmuletEditorPane
-import github.macro.ui.items.body_armours.BodyArmourEditorPane
-import github.macro.ui.items.belts.BeltEditorPane
-import github.macro.ui.items.boots.BootsEditorPane
-import github.macro.ui.items.flasks.FlaskEditorPane
-import github.macro.ui.items.gloves.GlovesEditorPane
-import github.macro.ui.items.helmets.HelmetEditorPane
-import github.macro.ui.items.rings.RingEditorPane
-import github.macro.ui.items.weapons.WeaponEditorPane
+import github.macro.ui.item.gear.flask.FlaskEditor
+import github.macro.ui.item.gem.GemEditor
+import github.macro.ui.item.gear.amulet.AmuletEditor
+import github.macro.ui.item.gear.belt.BeltEditor
+import github.macro.ui.item.gear.body_armour.BodyArmourEditor
+import github.macro.ui.item.gear.boots.BootsEditor
+import github.macro.ui.item.gear.gloves.GlovesEditor
+import github.macro.ui.item.gear.helmet.HelmetEditor
+import github.macro.ui.item.gear.ring.RingEditor
+import github.macro.ui.item.gear.weapon.WeaponEditor
 import javafx.geometry.HPos
 import javafx.geometry.Insets
 import javafx.geometry.Pos
@@ -125,10 +125,11 @@ class BuildEditor : View("Exile Buddy") {
 							}
 							row {
 								model.selectedBuild.buildGems.weapons.forEachIndexed { index, gem ->
-									add(GemEditorPane(model.selectedBuild, gem, index, "Weapons")
+									val editor = GemEditor(model.selectedBuild, gem, index, "Weapons")
 										.gridpaneConstraints {
 											margin = Insets(2.5)
-										})
+										}
+									add(editor)
 								}
 							}
 							row {
@@ -143,10 +144,11 @@ class BuildEditor : View("Exile Buddy") {
 							}
 							row {
 								model.selectedBuild.buildGems.helmet.forEachIndexed { index, gem ->
-									add(GemEditorPane(model.selectedBuild, gem, index, "Helmet")
+									val editor = GemEditor(model.selectedBuild, gem, index, "Helmet")
 										.gridpaneConstraints {
 											margin = Insets(2.5)
-										})
+										}
+									add(editor)
 								}
 							}
 							row {
@@ -161,10 +163,11 @@ class BuildEditor : View("Exile Buddy") {
 							}
 							row {
 								model.selectedBuild.buildGems.bodyArmour.forEachIndexed { index, gem ->
-									add(GemEditorPane(model.selectedBuild, gem, index, "Body Armour")
+									val editor = GemEditor(model.selectedBuild, gem, index, "Body Armour")
 										.gridpaneConstraints {
 											margin = Insets(2.5)
-										})
+										}
+									add(editor)
 								}
 							}
 							row {
@@ -179,10 +182,11 @@ class BuildEditor : View("Exile Buddy") {
 							}
 							row {
 								model.selectedBuild.buildGems.gloves.forEachIndexed { index, gem ->
-									add(GemEditorPane(model.selectedBuild, gem, index, "Gloves")
+									val editor = GemEditor(model.selectedBuild, gem, index, "Gloves")
 										.gridpaneConstraints {
 											margin = Insets(2.5)
-										})
+										}
+									add(editor)
 								}
 							}
 							row {
@@ -197,10 +201,11 @@ class BuildEditor : View("Exile Buddy") {
 							}
 							row {
 								model.selectedBuild.buildGems.boots.forEachIndexed { index, gem ->
-									add(GemEditorPane(model.selectedBuild, gem, index, "Boots")
+									val editor = GemEditor(model.selectedBuild, gem, index, "Boots")
 										.gridpaneConstraints {
 											margin = Insets(2.5)
-										})
+										}
+									add(editor)
 								}
 							}
 							val ratio = 100.0 / 6.0
@@ -228,11 +233,12 @@ class BuildEditor : View("Exile Buddy") {
 								}
 							}
 							row {
-								model.selectedBuild.buildItems.weapons.forEachIndexed { index, weapon ->
-									add(WeaponEditorPane(model.selectedBuild, weapon, index)
+								model.selectedBuild.buildGear.weapons.forEachIndexed { index, weapon ->
+									val editor = WeaponEditor(model.selectedBuild, weapon, index)
 										.gridpaneConstraints {
 											margin = Insets(2.5)
-										})
+										}
+									add(editor)
 								}
 							}
 							row {
@@ -246,22 +252,26 @@ class BuildEditor : View("Exile Buddy") {
 								}
 							}
 							row {
-								add(HelmetEditorPane(model.selectedBuild)
+								val helmetEditor = HelmetEditor(model.selectedBuild)
 									.gridpaneConstraints {
 										margin = Insets(2.5)
-									})
-								add(BodyArmourEditorPane(model.selectedBuild)
+									}
+								val bodyArmourEditor = BodyArmourEditor(model.selectedBuild)
 									.gridpaneConstraints {
 										margin = Insets(2.5)
-									})
-								add(GlovesEditorPane(model.selectedBuild)
+									}
+								val glovesEditor = GlovesEditor(model.selectedBuild)
 									.gridpaneConstraints {
 										margin = Insets(2.5)
-									})
-								add(BootsEditorPane(model.selectedBuild)
+									}
+								val bootsEditor = BootsEditor(model.selectedBuild)
 									.gridpaneConstraints {
 										margin = Insets(2.5)
-									})
+									}
+								add(helmetEditor)
+								add(bodyArmourEditor)
+								add(glovesEditor)
+								add(bootsEditor)
 							}
 							row {
 								label("Jewellery") {
@@ -274,19 +284,22 @@ class BuildEditor : View("Exile Buddy") {
 								}
 							}
 							row {
-								add(BeltEditorPane(model.selectedBuild)
+								val beltEditor = BeltEditor(model.selectedBuild)
 									.gridpaneConstraints {
 										margin = Insets(2.5)
-									})
-								add(AmuletEditorPane(model.selectedBuild)
+									}
+								val amuletEditor = AmuletEditor(model.selectedBuild)
 									.gridpaneConstraints {
 										margin = Insets(2.5)
-									})
-								model.selectedBuild.buildItems.rings.forEachIndexed { index, ring ->
-									add(RingEditorPane(model.selectedBuild, ring, index)
+									}
+								add(beltEditor)
+								add(amuletEditor)
+								model.selectedBuild.buildGear.rings.forEachIndexed { index, ring ->
+									val editor = RingEditor(model.selectedBuild, ring, index)
 										.gridpaneConstraints {
 											margin = Insets(2.5)
-										})
+										}
+									add(editor)
 								}
 							}
 							row {
@@ -300,11 +313,12 @@ class BuildEditor : View("Exile Buddy") {
 								}
 							}
 							row {
-								model.selectedBuild.buildItems.flasks.forEachIndexed { index, flask ->
-									add(FlaskEditorPane(model.selectedBuild, flask, index)
+								model.selectedBuild.buildGear.flasks.forEachIndexed { index, flask ->
+									val editor = FlaskEditor(model.selectedBuild, flask, index)
 										.gridpaneConstraints {
 											margin = Insets(2.5)
-										})
+										}
+									add(editor)
 								}
 							}
 							val ratio = 100.0 / 5.0
@@ -321,7 +335,7 @@ class BuildEditor : View("Exile Buddy") {
 						hbarPolicy = ScrollPane.ScrollBarPolicy.NEVER
 						vbox(spacing = 5.0, alignment = Pos.CENTER) {
 							label(text = "Other Details")
-							textarea(property = model.selectedBuild.detailsProperty) {
+							textarea(property = model.selectedBuild.details.toProperty()) {
 								isEditable = true
 							}
 						}

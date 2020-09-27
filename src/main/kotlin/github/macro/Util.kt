@@ -7,26 +7,27 @@ import com.fasterxml.jackson.dataformat.yaml.YAMLGenerator
 import com.fasterxml.jackson.datatype.jdk8.Jdk8Module
 import github.macro.core.build_info.ClassTag
 import github.macro.core.build_info.ClassTag.*
-import github.macro.core.items.flasks.Flask
-import github.macro.core.gems.Colour
-import github.macro.core.gems.Gem
-import github.macro.config.Config
-import github.macro.core.Data
-import github.macro.core.items.weapons.Weapon
+import github.macro.core.item.BaseItem
+import github.macro.core.item.Items
+import github.macro.core.item.gear.flask.Flask
+import github.macro.core.item.gear.weapons.Weapon
+import github.macro.core.item.gem.Gem
 import javafx.animation.KeyFrame
 import javafx.animation.Timeline
 import javafx.scene.control.Tooltip
 import javafx.util.Duration
 import org.apache.logging.log4j.LogManager
 import java.lang.reflect.Field
+import javax.imageio.ImageIO
 
 /**
  * Created by Macro303 on 2020-Jan-13.
  */
 object Util {
 	private val LOGGER = LogManager.getLogger(Util::class.java)
-	internal const val UI_PREF_WIDTH = 800.0
-	internal const val UI_PREF_HEIGHT = 750.0
+	internal const val UI_PREF_WIDTH = 1000.0
+	internal const val UI_PREF_HEIGHT = 900.0
+	internal const val IMG_SIZE = 59.0
 	internal val JSON_MAPPER: ObjectMapper by lazy {
 		val mapper = ObjectMapper()
 		mapper.enable(SerializationFeature.INDENT_OUTPUT)
@@ -42,14 +43,6 @@ object Util {
 		mapper
 	}
 
-	fun colourToHex(colour: Colour?): String = when (colour) {
-		Colour.RED -> "#C44C4C"
-		Colour.GREEN -> "#4CC44C"
-		Colour.BLUE -> "#4C4CC4"
-		Colour.WHITE -> if (Config.INSTANCE.useDarkMode) "#C4C4C4" else "#4C4C4C"
-		else -> if (Config.INSTANCE.useDarkMode) "#4C4C4C" else "#C4C4C4"
-	}
-
 	internal fun getStartingGems(classTag: ClassTag): List<Gem> = when (classTag) {
 		SCION -> listOf("Spectral Throw", "Onslaught Support")
 		MARAUDER -> listOf("Heavy Strike", "Ruthless Support")
@@ -58,7 +51,7 @@ object Util {
 		DUELIST -> listOf("Double Strike", "Chance to Bleed Support")
 		TEMPLAR -> listOf("Glacial Hammer", "Elemental Proliferation Support")
 		SHADOW -> listOf("Viper Strike", "Lesser Poison Support")
-	}.map { Data.getGemByName(it) }
+	}.map { Items.getGemByName(it) }
 
 	internal fun getStartingWeapons(classTag: ClassTag): List<Weapon> = when (classTag) {
 		SCION -> listOf("Rusted Sword")
@@ -68,25 +61,13 @@ object Util {
 		DUELIST -> listOf("Rusted Sword")
 		TEMPLAR -> listOf("Driftwood Sceptre")
 		SHADOW -> listOf("Glass Shank")
-	}.map { Data.getWeaponByName(it) }
+	}.map { Items.getWeaponByName(it) }
 
 	internal fun getStartingFlasks(): List<Flask> =
-		listOf("Small Life Flask", "Small Life Flask", "Small Mana Flask").map { Data.getFlaskByName(it) }
+		listOf("Small Life Flask", "Small Life Flask", "Small Mana Flask").map { Items.getFlaskByName(it) }
 
 	fun Enum<*>.cleanName(): String = this.name.split("_").joinToString(" ") { it.toLowerCase().capitalize() }
 
-	internal fun hackTooltipStartTiming(tooltip: Tooltip) {
-		try {
-			val fieldBehavior: Field = tooltip.javaClass.getDeclaredField("BEHAVIOR")
-			fieldBehavior.isAccessible = true
-			val objBehavior: Any = fieldBehavior.get(tooltip)
-			val fieldTimer: Field = objBehavior.javaClass.getDeclaredField("activationTimer")
-			fieldTimer.isAccessible = true
-			val objTimer = fieldTimer.get(objBehavior) as Timeline
-			objTimer.keyFrames.clear()
-			objTimer.keyFrames.add(KeyFrame(Duration(0.0)))
-		} catch (e: Exception) {
-			e.printStackTrace()
-		}
-	}
+	fun getImageWidth(item: BaseItem): Double = ImageIO.read(item.getImageFile()).width.toDouble()
+	fun getImageHeight(item: BaseItem): Double = ImageIO.read(item.getImageFile()).height.toDouble()
 }

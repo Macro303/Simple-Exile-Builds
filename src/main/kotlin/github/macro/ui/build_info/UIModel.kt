@@ -1,11 +1,11 @@
 package github.macro.ui.build_info
 
 import github.macro.Util
-import github.macro.core.Data
 import github.macro.core.build_info.Ascendency
 import github.macro.core.build_info.Build
 import github.macro.core.build_info.ClassTag
-import github.macro.core.gems.Gem
+import github.macro.core.item.Items
+import github.macro.core.item.gem.Gem
 import javafx.beans.property.SimpleListProperty
 import javafx.beans.property.SimpleObjectProperty
 import javafx.collections.FXCollections
@@ -41,7 +41,7 @@ class UIModel : ViewModel() {
 		this.classes = FXCollections.observableList(ClassTag.values().toList())
 		this.ascendencies = FXCollections.observableArrayList()
 		this.selectedBuild = null
-		this.gems = FXCollections.observableArrayList(Data.GEM_LIST)
+		this.gems = FXCollections.observableArrayList(Items.GEM_LIST)
 		this.selectedGem = null
 		LOGGER.info("Initialize Model")
 	}

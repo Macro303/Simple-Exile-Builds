@@ -3,16 +3,16 @@ package github.macro.ui.build_info
 import github.macro.Styles
 import github.macro.Util
 import github.macro.Util.cleanName
-import github.macro.ui.gems.GemViewerPane
-import github.macro.ui.items.amulets.AmuletViewerPane
-import github.macro.ui.items.belts.BeltViewerPane
-import github.macro.ui.items.body_armours.BodyArmourViewerPane
-import github.macro.ui.items.boots.BootsViewerPane
-import github.macro.ui.items.flasks.FlaskViewerPane
-import github.macro.ui.items.gloves.GlovesViewerPane
-import github.macro.ui.items.helmets.HelmetViewerPane
-import github.macro.ui.items.rings.RingViewerPane
-import github.macro.ui.items.weapons.WeaponViewerPane
+import github.macro.ui.item.gem.GemViewer
+import github.macro.ui.item.gear.amulet.AmuletViewer
+import github.macro.ui.item.gear.belt.BeltViewer
+import github.macro.ui.item.gear.body_armour.BodyArmourViewer
+import github.macro.ui.item.gear.boots.BootsViewer
+import github.macro.ui.item.gear.flask.FlaskViewer
+import github.macro.ui.item.gear.gloves.GlovesViewer
+import github.macro.ui.item.gear.helmet.HelmetViewer
+import github.macro.ui.item.gear.ring.RingViewer
+import github.macro.ui.item.gear.weapon.WeaponViewer
 import javafx.geometry.HPos
 import javafx.geometry.Insets
 import javafx.geometry.Pos
@@ -95,7 +95,7 @@ class BuildViewer : View("Exile Buddy") {
 							}
 							row {
 								model.selectedBuild.buildGems.weapons.forEachIndexed { index, gem ->
-									add(GemViewerPane(model.selectedBuild, gem, index, "Weapons")
+									add(GemViewer(model.selectedBuild, gem, index, "Weapons")
 										.gridpaneConstraints {
 											margin = Insets(2.5)
 										})
@@ -113,7 +113,7 @@ class BuildViewer : View("Exile Buddy") {
 							}
 							row {
 								model.selectedBuild.buildGems.helmet.forEachIndexed { index, gem ->
-									add(GemViewerPane(model.selectedBuild, gem, index, "Helmet")
+									add(GemViewer(model.selectedBuild, gem, index, "Helmet")
 										.gridpaneConstraints {
 											margin = Insets(2.5)
 										})
@@ -131,7 +131,7 @@ class BuildViewer : View("Exile Buddy") {
 							}
 							row {
 								model.selectedBuild.buildGems.bodyArmour.forEachIndexed { index, gem ->
-									add(GemViewerPane(model.selectedBuild, gem, index, "Body Armour")
+									add(GemViewer(model.selectedBuild, gem, index, "Body Armour")
 										.gridpaneConstraints {
 											margin = Insets(2.5)
 										})
@@ -149,7 +149,7 @@ class BuildViewer : View("Exile Buddy") {
 							}
 							row {
 								model.selectedBuild.buildGems.gloves.forEachIndexed { index, gem ->
-									add(GemViewerPane(model.selectedBuild, gem, index, "Gloves")
+									add(GemViewer(model.selectedBuild, gem, index, "Gloves")
 										.gridpaneConstraints {
 											margin = Insets(2.5)
 										})
@@ -167,7 +167,7 @@ class BuildViewer : View("Exile Buddy") {
 							}
 							row {
 								model.selectedBuild.buildGems.boots.forEachIndexed { index, gem ->
-									add(GemViewerPane(model.selectedBuild, gem, index, "Boots")
+									add(GemViewer(model.selectedBuild, gem, index, "Boots")
 										.gridpaneConstraints {
 											margin = Insets(2.5)
 										})
@@ -198,8 +198,8 @@ class BuildViewer : View("Exile Buddy") {
 								}
 							}
 							row {
-								model.selectedBuild.buildItems.weapons.forEachIndexed { index, weapon ->
-									add(WeaponViewerPane(model.selectedBuild, weapon, index)
+								model.selectedBuild.buildGear.weapons.forEachIndexed { index, weapon ->
+									add(WeaponViewer(model.selectedBuild, weapon, index)
 										.gridpaneConstraints {
 											margin = Insets(2.5)
 										})
@@ -216,19 +216,19 @@ class BuildViewer : View("Exile Buddy") {
 								}
 							}
 							row {
-								add(HelmetViewerPane(model.selectedBuild)
+								add(HelmetViewer(model.selectedBuild)
 									.gridpaneConstraints {
 										margin = Insets(2.5)
 									})
-								add(BodyArmourViewerPane(model.selectedBuild)
+								add(BodyArmourViewer(model.selectedBuild)
 									.gridpaneConstraints {
 										margin = Insets(2.5)
 									})
-								add(GlovesViewerPane(model.selectedBuild)
+								add(GlovesViewer(model.selectedBuild)
 									.gridpaneConstraints {
 										margin = Insets(2.5)
 									})
-								add(BootsViewerPane(model.selectedBuild)
+								add(BootsViewer(model.selectedBuild)
 									.gridpaneConstraints {
 										margin = Insets(2.5)
 									})
@@ -244,16 +244,16 @@ class BuildViewer : View("Exile Buddy") {
 								}
 							}
 							row {
-								add(BeltViewerPane(model.selectedBuild)
+								add(BeltViewer(model.selectedBuild)
 									.gridpaneConstraints {
 										margin = Insets(2.5)
 									})
-								add(AmuletViewerPane(model.selectedBuild)
+								add(AmuletViewer(model.selectedBuild)
 									.gridpaneConstraints {
 										margin = Insets(2.5)
 									})
-								model.selectedBuild.buildItems.rings.forEachIndexed { index, ring ->
-									add(RingViewerPane(model.selectedBuild, ring, index)
+								model.selectedBuild.buildGear.rings.forEachIndexed { index, ring ->
+									add(RingViewer(model.selectedBuild, ring, index)
 										.gridpaneConstraints {
 											margin = Insets(2.5)
 										})
@@ -270,8 +270,8 @@ class BuildViewer : View("Exile Buddy") {
 								}
 							}
 							row {
-								model.selectedBuild.buildItems.flasks.forEachIndexed { index, flask ->
-									add(FlaskViewerPane(model.selectedBuild, flask, index)
+								model.selectedBuild.buildGear.flasks.forEachIndexed { index, flask ->
+									add(FlaskViewer(model.selectedBuild, flask, index)
 										.gridpaneConstraints {
 											margin = Insets(2.5)
 										})
@@ -293,7 +293,7 @@ class BuildViewer : View("Exile Buddy") {
 							label(text = "Other Details"){
 								addClass(Styles.subtitle)
 							}
-							textarea(property = model.selectedBuild.detailsProperty) {
+							textarea(property = model.selectedBuild.details.toProperty()) {
 								isEditable = false
 							}
 						}
