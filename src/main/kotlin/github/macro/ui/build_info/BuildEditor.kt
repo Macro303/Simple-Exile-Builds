@@ -334,6 +334,16 @@ class BuildEditor : View("Exile Buddy") {
 					scrollpane(fitToWidth = true) {
 						hbarPolicy = ScrollPane.ScrollBarPolicy.NEVER
 						vbox(spacing = 5.0, alignment = Pos.CENTER) {
+							paddingAll = 5.0
+							hbox(spacing = 5.0, alignment = Pos.CENTER) {
+								paddingAll = 5.0
+								label(text = "Kill Bandits") {
+									addClass(Styles.subtitle)
+								}
+								checkbox(text = "Kraityn", property = model.selectedBuild.bandits.kraityn.toProperty())
+								checkbox(text = "Alira", property = model.selectedBuild.bandits.alira.toProperty())
+								checkbox(text = "Oak", property = model.selectedBuild.bandits.oak.toProperty())
+							}
 							label(text = "Other Details")
 							textarea(property = model.selectedBuild.details.toProperty()) {
 								isEditable = true

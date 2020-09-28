@@ -3,7 +3,6 @@ package github.macro.ui.build_info
 import github.macro.Styles
 import github.macro.Util
 import github.macro.Util.cleanName
-import github.macro.ui.item.gem.GemViewer
 import github.macro.ui.item.gear.amulet.AmuletViewer
 import github.macro.ui.item.gear.belt.BeltViewer
 import github.macro.ui.item.gear.body_armour.BodyArmourViewer
@@ -13,6 +12,7 @@ import github.macro.ui.item.gear.gloves.GlovesViewer
 import github.macro.ui.item.gear.helmet.HelmetViewer
 import github.macro.ui.item.gear.ring.RingViewer
 import github.macro.ui.item.gear.weapon.WeaponViewer
+import github.macro.ui.item.gem.GemViewer
 import javafx.geometry.HPos
 import javafx.geometry.Insets
 import javafx.geometry.Pos
@@ -290,7 +290,23 @@ class BuildViewer : View("Exile Buddy") {
 					scrollpane(fitToWidth = true) {
 						hbarPolicy = ScrollPane.ScrollBarPolicy.NEVER
 						vbox(spacing = 5.0, alignment = Pos.CENTER) {
-							label(text = "Other Details"){
+							paddingAll = 5.0
+							hbox(spacing = 5.0, alignment = Pos.CENTER) {
+								paddingAll = 5.0
+								label(text = "Kill Bandits") {
+									addClass(Styles.subtitle)
+								}
+								checkbox(text = "Kraityn", property = model.selectedBuild.bandits.kraityn.toProperty()) {
+									isDisable = true
+								}
+								checkbox(text = "Alira", property = model.selectedBuild.bandits.alira.toProperty()) {
+									isDisable = true
+								}
+								checkbox(text = "Oak", property = model.selectedBuild.bandits.oak.toProperty()) {
+									isDisable = true
+								}
+							}
+							label(text = "Other Details") {
 								addClass(Styles.subtitle)
 							}
 							textarea(property = model.selectedBuild.details.toProperty()) {

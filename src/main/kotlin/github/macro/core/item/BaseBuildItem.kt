@@ -7,4 +7,8 @@ abstract class BaseBuildItem(
 	var item: BaseItem,
 	var nextItem: BaseBuildItem? = null,
 	var reason: String? = null
-)
+){
+	override fun toString(): String {
+		return "BaseBuildItem(item=$item, nextItem=$nextItem, reason=$reason)"
+	}
+}

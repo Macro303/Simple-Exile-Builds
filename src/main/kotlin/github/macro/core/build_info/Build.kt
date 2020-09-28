@@ -28,6 +28,7 @@ class Build(
 	var ascendency: Ascendency,
 	val buildGems: BuildGemMap,
 	val buildGear: BuildGearMap,
+	val bandits: BanditMap,
 	var details: String?
 ) {
 	val filename: String
@@ -78,6 +79,7 @@ private class BuildDeserializer @JvmOverloads constructor(vc: Class<*>? = null) 
 		}
 		val buildGems = Util.YAML_MAPPER.treeToValue(node["Gems"], BuildGemMap::class.java)
 		val buildGear = Util.YAML_MAPPER.treeToValue(node["Gear"], BuildGearMap::class.java)
+		val bandits = Util.YAML_MAPPER.treeToValue(node["Bandits"], BanditMap::class.java)
 		val details = if (node["Details"]?.isNull != false) null else node["Details"]?.asText()
 
 		return Build(
@@ -87,6 +89,7 @@ private class BuildDeserializer @JvmOverloads constructor(vc: Class<*>? = null) 
 			ascendency = ascendency,
 			buildGems = buildGems,
 			buildGear = buildGear,
+			bandits = bandits,
 			details = details
 		)
 	}
@@ -107,6 +110,7 @@ private class BuildSerializer @JvmOverloads constructor(t: Class<Build>? = null)
 		parser.writeStringField("Ascendency", value.ascendency.name)
 		parser.writeObjectField("Gems", value.buildGems)
 		parser.writeObjectField("Gear", value.buildGear)
+		parser.writeObjectField("Bandits", value.bandits)
 		parser.writeObjectField("Details", value.details)
 		parser.writeEndObject()
 	}

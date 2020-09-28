@@ -6,7 +6,6 @@ import javafx.beans.property.SimpleListProperty
 import javafx.beans.property.SimpleObjectProperty
 import javafx.beans.property.SimpleStringProperty
 import javafx.collections.FXCollections
-import javafx.collections.transformation.FilteredList
 import tornadofx.*
 
 /**
@@ -19,9 +18,8 @@ open class ItemSelectionModel<T : BaseBuildItem?, S : BaseItem>(
 	val imageUrlProperty = SimpleStringProperty()
 	var imageUrl by imageUrlProperty
 
-	val allItemsProperty = SimpleListProperty<S>()
-	var allItems by allItemsProperty
-	var filteredItems: FilteredList<S>
+	val itemsProperty = SimpleListProperty<S>()
+	var items by itemsProperty
 
 	val selectedProperty = SimpleObjectProperty<T>()
 	var selected by selectedProperty
@@ -30,9 +28,8 @@ open class ItemSelectionModel<T : BaseBuildItem?, S : BaseItem>(
 	var selectedItem by selectedItemProperty
 
 	init {
-		this.allItems = FXCollections.observableList(items.filterNot { it.name == "None" }
+		this.items = FXCollections.observableList(items.filterNot { it.name == "None" }
 			.sortedBy { it.name.toLowerCase() })
-		this.filteredItems = FilteredList<S>(allItems) { true }
 		this.selected = selected
 		this.selectedItem = selected?.item as S?
 		if (selectedItem != null)

@@ -1,12 +1,8 @@
 package github.macro.ui.build_info
 
 import github.macro.Util
-import github.macro.core.build_info.Ascendency
-import github.macro.core.build_info.Build
-import github.macro.core.build_info.ClassTag
+import github.macro.core.build_info.*
 import github.macro.core.item.gem.BuildGem
-import github.macro.core.build_info.BuildGemMap
-import github.macro.core.build_info.BuildGearMap
 import github.macro.core.item.Items
 import github.macro.core.item.gear.amulet.BuildAmulet
 import github.macro.core.item.gear.body_armour.BuildBodyArmour
@@ -76,6 +72,11 @@ class UIController : Controller() {
 				rings = arrayListOf(),
 				flasks = Util.getStartingFlasks().map { BuildFlask(it) } as ArrayList<BuildFlask>
 			),
+			bandits = BanditMap(
+				kraityn = true,
+				alira = true,
+				oak = true
+			),
 			details = null
 		)
 		LOGGER.info("Creating Build: ${model.selectedBuild.display}")
@@ -91,6 +92,7 @@ class UIController : Controller() {
 			ascendency = model.selectedBuild.ascendency,
 			buildGems = model.selectedBuild.buildGems,
 			buildGear = model.selectedBuild.buildGear,
+			bandits = model.selectedBuild.bandits,
 			details = model.selectedBuild.details
 		)
 		copiedBuild.save()

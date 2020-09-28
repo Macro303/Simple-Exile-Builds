@@ -20,4 +20,8 @@ abstract class BaseItem(
 			image = File(File("resources", "Images"), "placeholder.png")
 		return image
 	}
+
+	override fun toString(): String {
+		return "BaseItem(id='$id', name='$name', isReleased=$isReleased, colour=$colour)"
+	}
 }

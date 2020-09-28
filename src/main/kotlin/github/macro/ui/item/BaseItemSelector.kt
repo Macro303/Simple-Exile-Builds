@@ -4,7 +4,7 @@ import github.macro.Styles
 import github.macro.Util
 import github.macro.core.item.BaseBuildItem
 import github.macro.core.item.BaseItem
-import javafx.application.Platform
+import github.macro.ui.AutoCompleteComboBoxListener
 import javafx.geometry.Pos
 import javafx.scene.layout.Priority
 import javafx.util.StringConverter
@@ -42,9 +42,8 @@ abstract class BaseItemSelector<T : BaseBuildItem, S : BaseItem> : View() {
 		center {
 			vbox(spacing = 5.0, alignment = Pos.CENTER) {
 				paddingAll = 5.0
-				combobox<S>(
-					property = model.selectedItemProperty,
-					values = model.filteredItems
+				AutoCompleteComboBoxListener(combobox<S>(
+					values = model.items
 				) {
 					isEditable = true
 					promptText = "Select Item"
@@ -54,18 +53,12 @@ abstract class BaseItemSelector<T : BaseBuildItem, S : BaseItem> : View() {
 						override fun fromString(string: String): S? = null
 					}
 					setOnAction {
-						if (model.selectedItem != null)
+						if (this.selectedItem != null) {
 							model.imageUrl = "file:${model.selectedItem.getImageFile().path}"
-					}
-					editor.textProperty().addListener { _, _, newValue ->
-						Platform.runLater {
-							if (selectedItem == null || !selectedItem!!.equals(editor.text))
-								model.filteredItems.setPredicate {
-									return@setPredicate it.getDisplayName().contains(newValue, ignoreCase = true)
-								}
+							model.selectedItem = this.selectedItem
 						}
 					}
-				}
+				})
 			}
 		}
 		bottom {
