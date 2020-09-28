@@ -10,7 +10,9 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.fasterxml.jackson.databind.annotation.JsonSerialize
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer
 import com.fasterxml.jackson.databind.ser.std.StdSerializer
+import javafx.beans.property.SimpleBooleanProperty
 import org.apache.logging.log4j.LogManager
+import tornadofx.*
 import java.io.IOException
 
 /**
@@ -19,10 +21,25 @@ import java.io.IOException
 @JsonDeserialize(using = BanditMapDeserializer::class)
 @JsonSerialize(using = BanditMapSerializer::class)
 class BanditMap(
-	var kraityn: Boolean,
-	var alira: Boolean,
-	var oak: Boolean
-)
+	kraityn: Boolean,
+	alira: Boolean,
+	oak: Boolean
+) {
+	val kraitynProperty = SimpleBooleanProperty()
+	var kraityn by kraitynProperty
+
+	val aliraProperty = SimpleBooleanProperty()
+	var alira by aliraProperty
+
+	val oakProperty = SimpleBooleanProperty()
+	var oak by oakProperty
+
+	init {
+		this.kraityn = kraityn
+		this.alira = alira
+		this.oak = oak
+	}
+}
 
 private class BanditMapDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<BanditMap?>(vc) {
 	@Throws(IOException::class, JsonProcessingException::class)

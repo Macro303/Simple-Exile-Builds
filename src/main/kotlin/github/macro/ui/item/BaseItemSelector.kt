@@ -4,7 +4,6 @@ import github.macro.Styles
 import github.macro.Util
 import github.macro.core.item.BaseBuildItem
 import github.macro.core.item.BaseItem
-import github.macro.ui.AutoCompleteComboBoxListener
 import javafx.geometry.Pos
 import javafx.scene.layout.Priority
 import javafx.util.StringConverter
@@ -42,16 +41,15 @@ abstract class BaseItemSelector<T : BaseBuildItem, S : BaseItem> : View() {
 		center {
 			vbox(spacing = 5.0, alignment = Pos.CENTER) {
 				paddingAll = 5.0
-				AutoCompleteComboBoxListener(combobox<S>(
+				BaseItemFilterBox(combobox<S>(
 					values = model.items
 				) {
-					isEditable = true
-					promptText = "Select Item"
-					hgrow = Priority.ALWAYS
 					converter = object : StringConverter<S?>() {
 						override fun toString(build: S?): String = build?.getDisplayName() ?: ""
 						override fun fromString(string: String): S? = null
 					}
+					promptText = "Select Item"
+					hgrow = Priority.ALWAYS
 					setOnAction {
 						if (this.selectedItem != null) {
 							model.imageUrl = "file:${model.selectedItem.getImageFile().path}"

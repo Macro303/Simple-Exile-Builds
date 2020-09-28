@@ -1,6 +1,5 @@
 package github.macro.ui
 
-import github.macro.core.item.BaseItem
 import javafx.collections.FXCollections
 import javafx.collections.ObservableList
 import javafx.event.EventHandler
@@ -11,8 +10,7 @@ import javafx.scene.input.KeyEvent
 /**
  * Created by Macro303 on 2020-Sep-28
  */
-class AutoCompleteComboBoxListener<T : BaseItem>(private val comboBox: ComboBox<T>) : EventHandler<KeyEvent> {
-	private val sb: StringBuilder = StringBuilder()
+class FilterBox<T>(private val comboBox: ComboBox<T>) : EventHandler<KeyEvent> {
 	private val data: ObservableList<T> = comboBox.items
 	private var moveCaretToPos = false
 	private var caretPos = 0
@@ -45,7 +43,7 @@ class AutoCompleteComboBoxListener<T : BaseItem>(private val comboBox: ComboBox<
 			return
 		val list: ObservableList<T> = FXCollections.observableArrayList<T>()
 		for (i in data.indices)
-			if (data[i].getDisplayName().contains(comboBox.editor.text, ignoreCase = true))
+			if (data[i].toString().contains(comboBox.editor.text, ignoreCase = true))
 				list.add(data[i])
 		val t = comboBox.editor.text
 		comboBox.items = list
@@ -68,6 +66,6 @@ class AutoCompleteComboBoxListener<T : BaseItem>(private val comboBox: ComboBox<
 	init {
 		this.comboBox.isEditable = true
 		this.comboBox.onKeyPressed = EventHandler<KeyEvent?> { comboBox.hide() }
-		this.comboBox.onKeyReleased = this@AutoCompleteComboBoxListener
+		this.comboBox.onKeyReleased = this@FilterBox
 	}
 }

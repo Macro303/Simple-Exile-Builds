@@ -5,16 +5,20 @@ import github.macro.Util
 import github.macro.Util.cleanName
 import github.macro.core.build_info.Ascendency
 import github.macro.core.build_info.ClassTag
-import github.macro.ui.item.gear.flask.FlaskEditor
-import github.macro.ui.item.gem.GemEditor
+import github.macro.core.build_info.pantheon.MajorPantheon
+import github.macro.core.build_info.pantheon.MinorPantheon
+import github.macro.ui.FilterBox
 import github.macro.ui.item.gear.amulet.AmuletEditor
 import github.macro.ui.item.gear.belt.BeltEditor
 import github.macro.ui.item.gear.body_armour.BodyArmourEditor
 import github.macro.ui.item.gear.boots.BootsEditor
+import github.macro.ui.item.gear.flask.FlaskEditor
 import github.macro.ui.item.gear.gloves.GlovesEditor
 import github.macro.ui.item.gear.helmet.HelmetEditor
 import github.macro.ui.item.gear.ring.RingEditor
 import github.macro.ui.item.gear.weapon.WeaponEditor
+import github.macro.ui.item.gem.GemEditor
+import javafx.collections.FXCollections
 import javafx.geometry.HPos
 import javafx.geometry.Insets
 import javafx.geometry.Pos
@@ -23,6 +27,7 @@ import javafx.scene.control.ScrollPane
 import javafx.scene.control.TabPane
 import javafx.scene.control.TextField
 import javafx.scene.layout.Priority
+import javafx.util.StringConverter
 import org.apache.logging.log4j.LogManager
 import tornadofx.*
 
@@ -335,17 +340,60 @@ class BuildEditor : View("Exile Buddy") {
 						hbarPolicy = ScrollPane.ScrollBarPolicy.NEVER
 						vbox(spacing = 5.0, alignment = Pos.CENTER) {
 							paddingAll = 5.0
+							label(text = "Kill Bandits") {
+								addClass(Styles.subtitle)
+							}
 							hbox(spacing = 5.0, alignment = Pos.CENTER) {
 								paddingAll = 5.0
-								label(text = "Kill Bandits") {
-									addClass(Styles.subtitle)
-								}
-								checkbox(text = "Kraityn", property = model.selectedBuild.bandits.kraityn.toProperty())
-								checkbox(text = "Alira", property = model.selectedBuild.bandits.alira.toProperty())
-								checkbox(text = "Oak", property = model.selectedBuild.bandits.oak.toProperty())
+								checkbox(text = "Kraityn", property = model.selectedBuild.bandits.kraitynProperty)
+								checkbox(text = "Alira", property = model.selectedBuild.bandits.aliraProperty)
+								checkbox(text = "Oak", property = model.selectedBuild.bandits.oakProperty)
+							}
+							label(text = "Ascendency") {
+								addClass(Styles.subtitle)
+							}
+							hbox(spacing = 5.0, alignment = Pos.CENTER) {
+								paddingAll = 5.0
+								FilterBox(
+									combobox(
+										values = FXCollections.observableList(MajorPantheon.values().toList())
+									) {
+										converter = object : StringConverter<MajorPantheon?>() {
+											override fun toString(pantheon: MajorPantheon?): String =
+												pantheon?.cleanName() ?: ""
+
+											override fun fromString(string: String): MajorPantheon? = null
+										}
+										promptText = "Select Major Pantheon"
+										hgrow = Priority.ALWAYS
+										setOnAction {
+											if (this.selectedItem != null)
+												model.selectedBuild.pantheon.major = this.selectedItem
+										}
+									}
+								)
+								separator()
+								FilterBox(
+									combobox(
+										values = FXCollections.observableList(MinorPantheon.values().toList())
+									) {
+										converter = object : StringConverter<MinorPantheon?>() {
+											override fun toString(pantheon: MinorPantheon?): String =
+												pantheon?.cleanName() ?: ""
+
+											override fun fromString(string: String): MinorPantheon? = null
+										}
+										promptText = "Select Minor Pantheon"
+										hgrow = Priority.ALWAYS
+										setOnAction {
+											if (this.selectedItem != null)
+												model.selectedBuild.pantheon.minor = this.selectedItem
+										}
+									}
+								)
 							}
 							label(text = "Other Details")
-							textarea(property = model.selectedBuild.details.toProperty()) {
+							textarea(property = model.selectedBuild.detailsProperty) {
 								isEditable = true
 							}
 						}

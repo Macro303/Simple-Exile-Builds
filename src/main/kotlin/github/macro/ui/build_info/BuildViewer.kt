@@ -291,25 +291,37 @@ class BuildViewer : View("Exile Buddy") {
 						hbarPolicy = ScrollPane.ScrollBarPolicy.NEVER
 						vbox(spacing = 5.0, alignment = Pos.CENTER) {
 							paddingAll = 5.0
+							label(text = "Kill Bandits") {
+								addClass(Styles.subtitle)
+							}
 							hbox(spacing = 5.0, alignment = Pos.CENTER) {
 								paddingAll = 5.0
-								label(text = "Kill Bandits") {
-									addClass(Styles.subtitle)
-								}
-								checkbox(text = "Kraityn", property = model.selectedBuild.bandits.kraityn.toProperty()) {
+								checkbox(text = "Kraityn") {
+									isSelected = model.selectedBuild.bandits.kraityn
 									isDisable = true
 								}
-								checkbox(text = "Alira", property = model.selectedBuild.bandits.alira.toProperty()) {
+								checkbox(text = "Alira") {
+									isSelected = model.selectedBuild.bandits.alira
 									isDisable = true
 								}
-								checkbox(text = "Oak", property = model.selectedBuild.bandits.oak.toProperty()) {
+								checkbox(text = "Oak") {
+									isSelected = model.selectedBuild.bandits.oak
 									isDisable = true
 								}
+							}
+							label(text = "Ascendency") {
+								addClass(Styles.subtitle)
+							}
+							hbox(spacing = 5.0, alignment = Pos.CENTER){
+								paddingAll = 5.0
+								label(model.selectedBuild.pantheon.major?.cleanName() ?: "")
+								separator()
+								label(model.selectedBuild.pantheon.minor?.cleanName() ?: "")
 							}
 							label(text = "Other Details") {
 								addClass(Styles.subtitle)
 							}
-							textarea(property = model.selectedBuild.details.toProperty()) {
+							textarea(model.selectedBuild.details ?: "") {
 								isEditable = false
 							}
 						}

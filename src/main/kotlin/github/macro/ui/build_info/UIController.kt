@@ -77,6 +77,10 @@ class UIController : Controller() {
 				alira = true,
 				oak = true
 			),
+			pantheon = PantheonMap(
+				major = null,
+				minor = null
+			),
 			details = null
 		)
 		LOGGER.info("Creating Build: ${model.selectedBuild.display}")
@@ -93,6 +97,7 @@ class UIController : Controller() {
 			buildGems = model.selectedBuild.buildGems,
 			buildGear = model.selectedBuild.buildGear,
 			bandits = model.selectedBuild.bandits,
+			pantheon = model.selectedBuild.pantheon,
 			details = model.selectedBuild.details
 		)
 		copiedBuild.save()

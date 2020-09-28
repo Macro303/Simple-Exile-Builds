@@ -12,7 +12,9 @@ import com.fasterxml.jackson.databind.deser.std.StdDeserializer
 import com.fasterxml.jackson.databind.ser.std.StdSerializer
 import github.macro.Util
 import github.macro.Util.cleanName
+import javafx.beans.property.SimpleStringProperty
 import org.apache.logging.log4j.LogManager
+import tornadofx.*
 import java.io.File
 import java.io.IOException
 
@@ -29,8 +31,16 @@ class Build(
 	val buildGems: BuildGemMap,
 	val buildGear: BuildGearMap,
 	val bandits: BanditMap,
-	var details: String?
+	val pantheon: PantheonMap,
+	details: String?
 ) {
+	val detailsProperty = SimpleStringProperty()
+	var details by detailsProperty
+
+	init{
+		this.details = details
+	}
+
 	val filename: String
 		get() = "{$version}_${name.replace(" ", "_")}.yaml"
 
@@ -80,6 +90,7 @@ private class BuildDeserializer @JvmOverloads constructor(vc: Class<*>? = null) 
 		val buildGems = Util.YAML_MAPPER.treeToValue(node["Gems"], BuildGemMap::class.java)
 		val buildGear = Util.YAML_MAPPER.treeToValue(node["Gear"], BuildGearMap::class.java)
 		val bandits = Util.YAML_MAPPER.treeToValue(node["Bandits"], BanditMap::class.java)
+		val pantheon = Util.YAML_MAPPER.treeToValue(node["Pantheon"], PantheonMap::class.java)
 		val details = if (node["Details"]?.isNull != false) null else node["Details"]?.asText()
 
 		return Build(
@@ -90,6 +101,7 @@ private class BuildDeserializer @JvmOverloads constructor(vc: Class<*>? = null) 
 			buildGems = buildGems,
 			buildGear = buildGear,
 			bandits = bandits,
+			pantheon = pantheon,
 			details = details
 		)
 	}
@@ -111,6 +123,7 @@ private class BuildSerializer @JvmOverloads constructor(t: Class<Build>? = null)
 		parser.writeObjectField("Gems", value.buildGems)
 		parser.writeObjectField("Gear", value.buildGear)
 		parser.writeObjectField("Bandits", value.bandits)
+		parser.writeObjectField("Pantheon", value.pantheon)
 		parser.writeObjectField("Details", value.details)
 		parser.writeEndObject()
 	}
