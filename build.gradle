@@ -64,6 +64,7 @@ javafx {
 jar {
 	manifest.attributes provider: 'gradle'
 	manifest.attributes 'Main-Class': mainClassName
+	manifest.attributes 'Multi-Release': true
 	from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
 }
 
