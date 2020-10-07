@@ -6,16 +6,16 @@
 [![Contributors](https://img.shields.io/github/contributors/Macro303/Exile-Buddy.svg?style=flat-square)](https://github.com/Macro303/Exile-Buddy/graphs/contributors)
 [![License](https://img.shields.io/github/license/Macro303/Exile-Buddy.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
-Show what Gems to link and update as you progress as well as include how to get them.
+Simplified view of what gems, items and build details to use for your Path of Exile character.
 
 ## Built Using
 - [AdoptOpenJDK: 11](https://adoptopenjdk.net/)
-- [Gradle: 6.5.1](https://gradle.org/)
+- [Gradle: 6.6.1](https://gradle.org/)
 - [kotlin-stdlib-jdk8: 1.4.10](https://kotlinlang.org/)
 - [tornadofx: 2.0.0-SNAPSHOT](https://github.com/edvin/tornadofx)
-- [jackson-databind: 2.11.2](https://github.com/FasterXML/jackson)
-- [jackson-dataformat-yaml: 2.11.2](https://github.com/FasterXML/jackson-dataformats-text)
-- [jackson-datatype-jdk8: 2.11.2](https://github.com/FasterXML/jackson-modules-java8)
+- [jackson-databind: 2.11.3](https://github.com/FasterXML/jackson)
+- [jackson-dataformat-yaml: 2.11.3](https://github.com/FasterXML/jackson-dataformats-text)
+- [jackson-datatype-jdk8: 2.11.3](https://github.com/FasterXML/jackson-modules-java8)
 - [log4j-api: 2.13.3](https://logging.apache.org/log4j/2.x/)
 - [log4j-core: 2.13.3 (Runtime)](https://logging.apache.org/log4j/2.x/)
 
