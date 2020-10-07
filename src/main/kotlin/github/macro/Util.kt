@@ -12,12 +12,7 @@ import github.macro.core.item.Items
 import github.macro.core.item.gear.flask.Flask
 import github.macro.core.item.gear.weapons.Weapon
 import github.macro.core.item.gem.Gem
-import javafx.animation.KeyFrame
-import javafx.animation.Timeline
-import javafx.scene.control.Tooltip
-import javafx.util.Duration
 import org.apache.logging.log4j.LogManager
-import java.lang.reflect.Field
 import javax.imageio.ImageIO
 
 /**

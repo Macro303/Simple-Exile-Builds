@@ -14,6 +14,13 @@
     "type": "Sceptre"
   },
   {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/WandE3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Accumulator Wand",
+    "type": "Wand"
+  },
+  {
     "id": "Metadata/Items/Armours/Shields/ShieldDexInt10",
     "isReleased": true,
     "isUnique": false,
@@ -28,11 +35,25 @@
     "type": "Shield"
   },
   {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/SceptreE3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Alternating Sceptre",
+    "type": "Sceptre"
+  },
+  {
     "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger18",
     "isReleased": true,
     "isUnique": false,
     "name": "Ambusher",
     "type": "Dagger"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSwordE3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Anarchic Spiritblade",
+    "type": "One Hand Sword"
   },
   {
     "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace16",
@@ -70,6 +91,13 @@
     "type": "Thrusting One Hand Sword"
   },
   {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxeE3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Apex Cleaver",
+    "type": "Two Hand Axe"
+  },
+  {
     "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier15",
     "isReleased": true,
     "isUnique": false,
@@ -98,6 +126,13 @@
     "type": "Bow"
   },
   {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/WandE1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Assembler Wand",
+    "type": "Wand"
+  },
+  {
     "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace21",
     "isReleased": true,
     "isUnique": false,
@@ -110,6 +145,13 @@
     "isUnique": false,
     "name": "Awl",
     "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSwordE3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Banishing Blade",
+    "type": "Two Hand Sword"
   },
   {
     "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace10",
@@ -154,6 +196,13 @@
     "type": "Thrusting One Hand Sword"
   },
   {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/StaffE3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Battery Staff",
+    "type": "Staff"
+  },
+  {
     "id": "Metadata/Items/Armours/Shields/ShieldDex10",
     "isReleased": true,
     "isUnique": false,
@@ -189,6 +238,13 @@
     "type": "One Hand Mace"
   },
   {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSwordE2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Blasting Blade",
+    "type": "Two Hand Sword"
+  },
+  {
     "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw5",
     "isReleased": true,
     "isUnique": false,
@@ -210,6 +266,13 @@
     "type": "Quiver"
   },
   {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMaceE1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Blunt Force Condenser",
+    "type": "Two Hand Mace"
+  },
+  {
     "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxe3",
     "isReleased": true,
     "isUnique": false,
@@ -229,6 +292,13 @@
     "isUnique": false,
     "name": "Bone Spirit Shield",
     "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMaceE3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Boom Mace",
+    "type": "One Hand Mace"
   },
   {
     "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger12",
@@ -343,6 +413,20 @@
     "type": "Two Hand Sword"
   },
   {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/WarstaffE1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Capacity Rod",
+    "type": "Warstaff"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSwordE2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Capricious Spiritblade",
+    "type": "One Hand Sword"
+  },
+  {
     "id": "Metadata/Items/Armours/Shields/ShieldStrDex12",
     "isReleased": true,
     "isUnique": false,
@@ -455,6 +539,13 @@
     "type": "Warstaff"
   },
   {
+    "id": "Metadata/Items/Armours/Shields/ShieldDexE3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Cold-attuned Buckler",
+    "type": "Shield"
+  },
+  {
     "id": "Metadata/Items/Armours/Shields/ShieldStr16",
     "isReleased": true,
     "isUnique": false,
@@ -495,6 +586,13 @@
     "isUnique": false,
     "name": "Conductive Quiver",
     "type": "Quiver"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/WandE2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Congregator Wand",
+    "type": "Wand"
   },
   {
     "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/WandAtlas1",
@@ -567,6 +665,13 @@
     "type": "Thrusting One Hand Sword"
   },
   {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMaceE2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Crack Mace",
+    "type": "One Hand Mace"
+  },
+  {
     "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/StaffM1",
     "isReleased": true,
     "isUnique": false,
@@ -600,6 +705,13 @@
     "isUnique": false,
     "name": "Crusader Buckler",
     "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMaceE2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Crushing Force Magnifier",
+    "type": "Two Hand Mace"
   },
   {
     "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre11",
@@ -698,6 +810,13 @@
     "isUnique": false,
     "name": "Despot Axe",
     "type": "Two Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxeE2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Disapprobation Axe",
+    "type": "One Hand Axe"
   },
   {
     "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe5",
@@ -847,6 +966,13 @@
     "type": "Shield"
   },
   {
+    "id": "Metadata/Items/Armours/Shields/ShieldDexE1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Endothermic Buckler",
+    "type": "Shield"
+  },
+  {
     "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword11",
     "isReleased": true,
     "isUnique": false,
@@ -901,6 +1027,27 @@
     "isUnique": false,
     "name": "Eternal Sword",
     "type": "One Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/WarstaffE3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Eventuality Rod",
+    "type": "Warstaff"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldIntE1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Exhausting Spirit Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrE1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Exothermic Tower Shield",
+    "type": "Shield"
   },
   {
     "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSwordM3",
@@ -973,6 +1120,13 @@
     "type": "Wand"
   },
   {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSwordE1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Fickle Spiritblade",
+    "type": "One Hand Sword"
+  },
+  {
     "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger15",
     "isReleased": true,
     "isUnique": false,
@@ -1008,6 +1162,20 @@
     "type": "One Hand Mace"
   },
   {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMaceE1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Flare Mace",
+    "type": "One Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/RuneDaggerE2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Flashfire Blade",
+    "type": "Rune Dagger"
+  },
+  {
     "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger9",
     "isReleased": true,
     "isUnique": false,
@@ -1020,6 +1188,13 @@
     "isUnique": false,
     "name": "Fleshripper",
     "type": "Two Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/RuneDaggerE1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Flickerflame Blade",
+    "type": "Rune Dagger"
   },
   {
     "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword9",
@@ -1041,6 +1216,13 @@
     "isUnique": false,
     "name": "Foul Staff",
     "type": "Warstaff"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/BowE2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Foundry Bow",
+    "type": "Bow"
   },
   {
     "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw8",
@@ -1260,6 +1442,13 @@
     "type": "Two Hand Axe"
   },
   {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrE3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Heat-attuned Tower Shield",
+    "type": "Shield"
+  },
+  {
     "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/WandM2",
     "isReleased": true,
     "isUnique": false,
@@ -1272,6 +1461,13 @@
     "isUnique": false,
     "name": "Heavy Quiver",
     "type": "Quiver"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/BowE1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Hedron Bow",
+    "type": "Bow"
   },
   {
     "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw18",
@@ -1302,6 +1498,20 @@
     "type": "Two Hand Sword"
   },
   {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/DaggerE1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Hollowpoint Dagger",
+    "type": "Dagger"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxeE2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Honed Cleaver",
+    "type": "Two Hand Axe"
+  },
+  {
     "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandSwords/OneHandSwordM1",
     "isReleased": true,
     "isUnique": false,
@@ -1328,6 +1538,13 @@
     "isUnique": false,
     "name": "Imp Dagger",
     "type": "Rune Dagger"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMaceE3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Impact Force Propagator ",
+    "type": "Two Hand Mace"
   },
   {
     "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow21",
@@ -1377,6 +1594,13 @@
     "isUnique": false,
     "name": "Infernal Axe",
     "type": "One Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/RuneDaggerE3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Infernal Blade",
+    "type": "Rune Dagger"
   },
   {
     "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSword19",
@@ -1631,6 +1855,13 @@
     "type": "Warstaff"
   },
   {
+    "id": "Metadata/Items/Armours/Shields/ShieldStrE2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Magmatic Tower Shield",
+    "type": "Shield"
+  },
+  {
     "id": "Metadata/Items/Armours/Shields/ShieldStr9",
     "isReleased": true,
     "isUnique": false,
@@ -1638,11 +1869,25 @@
     "type": "Shield"
   },
   {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/ClawE2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Malign Fangs",
+    "type": "Claw"
+  },
+  {
     "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandMaces/TwoHandMace3",
     "isReleased": true,
     "isUnique": false,
     "name": "Mallet",
     "type": "Two Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxeE1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Maltreatment Axe",
+    "type": "One Hand Axe"
   },
   {
     "id": "Metadata/Items/Armours/Shields/ShieldStrDex6",
@@ -1799,6 +2044,13 @@
     "type": "Two Hand Sword"
   },
   {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/SceptreE1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Oscillating Sceptre",
+    "type": "Sceptre"
+  },
+  {
     "id": "Metadata/Items/Weapons/OneHandWeapons/Wands/WandM1",
     "isReleased": true,
     "isUnique": false,
@@ -1837,7 +2089,7 @@
     "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace20",
     "isReleased": true,
     "isUnique": false,
-    "name": "Pernarch",
+    "name": "Pernach",
     "type": "One Hand Mace"
   },
   {
@@ -1904,11 +2156,25 @@
     "type": "Sceptre"
   },
   {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/DaggerE3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Pneumatic Dagger",
+    "type": "Dagger"
+  },
+  {
     "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/Dagger11",
     "isReleased": true,
     "isUnique": false,
     "name": "Poignard",
     "type": "Dagger"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldDexE2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Polar Buckler",
+    "type": "Shield"
   },
   {
     "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxe4",
@@ -1925,11 +2191,32 @@
     "type": "Shield"
   },
   {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/WarstaffE2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Potentiality Rod",
+    "type": "Warstaff"
+  },
+  {
     "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/Claw13",
     "isReleased": true,
     "isUnique": false,
     "name": "Prehistoric Claw",
     "type": "Claw"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Daggers/DaggerE2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Pressurised Dagger",
+    "type": "Dagger"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandAxes/TwoHandAxeE1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Prime Cleaver",
+    "type": "Two Hand Axe"
   },
   {
     "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandThrustingSwords/Rapier13",
@@ -1972,6 +2259,13 @@
     "isUnique": false,
     "name": "Prophecy Wand",
     "type": "Wand"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandAxes/OneHandAxeE3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Psychotic Axe",
+    "type": "One Hand Axe"
   },
   {
     "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/Staff9",
@@ -2021,6 +2315,20 @@
     "isUnique": false,
     "name": "Reaver Sword",
     "type": "Two Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/TwoHandSwords/TwoHandSwordE1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Rebuking Blade",
+    "type": "Two Hand Sword"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/StaffE2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Reciprocation Staff",
+    "type": "Staff"
   },
   {
     "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/Bow5",
@@ -2233,6 +2541,13 @@
     "type": "Two Hand Axe"
   },
   {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/ClawE1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Shadow Fangs",
+    "type": "Claw"
+  },
+  {
     "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre8",
     "isReleased": true,
     "isUnique": false,
@@ -2322,6 +2637,13 @@
     "isUnique": false,
     "name": "Solar Maul",
     "type": "Two Hand Mace"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Bows/BowE3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Solarine Bow",
+    "type": "Bow"
   },
   {
     "id": "Metadata/Items/Armours/Shields/ShieldDexInt9",
@@ -2429,6 +2751,13 @@
     "type": "Shield"
   },
   {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/SceptreE2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Stabilising Sceptre",
+    "type": "Sceptre"
+  },
+  {
     "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/SceptreM2",
     "isReleased": true,
     "isUnique": false,
@@ -2482,6 +2811,13 @@
     "isReleased": true,
     "isUnique": false,
     "name": "Studded Round Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Armours/Shields/ShieldIntE2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Subsuming Spirit Shield",
     "type": "Shield"
   },
   {
@@ -2646,6 +2982,20 @@
     "type": "Two Hand Mace"
   },
   {
+    "id": "Metadata/Items/Armours/Shields/ShieldIntE3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Transfer-attuned Spirit Shield",
+    "type": "Shield"
+  },
+  {
+    "id": "Metadata/Items/Weapons/TwoHandWeapons/Staves/StaffE1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Transformer Staff",
+    "type": "Staff"
+  },
+  {
     "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/OneHandMace2",
     "isReleased": true,
     "isUnique": false,
@@ -2791,6 +3141,13 @@
     "isUnique": false,
     "name": "Void Axe",
     "type": "Two Hand Axe"
+  },
+  {
+    "id": "Metadata/Items/Weapons/OneHandWeapons/Claws/ClawE3",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Void Fangs",
+    "type": "Claw"
   },
   {
     "id": "Metadata/Items/Weapons/OneHandWeapons/OneHandMaces/Sceptre22",

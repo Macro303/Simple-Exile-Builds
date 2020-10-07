@@ -2,16 +2,16 @@ package github.macro.ui.build_info
 
 import github.macro.Util
 import github.macro.core.build_info.*
-import github.macro.core.item.gem.BuildGem
 import github.macro.core.item.Items
 import github.macro.core.item.gear.amulet.BuildAmulet
-import github.macro.core.item.gear.body_armour.BuildBodyArmour
 import github.macro.core.item.gear.belt.BuildBelt
+import github.macro.core.item.gear.body_armour.BuildBodyArmour
 import github.macro.core.item.gear.boots.BuildBoots
 import github.macro.core.item.gear.flask.BuildFlask
 import github.macro.core.item.gear.gloves.BuildGloves
 import github.macro.core.item.gear.helmets.BuildHelmet
 import github.macro.core.item.gear.weapons.BuildWeapon
+import github.macro.core.item.gem.BuildGem
 import org.apache.logging.log4j.LogManager
 import tornadofx.*
 

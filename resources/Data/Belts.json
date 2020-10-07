@@ -36,6 +36,18 @@
     "name": "Leather Belt"
   },
   {
+    "id": "Metadata/Items/Belts/BeltE2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Mechalarm Belt"
+  },
+  {
+    "id": "Metadata/Items/Belts/BeltE1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Micro-Distillery Belt"
+  },
+  {
     "id": "Metadata/Items/Belts/Belt1",
     "isReleased": true,
     "isUnique": false,

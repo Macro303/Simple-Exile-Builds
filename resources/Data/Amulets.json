@@ -18,6 +18,12 @@
     "name": "Ashscale Talisman"
   },
   {
+    "id": "Metadata/Items/Amulets/AmuletE1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Astrolabe Amulet"
+  },
+  {
     "id": "Metadata/Items/Amulets/Talismans/Talisman2_6_1",
     "isReleased": true,
     "isUnique": false,
@@ -244,6 +250,12 @@
     "isReleased": false,
     "isUnique": false,
     "name": "Ruby Amulet"
+  },
+  {
+    "id": "Metadata/Items/Amulets/AmuletE2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Simplex Amulet"
   },
   {
     "id": "Metadata/Items/Amulets/Talismans/Talisman3_1",

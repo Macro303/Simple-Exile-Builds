@@ -3,11 +3,9 @@ package github.macro.core.item
 import com.fasterxml.jackson.core.type.TypeReference
 import github.macro.Util
 import github.macro.core.Colour
-import github.macro.core.item.acquisition.Acquisition
-import github.macro.core.item.gem.Gem
 import github.macro.core.item.gear.amulet.Amulet
-import github.macro.core.item.gear.body_armour.BodyArmour
 import github.macro.core.item.gear.belt.Belt
+import github.macro.core.item.gear.body_armour.BodyArmour
 import github.macro.core.item.gear.boots.Boots
 import github.macro.core.item.gear.flask.Flask
 import github.macro.core.item.gear.gloves.Gloves
@@ -15,6 +13,7 @@ import github.macro.core.item.gear.helmets.Helmet
 import github.macro.core.item.gear.rings.Ring
 import github.macro.core.item.gear.weapons.Weapon
 import github.macro.core.item.gear.weapons.WeaponType
+import github.macro.core.item.gem.Gem
 import org.apache.logging.log4j.LogManager
 import java.io.File
 import java.io.IOException
@@ -41,8 +40,7 @@ object Items {
 					tags = emptyList(),
 					isVaal = false,
 					isSupport = false,
-					isAwakened = false,
-					acquisition = Acquisition(emptyList(), emptyList())
+					isAwakened = false
 				)
 			)
 		} catch (ioe: IOException) {
@@ -68,8 +66,7 @@ object Items {
 			tags = mutableListOf(),
 			isVaal = false,
 			isSupport = false,
-			isAwakened = false,
-			acquisition = Acquisition(mutableListOf(), mutableListOf())
+			isAwakened = false
 		)
 	}
 
@@ -112,7 +109,7 @@ object Items {
 		)
 	}
 
-	// Armours
+	// Body Armours
 	val BODY_ARMOUR_LIST: List<BodyArmour> by lazy {
 		try {
 			Util.JSON_MAPPER.readValue(
@@ -382,11 +379,7 @@ object Items {
 					id = "None",
 					name = "None",
 					isReleased = false,
-					isUnique = false,
-					acquisition = Acquisition(
-						rewards = emptyList(),
-						crafting = emptyList()
-					)
+					isUnique = false
 				)
 			)
 		} catch (ioe: IOException) {
@@ -408,11 +401,7 @@ object Items {
 			id = "Missing",
 			name = name ?: "Missing",
 			isReleased = false,
-			isUnique = false,
-			acquisition = Acquisition(
-				rewards = emptyList(),
-				crafting = emptyList()
-			)
+			isUnique = false
 		)
 	}
 }

@@ -312,7 +312,7 @@ class BuildViewer : View("Exile Buddy") {
 							label(text = "Ascendency") {
 								addClass(Styles.subtitle)
 							}
-							hbox(spacing = 5.0, alignment = Pos.CENTER){
+							hbox(spacing = 5.0, alignment = Pos.CENTER) {
 								paddingAll = 5.0
 								label(model.selectedBuild.pantheon.major?.cleanName() ?: "")
 								separator()
@@ -338,6 +338,6 @@ class BuildViewer : View("Exile Buddy") {
 	}
 
 	companion object {
-		private val LOGGER = LogManager.getLogger(BuildViewer::class.java)
+		private val LOGGER = LogManager.getLogger()
 	}
 }

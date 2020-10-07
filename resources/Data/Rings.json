@@ -8,7 +8,7 @@
   {
     "id": "Metadata/Items/Rings/BreachRing",
     "isReleased": true,
-    "isUnique": true,
+    "isUnique": false,
     "name": "Breach Ring"
   },
   {
@@ -16,6 +16,12 @@
     "isReleased": true,
     "isUnique": false,
     "name": "Cerulean Ring"
+  },
+  {
+    "id": "Metadata/Items/Rings/RingE1",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Cogwork Ring"
   },
   {
     "id": "Metadata/Items/Rings/Ring2",
@@ -28,6 +34,12 @@
     "isReleased": true,
     "isUnique": false,
     "name": "Diamond Ring"
+  },
+  {
+    "id": "Metadata/Items/Rings/RingE2",
+    "isReleased": true,
+    "isUnique": false,
+    "name": "Geodesic Ring"
   },
   {
     "id": "Metadata/Items/Rings/Ring4",

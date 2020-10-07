@@ -37,7 +37,7 @@ class Build(
 	val detailsProperty = SimpleStringProperty()
 	var details by detailsProperty
 
-	init{
+	init {
 		this.details = details
 	}
 

@@ -6,10 +6,8 @@ import com.fasterxml.jackson.databind.DeserializationContext
 import com.fasterxml.jackson.databind.JsonNode
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer
-import github.macro.Util
-import github.macro.core.item.acquisition.Acquisition
-import github.macro.core.item.BaseItem
 import github.macro.core.Colour
+import github.macro.core.item.BaseItem
 import org.apache.logging.log4j.LogManager
 import java.io.IOException
 
@@ -25,8 +23,7 @@ class Gem(
 	val tags: List<String>,
 	val isVaal: Boolean,
 	val isSupport: Boolean,
-	val isAwakened: Boolean,
-	val acquisition: Acquisition
+	val isAwakened: Boolean
 ) : BaseItem(id = id, name = name, isReleased = isReleased, colour = colour) {
 
 	override fun getDisplayName(): String {
@@ -51,8 +48,6 @@ private class GemDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : 
 		val isSupport = node["isSupport"]?.asBoolean(false) ?: false
 		val isAwakened = node["isAwakened"]?.asBoolean(false) ?: false
 
-		val acquisition = Util.JSON_MAPPER.treeToValue(node["acquisition"], Acquisition::class.java)
-
 		return Gem(
 			id = id,
 			name = name,
@@ -61,8 +56,7 @@ private class GemDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : 
 			tags = tags,
 			isVaal = isVaal,
 			isSupport = isSupport,
-			isAwakened = isAwakened,
-			acquisition = acquisition
+			isAwakened = isAwakened
 		)
 	}
 

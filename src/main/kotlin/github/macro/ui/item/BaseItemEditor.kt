@@ -5,12 +5,9 @@ import github.macro.Util
 import github.macro.core.build_info.Build
 import github.macro.core.item.BaseBuildItem
 import github.macro.core.item.BaseItem
-import github.macro.core.item.gear.BaseBuildGear
-import github.macro.core.Colour
 import javafx.beans.property.SimpleBooleanProperty
 import javafx.beans.property.SimpleObjectProperty
 import javafx.beans.property.SimpleStringProperty
-import javafx.geometry.Insets
 import javafx.geometry.Pos
 import javafx.scene.layout.BorderPane
 import javafx.scene.layout.BorderStrokeStyle

@@ -6,8 +6,6 @@ import com.fasterxml.jackson.databind.DeserializationContext
 import com.fasterxml.jackson.databind.JsonNode
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer
-import github.macro.Util
-import github.macro.core.item.acquisition.Acquisition
 import github.macro.core.item.gear.BaseGear
 import java.io.IOException
 
@@ -19,8 +17,7 @@ class Flask(
 	id: String,
 	name: String,
 	isReleased: Boolean,
-	isUnique: Boolean,
-	val acquisition: Acquisition
+	isUnique: Boolean
 ) : BaseGear(id = id, name = name, isReleased = isReleased, isUnique = isUnique)
 
 private class FlaskDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<Flask?>(vc) {
@@ -34,14 +31,11 @@ private class FlaskDeserializer @JvmOverloads constructor(vc: Class<*>? = null) 
 		val isReleased = node["isReleased"]?.asBoolean(false) ?: false
 		val isUnique = node["isUnique"]?.asBoolean(false) ?: false
 
-		val acquisition = Util.JSON_MAPPER.treeToValue(node["acquisition"], Acquisition::class.java)
-
 		return Flask(
 			id = id,
 			name = name,
 			isReleased = isReleased,
-			isUnique = isUnique,
-			acquisition = acquisition
+			isUnique = isUnique
 		)
 	}
 }

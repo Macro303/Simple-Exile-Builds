@@ -1,805 +1,269 @@
 [
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": []
-    },
     "id": "Metadata/Items/Flasks/FlaskUtility7",
     "isReleased": true,
     "isUnique": false,
     "name": "Amethyst Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": [
-        {
-          "act": 10,
-          "classes": [
-            "Duelist",
-            "Marauder",
-            "Ranger",
-            "Scion",
-            "Shadow",
-            "Templar",
-            "Witch"
-          ],
-          "method": "Quest",
-          "quest": "Safe Passage"
-        }
-      ]
-    },
     "id": "Metadata/Items/Flasks/FlaskUtility11",
     "isReleased": true,
     "isUnique": false,
     "name": "Aquamarine Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": [
-        {
-          "act": 7,
-          "classes": [
-            "Duelist",
-            "Marauder",
-            "Ranger",
-            "Scion",
-            "Shadow",
-            "Templar",
-            "Witch"
-          ],
-          "method": "Quest",
-          "quest": "The Silver Locket"
-        }
-      ]
-    },
     "id": "Metadata/Items/Flasks/FlaskUtility10",
     "isReleased": true,
     "isUnique": false,
     "name": "Basalt Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": []
-    },
     "id": "Metadata/Items/Flasks/FlaskUtility15",
     "isReleased": true,
     "isUnique": false,
     "name": "Bismuth Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": [
-        {
-          "act": 5,
-          "classes": [
-            "Duelist",
-            "Marauder",
-            "Ranger",
-            "Scion",
-            "Shadow",
-            "Templar",
-            "Witch"
-          ],
-          "method": "Quest",
-          "quest": "The Key to Freedom"
-        }
-      ]
-    },
     "id": "Metadata/Items/Flasks/FlaskHybrid4",
     "isReleased": true,
     "isUnique": false,
     "name": "Colossal Hybrid Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": []
-    },
     "id": "Metadata/Items/Flasks/FlaskLife7",
     "isReleased": true,
     "isUnique": false,
     "name": "Colossal Life Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": []
-    },
     "id": "Metadata/Items/Flasks/FlaskMana7",
     "isReleased": true,
     "isUnique": false,
     "name": "Colossal Mana Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": [
-        {
-          "act": 7,
-          "classes": [
-            "Duelist",
-            "Marauder",
-            "Ranger",
-            "Scion",
-            "Shadow",
-            "Templar",
-            "Witch"
-          ],
-          "method": "Quest",
-          "quest": "The Silver Locket"
-        }
-      ]
-    },
     "id": "Metadata/Items/Flasks/FlaskUtility1",
     "isReleased": true,
     "isUnique": false,
     "name": "Diamond Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": [
-        {
-          "act": 10,
-          "classes": [
-            "Duelist",
-            "Marauder",
-            "Ranger",
-            "Scion",
-            "Shadow",
-            "Templar",
-            "Witch"
-          ],
-          "method": "Quest",
-          "quest": "Safe Passage"
-        }
-      ]
-    },
     "id": "Metadata/Items/Flasks/FlaskLife11",
     "isReleased": true,
     "isUnique": false,
     "name": "Divine Life Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": [
-        {
-          "act": 10,
-          "classes": [
-            "Duelist",
-            "Marauder",
-            "Ranger",
-            "Scion",
-            "Shadow",
-            "Templar",
-            "Witch"
-          ],
-          "method": "Quest",
-          "quest": "Safe Passage"
-        }
-      ]
-    },
     "id": "Metadata/Items/Flasks/FlaskMana11",
     "isReleased": true,
     "isUnique": false,
     "name": "Divine Mana Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": []
-    },
     "id": "Metadata/Items/Flasks/FlaskLife12",
     "isReleased": true,
     "isUnique": false,
     "name": "Eternal Life Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": []
-    },
     "id": "Metadata/Items/Flasks/FlaskMana12",
     "isReleased": true,
     "isUnique": false,
     "name": "Eternal Mana Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": []
-    },
     "id": "Metadata/Items/Flasks/FlaskLife6",
     "isReleased": true,
     "isUnique": false,
     "name": "Giant Life Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": []
-    },
     "id": "Metadata/Items/Flasks/FlaskMana6",
     "isReleased": true,
     "isUnique": false,
     "name": "Giant Mana Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": []
-    },
     "id": "Metadata/Items/Flasks/FlaskLife5",
     "isReleased": true,
     "isUnique": false,
     "name": "Grand Life Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": []
-    },
     "id": "Metadata/Items/Flasks/FlaskMana5",
     "isReleased": true,
     "isUnique": false,
     "name": "Grand Mana Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": [
-        {
-          "act": 7,
-          "classes": [
-            "Duelist",
-            "Marauder",
-            "Ranger",
-            "Scion",
-            "Shadow",
-            "Templar",
-            "Witch"
-          ],
-          "method": "Quest",
-          "quest": "The Silver Locket"
-        }
-      ]
-    },
     "id": "Metadata/Items/Flasks/FlaskUtility5",
     "isReleased": true,
     "isUnique": false,
     "name": "Granite Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": [
-        {
-          "act": 2,
-          "classes": [
-            "Duelist",
-            "Marauder",
-            "Ranger",
-            "Scion",
-            "Shadow",
-            "Templar",
-            "Witch"
-          ],
-          "method": "Quest",
-          "quest": "The Great White Beast"
-        }
-      ]
-    },
     "id": "Metadata/Items/Flasks/FlaskLife4",
     "isReleased": true,
     "isUnique": false,
     "name": "Greater Life Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": [
-        {
-          "act": 2,
-          "classes": [
-            "Duelist",
-            "Marauder",
-            "Ranger",
-            "Scion",
-            "Shadow",
-            "Templar",
-            "Witch"
-          ],
-          "method": "Quest",
-          "quest": "The Great White Beast"
-        }
-      ]
-    },
     "id": "Metadata/Items/Flasks/FlaskMana4",
     "isReleased": true,
     "isUnique": false,
     "name": "Greater Mana Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": [
-        {
-          "act": 10,
-          "classes": [
-            "Duelist",
-            "Marauder",
-            "Ranger",
-            "Scion",
-            "Shadow",
-            "Templar",
-            "Witch"
-          ],
-          "method": "Quest",
-          "quest": "Safe Passage"
-        }
-      ]
-    },
     "id": "Metadata/Items/Flasks/FlaskHybrid6",
     "isReleased": true,
     "isUnique": false,
     "name": "Hallowed Hybrid Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": [
-        {
-          "act": 5,
-          "classes": [
-            "Duelist",
-            "Marauder",
-            "Ranger",
-            "Scion",
-            "Shadow",
-            "Templar",
-            "Witch"
-          ],
-          "method": "Quest",
-          "quest": "The Key to Freedom"
-        }
-      ]
-    },
     "id": "Metadata/Items/Flasks/FlaskLife9",
     "isReleased": true,
     "isUnique": false,
     "name": "Hallowed Life Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": [
-        {
-          "act": 5,
-          "classes": [
-            "Duelist",
-            "Marauder",
-            "Ranger",
-            "Scion",
-            "Shadow",
-            "Templar",
-            "Witch"
-          ],
-          "method": "Quest",
-          "quest": "The Key to Freedom"
-        }
-      ]
-    },
     "id": "Metadata/Items/Flasks/FlaskMana9",
     "isReleased": true,
     "isUnique": false,
     "name": "Hallowed Mana Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": [
-        {
-          "act": 7,
-          "classes": [
-            "Duelist",
-            "Marauder",
-            "Ranger",
-            "Scion",
-            "Shadow",
-            "Templar",
-            "Witch"
-          ],
-          "method": "Quest",
-          "quest": "The Silver Locket"
-        }
-      ]
-    },
     "id": "Metadata/Items/Flasks/FlaskUtility9",
     "isReleased": true,
     "isUnique": false,
     "name": "Jade Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": []
-    },
     "id": "Metadata/Items/Flasks/FlaskHybrid3",
     "isReleased": true,
     "isUnique": false,
     "name": "Large Hybrid Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": []
-    },
     "id": "Metadata/Items/Flasks/FlaskLife3",
     "isReleased": true,
     "isUnique": false,
     "name": "Large Life Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": []
-    },
     "id": "Metadata/Items/Flasks/FlaskMana3",
     "isReleased": true,
     "isUnique": false,
     "name": "Large Mana Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": []
-    },
     "id": "Metadata/Items/Flasks/FlaskHybrid2",
     "isReleased": true,
     "isUnique": false,
     "name": "Medium Hybrid Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": [
-        {
-          "act": 1,
-          "classes": [
-            "Duelist",
-            "Marauder",
-            "Ranger",
-            "Scion",
-            "Shadow",
-            "Templar",
-            "Witch"
-          ],
-          "method": "Quest",
-          "quest": "Mercy Mission"
-        }
-      ]
-    },
     "id": "Metadata/Items/Flasks/FlaskLife2",
     "isReleased": true,
     "isUnique": false,
     "name": "Medium Life Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": [
-        {
-          "act": 1,
-          "classes": [
-            "Duelist",
-            "Marauder",
-            "Ranger",
-            "Scion",
-            "Shadow",
-            "Templar",
-            "Witch"
-          ],
-          "method": "Quest",
-          "quest": "Mercy Mission"
-        }
-      ]
-    },
     "id": "Metadata/Items/Flasks/FlaskMana2",
     "isReleased": true,
     "isUnique": false,
     "name": "Medium Mana Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": [
-        {
-          "act": 10,
-          "classes": [
-            "Duelist",
-            "Marauder",
-            "Ranger",
-            "Scion",
-            "Shadow",
-            "Templar",
-            "Witch"
-          ],
-          "method": "Quest",
-          "quest": "Safe Passage"
-        },
-        {
-          "act": 7,
-          "classes": [
-            "Duelist",
-            "Marauder",
-            "Ranger",
-            "Scion",
-            "Shadow",
-            "Templar",
-            "Witch"
-          ],
-          "method": "Quest",
-          "quest": "The Silver Locket"
-        }
-      ]
-    },
     "id": "Metadata/Items/Flasks/FlaskUtility8",
     "isReleased": true,
     "isUnique": false,
     "name": "Quartz Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": [
-        {
-          "act": 1,
-          "classes": [
-            "Duelist",
-            "Marauder",
-            "Ranger",
-            "Scion",
-            "Shadow",
-            "Templar",
-            "Witch"
-          ],
-          "method": "Quest",
-          "quest": "Mercy Mission"
-        },
-        {
-          "act": 2,
-          "classes": [
-            "Duelist",
-            "Marauder",
-            "Ranger",
-            "Scion",
-            "Shadow",
-            "Templar",
-            "Witch"
-          ],
-          "method": "Quest",
-          "quest": "The Great White Beast"
-        },
-        {
-          "act": 5,
-          "classes": [
-            "Duelist",
-            "Marauder",
-            "Ranger",
-            "Scion",
-            "Shadow",
-            "Templar",
-            "Witch"
-          ],
-          "method": "Quest",
-          "quest": "The Key to Freedom"
-        }
-      ]
-    },
     "id": "Metadata/Items/Flasks/FlaskUtility6",
     "isReleased": true,
     "isUnique": false,
     "name": "Quicksilver Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": []
-    },
     "id": "Metadata/Items/Flasks/FlaskUtility2",
     "isReleased": true,
     "isUnique": false,
     "name": "Ruby Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": []
-    },
     "id": "Metadata/Items/Flasks/FlaskHybrid5",
     "isReleased": true,
     "isUnique": false,
     "name": "Sacred Hybrid Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": []
-    },
     "id": "Metadata/Items/Flasks/FlaskLife8",
     "isReleased": true,
     "isUnique": false,
     "name": "Sacred Life Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": []
-    },
     "id": "Metadata/Items/Flasks/FlaskMana8",
     "isReleased": true,
     "isUnique": false,
     "name": "Sacred Mana Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": []
-    },
     "id": "Metadata/Items/Flasks/FlaskLife10",
     "isReleased": true,
     "isUnique": false,
     "name": "Sanctified Life Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": []
-    },
     "id": "Metadata/Items/Flasks/FlaskMana10",
     "isReleased": true,
     "isUnique": false,
     "name": "Sanctified Mana Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": []
-    },
     "id": "Metadata/Items/Flasks/FlaskUtility3",
     "isReleased": true,
     "isUnique": false,
     "name": "Sapphire Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": [
-        {
-          "act": 10,
-          "classes": [
-            "Duelist",
-            "Marauder",
-            "Ranger",
-            "Scion",
-            "Shadow",
-            "Templar",
-            "Witch"
-          ],
-          "method": "Quest",
-          "quest": "Safe Passage"
-        },
-        {
-          "act": 5,
-          "classes": [
-            "Duelist",
-            "Marauder",
-            "Ranger",
-            "Scion",
-            "Shadow",
-            "Templar",
-            "Witch"
-          ],
-          "method": "Quest",
-          "quest": "The Key to Freedom"
-        }
-      ]
-    },
     "id": "Metadata/Items/Flasks/FlaskUtility14",
     "isReleased": true,
     "isUnique": false,
     "name": "Silver Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": []
-    },
     "id": "Metadata/Items/Flasks/FlaskHybrid1",
     "isReleased": true,
     "isUnique": false,
     "name": "Small Hybrid Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": []
-    },
     "id": "Metadata/Items/Flasks/FlaskLife1",
     "isReleased": true,
     "isUnique": false,
     "name": "Small Life Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": []
-    },
     "id": "Metadata/Items/Flasks/FlaskMana1",
     "isReleased": true,
     "isUnique": false,
     "name": "Small Mana Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": [
-        {
-          "act": 5,
-          "classes": [
-            "Duelist",
-            "Marauder",
-            "Ranger",
-            "Scion",
-            "Shadow",
-            "Templar",
-            "Witch"
-          ],
-          "method": "Quest",
-          "quest": "The Key to Freedom"
-        }
-      ]
-    },
     "id": "Metadata/Items/Flasks/FlaskUtility12",
     "isReleased": true,
     "isUnique": false,
     "name": "Stibnite Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": [
-        {
-          "act": 10,
-          "classes": [
-            "Duelist",
-            "Marauder",
-            "Ranger",
-            "Scion",
-            "Shadow",
-            "Templar",
-            "Witch"
-          ],
-          "method": "Quest",
-          "quest": "Safe Passage"
-        }
-      ]
-    },
     "id": "Metadata/Items/Flasks/FlaskUtility13",
     "isReleased": true,
     "isUnique": false,
     "name": "Sulphur Flask"
   },
   {
-    "acquisition": {
-      "crafting": [],
-      "rewards": []
-    },
     "id": "Metadata/Items/Flasks/FlaskUtility4",
     "isReleased": true,
     "isUnique": false,
