@@ -15,8 +15,7 @@ import tornadofx.*
 class FlaskEditor(build: Build, buildGear: BuildFlask, index: Int) : BaseGearEditor<BuildFlask, Flask>(
 	build = build,
 	buildGear = buildGear,
-	index = index,
-	columnCount = 5
+	index = index
 ) {
 	override val selectionModel = ItemSelectionModel(
 		items = Items.FLASK_LIST,

@@ -15,8 +15,7 @@ import tornadofx.*
 class AmuletEditor(build: Build) : BaseGearEditor<BuildAmulet, Amulet>(
 	build = build,
 	buildGear = build.buildGear.amulet,
-	index = 0,
-	columnCount = 1
+	index = 0
 ) {
 	override val selectionModel = ItemSelectionModel(
 		items = Items.AMULET_LIST,

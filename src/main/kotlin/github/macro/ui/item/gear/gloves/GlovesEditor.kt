@@ -15,8 +15,7 @@ import tornadofx.*
 class GlovesEditor(build: Build) : BaseGearEditor<BuildGloves, Gloves>(
 	build = build,
 	buildGear = build.buildGear.gloves,
-	index = 0,
-	columnCount = 1
+	index = 0
 ) {
 	override val selectionModel = ItemSelectionModel(
 		items = Items.GLOVES_LIST,

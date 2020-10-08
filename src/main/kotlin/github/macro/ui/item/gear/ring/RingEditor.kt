@@ -15,8 +15,7 @@ import tornadofx.*
 class RingEditor(build: Build, buildGear: BuildRing, index: Int) : BaseGearEditor<BuildRing, Ring>(
 	build = build,
 	buildGear = buildGear,
-	index = index,
-	columnCount = 2
+	index = index
 ) {
 	override val selectionModel = ItemSelectionModel(
 		items = Items.RING_LIST,

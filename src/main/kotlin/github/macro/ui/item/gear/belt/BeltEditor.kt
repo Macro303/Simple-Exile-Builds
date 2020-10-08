@@ -15,8 +15,7 @@ import tornadofx.*
 class BeltEditor(build: Build) : BaseGearEditor<BuildBelt, Belt>(
 	build = build,
 	buildGear = build.buildGear.belt,
-	index = 0,
-	columnCount = 1
+	index = 0
 ) {
 	override val selectionModel = ItemSelectionModel(
 		items = Items.BELT_LIST,

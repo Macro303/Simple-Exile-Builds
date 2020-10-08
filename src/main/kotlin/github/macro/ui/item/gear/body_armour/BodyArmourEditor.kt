@@ -15,8 +15,7 @@ import tornadofx.*
 class BodyArmourEditor(build: Build) : BaseGearEditor<BuildBodyArmour, BodyArmour>(
 	build = build,
 	buildGear = build.buildGear.bodyArmour,
-	index = 0,
-	columnCount = 1
+	index = 0
 ) {
 	override val selectionModel = ItemSelectionModel(
 		items = Items.BODY_ARMOUR_LIST,

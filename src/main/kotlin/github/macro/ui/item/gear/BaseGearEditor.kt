@@ -19,9 +19,8 @@ import tornadofx.*
 abstract class BaseGearEditor<T : BaseBuildGear, S : BaseGear>(
 	build: Build,
 	buildGear: T,
-	index: Int,
-	columnCount: Int = 5
-) : BaseItemEditor<T, S>(build = build, buildItem = buildGear, index = index, columnCount = columnCount) {
+	index: Int
+) : BaseItemEditor<T, S>(build = build, buildItem = buildGear, index = index, columnCount = 5) {
 
 	override fun initialize() {
 		paddingAll = 5.0

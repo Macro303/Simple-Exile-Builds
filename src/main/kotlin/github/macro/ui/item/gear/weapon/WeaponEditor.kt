@@ -15,8 +15,7 @@ import tornadofx.*
 class WeaponEditor(build: Build, buildGear: BuildWeapon, index: Int) : BaseGearEditor<BuildWeapon, Weapon>(
 	build = build,
 	buildGear = buildGear,
-	index = index,
-	columnCount = 2
+	index = index
 ) {
 	override val selectionModel = ItemSelectionModel(
 		items = Items.WEAPON_LIST,

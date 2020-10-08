@@ -50,6 +50,9 @@ abstract class BaseItemEditor<T : BaseBuildItem, S : BaseItem>(
 	protected abstract val selectionModel: ItemSelectionModel<T, S>
 
 	init {
+		maxWidth = (Util.UI_PREF_WIDTH - (10 * columnCount)) / columnCount
+		prefWidth = (Util.UI_PREF_WIDTH - (20 * columnCount)) / columnCount
+		minWidth = (Util.UI_PREF_WIDTH - (30 * columnCount)) / columnCount
 		assignItem(buildItem)
 		initialize()
 	}

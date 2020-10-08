@@ -15,8 +15,7 @@ import tornadofx.*
 class HelmetEditor(build: Build) : BaseGearEditor<BuildHelmet, Helmet>(
 	build = build,
 	buildGear = build.buildGear.helmet,
-	index = 0,
-	columnCount = 1
+	index = 0
 ) {
 	override val selectionModel = ItemSelectionModel(
 		items = Items.HELMET_LIST,

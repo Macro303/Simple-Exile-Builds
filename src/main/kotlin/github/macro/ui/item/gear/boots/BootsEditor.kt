@@ -15,8 +15,7 @@ import tornadofx.*
 class BootsEditor(build: Build) : BaseGearEditor<BuildBoots, Boots>(
 	build = build,
 	buildGear = build.buildGear.boots,
-	index = 0,
-	columnCount = 1
+	index = 0
 ) {
 	override val selectionModel = ItemSelectionModel(
 		items = Items.BOOTS_LIST,
