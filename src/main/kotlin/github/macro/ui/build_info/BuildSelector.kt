@@ -18,7 +18,7 @@ import tornadofx.*
 /**
  * Created by Macro303 on 2020-Jan-13.
  */
-class BuildSelector : View("Exile Buddy") {
+class BuildSelector : View("Simple Exile Builds") {
 	private val controller by inject<UIController>()
 	private val model by inject<UIModel>()
 
@@ -41,7 +41,7 @@ class BuildSelector : View("Exile Buddy") {
 				}
 				button(text = "\uD83D\uDCA1") {
 					action {
-						hostServices.showDocument("https://github.com/Macro303/Exile-Buddy")
+						hostServices.showDocument("https://github.com/Macro303/Simple-Exile-Builds")
 					}
 				}
 			}
@@ -54,7 +54,7 @@ class BuildSelector : View("Exile Buddy") {
 					fitWidth = 320.0
 					fitHeight = 240.0
 				}
-				label(text = "Exile Buddy") {
+				label(text = "Simple Exile Builds") {
 					addClass(Styles.title)
 				}
 			}

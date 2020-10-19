@@ -16,7 +16,7 @@ import java.util.*
 class Launcher : App(BuildSelector::class, Styles::class) {
 	init {
 		checkLogLevels()
-		LOGGER.info("Welcome to Exile Buddy")
+		LOGGER.info("Welcome to Simple Exile Builds")
 		if (Settings.INSTANCE.useDarkMode) {
 //			importStylesheet(Launcher::class.java.getResource("Modena-Dark.css").toExternalForm())
 			importStylesheet(Launcher::class.java.getResource("Custom-Dark.css").toExternalForm())

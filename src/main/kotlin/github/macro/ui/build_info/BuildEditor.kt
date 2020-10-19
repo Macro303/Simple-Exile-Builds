@@ -34,7 +34,7 @@ import tornadofx.*
 /**
  * Created by Macro303 on 2020-Jan-13.
  */
-class BuildEditor : View("Exile Buddy") {
+class BuildEditor : View("Simple Exile Builds") {
 	private val controller by inject<UIController>()
 	private val model by inject<UIModel>()
 

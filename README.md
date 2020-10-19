@@ -1,10 +1,10 @@
-<img src="./logo.png" align="left" width="160" height="120" alt="Exile Buddy Logo"/>
+<img src="./logo.png" align="left" width="160" height="120" alt="Simple Exile Builds Logo"/>
 
-# Exile Buddy
-[![Version](https://img.shields.io/github/tag-pre/Macro303/Exile-Buddy.svg?label=version&style=flat-square)](https://github.com/Macro303/Exile-Buddy/releases)
-[![Issues](https://img.shields.io/github/issues/Macro303/Exile-Buddy.svg?style=flat-square)](https://github.com/Macro303/Exile-Buddy/issues)
-[![Contributors](https://img.shields.io/github/contributors/Macro303/Exile-Buddy.svg?style=flat-square)](https://github.com/Macro303/Exile-Buddy/graphs/contributors)
-[![License](https://img.shields.io/github/license/Macro303/Exile-Buddy.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+# Simple Exile Builds
+[![Version](https://img.shields.io/github/tag-pre/Macro303/Simple-Exile-Builds.svg?label=version&style=flat-square)](https://github.com/Macro303/Simple-Exile-Builds/releases)
+[![Issues](https://img.shields.io/github/issues/Macro303/Simple-Exile-Builds.svg?style=flat-square)](https://github.com/Macro303/Simple-Exile-Builds/issues)
+[![Contributors](https://img.shields.io/github/contributors/Macro303/Simple-Exile-Builds.svg?style=flat-square)](https://github.com/Macro303/Simple-Exile-Builds/graphs/contributors)
+[![License](https://img.shields.io/github/license/Macro303/Simple-Exile-Builds.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
 Simplified view of what gems, items and build details to use for your Path of Exile character.
 
@@ -25,7 +25,7 @@ Simplified view of what gems, items and build details to use for your Path of Ex
 $ ./gradlew clean run
 ```
 **From Release:**
-1. Run the file `bin/Exile-Buddy.bat`
+1. Run the file `bin/Simple-Exile-Builds.bat`
 
 ## Screenshots
 <details>

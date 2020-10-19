@@ -16,7 +16,7 @@ repositories {
 
 application {
 	mainClassName = "github.macro.LauncherKt"
-	applicationName = "Exile-Buddy"
+	applicationName = "Simple-Exile-Builds"
 }
 
 def loggerVersion = '2.13.3'
@@ -103,7 +103,7 @@ task releaseApplication(type: Zip) {
 
 	from "$buildDir/release"
 	include '**/*'
-	archiveFileName = 'Exile-Buddy.zip'
+	archiveFileName = 'Simple-Exile-Builds.zip'
 	destinationDir(file('release'))
 }
 
@@ -112,7 +112,7 @@ task releaseResources(type: Zip) {
 
 	from "$buildDir/release/bin/resources"
 	include '**/*'
-	archiveFileName = 'Exile-Buddy_resources.zip'
+	archiveFileName = 'Simple-Exile-Builds_resources.zip'
 	destinationDir(file('release'))
 }
 

@@ -5,7 +5,7 @@
 			<PatternLayout disableAnsi="false"
 			               pattern="[%highlight{%d{yyyy-MMM-dd HH:mm:ss:SSS}}{FATAL=Magenta,INFO=WHITE}] [%highlight{%-5level}{FATAL=Magenta,INFO=WHITE}] {%style{%c}{Blue}} - %highlight{%msg%n%throwable}{FATAL=Magenta,INFO=WHITE}"/>
 		</Console>
-		<File name="File" fileName="logs/Exile-Buddy.log">
+		<File name="File" fileName="logs/Simple-Exile-Builds.log">
 			<PatternLayout pattern="[%d{yyyy-MMM-dd HH:mm:ss:SSS}] [%-5level] {%c} - %msg%n%throwable"/>
 		</File>
 	</Appenders>
