@@ -23,7 +23,7 @@ class Ring(
 private class RingDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<Ring?>(vc) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Ring? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Ring {
 		val node: JsonNode = parser.readValueAsTree()
 
 		val id = node["id"].asText()

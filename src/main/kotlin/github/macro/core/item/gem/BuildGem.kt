@@ -28,7 +28,7 @@ class BuildGem(
 private class BuildGemDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<BuildGem?>(vc) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildGem? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildGem {
 		val node: JsonNode = parser.codec.readTree(parser)
 
 		val item = Items.getGemById(node["Item"].asText())

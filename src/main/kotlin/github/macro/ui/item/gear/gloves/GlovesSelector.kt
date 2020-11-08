@@ -13,5 +13,5 @@ class GlovesSelector : BaseItemSelector<BuildGloves, Gloves>() {
 		title = "Gloves Selector"
 	}
 
-	override fun getSelected(): BuildGloves? = BuildGloves(model.selectedItem ?: Items.getGlovesByName(null))
+	override fun getSelected(): BuildGloves = BuildGloves(model.selectedItem ?: Items.getGlovesByName(null))
 }

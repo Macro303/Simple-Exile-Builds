@@ -13,5 +13,5 @@ class HelmetSelector : BaseItemSelector<BuildHelmet, Helmet>() {
 		title = "Helmet Selector"
 	}
 
-	override fun getSelected(): BuildHelmet? = BuildHelmet(model.selectedItem ?: Items.getHelmetByName(null))
+	override fun getSelected(): BuildHelmet = BuildHelmet(model.selectedItem ?: Items.getHelmetByName(null))
 }

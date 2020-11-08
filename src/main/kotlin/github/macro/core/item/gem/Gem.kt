@@ -36,7 +36,7 @@ class Gem(
 private class GemDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<Gem?>(vc) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Gem? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Gem {
 		val node: JsonNode = parser.readValueAsTree()
 
 		val id = node["id"].asText()

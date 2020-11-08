@@ -54,7 +54,7 @@ private class BuildGearMapDeserializer @JvmOverloads constructor(vc: Class<*>? =
 	StdDeserializer<BuildGearMap?>(vc) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildGearMap? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildGearMap {
 		val node: JsonNode = parser.codec.readTree(parser)
 
 		val weapons = node["Weapons"]?.map { Util.YAML_MAPPER.treeToValue(it, BuildWeapon::class.java) }

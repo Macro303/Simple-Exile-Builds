@@ -41,7 +41,7 @@ class PantheonMap(
 private class PantheonMapDeserializer @JvmOverloads constructor(vc: Class<*>? = null) :
 	StdDeserializer<PantheonMap?>(vc) {
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): PantheonMap? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): PantheonMap {
 		val node: JsonNode = parser.codec.readTree(parser)
 
 		val major = MajorPantheon.value(node["Major"]?.asText())

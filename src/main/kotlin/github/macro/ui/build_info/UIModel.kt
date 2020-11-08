@@ -68,6 +68,6 @@ class UIModel : ViewModel() {
 	}
 
 	companion object {
-		val LOGGER = LogManager.getLogger(UIModel::class.java)
+		private val LOGGER = LogManager.getLogger(UIModel::class.java)
 	}
 }

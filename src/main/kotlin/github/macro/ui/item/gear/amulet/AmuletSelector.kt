@@ -13,5 +13,5 @@ class AmuletSelector : BaseItemSelector<BuildAmulet, Amulet>() {
 		title = "Amulet Selector"
 	}
 
-	override fun getSelected(): BuildAmulet? = BuildAmulet(model.selectedItem ?: Items.getAmuletByName(null))
+	override fun getSelected(): BuildAmulet = BuildAmulet(model.selectedItem ?: Items.getAmuletByName(null))
 }

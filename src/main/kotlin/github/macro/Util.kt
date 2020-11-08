@@ -58,8 +58,8 @@ object Util {
 		SHADOW -> listOf("Glass Shank")
 	}.map { Items.getWeaponByName(it) }
 
-	internal fun getStartingFlasks(): List<Flask> =
-		listOf("Small Life Flask", "Small Life Flask", "Small Mana Flask").map { Items.getFlaskByName(it) }
+	internal fun getStartingFlasks(): List<Flask> = listOf("Small Life Flask", "Small Life Flask", "Small Mana Flask")
+		.map { Items.getFlaskByName(it) }
 
 	fun Enum<*>.cleanName(): String = this.name.split("_").joinToString(" ") { it.toLowerCase().capitalize() }
 

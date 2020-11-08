@@ -23,7 +23,7 @@ class Helmet(
 private class HelmetDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<Helmet?>(vc) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Helmet? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Helmet {
 		val node: JsonNode = parser.readValueAsTree()
 
 		val id = node["id"].asText()

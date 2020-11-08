@@ -23,7 +23,7 @@ class Amulet(
 private class AmuletDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<Amulet?>(vc) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Amulet? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Amulet {
 		val node: JsonNode = parser.readValueAsTree()
 
 		val id = node["id"].asText()

@@ -30,7 +30,7 @@ private class BuildRingDeserializer @JvmOverloads constructor(vc: Class<*>? = nu
 	StdDeserializer<BuildRing?>(vc) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildRing? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildRing {
 		val node: JsonNode = parser.codec.readTree(parser)
 
 		val gear = Items.getRingById(node["Gear"]?.asText())

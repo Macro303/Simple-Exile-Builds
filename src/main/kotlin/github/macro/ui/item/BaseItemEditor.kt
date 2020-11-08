@@ -152,7 +152,7 @@ abstract class BaseItemEditor<T : BaseBuildItem, S : BaseItem>(
 					paddingAll = 5.0
 					button("➕") {
 						useMaxWidth = true
-						visibleWhen((nextProperty.or(buildItem.item.name == "Missing")).not())
+						hiddenWhen((nextProperty.or(buildItem.item.name == "Missing")))
 						action {
 							val selected = selectItem()
 							if (selected.item.name != "Missing") {

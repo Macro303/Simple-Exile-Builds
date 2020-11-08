@@ -23,7 +23,7 @@ class Boots(
 private class BootsDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<Boots?>(vc) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Boots? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Boots {
 		val node: JsonNode = parser.readValueAsTree()
 
 		val id = node["id"].asText()

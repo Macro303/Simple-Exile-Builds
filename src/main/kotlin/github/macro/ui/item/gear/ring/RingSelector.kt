@@ -13,5 +13,5 @@ class RingSelector : BaseItemSelector<BuildRing, Ring>() {
 		title = "Ring Selector"
 	}
 
-	override fun getSelected(): BuildRing? = BuildRing(model.selectedItem ?: Items.getRingByName(null))
+	override fun getSelected(): BuildRing = BuildRing(model.selectedItem ?: Items.getRingByName(null))
 }

@@ -43,7 +43,7 @@ class BanditMap(
 
 private class BanditMapDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<BanditMap?>(vc) {
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BanditMap? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BanditMap {
 		val node: JsonNode = parser.codec.readTree(parser)
 
 		val kraityn = node["Kraityn"]?.asBoolean() ?: true

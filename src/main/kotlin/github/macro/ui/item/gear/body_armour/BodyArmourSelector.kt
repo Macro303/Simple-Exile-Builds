@@ -13,7 +13,7 @@ class BodyArmourSelector : BaseItemSelector<BuildBodyArmour, BodyArmour>() {
 		title = "Body Armour Selector"
 	}
 
-	override fun getSelected(): BuildBodyArmour? = BuildBodyArmour(
+	override fun getSelected(): BuildBodyArmour = BuildBodyArmour(
 		model.selectedItem ?: Items.getBodyArmourByName(null)
 	)
 }

@@ -30,7 +30,7 @@ private class BuildAmuletDeserializer @JvmOverloads constructor(vc: Class<*>? = 
 	StdDeserializer<BuildAmulet?>(vc) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildAmulet? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildAmulet {
 		val node: JsonNode = parser.codec.readTree(parser)
 
 		val gear = Items.getAmuletById(node["Gear"]?.asText())

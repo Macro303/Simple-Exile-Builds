@@ -30,7 +30,7 @@ private class BuildGlovesDeserializer @JvmOverloads constructor(vc: Class<*>? = 
 	StdDeserializer<BuildGloves?>(vc) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildGloves? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildGloves {
 		val node: JsonNode = parser.codec.readTree(parser)
 
 		val gear = Items.getGlovesById(node["Gear"]?.asText())

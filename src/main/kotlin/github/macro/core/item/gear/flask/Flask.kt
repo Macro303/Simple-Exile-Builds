@@ -23,7 +23,7 @@ class Flask(
 private class FlaskDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<Flask?>(vc) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Flask? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Flask {
 		val node: JsonNode = parser.readValueAsTree()
 
 		val id = node["id"].asText()

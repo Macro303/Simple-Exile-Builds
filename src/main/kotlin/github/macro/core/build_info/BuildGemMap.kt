@@ -45,7 +45,7 @@ class BuildGemMap(
 private class BuildGemMapDeserializer @JvmOverloads constructor(vc: Class<*>? = null) :
 	StdDeserializer<BuildGemMap?>(vc) {
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildGemMap? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildGemMap {
 		val node: JsonNode = parser.codec.readTree(parser)
 
 		val weapons = node["Weapons"]?.map { Util.YAML_MAPPER.treeToValue(it, BuildGem::class.java) }

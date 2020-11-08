@@ -13,5 +13,5 @@ class BootsSelector : BaseItemSelector<BuildBoots, Boots>() {
 		title = "Boot Selector"
 	}
 
-	override fun getSelected(): BuildBoots? = BuildBoots(model.selectedItem ?: Items.getBootsByName(null))
+	override fun getSelected(): BuildBoots = BuildBoots(model.selectedItem ?: Items.getBootsByName(null))
 }

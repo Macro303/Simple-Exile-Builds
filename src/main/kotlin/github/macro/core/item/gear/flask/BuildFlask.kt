@@ -30,7 +30,7 @@ private class BuildFlaskDeserializer @JvmOverloads constructor(vc: Class<*>? = n
 	StdDeserializer<BuildFlask?>(vc) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildFlask? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildFlask {
 		val node: JsonNode = parser.codec.readTree(parser)
 
 		val gear = Items.getFlaskById(node["Gear"]?.asText())

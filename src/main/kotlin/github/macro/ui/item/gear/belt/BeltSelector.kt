@@ -13,5 +13,5 @@ class BeltSelector : BaseItemSelector<BuildBelt, Belt>() {
 		title = "Belt Selector"
 	}
 
-	override fun getSelected(): BuildBelt? = BuildBelt(model.selectedItem ?: Items.getBeltByName(null))
+	override fun getSelected(): BuildBelt = BuildBelt(model.selectedItem ?: Items.getBeltByName(null))
 }

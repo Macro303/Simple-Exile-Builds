@@ -41,7 +41,7 @@ class FilterBox<T>(private val comboBox: ComboBox<T>) : EventHandler<KeyEvent> {
 		}
 		if (event.code === KeyCode.RIGHT || event.code === KeyCode.LEFT || event.isControlDown || event.code === KeyCode.HOME || event.code === KeyCode.END || event.code === KeyCode.TAB)
 			return
-		val list: ObservableList<T> = FXCollections.observableArrayList<T>()
+		val list: ObservableList<T> = FXCollections.observableArrayList()
 		for (i in data.indices)
 			if (data[i].toString().contains(comboBox.editor.text, ignoreCase = true))
 				list.add(data[i])
@@ -65,7 +65,7 @@ class FilterBox<T>(private val comboBox: ComboBox<T>) : EventHandler<KeyEvent> {
 
 	init {
 		this.comboBox.isEditable = true
-		this.comboBox.onKeyPressed = EventHandler<KeyEvent?> { comboBox.hide() }
+		this.comboBox.onKeyPressed = EventHandler { comboBox.hide() }
 		this.comboBox.onKeyReleased = this@FilterBox
 	}
 }

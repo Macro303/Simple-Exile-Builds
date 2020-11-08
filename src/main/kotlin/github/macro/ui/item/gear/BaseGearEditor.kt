@@ -77,7 +77,7 @@ abstract class BaseGearEditor<T : BaseBuildGear, S : BaseGear>(
 					paddingAll = 5.0
 					button("➕") {
 						useMaxWidth = true
-						visibleWhen((nextProperty.or(buildItem.item.name == "Missing")).not())
+						hiddenWhen((nextProperty.or(buildItem.item.name == "Missing")))
 						action {
 							val selected = selectItem()
 							if (selected.item.name != "Missing") {

@@ -30,7 +30,7 @@ private class BuildHelmetDeserializer @JvmOverloads constructor(vc: Class<*>? = 
 	StdDeserializer<BuildHelmet?>(vc) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildHelmet? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildHelmet {
 		val node: JsonNode = parser.codec.readTree(parser)
 
 		val gear = Items.getHelmetById(node["Gear"]?.asText())

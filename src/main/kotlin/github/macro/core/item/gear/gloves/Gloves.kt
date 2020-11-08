@@ -23,7 +23,7 @@ class Gloves(
 private class GlovesDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<Gloves?>(vc) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Gloves? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Gloves {
 		val node: JsonNode = parser.readValueAsTree()
 
 		val id = node["id"].asText()

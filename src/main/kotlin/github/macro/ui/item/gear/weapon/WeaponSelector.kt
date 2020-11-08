@@ -13,5 +13,5 @@ class WeaponSelector : BaseItemSelector<BuildWeapon, Weapon>() {
 		title = "Weapon Selector"
 	}
 
-	override fun getSelected(): BuildWeapon? = BuildWeapon(model.selectedItem ?: Items.getWeaponByName(null))
+	override fun getSelected(): BuildWeapon = BuildWeapon(model.selectedItem ?: Items.getWeaponByName(null))
 }

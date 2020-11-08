@@ -30,7 +30,7 @@ private class BuildBeltDeserializer @JvmOverloads constructor(vc: Class<*>? = nu
 	StdDeserializer<BuildBelt?>(vc) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildBelt? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildBelt {
 		val node: JsonNode = parser.codec.readTree(parser)
 
 		val gear = Items.getBeltById(node["Gear"].asText())

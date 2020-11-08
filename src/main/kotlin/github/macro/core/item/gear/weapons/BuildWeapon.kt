@@ -30,7 +30,7 @@ private class BuildWeaponDeserializer @JvmOverloads constructor(vc: Class<*>? = 
 	StdDeserializer<BuildWeapon?>(vc) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildWeapon? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext?): BuildWeapon {
 		val node: JsonNode = parser.codec.readTree(parser)
 
 		val gear = Items.getWeaponById(node["Gear"]?.asText())

@@ -23,7 +23,7 @@ class Belt(
 private class BeltDeserializer @JvmOverloads constructor(vc: Class<*>? = null) : StdDeserializer<Belt?>(vc) {
 
 	@Throws(IOException::class, JsonProcessingException::class)
-	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Belt? {
+	override fun deserialize(parser: JsonParser, ctx: DeserializationContext): Belt {
 		val node: JsonNode = parser.readValueAsTree()
 
 		val id = node["id"].asText()

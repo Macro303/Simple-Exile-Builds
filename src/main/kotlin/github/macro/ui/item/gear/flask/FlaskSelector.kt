@@ -13,5 +13,5 @@ class FlaskSelector : BaseItemSelector<BuildFlask, Flask>() {
 		title = "Flask Selector"
 	}
 
-	override fun getSelected(): BuildFlask? = BuildFlask(model.selectedItem ?: Items.getFlaskByName(null))
+	override fun getSelected(): BuildFlask = BuildFlask(model.selectedItem ?: Items.getFlaskByName(null))
 }

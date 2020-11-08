@@ -13,5 +13,5 @@ class GemSelector : BaseItemSelector<BuildGem, Gem>() {
 		title = "Gem Selector"
 	}
 
-	override fun getSelected(): BuildGem? = BuildGem(model.selectedItem ?: Items.getGemByName(null))
+	override fun getSelected(): BuildGem = BuildGem(model.selectedItem ?: Items.getGemByName(null))
 }
