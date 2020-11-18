@@ -18,7 +18,7 @@ import tornadofx.*
 /**
  * Created by Macro303 on 2020-Jan-13.
  */
-class BuildSelector : View("Simple Exile Builds") {
+class BuildSelector : View("Path of Taurewa") {
 	private val controller by inject<UIController>()
 	private val model by inject<UIModel>()
 
@@ -41,7 +41,7 @@ class BuildSelector : View("Simple Exile Builds") {
 				}
 				button(text = "\uD83D\uDCA1") {
 					action {
-						hostServices.showDocument("https://github.com/Macro303/Simple-Exile-Builds")
+						hostServices.showDocument("https://github.com/Macro303/Path-of-Taurewa")
 					}
 				}
 			}
@@ -54,7 +54,7 @@ class BuildSelector : View("Simple Exile Builds") {
 					fitWidth = 320.0
 					fitHeight = 240.0
 				}
-				label(text = "Simple Exile Builds") {
+				label(text = "Path of Taurewa") {
 					addClass(Styles.title)
 				}
 			}

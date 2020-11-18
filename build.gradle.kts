@@ -3,7 +3,7 @@ import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
 plugins {
 	id("application")
 	kotlin("jvm") version "1.4.10"
-	id("com.github.ben-manes.versions") version "0.35.0"
+	id("com.github.ben-manes.versions") version "0.36.0"
 	id("org.openjfx.javafxplugin") version "0.0.9"
 	id("org.beryx.runtime") version "1.11.4"
 	id("com.github.johnrengelman.shadow") version "6.1.0"
@@ -17,17 +17,19 @@ repositories {
 }
 
 dependencies {
-	implementation(Dependencies.kotlin)
-	implementation(Dependencies.tornado)
+	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+	implementation(group = "no.tornado", name = "tornadofx", version = "2.0.0-SNAPSHOT")
 
 	//Jackson
-	implementation(Dependencies.Jackson.core)
-	implementation(Dependencies.Jackson.yaml)
-	implementation(Dependencies.Jackson.jdk8)
+	val jacksonVersion = "2.11.3"
+	implementation(group = "com.fasterxml.jackson.core", name = "jackson-databind", version = jacksonVersion)
+	implementation(group = "com.fasterxml.jackson.dataformat", name = "jackson-dataformat-yaml", version = jacksonVersion)
+	implementation(group = "com.fasterxml.jackson.datatype", name = "jackson-datatype-jdk8", version = jacksonVersion)
 
 	//Log4j
-	implementation(Dependencies.Log4j.api)
-	runtimeOnly(Dependencies.Log4j.core)
+	val logVersion = "2.14.0"
+	implementation(group = "org.apache.logging.log4j", name = "log4j-api", version = logVersion)
+	runtimeOnly(group = "org.apache.logging.log4j", name = "log4j-core", version = logVersion)
 }
 
 javafx {
@@ -35,21 +37,21 @@ javafx {
 	modules = listOf("javafx.controls")
 }
 
-application{
-	mainClassName = "github.macro.LauncherKt"
-	applicationName = "Simple-Exile"
+application {
+	mainClass.set("github.macro.LauncherKt")
+	applicationName = "Path-of-Taurewa"
 }
 
-tasks.jar{
+tasks.jar {
 	manifest {
 		attributes(
-			"Main-Class" to application.mainClassName,
+			"Main-Class" to application.mainClass,
 			"Multi-Release" to true
 		)
 	}
 }
 
-tasks.compileKotlin{
+tasks.compileKotlin {
 	sourceCompatibility = "11"
 	targetCompatibility = "11"
 
@@ -58,47 +60,47 @@ tasks.compileKotlin{
 	kotlinOptions.languageVersion = "1.4"
 }
 
-runtime{
+runtime {
 	addOptions("--strip-debug", "--compress", "2", "--no-header-files", "--no-man-pages")
 }
 
-tasks.clean{
+tasks.clean {
 	file("release").deleteRecursively()
 }
 
-tasks.register<Copy>("copyApplication"){
+tasks.register<Copy>("copyApplication") {
 	dependsOn("runtime")
 
 	from("$buildDir/image")
 	include("**/*")
 	into("$buildDir/release")
 }
-tasks.register<Copy>("copyResources"){
+tasks.register<Copy>("copyResources") {
 	from("resources")
 	exclude("docs")
 	include("**/*")
 	into("$buildDir/release/bin/resources")
 }
 
-tasks.register<Zip>("zipApplication"){
+tasks.register<Zip>("zipApplication") {
 	dependsOn("copyApplication", "copyResources")
 
 	from("$buildDir/release")
 	include("**/*")
-	archiveFileName.set("Simple-Exile.zip")
+	archiveFileName.set("Path-of-Taurewa.zip")
 	destinationDirectory.set(file("release"))
 }
 
-tasks.register<Zip>("zipResources"){
+tasks.register<Zip>("zipResources") {
 	dependsOn("copyResources")
 
 	from("$buildDir/release/bin/resources")
 	include("**/*")
-	archiveFileName.set("Simple-Exile_resources.zip")
+	archiveFileName.set("Path-of-Taurewa_resources.zip")
 	destinationDirectory.set(file("release"))
 }
 
-task("release"){
+task("release") {
 	dependsOn("zipResources", "zipApplication")
 	tasks["zipApplication"].shouldRunAfter("zipResources")
 }

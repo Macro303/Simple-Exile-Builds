@@ -24,7 +24,7 @@ import tornadofx.*
 /**
  * Created by Macro303 on 2020-Jan-13.
  */
-class BuildViewer : View("Simple Exile Builds") {
+class BuildViewer : View("Path of Taurewa") {
 	private val controller by inject<UIController>()
 	private val model by inject<UIModel>()
 
