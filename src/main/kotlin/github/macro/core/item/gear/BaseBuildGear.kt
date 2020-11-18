@@ -22,7 +22,7 @@ class BuildGearSerializer @JvmOverloads constructor(t: Class<BaseBuildGear>? = n
 	@Throws(IOException::class, JsonProcessingException::class)
 	override fun serialize(value: BaseBuildGear, parser: JsonGenerator, provider: SerializerProvider?) {
 		parser.writeStartObject()
-		parser.writeStringField("Gear", value.item.id)
+		parser.writeStringField("Gear", if (value.item.id == "Missing") value.item.name else value.item.id)
 		parser.writeObjectField("Next Gear", value.nextItem)
 		parser.writeStringField("Reason", value.reason)
 		parser.writeObjectField("Preferences", value.preferences)

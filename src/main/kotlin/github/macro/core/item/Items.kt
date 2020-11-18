@@ -45,7 +45,7 @@ object Items {
 			)
 		} catch (ioe: IOException) {
 			LOGGER.warn("Unable to Load Gems: $ioe")
-			mutableListOf<Gem>()
+			mutableListOf()
 		}
 	}
 
@@ -87,7 +87,7 @@ object Items {
 			)
 		} catch (ioe: IOException) {
 			LOGGER.warn("Unable to Load Weapons: $ioe")
-			mutableListOf<Weapon>()
+			mutableListOf()
 		}
 	}
 
@@ -125,7 +125,7 @@ object Items {
 			)
 		} catch (ioe: IOException) {
 			LOGGER.warn("Unable to Load Armour: $ioe")
-			mutableListOf<BodyArmour>()
+			mutableListOf()
 		}
 	}
 
@@ -162,7 +162,7 @@ object Items {
 			)
 		} catch (ioe: IOException) {
 			LOGGER.warn("Unable to Load Helmet: $ioe")
-			mutableListOf<Helmet>()
+			mutableListOf()
 		}
 	}
 
@@ -199,7 +199,7 @@ object Items {
 			)
 		} catch (ioe: IOException) {
 			LOGGER.warn("Unable to Load Gloves: $ioe")
-			mutableListOf<Gloves>()
+			mutableListOf()
 		}
 	}
 
@@ -236,7 +236,7 @@ object Items {
 			)
 		} catch (ioe: IOException) {
 			LOGGER.warn("Unable to Load Boots: $ioe")
-			mutableListOf<Boots>()
+			mutableListOf()
 		}
 	}
 
@@ -273,7 +273,7 @@ object Items {
 			)
 		} catch (ioe: IOException) {
 			LOGGER.warn("Unable to Load Belt: $ioe")
-			mutableListOf<Belt>()
+			mutableListOf()
 		}
 	}
 
@@ -310,7 +310,7 @@ object Items {
 			)
 		} catch (ioe: IOException) {
 			LOGGER.warn("Unable to Load Amulet: $ioe")
-			mutableListOf<Amulet>()
+			mutableListOf()
 		}
 	}
 
@@ -347,7 +347,7 @@ object Items {
 			)
 		} catch (ioe: IOException) {
 			LOGGER.warn("Unable to Load Rings: $ioe")
-			mutableListOf<Ring>()
+			mutableListOf()
 		}
 	}
 
@@ -384,7 +384,7 @@ object Items {
 			)
 		} catch (ioe: IOException) {
 			LOGGER.warn("Unable to Load Flasks: $ioe")
-			mutableListOf<Flask>()
+			mutableListOf()
 		}
 	}
 

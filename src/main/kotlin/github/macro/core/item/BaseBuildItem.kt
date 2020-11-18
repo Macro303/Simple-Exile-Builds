@@ -24,7 +24,7 @@ class BuildItemSerializer @JvmOverloads constructor(t: Class<BaseBuildItem>? = n
 	@Throws(IOException::class, JsonProcessingException::class)
 	override fun serialize(value: BaseBuildItem, parser: JsonGenerator, provider: SerializerProvider?) {
 		parser.writeStartObject()
-		parser.writeStringField("Item", value.item.id)
+		parser.writeStringField("Item", if (value.item.id == "Missing") value.item.name else value.item.id)
 		parser.writeObjectField("Next Item", value.nextItem)
 		parser.writeStringField("Reason", value.reason)
 		parser.writeEndObject()
