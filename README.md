@@ -10,12 +10,12 @@ Simplified view of what gems, items and build details to use for your Path of Ex
 
 ## Built Using
 - [AdoptOpenJDK: 11](https://adoptopenjdk.net/)
-- [Gradle: 6.6.1](https://gradle.org/)
-- [kotlin-stdlib-jdk8: 1.4.10](https://kotlinlang.org/)
+- [Gradle: 6.8](https://gradle.org/)
+- [kotlin-stdlib-jdk8: 1.4.21-2](https://kotlinlang.org/)
 - [tornadofx: 2.0.0-SNAPSHOT](https://github.com/edvin/tornadofx)
-- [jackson-databind: 2.11.3](https://github.com/FasterXML/jackson)
-- [jackson-dataformat-yaml: 2.11.3](https://github.com/FasterXML/jackson-dataformats-text)
-- [jackson-datatype-jdk8: 2.11.3](https://github.com/FasterXML/jackson-modules-java8)
+- [jackson-databind: 2.12.1](https://github.com/FasterXML/jackson)
+- [jackson-dataformat-yaml: 2.12.1](https://github.com/FasterXML/jackson-dataformats-text)
+- [jackson-datatype-jdk8: 2.12.1](https://github.com/FasterXML/jackson-modules-java8)
 - [log4j-api: 2.13.3](https://logging.apache.org/log4j/2.x/)
 - [log4j-core: 2.13.3 (Runtime)](https://logging.apache.org/log4j/2.x/)
 

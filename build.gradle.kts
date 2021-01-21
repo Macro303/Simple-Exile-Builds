@@ -2,10 +2,10 @@ import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
 
 plugins {
 	id("application")
-	kotlin("jvm") version "1.4.10"
+	kotlin("jvm") version "1.4.21-2"
 	id("com.github.ben-manes.versions") version "0.36.0"
 	id("org.openjfx.javafxplugin") version "0.0.9"
-	id("org.beryx.runtime") version "1.11.4"
+	id("org.beryx.runtime") version "1.12.1"
 	id("com.github.johnrengelman.shadow") version "6.1.0"
 }
 
@@ -21,7 +21,7 @@ dependencies {
 	implementation(group = "no.tornado", name = "tornadofx", version = "2.0.0-SNAPSHOT")
 
 	//Jackson
-	val jacksonVersion = "2.11.3"
+	val jacksonVersion = "2.12.1"
 	implementation(group = "com.fasterxml.jackson.core", name = "jackson-databind", version = jacksonVersion)
 	implementation(group = "com.fasterxml.jackson.dataformat", name = "jackson-dataformat-yaml", version = jacksonVersion)
 	implementation(group = "com.fasterxml.jackson.datatype", name = "jackson-datatype-jdk8", version = jacksonVersion)
