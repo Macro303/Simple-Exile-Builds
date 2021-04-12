@@ -5,7 +5,7 @@ plugins {
 	kotlin("jvm") version "1.4.21-2"
 	id("com.github.ben-manes.versions") version "0.36.0"
 	id("org.openjfx.javafxplugin") version "0.0.9"
-	id("org.beryx.runtime") version "1.12.1"
+	id("org.beryx.runtime") version "1.12.4"
 	id("com.github.johnrengelman.shadow") version "6.1.0"
 }
 
