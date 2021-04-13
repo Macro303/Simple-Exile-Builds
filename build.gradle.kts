@@ -19,15 +19,9 @@ repositories {
 
 dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-	implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.1.0")
+	implementation(group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version = "1.1.0")
+	implementation(group = "com.charleskorn.kaml", name = "kaml", version = "0.30.0")
 	implementation(group = "no.tornado", name = "tornadofx", version = "2.0.0-SNAPSHOT")
-	implementation("com.charleskorn.kaml:kaml:0.30.0")
-
-	//Jackson
-//	val jacksonVersion = "2.12.1"
-//	implementation(group = "com.fasterxml.jackson.core", name = "jackson-databind", version = jacksonVersion)
-//	implementation(group = "com.fasterxml.jackson.dataformat", name = "jackson-dataformat-yaml", version = jacksonVersion)
-//	implementation(group = "com.fasterxml.jackson.datatype", name = "jackson-datatype-jdk8", version = jacksonVersion)
 
 	//Log4j
 	val logVersion = "2.14.1"

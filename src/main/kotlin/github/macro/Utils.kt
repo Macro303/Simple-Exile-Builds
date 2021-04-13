@@ -5,7 +5,7 @@ import github.macro.core.ClassTag.*
 import github.macro.core.Colour
 import github.macro.core.Gem
 import org.apache.logging.log4j.LogManager
-import java.io.File
+import java.io.InputStream
 import javax.imageio.ImageIO
 
 /**
@@ -16,20 +16,6 @@ object Utils {
     internal const val UI_PREF_WIDTH = 1000.0
     internal const val UI_PREF_HEIGHT = 900.0
     internal const val IMG_SIZE = 59.0
-    /*internal val JSON_MAPPER: ObjectMapper by lazy {
-        val mapper = ObjectMapper()
-        mapper.enable(SerializationFeature.INDENT_OUTPUT)
-        mapper.findAndRegisterModules()
-        mapper.registerModule(Jdk8Module())
-        mapper
-    }
-    internal val YAML_MAPPER: ObjectMapper by lazy {
-        val mapper = ObjectMapper(YAMLFactory().disable(YAMLGenerator.Feature.WRITE_DOC_START_MARKER))
-        mapper.enable(SerializationFeature.INDENT_OUTPUT)
-        mapper.findAndRegisterModules()
-        mapper.registerModule(Jdk8Module())
-        mapper
-    }*/
 
     internal fun getStartingGems(classTag: ClassTag): List<Gem> = when (classTag) {
         SCION -> listOf("Spectral Throw", "Onslaught Support")
@@ -46,7 +32,7 @@ object Utils {
     fun getImageWidth(item: Gem): Double = ImageIO.read(item.getImageFile()).width.toDouble()
     fun getImageHeight(item: Gem): Double = ImageIO.read(item.getImageFile()).height.toDouble()
 
-    fun slugify(value: String): String{
+    fun slugify(value: String): String {
         val regex = "[\\/:*?\"<>|.]+".toRegex()
         val temp = regex.replace(value, "")
         return temp.replace("-", " ").split(" ").joinToString("-") { it.trim().capitalize() }
@@ -60,4 +46,7 @@ object Utils {
         isSupport = false,
         isAwakened = false
     )
+
+    fun getResource(location: String): String = Launcher::class.java.getResource(location)!!.toExternalForm()
+    fun getResourceStream(location: String): InputStream = Launcher::class.java.getResource(location)!!.openStream()
 }

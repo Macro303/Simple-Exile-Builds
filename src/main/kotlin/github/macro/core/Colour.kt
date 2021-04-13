@@ -1,22 +1,37 @@
 package github.macro.core
 
-import github.macro.settings.Settings
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
 
 /**
  * Created by Macro303 on 2020-Jan-17.
  */
+@Serializable
 enum class Colour(val hex: String) {
-	RED("#C44C4C"),
-	GREEN("#4CC44C"),
-	BLUE("#4C4CC4"),
-	WHITE(if (Settings.INSTANCE.useDarkMode) "#C4C4C4" else "#4C4C4C"),
-	YELLOW(if (Settings.INSTANCE.useDarkMode) "#FFD800" else "#BF9F00"),
-	ORANGE(if (Settings.INSTANCE.useDarkMode) "#FF6A00" else "#BF4C00"),
-	ERROR(if (Settings.INSTANCE.useDarkMode) "#4C4C4C" else "#C4C4C4");
+    @SerialName("Red")
+    RED("#C44C4C"),
 
-	companion object {
-		fun fromName(name: String?): Colour = values().firstOrNull {
-			it.name.replace("_", " ").equals(name, ignoreCase = true)
-		} ?: ERROR
-	}
+    @SerialName("Green")
+    GREEN("#4CC44C"),
+
+    @SerialName("Blue")
+    BLUE("#4C4CC4"),
+
+    @SerialName("White")
+    WHITE("#C4C4C4"),
+
+    @SerialName("Yellow")
+    YELLOW("#FFD800"),
+
+    @SerialName("Orange")
+    ORANGE("#FF6A00"),
+
+    @SerialName("Error")
+    ERROR("#4C4C4C");
+
+    companion object {
+        fun fromName(name: String?): Colour = values().firstOrNull {
+            it.name.replace("_", " ").equals(name, ignoreCase = true)
+        } ?: ERROR
+    }
 }

@@ -1,6 +1,5 @@
 .root {
-	/*-fx-accent: #1a6ee4;*/
-	-fx-accent: #4682B4;
+	-fx-accent: #1A6EE4;
 	-fx-focus-color: -fx-accent;
 	-fx-base: #111;
 	-fx-control-inner-background: derive(-fx-base, 50%);

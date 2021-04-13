@@ -1,18 +1,22 @@
-package github.macro.ui
+package github.macro.ui.main
 
 import github.macro.Launcher
 import github.macro.Styles
 import github.macro.Utils.cleanName
 import github.macro.core.Ascendency
 import github.macro.core.BuildInfo
+import github.macro.core.BuildStage
 import github.macro.core.ClassTag
 import github.macro.core.pantheon.MajorPantheon
 import github.macro.core.pantheon.MinorPantheon
+import github.macro.ui.build_viewer.BuildViewerModel
+import github.macro.ui.build_viewer.BuildViewerView
+import github.macro.ui.config.ConfigView
 import javafx.geometry.Pos
 import javafx.scene.control.ComboBox
-import javafx.scene.control.ListCell
 import javafx.scene.control.TextField
 import javafx.scene.layout.Priority
+import javafx.util.Duration
 import javafx.util.StringConverter
 import org.apache.logging.log4j.LogManager
 import tornadofx.*
@@ -21,6 +25,8 @@ import tornadofx.*
  * Created by Macro303 on 2020-Jan-13.
  */
 class MainView : View("Path of Taurewa") {
+    private val model by inject<MainModel>()
+
     private var versionTextField: TextField by singleAssign()
     private var nameTextField: TextField by singleAssign()
     private var classComboBox: ComboBox<ClassTag> by singleAssign()
@@ -35,13 +41,20 @@ class MainView : View("Path of Taurewa") {
             hbox(spacing = 5.0, alignment = Pos.TOP_RIGHT) {
                 button(text = "⚙") {
                     action {
-//						find<Settings>().openModal(block = true, resizable = false)
-                        LOGGER.info("Opening Settings")
+                        find<ConfigView>().openModal(block = true, resizable = false)
+                    }
+                    tooltip("Config") {
+                        showDelay = Duration(0.0)
+                        hideDelay = Duration(0.0)
                     }
                 }
                 button(text = "\uD83D\uDCA1") {
                     action {
                         hostServices.showDocument("https://github.com/Macro303/Path-of-Taurewa")
+                    }
+                    tooltip("Support") {
+                        showDelay = Duration(0.0)
+                        hideDelay = Duration(0.0)
                     }
                 }
             }
@@ -66,7 +79,7 @@ class MainView : View("Path of Taurewa") {
                 separator()
                 hbox(spacing = 5.0, alignment = Pos.CENTER) {
                     paddingAll = 5.0
-                    val buildCombobox = combobox<BuildInfo> {
+                    val buildCombobox = combobox<BuildInfo>(values = model.buildsProperty) {
                         promptText = "Build"
                         hgrow = Priority.ALWAYS
                         converter = object : StringConverter<BuildInfo?>() {
@@ -74,11 +87,13 @@ class MainView : View("Path of Taurewa") {
                             override fun fromString(string: String): BuildInfo? = null
                         }
                     }
-                    buildCombobox.converter
                     button(text = "Select") {
                         addClass(Styles.sizedButton)
                         action {
-//							controller.viewBuild(oldView = this@MainView)
+                            val scope = Scope()
+                            setInScope(BuildViewerModel(buildCombobox.selectedItem!!), scope)
+                            find<BuildViewerView>(scope).openWindow(owner = null, resizable = false)
+                            close()
                             LOGGER.info("Selecting Build")
                         }
                         disableWhen {
@@ -131,15 +146,24 @@ class MainView : View("Path of Taurewa") {
                                         name = nameTextField.text,
                                         classTag = classComboBox.selectedItem ?: ClassTag.SCION,
                                         ascendency = ascendencyComboBox.selectedItem ?: Ascendency.ASCENDANT,
-                                        buildStages = emptyList(),
-                                        bandits = emptyList(),
+                                        buildStages = mutableListOf(
+                                            BuildStage(
+                                                name = "Act I",
+                                                weapons = listOf("Burning Arrow", "Pierce Support"),
+                                                helmet = mutableListOf(),
+                                                bodyArmour = mutableListOf(),
+                                                gloves = mutableListOf(),
+                                                boots = mutableListOf()
+                                            )
+                                        ),
+                                        bandits = mutableListOf(),
                                         major = MajorPantheon.ARAKAALI,
                                         minor = MinorPantheon.ABBERATH
                                     )
                                     build.save()
                                     val scope = Scope()
-                                    setInScope(BuildModel(build), scope)
-                                    find<ViewBuildView>(scope).openWindow(owner = null, resizable = false)
+                                    setInScope(BuildViewerModel(build), scope)
+                                    find<BuildViewerView>(scope).openWindow(owner = null, resizable = false)
                                     close()
                                 }
                                 disableWhen {
