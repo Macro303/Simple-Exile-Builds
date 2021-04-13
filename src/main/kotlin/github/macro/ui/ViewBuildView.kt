@@ -16,7 +16,7 @@ class ViewBuildView : View("Path of Taurewa") {
         prefHeight = 900.0
         paddingAll = 10.0
         top {
-            hbox(spacing = 5.0, alignment = Pos.TOP_CENTER){
+            hbox(spacing = 5.0, alignment = Pos.CENTER_LEFT) {
                 imageview(Launcher::class.java.getResource("logo.png")!!.toExternalForm(), lazyload = true) {
                     fitWidth = 100.0
                     fitHeight = 100.0
@@ -24,11 +24,13 @@ class ViewBuildView : View("Path of Taurewa") {
                 label(text = "Path of Taurewa") {
                     addClass(Styles.title)
                 }
-                spacer {  }
-                label(model.titleProperty){
+                spacer { }
+                spacer { }
+                label(model.titleProperty) {
                     addClass(Styles.title)
                 }
-                button("Exit"){
+                spacer { }
+                button("Exit") {
                     addClass(Styles.sizedButton)
                 }
             }
@@ -44,6 +46,13 @@ class ViewBuildView : View("Path of Taurewa") {
         }
         bottom {
 
+        }
+    }
+
+    override fun onDock() {
+        currentWindow?.setOnCloseRequest {
+            find<MainView>().openWindow(owner = null, resizable = false)
+            close()
         }
     }
 }

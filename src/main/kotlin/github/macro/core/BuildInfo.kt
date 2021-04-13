@@ -36,6 +36,7 @@ data class BuildInfo(
     fun save() {
         try {
             val buildFile = File("Builds", filename)
+            buildFile.parentFile.mkdirs()
             buildFile.writeText(Yaml.default.encodeToString(this))
         } catch (ioe: IOException) {
             LOGGER.error("Unable to save build: $ioe")

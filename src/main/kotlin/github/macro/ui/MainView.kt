@@ -137,7 +137,10 @@ class MainView : View("Path of Taurewa") {
                                         minor = MinorPantheon.ABBERATH
                                     )
                                     build.save()
-                                    val scope = Scope(BuildModel(build))
+                                    val scope = Scope()
+                                    setInScope(BuildModel(build), scope)
+                                    find<ViewBuildView>(scope).openWindow(owner = null, resizable = false)
+                                    close()
                                 }
                                 disableWhen {
                                     versionTextField.textProperty().isEmpty
