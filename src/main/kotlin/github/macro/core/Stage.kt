@@ -8,7 +8,7 @@ import kotlinx.serialization.Serializable
  * Created by Macro303 on 2021-Apr-12.
  */
 @Serializable
-data class BuildStage(
+data class Stage(
     @SerialName("Name")
     val name: String,
     @SerialName("Weapon/s")

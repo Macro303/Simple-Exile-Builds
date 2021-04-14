@@ -5,7 +5,6 @@ import github.macro.Utils
 import github.macro.Utils.cleanName
 import github.macro.core.pantheon.MajorPantheon
 import github.macro.core.pantheon.MinorPantheon
-import kotlinx.serialization.SerialInfo
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.encodeToString
@@ -21,28 +20,28 @@ data class BuildInfo(
     @SerialName("Version")
     var version: String,
     @SerialName("Name")
-    var name: String,
+    var title: String,
     @SerialName("Class")
     var classTag: ClassTag,
     @SerialName("Ascendency")
     var ascendency: Ascendency,
     @SerialName("Stages")
-    val buildStages: List<BuildStage>,
+    var stageList: List<Stage>,
     @SerialName("Bandits")
-    val bandits: List<Bandit>,
+    var banditList: List<Bandit>,
     @SerialName("Major Pantheon")
-    val major: MajorPantheon,
+    var majorPantheon: MajorPantheon,
     @SerialName("Minor Pantheon")
-    val minor: MinorPantheon,
+    var minorPantheon: MinorPantheon,
     @SerialName("Details")
-    val details: String? = null
+    var details: String? = null
 ) {
 
     val filename: String
-        get() = "{$version}${Utils.slugify(name)}.yaml"
+        get() = "{$version}${Utils.slugify(title)}.yaml"
 
     val display: String
-        get() = "{$version} $name [${classTag.cleanName()}/${ascendency.cleanName()}]"
+        get() = "{$version} $title [${classTag.cleanName()}/${ascendency.cleanName()}]"
 
     fun save() {
         try {

@@ -34,6 +34,6 @@ class MainModel : ViewModel() {
                 Yaml.default.decodeFromString<BuildInfo>(br.readText())
             }
         }
-        builds.sortWith(compareBy(BuildInfo::version, BuildInfo::name))
+        builds.sortWith(compareBy(BuildInfo::version, BuildInfo::title))
     }
 }

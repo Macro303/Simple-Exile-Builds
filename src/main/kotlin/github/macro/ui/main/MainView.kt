@@ -3,10 +3,7 @@ package github.macro.ui.main
 import github.macro.Launcher
 import github.macro.Styles
 import github.macro.Utils.cleanName
-import github.macro.core.Ascendency
-import github.macro.core.BuildInfo
-import github.macro.core.BuildStage
-import github.macro.core.ClassTag
+import github.macro.core.*
 import github.macro.core.pantheon.MajorPantheon
 import github.macro.core.pantheon.MinorPantheon
 import github.macro.ui.build_viewer.BuildViewerModel
@@ -143,11 +140,11 @@ class MainView : View("Path of Taurewa") {
                                 action {
                                     val build = BuildInfo(
                                         version = versionTextField.text,
-                                        name = nameTextField.text,
+                                        title = nameTextField.text,
                                         classTag = classComboBox.selectedItem ?: ClassTag.SCION,
                                         ascendency = ascendencyComboBox.selectedItem ?: Ascendency.ASCENDANT,
-                                        buildStages = mutableListOf(
-                                            BuildStage(
+                                        stageList = mutableListOf(
+                                            Stage(
                                                 name = "Act I",
                                                 weapons = listOf("Burning Arrow", "Pierce Support"),
                                                 helmet = mutableListOf(),
@@ -156,9 +153,9 @@ class MainView : View("Path of Taurewa") {
                                                 boots = mutableListOf()
                                             )
                                         ),
-                                        bandits = mutableListOf(),
-                                        major = MajorPantheon.ARAKAALI,
-                                        minor = MinorPantheon.ABBERATH
+                                        banditList = mutableListOf(),
+                                        majorPantheon = MajorPantheon.ARAKAALI,
+                                        minorPantheon = MinorPantheon.ABBERATH
                                     )
                                     build.save()
                                     val scope = Scope()
