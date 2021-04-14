@@ -6,6 +6,7 @@ import github.macro.Utils.cleanName
 import github.macro.core.Ascendency
 import github.macro.core.Bandit
 import github.macro.core.ClassTag
+import github.macro.core.Stage
 import github.macro.ui.build_viewer.BuildViewerModel
 import github.macro.ui.build_viewer.BuildViewerView
 import github.macro.ui.main.MainView
@@ -50,24 +51,20 @@ class BuildEditorView : View("Path of Taurewa") {
                 vbox(spacing = 5.0, alignment = Pos.CENTER) {
                     paddingAll = 5.0
                     textfield(model.titleProperty) {
-                        addClass(Styles.title)
+                        addClass(Styles.subtitle)
                     }
                     hbox(spacing = 5.0, alignment = Pos.CENTER) {
                         paddingAll = 5.0
                         spacer { }
-                        textfield(model.versionProperty) {
-                            addClass(Styles.subtitle)
-                        }
+                        textfield(model.versionProperty)
                         separator()
                         classComboBox = combobox(model.classProperty, values = ClassTag.values().toList()) {
-                            addClass(Styles.subtitle)
                             cellFormat {
                                 text = it.cleanName()
                             }
                         }
                         separator()
-                        ascendencyComboBox = combobox(model.ascendencyProperty) {
-                            addClass(Styles.subtitle)
+                        ascendencyComboBox = combobox(model.ascendencyProperty, values = model.classTag.ascendencies.toList()) {
                             cellFormat {
                                 text = it.cleanName()
                             }
@@ -76,6 +73,24 @@ class BuildEditorView : View("Path of Taurewa") {
                             ascendencyComboBox.items = (classComboBox.selectedItem?.ascendencies?.toList()
                                 ?: emptyList()).asObservable()
                             ascendencyComboBox.selectionModel.select(0)
+                        }
+                        spacer { }
+                        button(text = "Add Stage") {
+                            addClass(Styles.sizedButton)
+                            action {
+                                model.stageList.add(Stage(
+                                    name = "New Stage",
+                                    weapons = emptyList(),
+                                    helmet = emptyList(),
+                                    bodyArmour = emptyList(),
+                                    gloves = emptyList(),
+                                    boots = emptyList(),
+                                ))
+                                val scope = Scope()
+                                setInScope(BuildEditorModel(model.saveBuild()), scope)
+                                find<BuildEditorView>(scope).openWindow(owner = null, resizable = false)
+                                close()
+                            }
                         }
                         spacer { }
                         button(text = "Save") {

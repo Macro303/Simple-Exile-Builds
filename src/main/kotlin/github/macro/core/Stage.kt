@@ -10,17 +10,17 @@ import kotlinx.serialization.Serializable
 @Serializable
 data class Stage(
     @SerialName("Name")
-    val name: String,
+    var name: String,
     @SerialName("Weapon/s")
-    val weapons: List<String>,
+    var weapons: List<String>,
     @SerialName("Helmet")
-    val helmet: List<String>,
+    var helmet: List<String>,
     @SerialName("Body Armour")
-    val bodyArmour: List<String>,
+    var bodyArmour: List<String>,
     @SerialName("Gloves")
-    val gloves: List<String>,
+    var gloves: List<String>,
     @SerialName("Boots")
-    val boots: List<String>
+    var boots: List<String>
 ) {
     val weaponList: List<Gem>
         get() = weapons.map { Gem.fromId(it) ?: Gem.fromName(it) ?: Utils.getMissingGem(it) }.plus(TEMP).take(6)
@@ -32,6 +32,14 @@ data class Stage(
         get() = gloves.map { Gem.fromId(it) ?: Gem.fromName(it) ?: Utils.getMissingGem(it) }.plus(TEMP).take(4)
     val bootsList: List<Gem>
         get() = boots.map { Gem.fromId(it) ?: Gem.fromName(it) ?: Utils.getMissingGem(it) }.plus(TEMP).take(4)
+
+    init {
+        this.weapons = weapons.take(6)
+        this.helmet = helmet.take(4)
+        this.bodyArmour = bodyArmour.take(6)
+        this.gloves = gloves.take(4)
+        this.boots = boots.take(4)
+    }
 
     companion object {
         private val TEMP = listOf(

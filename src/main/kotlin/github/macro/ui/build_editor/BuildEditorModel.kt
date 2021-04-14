@@ -42,6 +42,8 @@ class BuildEditorModel(private var build: BuildInfo) : ViewModel() {
     }
 
     fun saveBuild(): BuildInfo {
+        build.delete()
+
         build.version = version
         build.title = title
         build.classTag = classTag

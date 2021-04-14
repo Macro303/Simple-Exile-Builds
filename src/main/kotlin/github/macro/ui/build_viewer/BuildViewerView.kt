@@ -4,6 +4,8 @@ import github.macro.Styles
 import github.macro.Utils
 import github.macro.Utils.cleanName
 import github.macro.core.Bandit
+import github.macro.ui.build_editor.BuildEditorModel
+import github.macro.ui.build_editor.BuildEditorView
 import github.macro.ui.main.MainView
 import javafx.geometry.HPos
 import javafx.geometry.Insets
@@ -63,23 +65,27 @@ class BuildViewerView : View("Path of Taurewa") {
                             addClass(Styles.sizedButton)
                             action {
                                 val scope = Scope()
-                                setInScope(BuildViewerModel(model.copyBuild()), scope)
+                                setInScope(
+                                    BuildViewerModel(model.build.copy(title = model.build.title + " Copy")),
+                                    scope
+                                )
                                 find<BuildViewerView>(scope).openWindow(owner = null, resizable = false)
                                 close()
-                                LOGGER.info("Copying the build")
                             }
                         }
                         button(text = "Edit") {
                             addClass(Styles.sizedButton)
                             action {
-//                            controller.editBuild(oldView = this@BuildViewer)
-                                LOGGER.info("Editing the build")
+                                val scope = Scope()
+                                setInScope(BuildEditorModel(model.build), scope)
+                                find<BuildEditorView>(scope).openWindow(owner = null, resizable = false)
+                                close()
                             }
                         }
                         button(text = "Delete") {
                             addClass(Styles.sizedButton)
                             action {
-                                model.deleteBuild()
+                                model.build.delete()
                                 find<MainView>().openWindow(owner = null, resizable = false)
                                 close()
                             }
@@ -482,13 +488,13 @@ class BuildViewerView : View("Path of Taurewa") {
                         vbox(spacing = 5.0, alignment = Pos.CENTER) {
                             paddingAll = 5.0
                             //region Bandits
-                            label(text = "Kill Bandits"){
+                            label(text = "Kill Bandits") {
                                 addClass(Styles.subtitle)
                             }
-                            hbox(spacing = 5.0, alignment = Pos.CENTER){
+                            hbox(spacing = 5.0, alignment = Pos.CENTER) {
                                 paddingAll = 5.0
                                 Bandit.values().forEach {
-                                    checkbox(text = it.cleanName()){
+                                    checkbox(text = it.cleanName()) {
                                         isSelected = model.banditList.contains(it)
                                         isDisable = true
                                     }

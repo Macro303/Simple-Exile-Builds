@@ -15,7 +15,7 @@ import tornadofx.setValue
 /**
  * Created by Macro303 on 2021-Apr-13.
  */
-class BuildViewerModel(private val build: BuildInfo) : ViewModel() {
+class BuildViewerModel(val build: BuildInfo) : ViewModel() {
     val titleProperty = SimpleStringProperty(build.title)
     var title by titleProperty
     val versionProperty = SimpleStringProperty(build.version)
@@ -39,8 +39,4 @@ class BuildViewerModel(private val build: BuildInfo) : ViewModel() {
         stageList = FXCollections.observableArrayList(build.stageList)
         banditList = FXCollections.observableArrayList(build.banditList)
     }
-
-    fun copyBuild(): BuildInfo = build.copy(title = build.title + " Copy")
-
-    fun deleteBuild() = build.delete()
 }
