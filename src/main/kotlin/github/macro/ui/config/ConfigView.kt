@@ -20,15 +20,15 @@ class ConfigView : View("Settings") {
                 paddingAll = 5.0
                 checkbox("Use Dark Mode", property = model.darkModeProperty) {
                     addClass(Styles.subtitle)
-                    disableWhen { true.toProperty() }
+                    isDisable = true
                 }
                 checkbox("Settings #2") {
                     addClass(Styles.subtitle)
-                    disableWhen { true.toProperty() }
+                    isDisable = true
                 }
                 checkbox("Settings #3") {
                     addClass(Styles.subtitle)
-                    disableWhen { true.toProperty() }
+                    isDisable = true
                 }
                 spacer { }
             }

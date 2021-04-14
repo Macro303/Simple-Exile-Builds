@@ -22,9 +22,9 @@ data class Gem(
 ) {
 
     fun getImageFile(): File {
-        var image = File(File("resources", "Images"), "$id.png")
+        var image = File("resources", "$id.png")
         if (!image.exists())
-            image = File(File("resources", "Images"), "placeholder.png")
+            image = File("resources", "placeholder.png")
         return image
     }
 

@@ -50,10 +50,11 @@ class Styles : Stylesheet() {
     init {
         root {
             fontFamily = fontRegular.family
-            fontSize = 13.px
+            fontSize = 14.px
         }
         button {
             fontFamily = fontSmallCaps.family
+            fontSize = 16.px
         }
         tabLabel {
             fontFamily = fontSmallCaps.family
@@ -61,12 +62,12 @@ class Styles : Stylesheet() {
         }
         title {
             fontFamily = fontBold.family
-            fontSize = 28.px
+            fontSize = 32.px
             fontWeight = FontWeight.BOLD
         }
         subtitle {
             fontFamily = fontBold.family
-            fontSize = 18.px
+            fontSize = 20.px
             fontWeight = FontWeight.BOLD
         }
         sizedButton {
