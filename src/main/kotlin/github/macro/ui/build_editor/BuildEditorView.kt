@@ -92,16 +92,6 @@ class BuildEditorView : View("Path of Taurewa") {
                                 close()
                             }
                         }
-                        spacer { }
-                        button(text = "Save") {
-                            addClass(Styles.sizedButton)
-                            action {
-                                val scope = Scope()
-                                setInScope(BuildViewerModel(model.saveBuild()), scope)
-                                find<BuildViewerView>(scope).openWindow(owner = null, resizable = false)
-                                close()
-                            }
-                        }
                     }
                 }
             }
@@ -534,6 +524,23 @@ class BuildEditorView : View("Path of Taurewa") {
                     }
                 }
                 //endregion
+            }
+        }
+        bottom {
+            paddingAll = 5.0
+            hbox(spacing = 5.0, alignment = Pos.CENTER){
+                paddingAll = 5.0
+                spacer { }
+                button(text = "Save") {
+                    addClass(Styles.sizedButton)
+                    action {
+                        val scope = Scope()
+                        setInScope(BuildViewerModel(model.saveBuild()), scope)
+                        find<BuildViewerView>(scope).openWindow(owner = null, resizable = false)
+                        close()
+                    }
+                }
+                spacer { }
             }
         }
     }
