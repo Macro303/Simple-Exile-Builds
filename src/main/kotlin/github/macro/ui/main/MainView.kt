@@ -79,8 +79,8 @@ class MainView : View("Path of Taurewa") {
                     val buildCombobox = combobox<BuildInfo>(values = model.buildsProperty) {
                         promptText = "Build"
                         hgrow = Priority.ALWAYS
-                        converter = object : StringConverter<BuildInfo?>() {
-                            override fun toString(build: BuildInfo?): String = build?.display ?: ""
+                        converter = object : StringConverter<BuildInfo>() {
+                            override fun toString(build: BuildInfo): String = build.display
                             override fun fromString(string: String): BuildInfo? = null
                         }
                     }

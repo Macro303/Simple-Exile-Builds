@@ -12,15 +12,15 @@ data class Stage(
     @SerialName("Name")
     var name: String,
     @SerialName("Weapon/s")
-    var weapons: List<String>,
+    var weapons: MutableList<String>,
     @SerialName("Helmet")
-    var helmet: List<String>,
+    var helmet: MutableList<String>,
     @SerialName("Body Armour")
-    var bodyArmour: List<String>,
+    var bodyArmour: MutableList<String>,
     @SerialName("Gloves")
-    var gloves: List<String>,
+    var gloves: MutableList<String>,
     @SerialName("Boots")
-    var boots: List<String>
+    var boots: MutableList<String>
 ) {
     val weaponList: List<Gem>
         get() = weapons.map { Gem.fromId(it) ?: Gem.fromName(it) ?: Utils.getMissingGem(it) }.plus(TEMP).take(6)
@@ -34,11 +34,11 @@ data class Stage(
         get() = boots.map { Gem.fromId(it) ?: Gem.fromName(it) ?: Utils.getMissingGem(it) }.plus(TEMP).take(4)
 
     init {
-        this.weapons = weapons.take(6)
-        this.helmet = helmet.take(4)
-        this.bodyArmour = bodyArmour.take(6)
-        this.gloves = gloves.take(4)
-        this.boots = boots.take(4)
+        this.weapons = weapons.take(6).toMutableList()
+        this.helmet = helmet.take(4).toMutableList()
+        this.bodyArmour = bodyArmour.take(6).toMutableList()
+        this.gloves = gloves.take(4).toMutableList()
+        this.boots = boots.take(4).toMutableList()
     }
 
     companion object {

@@ -3,13 +3,11 @@ package github.macro.ui.build_editor
 import github.macro.Styles
 import github.macro.Utils
 import github.macro.Utils.cleanName
-import github.macro.core.Ascendency
-import github.macro.core.Bandit
-import github.macro.core.ClassTag
-import github.macro.core.Stage
+import github.macro.core.*
 import github.macro.ui.build_viewer.BuildViewerModel
 import github.macro.ui.build_viewer.BuildViewerView
-import github.macro.ui.main.MainView
+import github.macro.ui.gem_selector.GemSelectorModel
+import github.macro.ui.gem_selector.GemSelectorView
 import javafx.geometry.HPos
 import javafx.geometry.Insets
 import javafx.geometry.Pos
@@ -35,13 +33,18 @@ class BuildEditorView : View("Path of Taurewa") {
     private var classComboBox: ComboBox<ClassTag> by singleAssign()
     private var ascendencyComboBox: ComboBox<Ascendency> by singleAssign()
 
+    private val MAX_IMG_WIDTH = (Utils.UI_PREF_WIDTH - (10 * 6)) / 6
+    private val PREF_IMG_WIDTH = (Utils.UI_PREF_WIDTH - (20 * 6)) / 6
+    private val MIN_IMG_WIDTH = (Utils.UI_PREF_WIDTH - (30 * 6)) / 6
+
+
     override val root = borderpane {
         prefWidth = Utils.UI_PREF_WIDTH
         prefHeight = Utils.UI_PREF_HEIGHT
         paddingAll = 10.0
         top {
-            //region Header Pane
             paddingAll = 5.0
+            //region Header Pane
             hbox(spacing = 5.0, alignment = Pos.CENTER) {
                 paddingAll = 5.0
                 label(text = "Build Editor") {
@@ -64,11 +67,12 @@ class BuildEditorView : View("Path of Taurewa") {
                             }
                         }
                         separator()
-                        ascendencyComboBox = combobox(model.ascendencyProperty, values = model.classTag.ascendencies.toList()) {
-                            cellFormat {
-                                text = it.cleanName()
+                        ascendencyComboBox =
+                            combobox(model.ascendencyProperty, values = model.classTag.ascendencies.toList()) {
+                                cellFormat {
+                                    text = it.cleanName()
+                                }
                             }
-                        }
                         classComboBox.setOnAction {
                             ascendencyComboBox.items = (classComboBox.selectedItem?.ascendencies?.toList()
                                 ?: emptyList()).asObservable()
@@ -78,14 +82,16 @@ class BuildEditorView : View("Path of Taurewa") {
                         button(text = "Add Stage") {
                             addClass(Styles.sizedButton)
                             action {
-                                model.stageList.add(Stage(
-                                    name = "New Stage",
-                                    weapons = emptyList(),
-                                    helmet = emptyList(),
-                                    bodyArmour = emptyList(),
-                                    gloves = emptyList(),
-                                    boots = emptyList(),
-                                ))
+                                model.stageList.add(
+                                    Stage(
+                                        name = "New Stage",
+                                        weapons = mutableListOf(),
+                                        helmet = mutableListOf(),
+                                        bodyArmour = mutableListOf(),
+                                        gloves = mutableListOf(),
+                                        boots = mutableListOf()
+                                    )
+                                )
                                 val scope = Scope()
                                 setInScope(BuildEditorModel(model.saveBuild()), scope)
                                 find<BuildEditorView>(scope).openWindow(owner = null, resizable = false)
@@ -104,10 +110,9 @@ class BuildEditorView : View("Path of Taurewa") {
                 //region Gems Tab
                 tab(text = "Gems") {
                     tabpane {
-                        tabClosingPolicy = TabPane.TabClosingPolicy.UNAVAILABLE
                         side = Side.LEFT
-                        model.stageList.forEach {
-                            tab(it.name) {
+                        model.stageList.forEach { stage ->
+                            tab(stage.name) {
                                 scrollpane(fitToWidth = true) {
                                     hbarPolicy = ScrollPane.ScrollBarPolicy.NEVER
                                     vbarPolicy = ScrollPane.ScrollBarPolicy.ALWAYS
@@ -124,11 +129,11 @@ class BuildEditorView : View("Path of Taurewa") {
                                             }
                                         }
                                         row {
-                                            it.weaponList.forEachIndexed { index, gem ->
+                                            stage.weaponList.forEachIndexed { index, gem ->
                                                 borderpane {
-                                                    maxWidth = (Utils.UI_PREF_WIDTH - (10 * 6)) / 6
-                                                    prefWidth = (Utils.UI_PREF_WIDTH - (20 * 6)) / 6
-                                                    minWidth = (Utils.UI_PREF_WIDTH - (30 * 6)) / 6
+                                                    maxWidth = MAX_IMG_WIDTH
+                                                    prefWidth = PREF_IMG_WIDTH
+                                                    minWidth = MIN_IMG_WIDTH
                                                     paddingAll = 10.0
                                                     center {
                                                         paddingAll = 5.0
@@ -139,13 +144,11 @@ class BuildEditorView : View("Path of Taurewa") {
                                                                 lazyload = true
                                                             ) {
                                                                 if (gem.getImageFile().name != "placeholder.png") {
-                                                                    if (Utils.getImageHeight(gem) >= Utils.IMG_SIZE) {
+                                                                    if (Utils.getImageHeight(gem) >= Utils.IMG_SIZE)
                                                                         fitHeight = Utils.IMG_SIZE
-                                                                        isPreserveRatio = true
-                                                                    } else if (Utils.getImageWidth(gem) >= Utils.IMG_SIZE) {
+                                                                    else if (Utils.getImageWidth(gem) >= Utils.IMG_SIZE)
                                                                         fitWidth = Utils.IMG_SIZE
-                                                                        isPreserveRatio = true
-                                                                    }
+                                                                    isPreserveRatio = true
                                                                 }
                                                             }
                                                         }
@@ -160,6 +163,15 @@ class BuildEditorView : View("Path of Taurewa") {
                                                                 textFillProperty().bind(
                                                                     Paint.valueOf(gem.colour.hex).toProperty()
                                                                 )
+                                                            }
+                                                            button("Edit") {
+                                                                addClass(Styles.sizedButton)
+                                                                action {
+                                                                    LOGGER.info("Trying to edit: $gem")
+                                                                    var selected = gemSelect(gem)
+                                                                    if (selected != gem)
+                                                                        stage.weapons[index] = selected.id
+                                                                }
                                                             }
                                                         }
                                                     }
@@ -195,25 +207,25 @@ class BuildEditorView : View("Path of Taurewa") {
                                             }
                                         }
                                         row {
-                                            it.helmetList.forEachIndexed { index, gem ->
+                                            stage.helmetList.forEach {
                                                 borderpane {
-                                                    maxWidth = (Utils.UI_PREF_WIDTH - (10 * 6)) / 6
-                                                    prefWidth = (Utils.UI_PREF_WIDTH - (20 * 6)) / 6
-                                                    minWidth = (Utils.UI_PREF_WIDTH - (30 * 6)) / 6
+                                                    maxWidth = MAX_IMG_WIDTH
+                                                    prefWidth = PREF_IMG_WIDTH
+                                                    minWidth = MIN_IMG_WIDTH
                                                     paddingAll = 10.0
                                                     center {
                                                         paddingAll = 5.0
                                                         vbox(spacing = 5.0, alignment = Pos.CENTER) {
                                                             paddingAll = 5.0
                                                             imageview(
-                                                                "file:${gem.getImageFile().path}",
+                                                                "file:${it.getImageFile().path}",
                                                                 lazyload = true
                                                             ) {
-                                                                if (gem.getImageFile().name != "placeholder.png") {
-                                                                    if (Utils.getImageHeight(gem) >= Utils.IMG_SIZE) {
+                                                                if (it.getImageFile().name != "placeholder.png") {
+                                                                    if (Utils.getImageHeight(it) >= Utils.IMG_SIZE) {
                                                                         fitHeight = Utils.IMG_SIZE
                                                                         isPreserveRatio = true
-                                                                    } else if (Utils.getImageWidth(gem) >= Utils.IMG_SIZE) {
+                                                                    } else if (Utils.getImageWidth(it) >= Utils.IMG_SIZE) {
                                                                         fitWidth = Utils.IMG_SIZE
                                                                         isPreserveRatio = true
                                                                     }
@@ -224,18 +236,24 @@ class BuildEditorView : View("Path of Taurewa") {
                                                     bottom {
                                                         vbox(spacing = 5.0, alignment = Pos.CENTER) {
                                                             paddingAll = 5.0
-                                                            label(gem.name) {
+                                                            label(it.name) {
                                                                 isWrapText = true
                                                                 alignment = Pos.CENTER
                                                                 textAlignment = TextAlignment.CENTER
                                                                 textFillProperty().bind(
-                                                                    Paint.valueOf(gem.colour.hex).toProperty()
+                                                                    Paint.valueOf(it.colour.hex).toProperty()
                                                                 )
+                                                            }
+                                                            button("Edit") {
+                                                                addClass(Styles.sizedButton)
+                                                                action {
+                                                                    LOGGER.info("Trying to edit: $it")
+                                                                }
                                                             }
                                                         }
                                                     }
                                                     style {
-                                                        borderColor += box(c(gem.colour.hex))
+                                                        borderColor += box(c(it.colour.hex))
                                                         borderStyle += BorderStrokeStyle(
                                                             StrokeType.CENTERED,
                                                             StrokeLineJoin.ROUND,
@@ -266,25 +284,25 @@ class BuildEditorView : View("Path of Taurewa") {
                                             }
                                         }
                                         row {
-                                            it.bodyArmourList.forEachIndexed { index, gem ->
+                                            stage.bodyArmourList.forEach {
                                                 borderpane {
-                                                    maxWidth = (Utils.UI_PREF_WIDTH - (10 * 6)) / 6
-                                                    prefWidth = (Utils.UI_PREF_WIDTH - (20 * 6)) / 6
-                                                    minWidth = (Utils.UI_PREF_WIDTH - (30 * 6)) / 6
+                                                    maxWidth = MAX_IMG_WIDTH
+                                                    prefWidth = PREF_IMG_WIDTH
+                                                    minWidth = MIN_IMG_WIDTH
                                                     paddingAll = 10.0
                                                     center {
                                                         paddingAll = 5.0
                                                         vbox(spacing = 5.0, alignment = Pos.CENTER) {
                                                             paddingAll = 5.0
                                                             imageview(
-                                                                "file:${gem.getImageFile().path}",
+                                                                "file:${it.getImageFile().path}",
                                                                 lazyload = true
                                                             ) {
-                                                                if (gem.getImageFile().name != "placeholder.png") {
-                                                                    if (Utils.getImageHeight(gem) >= Utils.IMG_SIZE) {
+                                                                if (it.getImageFile().name != "placeholder.png") {
+                                                                    if (Utils.getImageHeight(it) >= Utils.IMG_SIZE) {
                                                                         fitHeight = Utils.IMG_SIZE
                                                                         isPreserveRatio = true
-                                                                    } else if (Utils.getImageWidth(gem) >= Utils.IMG_SIZE) {
+                                                                    } else if (Utils.getImageWidth(it) >= Utils.IMG_SIZE) {
                                                                         fitWidth = Utils.IMG_SIZE
                                                                         isPreserveRatio = true
                                                                     }
@@ -295,18 +313,24 @@ class BuildEditorView : View("Path of Taurewa") {
                                                     bottom {
                                                         vbox(spacing = 5.0, alignment = Pos.CENTER) {
                                                             paddingAll = 5.0
-                                                            label(gem.name) {
+                                                            label(it.name) {
                                                                 isWrapText = true
                                                                 alignment = Pos.CENTER
                                                                 textAlignment = TextAlignment.CENTER
                                                                 textFillProperty().bind(
-                                                                    Paint.valueOf(gem.colour.hex).toProperty()
+                                                                    Paint.valueOf(it.colour.hex).toProperty()
                                                                 )
+                                                            }
+                                                            button("Edit") {
+                                                                addClass(Styles.sizedButton)
+                                                                action {
+                                                                    LOGGER.info("Trying to edit: $it")
+                                                                }
                                                             }
                                                         }
                                                     }
                                                     style {
-                                                        borderColor += box(c(gem.colour.hex))
+                                                        borderColor += box(c(it.colour.hex))
                                                         borderStyle += BorderStrokeStyle(
                                                             StrokeType.CENTERED,
                                                             StrokeLineJoin.ROUND,
@@ -337,25 +361,25 @@ class BuildEditorView : View("Path of Taurewa") {
                                             }
                                         }
                                         row {
-                                            it.glovesList.forEachIndexed { index, gem ->
+                                            stage.glovesList.forEach {
                                                 borderpane {
-                                                    maxWidth = (Utils.UI_PREF_WIDTH - (10 * 6)) / 6
-                                                    prefWidth = (Utils.UI_PREF_WIDTH - (20 * 6)) / 6
-                                                    minWidth = (Utils.UI_PREF_WIDTH - (30 * 6)) / 6
+                                                    maxWidth = MAX_IMG_WIDTH
+                                                    prefWidth = PREF_IMG_WIDTH
+                                                    minWidth = MIN_IMG_WIDTH
                                                     paddingAll = 10.0
                                                     center {
                                                         paddingAll = 5.0
                                                         vbox(spacing = 5.0, alignment = Pos.CENTER) {
                                                             paddingAll = 5.0
                                                             imageview(
-                                                                "file:${gem.getImageFile().path}",
+                                                                "file:${it.getImageFile().path}",
                                                                 lazyload = true
                                                             ) {
-                                                                if (gem.getImageFile().name != "placeholder.png") {
-                                                                    if (Utils.getImageHeight(gem) >= Utils.IMG_SIZE) {
+                                                                if (it.getImageFile().name != "placeholder.png") {
+                                                                    if (Utils.getImageHeight(it) >= Utils.IMG_SIZE) {
                                                                         fitHeight = Utils.IMG_SIZE
                                                                         isPreserveRatio = true
-                                                                    } else if (Utils.getImageWidth(gem) >= Utils.IMG_SIZE) {
+                                                                    } else if (Utils.getImageWidth(it) >= Utils.IMG_SIZE) {
                                                                         fitWidth = Utils.IMG_SIZE
                                                                         isPreserveRatio = true
                                                                     }
@@ -366,18 +390,24 @@ class BuildEditorView : View("Path of Taurewa") {
                                                     bottom {
                                                         vbox(spacing = 5.0, alignment = Pos.CENTER) {
                                                             paddingAll = 5.0
-                                                            label(gem.name) {
+                                                            label(it.name) {
                                                                 isWrapText = true
                                                                 alignment = Pos.CENTER
                                                                 textAlignment = TextAlignment.CENTER
                                                                 textFillProperty().bind(
-                                                                    Paint.valueOf(gem.colour.hex).toProperty()
+                                                                    Paint.valueOf(it.colour.hex).toProperty()
                                                                 )
+                                                            }
+                                                            button("Edit") {
+                                                                addClass(Styles.sizedButton)
+                                                                action {
+                                                                    LOGGER.info("Trying to edit: $it")
+                                                                }
                                                             }
                                                         }
                                                     }
                                                     style {
-                                                        borderColor += box(c(gem.colour.hex))
+                                                        borderColor += box(c(it.colour.hex))
                                                         borderStyle += BorderStrokeStyle(
                                                             StrokeType.CENTERED,
                                                             StrokeLineJoin.ROUND,
@@ -408,25 +438,25 @@ class BuildEditorView : View("Path of Taurewa") {
                                             }
                                         }
                                         row {
-                                            it.bootsList.forEachIndexed { index, gem ->
+                                            stage.bootsList.forEach {
                                                 borderpane {
-                                                    maxWidth = (Utils.UI_PREF_WIDTH - (10 * 6)) / 6
-                                                    prefWidth = (Utils.UI_PREF_WIDTH - (20 * 6)) / 6
-                                                    minWidth = (Utils.UI_PREF_WIDTH - (30 * 6)) / 6
+                                                    maxWidth = MAX_IMG_WIDTH
+                                                    prefWidth = PREF_IMG_WIDTH
+                                                    minWidth = MIN_IMG_WIDTH
                                                     paddingAll = 10.0
                                                     center {
                                                         paddingAll = 5.0
                                                         vbox(spacing = 5.0, alignment = Pos.CENTER) {
                                                             paddingAll = 5.0
                                                             imageview(
-                                                                "file:${gem.getImageFile().path}",
+                                                                "file:${it.getImageFile().path}",
                                                                 lazyload = true
                                                             ) {
-                                                                if (gem.getImageFile().name != "placeholder.png") {
-                                                                    if (Utils.getImageHeight(gem) >= Utils.IMG_SIZE) {
+                                                                if (it.getImageFile().name != "placeholder.png") {
+                                                                    if (Utils.getImageHeight(it) >= Utils.IMG_SIZE) {
                                                                         fitHeight = Utils.IMG_SIZE
                                                                         isPreserveRatio = true
-                                                                    } else if (Utils.getImageWidth(gem) >= Utils.IMG_SIZE) {
+                                                                    } else if (Utils.getImageWidth(it) >= Utils.IMG_SIZE) {
                                                                         fitWidth = Utils.IMG_SIZE
                                                                         isPreserveRatio = true
                                                                     }
@@ -437,18 +467,24 @@ class BuildEditorView : View("Path of Taurewa") {
                                                     bottom {
                                                         vbox(spacing = 5.0, alignment = Pos.CENTER) {
                                                             paddingAll = 5.0
-                                                            label(gem.name) {
+                                                            label(it.name) {
                                                                 isWrapText = true
                                                                 alignment = Pos.CENTER
                                                                 textAlignment = TextAlignment.CENTER
                                                                 textFillProperty().bind(
-                                                                    Paint.valueOf(gem.colour.hex).toProperty()
+                                                                    Paint.valueOf(it.colour.hex).toProperty()
                                                                 )
+                                                            }
+                                                            button("Edit") {
+                                                                addClass(Styles.sizedButton)
+                                                                action {
+                                                                    LOGGER.info("Trying to edit: $it")
+                                                                }
                                                             }
                                                         }
                                                     }
                                                     style {
-                                                        borderColor += box(c(gem.colour.hex))
+                                                        borderColor += box(c(it.colour.hex))
                                                         borderStyle += BorderStrokeStyle(
                                                             StrokeType.CENTERED,
                                                             StrokeLineJoin.ROUND,
@@ -468,6 +504,9 @@ class BuildEditorView : View("Path of Taurewa") {
                                         }
                                         //endregion
                                     }
+                                }
+                                setOnClosed {
+                                    model.stageList.remove(stage)
                                 }
                             }
                         }
@@ -490,13 +529,13 @@ class BuildEditorView : View("Path of Taurewa") {
                         vbox(spacing = 5.0, alignment = Pos.CENTER) {
                             paddingAll = 5.0
                             //region Bandits
-                            label(text = "Kill Bandits"){
+                            label(text = "Kill Bandits") {
                                 addClass(Styles.subtitle)
                             }
-                            hbox(spacing = 5.0, alignment = Pos.CENTER){
+                            hbox(spacing = 5.0, alignment = Pos.CENTER) {
                                 paddingAll = 5.0
                                 Bandit.values().forEach {
-                                    checkbox(text = it.cleanName()){
+                                    checkbox(text = it.cleanName()) {
                                         isSelected = model.banditList.contains(it)
                                         isDisable = true
                                     }
@@ -528,7 +567,8 @@ class BuildEditorView : View("Path of Taurewa") {
         }
         bottom {
             paddingAll = 5.0
-            hbox(spacing = 5.0, alignment = Pos.CENTER){
+            //region Footer Pane
+            hbox(spacing = 5.0, alignment = Pos.CENTER) {
                 paddingAll = 5.0
                 spacer { }
                 button(text = "Save") {
@@ -542,6 +582,7 @@ class BuildEditorView : View("Path of Taurewa") {
                 }
                 spacer { }
             }
+            //endregion
         }
     }
 
@@ -552,6 +593,14 @@ class BuildEditorView : View("Path of Taurewa") {
             find<BuildViewerView>(scope).openWindow(owner = null, resizable = false)
             close()
         }
+    }
+
+    fun gemSelect(current: Gem): Gem {
+        val model = GemSelectorModel(current)
+        val selectorScope = Scope()
+        setInScope(model, selectorScope)
+        find<GemSelectorView>().openModal(block = true, resizable = false)
+        return model.selected
     }
 
     companion object {
