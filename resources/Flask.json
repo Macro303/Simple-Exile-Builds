@@ -1,0 +1,520 @@
+[
+  {
+    "id": "Flask/Amethyst",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Amethyst Flask",
+    "type": "Amethyst"
+  },
+  {
+    "id": "Flask/Amethyst-Atziris-Promise",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Atziri's Promise Amethyst Flask",
+    "type": "Amethyst"
+  },
+  {
+    "id": "Flask/Aquamarine",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Aquamarine Flask",
+    "type": "Aquamarine"
+  },
+  {
+    "id": "Flask/Basalt",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Basalt Flask",
+    "type": "Basalt"
+  },
+  {
+    "id": "Flask/Bismuth",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Bismuth Flask",
+    "type": "Bismuth"
+  },
+  {
+    "id": "Flask/Bismuth-The-Wise-Oak",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Wise Oak Bismuth Flask",
+    "type": "Bismuth"
+  },
+  {
+    "id": "Flask/Diamond",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Diamond Flask",
+    "type": "Diamond"
+  },
+  {
+    "id": "Flask/Diamond-Coralitos-Signature",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Coralito's Signature Diamond Flask",
+    "type": "Diamond"
+  },
+  {
+    "id": "Flask/Granite",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Granite Flask",
+    "type": "Granite"
+  },
+  {
+    "id": "Flask/Granite-Lions-Roar",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Lion's Roar Granite Flask",
+    "type": "Granite"
+  },
+  {
+    "id": "Flask/Granite-Rumis-Concoction",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Rumi's Concoction Granite Flask",
+    "type": "Granite"
+  },
+  {
+    "id": "Flask/Granite-Rumis-Concoction-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Rumi's Concoction Granite Flask",
+    "type": "Granite"
+  },
+  {
+    "id": "Flask/Hybrid-Colossal",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Colossal Hybrid Flask",
+    "type": "Hybrid"
+  },
+  {
+    "id": "Flask/Hybrid-Divination-Distillate-Large",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Divination Distillate Large Hybrid Flask",
+    "type": "Hybrid"
+  },
+  {
+    "id": "Flask/Hybrid-Hallowed",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Hallowed Hybrid Flask",
+    "type": "Hybrid"
+  },
+  {
+    "id": "Flask/Hybrid-Large",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Large Hybrid Flask",
+    "type": "Hybrid"
+  },
+  {
+    "id": "Flask/Hybrid-Medium",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Medium Hybrid Flask",
+    "type": "Hybrid"
+  },
+  {
+    "id": "Flask/Hybrid-Sacred",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Sacred Hybrid Flask",
+    "type": "Hybrid"
+  },
+  {
+    "id": "Flask/Hybrid-Small",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Small Hybrid Flask",
+    "type": "Hybrid"
+  },
+  {
+    "id": "Flask/Hybrid-The-Writhing-Jar-Hallowed",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Writhing Jar Hallowed Hybrid Flask",
+    "type": "Hybrid"
+  },
+  {
+    "id": "Flask/Jade",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Jade Flask",
+    "type": "Jade"
+  },
+  {
+    "id": "Flask/Life-Blood-of-the-Karui-Sanctified",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Blood of the Karui Sanctified Life Flask",
+    "type": "Life"
+  },
+  {
+    "id": "Flask/Life-Colossal",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Colossal Life Flask",
+    "type": "Life"
+  },
+  {
+    "id": "Flask/Life-Divine",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Divine Life Flask",
+    "type": "Life"
+  },
+  {
+    "id": "Flask/Life-Eternal",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Eternal Life Flask",
+    "type": "Life"
+  },
+  {
+    "id": "Flask/Life-Giant",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Giant Life Flask",
+    "type": "Life"
+  },
+  {
+    "id": "Flask/Life-Grand",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Grand Life Flask",
+    "type": "Life"
+  },
+  {
+    "id": "Flask/Life-Greater",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Greater Life Flask",
+    "type": "Life"
+  },
+  {
+    "id": "Flask/Life-Hallowed",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Hallowed Life Flask",
+    "type": "Life"
+  },
+  {
+    "id": "Flask/Life-Large",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Large Life Flask",
+    "type": "Life"
+  },
+  {
+    "id": "Flask/Life-Medium",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Medium Life Flask",
+    "type": "Life"
+  },
+  {
+    "id": "Flask/Life-Sacred",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Sacred Life Flask",
+    "type": "Life"
+  },
+  {
+    "id": "Flask/Life-Sanctified",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Sanctified Life Flask",
+    "type": "Life"
+  },
+  {
+    "id": "Flask/Life-Small",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Small Life Flask",
+    "type": "Life"
+  },
+  {
+    "id": "Flask/Mana-Colossal",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Colossal Mana Flask",
+    "type": "Mana"
+  },
+  {
+    "id": "Flask/Mana-Divine",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Divine Mana Flask",
+    "type": "Mana"
+  },
+  {
+    "id": "Flask/Mana-Doedres-Elixir-Greater",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Doedre's Elixir Greater Mana Flask",
+    "type": "Mana"
+  },
+  {
+    "id": "Flask/Mana-Eternal",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Eternal Mana Flask",
+    "type": "Mana"
+  },
+  {
+    "id": "Flask/Mana-Giant",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Giant Mana Flask",
+    "type": "Mana"
+  },
+  {
+    "id": "Flask/Mana-Grand",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Grand Mana Flask",
+    "type": "Mana"
+  },
+  {
+    "id": "Flask/Mana-Greater",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Greater Mana Flask",
+    "type": "Mana"
+  },
+  {
+    "id": "Flask/Mana-Hallowed",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Hallowed Mana Flask",
+    "type": "Mana"
+  },
+  {
+    "id": "Flask/Mana-Large",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Large Mana Flask",
+    "type": "Mana"
+  },
+  {
+    "id": "Flask/Mana-Laviangas-Spirit-Sanctified",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Lavianga's Spirit Sanctified Mana Flask",
+    "type": "Mana"
+  },
+  {
+    "id": "Flask/Mana-Laviangas-Spirit-Sanctified-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Lavianga's Spirit Sanctified Mana Flask",
+    "type": "Mana"
+  },
+  {
+    "id": "Flask/Mana-Medium",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Medium Mana Flask",
+    "type": "Mana"
+  },
+  {
+    "id": "Flask/Mana-Sacred",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Sacred Mana Flask",
+    "type": "Mana"
+  },
+  {
+    "id": "Flask/Mana-Sanctified",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Sanctified Mana Flask",
+    "type": "Mana"
+  },
+  {
+    "id": "Flask/Mana-Small",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Small Mana Flask",
+    "type": "Mana"
+  },
+  {
+    "id": "Flask/Mana-Zerphis-Last-Breath-Grand",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Zerphi's Last Breath Grand Mana Flask",
+    "type": "Mana"
+  },
+  {
+    "id": "Flask/Quartz",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Quartz Flask",
+    "type": "Quartz"
+  },
+  {
+    "id": "Flask/Quartz-Forbidden-Taste",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Forbidden Taste Quartz Flask",
+    "type": "Quartz"
+  },
+  {
+    "id": "Flask/Quartz-Soul-Catcher",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Soul Catcher Quartz Flask",
+    "type": "Quartz"
+  },
+  {
+    "id": "Flask/Quartz-Soul-Ripper",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Soul Ripper Quartz Flask",
+    "type": "Quartz"
+  },
+  {
+    "id": "Flask/Quicksilver",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Quicksilver Flask",
+    "type": "Quicksilver"
+  },
+  {
+    "id": "Flask/Quicksilver-Rotgut",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Rotgut Quicksilver Flask",
+    "type": "Quicksilver"
+  },
+  {
+    "id": "Flask/Ruby",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Ruby Flask",
+    "type": "Ruby"
+  },
+  {
+    "id": "Flask/Ruby-Coruscating-Elixir",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Coruscating Elixir Ruby Flask",
+    "type": "Ruby"
+  },
+  {
+    "id": "Flask/Ruby-Dying-Sun",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Dying Sun Ruby Flask",
+    "type": "Ruby"
+  },
+  {
+    "id": "Flask/Sapphire",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Sapphire Flask",
+    "type": "Sapphire"
+  },
+  {
+    "id": "Flask/Sapphire-Taste-of-Hate",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Taste of Hate Sapphire Flask",
+    "type": "Sapphire"
+  },
+  {
+    "id": "Flask/Silver",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Silver Flask",
+    "type": "Silver"
+  },
+  {
+    "id": "Flask/Silver-Cinderswallow-Urn",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Cinderswallow Urn Silver Flask",
+    "type": "Silver"
+  },
+  {
+    "id": "Flask/Silver-Kiaras-Determination",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Kiara's Determination Silver Flask",
+    "type": "Silver"
+  },
+  {
+    "id": "Flask/Stibnite",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Stibnite Flask",
+    "type": "Stibnite"
+  },
+  {
+    "id": "Flask/Stibnite-Sins-Rebirth",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Sin's Rebirth Stibnite Flask",
+    "type": "Stibnite"
+  },
+  {
+    "id": "Flask/Stibnite-Witchfire-Brew",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Witchfire Brew Stibnite Flask",
+    "type": "Stibnite"
+  },
+  {
+    "id": "Flask/Sulphur",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Sulphur Flask",
+    "type": "Sulphur"
+  },
+  {
+    "id": "Flask/Sulphur-Bottled-Faith",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Bottled Faith Sulphur Flask",
+    "type": "Sulphur"
+  },
+  {
+    "id": "Flask/Sulphur-Sorrow-of-the-Divine-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Sorrow of the Divine Sulphur Flask",
+    "type": "Sulphur"
+  },
+  {
+    "id": "Flask/Sulphur-The-Overflowing-Chalice",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Overflowing Chalice Sulphur Flask",
+    "type": "Sulphur"
+  },
+  {
+    "id": "Flask/Sulphur-The-Sorrow-of-the-Divine",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Sorrow of the Divine Sulphur Flask",
+    "type": "Sulphur"
+  },
+  {
+    "id": "Flask/Topaz",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Topaz Flask",
+    "type": "Topaz"
+  },
+  {
+    "id": "Flask/Topaz-Vessel-of-Vinktar",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Vessel of Vinktar Topaz Flask",
+    "type": "Topaz"
+  }
+]

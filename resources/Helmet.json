@@ -1,0 +1,1255 @@
+[
+  {
+    "id": "Helmet/Archdemon-Crown",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Archdemon Crown",
+    "type": "Archdemon Crown"
+  },
+  {
+    "id": "Helmet/Atonement-Mask",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Atonement Mask",
+    "type": "Atonement Mask"
+  },
+  {
+    "id": "Helmet/Aventail-Helmet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Aventail Helmet",
+    "type": "Aventail Helmet"
+  },
+  {
+    "id": "Helmet/Aventail-Helmet-Mindspiral",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Mindspiral Aventail Helmet",
+    "type": "Aventail-Helmet"
+  },
+  {
+    "id": "Helmet/Barbute-Helmet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Barbute Helmet",
+    "type": "Barbute Helmet"
+  },
+  {
+    "id": "Helmet/Battered-Helm",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Battered Helm",
+    "type": "Battered Helm"
+  },
+  {
+    "id": "Helmet/Blizzard-Crown",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Blizzard Crown",
+    "type": "Blizzard Crown"
+  },
+  {
+    "id": "Helmet/Bone-Circlet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Bone Circlet",
+    "type": "Bone Circlet"
+  },
+  {
+    "id": "Helmet/Bone-Circlet-Plume-of-Pursuit",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Plume of Pursuit Bone Circlet",
+    "type": "Bone-Circlet"
+  },
+  {
+    "id": "Helmet/Bone-Circlet-Wraithlord",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Wraithlord Bone Circlet",
+    "type": "Bone-Circlet"
+  },
+  {
+    "id": "Helmet/Bone-Helmet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Bone Helmet",
+    "type": "Bone Helmet"
+  },
+  {
+    "id": "Helmet/Bone-Helmet-Ancient-Skull",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Ancient Skull Bone Helmet",
+    "type": "Bone-Helmet"
+  },
+  {
+    "id": "Helmet/Bone-Helmet-Maw-of-Mischief",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Maw of Mischief Bone Helmet",
+    "type": "Bone-Helmet"
+  },
+  {
+    "id": "Helmet/Callous-Mask",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Callous Mask",
+    "type": "Callous Mask"
+  },
+  {
+    "id": "Helmet/Callous-Mask-Eye-of-Malice",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Eye of Malice Callous Mask",
+    "type": "Callous-Mask"
+  },
+  {
+    "id": "Helmet/Callous-Mask-The-Tempests-Binding",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Tempest's Binding Callous Mask",
+    "type": "Callous-Mask"
+  },
+  {
+    "id": "Helmet/Callous-Mask-The-Tempests-Liberation",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Tempest's Liberation Callous Mask",
+    "type": "Callous-Mask"
+  },
+  {
+    "id": "Helmet/Close-Helmet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Close Helmet",
+    "type": "Close Helmet"
+  },
+  {
+    "id": "Helmet/Close-Helmet-The-Baron",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Baron Close Helmet",
+    "type": "Close-Helmet"
+  },
+  {
+    "id": "Helmet/Cone-Helmet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Cone Helmet",
+    "type": "Cone Helmet"
+  },
+  {
+    "id": "Helmet/Crusader-Helmet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Crusader Helmet",
+    "type": "Crusader Helmet"
+  },
+  {
+    "id": "Helmet/Deicide-Mask",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Deicide Mask",
+    "type": "Deicide Mask"
+  },
+  {
+    "id": "Helmet/Deicide-Mask-Heretics-Veil",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Heretic's Veil Deicide Mask",
+    "type": "Deicide-Mask"
+  },
+  {
+    "id": "Helmet/Demon-Crown",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Demon Crown",
+    "type": "Demon Crown"
+  },
+  {
+    "id": "Helmet/Eternal-Burgonet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Eternal Burgonet",
+    "type": "Eternal Burgonet"
+  },
+  {
+    "id": "Helmet/Ezomyte-Burgonet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Ezomyte Burgonet",
+    "type": "Ezomyte Burgonet"
+  },
+  {
+    "id": "Helmet/Ezomyte-Burgonet-Abyssus",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Abyssus Ezomyte Burgonet",
+    "type": "Ezomyte-Burgonet"
+  },
+  {
+    "id": "Helmet/Ezomyte-Burgonet-Abyssus-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Abyssus Ezomyte Burgonet",
+    "type": "Ezomyte-Burgonet"
+  },
+  {
+    "id": "Helmet/Ezomyte-Burgonet-Cowl-of-the-Thermophile",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Cowl of the Thermophile Ezomyte Burgonet",
+    "type": "Ezomyte-Burgonet"
+  },
+  {
+    "id": "Helmet/Fencer-Helm",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Fencer Helm",
+    "type": "Fencer Helm"
+  },
+  {
+    "id": "Helmet/Festival-Mask",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Festival Mask",
+    "type": "Festival Mask"
+  },
+  {
+    "id": "Helmet/Festival-Mask-Leer-Cast",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Leer Cast Festival Mask",
+    "type": "Festival-Mask"
+  },
+  {
+    "id": "Helmet/Festival-Mask-Leer-Cast-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Leer Cast Festival Mask",
+    "type": "Festival-Mask"
+  },
+  {
+    "id": "Helmet/Fluted-Bascinet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Fluted Bascinet",
+    "type": "Fluted Bascinet"
+  },
+  {
+    "id": "Helmet/Fluted-Bascinet-Crest-of-Desire",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Crest of Desire Fluted Bascinet",
+    "type": "Fluted-Bascinet"
+  },
+  {
+    "id": "Helmet/Gale-Crown",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Gale Crown",
+    "type": "Gale Crown"
+  },
+  {
+    "id": "Helmet/Gilded-Sallet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Gilded Sallet",
+    "type": "Gilded Sallet"
+  },
+  {
+    "id": "Helmet/Gilded-Sallet-Deidbell",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Deidbell Gilded Sallet",
+    "type": "Gilded-Sallet"
+  },
+  {
+    "id": "Helmet/Gilded-Sallet-Deidbellow",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Deidbellow Gilded Sallet",
+    "type": "Gilded-Sallet"
+  },
+  {
+    "id": "Helmet/Gladiator-Helmet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Gladiator Helmet",
+    "type": "Gladiator Helmet"
+  },
+  {
+    "id": "Helmet/Golden-Mask",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Golden Mask",
+    "type": "Golden Mask"
+  },
+  {
+    "id": "Helmet/Golden-Mask-The-Three-Dragons",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Three Dragons Golden Mask",
+    "type": "Golden-Mask"
+  },
+  {
+    "id": "Helmet/Golden-Mask-Willclash",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Willclash Golden Mask",
+    "type": "Golden-Mask"
+  },
+  {
+    "id": "Helmet/Golden-Visage",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Golden Visage",
+    "type": "Golden Visage"
+  },
+  {
+    "id": "Helmet/Golden-Visage-Demigods-Immortality",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Demigod's Immortality  Golden Visage",
+    "type": "Golden-Visage"
+  },
+  {
+    "id": "Helmet/Golden-Wreath",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Golden Wreath",
+    "type": "Golden Wreath"
+  },
+  {
+    "id": "Helmet/Golden-Wreath-Demigods-Triumph",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Demigod's Triumph Golden Wreath",
+    "type": "Golden-Wreath"
+  },
+  {
+    "id": "Helmet/Great-Crown",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Great Crown",
+    "type": "Great Crown"
+  },
+  {
+    "id": "Helmet/Great-Crown-Forbidden-Shako",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Forbidden Shako Great Crown",
+    "type": "Great-Crown"
+  },
+  {
+    "id": "Helmet/Great-Crown-Forbidden-Shako-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Forbidden Shako Great Crown",
+    "type": "Great-Crown"
+  },
+  {
+    "id": "Helmet/Great-Crown-Geofris-Crest",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Geofri's Crest Great Crown",
+    "type": "Great-Crown"
+  },
+  {
+    "id": "Helmet/Great-Crown-Geofris-Legacy",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Geofri's Legacy Great Crown",
+    "type": "Great-Crown"
+  },
+  {
+    "id": "Helmet/Great-Crown-Lightpoacher",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Lightpoacher Great Crown",
+    "type": "Great-Crown"
+  },
+  {
+    "id": "Helmet/Great-Helmet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Great Helmet",
+    "type": "Great Helmet"
+  },
+  {
+    "id": "Helmet/Great-Helmet-Veil-of-the-Night",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Veil of the Night Great Helmet",
+    "type": "Great-Helmet"
+  },
+  {
+    "id": "Helmet/Great-Helmet-Veil-of-the-Night-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Veil of the Night Great Helmet",
+    "type": "Great-Helmet"
+  },
+  {
+    "id": "Helmet/Harlequin-Mask",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Harlequin Mask",
+    "type": "Harlequin Mask"
+  },
+  {
+    "id": "Helmet/Harlequin-Mask-Farruls-Bite",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Farrul's Bite Harlequin Mask",
+    "type": "Harlequin-Mask"
+  },
+  {
+    "id": "Helmet/Harlequin-Mask-Mind-of-the-Council",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Mind of the Council Harlequin Mask",
+    "type": "Harlequin-Mask"
+  },
+  {
+    "id": "Helmet/Hubris-Circlet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Hubris Circlet",
+    "type": "Hubris Circlet"
+  },
+  {
+    "id": "Helmet/Hubris-Circlet-Crown-of-Eyes",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Crown of Eyes Hubris Circlet",
+    "type": "Hubris-Circlet"
+  },
+  {
+    "id": "Helmet/Hubris-Circlet-Ebers-Unification",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Eber's Unification Hubris Circlet",
+    "type": "Hubris-Circlet"
+  },
+  {
+    "id": "Helmet/Hubris-Circlet-Indigon",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Indigon Hubris Circlet",
+    "type": "Hubris-Circlet"
+  },
+  {
+    "id": "Helmet/Hubris-Circlet-Ylfebans-Trickery",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Ylfeban's Trickery Hubris Circlet",
+    "type": "Hubris-Circlet"
+  },
+  {
+    "id": "Helmet/Hunter-Hood",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Hunter Hood",
+    "type": "Hunter Hood"
+  },
+  {
+    "id": "Helmet/Imp-Crown",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Imp Crown",
+    "type": "Imp Crown"
+  },
+  {
+    "id": "Helmet/Iron-Circlet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Iron Circlet",
+    "type": "Iron Circlet"
+  },
+  {
+    "id": "Helmet/Iron-Circlet-Asenaths-Chant",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Asenath's Chant Iron Circlet",
+    "type": "Iron-Circlet"
+  },
+  {
+    "id": "Helmet/Iron-Circlet-Asenaths-Mark",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Asenath's Mark Iron Circlet",
+    "type": "Iron-Circlet"
+  },
+  {
+    "id": "Helmet/Iron-Circlet-Wreath-of-Phrecia",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Wreath of Phrecia Iron Circlet",
+    "type": "Iron-Circlet"
+  },
+  {
+    "id": "Helmet/Iron-Hat",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Iron Hat",
+    "type": "Iron Hat"
+  },
+  {
+    "id": "Helmet/Iron-Hat-Ezomyte-Hold",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Ezomyte Hold Iron Hat",
+    "type": "Iron-Hat"
+  },
+  {
+    "id": "Helmet/Iron-Hat-Ezomyte-Peak",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Ezomyte Peak Iron Hat",
+    "type": "Iron-Hat"
+  },
+  {
+    "id": "Helmet/Iron-Hat-Tear-of-Entropy",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Tear of Entropy Iron Hat",
+    "type": "Iron-Hat"
+  },
+  {
+    "id": "Helmet/Iron-Mask",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Iron Mask",
+    "type": "Iron Mask"
+  },
+  {
+    "id": "Helmet/Iron-Mask-Malachais-Awakening",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Malachai's Awakening Iron Mask",
+    "type": "Iron-Mask"
+  },
+  {
+    "id": "Helmet/Iron-Mask-Malachais-Simula",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Malachai's Simula Iron Mask",
+    "type": "Iron-Mask"
+  },
+  {
+    "id": "Helmet/Lacquered-Helmet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Lacquered Helmet",
+    "type": "Lacquered Helmet"
+  },
+  {
+    "id": "Helmet/Lacquered-Helmet-Black-Sun-Crest",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Black Sun Crest Lacquered Helmet",
+    "type": "Lacquered-Helmet"
+  },
+  {
+    "id": "Helmet/Lacquered-Helmet-The-Fledgling",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Fledgling Lacquered Helmet",
+    "type": "Lacquered-Helmet"
+  },
+  {
+    "id": "Helmet/Leather-Cap",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Leather Cap",
+    "type": "Leather Cap"
+  },
+  {
+    "id": "Helmet/Leather-Cap-Goldrim",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Goldrim Leather Cap",
+    "type": "Leather-Cap"
+  },
+  {
+    "id": "Helmet/Leather-Hood",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Leather Hood",
+    "type": "Leather Hood"
+  },
+  {
+    "id": "Helmet/Leather-Hood-Frostferno",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Frostferno Leather Hood",
+    "type": "Leather-Hood"
+  },
+  {
+    "id": "Helmet/Leather-Hood-Heatshiver",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Heatshiver Leather Hood",
+    "type": "Leather-Hood"
+  },
+  {
+    "id": "Helmet/Lion-Pelt",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Lion Pelt",
+    "type": "Lion Pelt"
+  },
+  {
+    "id": "Helmet/Lion-Pelt-Obscurantis",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Obscurantis Lion Pelt",
+    "type": "Lion-Pelt"
+  },
+  {
+    "id": "Helmet/Lunaris-Circlet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Lunaris Circlet",
+    "type": "Lunaris Circlet"
+  },
+  {
+    "id": "Helmet/Lunaris-Circlet-Doedres-Scorn",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Doedre's Scorn Lunaris Circlet",
+    "type": "Lunaris-Circlet"
+  },
+  {
+    "id": "Helmet/Magistrate-Crown",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Magistrate Crown",
+    "type": "Magistrate Crown"
+  },
+  {
+    "id": "Helmet/Magistrate-Crown-Craiceanns-Chitin",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Craiceann's Chitin Magistrate Crown",
+    "type": "Magistrate-Crown"
+  },
+  {
+    "id": "Helmet/Magistrate-Crown-Crown-of-the-Tyrant",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Crown of the Tyrant Magistrate Crown",
+    "type": "Magistrate-Crown"
+  },
+  {
+    "id": "Helmet/Magistrate-Crown-Mask-of-the-Spirit-Drinker",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Mask of the Spirit Drinker Magistrate Crown",
+    "type": "Magistrate-Crown"
+  },
+  {
+    "id": "Helmet/Magistrate-Crown-Mask-of-the-Stitched-Demon",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Mask of the Stitched Demon Magistrate Crown",
+    "type": "Magistrate-Crown"
+  },
+  {
+    "id": "Helmet/Magistrate-Crown-Mask-of-the-Tribunal",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Mask of the Tribunal Magistrate Crown",
+    "type": "Magistrate-Crown"
+  },
+  {
+    "id": "Helmet/Mind-Cage",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Mind Cage",
+    "type": "Mind Cage"
+  },
+  {
+    "id": "Helmet/Mind-Cage-Hale-Negator",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Hale Negator Mind Cage",
+    "type": "Mind-Cage"
+  },
+  {
+    "id": "Helmet/Mind-Cage-Rime-Gaze",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Rime Gaze Mind Cage",
+    "type": "Mind-Cage"
+  },
+  {
+    "id": "Helmet/Mind-Cage-Scolds-Bridle",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Scold's Bridle Mind Cage",
+    "type": "Mind-Cage"
+  },
+  {
+    "id": "Helmet/Necromancer-Circlet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Necromancer Circlet",
+    "type": "Necromancer Circlet"
+  },
+  {
+    "id": "Helmet/Necromancer-Circlet-Chitus-Apex",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Chitus' Apex Necromancer Circlet",
+    "type": "Necromancer-Circlet"
+  },
+  {
+    "id": "Helmet/Necromancer-Circlet-Fenumus-Toxins",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Fenumus' Toxins Necromancer Circlet",
+    "type": "Necromancer-Circlet"
+  },
+  {
+    "id": "Helmet/Necromancer-Circlet-The-Devouring-Diadem",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Devouring Diadem Necromancer Circlet",
+    "type": "Necromancer-Circlet"
+  },
+  {
+    "id": "Helmet/Nightmare-Bascinet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Nightmare Bascinet",
+    "type": "Nightmare Bascinet"
+  },
+  {
+    "id": "Helmet/Nightmare-Bascinet-Devotos-Devotion",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Devoto's Devotion Nightmare Bascinet",
+    "type": "Nightmare-Bascinet"
+  },
+  {
+    "id": "Helmet/Nightmare-Bascinet-The-Bringer-of-Rain",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Bringer of Rain Nightmare Bascinet",
+    "type": "Nightmare-Bascinet"
+  },
+  {
+    "id": "Helmet/Noble-Tricorne",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Noble Tricorne",
+    "type": "Noble Tricorne"
+  },
+  {
+    "id": "Helmet/Penitent-Mask",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Penitent Mask",
+    "type": "Penitent Mask"
+  },
+  {
+    "id": "Helmet/Pig-Faced-Bascinet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Pig-Faced Bascinet",
+    "type": "Pig-Faced Bascinet"
+  },
+  {
+    "id": "Helmet/Plague-Mask",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Plague Mask",
+    "type": "Plague Mask"
+  },
+  {
+    "id": "Helmet/Plague-Mask-Curtain-Call",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Curtain Call Plague Mask",
+    "type": "Plague-Mask"
+  },
+  {
+    "id": "Helmet/Praetor-Crown",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Praetor Crown",
+    "type": "Praetor Crown"
+  },
+  {
+    "id": "Helmet/Praetor-Crown-Ahns-Contempt",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Ahn's Contempt Praetor Crown",
+    "type": "Praetor-Crown"
+  },
+  {
+    "id": "Helmet/Praetor-Crown-Malachais-Vision",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Malachai's Vision Praetor Crown",
+    "type": "Praetor-Crown"
+  },
+  {
+    "id": "Helmet/Praetor-Crown-Memory-Vault",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Memory Vault Praetor Crown",
+    "type": "Praetor-Crown"
+  },
+  {
+    "id": "Helmet/Praetor-Crown-Viridis-Veil",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Viridi's Veil Praetor Crown",
+    "type": "Praetor-Crown"
+  },
+  {
+    "id": "Helmet/Praetor-Crown-Volls-Vision",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Voll's Vision Praetor Crown",
+    "type": "Praetor-Crown"
+  },
+  {
+    "id": "Helmet/Prophet-Crown",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Prophet Crown",
+    "type": "Prophet Crown"
+  },
+  {
+    "id": "Helmet/Prophet-Crown-Crown-of-the-Inward-Eye",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Crown of the Inward Eye Prophet Crown",
+    "type": "Prophet-Crown"
+  },
+  {
+    "id": "Helmet/Prophet-Crown-Speakers-Wreath",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Speaker's Wreath Prophet Crown",
+    "type": "Prophet-Crown"
+  },
+  {
+    "id": "Helmet/Prophet-Crown-The-Brine-Crown",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Brine Crown Prophet Crown",
+    "type": "Prophet-Crown"
+  },
+  {
+    "id": "Helmet/Prophet-Crown-The-Broken-Crown",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Broken Crown Prophet Crown",
+    "type": "Prophet-Crown"
+  },
+  {
+    "id": "Helmet/Raven-Mask",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Raven Mask",
+    "type": "Raven Mask"
+  },
+  {
+    "id": "Helmet/Raven-Mask-The-Gull",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Gull Raven Mask",
+    "type": "Raven-Mask"
+  },
+  {
+    "id": "Helmet/Reaver-Helmet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Reaver Helmet",
+    "type": "Reaver Helmet"
+  },
+  {
+    "id": "Helmet/Regicide-Mask",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Regicide Mask",
+    "type": "Regicide Mask"
+  },
+  {
+    "id": "Helmet/Regicide-Mask-Crown-of-the-Pale-King",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Crown of the Pale King Regicide Mask",
+    "type": "Regicide-Mask"
+  },
+  {
+    "id": "Helmet/Regicide-Mask-Gorgons-Gaze",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Gorgon's Gaze Regicide Mask",
+    "type": "Regicide-Mask"
+  },
+  {
+    "id": "Helmet/Royal-Burgonet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Royal Burgonet",
+    "type": "Royal Burgonet"
+  },
+  {
+    "id": "Helmet/Royal-Burgonet-The-Formless-Inferno",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Formless Inferno Royal Burgonet",
+    "type": "Royal-Burgonet"
+  },
+  {
+    "id": "Helmet/Rusted-Coif",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Rusted Coif",
+    "type": "Rusted Coif"
+  },
+  {
+    "id": "Helmet/Sallet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Sallet",
+    "type": "Sallet"
+  },
+  {
+    "id": "Helmet/Samnite-Helmet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Samnite Helmet",
+    "type": "Samnite Helmet"
+  },
+  {
+    "id": "Helmet/Samnite-Helmet-Hrimnors-Resolve",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Hrimnor's Resolve Samnite Helmet",
+    "type": "Samnite-Helmet"
+  },
+  {
+    "id": "Helmet/Scare-Mask",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Scare Mask",
+    "type": "Scare Mask"
+  },
+  {
+    "id": "Helmet/Secutor-Helm",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Secutor Helm",
+    "type": "Secutor Helm"
+  },
+  {
+    "id": "Helmet/Secutor-Helm-Skullhead",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Skullhead Secutor Helm",
+    "type": "Secutor-Helm"
+  },
+  {
+    "id": "Helmet/Siege-Helmet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Siege Helmet",
+    "type": "Siege Helmet"
+  },
+  {
+    "id": "Helmet/Siege-Helmet-The-Formless-Flame",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Formless Flame Siege Helmet",
+    "type": "Siege-Helmet"
+  },
+  {
+    "id": "Helmet/Silken-Hood",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Silken Hood",
+    "type": "Silken Hood"
+  },
+  {
+    "id": "Helmet/Silken-Hood-Cowl-of-the-Cryophile",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Cowl of the Cryophile Silken Hood",
+    "type": "Silken-Hood"
+  },
+  {
+    "id": "Helmet/Silken-Hood-Saqawals-Flock",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Saqawal's Flock Silken Hood",
+    "type": "Silken-Hood"
+  },
+  {
+    "id": "Helmet/Silken-Hood-Starkonjas-Head",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Starkonja's Head Silken Hood",
+    "type": "Silken-Hood"
+  },
+  {
+    "id": "Helmet/Sinner-Tricorne",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Sinner Tricorne",
+    "type": "Sinner Tricorne"
+  },
+  {
+    "id": "Helmet/Sinner-Tricorne-Alphas-Howl",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Alpha's Howl Sinner Tricorne",
+    "type": "Sinner-Tricorne"
+  },
+  {
+    "id": "Helmet/Sinner-Tricorne-Alphas-Howl-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Alpha's Howl Sinner Tricorne",
+    "type": "Sinner-Tricorne"
+  },
+  {
+    "id": "Helmet/Sinner-Tricorne-Assailum",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Assailum Sinner Tricorne",
+    "type": "Sinner-Tricorne"
+  },
+  {
+    "id": "Helmet/Solaris-Circlet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Solaris Circlet",
+    "type": "Solaris Circlet"
+  },
+  {
+    "id": "Helmet/Solaris-Circlet-Cowl-of-the-Ceraunophile",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Cowl of the Ceraunophile Solaris Circlet",
+    "type": "Solaris-Circlet"
+  },
+  {
+    "id": "Helmet/Solaris-Circlet-Farsight",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Farsight Solaris Circlet",
+    "type": "Solaris-Circlet"
+  },
+  {
+    "id": "Helmet/Solaris-Circlet-Flamesight",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Flamesight Solaris Circlet",
+    "type": "Solaris-Circlet"
+  },
+  {
+    "id": "Helmet/Solaris-Circlet-Galesight",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Galesight Solaris Circlet",
+    "type": "Solaris-Circlet"
+  },
+  {
+    "id": "Helmet/Solaris-Circlet-Thundersight",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Thundersight Solaris Circlet",
+    "type": "Solaris-Circlet"
+  },
+  {
+    "id": "Helmet/Soldier-Helmet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Soldier Helmet",
+    "type": "Soldier Helmet"
+  },
+  {
+    "id": "Helmet/Soldier-Helmet-Honourhold",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Honourhold Soldier Helmet",
+    "type": "Soldier-Helmet"
+  },
+  {
+    "id": "Helmet/Soldier-Helmet-Honourhome",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Honourhome Soldier Helmet",
+    "type": "Soldier-Helmet"
+  },
+  {
+    "id": "Helmet/Sorrow-Mask",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Sorrow Mask",
+    "type": "Sorrow Mask"
+  },
+  {
+    "id": "Helmet/Steel-Circlet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Steel Circlet",
+    "type": "Steel Circlet"
+  },
+  {
+    "id": "Helmet/Steel-Circlet-Maw-of-Conquest",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Maw of Conquest Steel Circlet",
+    "type": "Steel-Circlet"
+  },
+  {
+    "id": "Helmet/Torture-Cage",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Torture Cage",
+    "type": "Torture Cage"
+  },
+  {
+    "id": "Helmet/Tribal-Circlet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Tribal Circlet",
+    "type": "Tribal Circlet"
+  },
+  {
+    "id": "Helmet/Tribal-Circlet-Mark-of-the-Red-Covenant",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Mark of the Red Covenant Tribal Circlet",
+    "type": "Tribal-Circlet"
+  },
+  {
+    "id": "Helmet/Tricorne",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Tricorne",
+    "type": "Tricorne"
+  },
+  {
+    "id": "Helmet/Tricorne-Tricorne-Fairgraves",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Fairgraves' Tricorne Tricorne",
+    "type": "Tricorne-Tricorne"
+  },
+  {
+    "id": "Helmet/Ursine-Pelt",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Ursine Pelt",
+    "type": "Ursine Pelt"
+  },
+  {
+    "id": "Helmet/Ursine-Pelt-Rats-Nest",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Rat's Nest Ursine Pelt",
+    "type": "Ursine-Pelt"
+  },
+  {
+    "id": "Helmet/Vaal-Mask",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Vaal Mask",
+    "type": "Vaal Mask"
+  },
+  {
+    "id": "Helmet/Vaal-Mask-Fractal-Thoughts",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Fractal Thoughts Vaal Mask",
+    "type": "Vaal-Mask"
+  },
+  {
+    "id": "Helmet/Vaal-Mask-Glimpse-of-Chaos",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Glimpse of Chaos Vaal Mask",
+    "type": "Vaal-Mask"
+  },
+  {
+    "id": "Helmet/Vaal-Mask-The-Vertex",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Vertex Vaal Mask",
+    "type": "Vaal-Mask"
+  },
+  {
+    "id": "Helmet/Vine-Circlet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Vine Circlet",
+    "type": "Vine Circlet"
+  },
+  {
+    "id": "Helmet/Vine-Circlet-Crown-of-Thorns",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Crown of Thorns Vine Circlet",
+    "type": "Vine-Circlet"
+  },
+  {
+    "id": "Helmet/Vine-Circlet-Martyrs-Crown",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Martyr's Crown Vine Circlet",
+    "type": "Vine-Circlet"
+  },
+  {
+    "id": "Helmet/Visored-Sallet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Visored Sallet",
+    "type": "Visored Sallet"
+  },
+  {
+    "id": "Helmet/Visored-Sallet-The-Peregrine",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Peregrine Visored Sallet",
+    "type": "Visored-Sallet"
+  },
+  {
+    "id": "Helmet/Winter-Crown",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Winter Crown",
+    "type": "Winter Crown"
+  },
+  {
+    "id": "Helmet/Wolf-Pelt",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Wolf Pelt",
+    "type": "Wolf Pelt"
+  },
+  {
+    "id": "Helmet/Zealot-Helmet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Zealot Helmet",
+    "type": "Zealot Helmet"
+  },
+  {
+    "id": "Helmet/Zealot-Helmet-Kitavas-Thirst",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Kitava's Thirst Zealot Helmet",
+    "type": "Zealot-Helmet"
+  }
+]

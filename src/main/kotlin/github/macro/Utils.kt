@@ -27,7 +27,9 @@ object Utils {
         SHADOW -> listOf("Viper Strike", "Lesser Poison Support")
     }.mapNotNull { Gem.fromName(it) }
 
-    fun Enum<*>.cleanName(): String = this.name.split("_").joinToString(" ") { it.toLowerCase().capitalize() }
+    fun Enum<*>.cleanName(): String = this.name.split("_").joinToString(" ") {
+        it.lowercase().replaceFirstChar { c -> if (c.isLowerCase()) c.titlecase() else c.toString() }
+    }
 
     fun getImageWidth(item: Gem): Double = ImageIO.read(item.getImageFile()).width.toDouble()
     fun getImageHeight(item: Gem): Double = ImageIO.read(item.getImageFile()).height.toDouble()
@@ -35,7 +37,9 @@ object Utils {
     fun slugify(value: String): String {
         val regex = "[\\/:*?\"<>|.]+".toRegex()
         val temp = regex.replace(value, "")
-        return temp.replace("-", " ").split(" ").joinToString("-") { it.trim().capitalize() }
+        return temp.replace("-", " ").split(" ").joinToString("-") {
+            it.trim().replaceFirstChar { c -> if (c.isLowerCase()) c.titlecase() else c.toString() }
+        }
     }
 
     fun getMissingGem(name: String? = null) = Gem(

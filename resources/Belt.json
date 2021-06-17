@@ -1,0 +1,457 @@
+[
+  {
+    "id": "Belt/Chain",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Chain Belt",
+    "type": "Chain"
+  },
+  {
+    "id": "Belt/Chain-Ascent-From-Flesh",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Ascent From Flesh Chain Belt",
+    "type": "Chain"
+  },
+  {
+    "id": "Belt/Chain-Bated-Breath",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Bated Breath Chain Belt",
+    "type": "Chain"
+  },
+  {
+    "id": "Belt/Chain-Bated-Breath-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Bated Breath Chain Belt",
+    "type": "Chain"
+  },
+  {
+    "id": "Belt/Chain-Chains-of-Emancipation",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Chains of Emancipation Chain Belt",
+    "type": "Chain"
+  },
+  {
+    "id": "Belt/Chain-Cowards-Chains",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Coward's Chains Chain Belt",
+    "type": "Chain"
+  },
+  {
+    "id": "Belt/Chain-Cowards-Legacy",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Coward's Legacy Chain Belt",
+    "type": "Chain"
+  },
+  {
+    "id": "Belt/Chain-Maligaros-Restraint",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Maligaro's Restraint Chain Belt",
+    "type": "Chain"
+  },
+  {
+    "id": "Belt/Cloth",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Cloth Belt",
+    "type": "Cloth"
+  },
+  {
+    "id": "Belt/Cloth-Arns-Anguish",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Arn's Anguish Cloth Belt",
+    "type": "Cloth"
+  },
+  {
+    "id": "Belt/Cloth-Gravens-Secret",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Graven's Secret Cloth Belt",
+    "type": "Cloth"
+  },
+  {
+    "id": "Belt/Cloth-Olesyas-Delight",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Olesya's Delight Cloth Belt",
+    "type": "Cloth"
+  },
+  {
+    "id": "Belt/Cloth-Perandus-Blazon",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Perandus Blazon Cloth Belt",
+    "type": "Cloth"
+  },
+  {
+    "id": "Belt/Cloth-Soul-Tether",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Soul Tether Cloth Belt",
+    "type": "Cloth"
+  },
+  {
+    "id": "Belt/Cloth-Soul-Tether-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Soul Tether Cloth Belt",
+    "type": "Cloth"
+  },
+  {
+    "id": "Belt/Cloth-Soulthirst",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Soulthirst Cloth Belt",
+    "type": "Cloth"
+  },
+  {
+    "id": "Belt/Cloth-Sunblast",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Sunblast Cloth Belt",
+    "type": "Cloth"
+  },
+  {
+    "id": "Belt/Cloth-The-Druggery",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Druggery Cloth Belt",
+    "type": "Cloth"
+  },
+  {
+    "id": "Belt/Cloth-The-Flow-Untethered",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Flow Untethered Cloth Belt",
+    "type": "Cloth"
+  },
+  {
+    "id": "Belt/Cloth-The-Torrents-Reclamation",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Torrent's Reclamation Cloth Belt",
+    "type": "Cloth"
+  },
+  {
+    "id": "Belt/Crystal",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Crystal Belt",
+    "type": "Crystal"
+  },
+  {
+    "id": "Belt/Crystal-Auxium",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Auxium Crystal Belt",
+    "type": "Crystal"
+  },
+  {
+    "id": "Belt/Golden",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Golden Obi",
+    "type": "Golden"
+  },
+  {
+    "id": "Belt/Golden-Demigods-Bounty",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Demigod's Bounty Golden Obi",
+    "type": "Golden"
+  },
+  {
+    "id": "Belt/Heavy",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Heavy Belt",
+    "type": "Heavy"
+  },
+  {
+    "id": "Belt/Heavy-Belt-of-the-Deceiver",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Belt of the Deceiver Heavy Belt",
+    "type": "Heavy"
+  },
+  {
+    "id": "Belt/Heavy-Biscos-Leash",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Bisco's Leash Heavy Belt",
+    "type": "Heavy"
+  },
+  {
+    "id": "Belt/Heavy-Doryanis-Invitation",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Doryani's Invitation Heavy Belt",
+    "type": "Heavy"
+  },
+  {
+    "id": "Belt/Heavy-Dyadian-Dawn",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Dyadian Dawn Heavy Belt",
+    "type": "Heavy"
+  },
+  {
+    "id": "Belt/Heavy-Meginords-Girdle",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Meginord's Girdle Heavy Belt",
+    "type": "Heavy"
+  },
+  {
+    "id": "Belt/Heavy-Mothers-Embrace",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Mother's Embrace Heavy Belt",
+    "type": "Heavy"
+  },
+  {
+    "id": "Belt/Heavy-Siegebreaker",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Siegebreaker Heavy Belt",
+    "type": "Heavy"
+  },
+  {
+    "id": "Belt/Heavy-Siegebreaker-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Siegebreaker Heavy Belt",
+    "type": "Heavy"
+  },
+  {
+    "id": "Belt/Heavy-String-of-Servitude",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "String of Servitude Heavy Belt",
+    "type": "Heavy"
+  },
+  {
+    "id": "Belt/Heavy-Survivors-Guilt",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Survivor's Guilt Heavy Belt",
+    "type": "Heavy"
+  },
+  {
+    "id": "Belt/Leather",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Leather Belt",
+    "type": "Leather"
+  },
+  {
+    "id": "Belt/Leather-Bears-Girdle",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Bear's Girdle Leather Belt",
+    "type": "Leather"
+  },
+  {
+    "id": "Belt/Leather-Cyclopean-Coil",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Cyclopean Coil Leather Belt",
+    "type": "Leather"
+  },
+  {
+    "id": "Belt/Leather-Gluttony",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Gluttony Leather Belt",
+    "type": "Leather"
+  },
+  {
+    "id": "Belt/Leather-Headhunter",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Headhunter Leather Belt",
+    "type": "Leather"
+  },
+  {
+    "id": "Belt/Leather-Headhunter-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Headhunter Leather Belt",
+    "type": "Leather"
+  },
+  {
+    "id": "Belt/Leather-Hyperboreus",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Hyperboreus Leather Belt",
+    "type": "Leather"
+  },
+  {
+    "id": "Belt/Leather-Immortal-Flesh",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Immortal Flesh Leather Belt",
+    "type": "Leather"
+  },
+  {
+    "id": "Belt/Leather-Leash-of-Oblation",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Leash of Oblation Leather Belt",
+    "type": "Leather"
+  },
+  {
+    "id": "Belt/Leather-Pyroshock-Clasp",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Pyroshock Clasp Leather Belt",
+    "type": "Leather"
+  },
+  {
+    "id": "Belt/Leather-Umbilicus-Immortalis",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Umbilicus Immortalis Leather Belt",
+    "type": "Leather"
+  },
+  {
+    "id": "Belt/Leather-Wurms-Molt",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Wurm's Molt Leather Belt",
+    "type": "Leather"
+  },
+  {
+    "id": "Belt/Mechalarm",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Mechalarm Belt",
+    "type": "Mechalarm"
+  },
+  {
+    "id": "Belt/Micro-Distillery",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Micro-Distillery Belt",
+    "type": "Micro-Distillery"
+  },
+  {
+    "id": "Belt/Rustic",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Rustic Sash",
+    "type": "Rustic"
+  },
+  {
+    "id": "Belt/Rustic-Chains-of-Time",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Chains of Time Rustic Sash",
+    "type": "Rustic"
+  },
+  {
+    "id": "Belt/Rustic-Faminebind",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Faminebind Rustic Sash",
+    "type": "Rustic"
+  },
+  {
+    "id": "Belt/Rustic-Feastbind",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Feastbind Rustic Sash",
+    "type": "Rustic"
+  },
+  {
+    "id": "Belt/Rustic-Prismweave",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Prismweave Rustic Sash",
+    "type": "Rustic"
+  },
+  {
+    "id": "Belt/Rustic-Prismweave-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Prismweave Rustic Sash",
+    "type": "Rustic"
+  },
+  {
+    "id": "Belt/Rustic-The-Retch",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Retch Rustic Sash",
+    "type": "Rustic"
+  },
+  {
+    "id": "Belt/Studded",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Studded Belt",
+    "type": "Studded"
+  },
+  {
+    "id": "Belt/Studded-Ryslathas-Coil",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Ryslatha's Coil Studded Belt",
+    "type": "Studded"
+  },
+  {
+    "id": "Belt/Studded-The-Magnate",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Magnate Studded Belt",
+    "type": "Studded"
+  },
+  {
+    "id": "Belt/Studded-The-Nomad",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Nomad Studded Belt",
+    "type": "Studded"
+  },
+  {
+    "id": "Belt/Studded-The-Tactician",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Tactician Studded Belt",
+    "type": "Studded"
+  },
+  {
+    "id": "Belt/Stygian",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Stygian Vise",
+    "type": "Stygian"
+  },
+  {
+    "id": "Belt/Stygian-Darkness-Enthroned",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Darkness Enthroned Stygian Vise",
+    "type": "Stygian"
+  },
+  {
+    "id": "Belt/Vanguard",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Vanguard Belt",
+    "type": "Vanguard"
+  },
+  {
+    "id": "Belt/Vanguard-Perseverance",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Perseverance Vanguard Belt",
+    "type": "Vanguard"
+  }
+]

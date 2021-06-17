@@ -3,7 +3,10 @@ package github.macro.ui.main
 import github.macro.Launcher
 import github.macro.Styles
 import github.macro.Utils.cleanName
-import github.macro.core.*
+import github.macro.core.Ascendency
+import github.macro.core.BuildInfo
+import github.macro.core.ClassTag
+import github.macro.core.Stage
 import github.macro.core.pantheon.MajorPantheon
 import github.macro.core.pantheon.MinorPantheon
 import github.macro.ui.build_viewer.BuildViewerModel
@@ -47,7 +50,7 @@ class MainView : View("Path of Taurewa") {
                 }
                 button(text = "\uD83D\uDCA1") {
                     action {
-                        hostServices.showDocument("https://github.com/Macro303/Path-of-Taurewa")
+                        hostServices.showDocument("https://github.com/Buried-In-Code/Path-of-Taurewa")
                     }
                     tooltip("Support") {
                         showDelay = Duration(0.0)
@@ -146,7 +149,7 @@ class MainView : View("Path of Taurewa") {
                                         stageList = mutableListOf(
                                             Stage(
                                                 name = "Act I",
-                                                weapons = listOf("Burning Arrow", "Pierce Support"),
+                                                weapons = mutableListOf("Burning Arrow", "Pierce Support"),
                                                 helmet = mutableListOf(),
                                                 bodyArmour = mutableListOf(),
                                                 gloves = mutableListOf(),

@@ -1,0 +1,961 @@
+[
+  {
+    "id": "Boots/Ambush",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Ambush Boots",
+    "type": "Ambush"
+  },
+  {
+    "id": "Boots/Ancient",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Ancient Greaves",
+    "type": "Ancient"
+  },
+  {
+    "id": "Boots/Ancient-Redblade-Tramplers",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Redblade Tramplers Ancient Greaves",
+    "type": "Ancient"
+  },
+  {
+    "id": "Boots/Antique",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Antique Greaves",
+    "type": "Antique"
+  },
+  {
+    "id": "Boots/Antique-Torchoak-Step",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Torchoak Step Antique Greaves",
+    "type": "Antique"
+  },
+  {
+    "id": "Boots/Arcanist",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Arcanist Slippers",
+    "type": "Arcanist"
+  },
+  {
+    "id": "Boots/Arcanist-Inyas-Epiphany",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Inya's Epiphany Arcanist Slippers",
+    "type": "Arcanist"
+  },
+  {
+    "id": "Boots/Arcanist-Inyas-Epiphany-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Inya's Epiphany Arcanist Slippers",
+    "type": "Arcanist"
+  },
+  {
+    "id": "Boots/Assassins",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Assassin's Boots",
+    "type": "Assassin's"
+  },
+  {
+    "id": "Boots/Assassins-Fenumus-Spinnerets",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Fenumus' Spinnerets Assassin's Boots",
+    "type": "Assassin's"
+  },
+  {
+    "id": "Boots/Assassins-Stampede-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Stampede Assassin's Boots",
+    "type": "Assassin's"
+  },
+  {
+    "id": "Boots/Assassins-The-Stampede",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Stampede Assassin's Boots",
+    "type": "Assassin's"
+  },
+  {
+    "id": "Boots/Avian",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Avian Slippers",
+    "type": "Avian"
+  },
+  {
+    "id": "Boots/Basemetal",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Basemetal Treads",
+    "type": "Basemetal"
+  },
+  {
+    "id": "Boots/Blessed",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Blessed Boots",
+    "type": "Blessed"
+  },
+  {
+    "id": "Boots/Brimstone",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Brimstone Treads",
+    "type": "Brimstone"
+  },
+  {
+    "id": "Boots/Bronzescale",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Bronzescale Boots",
+    "type": "Bronzescale"
+  },
+  {
+    "id": "Boots/Bronzescale-Lioneyes-Paws",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Lioneye's Paws Bronzescale Boots",
+    "type": "Bronzescale"
+  },
+  {
+    "id": "Boots/Bronzescale-Lioneyes-Paws-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Lioneye's Paws Bronzescale Boots",
+    "type": "Bronzescale"
+  },
+  {
+    "id": "Boots/Carnal",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Carnal Boots",
+    "type": "Carnal"
+  },
+  {
+    "id": "Boots/Carnal-Corpsewalker",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Corpsewalker Carnal Boots",
+    "type": "Carnal"
+  },
+  {
+    "id": "Boots/Carnal-Dance-of-the-Offered",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Dance of the Offered Carnal Boots",
+    "type": "Carnal"
+  },
+  {
+    "id": "Boots/Carnal-Omeyocan",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Omeyocan Carnal Boots",
+    "type": "Carnal"
+  },
+  {
+    "id": "Boots/Chain",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Chain Boots",
+    "type": "Chain"
+  },
+  {
+    "id": "Boots/Clasped",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Clasped Boots",
+    "type": "Clasped"
+  },
+  {
+    "id": "Boots/Clasped-Sundance",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Sundance Clasped Boots",
+    "type": "Clasped"
+  },
+  {
+    "id": "Boots/Clasped-Sunspite",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Sunspite Clasped Boots",
+    "type": "Clasped"
+  },
+  {
+    "id": "Boots/Cloudwhisper",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Cloudwhisper Boots",
+    "type": "Cloudwhisper"
+  },
+  {
+    "id": "Boots/Conjurer",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Conjurer Boots",
+    "type": "Conjurer"
+  },
+  {
+    "id": "Boots/Conjurer-Rainbowstride",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Rainbowstride Conjurer Boots",
+    "type": "Conjurer"
+  },
+  {
+    "id": "Boots/Crusader",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Crusader Boots",
+    "type": "Crusader"
+  },
+  {
+    "id": "Boots/Crusader-Deaths-Door",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Death's Door Crusader Boots",
+    "type": "Crusader"
+  },
+  {
+    "id": "Boots/Darksteel",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Darksteel Treads",
+    "type": "Darksteel"
+  },
+  {
+    "id": "Boots/Deerskin",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Deerskin Boots",
+    "type": "Deerskin"
+  },
+  {
+    "id": "Boots/Deerskin-Deerstalker",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Deerstalker Deerskin Boots",
+    "type": "Deerskin"
+  },
+  {
+    "id": "Boots/Dragonscale",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Dragonscale Boots",
+    "type": "Dragonscale"
+  },
+  {
+    "id": "Boots/Dragonscale-Darkray-Vectors",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Darkray Vectors Dragonscale Boots",
+    "type": "Dragonscale"
+  },
+  {
+    "id": "Boots/Dreamquest",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Dreamquest Slippers",
+    "type": "Dreamquest"
+  },
+  {
+    "id": "Boots/Duskwalk",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Duskwalk Slippers",
+    "type": "Duskwalk"
+  },
+  {
+    "id": "Boots/Eelskin",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Eelskin Boots",
+    "type": "Eelskin"
+  },
+  {
+    "id": "Boots/Goathide",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Goathide Boots",
+    "type": "Goathide"
+  },
+  {
+    "id": "Boots/Goathide-Abberaths-Hooves",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Abberath's Hooves Goathide Boots",
+    "type": "Goathide"
+  },
+  {
+    "id": "Boots/Goathide-Victarios-Flight",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Victario's Flight Goathide Boots",
+    "type": "Goathide"
+  },
+  {
+    "id": "Boots/Golden",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Golden Caligae",
+    "type": "Golden"
+  },
+  {
+    "id": "Boots/Golden-Demigods-Stride",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Demigod's Stride Golden Caligae",
+    "type": "Golden"
+  },
+  {
+    "id": "Boots/Goliath",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Goliath Greaves",
+    "type": "Goliath"
+  },
+  {
+    "id": "Boots/Goliath-Craiceanns-Tracks",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Craiceann's Tracks Goliath Greaves",
+    "type": "Goliath"
+  },
+  {
+    "id": "Boots/Goliath-The-Infinite-Pursuit",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Infinite Pursuit Goliath Greaves",
+    "type": "Goliath"
+  },
+  {
+    "id": "Boots/Hydrascale",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Hydrascale Boots",
+    "type": "Hydrascale"
+  },
+  {
+    "id": "Boots/Hydrascale-Saqawals-Talons",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Saqawal's Talons Hydrascale Boots",
+    "type": "Hydrascale"
+  },
+  {
+    "id": "Boots/Iron",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Iron Greaves",
+    "type": "Iron"
+  },
+  {
+    "id": "Boots/Ironscale",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Ironscale Boots",
+    "type": "Ironscale"
+  },
+  {
+    "id": "Boots/Ironscale-Duskblight",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Duskblight Ironscale Boots",
+    "type": "Ironscale"
+  },
+  {
+    "id": "Boots/Ironscale-Dusktoe",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Dusktoe Ironscale Boots",
+    "type": "Ironscale"
+  },
+  {
+    "id": "Boots/Kaoms",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Kaom's Greaves",
+    "type": "Kaom's"
+  },
+  {
+    "id": "Boots/Leatherscale",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Leatherscale Boots",
+    "type": "Leatherscale"
+  },
+  {
+    "id": "Boots/Legion",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Legion Boots",
+    "type": "Legion"
+  },
+  {
+    "id": "Boots/Legion-Gangs-Momentum",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Gang's Momentum Legion Boots",
+    "type": "Legion"
+  },
+  {
+    "id": "Boots/Legion-March-of-the-Legion",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "March of the Legion Legion Boots",
+    "type": "Legion"
+  },
+  {
+    "id": "Boots/Mesh",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Mesh Boots",
+    "type": "Mesh"
+  },
+  {
+    "id": "Boots/Mesh-Wake-of-Destruction",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Wake of Destruction Mesh Boots",
+    "type": "Mesh"
+  },
+  {
+    "id": "Boots/Murder",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Murder Boots",
+    "type": "Murder"
+  },
+  {
+    "id": "Boots/Murder-Bubonic-Trail",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Bubonic Trail Murder Boots",
+    "type": "Murder"
+  },
+  {
+    "id": "Boots/Murder-Voidwalker",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Voidwalker Murder Boots",
+    "type": "Murder"
+  },
+  {
+    "id": "Boots/Murder-Voidwalker-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Voidwalker Murder Boots",
+    "type": "Murder"
+  },
+  {
+    "id": "Boots/Nightwind",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Nightwind Slippers",
+    "type": "Nightwind"
+  },
+  {
+    "id": "Boots/Nubuck",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Nubuck Boots",
+    "type": "Nubuck"
+  },
+  {
+    "id": "Boots/Nubuck-Goldwyrm",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Goldwyrm Nubuck Boots",
+    "type": "Nubuck"
+  },
+  {
+    "id": "Boots/Plated",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Plated Greaves",
+    "type": "Plated"
+  },
+  {
+    "id": "Boots/Plated-Stormcharger",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Stormcharger Plated Greaves",
+    "type": "Plated"
+  },
+  {
+    "id": "Boots/Rawhide",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Rawhide Boots",
+    "type": "Rawhide"
+  },
+  {
+    "id": "Boots/Rawhide-Seven-League-Step",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Seven-League Step Rawhide Boots",
+    "type": "Rawhide"
+  },
+  {
+    "id": "Boots/Reinforced",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Reinforced Greaves",
+    "type": "Reinforced"
+  },
+  {
+    "id": "Boots/Reinforced-Windscream",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Windscream Reinforced Greaves",
+    "type": "Reinforced"
+  },
+  {
+    "id": "Boots/Reinforced-Windshriek",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Windshriek Reinforced Greaves",
+    "type": "Reinforced"
+  },
+  {
+    "id": "Boots/Ringmail",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Ringmail Boots",
+    "type": "Ringmail"
+  },
+  {
+    "id": "Boots/Riveted",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Riveted Boots",
+    "type": "Riveted"
+  },
+  {
+    "id": "Boots/Riveted-Ralakeshs-Impatience",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Ralakesh's Impatience Riveted Boots",
+    "type": "Riveted"
+  },
+  {
+    "id": "Boots/Samite",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Samite Slippers",
+    "type": "Samite"
+  },
+  {
+    "id": "Boots/Satin",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Satin Slippers",
+    "type": "Satin"
+  },
+  {
+    "id": "Boots/Scholar",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Scholar Boots",
+    "type": "Scholar"
+  },
+  {
+    "id": "Boots/Scholar-Shavronnes-Gambit",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Shavronne's Gambit Scholar Boots",
+    "type": "Scholar"
+  },
+  {
+    "id": "Boots/Scholar-Shavronnes-Pace",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Shavronne's Pace Scholar Boots",
+    "type": "Scholar"
+  },
+  {
+    "id": "Boots/Serpentscale",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Serpentscale Boots",
+    "type": "Serpentscale"
+  },
+  {
+    "id": "Boots/Serpentscale-Mutewind-Whispersteps",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Mutewind Whispersteps Serpentscale Boots",
+    "type": "Serpentscale"
+  },
+  {
+    "id": "Boots/Shackled",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Shackled Boots",
+    "type": "Shackled"
+  },
+  {
+    "id": "Boots/Shagreen",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Shagreen Boots",
+    "type": "Shagreen"
+  },
+  {
+    "id": "Boots/Shagreen-Temptation-Step",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Temptation Step Shagreen Boots",
+    "type": "Shagreen"
+  },
+  {
+    "id": "Boots/Shagreen-Three-Step-Assault",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Three-step Assault Shagreen Boots",
+    "type": "Shagreen"
+  },
+  {
+    "id": "Boots/Shagreen-Three-Step-Assault-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Three-step Assault Shagreen Boots",
+    "type": "Shagreen"
+  },
+  {
+    "id": "Boots/Sharkskin",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Sharkskin Boots",
+    "type": "Sharkskin"
+  },
+  {
+    "id": "Boots/Sharkskin-The-Blood-Dance",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Blood Dance Sharkskin Boots",
+    "type": "Sharkskin"
+  },
+  {
+    "id": "Boots/Silk",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Silk Slippers",
+    "type": "Silk"
+  },
+  {
+    "id": "Boots/Silk-Bones-of-Ullr",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Bones of Ullr Silk Slippers",
+    "type": "Silk"
+  },
+  {
+    "id": "Boots/Silk-Bones-of-Ullr-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Bones of Ullr Silk Slippers",
+    "type": "Silk"
+  },
+  {
+    "id": "Boots/Silk-Ullrs-Advent",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Ullr's Advent Silk Slippers",
+    "type": "Silk"
+  },
+  {
+    "id": "Boots/Slink",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Slink Boots",
+    "type": "Slink"
+  },
+  {
+    "id": "Boots/Slink-Atziris-Step",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Atziri's Step Slink Boots",
+    "type": "Slink"
+  },
+  {
+    "id": "Boots/Slink-Doryanis-Delusion",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Doryani's Delusion Slink Boots",
+    "type": "Slink"
+  },
+  {
+    "id": "Boots/Slink-Farruls-Chase",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Farrul's Chase Slink Boots",
+    "type": "Slink"
+  },
+  {
+    "id": "Boots/Soldier",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Soldier Boots",
+    "type": "Soldier"
+  },
+  {
+    "id": "Boots/Soldier-Alberons-Warpath",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Alberon's Warpath Soldier Boots",
+    "type": "Soldier"
+  },
+  {
+    "id": "Boots/Soldier-Alberons-Warpath-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Alberon's Warpath Soldier Boots",
+    "type": "Soldier"
+  },
+  {
+    "id": "Boots/Sorcerer",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Sorcerer Boots",
+    "type": "Sorcerer"
+  },
+  {
+    "id": "Boots/Sorcerer-Doryanis-Delusion",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Doryani's Delusion Sorcerer Boots",
+    "type": "Sorcerer"
+  },
+  {
+    "id": "Boots/Sorcerer-Skyforth",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Skyforth Sorcerer Boots",
+    "type": "Sorcerer"
+  },
+  {
+    "id": "Boots/Sorcerer-Steppan-Eard",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Steppan Eard Sorcerer Boots",
+    "type": "Sorcerer"
+  },
+  {
+    "id": "Boots/Stealth",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Stealth Boots",
+    "type": "Stealth"
+  },
+  {
+    "id": "Boots/Stealth-Garukhans-Flight",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Garukhan's Flight Stealth Boots",
+    "type": "Stealth"
+  },
+  {
+    "id": "Boots/Stealth-Sin-Trek",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Sin Trek Stealth Boots",
+    "type": "Stealth"
+  },
+  {
+    "id": "Boots/Steel",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Steel Greaves",
+    "type": "Steel"
+  },
+  {
+    "id": "Boots/Steelscale",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Steelscale Boots",
+    "type": "Steelscale"
+  },
+  {
+    "id": "Boots/Stormrider",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Stormrider Boots",
+    "type": "Stormrider"
+  },
+  {
+    "id": "Boots/Strapped",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Strapped Boots",
+    "type": "Strapped"
+  },
+  {
+    "id": "Boots/Strapped-Nomics-Storm",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Nomic's Storm Strapped Boots",
+    "type": "Strapped"
+  },
+  {
+    "id": "Boots/Titan",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Titan Greaves",
+    "type": "Titan"
+  },
+  {
+    "id": "Boots/Titan-Doryanis-Delusion",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Doryani's Delusion Titan Greaves",
+    "type": "Titan"
+  },
+  {
+    "id": "Boots/Titan-Kaoms-Roots",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Kaom's Roots Titan Greaves",
+    "type": "Titan"
+  },
+  {
+    "id": "Boots/Titan-Red-Trail-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Red Trail Titan Greaves",
+    "type": "Titan"
+  },
+  {
+    "id": "Boots/Titan-The-Red-Trail",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Red Trail Titan Greaves",
+    "type": "Titan"
+  },
+  {
+    "id": "Boots/Trapper",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Trapper Boots",
+    "type": "Trapper"
+  },
+  {
+    "id": "Boots/Trapper-Brinerot-Whalers",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Brinerot Whalers Trapper Boots",
+    "type": "Trapper"
+  },
+  {
+    "id": "Boots/Two-Toned-Beacon-of-Madness",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Beacon of Madness Two-Toned Boots",
+    "type": "Two-Toned"
+  },
+  {
+    "id": "Boots/Two-Toned-Dex-Int",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Dex-Int Two-Toned Boots",
+    "type": "Two-Toned"
+  },
+  {
+    "id": "Boots/Two-Toned-Str-Dex",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Str-Dex Two-Toned Boots",
+    "type": "Two-Toned"
+  },
+  {
+    "id": "Boots/Two-Toned-Str-Int",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Str-Int Two-Toned Boots",
+    "type": "Two-Toned"
+  },
+  {
+    "id": "Boots/Vaal",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Vaal Greaves",
+    "type": "Vaal"
+  },
+  {
+    "id": "Boots/Velvet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Velvet Slippers",
+    "type": "Velvet"
+  },
+  {
+    "id": "Boots/Velvet-Greedtrap",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Greedtrap Velvet Slippers",
+    "type": "Velvet"
+  },
+  {
+    "id": "Boots/Velvet-Wondertrap",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Wondertrap Velvet Slippers",
+    "type": "Velvet"
+  },
+  {
+    "id": "Boots/Windbreak",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Windbreak Boots",
+    "type": "Windbreak"
+  },
+  {
+    "id": "Boots/Wool",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Wool Shoes",
+    "type": "Wool"
+  },
+  {
+    "id": "Boots/Wool-Wanderlust",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Wanderlust Wool Shoes",
+    "type": "Wool"
+  },
+  {
+    "id": "Boots/Wrapped",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Wrapped Boots",
+    "type": "Wrapped"
+  },
+  {
+    "id": "Boots/Wyrmscale",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Wyrmscale Boots",
+    "type": "Wyrmscale"
+  },
+  {
+    "id": "Boots/Wyrmscale-Legacy-of-Fury",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Legacy of Fury Wyrmscale Boots",
+    "type": "Wyrmscale"
+  },
+  {
+    "id": "Boots/Zealot",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Zealot Boots",
+    "type": "Zealot"
+  }
+]

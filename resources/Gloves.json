@@ -1,0 +1,968 @@
+[
+  {
+    "id": "Gloves/Aetherwind",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Aetherwind Gloves",
+    "type": "Aetherwind"
+  },
+  {
+    "id": "Gloves/Ambush",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Ambush Mitts",
+    "type": "Ambush"
+  },
+  {
+    "id": "Gloves/Ambush-Abhorrent-Interrogation",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Abhorrent Interrogation Ambush Mitts",
+    "type": "Ambush"
+  },
+  {
+    "id": "Gloves/Ambush-Architects-Hand",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Architect's Hand Ambush Mitts",
+    "type": "Ambush"
+  },
+  {
+    "id": "Gloves/Ambush-Slavedrivers-Hand",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Slavedriver's Hand Ambush Mitts",
+    "type": "Ambush"
+  },
+  {
+    "id": "Gloves/Ancient",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Ancient Gauntlets",
+    "type": "Ancient"
+  },
+  {
+    "id": "Gloves/Ancient-Hateforge",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Hateforge Ancient Gauntlets",
+    "type": "Ancient"
+  },
+  {
+    "id": "Gloves/Ancient-Winds-of-Change",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Winds of Change Ancient Gauntlets",
+    "type": "Ancient"
+  },
+  {
+    "id": "Gloves/Antique",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Antique Gauntlets",
+    "type": "Antique"
+  },
+  {
+    "id": "Gloves/Apothecarys",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Apothecary's Gloves",
+    "type": "Apothecary's"
+  },
+  {
+    "id": "Gloves/Arcanist",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Arcanist Gloves",
+    "type": "Arcanist"
+  },
+  {
+    "id": "Gloves/Arcanist-Grip-of-the-Council",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Grip of the Council Arcanist Gloves",
+    "type": "Arcanist"
+  },
+  {
+    "id": "Gloves/Arcanist-Grip-of-the-Council-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Grip of the Council Arcanist Gloves",
+    "type": "Arcanist"
+  },
+  {
+    "id": "Gloves/Assassins",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Assassin's Mitts",
+    "type": "Assassin's"
+  },
+  {
+    "id": "Gloves/Assassins-Blasphemers-Grasp",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Blasphemer's Grasp Assassin's Mitts",
+    "type": "Assassin's"
+  },
+  {
+    "id": "Gloves/Assassins-Snakebite",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Snakebite Assassin's Mitts",
+    "type": "Assassin's"
+  },
+  {
+    "id": "Gloves/Assassins-Storms-Gift",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Storm's Gift Assassin's Mitts",
+    "type": "Assassin's"
+  },
+  {
+    "id": "Gloves/Bronze",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Bronze Gauntlets",
+    "type": "Bronze"
+  },
+  {
+    "id": "Gloves/Bronze-Giantsbane",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Giantsbane Bronze Gauntlets",
+    "type": "Bronze"
+  },
+  {
+    "id": "Gloves/Bronzescale",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Bronzescale Gauntlets",
+    "type": "Bronzescale"
+  },
+  {
+    "id": "Gloves/Bronzescale-Slitherpinch",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Slitherpinch Bronzescale Gauntlets",
+    "type": "Bronzescale"
+  },
+  {
+    "id": "Gloves/Bronzescale-Vaal-Caress",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Vaal Caress Bronzescale Gauntlets",
+    "type": "Bronzescale"
+  },
+  {
+    "id": "Gloves/Carnal",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Carnal Mitts",
+    "type": "Carnal"
+  },
+  {
+    "id": "Gloves/Carnal-Algor-Mortis",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Algor Mortis Carnal Mitts",
+    "type": "Carnal"
+  },
+  {
+    "id": "Gloves/Carnal-Fenumus-Weave",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Fenumus' Weave Carnal Mitts",
+    "type": "Carnal"
+  },
+  {
+    "id": "Gloves/Carnal-The-Embalmer",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Embalmer Carnal Mitts",
+    "type": "Carnal"
+  },
+  {
+    "id": "Gloves/Chain",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Chain Gloves",
+    "type": "Chain"
+  },
+  {
+    "id": "Gloves/Chain-Shackles-of-the-Wretched",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Shackles of the Wretched Chain Gloves",
+    "type": "Chain"
+  },
+  {
+    "id": "Gloves/Clasped",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Clasped Mitts",
+    "type": "Clasped"
+  },
+  {
+    "id": "Gloves/Clasped-Aukunas-Will",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Aukuna's Will Clasped Mitts",
+    "type": "Clasped"
+  },
+  {
+    "id": "Gloves/Clasped-Shadows-and-Dust",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Shadows and Dust Clasped Mitts",
+    "type": "Clasped"
+  },
+  {
+    "id": "Gloves/Conjurer",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Conjurer Gloves",
+    "type": "Conjurer"
+  },
+  {
+    "id": "Gloves/Conjurer-Voidbringer",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Voidbringer Conjurer Gloves",
+    "type": "Conjurer"
+  },
+  {
+    "id": "Gloves/Crusader",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Crusader Gloves",
+    "type": "Crusader"
+  },
+  {
+    "id": "Gloves/Crusader-Hands-of-the-High-Templar",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Hands of the High Templar Crusader Gloves",
+    "type": "Crusader"
+  },
+  {
+    "id": "Gloves/Crusader-Repentance",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Repentance Crusader Gloves",
+    "type": "Crusader"
+  },
+  {
+    "id": "Gloves/Crusader-Shapers-Touch",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Shaper's Touch Crusader Gloves",
+    "type": "Crusader"
+  },
+  {
+    "id": "Gloves/Debilitation",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Debilitation Gauntlets",
+    "type": "Debilitation"
+  },
+  {
+    "id": "Gloves/Deerskin",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Deerskin Gloves",
+    "type": "Deerskin"
+  },
+  {
+    "id": "Gloves/Deerskin-Maligaros-Virtuosity",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Maligaro's Virtuosity Deerskin Gloves",
+    "type": "Deerskin"
+  },
+  {
+    "id": "Gloves/Dragonscale",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Dragonscale Gauntlets",
+    "type": "Dragonscale"
+  },
+  {
+    "id": "Gloves/Dragonscale-Surgebinders",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Surgebinders Dragonscale Gauntlets",
+    "type": "Dragonscale"
+  },
+  {
+    "id": "Gloves/Dragonscale-Worldcarver",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Worldcarver Dragonscale Gauntlets",
+    "type": "Dragonscale"
+  },
+  {
+    "id": "Gloves/Eelskin",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Eelskin Gloves",
+    "type": "Eelskin"
+  },
+  {
+    "id": "Gloves/Eelskin-Great-Old-Ones-Tentacles",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Great Old One's Tentacles Eelskin Gloves",
+    "type": "Eelskin"
+  },
+  {
+    "id": "Gloves/Embroidered",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Embroidered Gloves",
+    "type": "Embroidered"
+  },
+  {
+    "id": "Gloves/Embroidered-Vixens-Entrapment",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Vixen's Entrapment Embroidered Gloves",
+    "type": "Embroidered"
+  },
+  {
+    "id": "Gloves/Fishscale",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Fishscale Gauntlets",
+    "type": "Fishscale"
+  },
+  {
+    "id": "Gloves/Gauche",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Gauche Gloves",
+    "type": "Gauche"
+  },
+  {
+    "id": "Gloves/Goathide",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Goathide Gloves",
+    "type": "Goathide"
+  },
+  {
+    "id": "Gloves/Goathide-Hrimburn",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Hrimburn Goathide Gloves",
+    "type": "Goathide"
+  },
+  {
+    "id": "Gloves/Goathide-Hrimsorrow",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Hrimsorrow Goathide Gloves",
+    "type": "Goathide"
+  },
+  {
+    "id": "Gloves/Golden",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Golden Bracers",
+    "type": "Golden"
+  },
+  {
+    "id": "Gloves/Golden-Demigods-Touch",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Demigod's Touch Golden Bracers",
+    "type": "Golden"
+  },
+  {
+    "id": "Gloves/Goliath",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Goliath Gauntlets",
+    "type": "Goliath"
+  },
+  {
+    "id": "Gloves/Goliath-Empires-Grasp",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Empire's Grasp Goliath Gauntlets",
+    "type": "Goliath"
+  },
+  {
+    "id": "Gloves/Gripped",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Gripped Gloves",
+    "type": "Gripped"
+  },
+  {
+    "id": "Gloves/Gruelling",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Gruelling Gauntlets",
+    "type": "Gruelling"
+  },
+  {
+    "id": "Gloves/Hydrascale",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Hydrascale Gauntlets",
+    "type": "Hydrascale"
+  },
+  {
+    "id": "Gloves/Hydrascale-Breathstealer",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Breathstealer Hydrascale Gauntlets",
+    "type": "Hydrascale"
+  },
+  {
+    "id": "Gloves/Hydrascale-Farruls-Pounce",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Farrul's Pounce Hydrascale Gauntlets",
+    "type": "Hydrascale"
+  },
+  {
+    "id": "Gloves/Iron",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Iron Gauntlets",
+    "type": "Iron"
+  },
+  {
+    "id": "Gloves/Iron-Lochtonial-Caress",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Lochtonial Caress Iron Gauntlets",
+    "type": "Iron"
+  },
+  {
+    "id": "Gloves/Ironscale",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Ironscale Gauntlets",
+    "type": "Ironscale"
+  },
+  {
+    "id": "Gloves/Ironscale-Flesh-and-Spirit",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Flesh and Spirit Ironscale Gauntlets",
+    "type": "Ironscale"
+  },
+  {
+    "id": "Gloves/Legion",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Legion Gloves",
+    "type": "Legion"
+  },
+  {
+    "id": "Gloves/Legion-Null-and-Void",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Null and Void Legion Gloves",
+    "type": "Legion"
+  },
+  {
+    "id": "Gloves/Legion-Offering-to-the-Serpent",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Offering to the Serpent Legion Gloves",
+    "type": "Legion"
+  },
+  {
+    "id": "Gloves/Leyline",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Leyline Gloves",
+    "type": "Leyline"
+  },
+  {
+    "id": "Gloves/Mesh",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Mesh Gloves",
+    "type": "Mesh"
+  },
+  {
+    "id": "Gloves/Mesh-Triad-Grip",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Triad Grip Mesh Gloves",
+    "type": "Mesh"
+  },
+  {
+    "id": "Gloves/Murder",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Murder Mitts",
+    "type": "Murder"
+  },
+  {
+    "id": "Gloves/Murder-Machina-Mitts",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Machina Mitts Murder Mitts",
+    "type": "Murder"
+  },
+  {
+    "id": "Gloves/Murder-Malachais-Mark",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Malachai's Mark Murder Mitts",
+    "type": "Murder"
+  },
+  {
+    "id": "Gloves/Murder-Thunderfist",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Thunderfist Murder Mitts",
+    "type": "Murder"
+  },
+  {
+    "id": "Gloves/Nexus",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Nexus Gloves",
+    "type": "Nexus"
+  },
+  {
+    "id": "Gloves/Nubuck",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Nubuck Gloves",
+    "type": "Nubuck"
+  },
+  {
+    "id": "Gloves/Nubuck-Oskarm",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Oskarm Nubuck Gloves",
+    "type": "Nubuck"
+  },
+  {
+    "id": "Gloves/Plated",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Plated Gauntlets",
+    "type": "Plated"
+  },
+  {
+    "id": "Gloves/Rawhide",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Rawhide Gloves",
+    "type": "Rawhide"
+  },
+  {
+    "id": "Gloves/Ringmail",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Ringmail Gloves",
+    "type": "Ringmail"
+  },
+  {
+    "id": "Gloves/Riveted",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Riveted Gloves",
+    "type": "Riveted"
+  },
+  {
+    "id": "Gloves/Riveted-Command-of-the-Pit",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Command of the Pit Riveted Gloves",
+    "type": "Riveted"
+  },
+  {
+    "id": "Gloves/Samite",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Samite Gloves",
+    "type": "Samite"
+  },
+  {
+    "id": "Gloves/Samite-Kalisas-Grace",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Kalisa's Grace Samite Gloves",
+    "type": "Samite"
+  },
+  {
+    "id": "Gloves/Samite-Kalisas-Grace-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Kalisa's Grace Samite Gloves",
+    "type": "Samite"
+  },
+  {
+    "id": "Gloves/Satin",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Satin Gloves",
+    "type": "Satin"
+  },
+  {
+    "id": "Gloves/Satin-Demon-Stitcher",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Demon Stitcher Satin Gloves",
+    "type": "Satin"
+  },
+  {
+    "id": "Gloves/Serpentscale",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Serpentscale Gauntlets",
+    "type": "Serpentscale"
+  },
+  {
+    "id": "Gloves/Serpentscale-Haemophilia",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Haemophilia Serpentscale Gauntlets",
+    "type": "Serpentscale"
+  },
+  {
+    "id": "Gloves/Shagreen",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Shagreen Gloves",
+    "type": "Shagreen"
+  },
+  {
+    "id": "Gloves/Shagreen-Painseeker",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Painseeker Shagreen Gloves",
+    "type": "Shagreen"
+  },
+  {
+    "id": "Gloves/Sharkskin",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Sharkskin Gloves",
+    "type": "Sharkskin"
+  },
+  {
+    "id": "Gloves/Silk",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Silk Gloves",
+    "type": "Silk"
+  },
+  {
+    "id": "Gloves/Silk-Asenaths-Gentle-Touch",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Asenath's Gentle Touch Silk Gloves",
+    "type": "Silk"
+  },
+  {
+    "id": "Gloves/Silk-Fingerless",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Fingerless Silk Gloves",
+    "type": "Silk"
+  },
+  {
+    "id": "Gloves/Sinistral",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Sinistral Gloves",
+    "type": "Sinistral"
+  },
+  {
+    "id": "Gloves/Slink",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Slink Gloves",
+    "type": "Slink"
+  },
+  {
+    "id": "Gloves/Slink-Mercenarys-Lot",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Mercenary's Lot Slink Gloves",
+    "type": "Slink"
+  },
+  {
+    "id": "Gloves/Soldier",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Soldier Gloves",
+    "type": "Soldier"
+  },
+  {
+    "id": "Gloves/Soldier-Saqawals-Winds",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Saqawal's Winds Soldier Gloves",
+    "type": "Soldier"
+  },
+  {
+    "id": "Gloves/Soldier-Southbound",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Southbound Soldier Gloves",
+    "type": "Soldier"
+  },
+  {
+    "id": "Gloves/Sorcerer",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Sorcerer Gloves",
+    "type": "Sorcerer"
+  },
+  {
+    "id": "Gloves/Sorcerer-Allelopathy",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Allelopathy Sorcerer Gloves",
+    "type": "Sorcerer"
+  },
+  {
+    "id": "Gloves/Sorcerer-Allelopathy-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Allelopathy Sorcerer Gloves",
+    "type": "Sorcerer"
+  },
+  {
+    "id": "Gloves/Southswing",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Southswing Gloves",
+    "type": "Southswing"
+  },
+  {
+    "id": "Gloves/Spiked",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Spiked Gloves",
+    "type": "Spiked"
+  },
+  {
+    "id": "Gloves/Stealth",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Stealth Gloves",
+    "type": "Stealth"
+  },
+  {
+    "id": "Gloves/Steel",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Steel Gauntlets",
+    "type": "Steel"
+  },
+  {
+    "id": "Gloves/Steel-Meginords-Vigour",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Meginord's Vigour Steel Gauntlets",
+    "type": "Steel"
+  },
+  {
+    "id": "Gloves/Steel-Meginords-Vise",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Meginord's Vise Steel Gauntlets",
+    "type": "Steel"
+  },
+  {
+    "id": "Gloves/Steelscale",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Steelscale Gauntlets",
+    "type": "Steelscale"
+  },
+  {
+    "id": "Gloves/Steelscale-Aurseize",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Aurseize Steelscale Gauntlets",
+    "type": "Steelscale"
+  },
+  {
+    "id": "Gloves/Steelscale-Tombfist",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Tombfist Steelscale Gauntlets",
+    "type": "Steelscale"
+  },
+  {
+    "id": "Gloves/Strapped",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Strapped Mitts",
+    "type": "Strapped"
+  },
+  {
+    "id": "Gloves/Strapped-Facebreaker",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Facebreaker Strapped Mitts",
+    "type": "Strapped"
+  },
+  {
+    "id": "Gloves/Taxing",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Taxing Gauntlets",
+    "type": "Taxing"
+  },
+  {
+    "id": "Gloves/Titan",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Titan Gauntlets",
+    "type": "Titan"
+  },
+  {
+    "id": "Gloves/Titan-Craiceanns-Pincers",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Craiceann's Pincers Titan Gauntlets",
+    "type": "Titan"
+  },
+  {
+    "id": "Gloves/Titan-Verusos-Battering-Rams",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Veruso's Battering Rams Titan Gauntlets",
+    "type": "Titan"
+  },
+  {
+    "id": "Gloves/Trapper",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Trapper Mitts",
+    "type": "Trapper"
+  },
+  {
+    "id": "Gloves/Vaal",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Vaal Gauntlets",
+    "type": "Vaal"
+  },
+  {
+    "id": "Gloves/Vaal-Atziris-Acuity",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Atziri's Acuity Vaal Gauntlets",
+    "type": "Vaal"
+  },
+  {
+    "id": "Gloves/Vaal-Atziris-Acuity-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Atziri's Acuity Vaal Gauntlets",
+    "type": "Vaal"
+  },
+  {
+    "id": "Gloves/Vaal-Doryanis-Fist",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Doryani's Fist Vaal Gauntlets",
+    "type": "Vaal"
+  },
+  {
+    "id": "Gloves/Velvet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Velvet Gloves",
+    "type": "Velvet"
+  },
+  {
+    "id": "Gloves/Velvet-Doedres-Malevolence",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Doedre's Malevolence Velvet Gloves",
+    "type": "Velvet"
+  },
+  {
+    "id": "Gloves/Velvet-Doedres-Tenure",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Doedre's Tenure Velvet Gloves",
+    "type": "Velvet"
+  },
+  {
+    "id": "Gloves/Wool",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Wool Gloves",
+    "type": "Wool"
+  },
+  {
+    "id": "Gloves/Wool-Sadimas-Touch",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Sadima's Touch Wool Gloves",
+    "type": "Wool"
+  },
+  {
+    "id": "Gloves/Wrapped",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Wrapped Mitts",
+    "type": "Wrapped"
+  },
+  {
+    "id": "Gloves/Wrapped-Ondars-Clasp",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Ondar's Clasp Wrapped Mitts",
+    "type": "Wrapped"
+  },
+  {
+    "id": "Gloves/Wyrmscale",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Wyrmscale Gauntlets",
+    "type": "Wyrmscale"
+  },
+  {
+    "id": "Gloves/Wyrmscale-Wyrmsign",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Wyrmsign Wyrmscale Gauntlets",
+    "type": "Wyrmscale"
+  },
+  {
+    "id": "Gloves/Zealot",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Zealot Gloves",
+    "type": "Zealot"
+  },
+  {
+    "id": "Gloves/Zealot-Hand-of-the-Fervent",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Hand of the Fervent Zealot Gloves",
+    "type": "Zealot"
+  },
+  {
+    "id": "Gloves/Zealot-Volkuurs-Guidance",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Volkuur's Guidance Zealot Gloves",
+    "type": "Zealot"
+  },
+  {
+    "id": "Gloves/Zealot-Volkuurs-Guidance-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Volkuur's Guidance Zealot Gloves",
+    "type": "Zealot"
+  }
+]

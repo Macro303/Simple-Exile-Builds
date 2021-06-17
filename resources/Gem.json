@@ -1,0 +1,3642 @@
+[
+  {
+    "colour": "Blue",
+    "id": "Gem/Added-Chaos-Damage-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Added Chaos Damage Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Added-Chaos-Damage-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Added Chaos Damage Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Added-Cold-Damage-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Added Cold Damage Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Added-Cold-Damage-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Added Cold Damage Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Added-Fire-Damage-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Added Fire Damage Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Added-Fire-Damage-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Added Fire Damage Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Added-Lightning-Damage-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Added Lightning Damage Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Added-Lightning-Damage-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Added Lightning Damage Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Additional-Accuracy-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Additional Accuracy Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Advanced-Traps-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Advanced Traps Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Ancestral-Call-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Ancestral Call Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Ancestral-Call-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Ancestral Call Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Ancestral-Cry",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Ancestral Cry"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Ancestral-Protector",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Ancestral Protector"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Ancestral-Warchief",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Ancestral Warchief"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Ancestral-Warchief-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Ancestral Warchief"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Anger",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Anger"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Animate-Guardian",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Animate Guardian"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Animate-Weapon",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Animate Weapon"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Arc",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Arc"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Arc-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Arc"
+  },
+  {
+    "colour": "White",
+    "id": "Gem/Arcane-Cloak",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Arcane Cloak"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Arcane-Surge-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Arcane Surge Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Arcanist-Brand",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Arcanist Brand"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Archmage-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Archmage Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Arctic-Armour",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Arctic Armour"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Armageddon-Brand",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Armageddon Brand"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Arrogance-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Arrogance Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Arrow-Nova-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Arrow Nova Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Arrow-Nova-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Arrow Nova Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Artillery-Ballista",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Artillery Ballista"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Assassins-Mark",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Assassin's Mark"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Ball-Lightning",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Ball Lightning"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Ballista-Totem-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Ballista Totem Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Bane",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Bane"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Barrage",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Barrage"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Barrage-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Barrage Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Bear-Trap",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Bear Trap"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Berserk",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Berserk"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Blade-Blast",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Blade Blast"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Blade-Flurry",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Blade Flurry"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Blade-Vortex",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Blade Vortex"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Blade-Vortex-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Blade Vortex"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Bladefall",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Bladefall"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Bladestorm",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Bladestorm"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Blasphemy-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Blasphemy Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Blasphemy-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Blasphemy Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Blast-Rain",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Blast Rain"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Blastchain-Mine-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Blastchain Mine Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Blazing-Salvo",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Blazing Salvo"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Blight",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Blight"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Blight-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Blight"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Blind-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Blind Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Blink-Arrow",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Blink Arrow"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Block-Chance-Reduction-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Block Chance Reduction Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Blood-Rage",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Blood Rage"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Blood-and-Sand",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Blood and Sand"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Bloodlust-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Bloodlust Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Bloodthirst-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Bloodthirst Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Bodyswap",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Bodyswap"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Bone-Offering",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Bone Offering"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Bonechill-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Bonechill Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Brand-Recall",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Brand Recall"
+  },
+  {
+    "colour": "White",
+    "id": "Gem/Breach-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Breach"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Brutality-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Brutality Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Brutality-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Brutality Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Burning-Arrow",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Burning Arrow"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Burning-Arrow-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Burning Arrow"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Burning-Damage-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Burning Damage Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Burning-Damage-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Burning Damage Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Cast-When-Damage-Taken-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Cast when Damage Taken Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Cast-When-Stunned-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Cast when Stunned Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Cast-While-Channelling-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Cast while Channelling Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Cast-While-Channelling-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Cast While Channelling Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Cast-on-Critical-Strike-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Cast On Critical Strike Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Cast-on-Critical-Strike-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Cast On Critical Strike Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Cast-on-Death-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Cast on Death Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Cast-on-Melee-Kill-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Cast on Melee Kill Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Caustic-Arrow",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Caustic Arrow"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Chain-Hook",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Chain Hook"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Chain-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Chain Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Chain-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Chain Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Chance-to-Bleed-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Chance to Bleed Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Chance-to-Flee-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Chance to Flee Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Charged-Dash",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Charged Dash"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Charged-Mines-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Charged Mines Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Charged-Traps-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Charged Traps Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Clarity",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Clarity"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Clarity-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Clarity"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Cleave",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Cleave"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Close-Combat-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Close Combat Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Cluster-Traps-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Cluster Traps Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Cobra-Lash",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Cobra Lash"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Cold-Penetration-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Cold Penetration Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Cold-Penetration-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Cold Penetration Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Cold-Snap",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Cold Snap"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Cold-Snap-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Cold Snap"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Cold-to-Fire-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Cold to Fire Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Combustion-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Combustion Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Concentrated-Effect-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Concentrated Effect Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Conductivity",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Conductivity"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Consecrated-Path",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Consecrated Path"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Contagion",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Contagion"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Controlled-Destruction-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Controlled Destruction Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Controlled-Destruction-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Controlled Destruction Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Conversion-Trap",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Conversion Trap"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Convocation",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Convocation"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Corrupting-Fever",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Corrupting Fever"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Crackling-Lance",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Crackling Lance"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Creeping-Frost",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Creeping Frost"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Cremation",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Cremation"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Cruelty-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Cruelty Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Culling-Strike-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Culling Strike Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Cyclone",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Cyclone"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Cyclone-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Cyclone"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Damage-on-Full-Life-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Damage on Full Life Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Dark-Pact",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Dark Pact"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Dash",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Dash"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Deadly-Ailments-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Deadly Ailments Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Deadly-Ailments-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Deadly Ailments Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Decay-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Decay Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Decoy-Totem",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Decoy Totem"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Desecrate",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Desecrate"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Despair",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Despair"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Determination",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Determination"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Detonate-Dead",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Detonate Dead"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Detonate-Dead-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Detonate Dead"
+  },
+  {
+    "colour": "White",
+    "id": "Gem/Detonate-Mines",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Detonate Mines"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Devouring-Totem",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Devouring Totem"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Discharge",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Discharge"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Discipline",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Discipline"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Discipline-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Discipline"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Divine-Ire",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Divine Ire"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Dominating-Blow",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Dominating Blow"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Double-Strike",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Double Strike"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Double-Strike-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Double Strike"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Dread-Banner",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Dread Banner"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Dual-Strike",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Dual Strike"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Earthquake",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Earthquake"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Earthquake-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Earthquake"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Earthshatter",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Earthshatter"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Efficacy-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Efficacy Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Elemental-Army-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Elemental Army Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Elemental-Damage-With-Attacks-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Elemental Damage with Attacks Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Elemental-Damage-With-Attacks-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Elemental Damage with Attacks Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Elemental-Focus-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Elemental Focus Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Elemental-Focus-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Elemental Focus Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Elemental-Hit",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Elemental Hit"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Elemental-Penetration-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Elemental Penetration Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Elemental-Proliferation-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Elemental Proliferation Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Elemental-Weakness",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Elemental Weakness"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Empower-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Empower Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Endurance-Charge-on-Melee-Stun-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Endurance Charge on Melee Stun Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Enduring-Cry",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Enduring Cry"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Energy-Leech-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Energy Leech Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Enfeeble",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Enfeeble"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Enhance-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Enhance Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Enlighten-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Enlighten Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Ensnaring-Arrow",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Ensnaring Arrow"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Essence-Drain",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Essence Drain"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Ethereal-Knives",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Ethereal Knives"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Explosive-Arrow",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Explosive Arrow"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Explosive-Trap",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Explosive Trap"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Exsanguinate",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Exsanguinate"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Faster-Attacks-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Faster Attacks Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Faster-Casting-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Faster Casting Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Faster-Projectiles-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Faster Projectiles Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Feeding-Frenzy-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Feeding Frenzy Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Fire-Penetration-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Fire Penetration Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Fire-Penetration-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Fire Penetration Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Fire-Trap",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Fire Trap"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Fireball",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Fireball"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Fireball-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Fireball"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Firestorm",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Firestorm"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Fist-of-War-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Fist of War Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Flame-Dash",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Flame Dash"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Flame-Surge",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Flame Surge"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Flame-Wall",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Flame Wall"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Flameblast",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Flameblast"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Flameblast-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Flameblast"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Flamethrower-Trap",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Flamethrower Trap"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Flammability",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Flammability"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Flesh-Offering",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Flesh Offering"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Flesh-and-Stone",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Flesh and Stone"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Flicker-Strike",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Flicker Strike"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Fork-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Fork Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Fork-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Fork Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Fortify-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Fortify Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Freezing-Pulse",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Freezing Pulse"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Frenzy",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Frenzy"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Frost-Blades",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Frost Blades"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Frost-Bomb",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Frost Bomb"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Frost-Shield",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Frost Shield"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Frost-Wall",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Frost Wall"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Frostbite",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Frostbite"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Frostblink",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Frostblink"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Frostbolt",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Frostbolt"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Galvanic-Arrow",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Galvanic Arrow"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Generals-Cry",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "General's Cry"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Generosity-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Generosity Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Generosity-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Generosity Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Glacial-Cascade",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Glacial Cascade"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Glacial-Hammer",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Glacial Hammer"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Glacial-Hammer-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Glacial Hammer"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Grace",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Grace"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Grace-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Grace"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Greater-Multiple-Projectiles-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Greater Multiple Projectiles Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Greater-Multiple-Projectiles-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Greater Multiple Projectiles Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Greater-Volley-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Greater Volley Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Ground-Slam",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Ground Slam"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Ground-Slam-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Ground Slam"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Haste",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Haste"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Haste-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Haste"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Hatred",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Hatred"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Heavy-Strike",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Heavy Strike"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Herald-of-Agony",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Herald of Agony"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Herald-of-Ash",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Herald of Ash"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Herald-of-Ice",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Herald of Ice"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Herald-of-Purity",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Herald of Purity"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Herald-of-Thunder",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Herald of Thunder"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Hexblast",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Hexblast"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Hextouch-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Hextouch Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Hextouch-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Hextouch Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/High-Impact-Mine-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "High-Impact Mine Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Holy-Flame-Totem",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Holy Flame Totem"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Hydrosphere",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Hydrosphere"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Hypothermia-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Hypothermia Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Ice-Bite-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Ice Bite Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Ice-Crash",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Ice Crash"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Ice-Nova",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Ice Nova"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Ice-Nova-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Ice Nova"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Ice-Shot",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Ice Shot"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Ice-Spear",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Ice Spear"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Ice-Trap",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Ice Trap"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Icicle-Mine",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Icicle Mine"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Ignite-Proliferation-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Ignite Proliferation Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Immolate-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Immolate Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Immortal-Call",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Immortal Call"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Immortal-Call-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Immortal Call"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Impale-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Impale Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Impending-Doom-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Impending Doom Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Impurity-of-Fire-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Impurity of Fire"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Impurity-of-Ice-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Impurity of Ice"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Impurity-of-Lightning-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Impurity of Lightning"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Incinerate",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Incinerate"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Increased-Area-of-Effect-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Increased Area of Effect Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Increased-Area-of-Effect-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Increased Area of Effect Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Increased-Critical-Damage-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Increased Critical Damage Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Increased-Critical-Strikes-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Increased Critical Strikes Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Increased-Duration-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Increased Duration Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Infernal-Blow",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Infernal Blow"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Infernal-Cry",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Infernal Cry"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Infernal-Legion-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Infernal Legion Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Infused-Channelling-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Infused Channelling Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Innervate-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Innervate Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Inspiration-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Inspiration Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Intensify-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Intensify Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Intimidating-Cry",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Intimidating Cry"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Iron-Grip-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Iron Grip Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Iron-Will-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Iron Will Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Item-Rarity-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Item Rarity Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Kinetic-Blast",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Kinetic Blast"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Kinetic-Bolt",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Kinetic Bolt"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Knockback-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Knockback Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Lacerate",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Lacerate"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Lancing-Steel",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Lancing Steel"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Leap-Slam",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Leap Slam"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Less-Duration-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Less Duration Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Lesser-Multiple-Projectiles-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Lesser Multiple Projectiles Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Lesser-Poison-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Lesser Poison Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Life-Gain-on-Hit-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Life Gain on Hit Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Life-Leech-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Life Leech Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Lifetap-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Lifetap Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Lightning-Arrow",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Lightning Arrow"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Lightning-Penetration-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Lightning Penetration Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Lightning-Penetration-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Lightning Penetration Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Lightning-Spire-Trap",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Lightning Spire Trap"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Lightning-Strike",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Lightning Strike"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Lightning-Strike-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Lightning Strike"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Lightning-Tendrils",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Lightning Tendrils"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Lightning-Trap",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Lightning Trap"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Lightning-Trap-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Lightning Trap"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Lightning-Warp",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Lightning Warp"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Lightning-Warp-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Lightning Warp"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Maim-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Maim Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Malevolence",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Malevolence"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Mana-Leech-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Mana Leech Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Meat-Shield-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Meat Shield Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Melee-Physical-Damage-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Melee Physical Damage Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Melee-Physical-Damage-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Melee Physical Damage Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Melee-Splash-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Melee Splash Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Melee-Splash-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Melee Splash Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Minefield-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Minefield Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Minion-Damage-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Minion Damage Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Minion-Damage-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Minion Damage Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Minion-Life-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Minion Life Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Minion-Speed-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Minion Speed Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Mirage-Archer-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Mirage Archer Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Mirror-Arrow",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Mirror Arrow"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Molten-Shell",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Molten Shell"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Molten-Shell-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Molten Shell"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Molten-Strike",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Molten Strike"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Multiple-Totems-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Multiple Totems Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Multiple-Traps-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Multiple Traps Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Multistrike-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Multistrike Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Multistrike-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Multistrike Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Nightblade-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Nightblade Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Onslaught-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Onslaught Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Orb-of-Storms",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Orb of Storms"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Penance-Brand",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Penance Brand"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Perforate",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Perforate"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Pestilent-Strike",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Pestilent Strike"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Petrified-Blood",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Petrified Blood"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Phase-Run",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Phase Run"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Physical-to-Lightning-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Physical to Lightning Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Pierce-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Pierce Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Pinpoint-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Pinpoint Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Plague-Bearer",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Plague Bearer"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Poachers-Mark",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Poacher's Mark"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Point-Blank-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Point Blank Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Poison-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Poison Support"
+  },
+  {
+    "colour": "White",
+    "id": "Gem/Portal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Portal"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Power-Charge-on-Critical-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Power Charge On Critical Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Power-Siphon",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Power Siphon"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Power-Siphon-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Power Siphon"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Precision",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Precision"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Predator-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Predator Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Pride",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Pride"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Pulverise-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Pulverise Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Puncture",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Puncture"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Punishment",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Punishment"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Purifying-Flame",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Purifying Flame"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Purity-of-Elements",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Purity of Elements"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Purity-of-Fire",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Purity of Fire"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Purity-of-Ice",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Purity of Ice"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Purity-of-Lightning",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Purity of Lightning"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Pyroclast-Mine",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Pyroclast Mine"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Rage-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Rage Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Rain-of-Arrows",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Rain of Arrows"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Rain-of-Arrows-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Rain of Arrows"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Raise-Spectre",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Raise Spectre"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Raise-Zombie",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Raise Zombie"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Rallying-Cry",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Rallying Cry"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Reap",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Reap"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Reave",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Reave"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Reave-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Reave"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Reckoning",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Reckoning"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Rejuvenation-Totem",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Rejuvenation Totem"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Righteous-Fire",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Righteous Fire"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Righteous-Fire-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Righteous Fire"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Riposte",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Riposte"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Rolling-Magma",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Rolling Magma"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Ruthless-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Ruthless Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Scorching-Ray",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Scorching Ray"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Scourge-Arrow",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Scourge Arrow"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Searing-Bond",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Searing Bond"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Second-Wind-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Second Wind Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Seismic-Cry",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Seismic Cry"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Seismic-Trap",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Seismic Trap"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Shattering-Steel",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Shattering Steel"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Shield-Charge",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Shield Charge"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Shock-Nova",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Shock Nova"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Shockwave-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Shockwave Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Shockwave-Totem",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Shockwave Totem"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Shrapnel-Ballista",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Shrapnel Ballista"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Siege-Ballista",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Siege Ballista"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Sigil-of-Power",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Sigil of Power"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Siphoning-Trap",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Siphoning Trap"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Slower-Projectiles-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Slower Projectiles Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Smite",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Smite"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Smoke-Mine",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Smoke Mine"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Snipers-Mark",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Sniper's Mark"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Soulrend",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Soulrend"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Spark",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Spark"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Spark-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Spark"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Spectral-Shield-Throw",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Spectral Shield Throw"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Spectral-Throw",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Spectral Throw"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Spectral-Throw-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Spectral Throw"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Spell-Cascade-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Spell Cascade Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Spell-Cascade-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Spell Cascade Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Spell-Echo-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Spell Echo Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Spell-Echo-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Spell Echo Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Spell-Totem-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Spell Totem Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Spellslinger",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Spellslinger"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Spirit-Offering",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Spirit Offering"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Split-Arrow",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Split Arrow"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Splitting-Steel",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Splitting Steel"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Static-Strike",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Static Strike"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Steelskin",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Steelskin"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Storm-Brand",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Storm Brand"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Storm-Burst",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Storm Burst"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Storm-Call",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Storm Call"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Storm-Call-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Storm Call"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Stormbind",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Stormbind"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Stormblast-Mine",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Stormblast Mine"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Stun-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Stun Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Summon-Carrion-Golem",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Summon Carrion Golem"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Summon-Chaos-Golem",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Summon Chaos Golem"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Summon-Flame-Golem",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Summon Flame Golem"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Summon-Holy-Relic",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Summon Holy Relic"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Summon-Ice-Golem",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Summon Ice Golem"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Summon-Lightning-Golem",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Summon Lightning Golem"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Summon-Phantasm-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Summon Phantasm Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Summon-Raging-Spirit",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Summon Raging Spirit"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Summon-Skeletons",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Summon Skeletons"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Summon-Skeletons-Vaal",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": true,
+    "name": "Vaal Summon Skeletons"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Summon-Skitterbots",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Summon Skitterbots"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Summon-Stone-Golem",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Summon Stone Golem"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Sunder",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Sunder"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Sweep",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Sweep"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Swift-Affliction-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Swift Affliction Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Swift-Affliction-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Swift Affliction Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Swift-Assembly-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Swift Assembly Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Swiftbrand-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Swiftbrand Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Tectonic-Slam",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Tectonic Slam"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Tempest-Shield",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Tempest Shield"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Temporal-Chains",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Temporal Chains"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Tornado-Shot",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Tornado Shot"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Toxic-Rain",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Toxic Rain"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Trap-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Trap Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Trap-and-Mine-Damage-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Trap and Mine Damage Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Trinity-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Trinity Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Unbound-Ailments-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Unbound Ailments Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Unbound-Ailments-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Unbound Ailments Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Unearth",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Unearth"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Unleash-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Unleash Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Unleash-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Unleash Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Urgent-Orders-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Urgent Orders Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Vengeance",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Vengeance"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Venom-Gyre",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Venom Gyre"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Vicious-Projectiles-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Vicious Projectiles Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Vicious-Projectiles-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Vicious Projectiles Support"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Vigilant-Strike",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Vigilant Strike"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Vile-Toxins-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Vile Toxins Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Viper-Strike",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Viper Strike"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Vitality",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Vitality"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Void-Manipulation-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Void Manipulation Support"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Void-Manipulation-Support-Awakened",
+    "isAwakened": true,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Awakened Void Manipulation Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Void-Sphere",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Void Sphere"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Volatile-Dead",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Volatile Dead"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Volley-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Volley Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Vortex",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Vortex"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Vulnerability",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Vulnerability"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/War-Banner",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "War Banner"
+  },
+  {
+    "colour": "Red",
+    "id": "Gem/Warlords-Mark",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Warlord's Mark"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Wave-of-Conviction",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Wave of Conviction"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Whirling-Blades",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Whirling Blades"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Wild-Strike",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Wild Strike"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Winter-Orb",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Winter Orb"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Wintertide-Brand",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Wintertide Brand"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Wither",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Wither"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Withering-Step",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Withering Step"
+  },
+  {
+    "colour": "Green",
+    "id": "Gem/Withering-Touch-Support",
+    "isAwakened": false,
+    "isSupport": true,
+    "isVaal": false,
+    "name": "Withering Touch Support"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Wrath",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Wrath"
+  },
+  {
+    "colour": "Blue",
+    "id": "Gem/Zealotry",
+    "isAwakened": false,
+    "isSupport": false,
+    "isVaal": false,
+    "name": "Zealotry"
+  }
+]

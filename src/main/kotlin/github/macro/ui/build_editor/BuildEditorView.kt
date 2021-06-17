@@ -595,12 +595,12 @@ class BuildEditorView : View("Path of Taurewa") {
         }
     }
 
-    fun gemSelect(current: Gem): Gem {
-        val model = GemSelectorModel(current)
-        val selectorScope = Scope()
-        setInScope(model, selectorScope)
-        find<GemSelectorView>().openModal(block = true, resizable = false)
-        return model.selected
+    private fun gemSelect(current: Gem): Gem {
+        val temp = GemSelectorModel(current)
+        val scope = Scope()
+        setInScope(temp, scope)
+        find<GemSelectorView>(scope).openModal(block = true, resizable = false)
+        return temp.selected
     }
 
     companion object {

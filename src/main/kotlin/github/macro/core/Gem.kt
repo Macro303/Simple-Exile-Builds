@@ -32,7 +32,7 @@ data class Gem(
         private val LOGGER = LogManager.getLogger()
 
         internal val GEM_LIST: List<Gem> by lazy {
-            Files.newBufferedReader(Paths.get("resources", "Gems.json")).use {
+            Files.newBufferedReader(Paths.get("resources", "Gem.json")).use {
                 Yaml.default.decodeFromString(it.readText())
             }
         }

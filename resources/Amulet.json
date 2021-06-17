@@ -1,0 +1,849 @@
+[
+  {
+    "id": "Amulet/Agate",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Agate Amulet",
+    "type": "Agate"
+  },
+  {
+    "id": "Amulet/Agate-Extractor-Mentis",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Extractor Mentis Agate Amulet",
+    "type": "Agate"
+  },
+  {
+    "id": "Amulet/Agate-Shapers-Seed",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Shaper's Seed Agate Amulet",
+    "type": "Agate"
+  },
+  {
+    "id": "Amulet/Agate-The-Aylardex",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Aylardex Agate Amulet",
+    "type": "Agate"
+  },
+  {
+    "id": "Amulet/Agate-Volls-Devotion",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Voll's Devotion Agate Amulet",
+    "type": "Agate"
+  },
+  {
+    "id": "Amulet/Amber",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Amber Amulet",
+    "type": "Amber"
+  },
+  {
+    "id": "Amulet/Amber-Blood-of-Corruption",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Blood of Corruption Amber Amulet",
+    "type": "Amber"
+  },
+  {
+    "id": "Amulet/Amber-The-Anvil",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Anvil Amber Amulet",
+    "type": "Amber"
+  },
+  {
+    "id": "Amulet/Amber-Xophs-Blood",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Xoph's Blood Amber Amulet",
+    "type": "Amber"
+  },
+  {
+    "id": "Amulet/Amber-Xophs-Heart",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Xoph's Heart Amber Amulet",
+    "type": "Amber"
+  },
+  {
+    "id": "Amulet/Antler-Lone",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Lone Antler Talisman",
+    "type": "Antler"
+  },
+  {
+    "id": "Amulet/Ashscale",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Ashscale Talisman",
+    "type": "Ashscale"
+  },
+  {
+    "id": "Amulet/Astrolabe",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Astrolabe Amulet",
+    "type": "Astrolabe"
+  },
+  {
+    "id": "Amulet/Bonespire",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Bonespire Talisman",
+    "type": "Bonespire"
+  },
+  {
+    "id": "Amulet/Breakrib",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Breakrib Talisman",
+    "type": "Breakrib"
+  },
+  {
+    "id": "Amulet/Chrysalis",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Chrysalis Talisman",
+    "type": "Chrysalis"
+  },
+  {
+    "id": "Amulet/Citrine",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Citrine Amulet",
+    "type": "Citrine"
+  },
+  {
+    "id": "Amulet/Citrine-Daressos-Salute",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Daresso's Salute Citrine Amulet",
+    "type": "Citrine"
+  },
+  {
+    "id": "Amulet/Citrine-Eye-of-Innocence",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Eye of Innocence Citrine Amulet",
+    "type": "Citrine"
+  },
+  {
+    "id": "Amulet/Citrine-Retaliation-Charm",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Retaliation Charm Citrine Amulet",
+    "type": "Citrine"
+  },
+  {
+    "id": "Amulet/Citrine-The-Felbog-Fang",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Felbog Fang Citrine Amulet",
+    "type": "Citrine"
+  },
+  {
+    "id": "Amulet/Citrine-The-Jinxed-Juju",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Jinxed Juju Citrine Amulet",
+    "type": "Citrine"
+  },
+  {
+    "id": "Amulet/Clutching",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Clutching Talisman",
+    "type": "Clutching"
+  },
+  {
+    "id": "Amulet/Clutching-Blightwell",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Blightwell Clutching Talisman",
+    "type": "Clutching"
+  },
+  {
+    "id": "Amulet/Coral",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Coral Amulet",
+    "type": "Coral"
+  },
+  {
+    "id": "Amulet/Coral-Araku-Tiki",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Araku Tiki Coral Amulet",
+    "type": "Coral"
+  },
+  {
+    "id": "Amulet/Coral-Ngamahu-Tiki",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Ngamahu Tiki Coral Amulet",
+    "type": "Coral"
+  },
+  {
+    "id": "Amulet/Coral-Tavukai",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Tavukai Coral Amulet",
+    "type": "Coral"
+  },
+  {
+    "id": "Amulet/Coral-The-Primordial-Chain",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Primordial Chain Coral Amulet",
+    "type": "Coral"
+  },
+  {
+    "id": "Amulet/Deadhand",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Deadhand Talisman",
+    "type": "Deadhand"
+  },
+  {
+    "id": "Amulet/Fangjaw",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Fangjaw Talisman",
+    "type": "Fangjaw"
+  },
+  {
+    "id": "Amulet/Flesh-Undying",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Undying Flesh Talisman",
+    "type": "Flesh"
+  },
+  {
+    "id": "Amulet/Gold",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Gold Amulet",
+    "type": "Gold"
+  },
+  {
+    "id": "Amulet/Gold-Biscos-Collar",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Bisco's Collar Gold Amulet",
+    "type": "Gold"
+  },
+  {
+    "id": "Amulet/Gold-Demigods-Presence",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Demigod's Presence Gold Amulet",
+    "type": "Gold"
+  },
+  {
+    "id": "Amulet/Gold-Frost-Unbroken",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Frost Unbroken Gold Amulet",
+    "type": "Gold"
+  },
+  {
+    "id": "Amulet/Gold-Perquils-Toe",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Perquil's Toe Gold Amulet",
+    "type": "Gold"
+  },
+  {
+    "id": "Amulet/Gold-The-Ascetic",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Ascetic Gold Amulet",
+    "type": "Gold"
+  },
+  {
+    "id": "Amulet/Gold-The-Effigon",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Effigon Gold Amulet",
+    "type": "Gold"
+  },
+  {
+    "id": "Amulet/Gold-The-Ignomon",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Ignomon Gold Amulet",
+    "type": "Gold"
+  },
+  {
+    "id": "Amulet/Gold-Winterheart",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Winterheart Gold Amulet",
+    "type": "Gold"
+  },
+  {
+    "id": "Amulet/Gold-Winterheart-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Winterheart Gold Amulet",
+    "type": "Gold"
+  },
+  {
+    "id": "Amulet/Greatwolf",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Greatwolf Talisman",
+    "type": "Greatwolf"
+  },
+  {
+    "id": "Amulet/Greatwolf-Eyes-of-the-Greatwolf",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Eyes of the Greatwolf Greatwolf Talisman",
+    "type": "Greatwolf"
+  },
+  {
+    "id": "Amulet/Hands-Three",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Three Hands Talisman",
+    "type": "Hands"
+  },
+  {
+    "id": "Amulet/Head-Rot",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Rot Head Talisman",
+    "type": "Head"
+  },
+  {
+    "id": "Amulet/Hexclaw",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Hexclaw Talisman",
+    "type": "Hexclaw"
+  },
+  {
+    "id": "Amulet/Horned",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Horned Talisman",
+    "type": "Horned"
+  },
+  {
+    "id": "Amulet/Jade",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Jade Amulet",
+    "type": "Jade"
+  },
+  {
+    "id": "Amulet/Jade-Fury-Valve",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Fury Valve Jade Amulet",
+    "type": "Jade"
+  },
+  {
+    "id": "Amulet/Jade-Hyrris-Truth",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Hyrri's Truth Jade Amulet",
+    "type": "Jade"
+  },
+  {
+    "id": "Amulet/Jade-Hyrris-Truth-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Hyrri's Truth Jade Amulet",
+    "type": "Jade"
+  },
+  {
+    "id": "Amulet/Jade-Karui-Charge",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Karui Charge Jade Amulet",
+    "type": "Jade"
+  },
+  {
+    "id": "Amulet/Jade-Karui-Ward",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Karui Ward Jade Amulet",
+    "type": "Jade"
+  },
+  {
+    "id": "Amulet/Jade-Karui-Ward-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Karui Ward Jade Amulet",
+    "type": "Jade"
+  },
+  {
+    "id": "Amulet/Jade-Rashkaldors-Patience",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Rashkaldor's Patience Jade Amulet",
+    "type": "Jade"
+  },
+  {
+    "id": "Amulet/Jade-The-Halcyon",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Halcyon Jade Amulet",
+    "type": "Jade"
+  },
+  {
+    "id": "Amulet/Jade-The-Pandemonius",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Pandemonius Jade Amulet",
+    "type": "Jade"
+  },
+  {
+    "id": "Amulet/Jade-Willowgift",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Willowgift Jade Amulet",
+    "type": "Jade"
+  },
+  {
+    "id": "Amulet/Jet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Jet Amulet",
+    "type": "Jet"
+  },
+  {
+    "id": "Amulet/Jet-Talisman-of-the-Victor",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Talisman of the Victor Jet Amulet",
+    "type": "Jet"
+  },
+  {
+    "id": "Amulet/Lapis",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Lapis Amulet",
+    "type": "Lapis"
+  },
+  {
+    "id": "Amulet/Lapis-Choir-of-the-Storm",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Choir of the Storm Lapis Amulet",
+    "type": "Lapis"
+  },
+  {
+    "id": "Amulet/Lapis-Marylenes-Fallacy",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Marylene's Fallacy Lapis Amulet",
+    "type": "Lapis"
+  },
+  {
+    "id": "Amulet/Lapis-Stone-of-Lazhwar",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Stone of Lazhwar Lapis Amulet",
+    "type": "Lapis"
+  },
+  {
+    "id": "Amulet/Lapis-Tear-of-Purity",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Tear of Purity Lapis Amulet",
+    "type": "Lapis"
+  },
+  {
+    "id": "Amulet/Lapis-The-Ephemeral-Bond",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Ephemeral Bond Lapis Amulet",
+    "type": "Lapis"
+  },
+  {
+    "id": "Amulet/Lapis-Voice-of-the-Storm",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Voice of the Storm Lapis Amulet",
+    "type": "Lapis"
+  },
+  {
+    "id": "Amulet/Longtooth",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Longtooth Talisman",
+    "type": "Longtooth"
+  },
+  {
+    "id": "Amulet/Mandible",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Mandible Talisman",
+    "type": "Mandible"
+  },
+  {
+    "id": "Amulet/Marble",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Marble Amulet",
+    "type": "Marble"
+  },
+  {
+    "id": "Amulet/Marble-Bloodgrip",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Bloodgrip Marble Amulet",
+    "type": "Marble"
+  },
+  {
+    "id": "Amulet/Maw-Black",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Black Maw Talisman",
+    "type": "Maw"
+  },
+  {
+    "id": "Amulet/Maw-Nights-Hold-Black",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Night's Hold Black Maw Talisman",
+    "type": "Maw"
+  },
+  {
+    "id": "Amulet/One-Deep",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Deep One Talisman",
+    "type": "One"
+  },
+  {
+    "id": "Amulet/Onyx",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Onyx Amulet",
+    "type": "Onyx"
+  },
+  {
+    "id": "Amulet/Onyx-Astramentis",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Astramentis Onyx Amulet",
+    "type": "Onyx"
+  },
+  {
+    "id": "Amulet/Onyx-Auls-Uprising",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Aul's Uprising Onyx Amulet",
+    "type": "Onyx"
+  },
+  {
+    "id": "Amulet/Onyx-Carnage-Heart",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Carnage Heart Onyx Amulet",
+    "type": "Onyx"
+  },
+  {
+    "id": "Amulet/Onyx-Chaos-Impresence",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Chaos Impresence Onyx Amulet",
+    "type": "Onyx"
+  },
+  {
+    "id": "Amulet/Onyx-Cold-Impresence",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Cold Impresence Onyx Amulet",
+    "type": "Onyx"
+  },
+  {
+    "id": "Amulet/Onyx-Eye-of-Chayula",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Eye of Chayula Onyx Amulet",
+    "type": "Onyx"
+  },
+  {
+    "id": "Amulet/Onyx-Fire-Impresence",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Fire Impresence Onyx Amulet",
+    "type": "Onyx"
+  },
+  {
+    "id": "Amulet/Onyx-Hinekoras-Sight",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Hinekora's Sight Onyx Amulet",
+    "type": "Onyx"
+  },
+  {
+    "id": "Amulet/Onyx-Leaderships-Price",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Leadership's Price Onyx Amulet",
+    "type": "Onyx"
+  },
+  {
+    "id": "Amulet/Onyx-Lightning-Impresence",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Lightning Impresence Onyx Amulet",
+    "type": "Onyx"
+  },
+  {
+    "id": "Amulet/Onyx-Physical-Impresence",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Physical Impresence Onyx Amulet",
+    "type": "Onyx"
+  },
+  {
+    "id": "Amulet/Onyx-Presence-of-Chayula",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Presence of Chayula Onyx Amulet",
+    "type": "Onyx"
+  },
+  {
+    "id": "Amulet/Onyx-Solstice-Vigil",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Solstice Vigil Onyx Amulet",
+    "type": "Onyx"
+  },
+  {
+    "id": "Amulet/Onyx-Yoke-of-Suffering",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Yoke of Suffering Onyx Amulet",
+    "type": "Onyx"
+  },
+  {
+    "id": "Amulet/Paua",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Paua Amulet",
+    "type": "Paua"
+  },
+  {
+    "id": "Amulet/Paua-Atziris-Foible",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Atziri's Foible Paua Amulet",
+    "type": "Paua"
+  },
+  {
+    "id": "Amulet/Paua-Atziris-Foible-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Atziri's Foible Paua Amulet",
+    "type": "Paua"
+  },
+  {
+    "id": "Amulet/Paua-Sacrificial-Heart",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Sacrificial Heart Paua Amulet",
+    "type": "Paua"
+  },
+  {
+    "id": "Amulet/Paua-Sidhebite",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Sidhebite Paua Amulet",
+    "type": "Paua"
+  },
+  {
+    "id": "Amulet/Paua-Sidhebreath",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Sidhebreath Paua Amulet",
+    "type": "Paua"
+  },
+  {
+    "id": "Amulet/Paua-Zerphis-Heart",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Zerphi's Heart Paua Amulet",
+    "type": "Paua"
+  },
+  {
+    "id": "Amulet/Paw-Monkey",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Monkey Paw Talisman",
+    "type": "Paw"
+  },
+  {
+    "id": "Amulet/Pearl-Blue",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Blue Pearl Amulet",
+    "type": "Pearl"
+  },
+  {
+    "id": "Amulet/Pearl-Gloomfang-Blue",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Gloomfang Blue Pearl Amulet",
+    "type": "Pearl"
+  },
+  {
+    "id": "Amulet/Rat-Three",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Three Rat Talisman",
+    "type": "Rat"
+  },
+  {
+    "id": "Amulet/Rotfeather",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Rotfeather Talisman",
+    "type": "Rotfeather"
+  },
+  {
+    "id": "Amulet/Rotfeather-Natural-Hierarchy",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Natural Hierarchy Rotfeather Talisman",
+    "type": "Rotfeather"
+  },
+  {
+    "id": "Amulet/Ruby",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Ruby Amulet",
+    "type": "Ruby"
+  },
+  {
+    "id": "Amulet/Ruby-Star-of-Wraeclast",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Star of Wraeclast Ruby Amulet",
+    "type": "Ruby"
+  },
+  {
+    "id": "Amulet/Seaglass",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Seaglass Amulet",
+    "type": "Seaglass"
+  },
+  {
+    "id": "Amulet/Simplex",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Simplex Amulet",
+    "type": "Simplex"
+  },
+  {
+    "id": "Amulet/Skull-Primal",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Primal Skull Talisman",
+    "type": "Skull"
+  },
+  {
+    "id": "Amulet/Spinefuse",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Spinefuse Talisman",
+    "type": "Spinefuse"
+  },
+  {
+    "id": "Amulet/Splitnewt",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Splitnewt Talisman",
+    "type": "Splitnewt"
+  },
+  {
+    "id": "Amulet/Turquoise",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Turquoise Amulet",
+    "type": "Turquoise"
+  },
+  {
+    "id": "Amulet/Turquoise-Badge-of-the-Brotherhood",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Badge of the Brotherhood Turquoise Amulet",
+    "type": "Turquoise"
+  },
+  {
+    "id": "Amulet/Turquoise-Maligaros-Cruelty",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Maligaro's Cruelty Turquoise Amulet",
+    "type": "Turquoise"
+  },
+  {
+    "id": "Amulet/Turquoise-Ungils-Harmony",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Ungil's Harmony Turquoise Amulet",
+    "type": "Turquoise"
+  },
+  {
+    "id": "Amulet/Turquoise-Victarios-Acuity",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Victario's Acuity Turquoise Amulet",
+    "type": "Turquoise"
+  },
+  {
+    "id": "Amulet/Turquoise-Warped-Timepiece",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Warped Timepiece Turquoise Amulet",
+    "type": "Turquoise"
+  },
+  {
+    "id": "Amulet/Twins-Avian",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Avian Twins Talisman",
+    "type": "Twins"
+  },
+  {
+    "id": "Amulet/Twins-Monkey",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Monkey Twins Talisman",
+    "type": "Twins"
+  },
+  {
+    "id": "Amulet/Wereclaw",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Wereclaw Talisman",
+    "type": "Wereclaw"
+  },
+  {
+    "id": "Amulet/Wereclaw-Rigwalds-Curse",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Rigwald's Curse Wereclaw Talisman",
+    "type": "Wereclaw"
+  },
+  {
+    "id": "Amulet/Writhing",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Writhing Talisman",
+    "type": "Writhing"
+  }
+]

@@ -34,11 +34,20 @@ data class Stage(
         get() = boots.map { Gem.fromId(it) ?: Gem.fromName(it) ?: Utils.getMissingGem(it) }.plus(TEMP).take(4)
 
     init {
-        this.weapons = weapons.take(6).toMutableList()
-        this.helmet = helmet.take(4).toMutableList()
-        this.bodyArmour = bodyArmour.take(6).toMutableList()
-        this.gloves = gloves.take(4).toMutableList()
-        this.boots = boots.take(4).toMutableList()
+        (0 until 6).forEach {
+            if (this.weapons.size < it)
+                this.weapons.add(Utils.getMissingGem().id)
+            if (this.bodyArmour.size < it)
+                this.bodyArmour.add(Utils.getMissingGem().id)
+        }
+        (0 until 4).forEach {
+            if (this.helmet.size < it)
+                this.helmet.add(Utils.getMissingGem().id)
+            if (this.gloves.size < it)
+                this.gloves.add(Utils.getMissingGem().id)
+            if (this.boots.size < it)
+                this.boots.add(Utils.getMissingGem().id)
+        }
     }
 
     companion object {

@@ -1,0 +1,1395 @@
+[
+  {
+    "id": "Body_Armour/Arena-Plate",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Arena Plate",
+    "type": "Arena Plate"
+  },
+  {
+    "id": "Body_Armour/Assassins-Garb",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Assassin's Garb",
+    "type": "Assassin's Garb"
+  },
+  {
+    "id": "Body_Armour/Assassins-Garb-Cospris-Will",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Cospri's Will Assassin's Garb",
+    "type": "Assassin's Garb"
+  },
+  {
+    "id": "Body_Armour/Astral-Plate",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Astral Plate",
+    "type": "Astral Plate"
+  },
+  {
+    "id": "Body_Armour/Astral-Plate-Blunderbore",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Blunderbore Astral Plate",
+    "type": "Astral Plate"
+  },
+  {
+    "id": "Body_Armour/Astral-Plate-Deaths-Oath",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Death's Oath Astral Plate",
+    "type": "Astral Plate"
+  },
+  {
+    "id": "Body_Armour/Battle-Lamellar",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Battle Lamellar",
+    "type": "Battle Lamellar"
+  },
+  {
+    "id": "Body_Armour/Battle-Plate",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Battle Plate",
+    "type": "Battle Plate"
+  },
+  {
+    "id": "Body_Armour/Blood-Raiment",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Blood Raiment",
+    "type": "Blood Raiment"
+  },
+  {
+    "id": "Body_Armour/Blood-Raiment-Eternity-Shroud-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Eternity Shroud Blood Raiment",
+    "type": "Blood Raiment"
+  },
+  {
+    "id": "Body_Armour/Blood-Raiment-Saqawals-Nest",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Saqawal's Nest Blood Raiment",
+    "type": "Blood Raiment"
+  },
+  {
+    "id": "Body_Armour/Blood-Raiment-The-Eternity-Shroud",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Eternity Shroud Blood Raiment",
+    "type": "Blood Raiment"
+  },
+  {
+    "id": "Body_Armour/Bone-Armour",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Bone Armour",
+    "type": "Bone Armour"
+  },
+  {
+    "id": "Body_Armour/Bone-Armour-Bloodbond",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Bloodbond Bone Armour",
+    "type": "Bone Armour"
+  },
+  {
+    "id": "Body_Armour/Bronze-Plate",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Bronze Plate",
+    "type": "Bronze Plate"
+  },
+  {
+    "id": "Body_Armour/Buckskin-Tunic",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Buckskin Tunic",
+    "type": "Buckskin Tunic"
+  },
+  {
+    "id": "Body_Armour/Buckskin-Tunic-Ashrend",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Ashrend Buckskin Tunic",
+    "type": "Buckskin Tunic"
+  },
+  {
+    "id": "Body_Armour/Cabalist-Regalia",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Cabalist Regalia",
+    "type": "Cabalist Regalia"
+  },
+  {
+    "id": "Body_Armour/Carnal-Armour",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Carnal Armour",
+    "type": "Carnal Armour"
+  },
+  {
+    "id": "Body_Armour/Carnal-Armour-Restless-Ward-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Restless Ward Carnal Armour",
+    "type": "Carnal Armour"
+  },
+  {
+    "id": "Body_Armour/Carnal-Armour-Shroud-of-the-Lightless",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Shroud of the Lightless Carnal Armour",
+    "type": "Carnal Armour"
+  },
+  {
+    "id": "Body_Armour/Carnal-Armour-Shroud-of-the-Lightless-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Shroud of the Lightless Carnal Armour",
+    "type": "Carnal Armour"
+  },
+  {
+    "id": "Body_Armour/Carnal-Armour-The-Restless-Ward",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Restless Ward Carnal Armour",
+    "type": "Carnal Armour"
+  },
+  {
+    "id": "Body_Armour/Chain-Hauberk",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Chain Hauberk",
+    "type": "Chain Hauberk"
+  },
+  {
+    "id": "Body_Armour/Chainmail-Doublet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Chainmail Doublet",
+    "type": "Chainmail Doublet"
+  },
+  {
+    "id": "Body_Armour/Chainmail-Tunic",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Chainmail Tunic",
+    "type": "Chainmail Tunic"
+  },
+  {
+    "id": "Body_Armour/Chainmail-Vest",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Chainmail Vest",
+    "type": "Chainmail Vest"
+  },
+  {
+    "id": "Body_Armour/Chestplate",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Chestplate",
+    "type": "Chestplate"
+  },
+  {
+    "id": "Body_Armour/Colosseum-Plate",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Colosseum Plate",
+    "type": "Colosseum Plate"
+  },
+  {
+    "id": "Body_Armour/Commanders-Brigandine",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Commander's Brigandine",
+    "type": "Commander's Brigandine"
+  },
+  {
+    "id": "Body_Armour/Conjurers-Vestment",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Conjurer's Vestment",
+    "type": "Conjurer's Vestment"
+  },
+  {
+    "id": "Body_Armour/Conquest-Chainmail",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Conquest Chainmail",
+    "type": "Conquest Chainmail"
+  },
+  {
+    "id": "Body_Armour/Conquest-Chainmail-Kingsguard",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Kingsguard Conquest Chainmail",
+    "type": "Conquest Chainmail"
+  },
+  {
+    "id": "Body_Armour/Copper-Plate",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Copper Plate",
+    "type": "Copper Plate"
+  },
+  {
+    "id": "Body_Armour/Copper-Plate-Solaris-Lorica",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Solaris Lorica Copper Plate",
+    "type": "Copper Plate"
+  },
+  {
+    "id": "Body_Armour/Coronal-Leather",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Coronal Leather",
+    "type": "Coronal Leather"
+  },
+  {
+    "id": "Body_Armour/Coronal-Leather-The-Snowblind-Grace",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Snowblind Grace Coronal Leather",
+    "type": "Coronal Leather"
+  },
+  {
+    "id": "Body_Armour/Crimson-Raiment",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Crimson Raiment",
+    "type": "Crimson Raiment"
+  },
+  {
+    "id": "Body_Armour/Crusader-Chainmail",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Crusader Chainmail",
+    "type": "Crusader Chainmail"
+  },
+  {
+    "id": "Body_Armour/Crusader-Chainmail-Ambus-Charge",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Ambu's Charge Crusader Chainmail",
+    "type": "Crusader Chainmail"
+  },
+  {
+    "id": "Body_Armour/Crusader-Chainmail-Ambus-Charge-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Ambu's Charge Crusader Chainmail",
+    "type": "Crusader Chainmail"
+  },
+  {
+    "id": "Body_Armour/Crusader-Plate",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Crusader Plate",
+    "type": "Crusader Plate"
+  },
+  {
+    "id": "Body_Armour/Crusader-Plate-Iron-Heart",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Iron Heart Crusader Plate",
+    "type": "Crusader Plate"
+  },
+  {
+    "id": "Body_Armour/Crusader-Plate-Lioneyes-Vision",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Lioneye's Vision Crusader Plate",
+    "type": "Crusader Plate"
+  },
+  {
+    "id": "Body_Armour/Crusader-Plate-The-Iron-Fortress",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Iron Fortress Crusader Plate",
+    "type": "Crusader Plate"
+  },
+  {
+    "id": "Body_Armour/Crypt-Armour",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Crypt Armour",
+    "type": "Crypt Armour"
+  },
+  {
+    "id": "Body_Armour/Cutthroats-Garb",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Cutthroat's Garb",
+    "type": "Cutthroat's Garb"
+  },
+  {
+    "id": "Body_Armour/Cutthroats-Garb-Bronns-Lithe",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Bronn's Lithe Cutthroat's Garb",
+    "type": "Cutthroat's Garb"
+  },
+  {
+    "id": "Body_Armour/Desert-Brigandine",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Desert Brigandine",
+    "type": "Desert Brigandine"
+  },
+  {
+    "id": "Body_Armour/Desert-Brigandine-Lightning-Coil",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Lightning Coil Desert Brigandine",
+    "type": "Desert Brigandine"
+  },
+  {
+    "id": "Body_Armour/Destiny-Leather",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Destiny Leather",
+    "type": "Destiny Leather"
+  },
+  {
+    "id": "Body_Armour/Destiny-Leather-Queen-of-the-Forest",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Queen of the Forest Destiny Leather",
+    "type": "Destiny Leather"
+  },
+  {
+    "id": "Body_Armour/Destroyer-Regalia",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Destroyer Regalia",
+    "type": "Destroyer Regalia"
+  },
+  {
+    "id": "Body_Armour/Destroyer-Regalia-The-Coming-Calamity",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Coming Calamity Destroyer Regalia",
+    "type": "Destroyer Regalia"
+  },
+  {
+    "id": "Body_Armour/Devout-Chainmail",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Devout Chainmail",
+    "type": "Devout Chainmail"
+  },
+  {
+    "id": "Body_Armour/Dragonscale-Doublet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Dragonscale Doublet",
+    "type": "Dragonscale Doublet"
+  },
+  {
+    "id": "Body_Armour/Eelskin-Tunic",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Eelskin Tunic",
+    "type": "Eelskin Tunic"
+  },
+  {
+    "id": "Body_Armour/Elegant-Ringmail",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Elegant Ringmail",
+    "type": "Elegant Ringmail"
+  },
+  {
+    "id": "Body_Armour/Elegant-Ringmail-Geofris-Sanctuary",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Geofri's Sanctuary Elegant Ringmail",
+    "type": "Elegant Ringmail"
+  },
+  {
+    "id": "Body_Armour/Elegant-Ringmail-Loreweave",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Loreweave Elegant Ringmail",
+    "type": "Elegant Ringmail"
+  },
+  {
+    "id": "Body_Armour/Elegant-Ringmail-Loreweave-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Loreweave Elegant Ringmail",
+    "type": "Elegant Ringmail"
+  },
+  {
+    "id": "Body_Armour/Exquisite-Leather",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Exquisite Leather",
+    "type": "Exquisite Leather"
+  },
+  {
+    "id": "Body_Armour/Exquisite-Leather-Kintsugi",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Kintsugi Exquisite Leather",
+    "type": "Exquisite Leather"
+  },
+  {
+    "id": "Body_Armour/Exquisite-Leather-Yriels-Fostering",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Yriel's Fostering Exquisite Leather",
+    "type": "Exquisite Leather"
+  },
+  {
+    "id": "Body_Armour/Field-Lamellar",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Field Lamellar",
+    "type": "Field Lamellar"
+  },
+  {
+    "id": "Body_Armour/Frontier-Leather",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Frontier Leather",
+    "type": "Frontier Leather"
+  },
+  {
+    "id": "Body_Armour/Full-Chainmail",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Full Chainmail",
+    "type": "Full Chainmail"
+  },
+  {
+    "id": "Body_Armour/Full-Dragonscale",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Full Dragonscale",
+    "type": "Full Dragonscale"
+  },
+  {
+    "id": "Body_Armour/Full-Dragonscale-Daressos-Defiance",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Daresso's Defiance Full Dragonscale",
+    "type": "Full Dragonscale"
+  },
+  {
+    "id": "Body_Armour/Full-Leather",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Full Leather",
+    "type": "Full Leather"
+  },
+  {
+    "id": "Body_Armour/Full-Plate",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Full Plate",
+    "type": "Full Plate"
+  },
+  {
+    "id": "Body_Armour/Full-Ringmail",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Full Ringmail",
+    "type": "Full Ringmail"
+  },
+  {
+    "id": "Body_Armour/Full-Wyrmscale",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Full Wyrmscale",
+    "type": "Full Wyrmscale"
+  },
+  {
+    "id": "Body_Armour/Full-Wyrmscale-Belly-of-the-Beast",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Belly of the Beast Full Wyrmscale",
+    "type": "Full Wyrmscale"
+  },
+  {
+    "id": "Body_Armour/Generals-Brigandine",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "General's Brigandine",
+    "type": "General's Brigandine"
+  },
+  {
+    "id": "Body_Armour/Gladiator-Plate",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Gladiator Plate",
+    "type": "Gladiator Plate"
+  },
+  {
+    "id": "Body_Armour/Gladiator-Plate-The-Brass-Dome",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Brass Dome Gladiator Plate",
+    "type": "Gladiator Plate"
+  },
+  {
+    "id": "Body_Armour/Glorious-Leather",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Glorious Leather",
+    "type": "Glorious Leather"
+  },
+  {
+    "id": "Body_Armour/Glorious-Plate",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Glorious Plate",
+    "type": "Glorious Plate"
+  },
+  {
+    "id": "Body_Armour/Glorious-Plate-Kaoms-Heart",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Kaom's Heart Glorious Plate",
+    "type": "Glorious Plate"
+  },
+  {
+    "id": "Body_Armour/Glorious-Plate-Kaoms-Heart-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Kaom's Heart Glorious Plate",
+    "type": "Glorious Plate"
+  },
+  {
+    "id": "Body_Armour/Glorious-Plate-Perfidy",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Perfidy Glorious Plate",
+    "type": "Glorious Plate"
+  },
+  {
+    "id": "Body_Armour/Golden-Mantle",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Golden Mantle",
+    "type": "Golden Mantle"
+  },
+  {
+    "id": "Body_Armour/Golden-Mantle-Demigods-Dominance",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Demigod's Dominance Golden Mantle",
+    "type": "Golden Mantle"
+  },
+  {
+    "id": "Body_Armour/Golden-Plate",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Golden Plate",
+    "type": "Golden Plate"
+  },
+  {
+    "id": "Body_Armour/Golden-Plate-Craiceanns-Carapace",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Craiceann's Carapace Golden Plate",
+    "type": "Golden Plate"
+  },
+  {
+    "id": "Body_Armour/Golden-Plate-Greeds-Embrace",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Greed's Embrace Golden Plate",
+    "type": "Golden Plate"
+  },
+  {
+    "id": "Body_Armour/Grasping-Mail",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Grasping Mail",
+    "type": "Grasping Mail"
+  },
+  {
+    "id": "Body_Armour/Holy-Chainmail",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Holy Chainmail",
+    "type": "Holy Chainmail"
+  },
+  {
+    "id": "Body_Armour/Holy-Chainmail-Volls-Protector",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Voll's Protector Holy Chainmail",
+    "type": "Holy Chainmail"
+  },
+  {
+    "id": "Body_Armour/Hussar-Brigandine",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Hussar Brigandine",
+    "type": "Hussar Brigandine"
+  },
+  {
+    "id": "Body_Armour/Infantry-Brigandine",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Infantry Brigandine",
+    "type": "Infantry Brigandine"
+  },
+  {
+    "id": "Body_Armour/Kaoms-Plate",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Kaom's Plate",
+    "type": "Kaom's Plate"
+  },
+  {
+    "id": "Body_Armour/Lacquered-Garb",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Lacquered Garb",
+    "type": "Lacquered Garb"
+  },
+  {
+    "id": "Body_Armour/Lacquered-Garb-Cloak-of-Defiance",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Cloak of Defiance Lacquered Garb",
+    "type": "Lacquered Garb"
+  },
+  {
+    "id": "Body_Armour/Lacquered-Garb-Victarios-Influence",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Victario's Influence Lacquered Garb",
+    "type": "Lacquered Garb"
+  },
+  {
+    "id": "Body_Armour/Latticed-Ringmail",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Latticed Ringmail",
+    "type": "Latticed Ringmail"
+  },
+  {
+    "id": "Body_Armour/Latticed-Ringmail-Crystal-Vault",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Crystal Vault Latticed Ringmail",
+    "type": "Latticed Ringmail"
+  },
+  {
+    "id": "Body_Armour/Latticed-Ringmail-Icetomb",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Icetomb Latticed Ringmail",
+    "type": "Latticed Ringmail"
+  },
+  {
+    "id": "Body_Armour/Light-Brigandine",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Light Brigandine",
+    "type": "Light Brigandine"
+  },
+  {
+    "id": "Body_Armour/Lordly-Plate",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Lordly Plate",
+    "type": "Lordly Plate"
+  },
+  {
+    "id": "Body_Armour/Loricated-Ringmail",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Loricated Ringmail",
+    "type": "Loricated Ringmail"
+  },
+  {
+    "id": "Body_Armour/Loricated-Ringmail-Rotting-Legion",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Rotting Legion Loricated Ringmail",
+    "type": "Loricated Ringmail"
+  },
+  {
+    "id": "Body_Armour/Mages-Vestment",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Mage's Vestment",
+    "type": "Mage's Vestment"
+  },
+  {
+    "id": "Body_Armour/Majestic-Plate",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Majestic Plate",
+    "type": "Majestic Plate"
+  },
+  {
+    "id": "Body_Armour/Necromancer-Silks",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Necromancer Silks",
+    "type": "Necromancer Silks"
+  },
+  {
+    "id": "Body_Armour/Necromancer-Silks-Fleshcrafter",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Fleshcrafter Necromancer Silks",
+    "type": "Necromancer Silks"
+  },
+  {
+    "id": "Body_Armour/Necromancer-Silks-Vis-Mortis",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Vis Mortis Necromancer Silks",
+    "type": "Necromancer Silks"
+  },
+  {
+    "id": "Body_Armour/Occultists-Vestment",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Occultist's Vestment",
+    "type": "Occultist's Vestment"
+  },
+  {
+    "id": "Body_Armour/Occultists-Vestment-Shavronnes-Wrappings",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Shavronne's Wrappings Occultist's Vestment",
+    "type": "Occultist's Vestment"
+  },
+  {
+    "id": "Body_Armour/Oiled-Coat",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Oiled Coat",
+    "type": "Oiled Coat"
+  },
+  {
+    "id": "Body_Armour/Oiled-Vest",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Oiled Vest",
+    "type": "Oiled Vest"
+  },
+  {
+    "id": "Body_Armour/Ornate-Ringmail",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Ornate Ringmail",
+    "type": "Ornate Ringmail"
+  },
+  {
+    "id": "Body_Armour/Ornate-Ringmail-Lightbane-Raiment",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Lightbane Raiment Ornate Ringmail",
+    "type": "Ornate Ringmail"
+  },
+  {
+    "id": "Body_Armour/Padded-Jacket",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Padded Jacket",
+    "type": "Padded Jacket"
+  },
+  {
+    "id": "Body_Armour/Padded-Vest",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Padded Vest",
+    "type": "Padded Vest"
+  },
+  {
+    "id": "Body_Armour/Plate-Vest",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Plate Vest",
+    "type": "Plate Vest"
+  },
+  {
+    "id": "Body_Armour/Plate-Vest-Bramblejack",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Bramblejack Plate Vest",
+    "type": "Plate Vest"
+  },
+  {
+    "id": "Body_Armour/Plate-Vest-Skin-of-the-Loyal",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Skin of the Loyal Plate Vest",
+    "type": "Plate Vest"
+  },
+  {
+    "id": "Body_Armour/Plate-Vest-Wall-of-Brambles",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Wall of Brambles Plate Vest",
+    "type": "Plate Vest"
+  },
+  {
+    "id": "Body_Armour/Quilted-Jacket",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Quilted Jacket",
+    "type": "Quilted Jacket"
+  },
+  {
+    "id": "Body_Armour/Ringmail-Coat",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Ringmail Coat",
+    "type": "Ringmail Coat"
+  },
+  {
+    "id": "Body_Armour/Sacrificial-Garb",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Sacrificial Garb",
+    "type": "Sacrificial Garb"
+  },
+  {
+    "id": "Body_Armour/Sacrificial-Garb-Atziris-Splendour",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Atziri's Splendour Sacrificial Garb",
+    "type": "Sacrificial Garb"
+  },
+  {
+    "id": "Body_Armour/Sacrificial-Garb-Shadowstitch",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Shadowstitch Sacrificial Garb",
+    "type": "Sacrificial Garb"
+  },
+  {
+    "id": "Body_Armour/Sadist-Garb",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Sadist Garb",
+    "type": "Sadist Garb"
+  },
+  {
+    "id": "Body_Armour/Sadist-Garb-Doppelgänger-Guise",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Doppelgänger Guise Sadist Garb",
+    "type": "Sadist Garb"
+  },
+  {
+    "id": "Body_Armour/Sadist-Garb-Inpulsas-Broken-Heart",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Inpulsa's Broken Heart Sadist Garb",
+    "type": "Sadist Garb"
+  },
+  {
+    "id": "Body_Armour/Sadist-Garb-Tinkerskin",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Tinkerskin Sadist Garb",
+    "type": "Sadist Garb"
+  },
+  {
+    "id": "Body_Armour/Sages-Robe",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Sage's Robe",
+    "type": "Sage's Robe"
+  },
+  {
+    "id": "Body_Armour/Sages-Robe-Diallas-Malefaction",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Dialla's Malefaction Sage's Robe",
+    "type": "Sage's Robe"
+  },
+  {
+    "id": "Body_Armour/Sages-Robe-Zahndethus-Cassock",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Zahndethus' Cassock Sage's Robe",
+    "type": "Sage's Robe"
+  },
+  {
+    "id": "Body_Armour/Saintly-Chainmail",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Saintly Chainmail",
+    "type": "Saintly Chainmail"
+  },
+  {
+    "id": "Body_Armour/Saintly-Chainmail-Chains-of-Command",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Chains of Command Saintly Chainmail",
+    "type": "Saintly Chainmail"
+  },
+  {
+    "id": "Body_Armour/Saintly-Chainmail-Incandescent-Heart",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Incandescent Heart Saintly Chainmail",
+    "type": "Saintly Chainmail"
+  },
+  {
+    "id": "Body_Armour/Saints-Hauberk",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Saint's Hauberk",
+    "type": "Saint's Hauberk"
+  },
+  {
+    "id": "Body_Armour/Saints-Hauberk-Doryanis-Prototype",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Doryani's Prototype Saint's Hauberk",
+    "type": "Saint's Hauberk"
+  },
+  {
+    "id": "Body_Armour/Saints-Hauberk-Sporeguard",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Sporeguard Saint's Hauberk",
+    "type": "Saint's Hauberk"
+  },
+  {
+    "id": "Body_Armour/Saints-Hauberk-The-Ivory-Tower",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Ivory Tower Saint's Hauberk",
+    "type": "Saint's Hauberk"
+  },
+  {
+    "id": "Body_Armour/Savants-Robe",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Savant's Robe",
+    "type": "Savant's Robe"
+  },
+  {
+    "id": "Body_Armour/Savants-Robe-Cloak-of-Tawmr-Isley",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Cloak of Tawm'r Isley Savant's Robe",
+    "type": "Savant's Robe"
+  },
+  {
+    "id": "Body_Armour/Savants-Robe-Garb-of-the-Ephemeral",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Garb of the Ephemeral Savant's Robe",
+    "type": "Savant's Robe"
+  },
+  {
+    "id": "Body_Armour/Scale-Armour-Full",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Full Scale Armour",
+    "type": "Scale Armour"
+  },
+  {
+    "id": "Body_Armour/Scale-Armour-Vipers-Scales-Full",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Viper's Scales Full Scale Armour",
+    "type": "Scale Armour"
+  },
+  {
+    "id": "Body_Armour/Scale-Doublet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Scale Doublet",
+    "type": "Scale Doublet"
+  },
+  {
+    "id": "Body_Armour/Scale-Vest",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Scale Vest",
+    "type": "Scale Vest"
+  },
+  {
+    "id": "Body_Armour/Scarlet-Raiment",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Scarlet Raiment",
+    "type": "Scarlet Raiment"
+  },
+  {
+    "id": "Body_Armour/Scholars-Robe",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Scholar's Robe",
+    "type": "Scholar's Robe"
+  },
+  {
+    "id": "Body_Armour/Scholars-Robe-Cloak-of-Flame",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Cloak of Flame Scholar's Robe",
+    "type": "Scholar's Robe"
+  },
+  {
+    "id": "Body_Armour/Sentinel-Jacket",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Sentinel Jacket",
+    "type": "Sentinel Jacket"
+  },
+  {
+    "id": "Body_Armour/Sentinel-Jacket-Dendrobate",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Dendrobate Sentinel Jacket",
+    "type": "Sentinel Jacket"
+  },
+  {
+    "id": "Body_Armour/Sentinel-Jacket-Expeditions-End",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Expedition's End Sentinel Jacket",
+    "type": "Sentinel Jacket"
+  },
+  {
+    "id": "Body_Armour/Shabby-Jerkin",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Shabby Jerkin",
+    "type": "Shabby Jerkin"
+  },
+  {
+    "id": "Body_Armour/Sharkskin-Tunic",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Sharkskin Tunic",
+    "type": "Sharkskin Tunic"
+  },
+  {
+    "id": "Body_Armour/Sharkskin-Tunic-The-Rat-Cage",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Rat Cage Sharkskin Tunic",
+    "type": "Sharkskin Tunic"
+  },
+  {
+    "id": "Body_Armour/Silk-Robe",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Silk Robe",
+    "type": "Silk Robe"
+  },
+  {
+    "id": "Body_Armour/Silken-Garb",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Silken Garb",
+    "type": "Silken Garb"
+  },
+  {
+    "id": "Body_Armour/Silken-Vest",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Silken Vest",
+    "type": "Silken Vest"
+  },
+  {
+    "id": "Body_Armour/Silken-Wrap",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Silken Wrap",
+    "type": "Silken Wrap"
+  },
+  {
+    "id": "Body_Armour/Simple-Robe",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Simple Robe",
+    "type": "Simple Robe"
+  },
+  {
+    "id": "Body_Armour/Simple-Robe-Skin-of-the-Lords",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Skin of the Lords Simple Robe",
+    "type": "Simple Robe"
+  },
+  {
+    "id": "Body_Armour/Simple-Robe-Tabula-Rasa",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Tabula Rasa Simple Robe",
+    "type": "Simple Robe"
+  },
+  {
+    "id": "Body_Armour/Simple-Robe-Thousand-Ribbons",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Thousand Ribbons Simple Robe",
+    "type": "Simple Robe"
+  },
+  {
+    "id": "Body_Armour/Sleek-Coat",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Sleek Coat",
+    "type": "Sleek Coat"
+  },
+  {
+    "id": "Body_Armour/Soldiers-Brigandine",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Soldier's Brigandine",
+    "type": "Soldier's Brigandine"
+  },
+  {
+    "id": "Body_Armour/Spidersilk-Robe",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Spidersilk Robe",
+    "type": "Spidersilk Robe"
+  },
+  {
+    "id": "Body_Armour/Spidersilk-Robe-Soul-Mantle",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Soul Mantle Spidersilk Robe",
+    "type": "Spidersilk Robe"
+  },
+  {
+    "id": "Body_Armour/Spidersilk-Robe-The-Covenant",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Covenant Spidersilk Robe",
+    "type": "Spidersilk Robe"
+  },
+  {
+    "id": "Body_Armour/Strapped-Leather",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Strapped Leather",
+    "type": "Strapped Leather"
+  },
+  {
+    "id": "Body_Armour/Strapped-Leather-Briskwrap",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Briskwrap Strapped Leather",
+    "type": "Strapped Leather"
+  },
+  {
+    "id": "Body_Armour/Strapped-Leather-Wildwrap",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Wildwrap Strapped Leather",
+    "type": "Strapped Leather"
+  },
+  {
+    "id": "Body_Armour/Sun-Leather",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Sun Leather",
+    "type": "Sun Leather"
+  },
+  {
+    "id": "Body_Armour/Sun-Plate",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Sun Plate",
+    "type": "Sun Plate"
+  },
+  {
+    "id": "Body_Armour/Thiefs-Garb",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Thief's Garb",
+    "type": "Thief's Garb"
+  },
+  {
+    "id": "Body_Armour/Triumphant-Lamellar",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Triumphant Lamellar",
+    "type": "Triumphant Lamellar"
+  },
+  {
+    "id": "Body_Armour/Triumphant-Lamellar-Cherrubims-Maleficence",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Cherrubim's Maleficence Triumphant Lamellar",
+    "type": "Triumphant Lamellar"
+  },
+  {
+    "id": "Body_Armour/Triumphant-Lamellar-Farruls-Fur",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Farrul's Fur Triumphant Lamellar",
+    "type": "Triumphant Lamellar"
+  },
+  {
+    "id": "Body_Armour/Triumphant-Lamellar-Farruls-Fur-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Farrul's Fur Triumphant Lamellar",
+    "type": "Triumphant Lamellar"
+  },
+  {
+    "id": "Body_Armour/Vaal-Regalia",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Vaal Regalia",
+    "type": "Vaal Regalia"
+  },
+  {
+    "id": "Body_Armour/Vaal-Regalia-The-Beast-Fur-Shawl",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Beast Fur Shawl Vaal Regalia",
+    "type": "Vaal Regalia"
+  },
+  {
+    "id": "Body_Armour/Vaal-Regalia-The-Queens-Hunger",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Queen's Hunger Vaal Regalia",
+    "type": "Vaal Regalia"
+  },
+  {
+    "id": "Body_Armour/Varnished-Coat",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Varnished Coat",
+    "type": "Varnished Coat"
+  },
+  {
+    "id": "Body_Armour/Varnished-Coat-Carcass-Jack",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Carcass Jack Varnished Coat",
+    "type": "Varnished Coat"
+  },
+  {
+    "id": "Body_Armour/Varnished-Coat-The-Admiral",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Admiral Varnished Coat",
+    "type": "Varnished Coat"
+  },
+  {
+    "id": "Body_Armour/War-Plate",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "War Plate",
+    "type": "War Plate"
+  },
+  {
+    "id": "Body_Armour/Waxed-Garb",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Waxed Garb",
+    "type": "Waxed Garb"
+  },
+  {
+    "id": "Body_Armour/Widowsilk-Robe",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Widowsilk Robe",
+    "type": "Widowsilk Robe"
+  },
+  {
+    "id": "Body_Armour/Widowsilk-Robe-Doedres-Skin",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Doedre's Skin Widowsilk Robe",
+    "type": "Widowsilk Robe"
+  },
+  {
+    "id": "Body_Armour/Widowsilk-Robe-Fenumus-Shroud",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Fenumus' Shroud Widowsilk Robe",
+    "type": "Widowsilk Robe"
+  },
+  {
+    "id": "Body_Armour/Widowsilk-Robe-Infernal-Mantle",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Infernal Mantle Widowsilk Robe",
+    "type": "Widowsilk Robe"
+  },
+  {
+    "id": "Body_Armour/Wild-Leather",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Wild Leather",
+    "type": "Wild Leather"
+  },
+  {
+    "id": "Body_Armour/Wild-Leather-Foxs-Fortune",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Fox's Fortune Wild Leather",
+    "type": "Wild Leather"
+  },
+  {
+    "id": "Body_Armour/Wild-Leather-Foxshade",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Foxshade Wild Leather",
+    "type": "Wild Leather"
+  },
+  {
+    "id": "Body_Armour/Wyrmscale-Doublet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Wyrmscale Doublet",
+    "type": "Wyrmscale Doublet"
+  },
+  {
+    "id": "Body_Armour/Wyrmscale-Doublet-Gruthkuls-Pelt",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Gruthkul's Pelt Wyrmscale Doublet",
+    "type": "Wyrmscale Doublet"
+  },
+  {
+    "id": "Body_Armour/Zodiac-Leather",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Zodiac Leather",
+    "type": "Zodiac Leather"
+  },
+  {
+    "id": "Body_Armour/Zodiac-Leather-Hyrris-Ire",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Hyrri's Ire Zodiac Leather",
+    "type": "Zodiac Leather"
+  },
+  {
+    "id": "Body_Armour/Zodiac-Leather-Perfect-Form-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Perfect Form Zodiac Leather",
+    "type": "Zodiac Leather"
+  },
+  {
+    "id": "Body_Armour/Zodiac-Leather-The-Perfect-Form",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Perfect Form Zodiac Leather",
+    "type": "Zodiac Leather"
+  }
+]

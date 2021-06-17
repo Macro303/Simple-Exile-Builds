@@ -5,6 +5,7 @@ import github.macro.Config
 import javafx.beans.property.SimpleBooleanProperty
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.encodeToString
+import org.apache.logging.log4j.LogManager
 import tornadofx.ViewModel
 import tornadofx.getValue
 import tornadofx.setValue
@@ -25,13 +26,13 @@ class ConfigModel : ViewModel() {
 
 
     fun save() {
-        Files.newBufferedWriter(Paths.get("Config.yaml")).use {
+        Files.newBufferedWriter(Paths.get(filename)).use {
             it.write(Yaml.default.encodeToString(Config(darkMode)))
         }
     }
 
     fun load() {
-        File("Config.yaml").apply {
+        File(filename).apply {
             darkMode = if (exists()) {
                 val config = Files.newBufferedReader(toPath()).use { br ->
                     Yaml.default.decodeFromString<Config>(br.readText())
@@ -41,5 +42,10 @@ class ConfigModel : ViewModel() {
                 true
             save()
         }
+    }
+
+    companion object {
+        private const val filename = "config.yaml"
+        private val LOGGER = LogManager.getLogger()
     }
 }

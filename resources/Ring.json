@@ -1,0 +1,821 @@
+[
+  {
+    "id": "Ring/Amethyst",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Amethyst Ring",
+    "type": "Amethyst"
+  },
+  {
+    "id": "Ring/Amethyst-Blackflame",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Blackflame Amethyst Ring",
+    "type": "Amethyst"
+  },
+  {
+    "id": "Ring/Amethyst-Circle-of-Nostalgia",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Circle of Nostalgia Amethyst Ring",
+    "type": "Amethyst"
+  },
+  {
+    "id": "Ring/Amethyst-Death-Rush",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Death Rush Amethyst Ring",
+    "type": "Amethyst"
+  },
+  {
+    "id": "Ring/Amethyst-Mings-Heart",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Ming's Heart Amethyst Ring",
+    "type": "Amethyst"
+  },
+  {
+    "id": "Ring/Breach",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Breach Ring",
+    "type": "Breach"
+  },
+  {
+    "id": "Ring/Cerulean",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Cerulean Ring",
+    "type": "Cerulean"
+  },
+  {
+    "id": "Ring/Cogwork",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Cogwork Ring",
+    "type": "Cogwork"
+  },
+  {
+    "id": "Ring/Coral",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Coral Ring",
+    "type": "Coral"
+  },
+  {
+    "id": "Ring/Coral-Bloodboil",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Bloodboil Coral Ring",
+    "type": "Coral"
+  },
+  {
+    "id": "Ring/Coral-Kaoms-Sign",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Kaom's Sign Coral Ring",
+    "type": "Coral"
+  },
+  {
+    "id": "Ring/Coral-Kaoms-Way",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Kaom's Way Coral Ring",
+    "type": "Coral"
+  },
+  {
+    "id": "Ring/Coral-Sibyls-Lament",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Sibyl's Lament Coral Ring",
+    "type": "Coral"
+  },
+  {
+    "id": "Ring/Coral-Winterweave",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Winterweave Coral Ring",
+    "type": "Coral"
+  },
+  {
+    "id": "Ring/Diamond",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Diamond Ring",
+    "type": "Diamond"
+  },
+  {
+    "id": "Ring/Diamond-Gifts-From-Above",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Gifts from Above Diamond Ring",
+    "type": "Diamond"
+  },
+  {
+    "id": "Ring/Diamond-Romiras-Banquet",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Romira's Banquet Diamond Ring",
+    "type": "Diamond"
+  },
+  {
+    "id": "Ring/Geodesic",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Geodesic Ring",
+    "type": "Geodesic"
+  },
+  {
+    "id": "Ring/Gold",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Gold Ring",
+    "type": "Gold"
+  },
+  {
+    "id": "Ring/Gold-Andvarius",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Andvarius Gold Ring",
+    "type": "Gold"
+  },
+  {
+    "id": "Ring/Gold-The-Highwayman",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Highwayman Gold Ring",
+    "type": "Gold"
+  },
+  {
+    "id": "Ring/Gold-Ventors-Gamble",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Ventor's Gamble Gold Ring",
+    "type": "Gold"
+  },
+  {
+    "id": "Ring/Golden",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Golden Hoop",
+    "type": "Golden"
+  },
+  {
+    "id": "Ring/Golden-Demigods-Eye",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Demigod's Eye Golden Hoop",
+    "type": "Golden"
+  },
+  {
+    "id": "Ring/Iolite",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Iolite Ring",
+    "type": "Iolite"
+  },
+  {
+    "id": "Ring/Iron",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Iron Ring",
+    "type": "Iron"
+  },
+  {
+    "id": "Ring/Iron-Blackheart",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Blackheart Iron Ring",
+    "type": "Iron"
+  },
+  {
+    "id": "Ring/Iron-Circle-of-Guilt",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Circle of Guilt Iron Ring",
+    "type": "Iron"
+  },
+  {
+    "id": "Ring/Iron-Icefang-Orbit",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Icefang Orbit Iron Ring",
+    "type": "Iron"
+  },
+  {
+    "id": "Ring/Iron-Le-Heup-of-All",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Le Heup of All Iron Ring",
+    "type": "Iron"
+  },
+  {
+    "id": "Ring/Iron-The-Wardens-Brand",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Warden's Brand Iron Ring",
+    "type": "Iron"
+  },
+  {
+    "id": "Ring/Iron-Venopuncture",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Venopuncture Iron Ring",
+    "type": "Iron"
+  },
+  {
+    "id": "Ring/Iron-Voidheart",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Voidheart Iron Ring",
+    "type": "Iron"
+  },
+  {
+    "id": "Ring/Jet",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Jet Ring",
+    "type": "Jet"
+  },
+  {
+    "id": "Ring/Moonstone",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Moonstone Ring",
+    "type": "Moonstone"
+  },
+  {
+    "id": "Ring/Moonstone-Heartbound-Loop",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Heartbound Loop Moonstone Ring",
+    "type": "Moonstone"
+  },
+  {
+    "id": "Ring/Moonstone-Shavronnes-Revelation",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Shavronne's Revelation Moonstone Ring",
+    "type": "Moonstone"
+  },
+  {
+    "id": "Ring/Moonstone-Timeclasp",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Timeclasp Moonstone Ring",
+    "type": "Moonstone"
+  },
+  {
+    "id": "Ring/Moonstone-Timetwist",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Timetwist Moonstone Ring",
+    "type": "Moonstone"
+  },
+  {
+    "id": "Ring/Moonstone-Valyrium",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Valyrium Moonstone Ring",
+    "type": "Moonstone"
+  },
+  {
+    "id": "Ring/Opal",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Opal Ring",
+    "type": "Opal"
+  },
+  {
+    "id": "Ring/Opal-Mark-of-the-Shaper",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Mark of the Shaper Opal Ring",
+    "type": "Opal"
+  },
+  {
+    "id": "Ring/Opal-Stormfire",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Stormfire Opal Ring",
+    "type": "Opal"
+  },
+  {
+    "id": "Ring/Paua",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Paua Ring",
+    "type": "Paua"
+  },
+  {
+    "id": "Ring/Paua-Doedres-Damning",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Doedre's Damning Paua Ring",
+    "type": "Paua"
+  },
+  {
+    "id": "Ring/Paua-Doedres-Damning-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Doedre's Damning Paua Ring",
+    "type": "Paua"
+  },
+  {
+    "id": "Ring/Paua-Fated-End",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Fated End Paua Ring",
+    "type": "Paua"
+  },
+  {
+    "id": "Ring/Paua-Perandus-Signet",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Perandus Signet Paua Ring",
+    "type": "Paua"
+  },
+  {
+    "id": "Ring/Paua-Praxis",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Praxis Paua Ring",
+    "type": "Paua"
+  },
+  {
+    "id": "Ring/Prismatic",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Prismatic Ring",
+    "type": "Prismatic"
+  },
+  {
+    "id": "Ring/Prismatic-Loris-Lantern",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Lori's Lantern Prismatic Ring",
+    "type": "Prismatic"
+  },
+  {
+    "id": "Ring/Prismatic-Precursors-Emblem",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Precursor's Emblem Prismatic Ring",
+    "type": "Prismatic"
+  },
+  {
+    "id": "Ring/Prismatic-The-Taming",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Taming Prismatic Ring",
+    "type": "Prismatic"
+  },
+  {
+    "id": "Ring/Prismatic-Thiefs-Torment",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Thief's Torment Prismatic Ring",
+    "type": "Prismatic"
+  },
+  {
+    "id": "Ring/Ruby",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Ruby Ring",
+    "type": "Ruby"
+  },
+  {
+    "id": "Ring/Ruby-Ahkelis-Meadow",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Ahkeli's Meadow Ruby Ring",
+    "type": "Ruby"
+  },
+  {
+    "id": "Ring/Ruby-Ahkelis-Mountain",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Ahkeli's Mountain Ruby Ring",
+    "type": "Ruby"
+  },
+  {
+    "id": "Ring/Ruby-Ahkelis-Valley",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Ahkeli's Valley Ruby Ring",
+    "type": "Ruby"
+  },
+  {
+    "id": "Ring/Ruby-Circle-of-Anguish",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Circle of Anguish Ruby Ring",
+    "type": "Ruby"
+  },
+  {
+    "id": "Ring/Ruby-Emberwake",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Emberwake Ruby Ring",
+    "type": "Ruby"
+  },
+  {
+    "id": "Ring/Ruby-Emberwake-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Emberwake Ruby Ring",
+    "type": "Ruby"
+  },
+  {
+    "id": "Ring/Ruby-Mokous-Embrace",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Mokou's Embrace Ruby Ring",
+    "type": "Ruby"
+  },
+  {
+    "id": "Ring/Ruby-Ngamahus-Sign",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Ngamahu's Sign Ruby Ring",
+    "type": "Ruby"
+  },
+  {
+    "id": "Ring/Ruby-Precursors-Emblem",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Precursor's Emblem Ruby Ring",
+    "type": "Ruby"
+  },
+  {
+    "id": "Ring/Ruby-Warriors-Legacy",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Warrior's Legacy Ruby Ring",
+    "type": "Ruby"
+  },
+  {
+    "id": "Ring/Sapphire",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Sapphire Ring",
+    "type": "Sapphire"
+  },
+  {
+    "id": "Ring/Sapphire-Circle-of-Fear",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Circle of Fear Sapphire Ring",
+    "type": "Sapphire"
+  },
+  {
+    "id": "Ring/Sapphire-Dream-Fragments",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Dream Fragments Sapphire Ring",
+    "type": "Sapphire"
+  },
+  {
+    "id": "Ring/Sapphire-Precursors-Emblem",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Precursor's Emblem Sapphire Ring",
+    "type": "Sapphire"
+  },
+  {
+    "id": "Ring/Sapphire-Pyre",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Pyre Sapphire Ring",
+    "type": "Sapphire"
+  },
+  {
+    "id": "Ring/Sapphire-Snakepit",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Snakepit Sapphire Ring",
+    "type": "Sapphire"
+  },
+  {
+    "id": "Ring/Sapphire-Tasalios-Sign",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Tasalio's Sign Sapphire Ring",
+    "type": "Sapphire"
+  },
+  {
+    "id": "Ring/Sapphire-Tasalios-Sign-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Tasalio's Sign Sapphire Ring",
+    "type": "Sapphire"
+  },
+  {
+    "id": "Ring/Sapphire-Uzazas-Meadow",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Uzaza's Meadow Sapphire Ring",
+    "type": "Sapphire"
+  },
+  {
+    "id": "Ring/Sapphire-Uzazas-Mountain",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Uzaza's Mountain Sapphire Ring",
+    "type": "Sapphire"
+  },
+  {
+    "id": "Ring/Sapphire-Uzazas-Valley",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Uzaza's Valley Sapphire Ring",
+    "type": "Sapphire"
+  },
+  {
+    "id": "Ring/Steel",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Steel Ring",
+    "type": "Steel"
+  },
+  {
+    "id": "Ring/Steel-Mark-of-the-Elder",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Mark of the Elder Steel Ring",
+    "type": "Steel"
+  },
+  {
+    "id": "Ring/Topaz",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Topaz Ring",
+    "type": "Topaz"
+  },
+  {
+    "id": "Ring/Topaz-Astral-Projector",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Astral Projector Topaz Ring",
+    "type": "Topaz"
+  },
+  {
+    "id": "Ring/Topaz-Circle-of-Regret",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Circle of Regret Topaz Ring",
+    "type": "Topaz"
+  },
+  {
+    "id": "Ring/Topaz-Kikazaru",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Kikazaru Topaz Ring",
+    "type": "Topaz"
+  },
+  {
+    "id": "Ring/Topaz-Precursors-Emblem",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Precursor's Emblem Topaz Ring",
+    "type": "Topaz"
+  },
+  {
+    "id": "Ring/Topaz-Putembos-Meadow",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Putembo's Meadow Topaz Ring",
+    "type": "Topaz"
+  },
+  {
+    "id": "Ring/Topaz-Putembos-Mountain",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Putembo's Mountain Topaz Ring",
+    "type": "Topaz"
+  },
+  {
+    "id": "Ring/Topaz-Putembos-Valley",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Putembo's Valley Topaz Ring",
+    "type": "Topaz"
+  },
+  {
+    "id": "Ring/Topaz-Storm-Secret",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Storm Secret Topaz Ring",
+    "type": "Topaz"
+  },
+  {
+    "id": "Ring/Topaz-Valakos-Sign",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Valako's Sign Topaz Ring",
+    "type": "Topaz"
+  },
+  {
+    "id": "Ring/Two-Stone-Bereks-Grip",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Berek's Grip Two-Stone Ring",
+    "type": "Two-Stone"
+  },
+  {
+    "id": "Ring/Two-Stone-Bereks-Pass",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Berek's Pass Two-Stone Ring",
+    "type": "Two-Stone"
+  },
+  {
+    "id": "Ring/Two-Stone-Bereks-Respite",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Berek's Respite Two-Stone Ring",
+    "type": "Two-Stone"
+  },
+  {
+    "id": "Ring/Two-Stone-Call-of-the-Brotherhood",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Call of the Brotherhood Two-Stone Ring",
+    "type": "Two-Stone"
+  },
+  {
+    "id": "Ring/Two-Stone-Green-Blue-Precursors-Emblem",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Green-Blue Precursor's Emblem Two-Stone Ring",
+    "type": "Two-Stone"
+  },
+  {
+    "id": "Ring/Two-Stone-Red-Blue-Precursors-Emblem",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Red-Blue Precursor's Emblem Two-Stone Ring",
+    "type": "Two-Stone"
+  },
+  {
+    "id": "Ring/Two-Stone-Red-Green-Precursors-Emblem",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Red-Green Precursor's Emblem Two-Stone Ring",
+    "type": "Two-Stone"
+  },
+  {
+    "id": "Ring/Two-Stone-Rigwalds-Crest",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Rigwald's Crest Two-Stone Ring",
+    "type": "Two-Stone"
+  },
+  {
+    "id": "Ring/Two-Stone-Sapphire-Ruby",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Sapphire-Ruby Two-Stone Ring",
+    "type": "Two-Stone"
+  },
+  {
+    "id": "Ring/Two-Stone-Topaz-Ruby",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Topaz-Ruby Two-Stone Ring",
+    "type": "Two-Stone"
+  },
+  {
+    "id": "Ring/Two-Stone-Topaz-Sapphire",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Topaz-Sapphire Two-Stone Ring",
+    "type": "Two-Stone"
+  },
+  {
+    "id": "Ring/Unset",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Unset Ring",
+    "type": "Unset"
+  },
+  {
+    "id": "Ring/Unset-Anglers-Plait",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Angler's Plait Unset Ring",
+    "type": "Unset"
+  },
+  {
+    "id": "Ring/Unset-Brinerot-Mark",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Brinerot Mark Unset Ring",
+    "type": "Unset"
+  },
+  {
+    "id": "Ring/Unset-Essence-Worm",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Essence Worm Unset Ring",
+    "type": "Unset"
+  },
+  {
+    "id": "Ring/Unset-Malachais-Artifice",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Malachai's Artifice Unset Ring",
+    "type": "Unset"
+  },
+  {
+    "id": "Ring/Unset-Malachais-Artifice-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Malachai's Artifice Unset Ring",
+    "type": "Unset"
+  },
+  {
+    "id": "Ring/Unset-Mark-of-Submission",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Mark of Submission Unset Ring",
+    "type": "Unset"
+  },
+  {
+    "id": "Ring/Unset-Mutewind-Seal",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Mutewind Seal Unset Ring",
+    "type": "Unset"
+  },
+  {
+    "id": "Ring/Unset-Profane-Proxy",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Profane Proxy Unset Ring",
+    "type": "Unset"
+  },
+  {
+    "id": "Ring/Unset-Redblade-Band",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Redblade Band Unset Ring",
+    "type": "Unset"
+  },
+  {
+    "id": "Ring/Unset-Rotblood-Promise",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Rotblood Promise Unset Ring",
+    "type": "Unset"
+  },
+  {
+    "id": "Ring/Unset-The-Hungry-Loop",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Hungry Loop Unset Ring",
+    "type": "Unset"
+  },
+  {
+    "id": "Ring/Unset-The-Pariah",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "The Pariah Unset Ring",
+    "type": "Unset"
+  },
+  {
+    "id": "Ring/Unset-Triumvirate-Authority",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Triumvirate Authority Unset Ring",
+    "type": "Unset"
+  },
+  {
+    "id": "Ring/Unset-Vivinsect",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Vivinsect Unset Ring",
+    "type": "Unset"
+  },
+  {
+    "id": "Ring/Unset-Voideye",
+    "isReplica": false,
+    "isUnique": true,
+    "name": "Voideye Unset Ring",
+    "type": "Unset"
+  },
+  {
+    "id": "Ring/Unset-Voideye-Replica",
+    "isReplica": true,
+    "isUnique": true,
+    "name": "Replica Voideye Unset Ring",
+    "type": "Unset"
+  },
+  {
+    "id": "Ring/Vermillion",
+    "isReplica": false,
+    "isUnique": false,
+    "name": "Vermillion Ring",
+    "type": "Vermillion"
+  }
+]

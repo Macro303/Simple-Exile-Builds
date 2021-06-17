@@ -1,134 +1,142 @@
 import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
 
 plugins {
-	id("application")
-	kotlin("jvm") version "1.4.32"
-	kotlin("plugin.serialization") version "1.4.32"
-	id("com.github.ben-manes.versions") version "0.38.0"
-	id("org.openjfx.javafxplugin") version "0.0.9"
-	id("org.beryx.runtime") version "1.12.4"
-	id("com.github.johnrengelman.shadow") version "6.1.0"
+    id("application")
+    kotlin("jvm") version "1.5.10"
+    kotlin("plugin.serialization") version "1.5.10"
+    id("com.github.ben-manes.versions") version "0.39.0"
+    id("org.openjfx.javafxplugin") version "0.0.10"
+    id("org.beryx.runtime") version "1.12.5"
+    id("com.github.johnrengelman.shadow") version "7.0.0"
 }
 
 repositories {
-	mavenCentral()
-	mavenLocal()
-	jcenter()
-	maven("https://oss.sonatype.org/content/repositories/snapshots")
+    mavenCentral()
+    mavenLocal()
+    maven("https://oss.sonatype.org/content/repositories/snapshots")
 }
 
 dependencies {
-	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
-	implementation(group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version = "1.1.0")
-	implementation(group = "com.charleskorn.kaml", name = "kaml", version = "0.30.0")
-	implementation(group = "no.tornado", name = "tornadofx", version = "2.0.0-SNAPSHOT")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation(group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version = "1.2.1")
+    implementation(group = "com.charleskorn.kaml", name = "kaml", version = "0.34.0")
+    implementation(group = "no.tornado", name = "tornadofx", version = "2.0.0-SNAPSHOT")
 
-	//Log4j
-	val logVersion = "2.14.1"
-	implementation(group = "org.apache.logging.log4j", name = "log4j-api", version = logVersion)
-	runtimeOnly(group = "org.apache.logging.log4j", name = "log4j-core", version = logVersion)
+    //Log4j
+    val logVersion = "2.14.1"
+    implementation(group = "org.apache.logging.log4j", name = "log4j-api", version = logVersion)
+    runtimeOnly(group = "org.apache.logging.log4j", name = "log4j-core", version = logVersion)
 }
 
 javafx {
-	version = "16"
-	modules = listOf("javafx.controls")
+    version = "16"
+    modules = listOf("javafx.controls")
 }
 
 application {
-	mainClass.set("github.macro.LauncherKt")
-	mainClassName = mainClass.get()
-	applicationName = "Path-of-Taurewa"
+    mainClass.set("github.macro.LauncherKt")
+    mainClassName = mainClass.get()
+    applicationName = "Path-of-Taurewa"
 }
 
 tasks.jar {
-	manifest {
-		attributes(
-				"Main-Class" to application.mainClass,
-				"Multi-Release" to true
-		)
-	}
+    manifest {
+        attributes(
+            "Main-Class" to application.mainClass,
+            "Multi-Release" to true
+        )
+    }
 }
 
 tasks.compileKotlin {
-	sourceCompatibility = "11"
-	targetCompatibility = "11"
+    sourceCompatibility = "11"
+    targetCompatibility = "11"
 
-	kotlinOptions.jvmTarget = "11"
-	kotlinOptions.apiVersion = "1.4"
-	kotlinOptions.languageVersion = "1.4"
+    kotlinOptions.jvmTarget = "11"
+    kotlinOptions.apiVersion = "1.5"
+    kotlinOptions.languageVersion = "1.5"
+}
+
+tasks.compileTestKotlin {
+    sourceCompatibility = "11"
+    targetCompatibility = "11"
+
+    kotlinOptions.jvmTarget = "11"
+    kotlinOptions.apiVersion = "1.5"
+    kotlinOptions.languageVersion = "1.5"
 }
 
 runtime {
-	addOptions("--strip-debug", "--compress", "2", "--no-header-files", "--no-man-pages")
+    addOptions("--strip-debug", "--compress", "2", "--no-header-files", "--no-man-pages")
 }
 
 tasks.clean {
-	file("release").deleteRecursively()
+    file("release").deleteRecursively()
 }
 
 tasks.register<Copy>("copyApplication") {
-	dependsOn("runtime")
+    dependsOn("runtime")
 
-	from("$buildDir/image")
-	include("**/*")
-	into("$buildDir/release")
+    from("$buildDir/image")
+    include("**/*")
+    into("$buildDir/release")
 }
 tasks.register<Copy>("copyResources") {
-	from("resources")
-	exclude("docs")
-	include("**/*")
-	into("$buildDir/release/bin/resources")
+    from("resources")
+    exclude("docs")
+    include("**/*")
+    into("$buildDir/release/bin/resources")
 }
 
 tasks.register<Zip>("zipApplication") {
-	dependsOn("copyApplication", "copyResources")
+    dependsOn("copyApplication", "copyResources")
 
-	from("$buildDir/release")
-	include("**/*")
-	archiveFileName.set("Path-of-Taurewa.zip")
-	destinationDirectory.set(file("release"))
+    from("$buildDir/release")
+    include("**/*")
+    archiveFileName.set("Path-of-Taurewa.zip")
+    destinationDirectory.set(file("release"))
 }
 
 tasks.register<Zip>("zipResources") {
-	dependsOn("copyResources")
+    dependsOn("copyResources")
 
-	from("$buildDir/release/bin/resources")
-	include("**/*")
-	archiveFileName.set("Path-of-Taurewa_resources.zip")
-	destinationDirectory.set(file("release"))
+    from("$buildDir/release/bin/resources")
+    include("**/*")
+    archiveFileName.set("Path-of-Taurewa_resources.zip")
+    destinationDirectory.set(file("release"))
 }
 
 task("release") {
-	dependsOn("zipResources", "zipApplication")
-	tasks["zipApplication"].shouldRunAfter("zipResources")
+    dependsOn("zipResources", "zipApplication")
+    tasks["zipApplication"].shouldRunAfter("zipResources")
 }
 
 fun isNonStable(version: String): Boolean {
-	val stableKeyword = listOf("RELEASE", "FINAL", "GA").any { version.toUpperCase().contains(it) }
-	val regex = "^[0-9,.v-]+(-r)?$".toRegex()
-	val isStable = stableKeyword || regex.matches(version)
-	return isStable.not()
+    val stableKeyword = listOf("RELEASE", "FINAL", "GA").any { version.toUpperCase().contains(it) }
+    val regex = "^[0-9,.v-]+(-r)?$".toRegex()
+    val isStable = stableKeyword || regex.matches(version)
+    return isStable.not()
 }
 
 tasks.named("dependencyUpdates", DependencyUpdatesTask::class.java).configure {
-	// Example 1: reject all non stable versions
-	rejectVersionIf {
-		isNonStable(candidate.version)
-	}
+    // Example 1: reject all non stable versions
+    rejectVersionIf {
+        isNonStable(candidate.version)
+    }
 
-	// Example 2: disallow release candidates as upgradable versions from stable versions
-	rejectVersionIf {
-		isNonStable(candidate.version) && !isNonStable(currentVersion)
-	}
+    // Example 2: disallow release candidates as upgradable versions from stable versions
+    rejectVersionIf {
+        isNonStable(candidate.version) && !isNonStable(currentVersion)
+    }
 
-	// Example 3: using the full syntax
-	resolutionStrategy {
-		componentSelection {
-			all {
-				if (isNonStable(candidate.version) && !isNonStable(currentVersion)) {
-					reject("Release candidate")
-				}
-			}
-		}
-	}
+    // Example 3: using the full syntax
+    resolutionStrategy {
+        componentSelection {
+            all {
+                if (isNonStable(candidate.version) && !isNonStable(currentVersion)) {
+                    reject("Release candidate")
+                }
+            }
+        }
+    }
 }
