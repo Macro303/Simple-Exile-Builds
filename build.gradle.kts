@@ -34,7 +34,7 @@ javafx {
 }
 
 application {
-    mainClass.set("github.macro.LauncherKt")
+    mainClass.set("github.buried_in_code.LauncherKt")
     mainClassName = mainClass.get()
     applicationName = "Path-of-Taurewa"
 }
