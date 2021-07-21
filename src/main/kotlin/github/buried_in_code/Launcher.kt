@@ -17,11 +17,6 @@ class Launcher : App(Image(Utils.getResource("logo.png")), MainView::class, Styl
         checkLogLevels()
         LOGGER.info("Welcome to Path of Taurewa")
         importStylesheet(Utils.getResource("Modena-Dark.css"))
-        /*if (Settings.INSTANCE.useDarkMode) {
-            importStylesheet(Utils.getResource("Modena-Dark.css"))
-            importStylesheet(Utils.getResource("Custom-Dark.css"))
-            importStylesheet(Utils.getResource("Temp-Dark.css"))
-        }*/
         FX.locale = Locale.ENGLISH
         reloadStylesheetsOnFocus()
     }
