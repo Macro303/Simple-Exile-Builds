@@ -16,7 +16,7 @@ import org.apache.logging.log4j.LogManager
 import tornadofx.*
 
 /**
- * Created by Macro303 on 2021-Apr-13.
+ * Created by Buried-In-Code on 2021-Apr-13.
  */
 class BuildViewerView : View("Path of Taurewa") {
     private val model by inject<BuildViewerModel>()

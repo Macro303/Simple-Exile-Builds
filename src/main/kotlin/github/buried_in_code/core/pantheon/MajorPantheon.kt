@@ -1,7 +1,7 @@
 package github.buried_in_code.core.pantheon
 
 /**
- * Created by Macro303 on 2020-Sep-28
+ * Created by Buried-In-Code on 2020-Sep-28
  */
 enum class MajorPantheon {
     LUNARIS,

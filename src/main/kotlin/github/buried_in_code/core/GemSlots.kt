@@ -4,7 +4,7 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 /**
- * Created by Macro303 on 2021-Apr-12.
+ * Created by Buried-In-Code on 2021-Apr-12.
  */
 @Serializable
 data class GemSlots(

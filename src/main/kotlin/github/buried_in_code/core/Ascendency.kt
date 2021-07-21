@@ -1,7 +1,7 @@
 package github.buried_in_code.core
 
 /**
- * Created by Macro303 on 2020-Jan-13.
+ * Created by Buried-In-Code on 2020-Jan-13.
  */
 enum class Ascendency {
     SLAYER,

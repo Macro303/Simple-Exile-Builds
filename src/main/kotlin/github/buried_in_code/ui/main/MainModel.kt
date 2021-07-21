@@ -13,7 +13,7 @@ import java.io.File
 import java.nio.file.Files
 
 /**
- * Created by Macro303 on 2021-Apr-14.
+ * Created by Buried-In-Code on 2021-Apr-14.
  */
 class MainModel : ViewModel() {
     val buildsProperty = SimpleListProperty<BuildInfo>()

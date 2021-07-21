@@ -9,7 +9,7 @@ import tornadofx.getValue
 import tornadofx.setValue
 
 /**
- * Created by Macro303 on 2021-Apr-15.
+ * Created by Buried-In-Code on 2021-Apr-15.
  */
 class GemSelectorModel(current: Gem) : ViewModel() {
     val selectedProperty = SimpleObjectProperty<Gem>(current)

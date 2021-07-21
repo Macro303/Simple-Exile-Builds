@@ -13,7 +13,7 @@ import java.io.File
 import java.io.IOException
 
 /**
- * Created by Macro303 on 2021-Apr-12.
+ * Created by Buried-In-Code on 2021-Apr-12.
  */
 @Serializable
 data class BuildInfo(

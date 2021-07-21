@@ -13,7 +13,7 @@ import tornadofx.getValue
 import tornadofx.setValue
 
 /**
- * Created by Macro303 on 2021-Apr-13.
+ * Created by Buried-In-Code on 2021-Apr-13.
  */
 class BuildViewerModel(val build: BuildInfo) : ViewModel() {
     val titleProperty = SimpleStringProperty(build.title)

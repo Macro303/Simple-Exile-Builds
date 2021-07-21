@@ -20,7 +20,7 @@ import org.apache.logging.log4j.LogManager
 import tornadofx.*
 
 /**
- * Created by Macro303 on 2020-Jan-13.
+ * Created by Buried-In-Code on 2020-Jan-13.
  */
 class MainView : View("Path of Taurewa") {
     private val model by inject<MainModel>()

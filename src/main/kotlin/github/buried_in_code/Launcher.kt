@@ -10,7 +10,7 @@ import tornadofx.*
 import java.util.*
 
 /**
- * Created by Macro303 on 2020-Jan-13.
+ * Created by Buried-In-Code on 2020-Jan-13.
  */
 class Launcher : App(Image(Utils.getResource("logo.png")), MainView::class, Styles::class) {
     init {

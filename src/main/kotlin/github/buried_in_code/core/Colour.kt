@@ -4,7 +4,7 @@ import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
 /**
- * Created by Macro303 on 2020-Jan-17.
+ * Created by Buried-In-Code on 2020-Jan-17.
  */
 @Serializable
 enum class Colour(val hex: String) {

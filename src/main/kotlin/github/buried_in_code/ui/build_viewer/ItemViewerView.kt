@@ -4,8 +4,6 @@ import github.buried_in_code.Utils
 import github.buried_in_code.core.GemEntry
 import javafx.beans.property.SimpleObjectProperty
 import javafx.beans.property.SimpleStringProperty
-import javafx.geometry.HPos
-import javafx.geometry.Insets
 import javafx.geometry.Pos
 import javafx.scene.layout.BorderPane
 import javafx.scene.layout.BorderStrokeStyle
@@ -53,7 +51,7 @@ class ItemViewerView(private val original: GemEntry) : BorderPane() {
         this.name = item.gem.name
         this.colour = Paint.valueOf(item.gem.colour.hex)
         var temp = original
-        while(temp.next != null) {
+        while (temp.next != null) {
             if (temp.next == item) {
                 this.previous = temp
                 break
@@ -95,7 +93,7 @@ class ItemViewerView(private val original: GemEntry) : BorderPane() {
             }
         }
         left {
-            vbox(spacing = 5.0, alignment = Pos.CENTER){
+            vbox(spacing = 5.0, alignment = Pos.CENTER) {
                 paddingAll = 5.0
                 button("⬅") {
                     visibleWhen(previousProperty.isNotNull)
@@ -106,7 +104,7 @@ class ItemViewerView(private val original: GemEntry) : BorderPane() {
             }
         }
         right {
-            vbox(spacing = 5.0, alignment = Pos.CENTER){
+            vbox(spacing = 5.0, alignment = Pos.CENTER) {
                 paddingAll = 5.0
                 button("➡") {
                     visibleWhen(previousProperty.isNotNull)

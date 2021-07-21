@@ -9,7 +9,7 @@ import java.io.InputStream
 import javax.imageio.ImageIO
 
 /**
- * Created by Macro303 on 2020-Jan-13.
+ * Created by Buried-In-Code on 2020-Jan-13.
  */
 object Utils {
     private val LOGGER = LogManager.getLogger(Utils::class.java)

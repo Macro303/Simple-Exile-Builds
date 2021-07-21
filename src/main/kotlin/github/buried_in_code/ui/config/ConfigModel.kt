@@ -14,7 +14,7 @@ import java.nio.file.Files
 import java.nio.file.Paths
 
 /**
- * Created by Macro303 on 2021-Apr-14.
+ * Created by Buried-In-Code on 2021-Apr-14.
  */
 class ConfigModel : ViewModel() {
     val darkModeProperty = SimpleBooleanProperty()

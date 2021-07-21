@@ -6,11 +6,8 @@ import github.buried_in_code.Utils.cleanName
 import github.buried_in_code.core.Ascendency
 import github.buried_in_code.core.Bandit
 import github.buried_in_code.core.ClassTag
-import github.buried_in_code.core.Gem
 import github.buried_in_code.ui.build_viewer.BuildViewerModel
 import github.buried_in_code.ui.build_viewer.BuildViewerView
-import github.buried_in_code.ui.gem_selector.GemSelectorModel
-import github.buried_in_code.ui.gem_selector.GemSelectorView
 import javafx.geometry.HPos
 import javafx.geometry.Insets
 import javafx.geometry.Pos
@@ -21,7 +18,7 @@ import org.apache.logging.log4j.LogManager
 import tornadofx.*
 
 /**
- * Created by Macro303 on 2021-Apr-14.
+ * Created by Buried-In-Code on 2021-Apr-14.
  */
 class BuildEditorView : View("Path of Taurewa") {
     private val model by inject<BuildEditorModel>()

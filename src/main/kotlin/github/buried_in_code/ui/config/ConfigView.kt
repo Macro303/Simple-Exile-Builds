@@ -7,7 +7,7 @@ import javafx.scene.text.FontPosture
 import tornadofx.*
 
 /**
- * Created by Macro303 on 2021-Apr-14.
+ * Created by Buried-In-Code on 2021-Apr-14.
  */
 class ConfigView : View("Settings") {
     private val model by inject<ConfigModel>()
